@@ -2,8 +2,8 @@
 
 Uso: python scripts/upload.py <episode-id> en|es   (out/<id>-<lang>.mp4 y out/<id>-<lang>.png)
 
-Cada canal tiene su refresh token (el canal se elige al autorizar): YT_REFRESH_EN y YT_REFRESH_ES,
-con YT_CLIENT_ID y YT_CLIENT_SECRET del proyecto de Google Cloud de Zibu.
+Cada canal tiene su refresh token (el canal se elige al autorizar con scripts/autorizar_youtube.py): YT_REFRESH_EN y YT_REFRESH_ES,
+con YT_CLIENT_ID y YT_CLIENT_SECRET del proyecto de Google Cloud del canal de finanzas.
 Avisos (opcional): TELEGRAM_BOT_TOKEN y TELEGRAM_CHAT_ID.
 """
 import json
