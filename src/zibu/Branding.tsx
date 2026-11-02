@@ -40,6 +40,32 @@ const Title: React.FC<{ lang: BrandProps["lang"]; size: number }> = ({ lang, siz
   </div>
 );
 
+const THUMB = { en: ["The Lost", "Little Star!"], es: ["¡La estrellita", "perdida!"] };
+
+/** Miniatura 1280x720 del episodio 1: Zibu sorprendido y la estrella con globos, texto corto y grande. */
+export const Thumbnail: React.FC<BrandProps> = ({ lang }) => (
+  <AbsoluteFill>
+    <AbsoluteFill style={{ scale: "0.6667", transformOrigin: "0 0", width: 1920, height: 1080 }}>
+      <Backdrop bg="hill" time="night" />
+    </AbsoluteFill>
+    <div style={{ position: "absolute", left: 40, top: 40, fontFamily, fontWeight: 800, lineHeight: 0.95, rotate: "-4deg" }}>
+      {THUMB[lang].map((t, i) => (
+        <div key={t} style={{ fontSize: i ? 112 : 96, color: i ? "#ffd23f" : "white", WebkitTextStroke: "14px #3a2a7a",
+          paintOrder: "stroke fill", textShadow: "0 8px 0 rgba(0,0,0,0.3)" }}>{t}</div>
+      ))}
+    </div>
+    <div style={{ position: "absolute", left: 60, top: 330 }}>
+      <Zibu s={pose("surprised")} size={330} />
+    </div>
+    <div style={{ position: "absolute", left: 800, top: 330 }}>
+      <StarKid s={pose("laugh", { glow: true, balloons: true })} size={240} />
+    </div>
+    <div style={{ position: "absolute", left: 470, top: 420 }}>
+      <Lila s={pose("laugh")} size={200} />
+    </div>
+  </AbsoluteFill>
+);
+
 /** Foto de perfil 800x800 (YouTube la recorta en circulo): Zibu en primer plano. */
 export const Avatar: React.FC<BrandProps> = () => (
   <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #fff3a6 0%, #ffd23f 45%, #ff9f1c 100%)" }}>
