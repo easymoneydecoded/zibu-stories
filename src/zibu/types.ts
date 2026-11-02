@@ -35,7 +35,7 @@ export type PropItem = {
 
 export type Scene = {
   id: string;
-  type?: "title" | "song" | "recap" | "dance";
+  type?: "hook" | "title" | "song" | "recap" | "dance";
   bg: "garden" | "forest" | "river" | "hill" | "sky" | "beach" | "room";
   time: "day" | "sunset" | "night";
   cast: CastMember[];

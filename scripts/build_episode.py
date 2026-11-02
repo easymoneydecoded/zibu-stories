@@ -143,7 +143,8 @@ def main(story_path: str, lang: str) -> None:
     for si, sc in enumerate(story["scenes"]):
         start = t
         song = sc.get("type") == "song"
-        t += 2 * BAR if song else (0.5 if si == 0 else SCENE_LEAD)
+        # el gancho y el titulo entran rapido: los primeros segundos deciden si el nino se queda
+        t += 2 * BAR if song else (0.3 if si == 0 or sc.get("type") == "title" else SCENE_LEAD)
         lines = []
         for li, ln in enumerate(sc["lines"]):
             audio = tts(ln["who"], ln[lang])
@@ -172,7 +173,7 @@ def main(story_path: str, lang: str) -> None:
         t += 2 * BAR if song else SCENE_TAIL
         scenes.append({k2: v for k2, v in sc.items() if k2 != "lines"} |
                       {"start": round(start * FPS), "end": round(t * FPS), "lines": lines})
-        musica_tramos.append((start, t, song or sc.get("type") == "dance"))
+        musica_tramos.append((start, t, song or sc.get("type") in ("dance", "hook")))
 
     # Duracion minima: se alarga la fiesta de baile final (la ultima escena)
     total = t + 1.0

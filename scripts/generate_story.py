@@ -135,8 +135,9 @@ def validar(s: dict) -> list[str]:
             e.append(f"thumb.{lang} debe ser una lista de 2 textos cortos")
     sc = s["scenes"]
     tipos = [x.get("type", "story") for x in sc]
-    if tipos[:1] != ["title"] or tipos[-1:] != ["dance"] or tipos.count("song") != 1 or tipos.count("recap") != 1:
-        e.append("estructura: la primera escena debe ser 'title', la ultima 'dance', y debe haber 1 'song' y 1 'recap'")
+    inicio = tipos[1:2] if tipos[:1] == ["hook"] else tipos[:1]
+    if inicio != ["title"] or tipos[-1:] != ["dance"] or tipos.count("song") != 1 or tipos.count("recap") != 1:
+        e.append("estructura: (gancho opcional y) 'title' al principio, 'dance' al final, 1 'song' y 1 'recap'")
     if not 6 <= tipos.count("story") <= 10:
         e.append(f"debe haber entre 6 y 10 escenas de historia (hay {tipos.count('story')})")
     total = 0
@@ -221,6 +222,10 @@ Return ONLY JSON:
  "guest": {{"species": "{species}", "name": {{"en", "es"}}}},
  "thumb": {{"en": [2 very short lines for the thumbnail, max 16 characters each], "es": [2 very short lines, max 16 characters each], "scene": index of the most colorful story scene (1-based position in the full episode, the title scene is 0)}},
  "youtube": {{"en": {{"title": "max 90 chars, with an emoji, says what kids learn", "description": "5-8 lines with emojis: what happens and what kids learn, ages 2-6, ends with 3-5 hashtags", "tags": [10-14 tags]}}, "es": {{same in Spanish}}}},
+ "hook": {{"en": [2 or 3 very short lines], "es": [same in Spanish], "scene": index (0-based) in "story" of the most exciting scene}}:
+   the first seconds of the video, before the title. Zibu talks DIRECTLY to the child watching, excited, and
+   teases the problem of the story with a question, e.g. "Hi, friend! Oh no... Barnaby lost his ball!",
+   "Can you help us find it? Let's go!". It decides if children keep watching, so make it exciting.
  "story": [7 story scenes: {{"id": "kebab-case", "bg": one of {", ".join(BGS)}, "time": one of {", ".join(TIMES)}, "cast": ["zibu", "lila", "guest" as needed], "summary": "2-3 sentences of what happens"}}],
  "song": {{"en": "song title", "es": "song title"}}}}
 Use at least 3 different bg values."""
@@ -286,6 +291,18 @@ def ejemplo_corto() -> str:
     return json.dumps(ep["scenes"][2], ensure_ascii=False).replace('"star"', '"guest"')
 
 
+def gancho(plan: dict, historia: list[dict]) -> dict:
+    """Primeros segundos del video, antes del titulo: Zibu habla al nino en el escenario mas llamativo."""
+    h = plan["hook"]
+    sc = historia[min(max(0, int(h.get("scene", 0))), len(historia) - 1)]
+    acciones = [("jump", "laugh"), ("wave", "surprised"), ("bigjump", "laugh")]
+    lineas = [{"who": "zibu", "en": en, "es": es, "action": acciones[i % 3][0], "mood": acciones[i % 3][1]}
+              for i, (en, es) in enumerate(zip(h["en"], h["es"]))]
+    return {"id": "hook", "type": "hook", "bg": sc["bg"], "time": sc["time"],
+            "cast": [{"who": "zibu", "x": 0.42}, {"who": "lila", "x": 0.66}, {"who": "guest", "x": 0.85}],
+            "lines": lineas}
+
+
 def escribir(species: str, lesson: str, learn: str, anteriores: list[str]) -> dict:
     """Esquema -> escenas de la historia de dos en dos -> cancion, repaso y baile."""
     plan = gemini(prompt_esquema(species, lesson, learn, anteriores), max_tokens=8000)
@@ -298,9 +315,10 @@ def escribir(species: str, lesson: str, learn: str, anteriores: list[str]) -> di
     final = gemini(prompt_final(plan, historia))["scenes"]
     titulo = {"id": "title", "type": "title", "bg": historia[0]["bg"], "time": historia[0]["time"],
               "cast": [{"who": "zibu", "x": 0.5}],
-              "lines": [{"who": "narrator", "en": plan["title"]["en"] + "!", "es": "¡" + plan["title"]["es"].strip("¡!") + "!", "pause": 1.0}]}
+              "lines": [{"who": "narrator", "en": plan["title"]["en"] + "!", "es": "¡" + plan["title"]["es"].strip("¡!") + "!", "pause": 0.3}]}
     story = {k: plan[k] for k in ("slug", "title", "lesson", "guest", "thumb", "youtube")}
-    story["scenes"] = [titulo] + historia + final
+    story["scenes"] = [gancho(plan, historia), titulo] + historia + final
+    story["thumb"]["scene"] = int(story["thumb"].get("scene", 1)) + 1  # el gancho va antes del titulo
     for sc in story["scenes"]:  # el cast puede venir como lista de nombres
         sc["cast"] = [c if isinstance(c, dict) else {"who": c, "x": 0.3 + 0.2 * i} for i, c in enumerate(sc["cast"])]
     return story
