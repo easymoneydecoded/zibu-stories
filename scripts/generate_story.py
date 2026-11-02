@@ -23,7 +23,7 @@ BASE = Path(__file__).resolve().parent.parent
 STORIES = BASE / "stories"
 LEDGER = STORIES / "ledger.json"
 MODELS = [os.getenv("GEMINI_MODEL")] if os.getenv("GEMINI_MODEL") else [
-    "gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash", "gemini-2.5-flash"]
+    "gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash"]  # 2.5 ya no esta disponible para proyectos nuevos
 
 SPECIES = ["puppy", "kitten", "bear", "duckling", "frog", "piglet", "owl", "mouse", "star"]
 BGS = ["garden", "forest", "river", "hill", "sky", "beach", "room"]
@@ -52,12 +52,32 @@ LEARN = [
 # ---------------------------------------------------------------------------
 # Gemini
 # ---------------------------------------------------------------------------
+AGOTADOS: set[str] = set()  # modelos con el cupo gratuito del dia agotado (se saltan el resto de la ejecucion)
+
+
 def gemini(prompt: str, max_tokens: int = 16000, temperature: float = 0.9) -> dict:
     key = os.environ["GEMINI_API_KEY"]
     body = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
             "generationConfig": {"maxOutputTokens": max_tokens, "temperature": temperature,
                                  "responseMimeType": "application/json"}}
+    # Si todos los modelos estan saturados (503) se espera y se vuelve a empezar: a ciertas horas Google va al limite
+    for ronda in range(5):
+        if ronda:
+            espera = 60 * ronda
+            print(f"   ! todos los modelos saturados u ocupados: espero {espera} s (ronda {ronda + 1}/5)")
+            time.sleep(espera)
+        resultado = _gemini_ronda(key, body)
+        if resultado is not None:
+            return resultado
+        if all(m in AGOTADOS for m in MODELS):
+            break
+    raise RuntimeError("Gemini: ningun modelo disponible")
+
+
+def _gemini_ronda(key: str, body: dict) -> dict | None:
     for model in MODELS:
+        if model in AGOTADOS:
+            continue
         for intento in range(3):
             t0 = time.time()
             try:
@@ -65,6 +85,8 @@ def gemini(prompt: str, max_tokens: int = 16000, temperature: float = 0.9) -> di
                                   headers={"x-goog-api-key": key}, json=body, timeout=300)
             except requests.RequestException as ex:
                 print(f"   ! Gemini {model}: {type(ex).__name__} tras {time.time() - t0:.0f} s")
+                if isinstance(ex, requests.Timeout):
+                    break  # un modelo que no responde en 5 min no suele hacerlo al reintentar: se pasa al siguiente
                 continue
             print(f"   . Gemini {model}: HTTP {r.status_code} en {time.time() - t0:.0f} s")
             if r.status_code == 200:
@@ -76,12 +98,17 @@ def gemini(prompt: str, max_tokens: int = 16000, temperature: float = 0.9) -> di
                     raise ValueError(f"Gemini ({model}) no devolvio JSON: {text[:200]}")
                 print(f"   . Gemini ok ({model})")
                 return json.loads(m.group(0))
+            if r.status_code == 429 and "quota" in r.text.lower():  # cupo del dia agotado: no reintentar
+                AGOTADOS.add(model)
+                break
             if r.status_code in (429, 500, 503):
                 time.sleep(10 * (intento + 1))
                 continue
             print(f"   ! Gemini {model}: {r.status_code} {r.text[:200]}")
+            if r.status_code == 404:  # modelo retirado o no disponible para este proyecto
+                AGOTADOS.add(model)
             break
-    raise RuntimeError("Gemini: ningun modelo disponible")
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -185,6 +212,9 @@ Plan a NEW episode. The guest is a {species}. Lesson: {lesson}. Learning moment:
 It must be different from these previous episodes: {"; ".join(anteriores) or "none yet"}.
 The story: a beginning, a small problem, two or three tries to solve it, a happy solution and the lesson said
 clearly near the end. Include the learning moment in one scene (big words/numbers on screen).
+IMPORTANT: only these objects can be drawn on screen: {", ".join(PROPS)}. Build the story around them (and around
+the places: {", ".join(BGS)}). Do NOT make the story depend on other objects (no slides, swings, cars, toys,
+books, food other than cookie/cupcake/apple...), because the children would not see them.
 
 Return ONLY JSON:
 {{"slug": "kebab-case, 2-4 words", "title": {{"en", "es"}}, "lesson": {{"en", "es"}},
@@ -238,11 +268,13 @@ Return ONLY JSON: {{"scenes": [song, recap, dance]}}"""
 
 def prompt_revisar(s: dict) -> str:
     return f"""You are a strict reviewer for a YouTube channel for children aged 2 to 6. Review this episode script.
-Reject it if: anything is inappropriate, scary, violent or dangerous to imitate; the story is incoherent or has no
-clear problem and solution; the lesson is missing; the counting/colors/words shown do not match what is said;
-the Spanish is not natural Latin American Spanish or does not match the English; the song does not rhyme or is
-boring; it feels like a low-effort, repetitive template.
-Answer ONLY JSON: {{"approved": true|false, "issues": ["short description of each problem"]}}
+Reject it ONLY for serious problems in the story itself: anything inappropriate, scary, violent or dangerous to
+imitate; an incoherent story with no clear problem and solution; a missing lesson; counting/colors/words shown that
+do not match what is said; dialogue in Spanish that is not natural Latin American Spanish or does not match the
+English; a song that does not rhyme or is boring; a low-effort, repetitive template.
+Small issues (a typo in a tag or in the description, a slightly awkward word) do NOT make it rejected: list them in
+"minor" and approve.
+Answer ONLY JSON: {{"approved": true|false, "issues": ["each serious problem"], "minor": ["each small issue"]}}
 
 SCRIPT:
 {json.dumps(s, ensure_ascii=False)}"""
@@ -291,8 +323,8 @@ def main() -> None:
     for intento in range(1, 4):
         try:
             story = escribir(species, lesson, learn, anteriores)
-        except (KeyError, TypeError, ValueError, IndexError) as ex:
-            print(f"   ! respuesta de Gemini incompleta ({type(ex).__name__}: {ex}), se repite")
+        except (KeyError, TypeError, ValueError, IndexError, RuntimeError) as ex:
+            print(f"   ! no se pudo escribir ({type(ex).__name__}: {ex}), se repite")
             continue
         errores = validar(story)
         if errores:  # se corrige solo cada escena con errores (pedir el guion entero tarda demasiado)
@@ -313,10 +345,16 @@ def main() -> None:
         if errores:
             print(f"   ! sigue sin pasar la validacion: {errores[:5]}")
             continue
-        review = gemini(prompt_revisar(story), max_tokens=4000, temperature=0.2)
+        try:
+            review = gemini(prompt_revisar(story), max_tokens=4000, temperature=0.2)
+        except (RuntimeError, ValueError) as ex:  # sin revision no se publica
+            print(f"   ! no se pudo revisar ({ex}), se repite")
+            continue
         if not review.get("approved"):
             print(f"   ! rechazado por el revisor: {review.get('issues')}")
             continue
+        if review.get("minor"):
+            print(f"   . detalles menores: {review['minor']}")
         n = len(ledger) + 2  # ep001 se hizo a mano y no esta en el registro
         story["id"] = f"ep{n:03d}-{re.sub(r'[^a-z0-9-]', '', story['slug'].lower())[:40]}"
         path = STORIES / f"{story['id']}.json"

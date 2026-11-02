@@ -1,0 +1,1327 @@
+{
+ "slug": "waiting-our-turn-bear",
+ "title": {
+  "en": "Zibu Waits His Turn",
+  "es": "Zibu espera su turno"
+ },
+ "lesson": {
+  "en": "Be patient and wait for your turn so everyone can play happily.",
+  "es": "Sé paciente y espera tu turno para que todos jueguen felices."
+ },
+ "guest": {
+  "species": "bear",
+  "name": {
+   "en": "Barnaby the Bear",
+   "es": "Bernardo el Oso"
+  }
+ },
+ "thumb": {
+  "en": [
+   "WAIT YOUR TURN!",
+   "FUN WITH BARNABY"
+  ],
+  "es": [
+   "¡ESPERA TU TURNO!",
+   "DIVERSIÓN CON BERNARDO"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Waits His Turn! 🐻 Learn Patience & Emotions | Zibu & Friends",
+   "description": "Zibu, Lila, and Barnaby the Bear are playing together! 🐻✨\nZibu learns how to be patient and wait his turn on the slide.\nDiscover big emotions: Happy, Sad, and Surprised! 😊😢😲\nA sweet educational episode for toddlers and preschoolers (Ages 2-6).\nLearn patience, sharing, and emotional literacy!\n\n#ZibuAndFriends #LearnPatience #EmotionsForKids #PreschoolLearning #ToddlerCartoons",
+   "tags": [
+    "zibu and friends",
+    "learn patience",
+    "waiting your turn",
+    "emotions for kids",
+    "happy sad surprised",
+    "bear cartoon",
+    "toddler learning",
+    "preschool show",
+    "educational cartoons",
+    "kids videos",
+    "character building",
+    "social emotional learning"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu espera su turno! 🐻 Aprende paciencia y emociones | Zibu y sus Amigos",
+   "description": "¡Zibu, Lila y Bernardo el Oso juegan juntos! 🐻✨\nZibu aprende a ser paciente y a esperar su turno en el tobogán.\nDescubran las emociones: Feliz, Triste y Sorprendido. 😊😢😲\nUn lindo episodio educativo para niños de 2 a 6 años.\n¡Aprendan a compartir y a ser pacientes!\n\n#ZibuYSusAmigos #AprendePaciencia #EmocionesParaNiños #CaricaturasEducativas #VideosParaNiños",
+   "tags": [
+    "zibu y sus amigos",
+    "aprender paciencia",
+    "esperar el turno",
+    "emociones para niños",
+    "feliz triste sorprendido",
+    "oso dibujo animado",
+    "aprendizaje preescolar",
+    "videos infantiles",
+    "caricaturas educativas",
+    "educacion emocional",
+    "valores para niños",
+    "niños pequeños"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Waits His Turn!",
+     "es": "¡Zibu espera su turno!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "meeting-barnaby",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.1,
+     "y": 0.85,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright, sunny day in the garden!",
+     "es": "¡Era un día brillante y soleado en el jardín!"
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! Our friend Barnaby is here!",
+     "es": "¡Mira, Zibu! ¡Nuestro amigo Bernardo está aquí!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, Barnaby! What is that big thing?",
+     "es": "¡Hola, Bernardo! ¿Qué es esa cosa grande?",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby the Bear brought a wonderful new playground slide!",
+     "es": "¡Bernardo el Oso trajo un nuevo y maravilloso tobogán!"
+    },
+    {
+     "who": "guest",
+     "en": "Hello, friends! Look at my new slide!",
+     "es": "¡Hola, amigos! ¡Miren mi nuevo tobogán!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Wow! It is so big and red!",
+     "es": "¡Guau! ¡Es tan grande y rojo!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "A slide! I love sliding so much!",
+     "es": "¡Un tobogán! ¡Me encanta resbalarme!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was so excited! He could not wait to try it!",
+     "es": "¡Zibu estaba tan emocionado! ¡No podía esperar para probarlo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Wheee! I want to go down right now!",
+     "es": "¡Siii! ¡Quiero tirarme ahora mismo!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Can we all play together, Barnaby?",
+     "es": "Bernardo, ¿podemos jugar todos juntos?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! Everyone gets to take a turn!",
+     "es": "¡Sí! ¡Todos van a tener un turno!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Me first! Me first!",
+     "es": "¡Siii! ¡Yo primero! ¡Yo primero!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was ready to jump on the slide right away!",
+     "es": "¡Zibu estaba listo para subir al tobogán de inmediato!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "too-impatient",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Lila walked over to the slide ladder first.",
+     "es": "Lila se acercó primero a la escalera del tobogán.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Yay! I am going to climb up now!",
+     "es": "¡Siii! ¡Voy a subir ahora!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Wait for me! I want to go fast!",
+     "es": "¡Espérame! ¡Quiero ir rápido!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Oh no! Zibu pushed ahead of Lila!",
+     "es": "¡Oh, no! ¡Zibu se adelantó a Lila!"
+    },
+    {
+     "who": "lila",
+     "en": "Oh... Zibu... that was my turn...",
+     "es": "Oh... Zibu... ese era mi turno...",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Hold on, Zibu! Let's stop for a moment.",
+     "es": "¡Espera, Zibu! Vamos a detenernos un momento.",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "But Barnaby... I really want to slide!",
+     "es": "Pero Bernardo... ¡de verdad quiero resbalarme!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby gently stopped Zibu from climbing.",
+     "es": "Bernardo detuvo a Zibu suavemente."
+    },
+    {
+     "who": "guest",
+     "en": "Skipping the line makes our friends feel sad.",
+     "es": "Saltearse la fila hace que nuestros amigos se sientan tristes.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Yes... I was waiting to go first...",
+     "es": "Sí... yo estaba esperando para ir primero...",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... I am sorry, Lila...",
+     "es": "Oh... lo siento, Lila...",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "When we wait our turn, everyone stays happy!",
+     "es": "Cuando esperamos nuestro turno, ¡todos están felices!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Wait our turn? How do we do that?",
+     "es": "¿Esperar nuestro turno? ¿Cómo hacemos eso?",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was ready to learn how to wait!",
+     "es": "¡Zibu estaba listo para aprender a esperar!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-emotions",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Inside Barnaby's cozy room, they looked at colorful emotion cards!",
+     "es": "¡En el acogedor cuarto de Bernardo, miraron cartas de emociones de colores!"
+    },
+    {
+     "who": "guest",
+     "en": "Look! Sometimes waiting makes us feel a little... sad.",
+     "es": "¡Miren! A veces esperar nos hace sentir un poco... tristes.",
+     "mood": "sad",
+     "show": {
+      "en": "SAD",
+      "es": "TRISTE",
+      "color": "#4A90E2"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Sad? Yes... waiting is hard!",
+     "es": "¿Triste? Sí... ¡esperar es difícil!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "But look at this card! Wow!",
+     "es": "¡Pero miren esta carta! ¡Vaya!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "When you see a shiny new slide, you feel surprised!",
+     "es": "Cuando ven un tobogán nuevo y brillante, ¡se sienten sorprendidos!",
+     "mood": "surprised",
+     "show": {
+      "en": "SURPRISED",
+      "es": "SORPRENDIDO",
+      "color": "#F5A623"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Surprised! I loved seeing the slide!",
+     "es": "¡Sorprendido! ¡Me encantó ver el tobogán!",
+     "mood": "surprised",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "Then Barnaby showed them the happiest card of all.",
+     "es": "Entonces Bernardo les mostró la carta más feliz de todas."
+    },
+    {
+     "who": "guest",
+     "en": "And when we all play fairly together... we feel HAPPY!",
+     "es": "Y cuando todos jugamos juntos de forma justa... ¡nos sentimos FELICES!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "HAPPY",
+      "es": "FELIZ",
+      "color": "#7ED321"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Happy! Taking turns makes everyone smile!",
+     "es": "¡Feliz! ¡Turnarse hace sonreír a todos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I want to feel happy! How can I wait?",
+     "es": "¡Quiero sentirme feliz! ¿Cómo puedo esperar?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "We can practice! Let's go outside and play!",
+     "es": "¡Podemos practicar! ¡Vamos afuera a jugar!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Let's go practice!",
+     "es": "¡Siii! ¡Vamos a practicar!",
+     "mood": "happy",
+     "action": "spin",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.5
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "So the friends went outside to practice waiting.",
+     "es": "Así que los amigos salieron a practicar la espera.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "practicing-patience",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.45,
+     "y": 0.6,
+     "at": 1,
+     "until": 11,
+     "anim": "bounce",
+     "color": "#FFCC00"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The friends went up the sunny hill with a bouncy ball.",
+     "es": "Los amigos subieron a la colina soleada con una pelota rebotina."
+    },
+    {
+     "who": "guest",
+     "en": "Lila will bounce first. Zibu, count to five!",
+     "es": "Lila rebotará primero. Zibu, ¡cuenta hasta cinco!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Count to five? Okay! One...",
+     "es": "¿Contar hasta cinco? ¡Está bien! Uno...",
+     "mood": "happy",
+     "show": {
+      "en": "1",
+      "es": "1",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Boing! Boing! This is so fun!",
+     "es": "¡Boing! ¡Boing! ¡Esto es muy divertido!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Two... three... Oh, I want to bounce it now!",
+     "es": "Dos... tres... ¡Oh, ya quiero rebotarla!",
+     "mood": "sad",
+     "show": {
+      "en": "2... 3...",
+      "es": "2... 3...",
+      "color": "#FF9800"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Take a deep breath, Zibu! In... and out...",
+     "es": "¡Respira profundo, Zibu! Adentro... y afuera...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "In... and out... Ah, that helps!",
+     "es": "Adentro... y afuera... ¡Ah, eso ayuda!",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Four... FIVE!",
+     "es": "¡Cuatro... CINCO!",
+     "mood": "surprised",
+     "action": "bigjump",
+     "show": {
+      "en": "4... 5!",
+      "es": "4... ¡5!",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Great waiting, Zibu! Now it's your turn!",
+     "es": "¡Siii! ¡Qué bien esperaste, Zibu! ¡Ahora es tu turno!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Lila happily passed the ball over to Zibu.",
+     "es": "Lila le pasó alegremente la pelota a Zibu.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "My turn! Boing, boing, boing!",
+     "es": "¡Mi turno! ¡Boing, boing, boing!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "You waited so patiently, Zibu! Well done!",
+     "es": "¡Esperaste con mucha paciencia, Zibu! ¡Bien hecho!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu smiled big. Waiting was easy when you breathe and count!",
+     "es": "Zibu sonrió en grande. ¡Esperar era fácil cuando respiras y cuentas!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "taking-turns-happily",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Now everyone was back in the colorful garden!",
+     "es": "¡Ahora todos estaban de vuelta en el colorido jardín!"
+    },
+    {
+     "who": "guest",
+     "en": "Who wants to go down the shiny slide first?",
+     "es": "¿Quién quiere tirarse por el tobogán brillante primero?",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "You go first, Barnaby!",
+     "es": "¡Tú ve primero, Bernardo!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "And I will stand nicely behind Lila!",
+     "es": "¡Y yo me pondré amablemente detrás de Lila!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.25
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Look at Zibu! He is waiting in line so patiently!",
+     "es": "¡Miren a Zibu! ¡Está esperando en la fila con mucha paciencia!"
+    },
+    {
+     "who": "guest",
+     "en": "Here I go! Wheeee!",
+     "es": "¡Aquí voy! ¡Wiii!",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "My turn now! Yay!",
+     "es": "¡Mi turno ahora! ¡Sí!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila climbed up and zoomed right down!",
+     "es": "¡Lila subió y se deslizó hacia abajo!"
+    },
+    {
+     "who": "zibu",
+     "en": "One... two... three... taking a deep breath...",
+     "es": "Uno... dos... tres... respirando profundo...",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Your turn now, Zibu!",
+     "es": "¡Tu turno ahora, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Hooray! It's finally my turn!",
+     "es": "¡Viva! ¡Por fin es mi turno!",
+     "mood": "happy",
+     "action": "bigjump",
+     "show": {
+      "en": "MY TURN!",
+      "es": "¡MI TURNO!",
+      "color": "#3399FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu climbed up the ladder... step by step!",
+     "es": "Zibu subió la escalera... ¡paso a paso!"
+    },
+    {
+     "who": "zibu",
+     "en": "Wheeeee! This is amazing!",
+     "es": "¡Wiii! ¡Esto es increíble!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Great job taking turns, Zibu!",
+     "es": "¡Gran trabajo esperando tu turno, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Waiting made playing together so much fun!",
+     "es": "¡Esperar hizo que jugar juntos fuera muy divertido!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "lesson-learned",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "As the sun set, the garden glowed with warm light.",
+     "es": "Mientras el sol se ponía, el jardín brillaba con luz cálida."
+    },
+    {
+     "who": "guest",
+     "en": "You were so patient and polite today, Zibu!",
+     "es": "¡Fuiste muy paciente y educado hoy, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you, Barnaby! Waiting was actually easy!",
+     "es": "¡Gracias, Bernardo! ¡Esperar fue en verdad muy fácil!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "When we take turns, everyone stays happy!",
+     "es": "¡Cuando esperamos nuestro turno, todos estamos felices!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! We all get a chance to play!",
+     "es": "¡Sí! ¡Todos tenemos la oportunidad de jugar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu learned a wonderful lesson today.",
+     "es": "Zibu aprendió una lección maravillosa hoy."
+    },
+    {
+     "who": "zibu",
+     "en": "Deep breaths and counting helped me wait!",
+     "es": "¡Respirar profundo y contar me ayudó a esperar!",
+     "mood": "happy",
+     "show": {
+      "en": "PATIENCE",
+      "es": "PACIENCIA",
+      "color": "#FF9900"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "You are a great friend, Zibu!",
+     "es": "¡Eres un gran amigo, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Taking turns makes playing wonderful for everyone!",
+     "es": "¡Esperar el turno hace que jugar sea maravilloso para todos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Remember, friends... taking turns lets everyone share the fun!",
+     "es": "Recuerden, amigos... ¡esperar el turno hace que todos compartan la diversión!",
+     "show": {
+      "en": "TAKE TURNS",
+      "es": "TOMA TURNOS",
+      "color": "#FF3399"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "I love taking turns with my best friends!",
+     "es": "¡Me encanta esperar mi turno con mis mejores amigos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "You did wonderful today!",
+     "es": "¡Lo hiciste de maravilla hoy!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "What a happy, patient day in the garden!",
+     "es": "¡Qué día tan feliz y paciente en el jardín!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "goodbye-song",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.15,
+     "y": 0.8,
+     "at": 0
+    },
+    {
+     "what": "brightstar",
+     "x": 0.85,
+     "y": 0.25,
+     "at": 0,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun is setting. It is time for a special goodbye song!",
+     "es": "El sol se está poniendo. ¡Es hora de una canción especial de despedida!"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! A song about waiting our turn!",
+     "es": "¡Siii! ¡Una canción sobre esperar nuestro turno!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Are you ready? One... two... three!",
+     "es": "¿Están listos? ¡Uno... dos... tres!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "When we play, we wait our turn!",
+     "es": "¡Cuando jugamos, esperamos nuestro turno!",
+     "mood": "happy",
+     "action": "spin",
+     "show": {
+      "en": "WAIT YOUR TURN",
+      "es": "ESPERA TU TURNO",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "First for you, and then for me!",
+     "es": "¡Primero para ti, y luego para mí!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Waiting makes us smile and sing!",
+     "es": "¡Esperar nos hace sonreír y cantar!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "Taking turns is a wonderful thing!",
+     "es": "¡Turnarse es algo maravilloso!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "What a beautiful song! Everyone played so nicely together.",
+     "es": "¡Qué canción tan bonita! Todos jugaron muy bonito juntos."
+    },
+    {
+     "who": "guest",
+     "en": "Thank you for playing with me today, friends!",
+     "es": "¡Gracias por jugar conmigo hoy, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Goodbye, Barnaby! Come visit us again soon!",
+     "es": "¡Adiós, Bernardo! ¡Vuelve a visitarnos pronto!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Goodbye, Lila! Goodbye, Zibu!",
+     "es": "¡Adiós, Lila! ¡Adiós, Zibu!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, Barnaby! Bye-bye, everyone!",
+     "es": "¡Adiós, Bernardo! ¡Chao, a todos!",
+     "mood": "happy",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "See you next time! Bye-bye!",
+     "es": "¡Hasta la próxima! ¡Chao, chao!",
+     "mood": "happy",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Goodbye, little friends! See you soon for another fun adventure!",
+     "es": "¡Adiós, amiguitos! ¡Nos vemos pronto para otra divertida aventura!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "When we play, we wait our turn,",
+     "es": "Para jugar hay que esperar,"
+    },
+    {
+     "who": "narrator",
+     "en": "It is easy, as we learn!",
+     "es": "Nuestro turno hay que dar."
+    },
+    {
+     "who": "narrator",
+     "en": "First for you and then for me,",
+     "es": "Primero tú, luego yo,"
+    },
+    {
+     "who": "narrator",
+     "en": "Happy as can be!",
+     "es": "¡El juego ya empezó!"
+    },
+    {
+     "who": "zibu",
+     "en": "I take a breath and count to five,",
+     "es": "Cuento a cinco y respiro bien,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Watching happy turns arrive!",
+     "es": "¡Viene tu turno también!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Now it is your turn, go ahead,",
+     "es": "Ve primero, ¡ve a jugar!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Playing nicely, just as said!",
+     "es": "¡Qué bonito es compartir y dar!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "When we play, we wait our turn,",
+     "es": "Para jugar hay que esperar,"
+    },
+    {
+     "who": "narrator",
+     "en": "It is easy, as we learn!",
+     "es": "Nuestro turno hay que dar."
+    },
+    {
+     "who": "narrator",
+     "en": "First for you and then for me,",
+     "es": "Primero tú, luego yo,"
+    },
+    {
+     "who": "narrator",
+     "en": "Happy as can be!",
+     "es": "¡El juego ya empezó!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "When we play, we wait our turn,",
+     "es": "Para jugar hay que esperar,"
+    },
+    {
+     "who": "narrator",
+     "en": "It is easy, as we learn!",
+     "es": "Nuestro turno hay que dar."
+    },
+    {
+     "who": "narrator",
+     "en": "First for you and then for me,",
+     "es": "Primero tú, luego yo,"
+    },
+    {
+     "who": "narrator",
+     "en": "Happy as can be!",
+     "es": "¡El juego ya empezó!"
+    },
+    {
+     "who": "zibu",
+     "en": "Waiting makes us smile all day,",
+     "es": "Esperar nos hace sonreír,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Taking turns is the best way!",
+     "es": "¡Todos juntos a convivir!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Slide on down and shout hooray,",
+     "es": "¡Baja el tobogán con alegría!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "We can play here every day!",
+     "es": "¡Con amigos todo es armonía!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "When we play, we wait our turn,",
+     "es": "Para jugar hay que esperar,"
+    },
+    {
+     "who": "narrator",
+     "en": "It is easy, as we learn!",
+     "es": "Nuestro turno hay que dar."
+    },
+    {
+     "who": "narrator",
+     "en": "First for you and then for me,",
+     "es": "Primero tú, luego yo,"
+    },
+    {
+     "who": "narrator",
+     "en": "Happy as can be!",
+     "es": "¡El juego ya empezó!"
+    },
+    {
+     "who": "guest",
+     "en": "Great job taking turns, everyone!",
+     "es": "¡Gran trabajo esperando su turno, todos!",
+     "mood": "happy",
+     "action": "wave"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Recordémosla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who brought the big new slide to the garden?",
+     "es": "¿Quién trajo el gran tobogán nuevo al jardín?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Barnaby the Bear brought it!",
+     "es": "¡Bernardo el Oso lo trajo!",
+     "mood": "happy",
+     "show": {
+      "en": "Barnaby",
+      "es": "Bernardo",
+      "color": "#4A90E2"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What color was the shiny slide?",
+     "es": "¿De qué color era el tobogán brillante?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "It was bright red!",
+     "es": "¡Era de color rojo brillante!",
+     "mood": "happy",
+     "show": {
+      "en": "Red",
+      "es": "Rojo",
+      "color": "#E74C3C"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Zibu do to wait calmly?",
+     "es": "¿Qué hizo Zibu para esperar con calma?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "I took a deep breath and counted!",
+     "es": "¡Respiré hondo y conté!",
+     "mood": "happy",
+     "show": {
+      "en": "Breathe",
+      "es": "Respirar",
+      "color": "#2ECC71"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many numbers did Zibu count to?",
+     "es": "¿Hasta qué número contó Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Zibu counted to five!",
+     "es": "¡Zibu contó hasta cinco!",
+     "mood": "happy",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#F1C40F"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Does taking turns make everyone happy?",
+     "es": "¿Esperar el turno nos hace felices a todos?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Everyone gets to play!",
+     "es": "¡Sí! ¡Todos podemos jugar!",
+     "mood": "happy",
+     "show": {
+      "en": "YES!",
+      "es": "¡SÍ!",
+      "color": "#9B59B6"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's practice waiting right now!",
+     "es": "¡Practiquemos la paciencia ahora mismo!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Take a deep breath... In... and out...",
+     "es": "Respiren profundo... Adentro... y afuera...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Now count with us! One, two, three, four, FIVE!",
+     "es": "¡Ahora cuenten con nosotros! ¡Uno, dos, tres, cuatro, CINCO!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! You waited so patiently!",
+     "es": "¡Súper! ¡Esperaron con mucha paciencia!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Be patient and wait for your turn so everyone can play happily.",
+     "es": "Sé paciente y espera tu turno para que todos jueguen felices."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Sliding and dancing is so much fun!",
+     "es": "¡Deslizarse y bailar es superdivertido!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep002-waiting-our-turn-bear"
+}
