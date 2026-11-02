@@ -60,7 +60,9 @@ export const Thumbnail: React.FC<ThumbProps> = ({ lang, timeline: tl }) => {
       </AbsoluteFill>
       <div style={{ position: "absolute", left: 40, top: 40, right: 40, fontFamily, fontWeight: 800, lineHeight: 0.95, rotate: "-4deg" }}>
         {text.map((t, i) => (
-          <div key={t} style={{ fontSize: i ? 112 : 96, color: i ? "#ffd23f" : "white", WebkitTextStroke: "14px #3a2a7a",
+          // El tamano baja con la longitud para que cada texto quepa en una sola linea (~1150 px de ancho)
+          <div key={t} style={{ fontSize: Math.min(i ? 112 : 96, Math.floor(1150 / (t.length * 0.58))), whiteSpace: "nowrap",
+            color: i ? "#ffd23f" : "white", WebkitTextStroke: "14px #3a2a7a",
             paintOrder: "stroke fill", textShadow: "0 8px 0 rgba(0,0,0,0.3)" }}>{t}</div>
         ))}
       </div>

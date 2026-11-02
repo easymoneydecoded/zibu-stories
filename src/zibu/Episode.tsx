@@ -131,7 +131,7 @@ const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
         <div style={{
           position: "absolute", top: 50, left: 160, right: 160, textAlign: "center", fontFamily, fontWeight: 800, fontSize: 64,
           color: "#3a2a7a", background: "rgba(255,255,255,0.88)", borderRadius: 40, padding: "14px 30px",
-          scale: `${spring({ frame: f - lyric.start, fps: 30, config: { damping: 12 } })}`,
+          scale: `${0.85 + 0.15 * spring({ frame: f - lyric.start, fps: 30, config: { damping: 12 } })}`,
         }}>♪ {lyric.text} ♪</div>
       )}
     </AbsoluteFill>

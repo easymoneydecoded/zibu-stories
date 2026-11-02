@@ -219,7 +219,7 @@ books, food other than cookie/cupcake/apple...), because the children would not 
 Return ONLY JSON:
 {{"slug": "kebab-case, 2-4 words", "title": {{"en", "es"}}, "lesson": {{"en", "es"}},
  "guest": {{"species": "{species}", "name": {{"en", "es"}}}},
- "thumb": {{"en": [2 very short lines for the thumbnail], "es": [2 very short lines], "scene": index of the most colorful story scene (1-based position in the full episode, the title scene is 0)}},
+ "thumb": {{"en": [2 very short lines for the thumbnail, max 16 characters each], "es": [2 very short lines, max 16 characters each], "scene": index of the most colorful story scene (1-based position in the full episode, the title scene is 0)}},
  "youtube": {{"en": {{"title": "max 90 chars, with an emoji, says what kids learn", "description": "5-8 lines with emojis: what happens and what kids learn, ages 2-6, ends with 3-5 hashtags", "tags": [10-14 tags]}}, "es": {{same in Spanish}}}},
  "story": [7 story scenes: {{"id": "kebab-case", "bg": one of {", ".join(BGS)}, "time": one of {", ".join(TIMES)}, "cast": ["zibu", "lila", "guest" as needed], "summary": "2-3 sentences of what happens"}}],
  "song": {{"en": "song title", "es": "song title"}}}}
