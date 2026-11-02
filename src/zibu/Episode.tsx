@@ -4,7 +4,7 @@ import {
   AbsoluteFill, CalculateMetadataFunction, Easing, interpolate, Sequence, spring, staticFile, useCurrentFrame,
 } from "remotion";
 import { Backdrop } from "./Backgrounds";
-import { Lila, StarKid, Zibu } from "./Characters";
+import { Critter, Lila, SPECIES, Species, StarKid, Zibu } from "./Characters";
 import { BalloonShape, IconStar, Prop } from "./Props";
 import { CharState, Line, Mood, Scene, Timeline } from "./types";
 
@@ -51,7 +51,7 @@ const charState = (scene: Scene, who: string, f: number): CharState => {
     actionFrame: act ? f - act.start : 0,
     dancing: scene.type === "song" || scene.type === "dance",
     glow: past.some((l) => l.action === "glow" && (l.who === who || l.glowWho === who)),
-    balloons: who === "star" && past.some((l) => l.balloons),
+    balloons: (who === "star" || who === "guest") && past.some((l) => l.balloons),
   };
 };
 
@@ -95,18 +95,23 @@ const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
         {scene.cast.map((c) => {
           const { x, y } = position(scene, c.who, f);
           const s = charState(scene, c.who, f);
-          if (c.who === "star") {
+          const species = (tl.guest ?? "star") as Species;
+          const isGuest = c.who === "guest" || c.who === "star";
+          if (isGuest && species === "star") {
             return (
               <div key={c.who} style={{ position: "absolute", left: x * 1920 - 85, top: y * 1080 - 85 }}>
                 <StarKid s={s} />
               </div>
             );
           }
-          const w = c.who === "zibu" ? 330 : 300;
-          const h = c.who === "zibu" ? w * 1.15 : w * 1.6;
+          const w = c.who === "zibu" ? 330 : isGuest ? 260 : 300;
+          const h = c.who === "lila" ? w * 1.6 : w * 1.15;
+          // Un animalito con "y" en el guion vuela (p. ej. el buho); si no, va por el suelo
+          const top = isGuest && c.y ? y * 1080 - h / 2 : GROUND - h;
           return (
-            <div key={c.who} style={{ position: "absolute", left: x * 1920 - w / 2, top: GROUND - h }}>
-              {c.who === "zibu" ? <Zibu s={s} size={w} /> : <Lila s={s} size={w} />}
+            <div key={c.who} style={{ position: "absolute", left: x * 1920 - w / 2, top }}>
+              {c.who === "zibu" ? <Zibu s={s} size={w} /> : c.who === "lila" ? <Lila s={s} size={w} />
+                : <Critter s={s} species={species as keyof typeof SPECIES} size={w} />}
             </div>
           );
         })}

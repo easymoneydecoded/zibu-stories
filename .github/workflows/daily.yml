@@ -1,0 +1,127 @@
+name: Zibu - episodio diario
+
+# Cada dia: Gemini escribe un guion nuevo -> se renderiza en ingles y en espanol (en paralelo) ->
+# se sube a @ZibuAndFriendsEnglish y @ZibuYSusAmigos y llega un aviso por Telegram.
+# Repo publico: los minutos de Actions son gratis e ilimitados.
+on:
+  schedule:
+    - cron: '0 11 * * *'          # 11:00 UTC: publicado hacia las 12:30 UTC (tarde en Europa, manana en America)
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: 'Episodio ya escrito (p. ej. ep002-...). Vacio = escribir uno nuevo'
+        default: ''
+      upload:
+        description: 'Subir a YouTube'
+        type: boolean
+        default: true
+
+concurrency:
+  group: zibu-daily
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  PYTHONUNBUFFERED: '1'
+
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    outputs:
+      episode: ${{ steps.pick.outputs.episode }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Guion
+        id: pick
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.episode }}" ]; then
+            echo "episode=${{ inputs.episode }}" >> "$GITHUB_OUTPUT"
+          else
+            python scripts/generate_story.py
+          fi
+      - name: Guardar el guion en el repo
+        if: inputs.episode == ''
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add stories/
+          git commit -m "Guion: ${{ steps.pick.outputs.episode }}"
+          git push
+
+  render:
+    needs: story
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [en, es]
+    env:
+      EP: ${{ needs.story.outputs.episode }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}      # incluye el guion recien guardado
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: pip install kokoro-onnx soundfile numpy requests google-api-python-client google-auth
+      - run: npm ci
+      - name: Modelo de voz (Kokoro)
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0
+      - run: |
+          mkdir -p models
+          for f in kokoro-v1.0.onnx voices-v1.0.bin; do
+            [ -f "models/$f" ] || curl -sSL -o "models/$f" "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"
+          done
+      - name: Voces, musica y timeline
+        run: python scripts/build_episode.py "stories/$EP.json" ${{ matrix.lang }}
+      - name: Video y miniatura
+        run: |
+          npx remotion render Episode "out/$EP-${{ matrix.lang }}.mp4" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
+          npx remotion still Thumbnail "out/$EP-${{ matrix.lang }}.png" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
+      - name: Subir a YouTube
+        if: inputs.upload != false
+        env:
+          YT_CLIENT_ID:       ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET:   ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_EN:      ${{ secrets.YT_REFRESH_EN }}
+          YT_REFRESH_ES:      ${{ secrets.YT_REFRESH_ES }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/upload.py "$EP" ${{ matrix.lang }}
+      - name: Guardar el video (3 dias)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.EP }}-${{ matrix.lang }}
+          path: out/${{ env.EP }}-${{ matrix.lang }}.*
+          retention-days: 3
+          if-no-files-found: ignore
+
+  aviso-fallo:
+    needs: [story, render]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d chat_id="$TELEGRAM_CHAT_ID" \
+            --data-urlencode text="⚠️ Zibu: el episodio de hoy ha fallado. ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

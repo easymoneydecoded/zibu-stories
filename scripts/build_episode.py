@@ -31,7 +31,21 @@ VOICES = {
     "es": {"narrator": ("ef_dora", 0.92, 0), "zibu": ("ef_dora", 1.0, 5),
            "lila": ("ef_dora", 1.06, 2), "star": ("ef_dora", 1.0, 8)},
 }
+# Voz del invitado segun su especie: {idioma: (voz, velocidad, semitonos)}
+GUEST_VOICES = {
+    "star": {"en": ("af_heart", 1.0, 6), "es": ("ef_dora", 1.0, 8)},
+    "puppy": {"en": ("am_echo", 1.02, 4), "es": ("em_alex", 1.02, 5)},
+    "kitten": {"en": ("af_nicole", 1.0, 5), "es": ("ef_dora", 1.04, 7)},
+    "bear": {"en": ("am_michael", 0.95, 1), "es": ("em_alex", 0.95, 1)},
+    "duckling": {"en": ("af_jessica", 1.05, 6), "es": ("ef_dora", 1.06, 9)},
+    "frog": {"en": ("am_fenrir", 1.0, 3), "es": ("em_alex", 1.0, 4)},
+    "piglet": {"en": ("af_kore", 1.0, 4), "es": ("ef_dora", 1.0, 6)},
+    "owl": {"en": ("bm_george", 0.92, 0), "es": ("em_alex", 0.92, -1)},
+    "mouse": {"en": ("af_sky", 1.08, 7), "es": ("ef_dora", 1.1, 10)},
+}
 LANG_CODE = {"en": "en-us", "es": "es"}
+MIN_TOTAL = 8 * 60 + 5   # YouTube permite anuncios a mitad del video desde 8 min
+MAX_PAD = 75             # lo que se puede alargar la fiesta final para llegar al minimo
 
 
 def subir_tono(x: np.ndarray, semitonos: float) -> np.ndarray:
@@ -116,7 +130,8 @@ def main(story_path: str, lang: str) -> None:
     story = json.loads(Path(story_path).read_text(encoding="utf-8"))
     out = BASE / "public" / "ep" / story["id"] / lang
     k = Kokoro(str(BASE / "models" / "kokoro-v1.0.onnx"), str(BASE / "models" / "voices-v1.0.bin"))
-    voces = VOICES[lang]
+    guest = story["guest"].get("species") or story["guest"]["id"]
+    voces = dict(VOICES[lang], guest=GUEST_VOICES[guest][lang], star=GUEST_VOICES[guest][lang])
 
     def tts(who: str, texto: str) -> np.ndarray:
         voz, speed, tono = voces[who]
@@ -159,8 +174,18 @@ def main(story_path: str, lang: str) -> None:
                       {"start": round(start * FPS), "end": round(t * FPS), "lines": lines})
         musica_tramos.append((start, t, song or sc.get("type") == "dance"))
 
-    # Musica: tranquila en la historia, alegre en la cancion (mas alta), con fundidos
+    # Duracion minima: se alarga la fiesta de baile final (la ultima escena)
     total = t + 1.0
+    falta = MIN_TOTAL - total
+    if falta > 0:
+        if falta > MAX_PAD or scenes[-1].get("type") != "dance":
+            raise SystemExit(f"Episodio demasiado corto: {total:.0f} s (minimo {MIN_TOTAL} s)")
+        scenes[-1]["end"] += round(falta * FPS)
+        a, b, alegre = musica_tramos[-1]
+        musica_tramos[-1] = (a, b + falta, alegre)
+        total += falta
+
+    # Musica: tranquila en la historia, alegre en la cancion (mas alta), con fundidos
     musica = np.zeros(int(SR * total))
     for a, b, song in musica_tramos:
         tramo = tramo_musical(b - a, ALEGRE if song else CALMA, 2.4 if song else 1.0)
@@ -172,14 +197,19 @@ def main(story_path: str, lang: str) -> None:
     guardar_wav(out / "musica.wav", musica)
     for nombre, x in efectos().items():
         guardar_wav(BASE / "public" / "sfx" / f"{nombre}.wav", x)
-    for sc in scenes:  # la estrella que cae suena con un "fiuuu"
+    for sc in scenes:  # el invitado que cae desde fuera del cuadro suena con un "fiuuu"
+        inicio = {c["who"]: c.get("y", 0) for c in sc["cast"]}
         for ln in sc["lines"]:
-            if any(m["who"] == "star" and m.get("toY", 0) > 0.5 for m in ln.get("moves", [])) and sc["id"] == "garden-night":
+            if any(m["who"] in ("star", "guest") and inicio.get(m["who"], 0) < 0 and m.get("toY", 0) > 0.5
+                   for m in ln.get("moves", [])):
                 sfx.append({"name": "fiu", "at": ln["start"]})
 
     timeline = {"id": story["id"], "lang": lang, "title": story["title"][lang], "fps": FPS,
                 "durationInFrames": round(total * FPS), "music": f"ep/{story['id']}/{lang}/musica.wav",
-                "names": {story["guest"]["id"]: story["guest"]["name"][lang]}, "sfx": sfx, "scenes": scenes}
+                "names": {"guest": story["guest"]["name"][lang]}, "guest": guest, "sfx": sfx, "scenes": scenes}
+    if "thumb" in story:
+        key = story["scenes"][min(max(1, int(story["thumb"].get("scene", 1))), len(story["scenes"]) - 1)]
+        timeline["thumb"] = {"text": story["thumb"][lang], "bg": key["bg"], "time": key["time"]}
     (out / "timeline.json").write_text(json.dumps(timeline, ensure_ascii=False, indent=1), encoding="utf-8")
     n = sum(len(s["lines"]) for s in scenes)
     print(f"{story['id']} [{lang}]: {len(scenes)} escenas, {n} frases, {int(total // 60)}:{int(total % 60):02d} min")

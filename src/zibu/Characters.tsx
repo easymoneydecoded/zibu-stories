@@ -90,6 +90,90 @@ export const Lila: React.FC<{ s: CharState; size?: number }> = ({ s, size = 300 
   );
 };
 
+/** Animalitos invitados: un mismo cuerpo redondo con orejas, hocico y colores segun la especie. */
+export const SPECIES = {
+  puppy: { body: "#c98b5a", belly: "#f2d5b8", accent: "#8a5a36", ears: "floppy", snout: "muzzle" },
+  kitten: { body: "#ffa94d", belly: "#ffe3c2", accent: "#e07b1f", ears: "pointy", snout: "whiskers" },
+  bear: { body: "#a0703f", belly: "#e6c49c", accent: "#6e4824", ears: "round", snout: "muzzle" },
+  duckling: { body: "#ffd84d", belly: "#fff2a8", accent: "#ff9a1f", ears: "tuft", snout: "beak" },
+  frog: { body: "#6cc24a", belly: "#c8f0a0", accent: "#3f8f2a", ears: "frog", snout: "none" },
+  piglet: { body: "#ffb3c7", belly: "#ffd6e1", accent: "#ff8aa8", ears: "pointy", snout: "pig" },
+  owl: { body: "#9b7653", belly: "#e8d3b0", accent: "#6b4f35", ears: "tufts", snout: "beak" },
+  mouse: { body: "#b8b8c8", belly: "#e8e8f0", accent: "#ff9fb8", ears: "big", snout: "whiskers" },
+} as const;
+export type Species = keyof typeof SPECIES | "star";
+
+export const Critter: React.FC<{ s: CharState; species: keyof typeof SPECIES; size?: number }> = ({ s, species, size = 260 }) => {
+  const { dy, rot, dx, wave, frame } = useMotion(s, 5);
+  const sp = SPECIES[species];
+  const arm = wave ? -12 - Math.sin(frame / 4) * 22 : s.dancing ? -20 - Math.sin(frame / 5) * 30 : -55 - Math.sin(frame / 12) * 6;
+  const beak = sp.snout === "beak";
+  const open = s.talk ? 6 + Math.abs(Math.sin(frame / 2.3)) * 14 : 2;
+  const ears: Record<string, React.ReactNode> = {
+    floppy: [130, 270].map((x, i) => (
+      <ellipse key={x} cx={x} cy={170} rx={38} ry={78} fill={sp.accent}
+        style={{ transformOrigin: `${x}px 110px`, rotate: `${(i ? -1 : 1) * (18 + Math.sin(frame / 9) * 6)}deg` }} />
+    )),
+    pointy: [130, 270].map((x, i) => (
+      <path key={x} d={`M${x - 45} 150 L ${x + (i ? 20 : -20)} 50 L ${x + 45} 150 Z`} fill={sp.body} stroke={sp.accent} strokeWidth={6} strokeLinejoin="round" />
+    )),
+    round: [120, 280].map((x) => <circle key={x} cx={x} cy={115} r={45} fill={sp.body} stroke={sp.accent} strokeWidth={6} />),
+    big: [105, 295].map((x) => (
+      <g key={x}><circle cx={x} cy={110} r={70} fill={sp.body} /><circle cx={x} cy={110} r={45} fill={sp.accent} /></g>
+    )),
+    tufts: [125, 275].map((x, i) => (
+      <path key={x} d={`M${x - 35} 140 L ${x + (i ? 30 : -30)} 70 L ${x + 30} 140 Z`} fill={sp.accent} />
+    )),
+    tuft: <path d="M200 100 q -10 -50 10 -60 q -5 30 15 45 q -10 10 -25 15 Z" fill={sp.accent} />,
+    frog: [140, 260].map((x) => <circle key={x} cx={x} cy={150} r={62} fill={sp.body} />),
+  };
+  return (
+    <svg width={size} height={size * 1.15} viewBox="0 0 400 460"
+      style={{ overflow: "visible", translate: `${dx}px ${-dy}px`, rotate: `${rot}deg`, transformOrigin: "50% 90%" }}>
+      <ellipse cx={200} cy={448} rx={115} ry={14} fill="rgba(0,40,0,0.18)" style={{ translate: `0px ${dy}px` }} />
+      {species === "puppy" || species === "kitten" || species === "mouse" || species === "piglet" ? (
+        <path d={species === "piglet" ? "M330 330 q 40 -10 30 -40 q -10 -20 -25 0" : "M320 340 Q 400 320 390 240"}
+          stroke={species === "mouse" ? sp.accent : sp.body} strokeWidth={species === "mouse" ? 8 : 26} fill="none" strokeLinecap="round"
+          style={{ transformOrigin: "320px 340px", rotate: `${Math.sin(frame / 5) * 12}deg` }} />
+      ) : null}
+      {ears[sp.ears]}
+      <ellipse cx={140} cy={425} rx={48} ry={24} fill={sp.accent} />
+      <ellipse cx={260} cy={425} rx={48} ry={24} fill={sp.accent} />
+      <g style={{ transformOrigin: "85px 290px", rotate: `${s.dancing ? -arm : 10 + Math.sin(frame / 12) * 6}deg` }}>
+        <path d="M85 290 Q 40 320 50 365" stroke={sp.body} strokeWidth={28} fill="none" strokeLinecap="round" />
+      </g>
+      <ellipse cx={200} cy={270} rx={150} ry={160} fill={sp.body} />
+      <ellipse cx={200} cy={315} rx={95} ry={90} fill={sp.belly} />
+      {sp.ears === "frog" && [140, 260].map((x) => <circle key={x} cx={x} cy={150} r={40} fill="white" />)}
+      <Face cx={200} eyeY={sp.ears === "frog" ? 150 : 225} eyeDx={sp.ears === "frog" ? 60 : 55} eyeR={sp.ears === "frog" ? 30 : 40}
+        mouthY={beak ? 330 : 300} mouthW={beak ? 0.01 : 36} mood={s.mood} talk={beak ? false : s.talk} seed={11}
+        ink="#3b2a1a" cheek="#ff8fa8" />
+      {sp.snout === "muzzle" && (
+        <g><ellipse cx={200} cy={278} rx={52} ry={34} fill={sp.belly} /><ellipse cx={200} cy={266} rx={20} ry={14} fill="#3b2a1a" /></g>
+      )}
+      {sp.snout === "pig" && (
+        <g><ellipse cx={200} cy={272} rx={38} ry={26} fill={sp.accent} /><ellipse cx={186} cy={272} rx={7} ry={10} fill="#c25b78" /><ellipse cx={214} cy={272} rx={7} ry={10} fill="#c25b78" /></g>
+      )}
+      {sp.snout === "whiskers" && (
+        <g stroke="#5a4a3a" strokeWidth={4} strokeLinecap="round">
+          <ellipse cx={200} cy={268} rx={12} ry={9} fill={sp.accent} stroke="none" />
+          <line x1={150} y1={270} x2={95} y2={258} /><line x1={150} y1={282} x2={95} y2={288} />
+          <line x1={250} y1={270} x2={305} y2={258} /><line x1={250} y1={282} x2={305} y2={288} />
+        </g>
+      )}
+      {beak && (
+        <g>
+          <path d={`M170 280 Q 200 262 230 280 L 200 ${300} Z`} fill="#ff9a1f" stroke="#d9730a" strokeWidth={4} strokeLinejoin="round" />
+          <path d={`M175 ${288} L 225 ${288} L 200 ${300 + open} Z`} fill="#f07d0a" stroke="#d9730a" strokeWidth={4} strokeLinejoin="round" />
+        </g>
+      )}
+      <g style={{ transformOrigin: "315px 290px", rotate: `${arm}deg` }}>
+        <path d="M315 290 Q 370 250 365 195" stroke={sp.body} strokeWidth={28} fill="none" strokeLinecap="round" />
+      </g>
+    </svg>
+  );
+};
+
 /** Estrella invitada: flota, brilla (glow) y puede llevar cuatro globos. */
 export const StarKid: React.FC<{ s: CharState; size?: number }> = ({ s, size = 170 }) => {
   const { dy, rot, dx, frame } = useMotion(s, 7);

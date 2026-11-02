@@ -96,9 +96,66 @@ const Tree: React.FC<{ x: number; s: number; dark: boolean }> = ({ x, s, dark })
   </svg>
 );
 
+const Room: React.FC<{ time: Scene["time"] }> = ({ time }) => {
+  const night = time === "night";
+  return (
+    <AbsoluteFill style={{ background: night ? "#4a4f8a" : time === "sunset" ? "#ffd9b0" : "#ffe9c7" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+        {/* papel pintado con lunares */}
+        {Array.from({ length: 60 }, (_, i) => (
+          <circle key={i} cx={(i % 12) * 170 + (Math.floor(i / 12) % 2) * 85 + 40} cy={Math.floor(i / 12) * 150 + 60} r={14}
+            fill={night ? "rgba(255,255,255,0.08)" : "rgba(255,160,120,0.25)"} />
+        ))}
+        {/* ventana */}
+        <rect x={1300} y={150} width={420} height={380} rx={20} fill={night ? "#14214d" : time === "sunset" ? "#ff9a76" : "#9fdcff"} stroke="#b77a35" strokeWidth={18} />
+        {night ? <circle cx={1600} cy={260} r={50} fill="#fff6c9" /> : <circle cx={1600} cy={260} r={55} fill={time === "sunset" ? "#ffb04d" : "#ffdb4d"} />}
+        {night && [[1380, 220], [1450, 400], [1530, 330], [1660, 440], [1400, 470]].map(([x, y]) => <circle key={x} cx={x} cy={y} r={5} fill="#fffbe0" />)}
+        <line x1={1510} y1={150} x2={1510} y2={530} stroke="#b77a35" strokeWidth={14} />
+        <line x1={1300} y1={340} x2={1720} y2={340} stroke="#b77a35" strokeWidth={14} />
+        {/* cuadro */}
+        <rect x={300} y={200} width={260} height={200} rx={10} fill="#fff" stroke="#ff9f1c" strokeWidth={14} />
+        <path d="M320 380 L 400 290 L 460 350 L 500 310 L 540 380 Z" fill="#6cc84a" /><circle cx={480} cy={250} r={22} fill="#ffd23f" />
+        {/* suelo y alfombra */}
+        <rect x={0} y={760} width={1920} height={320} fill={night ? "#7a5a4a" : "#d9a774"} />
+        {Array.from({ length: 12 }, (_, i) => <line key={i} x1={i * 170} y1={760} x2={i * 170 - 60} y2={1080} stroke="rgba(0,0,0,0.08)" strokeWidth={4} />)}
+        <ellipse cx={960} cy={960} rx={620} ry={95} fill={night ? "#8a5fbf" : "#ff9fc2"} />
+        <ellipse cx={960} cy={960} rx={520} ry={70} fill="none" stroke="rgba(255,255,255,0.6)" strokeWidth={8} strokeDasharray="30 20" />
+        {/* cama */}
+        <rect x={40} y={600} width={420} height={200} rx={30} fill="#7fc8ff" />
+        <rect x={40} y={560} width={110} height={260} rx={20} fill="#b77a35" />
+        <ellipse cx={230} cy={600} rx={70} ry={34} fill="white" />
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+const Beach: React.FC<{ time: Scene["time"] }> = ({ time }) => {
+  const frame = useCurrentFrame();
+  const night = time === "night";
+  return (
+    <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+      <rect x={0} y={600} width={1920} height={260} fill={night ? "#1f4f8a" : "#3fa9f5"} />
+      {Array.from({ length: 14 }, (_, i) => (
+        <path key={i} d={`M${((i * 160 + frame * 2) % 2100) - 100} ${640 + (i % 4) * 50} q 25 -14 50 0 q 25 14 50 0`}
+          stroke="rgba(255,255,255,0.6)" strokeWidth={5} fill="none" strokeLinecap="round" />
+      ))}
+      <path d={`M0 840 Q 480 ${800 + Math.sin(frame / 20) * 10} 960 830 T 1920 820 V 1080 H 0 Z`} fill="rgba(255,255,255,0.75)" />
+      <path d="M0 860 Q 480 820 960 850 T 1920 840 V 1080 H 0 Z" fill={night ? "#c9b27a" : "#ffe2a3"} />
+      {/* palmera */}
+      <path d="M1700 1000 Q 1690 800 1640 620" stroke="#a0703f" strokeWidth={36} fill="none" strokeLinecap="round" />
+      {[-60, -20, 20, 60, 100].map((a) => (
+        <ellipse key={a} cx={1640} cy={620} rx={150} ry={34} fill={night ? "#2f6a45" : "#3cc45a"}
+          style={{ transformOrigin: "1640px 620px", rotate: `${a + Math.sin(frame / 25) * 4}deg`, translate: "120px 0px" }} />
+      ))}
+      <circle cx={1660} cy={650} r={20} fill="#7a4a1a" /><circle cx={1690} cy={660} r={20} fill="#7a4a1a" />
+    </svg>
+  );
+};
+
 export const Backdrop: React.FC<{ bg: Scene["bg"]; time: Scene["time"] }> = ({ bg, time }) => {
   const frame = useCurrentFrame();
   const night = time === "night";
+  if (bg === "room") return <Room time={time} />;
   const [s1, s2] = SKY[time];
   const [g1, g2] = GRASS[time];
   return (
@@ -112,6 +169,7 @@ export const Backdrop: React.FC<{ bg: Scene["bg"]; time: Scene["time"] }> = ({ b
           <Cloud x={1500} y={200} s={0.9} speed={0.45} night={night} />
         </>
       )}
+      {bg === "beach" && <Beach time={time} />}
       {bg === "garden" && (
         <>
           <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>

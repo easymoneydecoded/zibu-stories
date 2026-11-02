@@ -23,7 +23,8 @@ export type Line = {
 export type CastMember = { who: string; x: number; y?: number };
 
 export type PropItem = {
-  what: "ball" | "firefly" | "stone" | "balloon" | "bigstar" | "brightstar";
+  what: "ball" | "firefly" | "stone" | "balloon" | "bigstar" | "brightstar" | "apple" | "flower" | "butterfly" | "gift"
+    | "cookie" | "kite" | "umbrella" | "shell" | "leaf" | "cupcake";
   x: number;
   y: number;
   at?: number; // indice de la frase en la que aparece
@@ -35,7 +36,7 @@ export type PropItem = {
 export type Scene = {
   id: string;
   type?: "title" | "song" | "recap" | "dance";
-  bg: "garden" | "forest" | "river" | "hill" | "sky";
+  bg: "garden" | "forest" | "river" | "hill" | "sky" | "beach" | "room";
   time: "day" | "sunset" | "night";
   cast: CastMember[];
   props?: PropItem[];
@@ -52,6 +53,8 @@ export type Timeline = {
   durationInFrames: number;
   music: string;
   names: Record<string, string>;
+  guest: string; // especie del invitado ("star", "puppy"...)
+  thumb?: { text: string[]; bg: Scene["bg"]; time: Scene["time"] };
   sfx: { name: string; at: number }[];
   scenes: Scene[];
 };
