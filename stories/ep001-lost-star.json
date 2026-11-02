@@ -1,0 +1,237 @@
+{
+  "id": "ep001-lost-star",
+  "title": {"en": "Zibu and the Lost Little Star", "es": "Zibu y la estrellita perdida"},
+  "lesson": {"en": "When we help each other, everything is possible.", "es": "Cuando nos ayudamos, todo es posible."},
+  "guest": {"id": "star", "name": {"en": "Twinkle", "es": "Chispita"}},
+  "scenes": [
+    {
+      "id": "title", "type": "title", "bg": "garden", "time": "day",
+      "cast": [{"who": "zibu", "x": 0.5}],
+      "lines": [
+        {"who": "narrator", "en": "Zibu and the Lost Little Star!", "es": "¡Zibu y la estrellita perdida!", "pause": 1.0}
+      ]
+    },
+    {
+      "id": "garden-sunset", "bg": "garden", "time": "sunset",
+      "cast": [{"who": "zibu", "x": 0.35}, {"who": "lila", "x": 1.25}],
+      "props": [{"what": "ball", "x": 0.58, "y": 0.86, "at": 3, "anim": "bounce"}],
+      "lines": [
+        {"who": "narrator", "en": "This is Zibu. Zibu lives in a sunny garden, full of flowers.", "es": "Este es Zibu. Zibu vive en un jardín soleado, lleno de flores."},
+        {"who": "zibu", "en": "Hi, friends! I'm Zibu!", "es": "¡Hola, amigos! ¡Soy Zibu!", "action": "jump"},
+        {"who": "zibu", "en": "Do you want to play with me today?", "es": "¿Quieren jugar conmigo hoy?", "action": "wave"},
+        {"who": "narrator", "en": "Zibu loves to play with his big red ball.", "es": "A Zibu le encanta jugar con su gran pelota roja."},
+        {"who": "zibu", "en": "One, two... bounce! Hee hee!", "es": "Uno, dos... ¡bota! ¡Ji, ji!", "mood": "laugh", "action": "jump"},
+        {"who": "narrator", "en": "And here comes his best friend... Lila the bunny!", "es": "Y aquí llega su mejor amiga... ¡la conejita Lila!", "moves": [{"who": "lila", "to": 0.72}]},
+        {"who": "lila", "en": "Hi, Zibu! Can I play too?", "es": "¡Hola, Zibu! ¿Puedo jugar yo también?", "action": "jump"},
+        {"who": "zibu", "en": "Of course, Lila! Playing is better with friends!", "es": "¡Claro que sí, Lila! ¡Jugar es mejor con amigos!", "mood": "happy"},
+        {"who": "narrator", "en": "They played and played... until the sun went to sleep.", "es": "Jugaron y jugaron... hasta que el sol se fue a dormir.", "pause": 1.5}
+      ]
+    },
+    {
+      "id": "garden-night", "bg": "garden", "time": "night",
+      "cast": [{"who": "zibu", "x": 0.3}, {"who": "lila", "x": 0.47}, {"who": "star", "x": 0.78, "y": -0.2}],
+      "lines": [
+        {"who": "narrator", "en": "Night came to the garden. The sky was full of little stars.", "es": "Llegó la noche al jardín. El cielo estaba lleno de estrellitas."},
+        {"who": "lila", "en": "Look, Zibu! The stars are shining!", "es": "¡Mira, Zibu! ¡Las estrellas están brillando!", "mood": "surprised"},
+        {"who": "zibu", "en": "They're so pretty! Let's count them! One... two... three...", "es": "¡Qué bonitas! ¡Vamos a contarlas! Una... dos... tres..."},
+        {"who": "narrator", "en": "But suddenly... whoosh! A tiny star fell down from the sky!", "es": "Pero de repente... ¡fiuuu! ¡Una estrellita se cayó del cielo!", "moves": [{"who": "star", "to": 0.78, "toY": 0.72}]},
+        {"who": "zibu", "en": "Whoa! What was that?", "es": "¡Uy! ¿Qué fue eso?", "mood": "surprised", "action": "jump"},
+        {"who": "lila", "en": "It landed by the flowers! Let's go and see!", "es": "¡Cayó junto a las flores! ¡Vamos a ver!", "mood": "surprised"},
+        {"who": "narrator", "en": "Zibu and Lila walked over... very, very slowly.", "es": "Zibu y Lila se acercaron... muy, muy despacito.", "moves": [{"who": "zibu", "to": 0.42}, {"who": "lila", "to": 0.6}]},
+        {"who": "star", "en": "Sniff... sniff...", "es": "Snif... snif...", "mood": "sad"},
+        {"who": "zibu", "en": "Hello, little star. Why are you crying?", "es": "Hola, estrellita. ¿Por qué lloras?", "mood": "happy"},
+        {"who": "star", "en": "I'm Twinkle. I fell down from the sky... and now I can't get home.", "es": "Soy Chispita. Me caí del cielo... y ahora no puedo volver a casa.", "mood": "sad"},
+        {"who": "lila", "en": "Oh no! Poor Twinkle!", "es": "¡Oh, no! ¡Pobre Chispita!", "mood": "sad"},
+        {"who": "zibu", "en": "Don't worry, Twinkle. We will help you get home!", "es": "No te preocupes, Chispita. ¡Te vamos a ayudar a volver a casa!", "mood": "happy", "action": "jump"},
+        {"who": "star", "en": "Really? Oh, thank you!", "es": "¿De verdad? ¡Ay, gracias!", "mood": "happy"},
+        {"who": "narrator", "en": "But how can a tiny star get back to the sky? It's so, so far away!", "es": "Pero ¿cómo puede una estrellita volver al cielo? ¡Está muy, muy lejos!", "pause": 1.0}
+      ]
+    },
+    {
+      "id": "jumping", "bg": "garden", "time": "night",
+      "cast": [{"who": "zibu", "x": 0.42}, {"who": "lila", "x": 0.62}, {"who": "star", "x": 0.78, "y": 0.72}],
+      "lines": [
+        {"who": "zibu", "en": "I know! I can jump really high! I'll carry you up there!", "es": "¡Ya sé! ¡Puedo saltar muy alto! ¡Te voy a llevar hasta arriba!", "mood": "happy"},
+        {"who": "narrator", "en": "Let's help Zibu count his jumps!", "es": "¡Ayudemos a Zibu a contar sus saltos!"},
+        {"who": "zibu", "en": "One!", "es": "¡Uno!", "action": "bigjump", "show": {"en": "1", "es": "1"}, "pause": 0.4},
+        {"who": "zibu", "en": "Two!", "es": "¡Dos!", "action": "bigjump", "show": {"en": "2", "es": "2"}, "pause": 0.4},
+        {"who": "zibu", "en": "Three!", "es": "¡Tres!", "action": "bigjump", "show": {"en": "3", "es": "3"}, "pause": 0.6},
+        {"who": "zibu", "en": "Oh... the sky is still too high.", "es": "Oh... el cielo sigue muy alto.", "mood": "sad", "action": "shake"},
+        {"who": "lila", "en": "Maybe we need a different idea.", "es": "Quizás necesitamos otra idea."},
+        {"who": "star", "en": "Up on the big hill, in the forest, the sky is much closer!", "es": "¡En la colina grande, en el bosque, el cielo está mucho más cerca!", "mood": "surprised"},
+        {"who": "zibu", "en": "Then let's go to the hill! It's adventure time!", "es": "¡Entonces vamos a la colina! ¡Es hora de una aventura!", "mood": "laugh", "action": "jump"},
+        {"who": "narrator", "en": "And off they went!", "es": "¡Y allá se fueron!", "moves": [{"who": "zibu", "to": 1.3}, {"who": "lila", "to": 1.45}, {"who": "star", "to": 1.6}], "pause": 1.5}
+      ]
+    },
+    {
+      "id": "forest", "bg": "forest", "time": "night",
+      "cast": [{"who": "zibu", "x": -0.2}, {"who": "lila", "x": -0.35}, {"who": "star", "x": -0.5, "y": 0.62}],
+      "props": [
+        {"what": "firefly", "x": 0.2, "y": 0.3, "at": 6, "anim": "float"},
+        {"what": "firefly", "x": 0.4, "y": 0.18, "at": 7, "anim": "float"},
+        {"what": "firefly", "x": 0.55, "y": 0.35, "at": 8, "anim": "float"},
+        {"what": "firefly", "x": 0.72, "y": 0.2, "at": 9, "anim": "float"},
+        {"what": "firefly", "x": 0.88, "y": 0.33, "at": 10, "anim": "float"}
+      ],
+      "lines": [
+        {"who": "narrator", "en": "The friends walked into the forest. It was dark... and very quiet.", "es": "Los amigos entraron en el bosque. Estaba oscuro... y muy silencioso.", "moves": [{"who": "zibu", "to": 0.45}, {"who": "lila", "to": 0.28}, {"who": "star", "to": 0.62}], "pause": 0.8},
+        {"who": "lila", "en": "Zibu... I'm a little bit scared.", "es": "Zibu... tengo un poquito de miedo.", "mood": "scared"},
+        {"who": "zibu", "en": "It's okay, Lila. Hold my hand. We're together.", "es": "Tranquila, Lila. Dame la mano. Estamos juntos.", "mood": "happy"},
+        {"who": "star", "en": "And I can shine a little light for you!", "es": "¡Y yo puedo darles un poquito de luz!", "mood": "happy", "action": "glow"},
+        {"who": "narrator", "en": "Then... something magical happened. Little lights appeared in the trees!", "es": "Entonces... pasó algo mágico. ¡Aparecieron lucecitas entre los árboles!"},
+        {"who": "lila", "en": "Fireflies! Let's count them!", "es": "¡Luciérnagas! ¡Vamos a contarlas!", "mood": "surprised", "action": "jump"},
+        {"who": "narrator", "en": "One firefly!", "es": "¡Una luciérnaga!", "show": {"en": "1", "es": "1"}},
+        {"who": "narrator", "en": "Two fireflies!", "es": "¡Dos luciérnagas!", "show": {"en": "2", "es": "2"}},
+        {"who": "narrator", "en": "Three fireflies!", "es": "¡Tres luciérnagas!", "show": {"en": "3", "es": "3"}},
+        {"who": "narrator", "en": "Four fireflies!", "es": "¡Cuatro luciérnagas!", "show": {"en": "4", "es": "4"}},
+        {"who": "narrator", "en": "Five fireflies!", "es": "¡Cinco luciérnagas!", "show": {"en": "5", "es": "5"}},
+        {"who": "zibu", "en": "Five little fireflies! Thank you for the light!", "es": "¡Cinco lucecitas! ¡Gracias por la luz!", "mood": "laugh", "action": "wave"},
+        {"who": "lila", "en": "I'm not scared anymore!", "es": "¡Ya no tengo miedo!", "mood": "happy", "action": "jump"},
+        {"who": "narrator", "en": "The fireflies showed them the way through the forest.", "es": "Las luciérnagas les mostraron el camino por el bosque.", "moves": [{"who": "zibu", "to": 1.3}, {"who": "lila", "to": 1.15}, {"who": "star", "to": 1.45}], "pause": 1.2}
+      ]
+    },
+    {
+      "id": "river", "bg": "river", "time": "night",
+      "cast": [{"who": "zibu", "x": -0.2}, {"who": "lila", "x": -0.35}, {"who": "star", "x": -0.5, "y": 0.6}],
+      "props": [
+        {"what": "stone", "x": 0.36, "y": 0.94, "at": 0},
+        {"what": "stone", "x": 0.48, "y": 0.94, "at": 0},
+        {"what": "stone", "x": 0.6, "y": 0.94, "at": 0},
+        {"what": "stone", "x": 0.72, "y": 0.94, "at": 0}
+      ],
+      "lines": [
+        {"who": "narrator", "en": "Soon, they came to a little river.", "es": "Pronto, llegaron a un riachuelo.", "moves": [{"who": "zibu", "to": 0.2}, {"who": "lila", "to": 0.1}, {"who": "star", "to": 0.3}]},
+        {"who": "lila", "en": "Oh! How can we get across?", "es": "¡Oh! ¿Cómo vamos a cruzar?", "mood": "surprised"},
+        {"who": "zibu", "en": "Look! Stepping stones! We can hop across. Count with me!", "es": "¡Miren! ¡Piedras! Podemos cruzar saltando. ¡Cuenten conmigo!", "mood": "happy"},
+        {"who": "zibu", "en": "One!", "es": "¡Una!", "show": {"en": "1", "es": "1"}, "action": "bigjump", "moves": [{"who": "zibu", "to": 0.36}]},
+        {"who": "zibu", "en": "Two!", "es": "¡Dos!", "show": {"en": "2", "es": "2"}, "action": "bigjump", "moves": [{"who": "zibu", "to": 0.48}]},
+        {"who": "zibu", "en": "Three!", "es": "¡Tres!", "show": {"en": "3", "es": "3"}, "action": "bigjump", "moves": [{"who": "zibu", "to": 0.6}]},
+        {"who": "zibu", "en": "Four!", "es": "¡Cuatro!", "show": {"en": "4", "es": "4"}, "action": "bigjump", "moves": [{"who": "zibu", "to": 0.72}]},
+        {"who": "zibu", "en": "And... jump! I made it!", "es": "Y... ¡salto! ¡Lo logré!", "mood": "laugh", "action": "bigjump", "moves": [{"who": "zibu", "to": 0.86}]},
+        {"who": "lila", "en": "My turn! Hop, hop, hop, hop... and hop!", "es": "¡Me toca! Salto, salto, salto, salto... ¡y salto!", "mood": "laugh", "action": "bigjump", "moves": [{"who": "lila", "to": 0.74}]},
+        {"who": "star", "en": "And I can just float! Wheee!", "es": "¡Y yo puedo flotar! ¡Yupiii!", "mood": "laugh", "moves": [{"who": "star", "to": 0.62, "toY": 0.5}]},
+        {"who": "narrator", "en": "Four stepping stones, and everyone got across. Hooray!", "es": "Cuatro piedras, y todos cruzaron el río. ¡Hurra!", "moves": [{"who": "zibu", "to": 1.3}, {"who": "lila", "to": 1.2}, {"who": "star", "to": 1.45}], "pause": 1.2}
+      ]
+    },
+    {
+      "id": "hilltop", "bg": "hill", "time": "night",
+      "cast": [{"who": "zibu", "x": -0.2}, {"who": "lila", "x": -0.35}, {"who": "star", "x": -0.5, "y": 0.6}],
+      "props": [
+        {"what": "balloon", "color": "#ff4d4d", "x": 0.6, "y": 0.42, "at": 5, "until": 10},
+        {"what": "balloon", "color": "#3d86f0", "x": 0.68, "y": 0.38, "at": 6, "until": 10},
+        {"what": "balloon", "color": "#ffd23f", "x": 0.76, "y": 0.42, "at": 7, "until": 10},
+        {"what": "balloon", "color": "#3cc45a", "x": 0.84, "y": 0.38, "at": 8, "until": 10}
+      ],
+      "lines": [
+        {"who": "narrator", "en": "At last... they reached the top of the big hill.", "es": "Por fin... llegaron a la cima de la colina grande.", "moves": [{"who": "zibu", "to": 0.3}, {"who": "lila", "to": 0.48}, {"who": "star", "to": 0.4, "toY": 0.55}], "pause": 0.6},
+        {"who": "zibu", "en": "Wow! The sky is so close now!", "es": "¡Guau! ¡Ahora el cielo está muy cerca!", "mood": "surprised", "action": "jump"},
+        {"who": "star", "en": "But it's still too high for me to fly...", "es": "Pero todavía está muy alto para volar...", "mood": "sad"},
+        {"who": "lila", "en": "I have an idea! Balloons! Balloons float up into the sky!", "es": "¡Tengo una idea! ¡Globos! ¡Los globos suben hasta el cielo!", "mood": "laugh", "action": "jump"},
+        {"who": "narrator", "en": "Lila had four balloons. Let's say their colors!", "es": "Lila tenía cuatro globos. ¡Vamos a decir sus colores!"},
+        {"who": "narrator", "en": "Red!", "es": "¡Rojo!", "show": {"en": "Red", "es": "Rojo", "color": "#ff4d4d"}, "pause": 0.4},
+        {"who": "narrator", "en": "Blue!", "es": "¡Azul!", "show": {"en": "Blue", "es": "Azul", "color": "#3d86f0"}, "pause": 0.4},
+        {"who": "narrator", "en": "Yellow!", "es": "¡Amarillo!", "show": {"en": "Yellow", "es": "Amarillo", "color": "#ffc21a"}, "pause": 0.4},
+        {"who": "narrator", "en": "Green!", "es": "¡Verde!", "show": {"en": "Green", "es": "Verde", "color": "#3cc45a"}, "pause": 0.4},
+        {"who": "zibu", "en": "Let's tie the balloons to Twinkle!", "es": "¡Vamos a atar los globos a Chispita!", "mood": "happy"},
+        {"who": "narrator", "en": "One, two, three... and four! And slowly... Twinkle began to float up!", "es": "Uno, dos, tres... ¡y cuatro! Y poco a poco... ¡Chispita empezó a subir!", "balloons": true, "moves": [{"who": "star", "to": 0.5, "toY": 0.35}]},
+        {"who": "star", "en": "I'm flying! I'm really flying!", "es": "¡Estoy volando! ¡De verdad estoy volando!", "mood": "laugh"},
+        {"who": "zibu", "en": "Goodbye, Twinkle! Have a good trip!", "es": "¡Adiós, Chispita! ¡Buen viaje!", "action": "wave"},
+        {"who": "lila", "en": "We will miss you!", "es": "¡Te vamos a extrañar!", "action": "wave"},
+        {"who": "star", "en": "Thank you, my friends! You helped me so much!", "es": "¡Gracias, amigos! ¡Me ayudaron muchísimo!", "mood": "happy", "moves": [{"who": "star", "to": 0.62, "toY": -0.4}]},
+        {"who": "narrator", "en": "Higher and higher went Twinkle... all the way home.", "es": "Más y más alto subió Chispita... hasta llegar a casa.", "pause": 1.8}
+      ]
+    },
+    {
+      "id": "sky", "bg": "sky", "time": "night",
+      "cast": [{"who": "star", "x": 0.5, "y": 1.3}],
+      "props": [
+        {"what": "bigstar", "x": 0.3, "y": 0.42, "at": 0},
+        {"what": "bigstar", "x": 0.72, "y": 0.42, "at": 0}
+      ],
+      "lines": [
+        {"who": "narrator", "en": "Up in the sky, Twinkle's family was waiting for her.", "es": "Arriba en el cielo, la familia de Chispita la estaba esperando.", "moves": [{"who": "star", "to": 0.5, "toY": 0.5}]},
+        {"who": "star", "en": "Mommy! Daddy! I'm home!", "es": "¡Mami! ¡Papi! ¡Ya estoy en casa!", "mood": "laugh", "action": "jump"},
+        {"who": "narrator", "en": "And to say thank you... Twinkle shined brighter than ever before.", "es": "Y para dar las gracias... Chispita brilló más que nunca.", "action": "glow", "glowWho": "star", "pause": 1.5}
+      ]
+    },
+    {
+      "id": "goodnight", "bg": "garden", "time": "night",
+      "cast": [{"who": "zibu", "x": 0.38}, {"who": "lila", "x": 0.6}],
+      "props": [{"what": "brightstar", "x": 0.5, "y": 0.18, "at": 0}],
+      "lines": [
+        {"who": "narrator", "en": "Back in the garden, Zibu and Lila looked up at the sky.", "es": "De vuelta en el jardín, Zibu y Lila miraron al cielo."},
+        {"who": "lila", "en": "Look, Zibu! The brightest star! It's Twinkle!", "es": "¡Mira, Zibu! ¡La estrella más brillante! ¡Es Chispita!", "mood": "surprised", "action": "jump"},
+        {"who": "zibu", "en": "Good night, Twinkle!", "es": "¡Buenas noches, Chispita!", "mood": "happy", "action": "wave"},
+        {"who": "narrator", "en": "Zibu and Lila learned something special today. When we help each other... everything is possible.", "es": "Zibu y Lila aprendieron algo muy especial hoy. Cuando nos ayudamos... todo es posible.", "pause": 0.8},
+        {"who": "zibu", "en": "And now... it's time to sing!", "es": "Y ahora... ¡es hora de cantar!", "mood": "laugh", "action": "jump"}
+      ]
+    },
+    {
+      "id": "song", "type": "song", "bg": "sky", "time": "night",
+      "cast": [{"who": "zibu", "x": 0.3}, {"who": "lila", "x": 0.7}, {"who": "star", "x": 0.5, "y": 0.4}],
+      "lines": [
+        {"who": "narrator", "en": "Little star, up so high,", "es": "Estrellita, allá en lo alto,"},
+        {"who": "narrator", "en": "shining bright up in the sky!", "es": "¡brillas fuerte en el cielo!"},
+        {"who": "narrator", "en": "If you fall, don't you cry,", "es": "Si te caes, no llores,"},
+        {"who": "narrator", "en": "friends will help you reach the sky!", "es": "¡tus amigos te ayudarán!"},
+        {"who": "zibu", "en": "Count with me, one, two, three,", "es": "Cuenta conmigo, uno, dos, tres,"},
+        {"who": "lila", "en": "little lights for you and me!", "es": "¡lucecitas para ti y para mí!"},
+        {"who": "zibu", "en": "Red and blue, yellow, green,", "es": "Rojo, azul, amarillo, verde,"},
+        {"who": "lila", "en": "the prettiest balloons you've ever seen!", "es": "¡los globos más bonitos que hay!"},
+        {"who": "narrator", "en": "Little star, up so high,", "es": "Estrellita, allá en lo alto,"},
+        {"who": "narrator", "en": "shining bright up in the sky!", "es": "¡brillas fuerte en el cielo!"},
+        {"who": "narrator", "en": "If you fall, don't you cry,", "es": "Si te caes, no llores,"},
+        {"who": "narrator", "en": "friends will help you reach the sky!", "es": "¡tus amigos te ayudarán!"},
+        {"who": "zibu", "en": "One more time! Sing with us, really loud!", "es": "¡Otra vez! ¡Canten con nosotros, bien fuerte!", "mood": "laugh", "action": "jump"},
+        {"who": "narrator", "en": "Little star, up so high,", "es": "Estrellita, allá en lo alto,"},
+        {"who": "narrator", "en": "shining bright up in the sky!", "es": "¡brillas fuerte en el cielo!"},
+        {"who": "narrator", "en": "If you fall, don't you cry,", "es": "Si te caes, no llores,"},
+        {"who": "narrator", "en": "friends will help you reach the sky!", "es": "¡tus amigos te ayudarán!"},
+        {"who": "zibu", "en": "Count with me, one, two, three,", "es": "Cuenta conmigo, uno, dos, tres,"},
+        {"who": "lila", "en": "little lights for you and me!", "es": "¡lucecitas para ti y para mí!"},
+        {"who": "zibu", "en": "Red and blue, yellow, green,", "es": "Rojo, azul, amarillo, verde,"},
+        {"who": "lila", "en": "the prettiest balloons you've ever seen!", "es": "¡los globos más bonitos que hay!"},
+        {"who": "narrator", "en": "Little star, up so high,", "es": "Estrellita, allá en lo alto,"},
+        {"who": "narrator", "en": "shining bright up in the sky!", "es": "¡brillas fuerte en el cielo!"},
+        {"who": "narrator", "en": "If you fall, don't you cry,", "es": "Si te caes, no llores,"},
+        {"who": "narrator", "en": "friends will help you reach the sky!", "es": "¡tus amigos te ayudarán!"},
+        {"who": "star", "en": "Thank you, friends! La la la!", "es": "¡Gracias, amigos! ¡La la la!", "mood": "laugh"}
+      ]
+    },
+    {
+      "id": "recap", "type": "recap", "bg": "garden", "time": "day",
+      "cast": [{"who": "zibu", "x": 0.2}, {"who": "lila", "x": 0.82}],
+      "lines": [
+        {"who": "narrator", "en": "Did you like the story? Let's remember it together!", "es": "¿Te gustó la historia? ¡Vamos a recordarla juntos!"},
+        {"who": "narrator", "en": "What fell down from the sky?", "es": "¿Qué se cayó del cielo?", "pause": 2.5},
+        {"who": "narrator", "en": "A little star! Her name was Twinkle!", "es": "¡Una estrellita! ¡Se llamaba Chispita!", "showProp": "star"},
+        {"who": "lila", "en": "Can you shine like Twinkle? Open and close your hands... sparkle, sparkle!", "es": "¿Puedes brillar como Chispita? Abre y cierra las manos... ¡brilla, brilla!", "mood": "laugh", "showProp": "star", "pause": 1.5},
+        {"who": "narrator", "en": "How many times did Zibu jump?", "es": "¿Cuántas veces saltó Zibu?", "pause": 2.5},
+        {"who": "narrator", "en": "Three times! One, two, three!", "es": "¡Tres veces! ¡Uno, dos, tres!", "show": {"en": "3", "es": "3"}},
+        {"who": "zibu", "en": "Can you jump like me? Stand up! Let's jump together!", "es": "¿Puedes saltar como yo? ¡Ponte de pie! ¡Saltemos juntos!", "mood": "laugh", "action": "jump"},
+        {"who": "zibu", "en": "One!", "es": "¡Uno!", "action": "bigjump", "show": {"en": "1", "es": "1"}, "pause": 0.5},
+        {"who": "zibu", "en": "Two!", "es": "¡Dos!", "action": "bigjump", "show": {"en": "2", "es": "2"}, "pause": 0.5},
+        {"who": "zibu", "en": "Three!", "es": "¡Tres!", "action": "bigjump", "show": {"en": "3", "es": "3"}, "pause": 0.5},
+        {"who": "zibu", "en": "Great jumping! You're super!", "es": "¡Muy bien saltado! ¡Eres genial!", "mood": "laugh"},
+        {"who": "narrator", "en": "How many fireflies lit up the forest?", "es": "¿Cuántas luciérnagas iluminaron el bosque?", "pause": 2.5},
+        {"who": "narrator", "en": "Five fireflies!", "es": "¡Cinco luciérnagas!", "show": {"en": "5", "es": "5"}},
+        {"who": "narrator", "en": "How many stepping stones were in the river?", "es": "¿Cuántas piedras había en el río?", "pause": 2.5},
+        {"who": "narrator", "en": "Four stones!", "es": "¡Cuatro piedras!", "show": {"en": "4", "es": "4"}},
+        {"who": "narrator", "en": "And what colors were the balloons?", "es": "¿Y de qué colores eran los globos?", "pause": 2.5},
+        {"who": "narrator", "en": "Red, blue, yellow and green!", "es": "¡Rojo, azul, amarillo y verde!", "showProp": "balloons"},
+        {"who": "narrator", "en": "And what did Zibu and Lila learn?", "es": "¿Y qué aprendieron Zibu y Lila?", "pause": 2.5},
+        {"who": "narrator", "en": "That when we help each other, everything is possible!", "es": "¡Que cuando nos ayudamos, todo es posible!"}
+      ]
+    },
+    {
+      "id": "dance", "type": "dance", "bg": "garden", "time": "sunset",
+      "cast": [{"who": "zibu", "x": 0.3}, {"who": "lila", "x": 0.7}, {"who": "star", "x": 0.5, "y": 0.35}],
+      "lines": [
+        {"who": "zibu", "en": "Dance party! Dance with us, friends!", "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!", "mood": "laugh", "action": "jump", "pause": 14},
+        {"who": "lila", "en": "Wiggle, wiggle! Spin around!", "es": "¡A moverse! ¡Da una vuelta!", "mood": "laugh", "action": "spin", "pause": 10},
+        {"who": "zibu", "en": "Thank you for helping Twinkle with us! See you next time, friends!", "es": "¡Gracias por ayudar a Chispita con nosotros! ¡Hasta la próxima, amigos!", "action": "wave"},
+        {"who": "lila", "en": "Bye-bye!", "es": "¡Adiós, adiós!", "action": "wave", "pause": 3.0}
+      ]
+    }
+  ]
+}
