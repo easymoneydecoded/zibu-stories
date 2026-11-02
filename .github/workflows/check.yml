@@ -1,0 +1,28 @@
+name: Zibu - comprobar canales
+
+# Dice a que canal apunta cada token (YT_REFRESH_EN / YT_REFRESH_ES) sin subir nada.
+on: workflow_dispatch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install google-api-python-client google-auth
+      - env:
+          YT_CLIENT_ID:     ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_EN:    ${{ secrets.YT_REFRESH_EN }}
+          YT_REFRESH_ES:    ${{ secrets.YT_REFRESH_ES }}
+        shell: python
+        run: |
+          import os
+          from google.oauth2.credentials import Credentials
+          from googleapiclient.discovery import build
+          for lang in ("EN", "ES"):
+              creds = Credentials(None, refresh_token=os.environ[f"YT_REFRESH_{lang}"], client_id=os.environ["YT_CLIENT_ID"],
+                                  client_secret=os.environ["YT_CLIENT_SECRET"], token_uri="https://oauth2.googleapis.com/token")
+              ch = build("youtube", "v3", credentials=creds).channels().list(part="snippet", mine=True).execute()["items"][0]
+              print(f"{lang}: {ch['snippet']['title']} ({ch['snippet'].get('customUrl', '')})")

@@ -59,12 +59,14 @@ def gemini(prompt: str, max_tokens: int = 16000, temperature: float = 0.9) -> di
                                  "responseMimeType": "application/json"}}
     for model in MODELS:
         for intento in range(3):
+            t0 = time.time()
             try:
                 r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
                                   headers={"x-goog-api-key": key}, json=body, timeout=300)
             except requests.RequestException as ex:
-                print(f"   ! Gemini {model}: {type(ex).__name__}")
+                print(f"   ! Gemini {model}: {type(ex).__name__} tras {time.time() - t0:.0f} s")
                 continue
+            print(f"   . Gemini {model}: HTTP {r.status_code} en {time.time() - t0:.0f} s")
             if r.status_code == 200:
                 b = r.json()
                 parts = b["candidates"][0].get("content", {}).get("parts", [])
