@@ -1,0 +1,1272 @@
+{
+ "slug": "zibu-and-the-little-star",
+ "title": {
+  "en": "Zibu and the Little Star",
+  "es": "Zibu y la Estrellita"
+ },
+ "lesson": {
+  "en": "Always tell the truth, because honesty makes our friendships strong.",
+  "es": "Siempre di la verdad, porque la honestidad hace fuertes nuestras amistades."
+ },
+ "guest": {
+  "species": "star",
+  "name": {
+   "en": "Twinkle",
+   "es": "Destella"
+  }
+ },
+ "thumb": {
+  "en": [
+   "Tell the truth!",
+   "Big and small"
+  ],
+  "es": [
+   "¡Di la verdad!",
+   "Grande y chico"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu and the Little Star ⭐ Learn to Tell the Truth for Kids!",
+   "description": "Join Zibu, Lila, and Twinkle the star in the sky! 🌟\nZibu accidentally bumps into a balloon and tries to hide it.\nCan he learn to tell the truth and be honest?\nWe also learn about big and small opposites!\nPerfect for toddlers aged 2 to 6 years old.\nFun learning moments and friendly characters.\n#ZibuAndFriends #KidsAnimation #TellTheTruth #LearningColors #ToddlerLearning",
+   "tags": [
+    "zibu and friends",
+    "tell the truth",
+    "honesty for kids",
+    "big and small",
+    "opposites for kids",
+    "nursery animation",
+    "toddler learning",
+    "preschool show",
+    "zibu monster",
+    "stars for kids",
+    "educational cartoon",
+    "spanish for kids",
+    "kids friendship"
+   ]
+  },
+  "es": {
+   "title": "Zibu y la Estrellita ⭐ ¡Aprende a Decir la Verdad!",
+   "description": "¡Acompaña a Zibu, Lila y Destella la estrella en el cielo! 🌟\nZibu choca sin querer con un globo y trata de ocultarlo.\n¿Podrá aprender a decir la verdad y ser honesto?\n¡También aprendemos sobre los opuestos grande y pequeño!\nIdeal para niños de 2 a 6 años.\nMomentos divertidos y personajes amigables.\n#ZibuYAmigos #AnimacionInfantil #DecirLaVerdad #Opuestos #AprenderJugando",
+   "tags": [
+    "zibu y amigos",
+    "decir la verdad",
+    "honestidad para ninos",
+    "grande y pequeno",
+    "opuestos para ninos",
+    "animacion infantil",
+    "aprendizaje temprano",
+    "preescolar",
+    "monstruo zibu",
+    "estrellas para ninos",
+    "dibujos educativos",
+    "aprender ingles",
+    "amistad para ninos"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Hi, friend! Oh no...",
+     "es": "¡Hola, amigo! Ay no...",
+     "action": "jump",
+     "mood": "laugh"
+    },
+    {
+     "who": "zibu",
+     "en": "Zibu hid a balloon!",
+     "es": "¡Zibu escondió un globo!",
+     "action": "wave",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help him tell the truth?",
+     "es": "¿Nos ayudas a decir la verdad?",
+     "action": "bigjump",
+     "mood": "laugh"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Little Star!",
+     "es": "¡Zibu y la Estrellita!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "intro-sky",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": -0.2
+    },
+    {
+     "who": "lila",
+     "x": -0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.3,
+     "y": 0.5,
+     "at": 2,
+     "anim": "float"
+    },
+    {
+     "what": "balloon",
+     "x": 0.7,
+     "y": 0.6,
+     "at": 2,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "High up in the bright blue sky, Zibu and Lila play with their friend Twinkle.",
+     "es": "Muy alto en el cielo azul, Zibu y Lila juegan con su amiga Destella."
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, blue sky! Hello, Twinkle!",
+     "es": "¡Hola, cielo azul! ¡Hola, Destella!",
+     "mood": "happy",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.2
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Look everyone! Twinkle brought some fun toys!",
+     "es": "¡Miren todos! ¡Destella trajo juguetes divertidos!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.8
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "I brought balloons! A big balloon and a small balloon!",
+     "es": "¡Traje globos! ¡Un globo grande y un globo pequeño!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "Twinkle showed a big balloon and a small balloon to her friends.",
+     "es": "Destella le mostró un globo grande y un globo pequeño a sus amigos."
+    },
+    {
+     "who": "zibu",
+     "en": "Ooooh! So pretty! Can I hold them?",
+     "es": "¡Ooooh! ¡Qué bonitos! ¿Puedo sostenerlos?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Of course, Zibu! Be very careful.",
+     "es": "¡Claro que sí, Zibu! Ten mucho cuidado.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Hold them gently, Zibu...",
+     "es": "Sostenlos con suavidad, Zibu...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I am super careful! Look at me!",
+     "es": "¡Soy Súper cuidadoso! ¡Mírame!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu smiled and reached for the balloons in the sky.",
+     "es": "Zibu sonrió y estiró las manos hacia los globos en el cielo.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "first-try",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.35,
+     "y": 0.5,
+     "at": 0,
+     "until": 3,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu tried to juggle the balloons.",
+     "es": "Zibu intentó hacer malabares con los globos."
+    },
+    {
+     "who": "zibu",
+     "en": "One... two... hop!",
+     "es": "Uno... dos... ¡salto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Yay, Zibu! You can do it!",
+     "es": "¡Bien, Zibu! ¡Tú puedes!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "But suddenly... pop!",
+     "es": "Pero de repente... ¡pop!",
+     "pause": 0.5
+    },
+    {
+     "who": "narrator",
+     "en": "The big balloon popped with a very loud sound!",
+     "es": "¡El globo grande explotó con un sonido muy fuerte!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh no! Oh oh...",
+     "es": "¡Oh, no! Oh, oh...",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "guest",
+     "en": "Oh! The big balloon...",
+     "es": "¡Ay! El globo grande...",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu got very nervous. His heart went thump, thump, thump.",
+     "es": "Zibu se puso muy nervioso. Su corazón latía muy rápido."
+    },
+    {
+     "who": "zibu",
+     "en": "I... I didn't mean to do it!",
+     "es": "¡Yo... yo no quise hacerlo!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Zibu? Are you okay?",
+     "es": "¿Zibu? ¿Estás bien?",
+     "mood": "surprised",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.8
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu looked at the pieces falling down. What was he going to do?",
+     "es": "Zibu miró los pedazos cayendo. ¿Qué iba a hacer?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "small-problem",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.4
+    },
+    {
+     "who": "lila",
+     "x": 0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.7,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.4,
+     "y": 0.7,
+     "at": 0,
+     "until": 2,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu quickly picked up the pieces of the balloon.",
+     "es": "Zibu rápidamente recogió los pedazos del globo."
+    },
+    {
+     "who": "zibu",
+     "en": "Ugh... let me hide this! Nobody will see!",
+     "es": "¡Uf... déjame esconder esto! ¡Nadie lo verá!",
+     "mood": "scared",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu? What are you hiding behind that cloud?",
+     "es": "¿Zibu? ¿Qué estás escondiendo detrás de esa nube?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Nothing! Absolutely nothing! Hehehe...",
+     "es": "¡Nada! ¡Absolutamente nada! Je, je, je...",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Twinkle floated down and looked at Zibu with sad eyes.",
+     "es": "Destella bajó flotando y miró a Zibu con ojos tristes.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7,
+       "toY": 0.5
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oh... did something happen to my balloon?",
+     "es": "Oh... ¿le pasó algo a mi globo?",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Um... no! It just... flew away very fast!",
+     "es": "¡Mm... no! ¡Simplemente... se fue volando muy rápido!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Twinkle sighed softly.",
+     "es": "Destella suspiró suavemente."
+    },
+    {
+     "who": "guest",
+     "en": "I feel sad when friends don't tell me the truth...",
+     "es": "Me pongo triste cuando los amigos no me dicen la verdad...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu, remember? Honesty is always the best way.",
+     "es": "Zibu, ¿recuerdas? La honestidad siempre es el mejor camino.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu felt a little heavy in his tummy. He knew Lila was right.",
+     "es": "Zibu sintió un pequeño peso en la panza. Sabía que Lila tenía razón."
+    },
+    {
+     "who": "zibu",
+     "en": "Oh, Lila... you are right.",
+     "es": "Ay, Lila... tienes razón.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Let's go down to the garden and talk about it.",
+     "es": "Bajemos al jardín para hablar de ello.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "second-try",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.6
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.3,
+     "y": 0.8,
+     "at": 0,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila walked down to the quiet garden.",
+     "es": "Zibu y Lila bajaron al tranquilo jardín.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      },
+      {
+       "who": "lila",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look! A big leaf did it! Yes, the leaf popped the balloon!",
+     "es": "¡Mira! ¡Una hoja grande lo hizo! ¡Sí, la hoja reventó el globo!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila shook her head gently and smiled.",
+     "es": "Lila negó con la cabeza suavemente y sonrió."
+    },
+    {
+     "who": "lila",
+     "en": "Oh, Zibu. Leaves are soft. They don't pop balloons.",
+     "es": "Ay, Zibu. Las hojas son suaves. No revientan globos.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Hehehe... you got me.",
+     "es": "Je, je, je... me descubriste.",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "It is okay to make mistakes, Zibu. But we must always tell the truth.",
+     "es": "Está bien cometer errores, Zibu. Pero siempre debemos decir la verdad.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu looked down at his shoes. Telling the truth is hard sometimes, but important.",
+     "es": "Zibu miró hacia abajo a sus zapatos. Decir la verdad es difícil a veces, pero importante."
+    },
+    {
+     "who": "zibu",
+     "en": "Does telling the truth make us feel better?",
+     "es": "¿Decir la verdad nos hace sentir mejor?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! It makes our friendship strong and bright.",
+     "es": "¡Sí! Hace que nuestra amistad sea fuerte y brillante.",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu took a big breath. He was ready to be honest.",
+     "es": "Zibu tomó una gran respiración. Estaba listo para ser honesto."
+    },
+    {
+     "who": "zibu",
+     "en": "I am going to tell Twinkle the truth right now!",
+     "es": "¡Le voy a decir la verdad a Destella ahora mismo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "What would Twinkle say? Let's find out!",
+     "es": "¿Qué diría Destella? ¡Vamos a descubrirlo!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-moment",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.48
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.35,
+     "y": 0.82,
+     "at": 0
+    },
+    {
+     "what": "stone",
+     "x": 0.55,
+     "y": 0.85,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "In the garden, Zibu and Lila looked at a big stone and a small stone.",
+     "es": "En el jardín, Zibu y Lila miraron una piedra grande y una piedra pequeña."
+    },
+    {
+     "who": "lila",
+     "en": "Look at these stones, Zibu. This one is big... and this one is small!",
+     "es": "Mira estas piedras, Zibu. ¡Esta es grande... y esta es pequeña!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "The big stone is so strong! It never falls over!",
+     "es": "¡La piedra grande es muy fuerte! ¡Nunca se cae!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! And honesty is strong like the big stone, too.",
+     "es": "¡Sí! Y la honestidad también es fuerte como la piedra grande.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Being honest means telling the truth... even when we are nervous.",
+     "es": "Decir la verdad significa hablar con sinceridad... aunque estemos nerviosos.",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "I understand now! Truth is the best choice!",
+     "es": "¡Ahora entiendo! ¡La verdad es la mejor opción!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu turned around to face Twinkle with a brave smile.",
+     "es": "Zibu se dio la vuelta para mirar a Destella con una sonrisa valiente."
+    },
+    {
+     "who": "zibu",
+     "en": "Twinkle... I need to tell you something very important.",
+     "es": "Destella... necesito decirte algo muy importante.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I am listening, Zibu. What is it?",
+     "es": "Te escucho, Zibu. ¿Qué pasa?",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu took another deep breath and spoke from his heart.",
+     "es": "Zibu tomó otra respiración profunda y habló desde su corazón."
+    },
+    {
+     "who": "zibu",
+     "en": "I tried to juggle your balloon... and I popped it by accident! I am so, so sorry!",
+     "es": "Traté de hacer malabares con tu globo... ¡y lo reventé por accidente! ¡Lo siento muchísimo!",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "You did it, Zibu! You told the truth!",
+     "es": "¡Lo lograste, Zibu! ¡Dijiste la verdad!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Let's see what Twinkle says next!",
+     "es": "¡Vamos a ver qué dice Destella ahora!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-solution",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.48
+    },
+    {
+     "who": "guest",
+     "x": 0.72,
+     "y": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "brightstar",
+     "x": 0.72,
+     "y": 0.6,
+     "at": 5,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Twinkle smiled brightly, and her little star lights twinkled with joy.",
+     "es": "Destella sonrió radiante, y las luceces de su estrellita brillaron de alegría."
+    },
+    {
+     "who": "guest",
+     "en": "Thank you for telling the truth, Zibu! Accidents happen to everyone.",
+     "es": "¡Gracias por decir la verdad, Zibu! A todos nos pasan accidentes.",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "Really? You are not mad at me?",
+     "es": "¿De verdad? ¿No estás enojada conmigo?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Of course not! Honesty makes our friendship so much stronger!",
+     "es": "¡Claro que no! ¡La amistad se hace mucho más fuerte con la honestidad!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Hooray! Friendship hugs for everyone!",
+     "es": "¡Horra! ¡Abrazos de amigos para todos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Twinkle floated down and gave Zibu a bright star gift and a warm hug.",
+     "es": "Destella bajó flotando y le dio a Zibu un regalo de estrella brillante y un cálido abrazo.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.38,
+       "toY": 0.7
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you, Twinkle! I feel so happy inside!",
+     "es": "¡Gracias, Destella! ¡Me siento muy feliz por dentro!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Telling the truth always feels the best!",
+     "es": "¡Decir la verdad siempre se siente de maravilla!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Now my heart is shining as bright as the sky!",
+     "es": "¡Ahora mi corazón brilla tanto como el cielo!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "The garden was full of magic, laughter, and bright starry lights.",
+     "es": "El jardín estaba lleno de magia, risas y luces brillantes de estrellas."
+    },
+    {
+     "who": "zibu",
+     "en": "We love being honest friends!",
+     "es": "¡Nos encanta ser amigos honestos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful day in the sky and the garden!",
+     "es": "¡Qué día tan maravilloso en el cielo y en el jardín!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "ending",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.48
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": -0.2
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The little star floated happily back up into the sunny sky.",
+     "es": "La estrellita flotó felizmente de vuelta hacia el cielo soleado."
+    },
+    {
+     "who": "narrator",
+     "en": "And Zibu learned a very important lesson today.",
+     "es": "Y Zibu aprendió una lección muy importante hoy.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75,
+       "toY": 0.1
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Always tell the truth, because honesty makes our friendships strong.",
+     "es": "Siempre di la verdad, porque la honestidad hace fuertes nuestras amistades.",
+     "show": {
+      "en": "Honesty!",
+      "es": "¡Honestidad!",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Being honest is the best way to be a good friend!",
+     "es": "¡Ser honestos es la mejor forma de ser un buen amigo!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Telling the truth makes our hearts feel so light!",
+     "es": "¡Sí! ¡Decir la verdad hace que nuestros corazones se sientan muy ligeros!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu and Lila! Goodbye!",
+     "es": "¡Gracias, Zibu y Lila! ¡Adiós!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "Twinkle waved brightly from up high.",
+     "es": "Destella saludó con brillo desde lo alto.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75,
+       "toY": -0.3
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, Twinkle! Come back soon!",
+     "es": "¡Adiós, Destella! ¡Vuelve pronto!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "We will miss you!",
+     "es": "¡Te extrañaremos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Friends hugged and smiled together in the lovely garden.",
+     "es": "Los amigos se abrazaron y sonrieron juntos en el hermoso jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "Friends forever!",
+     "es": "¡Amigos por siempre!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Goodbye, little friends! See you next time on Zibu and Friends!",
+     "es": "¡Adiós, amiguitos! ¡Hasta la próxima en Zibu y sus amigos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "brightstar",
+     "x": 0.5,
+     "y": 0.2,
+     "at": 0,
+     "until": 25,
+     "anim": "float",
+     "color": "#FFD700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Tell the truth today, let your friendship shine!",
+     "es": "¡Di la verdad hoy, haz tu amistad brillar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Honest words are true, sparkling all the time!",
+     "es": "¡Palabras sinceras son, brillando un montón!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "No more hiding things, keep your heart so bright!",
+     "es": "¡No hay que ocultar nada, ten el alma clara!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Telling what is real makes everything feel right!",
+     "es": "¡Decir lo que es real hace todo muy genial!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I made a big mistake, but I told the truth!",
+     "es": "¡Cometí un gran error, pero la verdad conté!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "That is the best way to show your love and proof!",
+     "es": "¡Esa es la mejor manera de mostrar lo que se quiere!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Twinkle smiled so bright, happy as can be!",
+     "es": "¡Destella sonrió feliz, tan alegre como ves!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Honesty is wonderful for you and for me!",
+     "es": "¡La honestidad es genial para ti y para mí!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Tell the truth today, let your friendship shine!",
+     "es": "¡Di la verdad hoy, haz tu amistad brillar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Honest words are true, sparkling all the time!",
+     "es": "¡Palabras sinceras son, brillando un montón!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "No more hiding things, keep your heart so bright!",
+     "es": "¡No hay que ocultar nada, ten el alma clara!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Telling what is real makes everything feel right!",
+     "es": "¡Decir lo que es real hace todo muy genial!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Tell the truth today, let your friendship shine!",
+     "es": "¡Di la verdad hoy, haz tu amistad brillar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Honest words are true, sparkling all the time!",
+     "es": "¡Palabras sinceras son, brillando un montón!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "No more hiding things, keep your heart so bright!",
+     "es": "¡No hay que ocultar nada, ten el alma clara!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Telling what is real makes everything feel right!",
+     "es": "¡Decir lo que es real hace todo muy genial!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I made a big mistake, but I told the truth!",
+     "es": "¡Cometí un gran error, pero la verdad conté!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "That is the best way to show your love and proof!",
+     "es": "¡Esa es la mejor manera de mostrar lo que se quiere!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Twinkle smiled so bright, happy as can be!",
+     "es": "¡Destella sonrió feliz, tan alegre como ves!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Honesty is wonderful for you and for me!",
+     "es": "¡La honestidad es genial para ti y para mí!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Tell the truth today, let your friendship shine!",
+     "es": "¡Di la verdad hoy, haz tu amistad brillar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Honest words are true, sparkling all the time!",
+     "es": "¡Palabras sinceras son, brillando un montón!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "No more hiding things, keep your heart so bright!",
+     "es": "¡No hay que ocultar nada, ten el alma clara!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Telling what happened makes everything feel right!",
+     "es": "¡Contar lo que pasó hace todo muy genial!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! Singing together is so much fun!",
+     "es": "¡Yupi! ¡Cantar juntos es muy divertido!",
+     "mood": "happy",
+     "action": "glow"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Who came down from the sky to play with toys?",
+     "es": "¿Quién bajó del cielo a jugar con juguetes?",
+     "mood": "surprised",
+     "show": {
+      "en": "Twinkle",
+      "es": "Destella",
+      "color": "#FFD700"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Twinkle brought balloons! What happened to the big one?",
+     "es": "¡Destella trajo globos! ¿Qué le pasó al grande?",
+     "mood": "surprised",
+     "show": {
+      "en": "Pop!",
+      "es": "¡Pum!",
+      "color": "#FF4500"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Did Zibu tell the truth right away, or did he hide it first?",
+     "es": "¿Zibu dijo la verdad de inmediato o lo ocultó primero?",
+     "mood": "surprised",
+     "show": {
+      "en": "Hide",
+      "es": "Ocultar",
+      "color": "#4682B4"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Who helped Zibu understand that honesty is best?",
+     "es": "¿Quién ayudó a Zibu a entender que la honestidad es mejor?",
+     "mood": "happy",
+     "show": {
+      "en": "Lila",
+      "es": "Lila",
+      "color": "#FF69B4"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "How did Twinkle feel when Zibu finally told the truth?",
+     "es": "¿Cómo se sintió Destella cuando Zibu por fin dijo la verdad?",
+     "mood": "happy",
+     "show": {
+      "en": "Happy",
+      "es": "Feliz",
+      "color": "#32CD32"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Let's stomp our feet three times! One... two... three!",
+     "es": "¡Zapateemos tres veces! ¡Uno... dos... tres!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Now let's clap our hands together! Yay!",
+     "es": "¡Ahora aplaudamos juntos! ¡Yupi!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Always tell the truth, because honesty makes our friendships strong.",
+     "es": "Siempre di la verdad, porque la honestidad hace fuertes nuestras amistades.",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "brightstar",
+     "x": 0.5,
+     "y": 0.15,
+     "at": 0,
+     "until": 3,
+     "anim": "float",
+     "color": "#FFD700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Spin around and wiggle your toes! Whee!",
+     "es": "¡Giren y muevan los dedos de los pies! ¡Wuu!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós-adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep003-zibu-and-the-little-star"
+}
