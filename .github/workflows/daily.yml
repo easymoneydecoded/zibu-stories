@@ -5,7 +5,8 @@ name: Zibu - episodio diario
 # Repo publico: los minutos de Actions son gratis e ilimitados.
 on:
   schedule:
-    - cron: '0 11 * * *'          # 11:00 UTC: publicado hacia las 12:30 UTC (tarde en Europa, manana en America)
+    # 9:23 UTC: GitHub retrasa mas los crons en punto, y a esta hora Gemini (gratis) va menos saturado
+    - cron: '23 9 * * *'
   workflow_dispatch:
     inputs:
       episode:

@@ -23,7 +23,9 @@ BASE = Path(__file__).resolve().parent.parent
 STORIES = BASE / "stories"
 LEDGER = STORIES / "ledger.json"
 MODELS = [os.getenv("GEMINI_MODEL")] if os.getenv("GEMINI_MODEL") else [
-    "gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash"]  # 2.5 ya no esta disponible para proyectos nuevos
+    # 2.5 ya no esta disponible para proyectos nuevos; el "lite" tiene mas cupo gratis y es la ultima reserva
+    # 3.5 primero: en las pruebas fue el mas fiable (15-50 s); 3.8 a veces tarda mas de 5 min
+    "gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash-lite"]
 
 SPECIES = ["puppy", "kitten", "bear", "duckling", "frog", "piglet", "owl", "mouse", "star"]
 BGS = ["garden", "forest", "river", "hill", "sky", "beach", "room"]
@@ -98,9 +100,13 @@ def _gemini_ronda(key: str, body: dict) -> dict | None:
                     raise ValueError(f"Gemini ({model}) no devolvio JSON: {text[:200]}")
                 print(f"   . Gemini ok ({model})")
                 return json.loads(m.group(0))
-            if r.status_code == 429 and "quota" in r.text.lower():  # cupo del dia agotado: no reintentar
+            # Solo el cupo DIARIO descarta el modelo; el limite por minuto se espera y se reintenta
+            if r.status_code == 429 and re.search(r"per ?day|PerDay|daily", r.text, re.I):
                 AGOTADOS.add(model)
                 break
+            if r.status_code == 429:
+                time.sleep(30 * (intento + 1))
+                continue
             if r.status_code in (429, 500, 503):
                 time.sleep(10 * (intento + 1))
                 continue
