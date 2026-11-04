@@ -16,6 +16,10 @@ on:
         description: 'Subir a YouTube'
         type: boolean
         default: true
+      auto:
+        description: 'Lanzado por el despertador de Cloudflare: no hace nada si hoy ya hay episodio'
+        type: boolean
+        default: false
 
 concurrency:
   group: zibu-daily
@@ -45,11 +49,18 @@ jobs:
         run: |
           if [ -n "${{ inputs.episode }}" ]; then
             echo "episode=${{ inputs.episode }}" >> "$GITHUB_OUTPUT"
-          else
-            python scripts/generate_story.py
+            exit 0
           fi
+          # Automatico (cron de GitHub o despertador de Cloudflare): un solo episodio al dia aunque lleguen los dos
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.auto }}" = "true" ]; then
+            if python -c "import json,datetime,sys; l=json.load(open('stories/ledger.json')); sys.exit(0 if any(x['date']==datetime.date.today().isoformat() for x in l) else 1)"; then
+              echo "Hoy ya hay episodio: no se hace otro"
+              exit 0
+            fi
+          fi
+          python scripts/generate_story.py
       - name: Guardar el guion en el repo
-        if: inputs.episode == ''
+        if: inputs.episode == '' && steps.pick.outputs.episode != ''
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
@@ -59,6 +70,7 @@ jobs:
 
   render:
     needs: story
+    if: needs.story.outputs.episode != ''
     runs-on: ubuntu-latest
     timeout-minutes: 240
     strategy:
