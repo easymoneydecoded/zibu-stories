@@ -6,11 +6,14 @@ Salida en public/ep/<id>/<lang>/: una pista .wav por frase, musica.wav y timelin
 (escenas con sus fotogramas de inicio y fin, frases, movimientos, textos y efectos).
 """
 import json
+import os
 import sys
+import time
 import wave
 from pathlib import Path
 
 import numpy as np
+import requests
 from kokoro_onnx import Kokoro
 
 BASE = Path(__file__).resolve().parent.parent
@@ -135,14 +138,69 @@ def efectos() -> dict[str, np.ndarray]:
 # ---------------------------------------------------------------------------
 # Episodio
 # ---------------------------------------------------------------------------
-def main(story_path: str, lang: str) -> None:
+# ---------------------------------------------------------------------------
+# ElevenLabs (solo espanol, mientras queden creditos): voces predeterminadas, una por personaje
+# ---------------------------------------------------------------------------
+ELEVEN_MODEL = "eleven_multilingual_v2"
+# (voice_id, subida de tono en semitonos); voces predeterminadas de ElevenLabs, disponibles en todas las cuentas
+ELEVEN_VOICES = {
+    "narrator": ("XrExE9yKIg1WjnnlVkGX", 0),   # Matilda: calida, cuentacuentos
+    "zibu": ("TX3LPaxmHKxFdv7VOQHJ", 3),       # Liam, mas agudo: monstruito alegre
+    "lila": ("cgSgspJ2msm6clMCkdW9", 2),       # Jessica: conejita dulce
+}
+ELEVEN_GUEST = {"owl": ("JBFqnCBsd6RMkjVDRZzb", 0), "bear": ("JBFqnCBsd6RMkjVDRZzb", 2)}  # George: voz mayor
+ELEVEN_GUEST_DEFAULT = ("FGY2WhTYpPnrIDTdsKH5", 4)                                      # Laura, aguda
+
+
+class ElevenAgotado(Exception):
+    """ElevenLabs sin creditos (o caido): el episodio se rehace entero con Kokoro, sin mezclar voces."""
+
+
+def eleven_key() -> str | None:
+    key = os.getenv("ELEVENLABS_API_KEY")
+    env = BASE / ".env"
+    if not key and env.exists():
+        for line in env.read_text(encoding="utf-8").splitlines():
+            if line.startswith("ELEVENLABS_API_KEY="):
+                key = line.split("=", 1)[1].strip().strip('"')
+    return key or None
+
+
+def tts_eleven(key: str, voice_id: str, texto: str) -> np.ndarray:
+    for intento in range(3):
+        try:
+            r = requests.post(f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=pcm_24000",
+                              headers={"xi-api-key": key}, timeout=120,
+                              json={"text": texto, "model_id": ELEVEN_MODEL,
+                                    "voice_settings": {"stability": 0.4, "similarity_boost": 0.75, "style": 0.45}})
+        except requests.RequestException:
+            continue
+        if r.status_code == 200:
+            return np.frombuffer(r.content, dtype="<i2").astype(np.float32) / 32768
+        if r.status_code in (401, 402, 403) or "quota" in r.text.lower():
+            raise ElevenAgotado(f"HTTP {r.status_code}: {r.text[:200]}")
+        if r.status_code == 429 or r.status_code >= 500:
+            time.sleep(5 * (intento + 1))
+            continue
+        raise ElevenAgotado(f"HTTP {r.status_code}: {r.text[:200]}")
+    raise ElevenAgotado("ElevenLabs no responde")
+
+
+def main(story_path: str, lang: str, motor: str = "kokoro") -> None:
     story = json.loads(Path(story_path).read_text(encoding="utf-8"))
     out = BASE / "public" / "ep" / story["id"] / lang
     k = Kokoro(str(BASE / "models" / "kokoro-v1.0.onnx"), str(BASE / "models" / "voices-v1.0.bin"))
     guest = story["guest"].get("species") or story["guest"]["id"]
     voces = dict(VOICES[lang], guest=GUEST_VOICES[guest][lang], star=GUEST_VOICES[guest][lang])
+    eleven = dict(ELEVEN_VOICES, guest=ELEVEN_GUEST.get(guest, ELEVEN_GUEST_DEFAULT),
+                  star=ELEVEN_GUEST.get(guest, ELEVEN_GUEST_DEFAULT))
+    key = eleven_key() if motor == "eleven" else None
+    print(f"   . voces: {'ElevenLabs' if key else 'Kokoro'} ({lang})")
 
     def tts(who: str, texto: str) -> np.ndarray:
+        if key:
+            voice_id, tono = eleven[who]
+            return recortar(subir_tono(tts_eleven(key, voice_id, texto), tono))
         voz, speed, tono = voces[who]
         audio, _ = k.create(texto, voice=voz, speed=speed / 2 ** (tono / 12), lang=LANG_CODE[lang])
         return recortar(subir_tono(audio, tono))
@@ -259,4 +317,13 @@ def main(story_path: str, lang: str) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    story_path, lang = sys.argv[1], sys.argv[2]
+    # Espanol con ElevenLabs mientras queden creditos; si se acaban a mitad, el episodio entero con Kokoro
+    if lang == "es" and eleven_key():
+        try:
+            main(story_path, lang, "eleven")
+        except ElevenAgotado as e:
+            print(f"   ! ElevenLabs no disponible ({e}): rehago el episodio entero con Kokoro")
+            main(story_path, lang, "kokoro")
+    else:
+        main(story_path, lang)
