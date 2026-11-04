@@ -1,0 +1,1258 @@
+{
+ "slug": "zibu-helps-at-home",
+ "title": {
+  "en": "Zibu Helps at Home",
+  "es": "Zibu Ayuda en Casa"
+ },
+ "lesson": {
+  "en": "Helping clean up at home is fun and makes everyone happy!",
+  "es": "¡Ayudar a ordenar en casa es muy divertido y hace feliz a todos!"
+ },
+ "guest": {
+  "species": "puppy",
+  "name": {
+   "en": "Toby",
+   "es": "Toby"
+  }
+ },
+ "thumb": {
+  "en": [
+   "HELP AT HOME!",
+   "PUPPY WOOF!"
+  ],
+  "es": [
+   "¡A AYUDAR!",
+   "¡GUAU GUAU!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Helping at Home with Puppy Toby! 🐶 Learn Animal Sounds | Zibu and Friends",
+   "description": "Join Zibu and Lila as they help puppy Toby clean up at home! 🐶🧹\nKids learn the importance of helping at home while discovering fun animal sounds like 'Woof!'. 🐾\nAn entertaining cartoon for toddlers and preschoolers aged 2-6. ✨\nSing along and tidy up together with Zibu and his friends! 🎉\n\n#ZibuAndFriends #HelpingAtHome #ToddlerLearning #KidsCartoons #AnimalSounds",
+   "tags": [
+    "Zibu and Friends",
+    "helping at home",
+    "clean up for toddlers",
+    "puppy sounds",
+    "animal sounds for kids",
+    "toddler cartoons",
+    "educational show",
+    "preschool learning",
+    "kids animation",
+    "learn woof",
+    "tidy up song"
+   ]
+  },
+  "es": {
+   "title": "¡Ayudando en Casa con el Perrito Toby! 🐶 Sonidos de Animales | Zibu y sus Amigos",
+   "description": "¡Acompaña a Zibu y Lila a ayudar al perrito Toby a ordenar en casa! 🐶🧹\nLos niños aprenderán la importancia de ayudar en el hogar mientras descubren los sonidos de los animales como '¡Guau!'. 🐾\nUn dibujo animado educativo para niños de 2 a 6 años. ✨\n¡Miren, canten y ordenen juntos con Zibu y sus amigos! 🎉\n\n#ZibuYSusAmigos #AyudarEnCasa #AprendeJugando #DibujosAnimados #SonidosDeAnimales",
+   "tags": [
+    "Zibu y sus amigos",
+    "ayudar en casa",
+    "ordenar juguetes",
+    "sonidos de animales",
+    "perrito guau",
+    "caricaturas infantiles",
+    "videos educativos",
+    "preescolar",
+    "animacion para ninos",
+    "cancion de ordenar"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Hi friend! Oh no... Puppy Toby left his ball and cookies all over the floor!",
+     "es": "¡Hola, amigo! ¡Oh no... el perrito Toby dejó su pelota y galletas por todo el suelo!",
+     "action": "jump",
+     "mood": "laugh"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us clean up? Let me show you!",
+     "es": "¿Nos ayudas a ordenar? ¡Vamos!",
+     "action": "wave",
+     "mood": "surprised"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Helps at Home!",
+     "es": "¡Zibu Ayuda en Casa!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "playtime-mess",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.35,
+     "y": 0.8,
+     "at": 0
+    },
+    {
+     "what": "cookie",
+     "x": 0.65,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "apple",
+     "x": 0.5,
+     "y": 0.85,
+     "at": 0
+    },
+    {
+     "what": "flower",
+     "x": 0.2,
+     "y": 0.8,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Toby were having so much fun playing in the cozy room.",
+     "es": "Zibu, Lila y Toby se estaban divirtiendo mucho jugando en la habitación."
+    },
+    {
+     "who": "zibu",
+     "en": "Whee! This ball is so bouncy!",
+     "es": "¡Guau! ¡Esta pelota rebota mucho!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof!",
+     "es": "¡Guau guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Puppy Toby played happily with his toys...",
+     "es": "El perrito Toby jugaba feliz con sus juguetes..."
+    },
+    {
+     "who": "lila",
+     "en": "Look at all these toys and treats!",
+     "es": "¡Miren cuántos juguetes y golosinas!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby left a cookie, an apple, and a flower spread across the floor.",
+     "es": "Toby dejó una galleta, una manzana y una flor esparcidas por el suelo."
+    },
+    {
+     "who": "zibu",
+     "en": "We played a lot! Yay!",
+     "es": "¡Jugamos un montón! ¡Yujuu!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Arf arf!",
+     "es": "¡Guau guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Playtime is wonderful, but now the room is very messy.",
+     "es": "La hora de jugar es maravillosa, pero ahora la habitación está muy desordenada."
+    },
+    {
+     "who": "lila",
+     "en": "Oh my! The room needs help!",
+     "es": "¡Ay, caramba! ¡La habitación necesita ayuda!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can we fix it, Lila?",
+     "es": "¿Podemos arreglarla, Lila?",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby wagged his tail and barked softly.",
+     "es": "Toby movió la colita y ladró despacito."
+    },
+    {
+     "who": "guest",
+     "en": "Woof!",
+     "es": "¡Guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Let's clean up together!",
+     "es": "¡Sí! ¡Vamos a ordenar juntos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Cleaning up is about to begin!",
+     "es": "¡La hora de ordenar está por comenzar!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "time-to-tidy",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.35,
+     "y": 0.8,
+     "at": 0
+    },
+    {
+     "what": "cookie",
+     "x": 0.65,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "apple",
+     "x": 0.5,
+     "y": 0.85,
+     "at": 0
+    },
+    {
+     "what": "flower",
+     "x": 0.2,
+     "y": 0.8,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Lila pointed out that it was time to tidy up the room.",
+     "es": "Lila señaló que era hora de ordenar la habitación."
+    },
+    {
+     "who": "lila",
+     "en": "Look at the floor, friends. Everything is out of place.",
+     "es": "Miren el suelo, amigos. Todo está fuera de lugar.",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! You are right, Lila!",
+     "es": "¡Ay! ¡Tienes razón, Lila!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Can Zibu and friends help clean up together?",
+     "es": "¿Pueden Zibu y sus amigos ayudar a ordenar juntos?"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof!",
+     "es": "¡Guau guau!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes, we can! Helping is fun!",
+     "es": "¡Sí, podemos! ¡Ayudar es divertido!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu smiled brightly and touched his antenna.",
+     "es": "Zibu sonrió radiante y tocó su antenita."
+    },
+    {
+     "who": "lila",
+     "en": "Let's put every toy in its special home.",
+     "es": "Pongamos cada juguete en su hogar especial.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby the puppy trotted over to the apple.",
+     "es": "El perrito Toby tiritó feliz hacia la manzana."
+    },
+    {
+     "who": "guest",
+     "en": "Arf!",
+     "es": "¡Guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Good job, Toby! You are a great helper!",
+     "es": "¡Buen trabajo, Toby! ¡Eres un gran ayudante!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Let's pick everything up step by step...",
+     "es": "Vamos a recoger todo pasito a pasito...",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Toby got ready to tidy up the room.",
+     "es": "Zibu, Lila y Toby se prepararon para ordenar la habitación.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "first-try-picking-up",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.2,
+     "y": 0.8,
+     "at": 0
+    },
+    {
+     "what": "cookie",
+     "x": 0.5,
+     "y": 0.85,
+     "at": 0
+    },
+    {
+     "what": "flower",
+     "x": 0.8,
+     "y": 0.8,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila started picking up the toys from the floor.",
+     "es": "Zibu y Lila empezaron a recoger los juguetes del suelo."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! Here is the bouncy ball! Up it goes!",
+     "es": "¡Miren! ¡Aquí está la pelota saltarina! ¡Arriba va!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu carefully rolled the ball into its special corner.",
+     "es": "Zibu rodó la pelota con cuidado hasta su rincón especial.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.15
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Good job, Zibu! Now I will pick up the cookie...",
+     "es": "¡Buen trabajo, Zibu! Ahora yo recogeré la galleta...",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila gently picked up the cookie and put it on the table.",
+     "es": "Lila recogió la galleta suavemente y la puso en la mesa."
+    },
+    {
+     "who": "lila",
+     "en": "See? Putting things away is very easy!",
+     "es": "¿Ven? ¡Guardar las cosas es muy fácil!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof!",
+     "es": "¡Guau guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Puppy Toby wanted to help too! He trotted over to the flower.",
+     "es": "¡El perrito Toby también quería ayudar! Trotó hacia la flor.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Go get it, Toby! You can do it!",
+     "es": "¡Ve por ella, Toby! ¡Tú puedes hacerlo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Woof!",
+     "es": "¡Guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby picked up the flower with his soft little mouth.",
+     "es": "Toby levantó la flor con su hocico suave."
+    },
+    {
+     "who": "lila",
+     "en": "Wonderful helper, Toby! The room is looking so clean!",
+     "es": "¡Qué ayudante tan maravilloso, Toby! ¡La habitación se ve muy limpia!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go to the garden now!",
+     "es": "¡Vamos al jardín ahora!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone walked happily out into the sunny garden.",
+     "es": "Todos caminaron felices hacia el jardín soleado.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "puppy-sounds-learning",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.7,
+     "y": 0.8,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Out in the garden, a little green leaf fell from a tree.",
+     "es": "Afuera en el jardín, una hojita verde cayó de un árbol."
+    },
+    {
+     "who": "guest",
+     "en": "Arf arf!",
+     "es": "¡Guau, guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Puppy Toby got very excited and barked happily!",
+     "es": "¡El perrito Toby se emocionó mucho y ladró feliz!"
+    },
+    {
+     "who": "guest",
+     "en": "Woof!",
+     "es": "¡Guau!",
+     "mood": "happy",
+     "show": {
+      "en": "WOOF!",
+      "es": "¡GUAU!",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Can you bark like a happy puppy? Let me hear you!",
+     "es": "¿Puedes ladrar como un perrito feliz? ¡Quiero escucharte!"
+    },
+    {
+     "who": "zibu",
+     "en": "That is such a loud and happy bark, Toby!",
+     "es": "¡Ese es un ladrido muy fuerte y feliz, Toby!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Toby loves helping us pick up things outside too.",
+     "es": "A Toby le encanta ayudarnos a recoger cosas afuera también.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby scooped up the leaf with his nose.",
+     "es": "Toby levantó la hoja con su nariz."
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof!",
+     "es": "¡Guau guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "You are the best puppy ever!",
+     "es": "¡Eres el mejor perrito del mundo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Let's look around for more things to tidy up!",
+     "es": "¡Busquemos más cosas para ordenar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Toby walked together up the green hill.",
+     "es": "Zibu, Lila y Toby caminaron juntos hacia la colina verde.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "finding-the-cupcake",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "cupcake",
+     "x": 0.85,
+     "y": 0.5,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "On the green hill, Toby stopped by a big stone.",
+     "es": "En la colina verde, Toby se detuvo junto a una piedra grande."
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "WOOF!",
+      "es": "¡GUAU!",
+      "color": "#FF8C00"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Look! Toby found something on the stone!",
+     "es": "¡Miren! ¡Toby encontró algo sobre la piedra!",
+     "mood": "surprised",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Is that a yummy cupcake?",
+     "es": "¿Es un pastelito delicioso?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby wagged his tail and barked happily.",
+     "es": "Toby movió la cola y ladró felizmente."
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Good puppy, Toby! Let's pick it up safely.",
+     "es": "¡Buen perrito, Toby! Vamos a recogerlo con cuidado.",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu walked carefully to the stone.",
+     "es": "Zibu caminó con cuidado hacia la piedra.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Got it! No mess left behind!",
+     "es": "¡Lo tengo! ¡No dejamos nada desordenado!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Hooray for Zibu and Toby!",
+     "es": "¡Hurra por Zibu y por Toby!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby barked a happy thank you.",
+     "es": "Toby ladró dando las gracias felizmente."
+    },
+    {
+     "who": "guest",
+     "en": "Woof!",
+     "es": "¡Guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Time to go back to the room and see our clean home!",
+     "es": "¡Hora de volver a la habitación y ver nuestra casa limpia!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "clean-house-happy-friends",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Toby opened the door to their room.",
+     "es": "Zibu, Lila y Toby abrieron la puerta de su habitación."
+    },
+    {
+     "who": "narrator",
+     "en": "Everything was tidy, clean, and shining bright!",
+     "es": "¡Todo estaba ordenado, limpio y brillante!"
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! Look at our room! It is so clean!",
+     "es": "¡Guau! ¡Miren nuestra habitación! ¡Está muy limpia!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "We did it together! Yay!",
+     "es": "¡Lo hicimos juntos! ¡Yupi!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby did a happy spin around the floor.",
+     "es": "Toby dio una vuelta alegre por el suelo.",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof! Arf!",
+     "es": "¡Guau! ¡Guau! ¡Guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Helping at home is so much fun!",
+     "es": "¡Ayudar en casa es muy divertido!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Everything has its special place.",
+     "es": "¡Sí! Cada cosa tiene su lugar especial.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "All three friends jumped with joy.",
+     "es": "Los tres amigos saltaron de alegría.",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's do a victory dance!",
+     "es": "¡Hagamos un baile de la victoria!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Dance, dance, dance!",
+     "es": "¡A bailar, bailar, bailar!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "They spun around and cheered happily.",
+     "es": "Giraron y celebraron felices."
+    },
+    {
+     "who": "narrator",
+     "en": "Now it is time for a yummy snack in the garden.",
+     "es": "Ahora es hora de un rico bocadillo en el jardín.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "lesson-and-snack",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 1
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "They sat on the soft green grass to enjoy their yummy snack.",
+     "es": "Se sentaron en el pasto suave y verde para disfrutar su rico bocadillo."
+    },
+    {
+     "who": "zibu",
+     "en": "Mmm! This apple is so sweet and juicy!",
+     "es": "¡Mjum! ¡Esta manzana es muy dulce y jugosa!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Sharing together is the best part of playing!",
+     "es": "¡Compartir juntos es la mejor parte de jugar!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof! Happy puppy!",
+     "es": "¡Guau guau! ¡Perrito feliz!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby wagged his tail and happily shared the apple with his friends.",
+     "es": "Toby movió la cola y compartió feliz la manzana con sus amigos."
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you for helping us clean up, Toby!",
+     "es": "¡Gracias por ayudarnos a ordenar, Toby!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Woof!",
+     "es": "¡Guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Helping at home is a wonderful way to care for our friends.",
+     "es": "Ayudar en casa es una forma maravillosa de cuidar a nuestros amigos."
+    },
+    {
+     "who": "lila",
+     "en": "Everyone can help tidy up!",
+     "es": "¡Todos podemos ayudar a ordenar!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "And it makes everyone so happy!",
+     "es": "¡Y hace muy felices a todos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Toby smiled big bright smiles.",
+     "es": "Zibu, Lila y Toby sonrieron con grandes y brillantes sonrisas."
+    },
+    {
+     "who": "lila",
+     "en": "Goodbye, friends! See you soon!",
+     "es": "¡Adiós, amigos! ¡Hasta pronto!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Bye-bye!",
+     "es": "¡Chao, chao!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof!",
+     "es": "¡Guau guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful day of teamwork and fun.",
+     "es": "Qué día tan maravilloso de trabajo en equipo y diversión.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Let's sing the Clean-Up Woof Song together!",
+     "es": "¡Cantemos juntos la Canción de Ordenar y Ladrar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Pick up toys and put them right, everything is neat and bright!",
+     "es": "¡Juguetes al lugar con amor, el cuarto queda mucho mejor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Woof woof, bark and play, cleaning up is fun today!",
+     "es": "¡Guau guau, a jugar y cantar, qué divertido es ordenar!"
+    },
+    {
+     "who": "zibu",
+     "en": "First the bouncy ball goes home!",
+     "es": "¡La pelota va a su rincón!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Then the cookie on the stone!",
+     "es": "¡La galleta sobre el botón!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Toby helps with leaf and flower!",
+     "es": "¡Toby ayuda a cada hora!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Tidying for half an hour!",
+     "es": "¡Ordenando sin demora!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Pick up toys and put them right, everything is neat and bright!",
+     "es": "¡Juguetes al lugar con amor, el cuarto queda mucho mejor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Woof woof, bark and play, cleaning up is fun today!",
+     "es": "¡Guau guau, a jugar y cantar, qué divertido es ordenar!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Pick up toys and put them right, everything is neat and bright!",
+     "es": "¡Juguetes al lugar con amor, el cuarto queda mucho mejor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Woof woof, bark and play, cleaning up is fun today!",
+     "es": "¡Guau guau, a jugar y cantar, qué divertido es ordenar!"
+    },
+    {
+     "who": "zibu",
+     "en": "First the bouncy ball goes home!",
+     "es": "¡La pelota va a su rincón!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Then the cookie on the stone!",
+     "es": "¡La galleta sobre el botón!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Toby helps with leaf and flower!",
+     "es": "¡Toby ayuda a cada hora!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Tidying for half an hour!",
+     "es": "¡Ordenando sin demora!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Pick up toys and put them right, everything is neat and bright!",
+     "es": "¡Juguetes al lugar con amor, el cuarto queda mucho mejor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Woof woof, bark and play, cleaning up is fun today!",
+     "es": "¡Guau guau, a jugar y cantar, qué divertido es ordenar!"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof! Happy puppy song!",
+     "es": "¡Guau guau! ¡Feliz canción!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Question one: What did puppy Toby pick up from the floor first?",
+     "es": "Pregunta uno: ¿Qué recogió el perrito Toby del suelo primero?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "An apple!",
+     "es": "¡Una manzana!",
+     "show": {
+      "en": "Apple",
+      "es": "Manzana",
+      "color": "#ff4d4d"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Question two: Where did Zibu put the bouncy ball?",
+     "es": "Pregunta dos: ¿Dónde puso Zibu la pelota saltarina?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "In its special corner!",
+     "es": "¡En su rincón especial!",
+     "show": {
+      "en": "Corner",
+      "es": "Rincón",
+      "color": "#4da6ff"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Question three: What did Toby find on the big stone?",
+     "es": "Pregunta tres: ¿Qué encontró Toby sobre la piedra grande?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A cupcake!",
+     "es": "¡Un pastelito!",
+     "show": {
+      "en": "Cupcake",
+      "es": "Pastelito",
+      "color": "#ffb3ff"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Question four: Who helped clean up the room with Zibu?",
+     "es": "Pregunta cuatro: ¿Quién ayudó a ordenar el cuarto con Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Lila and Toby!",
+     "es": "¡Lila y Toby!",
+     "show": {
+      "en": "Friends",
+      "es": "Amigos",
+      "color": "#ffff4d"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Question five: How do we feel when our home is clean?",
+     "es": "Pregunta cinco: ¿Cómo nos sentimos cuando nuestra casa está limpia?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Happy!",
+     "es": "¡Felices!",
+     "show": {
+      "en": "Happy",
+      "es": "Felices",
+      "color": "#ff80df"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Can you bark like happy Toby? Let's bark together!",
+     "es": "¿Pueden ladrar como el feliz Toby? ¡Ladremos juntos!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Woof woof!",
+     "es": "¡Guau guau!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Helping clean up at home is fun and makes everyone happy!",
+     "es": "¡Ayudar a ordenar en casa es muy divertido y hace feliz a todos!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "pause": 14,
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof! Happy tail wag dance!",
+     "es": "¡Guau guau! ¡Baile de colita feliz!",
+     "pause": 10,
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós-adiós!",
+     "pause": 3,
+     "action": "wave"
+    }
+   ]
+  }
+ ],
+ "id": "ep004-zibu-helps-at-home"
+}
