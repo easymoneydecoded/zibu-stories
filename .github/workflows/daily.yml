@@ -78,7 +78,7 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - run: pip install kokoro-onnx soundfile numpy requests google-api-python-client google-auth
+      - run: pip install kokoro-onnx soundfile numpy requests mutagen google-api-python-client google-auth
       - run: npm ci
       - name: Modelo de voz (Kokoro)
         uses: actions/cache@v4

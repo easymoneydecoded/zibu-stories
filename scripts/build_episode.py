@@ -48,6 +48,15 @@ MIN_TOTAL = 8 * 60 + 5   # YouTube permite anuncios a mitad del video desde 8 mi
 MAX_PAD = 75             # lo que se puede alargar la fiesta final para llegar al minimo
 
 
+def cancion(nombre: str, lang: str) -> dict | None:
+    """Cancion fija de Zibu (public/songs, scripts/make_songs.py): {src, dur} o None si no existe."""
+    ruta = BASE / "public" / "songs" / f"{nombre}-{lang}.mp3"
+    if not ruta.exists():
+        return None
+    from mutagen.mp3 import MP3
+    return {"src": f"songs/{ruta.name}", "dur": MP3(ruta).info.length}
+
+
 def subir_tono(x: np.ndarray, semitonos: float) -> np.ndarray:
     if not semitonos:
         return x
@@ -146,7 +155,22 @@ def main(story_path: str, lang: str) -> None:
         # el gancho y el titulo entran rapido: los primeros segundos deciden si el nino se queda
         t += 2 * BAR if song else (0.3 if si == 0 or sc.get("type") == "title" else SCENE_LEAD)
         lines = []
+        tema = None  # cancion fija que suena en esta escena
+        intro, baile = cancion("intro", lang), cancion("dance", lang)
+        if sc.get("type") == "title" and intro:
+            # La sintonia canta "Hello, it's Zibu time": el titulo solo se ve, no lo lee la narradora
+            tema = {"src": intro["src"], "start": round(t * FPS), "dur": round(intro["dur"] * FPS)}
+            t += intro["dur"]
+            scenes.append({k2: v for k2, v in sc.items() if k2 != "lines"} |
+                          {"start": round(start * FPS), "end": round((t + 0.3) * FPS), "lines": [], "song": tema})
+            musica_tramos.append((start, t + 0.3, None))
+            t += 0.3
+            continue
         for li, ln in enumerate(sc["lines"]):
+            if sc.get("type") == "dance" and baile and li == 1 and tema is None:
+                # La cancion de baile entra despues de "Dance party!" y las demas frases van detras
+                tema = {"src": baile["src"], "start": round(t * FPS), "dur": round(baile["dur"] * FPS)}
+                t += baile["dur"] + 0.6
             audio = tts(ln["who"], ln[lang])
             dur = len(audio) / SR
             src = f"ep/{story['id']}/{lang}/s{si:02d}_l{li:02d}.wav"
@@ -164,7 +188,9 @@ def main(story_path: str, lang: str) -> None:
             if song:
                 t += max(2, int(np.ceil(dur / BAR))) * BAR
             else:
-                t += dur + GAP + ln.get("pause", 0)
+                # con la cancion de baile, las pausas largas de la fiesta (para bailar) ya no hacen falta
+                pausa = min(ln.get("pause", 0), 1.0) if sc.get("type") == "dance" and baile else ln.get("pause", 0)
+                t += dur + GAP + pausa
                 if moves:  # que el desplazamiento termine antes de la siguiente frase
                     t = max(t, (entry["start"] + entry["moveDur"]) / FPS + 0.3)
         for p in sc.get("props", []):
@@ -172,23 +198,39 @@ def main(story_path: str, lang: str) -> None:
                 sfx.append({"name": "pop", "at": lines[p["at"]]["start"]})
         t += 2 * BAR if song else SCENE_TAIL
         scenes.append({k2: v for k2, v in sc.items() if k2 != "lines"} |
-                      {"start": round(start * FPS), "end": round(t * FPS), "lines": lines})
-        musica_tramos.append((start, t, song or sc.get("type") in ("dance", "hook")))
+                      {"start": round(start * FPS), "end": round(t * FPS), "lines": lines} | ({"song": tema} if tema else {}))
+        if tema:  # sin musiquilla mientras suena la cancion de baile
+            a0, a1 = tema["start"] / FPS, (tema["start"] + tema["dur"]) / FPS
+            musica_tramos += [(start, a0, True), (a0, a1, None), (a1, t, True)]
+        else:
+            musica_tramos.append((start, t, song or sc.get("type") in ("dance", "hook")))
 
-    # Duracion minima: se alarga la fiesta de baile final (la ultima escena)
+    # Despedida con su cancion al final: Zibu y Lila dicen adios con la mano
+    adios = cancion("bye", lang)
+    if adios:
+        ultima = scenes[-1]
+        start = t
+        tema = {"src": adios["src"], "start": round(t * FPS), "dur": round(adios["dur"] * FPS)}
+        t += adios["dur"] + 0.8
+        scenes.append({"id": "bye", "type": "bye", "bg": ultima["bg"], "time": ultima["time"], "cast": ultima["cast"],
+                       "start": round(start * FPS), "end": round(t * FPS), "lines": [], "song": tema})
+        musica_tramos.append((start, t, None))
+
+    # Duracion minima: se alarga la ultima escena (fiesta o despedida) con musica alegre
     total = t + 1.0
     falta = MIN_TOTAL - total
     if falta > 0:
-        if falta > MAX_PAD or scenes[-1].get("type") != "dance":
+        if falta > MAX_PAD or scenes[-1].get("type") not in ("dance", "bye"):
             raise SystemExit(f"Episodio demasiado corto: {total:.0f} s (minimo {MIN_TOTAL} s)")
         scenes[-1]["end"] += round(falta * FPS)
-        a, b, alegre = musica_tramos[-1]
-        musica_tramos[-1] = (a, b + falta, alegre)
+        musica_tramos.append((t, t + falta, True))
         total += falta
 
-    # Musica: tranquila en la historia, alegre en la cancion (mas alta), con fundidos
+    # Musica: tranquila en la historia, alegre en la cancion (mas alta), nada donde suena una cancion fija
     musica = np.zeros(int(SR * total))
     for a, b, song in musica_tramos:
+        if song is None or b - a < 0.5:
+            continue
         tramo = tramo_musical(b - a, ALEGRE if song else CALMA, 2.4 if song else 1.0)
         i = int(a * SR)
         fade = min(int(SR * 0.4), len(tramo) // 4)

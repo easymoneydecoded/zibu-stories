@@ -44,12 +44,17 @@ const charState = (scene: Scene, who: string, f: number): CharState => {
   let mood: Mood = "happy";
   for (const l of past) if (l.who === who) mood = l.mood ?? "happy";
   const act = [...past].reverse().find((l) => l.who === who && l.action && l.action !== "glow" && f < l.start + Math.max(l.dur, 75));
+  const sonando = !!scene.song && f >= scene.song.start && f < scene.song.start + scene.song.dur;
+  if (scene.type === "bye") {  // despedida: todos dicen adios con la mano, contentos
+    return { talk: false, mood: "laugh", action: "wave", actionFrame: (f - scene.start) % 60, dancing: false,
+      glow: false, balloons: false };
+  }
   return {
     talk: scene.lines.some((l) => l.who === who && f >= l.start && f <= l.start + l.dur),
     mood,
     action: act?.action,
     actionFrame: act ? f - act.start : 0,
-    dancing: scene.type === "song" || scene.type === "dance",
+    dancing: scene.type === "song" || sonando,
     glow: past.some((l) => l.action === "glow" && (l.who === who || l.glowWho === who)),
     balloons: (who === "star" || who === "guest") && past.some((l) => l.balloons),
   };
@@ -115,10 +120,13 @@ const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
             </div>
           );
         })}
-        {scene.type === "dance" && <Confetti local={local} />}
+        {(scene.type === "dance" || scene.type === "bye") && <Confetti local={local} />}
       </AbsoluteFill>
 
       {scene.type === "title" && <BigText text={tl.title} since={local - 5} color="#ff5d8f" size={120} top={300} />}
+      {scene.type === "bye" && (
+        <BigText text={tl.lang === "es" ? "¡Hasta pronto!" : "See you soon!"} since={local - 5} color="#3cc45a" size={150} top={120} />
+      )}
       {shown?.show && <BigText text={shown.show.text} color={shown.show.color} since={f - shown.start} />}
       {propLine && (
         <div style={{ position: "absolute", top: 120, width: "100%", display: "flex", justifyContent: "center", gap: 30,
@@ -165,6 +173,11 @@ export const Episode: React.FC<EpisodeProps> = ({ timeline: tl }) => {
         </Sequence>
       ))}
       <Audio src={staticFile(tl.music)} volume={0.5} />
+      {tl.scenes.filter((s) => s.song).map((s) => (
+        <Sequence key={`cancion-${s.id}`} from={s.song!.start} durationInFrames={s.song!.dur + 15} name={`Cancion: ${s.song!.src}`}>
+          <Audio src={staticFile(s.song!.src)} volume={0.9} />
+        </Sequence>
+      ))}
       {lines.map((l) => (
         <Sequence key={l.src} from={l.start} name={`Voz: ${l.text}`}>
           <Audio src={staticFile(l.src)} />
