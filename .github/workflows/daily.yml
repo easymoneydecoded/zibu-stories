@@ -111,7 +111,7 @@ jobs:
           npx remotion render Episode "out/$EP-${{ matrix.lang }}.mp4" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
           npx remotion still Thumbnail "out/$EP-${{ matrix.lang }}.png" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
       - name: Subir a YouTube
-        if: inputs.upload != false
+        if: github.event_name == 'schedule' || inputs.upload  # en el cron de GitHub los inputs son nulos (y nulo == false)
         env:
           YT_CLIENT_ID:       ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET:   ${{ secrets.YT_CLIENT_SECRET }}
