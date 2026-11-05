@@ -22,5 +22,13 @@
   "guest": "puppy",
   "lesson": "helping at home",
   "learn": "animal sounds (show the sound words, like 'Woof!')"
+ },
+ {
+  "id": "ep005-zibu-says-sorry",
+  "date": "2026-11-05",
+  "title": "Zibu Says Sorry",
+  "guest": "frog",
+  "lesson": "saying sorry and making up",
+  "learn": "colors: red, blue, yellow, green (show the color words with their color)"
  }
 ]

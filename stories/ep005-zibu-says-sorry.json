@@ -1,0 +1,1273 @@
+{
+ "slug": "zibu-says-sorry",
+ "title": {
+  "en": "Zibu Says Sorry",
+  "es": "Zibu pide perdón"
+ },
+ "lesson": {
+  "en": "Saying sorry when we make a mistake helps make our friends feel better.",
+  "es": "Pedir disculpas cuando nos equivocamos ayuda a que nuestros amigos se sientan mejor."
+ },
+ "guest": {
+  "species": "frog",
+  "name": {
+   "en": "Flippy",
+   "es": "Flippy"
+  }
+ },
+ "thumb": {
+  "en": [
+   "ZIBU SAYS",
+   "SORRY!"
+  ],
+  "es": [
+   "¡ZIBU PIDE",
+   "PERDÓN!"
+  ],
+  "scene": 6
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Says Sorry! 🎈 Learn Colors & Kindness | Zibu and Friends",
+   "description": "Oh no! Zibu accidentally pops Flippy the Frog's special balloon! 🎈 Watch Zibu learn how to say sorry and make his friend happy again. Plus, learn colorful words: RED, BLUE, YELLOW, and GREEN! Perfect for ages 2-6. 🌟\n#ZibuAndFriends #LearnColors #KidsCartoons #ToddlerLearning #KindnessForKids",
+   "tags": [
+    "zibu",
+    "zibu and friends",
+    "saying sorry",
+    "learn colors",
+    "colors for toddlers",
+    "red blue yellow green",
+    "toddler learning",
+    "social emotional learning",
+    "preschool cartoon",
+    "frog character",
+    "kindness story",
+    "kids video"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu Pide Perdón! 🎈 Aprende los Colores y la Empatía | Zibu y sus Amigos",
+   "description": "¡Oh no! ¡A Zibu se le rompió sin querer el globo favorito de la rana Flippy! 🎈 Mira cómo Zibu aprende a pedir disculpas y hacer feliz a su amigo. ¡También aprendemos los colores: ROJO, AZUL, AMARILLO y VERDE! Para niños de 2 a 6 años. 🌟\n#ZibuYSusAmigos #AprendeLosColores #VideosParaNiños #EducacionEmocional #CaricaturasEducativas",
+   "tags": [
+    "zibu",
+    "zibu y sus amigos",
+    "pedir perdon",
+    "aprender los colores",
+    "rojo azul amarillo verde",
+    "videos para niños",
+    "desarrollo infantil",
+    "caricaturas preescolares",
+    "cuento de la rana",
+    "empatia para niños",
+    "canciones infantiles",
+    "animacion infantil"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Hi friend! Oh no...",
+     "es": "¡Hola amigo! Oh no...",
+     "action": "jump",
+     "mood": "laugh"
+    },
+    {
+     "who": "zibu",
+     "en": "Flippy's red balloon popped!",
+     "es": "¡El globo rojo de Flippy se rompió!",
+     "action": "wave",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help me say sorry? Let's go!",
+     "es": "¿Me ayudas a pedir perdón? ¡Vamos!",
+     "action": "bigjump",
+     "mood": "laugh"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Says Sorry!",
+     "es": "¡Zibu pide perdón!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "playtime-in-the-garden",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.4,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It is a bright, beautiful day in the garden.",
+     "es": "Es un día hermoso y brillante en el jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Look at the balloon bounce!",
+     "es": "¡Sí! ¡Mira cómo rebota el globo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Boing! Boing! Pass it to Flippy!",
+     "es": "¡Boing! ¡Boing! ¡Pásaselo a Flippy!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! I got it! Boing!",
+     "es": "¡Croac! ¡Lo tengo! ¡Boing!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Flippy the frog were playing together.",
+     "es": "Zibu, Lila y Flippy el sapito estaban jugando juntos."
+    },
+    {
+     "who": "zibu",
+     "en": "Up, up, up it goes!",
+     "es": "¡Arriba, arriba, arriba va!",
+     "mood": "laugh"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Higher! Higher!",
+     "es": "¡Croac! ¡Más alto! ¡Más alto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Wheee! This balloon game is so much fun!",
+     "es": "¡Juju! ¡Este juego del globo es muy divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone was giggling and having a wonderful time.",
+     "es": "Todos se reían y se la pasaban genial."
+    },
+    {
+     "who": "zibu",
+     "en": "Catch it, Lila!",
+     "es": "¡Atápalo, Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Boing! Back to you, Flippy!",
+     "es": "¡Boing! ¡De vuelta a ti, Flippy!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! What a happy day!",
+     "es": "¡Croac! ¡Qué día tan feliz!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "They were all best friends playing happily.",
+     "es": "Todos eran mejores amigos jugando felizmente.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "the-accident",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.25,
+     "y": 0.8,
+     "at": 0
+    },
+    {
+     "what": "stone",
+     "x": 0.82,
+     "y": 0.82,
+     "at": 0
+    },
+    {
+     "what": "balloon",
+     "x": 0.8,
+     "y": 0.4,
+     "at": 0,
+     "until": 6,
+     "anim": "float",
+     "color": "#FF3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Then, Zibu saw a ball on the grass.",
+     "es": "Entonces, Zibu vio una pelota en el pasto."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! A ball! I can kick it super high!",
+     "es": "¡Miren! ¡Una pelota! ¡Puedo patearla súper alto!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Be careful, Zibu...",
+     "es": "Ten cuidado, Zibu...",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Wheeee! Big kick!",
+     "es": "¡Siiii! ¡Gran patada!",
+     "mood": "happy",
+     "action": "bigjump",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Oh no! The ball flew up and bumped the balloon!",
+     "es": "¡Oh no! ¡La pelota voló y golpeó el globo!"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit? My balloon?",
+     "es": "¡Croac! ¿Mi globo?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "POP! The balloon hit a sharp stone and popped!",
+     "es": "¡POP! ¡El globo tocó una piedra filosa y se reventó!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh... my balloon is gone...",
+     "es": "Oh... mi globo ya no está...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! Poor Flippy!",
+     "es": "¡Oh no! ¡Pobre Flippy!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Flippy felt very, very sad.",
+     "es": "Flippy se sintió muy, muy triste."
+    },
+    {
+     "who": "zibu",
+     "en": "Oopsie...",
+     "es": "Ups...",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "guest",
+     "en": "Sniff... ribbit...",
+     "es": "Snif... croac...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu felt bad, but he didn't know what to say.",
+     "es": "Zibu se sintió mal, pero no sabía qué decir.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "trying-a-leaf",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.25,
+     "y": 0.7,
+     "at": 3,
+     "until": 6,
+     "anim": "float",
+     "color": "#2ecc71"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu wanted to make Flippy smile again.",
+     "es": "Zibu quería hacer que Flippy volviera a sonreír."
+    },
+    {
+     "who": "zibu",
+     "en": "Don't be sad, Flippy! Look what I found!",
+     "es": "¡No estés triste, Flippy! ¡Mira lo que encontré!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu picked a big green leaf from the forest.",
+     "es": "Zibu cogió una gran hoja verde del bosque."
+    },
+    {
+     "who": "zibu",
+     "en": "Here is a green leaf for you! Is it like a boat?",
+     "es": "¡Aquí tienes una hoja verde! ¿Es como un barco?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit... thank you, Zibu. But... my balloon is still gone.",
+     "es": "Croac... gracias, Zibu. Pero... mi globo ya no está.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Flippy was still very sad. The green leaf didn't help enough.",
+     "es": "Flippy seguía muy triste. La hoja verde no ayudó lo suficiente."
+    },
+    {
+     "who": "lila",
+     "en": "Zibu... remember what we do when we make a mistake?",
+     "es": "Zibu... ¿recuerdas qué hacemos cuando cometemos un error?"
+    },
+    {
+     "who": "zibu",
+     "en": "Hmm... what do we do, Lila?",
+     "es": "Mmm... ¿qué hacemos, Lila?",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "We say sorry, Zibu. That is the very first step.",
+     "es": "Decimos perdón, Zibu. Ese es el primer paso."
+    },
+    {
+     "who": "narrator",
+     "en": "Lila was so kind and gentle. Zibu nodded slowly.",
+     "es": "Lila era muy amable y dulce. Zibu asintió lentamente."
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! You are right, Lila. I need to say sorry.",
+     "es": "¡Oh! Tienes razón, Lila. Necesito pedir perdón.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "So, Zibu and Lila decided to find something special to make it better.",
+     "es": "Así que Zibu y Lila decidieron buscar algo especial para arreglarlo.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "finding-new-balloons",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    },
+    {
+     "who": "guest",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.3,
+     "y": 0.5,
+     "at": 3,
+     "until": 7,
+     "anim": "float",
+     "color": "#e74c3c"
+    },
+    {
+     "what": "balloon",
+     "x": 0.7,
+     "y": 0.5,
+     "at": 5,
+     "until": 10,
+     "anim": "float",
+     "color": "#3498db"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila climbed up the green hill together.",
+     "es": "Zibu y Lila subieron juntos a la colina verde."
+    },
+    {
+     "who": "zibu",
+     "en": "Let's look high up! Can you see any balloons?",
+     "es": "¡Miremos bien alto! ¿Pueden ver algún globo?",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! There is a bright red one!",
+     "es": "¡Mira, Zibu! ¡Hay uno rojo muy brillante!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "A bright red balloon floated gently in the breeze.",
+     "es": "Un globo rojo brillante flotaba suavemente en la brisa.",
+     "show": {
+      "en": "RED",
+      "es": "ROJO",
+      "color": "#e74c3c"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! And look over there, Lila! A blue one!",
+     "es": "¡Sip! ¡Y mira por allá, Lila! ¡Uno azul!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "A lovely blue balloon was waiting near the bushes.",
+     "es": "Un precioso globo azul esperaba cerca de los arbustos.",
+     "show": {
+      "en": "BLUE",
+      "es": "AZUL",
+      "color": "#3498db"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "We found a red one and a blue one!",
+     "es": "¡Encontramos uno rojo y uno azul!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Then they saw two more colors shining in the sun.",
+     "es": "Luego vieron otros dos colores brillando bajo el sol."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! A yellow one and a green one too!",
+     "es": "¡Mira! ¡Uno amarillo y uno verde también!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Bright yellow and green balloons filled the air with color.",
+     "es": "Globos amarillos y verdes brillantes llenaron el aire de color.",
+     "show": {
+      "en": "YELLOW & GREEN",
+      "es": "AMARILLO Y VERDE",
+      "color": "#2ecc71"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Flippy is going to love these so much!",
+     "es": "¡A Flippy le van a encantar muchísimo!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's run back to the river! Come on!",
+     "es": "¡Corramos de vuelta al río! ¡Vamos!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "With their hands full of colorful balloons, they hurried to find their friend.",
+     "es": "Con las manos llenas de globos coloridos, se apresuraron a encontrar a su amigo.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "saying-sorry",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.05
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.2,
+     "y": 0.7,
+     "at": 5,
+     "color": "#2ecc71"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila found Flippy sitting sadly by the gentle river.",
+     "es": "Zibu y Lila encontraron a Flippy sentado tristemente junto al apacible río."
+    },
+    {
+     "who": "zibu",
+     "en": "Hi, Flippy...",
+     "es": "Hola, Flippy...",
+     "mood": "sad",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu walked closer, holding the bright new green balloon.",
+     "es": "Zibu se acercó más, sosteniendo el nuevo y brillante globo verde."
+    },
+    {
+     "who": "guest",
+     "en": "Hello, Zibu... hello, Lila.",
+     "es": "Hola, Zibu... hola, Lila.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Flippy... I am so, so sorry I popped your balloon earlier.",
+     "es": "Flippy... lo siento mucho, mucho, por haber reventado tu globo hace un rato.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "It was an accident, Flippy. But Zibu feels bad about it.",
+     "es": "Fue un accidente, Flippy. Pero Zibu se siente mal por eso.",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "You do?",
+     "es": "¿De verdad?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes, I do. I should have been more careful.",
+     "es": "Sí, de verdad. Debí haber tenido más cuidado.",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Flippy looked at Zibu's kind, honest eyes.",
+     "es": "Flippy miró los ojos amables y sinceros de Zibu."
+    },
+    {
+     "who": "zibu",
+     "en": "Will you please forgive me?",
+     "es": "¿Podrías perdonarme, por favor?",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Flippy thought for a moment... and then his little sad face turned into a smile.",
+     "es": "Flippy pensó por un momento... y luego su pequeña carita triste se convirtió en una sonrisa."
+    },
+    {
+     "who": "guest",
+     "en": "I forgive you, Zibu. Thank you for saying sorry.",
+     "es": "Te perdono, Zibu. Gracias por pedir disculpas.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying sorry makes our hearts feel light and happy again.",
+     "es": "Pedir perdón hace que nuestros corazones se sientan ligeros y felices otra vez.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "making-up",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.45
+    },
+    {
+     "who": "lila",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.6
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.52,
+     "y": 0.65,
+     "at": 1,
+     "color": "#2ecc71"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu smiled big and handed the new green balloon to Flippy.",
+     "es": "Zibu sonrió grande y le entregó el nuevo globo verde a Flippy."
+    },
+    {
+     "who": "zibu",
+     "en": "Here is a special green balloon just for you!",
+     "es": "¡Aquí tienes un globo verde especial solo para ti!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! It's so pretty! Thank you, Zibu!",
+     "es": "¡Yupi! ¡Es muy bonito! ¡Gracias, Zibu!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Flippy hugged Zibu tightly, and Zibu hugged him right back.",
+     "es": "Flippy abrazó a Zibu fuertemente, y Zibu le devolvió el abrazo."
+    },
+    {
+     "who": "lila",
+     "en": "Group hug! Yay!",
+     "es": "¡Abrazo grupal! ¡Yupi!",
+     "mood": "happy",
+     "action": "jump",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.5
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Lila joined them, wrapping her soft arms around her friends.",
+     "es": "Lila se unió a ellos, envolviendo con sus suaves brazos a sus amigos."
+    },
+    {
+     "who": "guest",
+     "en": "Friends forever?",
+     "es": "¿Amigos para siempre?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Friends forever!",
+     "es": "¡Amigos para siempre!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "The three friends laughed together by the river.",
+     "es": "Los tres amigos se rieron juntos junto al río."
+    },
+    {
+     "who": "lila",
+     "en": "Let's go back to the garden to play!",
+     "es": "¡Volvamos al jardín a jugar!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "To the garden! Let's go!",
+     "es": "¡Al jardín! ¡Vámonos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "With happy hearts, they skipped all the way home.",
+     "es": "Con el corazón feliz, saltaron alegremente todo el camino de regreso.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-friends",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.25,
+     "y": 0.6,
+     "at": 0,
+     "anim": "float",
+     "color": "red"
+    },
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.6,
+     "at": 0,
+     "anim": "float",
+     "color": "blue"
+    },
+    {
+     "what": "balloon",
+     "x": 0.75,
+     "y": 0.6,
+     "at": 0,
+     "anim": "float",
+     "color": "green"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the garden, everyone was so happy together.",
+     "es": "De vuelta en el jardín, todos estaban muy felices juntos."
+    },
+    {
+     "who": "zibu",
+     "en": "Look at our colorful balloons!",
+     "es": "¡Miren nuestros globos de colores!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "They are so bright and pretty!",
+     "es": "¡Son muy brillantes y bonitos!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! I love playing with my friends!",
+     "es": "¡Yupi! ¡Me encanta jugar con mis amigos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Flippy bounced his green balloon high in the air.",
+     "es": "Flippy rebotó su globo verde muy alto en el aire."
+    },
+    {
+     "who": "guest",
+     "en": "Whee! Up, up, up!",
+     "es": "¡Wii! ¡Arriba, arriba, arriba!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Catch it, Lila!",
+     "es": "¡Atrápalo, Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "I got it! Boing!",
+     "es": "¡Lo tengo! ¡Boing!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "They all laughed and played in the warm sunshine.",
+     "es": "Todos rieron y jugaron bajo el sol cálido."
+    },
+    {
+     "who": "zibu",
+     "en": "Playing together is the best thing ever.",
+     "es": "Jugar juntos es lo mejor del mundo.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "And saying sorry makes our hearts feel so warm.",
+     "es": "Y pedir perdón hace que nuestros corazones se sientan muy cálidos.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Friends forever!",
+     "es": "¡Amigos para siempre!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "When we make a mistake, saying sorry helps everyone feel better.",
+     "es": "Cuando nos equivocamos, pedir perdón ayuda a que todos se sientan mejor.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "When a mistake is made today...",
+     "es": "Cuando hoy cometemos un error..."
+    },
+    {
+     "who": "narrator",
+     "en": "We say I am sorry right away!",
+     "es": "¡Decimos lo siento de una vez!"
+    },
+    {
+     "who": "narrator",
+     "en": "Our friends feel happy and so glad,",
+     "es": "Nuestros amigos se sienten felices y muy bien,"
+    },
+    {
+     "who": "narrator",
+     "en": "No one needs to feel so sad!",
+     "es": "¡Ya nadie tiene que estar triste también!"
+    },
+    {
+     "who": "zibu",
+     "en": "I popped the balloon with a loud, loud pop!",
+     "es": "¡Yo reventé el globo con un fuerte estallido!"
+    },
+    {
+     "who": "lila",
+     "en": "Then we went looking and didn't stop!",
+     "es": "¡Luego fuimos a buscar y no nos detuvimos!"
+    },
+    {
+     "who": "zibu",
+     "en": "I said I am sorry with all my heart,",
+     "es": "Dije lo siento con todo mi corazón,"
+    },
+    {
+     "who": "lila",
+     "en": "And friendship gave us a brand new start!",
+     "es": "¡Y la amistad nos dio una nueva ilusión!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a mistake is made today...",
+     "es": "Cuando hoy cometemos un error..."
+    },
+    {
+     "who": "narrator",
+     "en": "We say I am sorry right away!",
+     "es": "¡Decimos lo siento de una vez!"
+    },
+    {
+     "who": "narrator",
+     "en": "Our friends feel happy and so glad,",
+     "es": "Nuestros amigos se sienten felices y muy bien,"
+    },
+    {
+     "who": "narrator",
+     "en": "No one needs to feel so sad!",
+     "es": "¡Ya nadie tiene que estar triste también!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Otra vez! ¡Canten con nosotros!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a mistake is made today...",
+     "es": "Cuando hoy cometemos un error..."
+    },
+    {
+     "who": "narrator",
+     "en": "We say I am sorry right away!",
+     "es": "¡Decimos lo siento de una vez!"
+    },
+    {
+     "who": "narrator",
+     "en": "Our friends feel happy and so glad,",
+     "es": "Nuestros amigos se sienten felices y muy bien,"
+    },
+    {
+     "who": "narrator",
+     "en": "No one needs to feel so sad!",
+     "es": "¡Ya nadie tiene que estar triste también!"
+    },
+    {
+     "who": "zibu",
+     "en": "I popped the balloon with a loud, loud pop!",
+     "es": "¡Yo reventé el globo con un fuerte estallido!"
+    },
+    {
+     "who": "lila",
+     "en": "Then we went looking and didn't stop!",
+     "es": "¡Luego fuimos a buscar y no nos detuvimos!"
+    },
+    {
+     "who": "zibu",
+     "en": "I said I am sorry with all my heart,",
+     "es": "Dije lo siento con todo mi corazón,"
+    },
+    {
+     "who": "lila",
+     "en": "And friendship gave us a brand new start!",
+     "es": "¡Y la amistad nos dio una nueva ilusión!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a mistake is made today...",
+     "es": "Cuando hoy cometemos un error..."
+    },
+    {
+     "who": "narrator",
+     "en": "We say I am sorry right away!",
+     "es": "¡Decimos lo siento de una vez!"
+    },
+    {
+     "who": "narrator",
+     "en": "Our friends feel happy and so glad,",
+     "es": "Nuestros amigos se sienten felices y muy bien,"
+    },
+    {
+     "who": "narrator",
+     "en": "No one needs to feel so sad!",
+     "es": "¡Ya nadie tiene que estar triste también!"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Singing together is the best!",
+     "es": "¡Ribbit! ¡Cantar juntos es lo mejor!"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.65
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó el cuento? ¡Vamos a recordarlo juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who was playing with the bouncy balloon?",
+     "es": "¿Quién estaba jugando con el globo saltarín?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Flippy!",
+     "es": "¡Zibu, Lila y Flippy!",
+     "show": {
+      "en": "3 Friends",
+      "es": "3 Amigos"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "What happened to the balloon?",
+     "es": "¿Qué le pasó al globo?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "It popped on a sharp stone!",
+     "es": "¡Se reventó en una piedra filosa!",
+     "show": {
+      "en": "POP!",
+      "es": "¡PUM!"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Who helped Zibu remember to say sorry?",
+     "es": "¿Quién ayudó a Zibu a recordar que debía pedir perdón?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Kind Lila!",
+     "es": "¡La amable Lila!",
+     "show": {
+      "en": "Lila",
+      "es": "Lila"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "What did they find on the hill?",
+     "es": "¿Qué encontraron en la colina?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Colorful new balloons!",
+     "es": "¡Nuevos globos de colores!",
+     "show": {
+      "en": "Balloons",
+      "es": "Globos"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "What did Zibu say to Flippy at the river?",
+     "es": "¿Qué le dijo Zibu a Flippy en el río?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "I am so sorry!",
+     "es": "¡Lo siento mucho!",
+     "show": {
+      "en": "Sorry",
+      "es": "Perdón"
+     },
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Can you jump up high like a happy frog?",
+     "es": "¿Pueden saltar muy alto como una rana feliz?"
+    },
+    {
+     "who": "lila",
+     "en": "Let's jump three times! One... two... three!",
+     "es": "¡Saltemos tres veces! ¡Uno... dos... tres!"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying sorry when we make a mistake helps make our friends feel better.",
+     "es": "Pedir disculpas cuando nos equivocamos ayuda a que nuestros amigos se sientan mejor."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Let's wiggle and hop in the sun!",
+     "es": "¡Ribbit! ¡Mocemos el cuerpo y saltemos bajo el sol!",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep005-zibu-says-sorry"
+}
