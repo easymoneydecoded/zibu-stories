@@ -63,10 +63,12 @@ def gemini(prompt: str, max_tokens: int = 16000, temperature: float = 0.9) -> di
             "generationConfig": {"maxOutputTokens": max_tokens, "temperature": temperature,
                                  "responseMimeType": "application/json"}}
     # Si todos los modelos estan saturados (503) se espera y se vuelve a empezar: a ciertas horas Google va al limite
-    for ronda in range(5):
+    # (unos 30 min en total: las caidas de Gemini por "high demand" suelen durar menos que eso)
+    RONDAS = 9
+    for ronda in range(RONDAS):
         if ronda:
-            espera = 60 * ronda
-            print(f"   ! todos los modelos saturados u ocupados: espero {espera} s (ronda {ronda + 1}/5)")
+            espera = min(60 * ronda, 300)
+            print(f"   ! todos los modelos saturados u ocupados: espero {espera} s (ronda {ronda + 1}/{RONDAS})")
             time.sleep(espera)
         resultado = _gemini_ronda(key, body)
         if resultado is not None:
