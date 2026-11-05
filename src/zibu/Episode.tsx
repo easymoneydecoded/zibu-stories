@@ -120,7 +120,7 @@ const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
             </div>
           );
         })}
-        {(scene.type === "dance" || scene.type === "bye") && <Confetti local={local} />}
+        {(scene.type === "dance" || scene.type === "bye" || (scene.type === "sing" && !!scene.song && f >= scene.song.start)) && <Confetti local={local} />}
       </AbsoluteFill>
 
       {scene.type === "title" && <BigText text={tl.title} since={local - 5} color="#ff5d8f" size={120} top={300} />}

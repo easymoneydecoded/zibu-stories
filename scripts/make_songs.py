@@ -20,6 +20,12 @@ MODELS = ["music_v2_5", "music_v1"]
 KIDS = ["children's song for toddlers", "cartoon", "major key", "simple catchy melody", "clear sung lyrics"]
 NEGATIVE = ["sad", "dark", "aggressive", "explicit", "heavy drums", "distorted guitar", "rap"]
 
+FRIENDS_CHORUS = {
+    "en": "Friends, friends, we learn something new,\nEvery day with me and you!\n"
+          "Friends, friends, hold my hand,\nThe best friends in the land!",
+    "es": "Amigos, amigos, algo nuevo hoy,\n¡aprendo contigo a donde voy!\n"
+          "Amigos, amigos, dame la mano,\n¡los mejores del verano!"}
+
 # (estilos, [(seccion, duracion_ms, {lang: letra})])
 SONGS = {
     "intro": (["very short cheerful theme song", "ukulele", "xylophone", "hand claps", "bright friendly female vocal",
@@ -41,6 +47,21 @@ SONGS = {
                         "Dance with Zibu, dance with Lila,\nDance, dance, everybody!",
                   "es": "¡Baila con Zibu, baila con Lila,\nbaila, baila, todo el mundo!\n"
                         "¡Baila con Zibu, baila con Lila,\nbaila, baila, todo el mundo!"})]),
+    # Cancion del medio del episodio (escena "song"): generica sobre amistad y aprender, vale para cualquier leccion
+    "friends": (["happy sing-along children's song", "ukulele", "xylophone", "glockenspiel", "hand claps",
+                 "cheerful female vocal with kids choir", "110 BPM", "catchy repetitive chorus"],
+                [("Verse 1", 22000, {
+                    "en": "When I play with all my friends,\nThe fun and laughing never ends.\n"
+                          "We share, we help, we try our best,\nTogether we're the very best!",
+                    "es": "Cuando juego con mis amigos,\nla alegría va conmigo.\n"
+                          "Compartimos, nos ayudamos,\n¡y juntitos aprendemos!"}),
+                 ("Chorus", 23000, FRIENDS_CHORUS),
+                 ("Verse 2", 22000, {
+                    "en": "If I'm sad, you make me smile,\nWe can sing and dance a while.\n"
+                          "If we make a big mistake,\nWe say sorry, give a shake!",
+                    "es": "Si estoy triste, tú me alegras,\ncantamos juntos, ¡qué fiesta!\n"
+                          "Si un error a veces hago,\npido perdón y te abrazo."}),
+                 ("Chorus", 23000, FRIENDS_CHORUS)]),
     "bye": (["gentle sweet goodbye song", "soft ukulele", "glockenspiel", "warm female vocal", "calm happy melody",
              "100 BPM", "lullaby feel"],
             [("Goodbye", 35000, {

@@ -35,7 +35,7 @@ export type PropItem = {
 
 export type Scene = {
   id: string;
-  type?: "hook" | "title" | "song" | "recap" | "dance" | "bye";
+  type?: "hook" | "title" | "song" | "sing" | "recap" | "dance" | "bye";  // sing: cancion fija cantada (friends)
   song?: { src: string; start: number; dur: number }; // cancion fija (sintonia, baile, despedida)
   bg: "garden" | "forest" | "river" | "hill" | "sky" | "beach" | "room";
   time: "day" | "sunset" | "night";

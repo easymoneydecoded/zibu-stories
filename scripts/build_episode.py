@@ -207,8 +207,16 @@ def main(story_path: str, lang: str, motor: str = "kokoro") -> None:
 
     t = 0.0
     scenes, sfx, musica_tramos = [], [], []
+    amigos = cancion("friends", lang)
     for si, sc in enumerate(story["scenes"]):
         start = t
+        if sc.get("type") == "song" and amigos:
+            # La letra que escribe Gemini solo se podria leer, no cantar: en su lugar Zibu presenta la cancion fija
+            # (cantada de verdad, scripts/make_songs.py) y todos bailan mientras suena. Tipo "sing": sin letra en pantalla.
+            sc = {k2: v for k2, v in sc.items() if k2 not in ("lines", "props")} | {"type": "sing", "lines": [
+                {"who": "zibu", "mood": "happy", "action": "jump",
+                 "en": "Let's sing our friendship song! Sing with us!",
+                 "es": "¡Vamos a cantar nuestra canción de amigos! ¡Canta con nosotros!"}]}
         song = sc.get("type") == "song"
         # el gancho y el titulo entran rapido: los primeros segundos deciden si el nino se queda
         t += 2 * BAR if song else (0.3 if si == 0 or sc.get("type") == "title" else SCENE_LEAD)
@@ -254,6 +262,9 @@ def main(story_path: str, lang: str, motor: str = "kokoro") -> None:
         for p in sc.get("props", []):
             if p.get("at", 0) > 0:
                 sfx.append({"name": "pop", "at": lines[p["at"]]["start"]})
+        if sc.get("type") == "sing":
+            tema = {"src": amigos["src"], "start": round(t * FPS), "dur": round(amigos["dur"] * FPS)}
+            t += amigos["dur"] + 0.3
         t += 2 * BAR if song else SCENE_TAIL
         scenes.append({k2: v for k2, v in sc.items() if k2 != "lines"} |
                       {"start": round(start * FPS), "end": round(t * FPS), "lines": lines} | ({"song": tema} if tema else {}))
