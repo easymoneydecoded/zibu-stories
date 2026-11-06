@@ -1,0 +1,1396 @@
+{
+ "slug": "zibu-says-thank-you",
+ "title": {
+  "en": "Zibu Says Thank You",
+  "es": "Zibu dice gracias"
+ },
+ "lesson": {
+  "en": "Always say thank you when someone helps you.",
+  "es": "Siempre di gracias cuando alguien te ayude."
+ },
+ "guest": {
+  "species": "duckling",
+  "name": {
+   "en": "Pip",
+   "es": "Pipi"
+  }
+ },
+ "thumb": {
+  "en": [
+   "SAY THANK YOU!",
+   "FUN SHAPES!"
+  ],
+  "es": [
+   "¡DI GRACIAS!",
+   "¡LAS FORMAS!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Says Thank You! 🐥 Learn Shapes & Manners with Zibu and Friends",
+   "description": "Join Zibu, Lila, and Pip the duckling on a fun shape adventure! 🐥\nLearn shapes like Circle, Square, and Triangle! 🟡🟦🔺\nDiscover why saying 'Thank you' is so important and kind! ✨\nPerfect learning cartoon for toddlers and preschoolers aged 2-6. 🌟\n#ZibuAndFriends #LearnShapes #SayThankYou #ToddlerLearning #KidsCartoons",
+   "tags": [
+    "Zibu and Friends",
+    "Zibu",
+    "say thank you",
+    "learn shapes",
+    "shapes for kids",
+    "circle square triangle",
+    "toddler cartoons",
+    "educational videos for kids",
+    "manners for toddlers",
+    "preschool learning",
+    "duckling cartoon",
+    "kindness for kids"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu dice gracias! 🐥 Aprende las formas y buenos modales con Zibu",
+   "description": "¡Acompaña a Zibu, Lila y el patito Pipi en una divertida aventura! 🐥\n¡Aprende las formas: Círculo, Cuadrado y Triángulo! 🟡🟦🔺\nDescubre lo importante y bonito que es decir 'Gracias'. ✨\nDibujos animados educativos ideales para niños de 2 a 6 años. 🌟\n#ZibuYSusAmigos #AprendeLasFormas #DecirGracias #VideosEducativos #CaricaturasParaNiños",
+   "tags": [
+    "Zibu y sus amigos",
+    "Zibu",
+    "decir gracias",
+    "aprender las formas",
+    "formas para niños",
+    "circulo cuadrado triangulo",
+    "caricaturas para niños",
+    "videos educativos",
+    "buenos modales",
+    "preescolar",
+    "patito",
+    "valores para niños"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Hi friend!",
+     "es": "¡Hola, amigo!",
+     "action": "jump",
+     "mood": "laugh"
+    },
+    {
+     "who": "zibu",
+     "en": "Pip the duckling lost his shape toys!",
+     "es": "¡El patito Pipi perdió sus juguetes de formas!",
+     "action": "wave",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us find them and say thank you?",
+     "es": "¿Nos ayudas a encontrarlos y decir gracias?",
+     "action": "bigjump",
+     "mood": "laugh"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Says Thank You!",
+     "es": "¡Zibu dice gracias!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "meeting-pip",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.75,
+     "y": 0.75,
+     "at": 9
+    },
+    {
+     "what": "gift",
+     "x": 0.82,
+     "y": 0.75,
+     "at": 9
+    },
+    {
+     "what": "kite",
+     "x": 0.89,
+     "y": 0.75,
+     "at": 9
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun was shining inside the cozy room.",
+     "es": "El sol brillaba dentro del acogedor cuarto."
+    },
+    {
+     "who": "zibu",
+     "en": "Good morning, Lila! What a happy day!",
+     "es": "¡Buenos días, Lila! ¡Qué día tan feliz!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Hello, Zibu! It's a wonderful day to play!",
+     "es": "¡Hola, Zibu! ¡Es un día maravilloso para jugar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, a tiny duckling waddled into the room.",
+     "es": "De repente, un patito pequeñito entró al cuarto.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! Hello, new friends!",
+     "es": "¡Cuac, cuac! ¡Hola, nuevos amigos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! Hello there! What is your name?",
+     "es": "¡Oh! ¡Hola! ¿Cómo te llamas?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "I am Pip! I love to play games!",
+     "es": "¡Soy Pipi! ¡Me encanta jugar juegos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Welcome, Pip! What did you bring with you?",
+     "es": "¡Bienvenido, Pipi! ¿Qué trajiste contigo?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I brought my three favorite shaped toys!",
+     "es": "¡Traje mis tres juguetes de formas favoritos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Look! A round ball, a square gift, and a triangle kite!",
+     "es": "¡Mira! ¡Una pelota redonda, un regalo cuadrado y una cometa triangular!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Let's go outside and play together!",
+     "es": "¡Cuac! ¡Vamos afuera a jugar juntos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! The garden is so nice today!",
+     "es": "¡Sí! ¡El jardín está muy lindo hoy!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "So, Zibu, Lila, and Pip hurried outside.",
+     "es": "Así que Zibu, Lila y Pipi se apresuraron a salir.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 1.2
+      },
+      {
+       "who": "lila",
+       "to": 1.2
+      },
+      {
+       "who": "guest",
+       "to": 1.2
+      }
+     ],
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "finding-the-circle",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.85,
+     "y": 0.65,
+     "at": 0
+    },
+    {
+     "what": "ball",
+     "x": 0.65,
+     "y": 0.75,
+     "at": 1,
+     "until": 11,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Out in the garden, the green grass felt soft and warm.",
+     "es": "Afuera en el jardín, el pasto verde se sentía suave y cálido."
+    },
+    {
+     "who": "guest",
+     "en": "Look at my round ball! Bounce, bounce!",
+     "es": "¡Miren mi pelota redonda! ¡Rebota, rebota!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "It's so round and shiny!",
+     "es": "¡Es tan redonda y brillante!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "But oh... the round ball bounced behind a big flower!",
+     "es": "Pero ¡oh!... ¡la pelota redonda rebotó detrás de una gran flor!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oh no! Where is my ball?",
+     "es": "¡Oh, no! ¿Dónde está mi pelota?",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Don't worry, Pip! I will find it for you!",
+     "es": "¡No te preocupes, Pipi! ¡Yo la buscaré por ti!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu walked around the big flower.",
+     "es": "Zibu caminó alrededor de la gran flor.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.85
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "I found it! Here is the round ball!",
+     "es": "¡La encontré! ¡Aquí está la pelota redonda!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Hooray! Zibu found your ball, Pip!",
+     "es": "¡Viva! ¡Zibu encontró tu pelota, Pipi!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Here you go, Pip!",
+     "es": "¡Aquí tienes, Pipi!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Yay! My ball!",
+     "es": "¡Sí! ¡Mi pelota!",
+     "mood": "happy",
+     "action": "spin",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Pip took the ball and ran off to play... without saying a word.",
+     "es": "Pipi tomó la pelota y corrió a jugar... sin decir una palabra.",
+     "pause": 1.0
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... he ran away very fast.",
+     "es": "Oh... se fue muy rápido.",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Hmm... Pip forgot to say thank you.",
+     "es": "Mmm... Pipi olvidó decir gracias.",
+     "mood": "sad"
+    }
+   ]
+  },
+  {
+   "id": "finding-the-square",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7,
+     "y": 0.6
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.8,
+     "y": 0.7,
+     "at": 1,
+     "until": 8,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila climbed up the green hill to find Pip.",
+     "es": "Zibu y Lila subieron por la colina verde para buscar a Pipi."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! There is Pip with his square gift box!",
+     "es": "¡Miren! ¡Allá está Pipi con su caja de regalo cuadrada!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly... oh no! The square gift started to slide down the hill!",
+     "es": "De repente... ¡oh, no! ¡El regalo cuadrado empezó a deslizarse colina abajo!"
+    },
+    {
+     "who": "guest",
+     "en": "Help! My square box is running away!",
+     "es": "¡Auxilio! ¡Mi caja cuadrada se está escapando!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Don't worry, Pip! I will catch it!",
+     "es": "¡No te preocupes, Pipi! ¡Yo la atraparé!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila ran very fast and safely caught the square box.",
+     "es": "Lila corrió muy rápido y atrapó la caja cuadrada sin peligro.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Here is your square box, Pip!",
+     "es": "¡Aquí está tu caja cuadrada, Pipi!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yyay! My box!",
+     "es": "¡Yupi! ¡Mi caja!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip took the box quickly and turned around to leave.",
+     "es": "Pipi tomó la caja rápidamente y se dio la vuelta para irse."
+    },
+    {
+     "who": "zibu",
+     "en": "Wait, Pip... aren't you forgetting something?",
+     "es": "Espera, Pipi... ¿no estás olvidando algo?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Bye-bye!",
+     "es": "¡Cuac! ¡Adiós, adiós!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "And off he went again, without saying a single word.",
+     "es": "Y se fue otra vez, sin decir una sola palabra.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "finding-the-triangle",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.75,
+     "y": 0.3,
+     "at": 1,
+     "until": 10,
+     "anim": "float"
+    },
+    {
+     "what": "leaf",
+     "x": 0.75,
+     "y": 0.35,
+     "at": 1,
+     "until": 10
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the garden, Pip was trying to reach his third favorite toy.",
+     "es": "De vuelta en el jardín, Pipi intentaba alcanzar su tercer juguete favorito."
+    },
+    {
+     "who": "guest",
+     "en": "Oh, oh... my triangle kite is stuck on a high leaf!",
+     "es": "Ay, ay... ¡mi cometa triangular está atascada en una hoja alta!",
+     "mood": "sad",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "We can help you get the triangle kite down, Pip!",
+     "es": "¡Te podemos ayudar a bajar la cometa triangular, Pipi!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu stretched up high, and Lila gently pulled the leaf.",
+     "es": "Zibu se estiró muy alto y Lila sacudió suavemente la hoja.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Got it! Here is your triangle kite, Pip!",
+     "es": "¡Lo tengo! ¡Aquí está tu cometa triangular, Pipi!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, bright magic words appeared in the air for all to see!",
+     "es": "De repente, ¡aparecieron palabras mágicas y brillantes en el aire para que todos las vieran!",
+     "show": {
+      "en": "CIRCLE - SQUARE - TRIANGLE",
+      "es": "CÍRCULO - CUADRADO - TRIÁNGULO",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "A circle ball, a square box, and a triangle kite!",
+     "es": "¡Una pelota circular, una caja cuadrada y una cometa triangular!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! All my favorite shapes are here!",
+     "es": "¡Yupi! ¡Todas mis figuras favoritas están aquí!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip grabbed his triangle kite and started to waddle away fast again.",
+     "es": "Pipi agarró su cometa triangular y comenzó a caminar rápido otra vez."
+    },
+    {
+     "who": "lila",
+     "en": "Oh dear... he did it again.",
+     "es": "Ay, caramba... lo hizo de nuevo.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila looked at each other, wondering what to do next.",
+     "es": "Zibu y Lila se miraron, preguntándose qué hacer ahora.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-the-lesson",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "cookie",
+     "x": 0.8,
+     "y": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Pip stopped walking and turned around to look at his friends.",
+     "es": "Pipi dejó de caminar y se dio la vuelta para mirar a sus amigos."
+    },
+    {
+     "who": "narrator",
+     "en": "The warm narrator spoke in a soft, gentle voice.",
+     "es": "El narrador cálido habló con una voz suave y amable."
+    },
+    {
+     "who": "narrator",
+     "en": "Tell me, Pip... did you forget something very special?",
+     "es": "Dime, Pipi... ¿olvidaste algo muy especial?"
+    },
+    {
+     "who": "guest",
+     "en": "Hmm? Forget something? What do you mean?",
+     "es": "¿Mjum? ¿Olvidar algo? ¿Qué quieres decir?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "We helped you with your ball, your box, and your kite, Pip.",
+     "es": "Te ayudamos con tu pelota, tu caja y tu cometa, Pipi.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "And when someone helps you... what is the magic word to say?",
+     "es": "Y cuando alguien te ayuda... ¿cuál es la palabra mágica que debes decir?",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Oh...",
+     "es": "Oh...",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip blinked his big eyes and thought very hard.",
+     "es": "Pipi parpadeó con sus grandes ojos y pensó mucho."
+    },
+    {
+     "who": "guest",
+     "en": "Is it... thank you?",
+     "es": "¿Es... gracias?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Saying thank you makes everyone feel so happy inside.",
+     "es": "¡Sí! Decir gracias hace que todos se sientan muy felices por dentro.",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "It shows your friends how much you appreciate their help!",
+     "es": "¡Le muestra a tus amigos cuánto aprecias su ayuda!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip's face lit up with a huge, joyful smile.",
+     "es": "La cara de Pipi se iluminó con una sonrisa enorme y alegre."
+    },
+    {
+     "who": "guest",
+     "en": "I understand now! I am ready!",
+     "es": "¡Ahora lo entiendo! ¡Ya estoy listo!",
+     "mood": "happy",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "saying-thank-you",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "cookie",
+     "x": 0.7,
+     "y": 0.7,
+     "until": 6
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun began to set, painting the garden in warm orange and pink.",
+     "es": "El sol comenzó a ponerse, pintando el jardín de un cálido naranja y rosa."
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! Thank you, Lila, for all your wonderful help!",
+     "es": "¡Gracias, Zibu! ¡Gracias, Lila, por toda su maravillosa ayuda!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip waddled over and gave Zibu a big, warm hug.",
+     "es": "Pipi caminó tambaleándose y le dio a Zibu un gran y cálido abrazo.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "You are so welcome, Pip!",
+     "es": "¡De nada, Pipi!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Then Pip waddled to Lila and gave her a gentle hug too.",
+     "es": "Luego Pipi caminó hacia Lila y le dio un tierno abrazo también.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.48
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Aww, thank you for the sweet hug, Pip!",
+     "es": "¡Aww, gracias por el tierno abrazo, Pipi!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip opened his little bag and shared a delicious cookie with each friend.",
+     "es": "Pipi abrió su bolsita y compartió una galleta deliciosa con cada amigo."
+    },
+    {
+     "who": "zibu",
+     "en": "Yum! This cookie is so tasty!",
+     "es": "¡Mmm! ¡Esta galleta es muy sabrosa!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you for sharing with us, Pip.",
+     "es": "Gracias por compartir con nosotros, Pipi.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Sharing is fun, and saying thank you is wonderful!",
+     "es": "¡Compartir es divertido y decir gracias es maravilloso!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The three friends laughed together under the evening sky.",
+     "es": "Los tres amigos rieron juntos bajo el cielo de la tarde."
+    },
+    {
+     "who": "zibu",
+     "en": "Friends forever!",
+     "es": "¡Amigos para siempre!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-celebration",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.3,
+     "y": 0.7,
+     "at": 1,
+     "until": 5,
+     "anim": "bounce",
+     "color": "#FF5722"
+    },
+    {
+     "what": "gift",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 5,
+     "until": 8,
+     "color": "#4CAF50"
+    },
+    {
+     "what": "kite",
+     "x": 0.75,
+     "y": 0.3,
+     "at": 8,
+     "until": 13,
+     "anim": "float",
+     "color": "#FFEB3B"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Up on the hill, the friends played happily with all their favorite toys.",
+     "es": "En la colina, los amigos jugaron felices con todos sus juguetes favoritos."
+    },
+    {
+     "who": "guest",
+     "en": "Look! Here is the round ball!",
+     "es": "¡Miren! ¡Aquí está la pelota redonda!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "A circle! Bounce, bounce, bounce!",
+     "es": "¡Un círculo! ¡Rebota, rebota, rebota!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you for rolling the ball to me, Pip!",
+     "es": "¡Gracias por rodarme la pelota, Pipi!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "You're welcome, Lila! Saying thank you feels so good!",
+     "es": "¡De nada, Lila! ¡Decir gracias se siente muy bien!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Next, Lila opened her square gift box.",
+     "es": "Después, Lila abrió su caja de regalo cuadrada."
+    },
+    {
+     "who": "lila",
+     "en": "Look at this square box! It has four straight sides!",
+     "es": "¡Miren esta caja cuadrada! ¡Tiene cuatro lados rectos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you for showing us, Lila! It's super cool!",
+     "es": "¡Gracias por mostrárnosla, Lila! ¡Está genial!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "And up in the breeze flew the triangle kite!",
+     "es": "¡Y en la brisa voló la cometa en forma de triángulo!"
+    },
+    {
+     "who": "guest",
+     "en": "Look at the triangle kite go! Higher and higher!",
+     "es": "¡Miren volar la cometa de triángulo! ¡Más y más alto!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Shapes are fun, but good manners are even better!",
+     "es": "¡Las formas son divertidas, pero los buenos modales son aún mejores!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Always remember to say thank you when someone helps you!",
+     "es": "¡Recuerden siempre decir gracias cuando alguien les ayude!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! Thank you, Lila!",
+     "es": "¡Gracias, Zibu! ¡Gracias, Lila!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "What a happy day on the hill! Goodbye, everyone!",
+     "es": "¡Qué día tan feliz en la colina! ¡Adiós a todos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.2,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "gift",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "kite",
+     "x": 0.8,
+     "y": 0.3,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "When someone helps, say thank you today!",
+     "es": "¡Si alguien te ayuda, di gracias hoy!"
+    },
+    {
+     "who": "narrator",
+     "en": "It brings a smile along the way!",
+     "es": "¡Una gran sonrisa te doy!"
+    },
+    {
+     "who": "narrator",
+     "en": "A circle, square, and triangle kite!",
+     "es": "¡Círculo, cuadrado y cometa al fin!"
+    },
+    {
+     "who": "narrator",
+     "en": "Good manners make the world so bright!",
+     "es": "¡Decir gracias alegra el jardín!"
+    },
+    {
+     "who": "zibu",
+     "en": "I found the ball behind the flower!",
+     "es": "¡Hallé la pelota en el jardín!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "I caught the box with all my power!",
+     "es": "¡Atrapé la caja hasta el fin!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "When friends help out, we say thank you!",
+     "es": "¡Si te ayudan, di gracias también!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "It makes us feel so happy too!",
+     "es": "¡Y todos nos sentimos muy bien!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "When someone helps, say thank you today!",
+     "es": "¡Si alguien te ayuda, di gracias hoy!"
+    },
+    {
+     "who": "narrator",
+     "en": "It brings a smile along the way!",
+     "es": "¡Una gran sonrisa te doy!"
+    },
+    {
+     "who": "narrator",
+     "en": "A circle, square, and triangle kite!",
+     "es": "¡Círculo, cuadrado y cometa al fin!"
+    },
+    {
+     "who": "narrator",
+     "en": "Good manners make the world so bright!",
+     "es": "¡Decir gracias alegra el jardín!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump",
+     "pause": 1
+    },
+    {
+     "who": "narrator",
+     "en": "When someone helps, say thank you today!",
+     "es": "¡Si alguien te ayuda, di gracias hoy!"
+    },
+    {
+     "who": "narrator",
+     "en": "It brings a smile along the way!",
+     "es": "¡Una gran sonrisa te doy!"
+    },
+    {
+     "who": "narrator",
+     "en": "A circle, square, and triangle kite!",
+     "es": "¡Círculo, cuadrado y cometa al fin!"
+    },
+    {
+     "who": "narrator",
+     "en": "Good manners make the world so bright!",
+     "es": "¡Decir gracias alegra el jardín!"
+    },
+    {
+     "who": "zibu",
+     "en": "I found the ball behind the flower!",
+     "es": "¡Hallé la pelota en el jardín!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "I caught the box with all my power!",
+     "es": "¡Atrapé la caja hasta el fin!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "When friends help out, we say thank you!",
+     "es": "¡Si te ayudan, di gracias también!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "It makes us feel so happy too!",
+     "es": "¡Y todos nos sentimos muy bien!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "When someone helps, say thank you today!",
+     "es": "¡Si alguien te ayuda, di gracias hoy!"
+    },
+    {
+     "who": "narrator",
+     "en": "It brings a smile along the way!",
+     "es": "¡Una gran sonrisa te doy!"
+    },
+    {
+     "who": "narrator",
+     "en": "A circle, square, and triangle kite!",
+     "es": "¡Círculo, cuadrado y cometa al fin!"
+    },
+    {
+     "who": "narrator",
+     "en": "Good manners make the world so bright!",
+     "es": "¡Decir gracias alegra el jardín!"
+    },
+    {
+     "who": "guest",
+     "en": "Quack quack! Saying thank you is fun!",
+     "es": "¡Cuac, cuac! ¡Decir gracias es genial!",
+     "mood": "happy",
+     "action": "spin"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Te gustó la historia? ¡Recordémosla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who came to visit Zibu and Lila today?",
+     "es": "¿Quién vino a visitar a Zibu y Lila hoy?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Pip the duckling!",
+     "es": "¡Pipi el patito!",
+     "show": {
+      "en": "Pip",
+      "es": "Pipi",
+      "color": "#FFCC00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What was the first round toy Zibu found?",
+     "es": "¿Cuál fue el primer juguete redondo que encontró Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "The round ball!",
+     "es": "¡La pelota redonda!",
+     "show": {
+      "en": "Ball",
+      "es": "Pelota",
+      "color": "#3399FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What shape was the gift box Lila caught?",
+     "es": "¿Qué forma tenía la caja que atrapó Lila?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A square!",
+     "es": "¡Un cuadrado!",
+     "show": {
+      "en": "Square",
+      "es": "Cuadrado",
+      "color": "#FF6699"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What shape was the kite stuck on the leaf?",
+     "es": "¿Qué forma tenía la cometa atrapada en la hoja?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A triangle!",
+     "es": "¡Un triángulo!",
+     "show": {
+      "en": "Triangle",
+      "es": "Triángulo",
+      "color": "#33CC66"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What is the magic word to say when someone helps you?",
+     "es": "¿Cuál es la palabra mágica cuando alguien te ayuda?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Thank you!",
+     "es": "¡Gracias!",
+     "show": {
+      "en": "Thank You",
+      "es": "Gracias",
+      "color": "#FF9900"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's say thank you together!",
+     "es": "¡Digamos gracias juntos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Count with us! One!",
+     "es": "¡Cuenta con nosotros! ¡Uno!",
+     "show": {
+      "en": "1",
+      "es": "1"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Two!",
+     "es": "¡Dos!",
+     "show": {
+      "en": "2",
+      "es": "2"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Three... Thank you!",
+     "es": "¡Tres... ¡Gracias!",
+     "show": {
+      "en": "3",
+      "es": "3"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Saying thank you feels so good!",
+     "es": "¡Sí! ¡Decir gracias se siente tan bien!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Always remember to say thank you when someone helps you!",
+     "es": "¡Siempre recuerda decir gracias cuando alguien te ayude!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! Thank you, everyone!",
+     "es": "¡Cuac, cuac! ¡Gracias a todos!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep006-zibu-says-thank-you"
+}
