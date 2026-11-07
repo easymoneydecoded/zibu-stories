@@ -9,3 +9,4 @@ models/
 out/
 public/ep/
 public/sfx/
+__pycache__/
