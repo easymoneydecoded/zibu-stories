@@ -73,11 +73,32 @@ const BigText: React.FC<{ text: string; color?: string | null; since: number; to
   );
 };
 
+// Camara del primer minuto: la mayoria de los ninos se va en los primeros 25 s, asi que en cada frase la camara se
+// acerca a quien habla (planos alternos, cambio rapido) para que siempre pase algo. Despues, el zoom lento de siempre.
+const DYNAMIC_UNTIL = 60 * 30;
+const camera = (scene: Scene, f: number): { z: number; ox: number; w: number } => {
+  const w = interpolate(f, [DYNAMIC_UNTIL - 30, DYNAMIC_UNTIL], [1, 0], clamp);
+  const idx = scene.lines.reduce((acc, l, i) => (l.start <= f ? i : acc), -1);
+  if (w === 0 || idx < 0) return { z: 1, ox: 0.5, w: 0 };
+  const shot = (i: number) => {
+    const l = scene.lines[i];
+    if (!l || !scene.cast.some((c) => c.who === l.who)) return { z: 1.06, ox: 0.5 };  // narradora: plano general
+    const x = Math.min(0.78, Math.max(0.22, position(scene, l.who, l.start).x));
+    return { z: i % 2 === 0 ? 1.28 : 1.14, ox: x };
+  };
+  const a = shot(idx - 1), b = shot(idx);
+  const t = spring({ frame: f - scene.lines[idx].start, fps: 30, config: { damping: 20, stiffness: 200 } });
+  return { z: a.z + (b.z - a.z) * t, ox: a.ox + (b.ox - a.ox) * t, w };
+};
+
 const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
   const local = useCurrentFrame();
   const f = local + scene.start;
   const fade = interpolate(local, [0, 10], [0, 1], clamp);
-  const zoom = interpolate(local, [0, scene.end - scene.start], [1, 1.05]);
+  const slow = interpolate(local, [0, scene.end - scene.start], [1, 1.05]);
+  const cam = camera(scene, f);
+  const zoom = slow * (1 - cam.w) + cam.z * cam.w;
+  const originX = 50 * (1 - cam.w) + cam.ox * 100 * cam.w;
   // Numero o palabra grande: se ve desde su frase hasta que empieza la siguiente
   const shownIdx = scene.lines.reduce((acc, l, i) => (l.show && f >= l.start ? i : acc), -1);
   const shownNext = scene.lines[shownIdx + 1];
@@ -88,7 +109,7 @@ const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
 
   return (
     <AbsoluteFill style={{ opacity: fade }}>
-      <AbsoluteFill style={{ scale: `${zoom}`, transformOrigin: "50% 80%" }}>
+      <AbsoluteFill style={{ scale: `${zoom}`, transformOrigin: `${originX}% 75%` }}>
         <Backdrop bg={scene.bg} time={scene.time} />
         {(scene.props ?? []).map((p, i) => {
           const at = p.at ? scene.lines[p.at].start : scene.start;

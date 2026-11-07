@@ -231,9 +231,11 @@ Return ONLY JSON:
  "thumb": {{"en": [2 very short lines for the thumbnail, max 16 characters each], "es": [2 very short lines, max 16 characters each], "scene": index of the most colorful story scene (1-based position in the full episode, the title scene is 0)}},
  "youtube": {{"en": {{"title": "max 90 chars, with an emoji, says what kids learn", "description": "5-8 lines with emojis: what happens and what kids learn, ages 2-6, ends with 3-5 hashtags", "tags": [10-14 tags]}}, "es": {{same in Spanish}}}},
  "hook": {{"en": [2 or 3 very short lines], "es": [same in Spanish], "scene": index (0-based) in "story" of the most exciting scene}}:
-   the first seconds of the video, before the title. Zibu talks DIRECTLY to the child watching, excited, and
-   teases the problem of the story with a question, e.g. "Hi, friend! Oh no... Barnaby lost his ball!",
-   "Can you help us find it? Let's go!". It decides if children keep watching, so make it exciting.
+   the first seconds of the video, before the title. They decide if children keep watching (most leave in the
+   first 25 seconds), so ACTION FROM THE FIRST WORD: line 1 is something happening RIGHT NOW, with surprise
+   (e.g. "Oh no! The red balloon is flying away!", "Whoa! Barnaby's ball rolled into the river!"), never a
+   greeting first. Then Zibu talks DIRECTLY to the child watching and asks for help (e.g. "Friend, can you
+   help us catch it? Let's go!"). Max 8 words per line.
  "story": [7 story scenes: {{"id": "kebab-case", "bg": one of {", ".join(BGS)}, "time": one of {", ".join(TIMES)}, "cast": ["zibu", "lila", "guest" as needed], "summary": "2-3 sentences of what happens"}}],
  "song": {{"en": "song title", "es": "song title"}}}}
 Use at least 3 different bg values."""
@@ -303,12 +305,15 @@ def gancho(plan: dict, historia: list[dict]) -> dict:
     """Primeros segundos del video, antes del titulo: Zibu habla al nino en el escenario mas llamativo."""
     h = plan["hook"]
     sc = historia[min(max(0, int(h.get("scene", 0))), len(historia) - 1)]
-    acciones = [("jump", "laugh"), ("wave", "surprised"), ("bigjump", "laugh")]
+    # La primera frase es algo que pasa ya: Zibu salta sorprendido desde el primer fotograma
+    acciones = [("bigjump", "surprised"), ("wave", "happy"), ("jump", "laugh")]
     lineas = [{"who": "zibu", "en": en, "es": es, "action": acciones[i % 3][0], "mood": acciones[i % 3][1]}
               for i, (en, es) in enumerate(zip(h["en"], h["es"]))]
+    # El objeto de la historia (globo, pelota, estrella...) ya se ve en pantalla desde el segundo 0
+    props = [{k: v for k, v in p.items() if k not in ("at", "until")} for p in sc.get("props", []) if isinstance(p, dict)]
     return {"id": "hook", "type": "hook", "bg": sc["bg"], "time": sc["time"],
             "cast": [{"who": "zibu", "x": 0.42}, {"who": "lila", "x": 0.66}, {"who": "guest", "x": 0.85}],
-            "lines": lineas}
+            "lines": lineas} | ({"props": props[:3]} if props else {})
 
 
 def escribir(species: str, lesson: str, learn: str, anteriores: list[str]) -> dict:
