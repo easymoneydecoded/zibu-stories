@@ -43,6 +43,16 @@ def analytics(lang: str) -> dict:
             res[name] = [dict(zip(cols, x)) for x in r.get("rows", [])]
         except Exception as e:  # sin permiso de Analytics: el resto del informe sigue
             return {"error": str(e)[:200]}
+    # Curva de retencion de cada episodio: que fraccion sigue viendo en cada punto del video
+    res["retention"] = {}
+    for v in res.get("videos", [])[:6]:
+        try:
+            r = ya.reports().query(ids="channel==MINE", **rng, dimensions="elapsedVideoTimeRatio",
+                                   metrics="audienceWatchRatio,relativeRetentionPerformance",
+                                   filters=f"video=={v['video']}").execute()
+            res["retention"][v["video"]] = [[round(x[0], 2), round(x[1], 3), x[2]] for x in r.get("rows", [])]
+        except Exception as e:
+            res["retention"][v["video"]] = str(e)[:150]
     return res
 
 
