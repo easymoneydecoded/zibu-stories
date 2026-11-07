@@ -10,6 +10,42 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from upload import youtube  # noqa: E402
 
+def analytics(lang: str) -> dict:
+    """YouTube Analytics (necesita el permiso yt-analytics.readonly: scripts/autorizar_youtube.py)."""
+    import os
+    from datetime import date, timedelta
+    from google.oauth2.credentials import Credentials
+    from googleapiclient.discovery import build
+    creds = Credentials(None, refresh_token=os.environ[f"YT_REFRESH_{lang.upper()}"],
+                        client_id=os.environ["YT_CLIENT_ID"], client_secret=os.environ["YT_CLIENT_SECRET"],
+                        token_uri="https://oauth2.googleapis.com/token")   # sin scopes: los que se concedieron
+    ya = build("youtubeAnalytics", "v2", credentials=creds, cache_discovery=False)
+    rng = {"startDate": "2026-11-01", "endDate": date.today().isoformat()}
+    queries = {
+        "daily": dict(dimensions="day", metrics="views,estimatedMinutesWatched,averageViewDuration,subscribersGained",
+                      sort="day"),
+        "videos": dict(dimensions="video", metrics="views,estimatedMinutesWatched,averageViewDuration,"
+                       "averageViewPercentage,subscribersGained", sort="-views", maxResults=50),
+        "traffic": dict(dimensions="insightTrafficSourceType", metrics="views,estimatedMinutesWatched", sort="-views"),
+        "suggested_by": dict(dimensions="insightTrafficSourceDetail", metrics="views",
+                             filters="insightTrafficSourceType==RELATED_VIDEO", sort="-views", maxResults=15),
+        "search_terms": dict(dimensions="insightTrafficSourceDetail", metrics="views",
+                             filters="insightTrafficSourceType==YT_SEARCH", sort="-views", maxResults=15),
+        "country": dict(dimensions="country", metrics="views", sort="-views", maxResults=10),
+        "device": dict(dimensions="deviceType", metrics="views,estimatedMinutesWatched", sort="-views"),
+        "playback": dict(dimensions="insightPlaybackLocationType", metrics="views", sort="-views"),
+    }
+    res = {}
+    for name, kw in queries.items():
+        try:
+            r = ya.reports().query(ids="channel==MINE", **rng, **kw).execute()
+            cols = [h["name"] for h in r.get("columnHeaders", [])]
+            res[name] = [dict(zip(cols, x)) for x in r.get("rows", [])]
+        except Exception as e:  # sin permiso de Analytics: el resto del informe sigue
+            return {"error": str(e)[:200]}
+    return res
+
+
 out = {}
 for lang in ("es", "en"):
     yt = youtube(lang)
@@ -29,7 +65,8 @@ for lang in ("es", "en"):
             videos.append({"id": v["id"], "title": v["snippet"]["title"], "published": v["snippet"]["publishedAt"],
                            "duration": v["contentDetails"]["duration"], "privacy": v["status"]["privacyStatus"],
                            "made_for_kids": v["status"].get("madeForKids"), **v["statistics"]})
-    out[lang] = {"channel": ch["snippet"]["title"], "stats": ch["statistics"], "videos": videos}
+    out[lang] = {"channel": ch["snippet"]["title"], "stats": ch["statistics"], "videos": videos,
+                 "analytics": analytics(lang)}
     print(f"{lang}: {ch['snippet']['title']} {ch['statistics']} ({len(videos)} videos)")
 
 Path("out").mkdir(exist_ok=True)

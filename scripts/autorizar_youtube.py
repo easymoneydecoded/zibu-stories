@@ -14,7 +14,8 @@ from pathlib import Path
 from google_auth_oauthlib.flow import InstalledAppFlow
 
 REPO = "easymoneydecoded/zibu-stories"
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube"]
+SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube",
+          "https://www.googleapis.com/auth/yt-analytics.readonly"]   # estadisticas (scripts/report.py), solo lectura
 ENV = Path(__file__).resolve().parent.parent.parent / "Youtube" / ".env"
 
 
