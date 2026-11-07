@@ -1,0 +1,1360 @@
+{
+ "slug": "zibu-learns-to-listen",
+ "title": {
+  "en": "Zibu Learns to Listen",
+  "es": "Zibu aprende a escuchar"
+ },
+ "lesson": {
+  "en": "Listening to our friends helps us work together and achieve great things.",
+  "es": "Escuchar a nuestros amigos nos ayuda a trabajar juntos y lograr grandes cosas."
+ },
+ "guest": {
+  "species": "owl",
+  "name": {
+   "en": "Oliver",
+   "es": "Oliver"
+  }
+ },
+ "thumb": {
+  "en": [
+   "LISTEN & LAUNCH!",
+   "COUNT 5 TO 1"
+  ],
+  "es": [
+   "¡ESCUCHA Y VUELA!",
+   "CUENTA DEL 5 AL 1"
+  ],
+  "scene": 7
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Learns to Listen! 🦉 Countdown 5 to 1 Launch 🎈 | Zibu & Friends",
+   "description": "Zibu gets a big red balloon and wants to launch it high into the sky! 🎈\nOliver the wise owl knows the secret trick, but Zibu is too excited to listen.\nWill Zibu stop and listen to his friend?\nJoin us to count backwards from 5 to 1 like a rocket! 🚀\nPerfect for toddlers and preschoolers aged 2-6.\n\n#ZibuAndFriends #LearnToListen #CountingForKids #PreschoolLearning",
+   "tags": [
+    "Zibu",
+    "Zibu and friends",
+    "learn to listen",
+    "listening skills for kids",
+    "count backwards 5 to 1",
+    "countdown for toddlers",
+    "educational cartoon",
+    "owl cartoon",
+    "social emotional learning",
+    "toddler videos 2-6"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu aprende a escuchar! 🦉 Conteo regresivo del 5 al 1 🎈 | Zibu y sus amigos",
+   "description": "¡Zibu tiene un gran globo rojo y quiere hacerlo volar muy alto! 🎈\nOliver el búho sabio conoce el truco secreto, pero Zibu está muy emocionado para escuchar.\n¿Podrá Zibu detenerse y escuchar a su amigo?\n¡Acompáñanos a contar hacia atrás del 5 al 1 como un cohete! 🚀\nIdeal para niños de 2 a 6 años.\n\n#ZibuYSusAmigos #AprenderAEscuchar #ContarParaNinos #CaricaturasEducativas",
+   "tags": [
+    "Zibu",
+    "Zibu y sus amigos",
+    "aprender a escuchar",
+    "habilidades sociales",
+    "contar del 5 al 1",
+    "conteo regresivo",
+    "caricaturas preescolares",
+    "videos para niños",
+    "buho animado",
+    "educacion infantil"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Hi friend! Look at this big red balloon!",
+     "es": "¡Hola, amigo! ¡Mira este gran globo rojo!",
+     "action": "jump",
+     "mood": "laugh"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us count down to launch it?",
+     "es": "¿Nos ayudas a contar hacia atrás para lanzarlo?",
+     "action": "wave",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go!",
+     "es": "¡Vamos!",
+     "action": "bigjump",
+     "mood": "laugh"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Learns to Listen!",
+     "es": "¡Zibu aprende a escuchar!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "meet-oliver",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.38
+    },
+    {
+     "who": "guest",
+     "x": 0.85,
+     "y": 0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.3,
+     "y": 0.6,
+     "at": 0,
+     "color": "#FF3366"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila were walking in the sunny forest.",
+     "es": "Zibu y Lila caminaban por el bosque soleado."
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! A shiny red balloon!",
+     "es": "¡Mira, Zibu! ¡Un globo rojo y brillante!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! It's so pretty! Let's make it fly high!",
+     "es": "¡Guau! ¡Es muy bonito! ¡Hagámoslo volar alto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Just then, a wise little owl flew down to join them.",
+     "es": "En ese momento, un búho sabio bajó a acompañarlos.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75,
+       "toY": 0.4
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! Hello, friends! I am Oliver.",
+     "es": "¡Hoo-hoo! ¡Hola, amigos! Soy Oliver.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Hello, Oliver! We found this shiny balloon!",
+     "es": "¡Hola, Oliver! ¡Encontramos este globo brillante!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us make it soar into the sky?",
+     "es": "¿Nos ayudas a hacerlo volar alto en el cielo?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! Yes! I know the special launch secret!",
+     "es": "¡Hoo-hoo! ¡Sí! ¡Yo sé el secreto especial para despegar!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! The launch secret! Tell us, tell us!",
+     "es": "¡Súper! ¡El secreto! ¡Dinos, dinos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "First, you must pause and listen carefully...",
+     "es": "Primero, deben pausar y escuchar con atención...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I want to make it fly right now!",
+     "es": "¡Quiero hacerlo volar ahora mismo!",
+     "mood": "surprised",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Wait, Zibu! Let's listen to Oliver first.",
+     "es": "¡Espera, Zibu! Escuchemos a Oliver primero.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "But Zibu was too excited to stop and listen!",
+     "es": "¡Pero Zibu estaba demasiado emocionado para detenerse a escuchar!",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "first-attempt",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.25,
+     "y": 0.55,
+     "at": 0
+    },
+    {
+     "what": "leaf",
+     "x": 0.35,
+     "y": 0.7,
+     "at": 6
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Oliver went to the garden to launch the balloon.",
+     "es": "Zibu, Lila y Oliver fueron al jardín para hacer volar el globo."
+    },
+    {
+     "who": "guest",
+     "en": "Now, before you let go of the string, you must...",
+     "es": "Ahora, antes de soltar la cuerda, ustedes deben...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Wheee! Fly high, balloon!",
+     "es": "¡Wheee! ¡Vuela alto, globo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Oh! Zibu let go before Oliver could finish talking!",
+     "es": "¡Oh! ¡Zibu lo soltó antes de que Oliver pudiera terminar!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! Zibu, wait!",
+     "es": "¡Oh, no! ¡Zibu, espera!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "The balloon did not fly high into the sky.",
+     "es": "El globo no voló alto hacia el cielo."
+    },
+    {
+     "who": "narrator",
+     "en": "It drifted down... and got stuck on a big leaf!",
+     "es": "¡Flotó hacia abajo... y se quedó atrapado en una hoja grande!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh dear... it didn't soar up. Why?",
+     "es": "¡Oh, no!... no voló alto. ¿Por qué?",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! You let go too soon, Zibu.",
+     "es": "¡Hoo-hoo! Lo soltaste muy pronto, Zibu.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Oliver was trying to explain the secret, Zibu.",
+     "es": "Oliver nos estaba explicando el secreto, Zibu.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "But I wanted it to fly fast!",
+     "es": "¡Pero yo quería que volara rápido!",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "guest",
+     "en": "To make it soar, we need to listen and work together!",
+     "es": "¡Para que vuele alto, debemos escuchar y trabajar juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Will Zibu learn to stop and listen to his friend?",
+     "es": "¿Aprenderá Zibu a detenerse y escuchar a su amigo?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "second-attempt",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.25,
+     "y": 0.5,
+     "at": 0,
+     "color": "#FFD700"
+    },
+    {
+     "what": "flower",
+     "x": 0.65,
+     "y": 0.8,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu ran all the way up the hill with the balloon!",
+     "es": "¡Zibu corrió hasta la cima de la colina con el globo!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look! Up high, it will fly better!",
+     "es": "¡Mira! ¡Desde aquí arriba volará mejor!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Wait, Zibu! Listen to me first!",
+     "es": "¡Espera, Zibu! ¡Escúchame primero!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Wheee! Fly, shiny balloon, fly!",
+     "es": "¡Siiiii! ¡Vuela, globito, vuela!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu let go of the balloon without listening!",
+     "es": "¡Zibu soltó el globo sin escuchar!"
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! Be careful, balloon!",
+     "es": "¡Oh, no! ¡Cuidado, globito!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Boing! The balloon bounced off a big flower!",
+     "es": "¡Boing! ¡El globo rebotó en una gran flor!"
+    },
+    {
+     "who": "guest",
+     "en": "Whoopsie daisy!",
+     "es": "¡Uy, uy, uy!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "And... tumble, tumble... it fell right to the ground!",
+     "es": "Y... ¡rueda, rueda... cayó al suelo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh dear... it didn't fly at all.",
+     "es": "Ay, no... no voló nada.",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "It fell down again.",
+     "es": "Se volvió a caer.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Because we need to work together, Zibu!",
+     "es": "¡Porque necesitamos trabajar juntos, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Flying a balloon is harder than it looks!",
+     "es": "¡Volar un globo es más difícil de lo que parece!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-to-listen",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.55
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.35,
+     "y": 0.7,
+     "at": 0,
+     "color": "#FFD700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "lila",
+     "en": "Zibu... let's take a deep breath.",
+     "es": "Zibu... vamos a respirar profundo.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.42
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Okay, Lila... *sigh*.",
+     "es": "Está bien, Lila... *suspiro*.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Oliver wants to help us. Let's stop and listen.",
+     "es": "Oliver quiere ayudarnos. Vamos a parar y escuchar.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "You are right, Lila. I am listening now!",
+     "es": "Tienes razón, Lila. ¡Ahora sí escucho!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu quieted his feet and listened closely.",
+     "es": "Zibu aquietó sus pies y escuchó con atención."
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! Owls know a launch trick!",
+     "es": "¡Gracias, Zibu! ¡Los búhos conocemos un truco!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "A trick? Tell us, Oliver!",
+     "es": "¿Un truco? ¡Dinos, Oliver!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "We must count backwards together!",
+     "es": "¡Debemos contar hacia atrás juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "A magic countdown!",
+     "es": "¡Un conteo mágico!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! When we count together, it soars!",
+     "es": "¡Sí! ¡Cuando contamos juntos, vuela muy alto!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! I am ready to count!",
+     "es": "¡Vaya! ¡Estoy listo para contar!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Listening helped Zibu understand the plan!",
+     "es": "¡Escuchar ayudó a Zibu a entender el plan!"
+    },
+    {
+     "who": "lila",
+     "en": "Are you ready to help us count?",
+     "es": "¿Están listos para ayudarnos a contar?",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Let me hear you! Let me hear everyone count!",
+     "es": "¡Quiero escucharlos! ¡Vamos a contar todos juntos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "the-countdown",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.72,
+     "y": 0.35
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.27,
+     "y": 0.55,
+     "at": 0,
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu held the shiny balloon very gently this time.",
+     "es": "Esta vez, Zibu sostuvo el globo brillante con mucho cuidado."
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! Remember the secret: we count down together!",
+     "es": "¡Cuk-cuk! Recuerden el secreto: ¡contamos hacia atrás juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I'm listening! I'm ready!",
+     "es": "¡Estoy escuchando! ¡Estoy listo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Let me hear you! FIVE!",
+     "es": "¡Los escucho! ¡CINCO!",
+     "mood": "happy",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#FF1744"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "FOUR!",
+     "es": "¡CUATRO!",
+     "mood": "happy",
+     "show": {
+      "en": "4",
+      "es": "4",
+      "color": "#FF9100"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "THREE!",
+     "es": "¡TRES!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#FFEA00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Keep counting with Zibu and Lila!",
+     "es": "¡Sigan contando con Zibu y Lila!"
+    },
+    {
+     "who": "lila",
+     "en": "TWO!",
+     "es": "¡DOS!",
+     "mood": "happy",
+     "show": {
+      "en": "2",
+      "es": "2",
+      "color": "#00E676"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "ONE!",
+     "es": "¡UNO!",
+     "mood": "happy",
+     "action": "glow",
+     "show": {
+      "en": "1",
+      "es": "1",
+      "color": "#00B0FF"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Now, Zibu! Let it go!",
+     "es": "¡Ahora, Zibu! ¡Suéltalo!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Fly high, little balloon!",
+     "es": "¡Vuela alto, globito!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu opened his hands... and released the balloon!",
+     "es": "Zibu abrió sus manitas... ¡y soltó el globo!"
+    },
+    {
+     "who": "lila",
+     "en": "Look, look! It's working!",
+     "es": "¡Miren, miren! ¡Está funcionando!",
+     "mood": "surprised",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "balloon-soars",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.3,
+     "y": 0.65,
+     "at": 0,
+     "anim": "float",
+     "color": "#FF5722"
+    },
+    {
+     "what": "butterfly",
+     "x": 0.55,
+     "y": 0.4,
+     "at": 3,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Whoosh! The shiny balloon soared high up into the blue sky!",
+     "es": "¡Fiuuu! ¡El globo brillante voló muy alto en el cielo azul!"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Look how high it goes!",
+     "es": "¡Siiii! ¡Miren qué alto va!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "It's flying so high! So pretty!",
+     "es": "¡Está volando muy alto! ¡Qué lindo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "A sweet butterfly flew along to keep it company.",
+     "es": "Una linda mariposa voló a su lado para hacerle compañía."
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! Listening to the plan made it happen!",
+     "es": "¡Cuk-cuk! ¡Escuchar el plan lo hizo posible!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you, Oliver! You knew just what to do!",
+     "es": "¡Gracias, Oliver! ¡Tú sabías exactamente qué hacer!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Listening to our friends helps us so much!",
+     "es": "¡Escuchar a nuestros amigos nos ayuda muchísimo!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "You both did a wonderful job!",
+     "es": "¡Ustedes dos hicieron un trabajo maravilloso!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Up, up, up the balloon danced in the warm wind.",
+     "es": "Arriba, arriba, arriba... el globo bailaba con el viento."
+    },
+    {
+     "who": "zibu",
+     "en": "Bye-bye, shiny balloon!",
+     "es": "¡Adiós, globito brillante!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Have a wonderful flight!",
+     "es": "¡Que tengas un buen viaje!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! Now let's go celebrate!",
+     "es": "¡Cuk! ¡Ahora vamos a celebrar!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Celebration time!",
+     "es": "¡Siiii! ¡Hora de celebrar!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "And together, they walked back down to enjoy a yummy treat.",
+     "es": "Y juntos, caminaron de regreso para disfrutar una rica merienda.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-ending",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "cookie",
+     "x": 0.5,
+     "y": 0.65,
+     "at": 5,
+     "until": 13,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun began to set over the garden. It was time for a yummy snack!",
+     "es": "El sol comenzó a ponerse sobre el jardín. ¡Era hora de una rica merienda!"
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you, Oliver! You taught me how to make the balloon fly high!",
+     "es": "¡Gracias, Oliver! ¡Me enseñaste a hacer volar el globo muy alto!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! You listened so well, Zibu!",
+     "es": "¡Cuk, cuk! ¡Escuchaste muy bien, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "When we pause and listen, everything turns out great!",
+     "es": "¡Cuando hacemos una pausa y escuchamos, todo sale muy bien!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Listening to my friends is a wonderful thing!",
+     "es": "¡Sí! ¡Escuchar a mis amigos es algo maravilloso!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila brought out a big, delicious cookie for everyone to share.",
+     "es": "Lila sacó una galleta grande y deliciosa para compartir entre todos."
+    },
+    {
+     "who": "lila",
+     "en": "Here is a cozy cookie for us!",
+     "es": "¡Aquí hay una galleta muy rica para nosotros!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Mmm, yummy! Thank you, Lila!",
+     "es": "¡Mmm, qué rica! ¡Gracias, Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's share it together!",
+     "es": "¡Vamos a compartirla juntos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Oliver enjoyed their snack together.",
+     "es": "Zibu, Lila y Oliver disfrutaron su merienda juntos."
+    },
+    {
+     "who": "zibu",
+     "en": "Listening helps us work together best!",
+     "es": "¡Escuchar nos ayuda a trabajar mejor juntos!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "lila",
+     "en": "Yay for listening! And yay for friends!",
+     "es": "¡Que viva escuchar! ¡Y que vivan los amigos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! Goodbye, friends! See you next time!",
+     "es": "¡Cuk! ¡Adiós, amigos! ¡Hasta la próxima!",
+     "mood": "happy",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.2,
+       "toY": 0.2
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful, happy day in the garden. Goodbye, everyone!",
+     "es": "Qué día tan maravilloso y feliz en el jardín. ¡Adiós a todos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.75
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.6,
+     "at": 0,
+     "until": 25,
+     "anim": "float",
+     "color": "#FF3366"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Listen close, count five to one,",
+     "es": "Escucha bien, del cinco al uno,"
+    },
+    {
+     "who": "narrator",
+     "en": "Working together is so much fun!",
+     "es": "¡Trabajar juntos es muy oportuno!"
+    },
+    {
+     "who": "narrator",
+     "en": "Stop and listen, hear the sound,",
+     "es": "Para y escucha con atención,"
+    },
+    {
+     "who": "narrator",
+     "en": "Watch the balloon zoom all around!",
+     "es": "¡El globo vuela con emoción!"
+    },
+    {
+     "who": "zibu",
+     "en": "I pause my feet and hear the plan!",
+     "es": "¡Mis pies detengo y voy a escuchar!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Now we can help as best we can!",
+     "es": "¡Así entre todos vamos a lograr!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Five, four, three, two, one, blast off high!",
+     "es": "¡Cinco, cuatro, tres, dos, uno, a volar!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Look at it zoom into the sky!",
+     "es": "¡Mira el globo en el cielo brillar!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Listen close, count five to one,",
+     "es": "Escucha bien, del cinco al uno,"
+    },
+    {
+     "who": "narrator",
+     "en": "Working together is so much fun!",
+     "es": "¡Trabajar juntos es muy oportuno!"
+    },
+    {
+     "who": "narrator",
+     "en": "Stop and listen, hear the sound,",
+     "es": "Para y escucha con atención,"
+    },
+    {
+     "who": "narrator",
+     "en": "Watch the balloon zoom all around!",
+     "es": "¡El globo vuela con emoción!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Listen close, count five to one,",
+     "es": "Escucha bien, del cinco al uno,"
+    },
+    {
+     "who": "narrator",
+     "en": "Working together is so much fun!",
+     "es": "¡Trabajar juntos es muy oportuno!"
+    },
+    {
+     "who": "narrator",
+     "en": "Stop and listen, hear the sound,",
+     "es": "Para y escucha con atención,"
+    },
+    {
+     "who": "narrator",
+     "en": "Watch the balloon zoom all around!",
+     "es": "¡El globo vuela con emoción!"
+    },
+    {
+     "who": "zibu",
+     "en": "Listening helps us do our best!",
+     "es": "¡Escuchar nos ayuda a ganar!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "We count together, we are blessed!",
+     "es": "¡Juntos contamos sin parar!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Up, up, up the balloon will go!",
+     "es": "¡Arriba, arriba el globo irá!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "A happy flying colorful show!",
+     "es": "¡Qué gran espectáculo nos dará!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Listen close, count five to one,",
+     "es": "Escucha bien, del cinco al uno,"
+    },
+    {
+     "who": "narrator",
+     "en": "Working together is so much fun!",
+     "es": "¡Trabajar juntos es muy oportuno!"
+    },
+    {
+     "who": "narrator",
+     "en": "Stop and listen, hear the sound,",
+     "es": "Para y escucha con atención,"
+    },
+    {
+     "who": "narrator",
+     "en": "Watch the balloon zoom all around!",
+     "es": "¡El globo vuela con emoción!"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! Great singing, my friends!",
+     "es": "¡Ulula! ¡Qué gran canción, mis amigos!",
+     "mood": "happy",
+     "action": "wave"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Recordémosla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who did Zibu and Lila meet in the forest?",
+     "es": "¿A quién conocieron Zibu y Lila en el bosque?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Oliver the wise owl!",
+     "es": "¡A Oliver, el búho sabio!",
+     "show": {
+      "en": "Oliver",
+      "es": "Oliver"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What shiny thing did Zibu want to fly?",
+     "es": "¿Qué objeto brillante quería hacer volar Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A shiny balloon!",
+     "es": "¡Un globo brillante!",
+     "show": {
+      "en": "Balloon",
+      "es": "Globo"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Oliver ask Zibu to do first?",
+     "es": "¿Qué le pidió Oliver a Zibu que hiciera primero?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Stop and listen!",
+     "es": "¡Parar y escuchar!",
+     "show": {
+      "en": "Listen",
+      "es": "Escuchar"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What magic countdown trick did they use?",
+     "es": "¿Qué truco mágico de cuenta regresiva usaron?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Counting from 5 to 1!",
+     "es": "¡Contar del 5 al 1!",
+     "show": {
+      "en": "5 to 1",
+      "es": "5 al 1"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Did the balloon fly high when they listened?",
+     "es": "¿Voló alto el globo cuando escucharon?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Yes! High into the sky!",
+     "es": "¡Sí! ¡Muy alto en el cielo!",
+     "show": {
+      "en": "Yes!",
+      "es": "¡Sí!"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Can you put your hands to your ears and listen with me?",
+     "es": "¿Pueden poner sus manos en las orejas y escuchar conmigo?",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Let's count together! Five, four, three, two, one!",
+     "es": "¡Contemos juntos! ¡Cinco, cuatro, tres, dos, uno!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Listening is our favorite superpower!",
+     "es": "¡Súper! ¡Escuchar es nuestro superpoder favorito!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Great job, friends!",
+     "es": "¡Buen trabajo, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Listening to our friends helps us work together and achieve great things.",
+     "es": "Escuchar a nuestros amigos nos ayuda a trabajar juntos y lograr grandes cosas."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.35
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Hooray! Move your ears and count along!",
+     "es": "¡Viva! ¡Muevan las orejas y cuenten con nosotros!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep007-zibu-learns-to-listen"
+}
