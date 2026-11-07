@@ -1,0 +1,31 @@
+name: Informe de los canales (solo lectura)
+
+# Estadisticas de los dos canales para analizarlas (scripts/report.py). No publica ni cambia nada.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install google-api-python-client google-auth requests
+      - name: Informe
+        env:
+          YT_CLIENT_ID:     ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_EN:    ${{ secrets.YT_REFRESH_EN }}
+          YT_REFRESH_ES:    ${{ secrets.YT_REFRESH_ES }}
+        run: python scripts/report.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: zibu-report
+          path: out/report.json
+          retention-days: 7
