@@ -55,7 +55,7 @@ export type Timeline = {
   music: string;
   names: Record<string, string>;
   guest: string; // especie del invitado ("star", "puppy"...)
-  thumb?: { text: string[]; bg: Scene["bg"]; time: Scene["time"] };
+  thumb?: { text: string[]; bg: Scene["bg"]; time: Scene["time"]; prop?: PropItem };
   sfx: { name: string; at: number }[];
   scenes: Scene[];
 };

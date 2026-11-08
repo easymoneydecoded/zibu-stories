@@ -332,6 +332,9 @@ def main(story_path: str, lang: str, motor: str = "kokoro") -> None:
     if "thumb" in story:
         key = story["scenes"][min(max(1, int(story["thumb"].get("scene", 1))), len(story["scenes"]) - 1)]
         timeline["thumb"] = {"text": story["thumb"][lang], "bg": key["bg"], "time": key["time"]}
+        props = [p for p in key.get("props", []) if isinstance(p, dict)] or [p for sc in story["scenes"] for p in sc.get("props", []) if isinstance(p, dict)]
+        if props:  # el objeto de la historia, para la miniatura en primer plano
+            timeline["thumb"]["prop"] = props[0]
     (out / "timeline.json").write_text(json.dumps(timeline, ensure_ascii=False, indent=1), encoding="utf-8")
     n = sum(len(s["lines"]) for s in scenes)
     print(f"{story['id']} [{lang}]: {len(scenes)} escenas, {n} frases, {int(total // 60)}:{int(total % 60):02d} min")

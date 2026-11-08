@@ -2,7 +2,8 @@ import { loadFont } from "@remotion/google-fonts/Baloo2";
 import { AbsoluteFill, CalculateMetadataFunction, staticFile } from "remotion";
 import { Backdrop } from "./Backgrounds";
 import { Critter, Lila, Species, StarKid, Zibu } from "./Characters";
-import { CharState, Timeline } from "./types";
+import { Prop } from "./Props";
+import { CharState, PropItem, Timeline } from "./types";
 
 const { fontFamily } = loadFont("normal", { weights: ["800"], subsets: ["latin"] });
 
@@ -41,7 +42,7 @@ const Title: React.FC<{ lang: BrandProps["lang"]; size: number }> = ({ lang, siz
   </div>
 );
 
-export type ThumbProps = { lang: "en" | "es" | "pt"; episode: string; timeline?: Timeline };
+export type ThumbProps = { lang: "en" | "es" | "pt"; episode: string; variant?: "A" | "B" | "C"; timeline?: Timeline };
 
 export const calculateThumb: CalculateMetadataFunction<ThumbProps> = async ({ props }) => {
   const res = await fetch(staticFile(`ep/${props.episode}/${props.lang}/timeline.json`));
@@ -50,8 +51,92 @@ export const calculateThumb: CalculateMetadataFunction<ThumbProps> = async ({ pr
 
 const THUMB_EP001 = { en: ["The Lost", "Little Star!"], es: ["¡La estrellita", "perdida!"], pt: ["A estrelinha", "perdida!"] };
 
-/** Miniatura 1280x720 de un episodio: texto corto y grande, Zibu sorprendido, Lila y el invitado. */
-export const Thumbnail: React.FC<ThumbProps> = ({ lang, timeline: tl }) => {
+/** El objeto de la historia (cometa, globo...) en grande, centrado en (x, y) px de la miniatura 1280x720. */
+const BigProp: React.FC<{ p?: PropItem; x: number; y: number; scale: number; rotate?: number }> = ({ p, x, y, scale, rotate = 0 }) =>
+  p ? (
+    // el globo es mas alto que ancho: algo mas pequeno y mas abajo para no tapar el texto
+    <div style={{ position: "absolute", left: x - 960, top: y - 540 + (p.what === "balloon" ? 70 : 0), width: 1920, height: 1080,
+      scale: `${p.what === "balloon" ? scale * 0.62 : scale}`, rotate: `${rotate}deg`,
+      filter: "drop-shadow(0 6px 0 rgba(0,0,0,0.25))" }}>
+      <Prop p={{ ...p, x: 0.5, y: 0.5, anim: undefined }} appear={1} />
+    </div>
+  ) : null;
+
+const Sunburst: React.FC<{ c1: string; c2: string }> = ({ c1, c2 }) => (
+  <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 55%, ${c1} 0%, ${c2} 100%)` }}>
+    <svg width={1280} height={720} style={{ position: "absolute", inset: 0 }}>
+      {Array.from({ length: 18 }, (_, i) => (
+        <path key={i} d="M640 400 L 600 -900 L 680 -900 Z" fill="rgba(255,255,255,0.18)"
+          style={{ transformOrigin: "640px 400px", rotate: `${i * 20}deg` }} />
+      ))}
+    </svg>
+  </AbsoluteFill>
+);
+
+const BigText: React.FC<{ t: string; size: number; color: string; style?: React.CSSProperties }> = ({ t, size, color, style }) => (
+  <div style={{ position: "absolute", fontFamily, fontWeight: 800, lineHeight: 0.95, whiteSpace: "nowrap", fontSize: size, color,
+    WebkitTextStroke: `${Math.round(size / 7)}px #3a2a7a`, paintOrder: "stroke fill", textShadow: "0 8px 0 rgba(0,0,0,0.3)", ...style }}>{t}</div>
+);
+
+/**
+ * Miniatura 1280x720 de un episodio. variant:
+ *  A: texto de 2 lineas, Zibu sorprendido, Lila y el invitado en el escenario (la original)
+ *  B (por defecto desde 2026-11-08): primer plano: Zibu enorme y sorprendido, el objeto de la historia gigante y una sola frase
+ *  C: fondo de rayos de color saturado, personajes grandes riendo y el objeto en el centro
+ */
+export const Thumbnail: React.FC<ThumbProps> = (props) =>
+  props.variant === "A" ? <ThumbA {...props} /> : props.variant === "C" ? <ThumbC {...props} /> : <ThumbB {...props} />;
+
+const Guest: React.FC<{ species: Species; mood: CharState["mood"]; size: number }> = ({ species, mood, size }) =>
+  species === "star" ? <StarKid s={pose(mood, { glow: true })} size={size * 0.8} /> : <Critter s={pose(mood)} species={species} size={size} />;
+
+const ThumbB: React.FC<ThumbProps> = ({ lang, timeline: tl }) => {
+  const text = tl?.thumb?.text ?? THUMB_EP001[lang];
+  const species = (tl?.guest ?? "star") as Species;
+  const t = text[0];
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <AbsoluteFill style={{ scale: "0.6667", transformOrigin: "0 0", width: 1920, height: 1080, filter: "saturate(1.35)" }}>
+        <Backdrop bg={tl?.thumb?.bg ?? "hill"} time={tl?.thumb?.time ?? "day"} />
+      </AbsoluteFill>
+      <BigProp p={tl?.thumb?.prop} x={930} y={300} scale={2.4} rotate={-8} />
+      <div style={{ position: "absolute", left: 830, top: 400 }}>
+        <Guest species={species} mood="surprised" size={330} />
+      </div>
+      <div style={{ position: "absolute", left: -90, top: 150 }}>
+        <Zibu s={pose("surprised")} size={640} />
+      </div>
+      <BigText t={t} size={Math.min(130, Math.floor(1180 / (t.length * 0.6)))} color="#ffd23f"
+        style={{ left: 40, top: 26, right: 40, textAlign: "right", rotate: "-3deg" }} />
+    </AbsoluteFill>
+  );
+};
+
+const ThumbC: React.FC<ThumbProps> = ({ lang, timeline: tl }) => {
+  const text = tl?.thumb?.text ?? THUMB_EP001[lang];
+  const species = (tl?.guest ?? "star") as Species;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <Sunburst c1="#fff3a6" c2="#ff9f1c" />
+      <BigProp p={tl?.thumb?.prop} x={640} y={330} scale={2.2} rotate={6} />
+      <div style={{ position: "absolute", left: -20, top: 250 }}>
+        <Zibu s={pose("laugh")} size={470} />
+      </div>
+      <div style={{ position: "absolute", left: 480, top: 390 }}>
+        <Lila s={pose("laugh")} size={260} />
+      </div>
+      <div style={{ position: "absolute", left: 860, top: 330 }}>
+        <Guest species={species} mood="laugh" size={400} />
+      </div>
+      {text.map((t, i) => (
+        <BigText key={t} t={t} size={Math.min(i ? 104 : 116, Math.floor(1180 / (t.length * 0.6)))} color={i ? "#ffffff" : "#ff4d8f"}
+          style={{ left: 0, right: 0, top: 18 + i * 108, textAlign: "center", rotate: i ? "2deg" : "-3deg" }} />
+      ))}
+    </AbsoluteFill>
+  );
+};
+
+const ThumbA: React.FC<ThumbProps> = ({ lang, timeline: tl }) => {
   const text = tl?.thumb?.text ?? THUMB_EP001[lang];
   const species = (tl?.guest ?? "star") as Species;
   return (
