@@ -1,7 +1,7 @@
 name: Zibu - episodio diario
 
-# Cada dia: Gemini escribe un guion nuevo -> se renderiza en ingles y en espanol (en paralelo) ->
-# se sube a @ZibuAndFriendsEnglish y @ZibuYSusAmigos y llega un aviso por Telegram.
+# Cada dia: Gemini escribe un guion nuevo -> se renderiza en ingles, espanol y portugues (en paralelo; el portugues
+# se traduce del guion aprobado) -> se sube a @ZibuAndFriendsEnglish, @ZibuYSusAmigos y Zibu e seus amigos + aviso por Telegram.
 # Repo publico: los minutos de Actions son gratis e ilimitados.
 on:
   schedule:
@@ -76,7 +76,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        lang: [en, es]
+        lang: [en, es, pt]
     env:
       EP: ${{ needs.story.outputs.episode }}
     steps:
@@ -102,6 +102,11 @@ jobs:
           for f in kokoro-v1.0.onnx voices-v1.0.bin; do
             [ -f "models/$f" ] || curl -sSL -o "models/$f" "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"
           done
+      - name: Traducir al portugues de Brasil
+        if: matrix.lang == 'pt'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/translate_pt.py "stories/$EP.json"
       - name: Voces, musica y timeline
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}   # espanol con ElevenLabs mientras queden creditos
@@ -117,6 +122,7 @@ jobs:
           YT_CLIENT_SECRET:   ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_EN:      ${{ secrets.YT_REFRESH_EN }}
           YT_REFRESH_ES:      ${{ secrets.YT_REFRESH_ES }}
+          YT_REFRESH_PT:      ${{ secrets.YT_REFRESH_PT }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/upload.py "$EP" ${{ matrix.lang }}

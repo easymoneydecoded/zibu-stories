@@ -1,6 +1,6 @@
 """Sube un episodio renderizado a su canal de YouTube y avisa por Telegram.
 
-Uso: python scripts/upload.py <episode-id> en|es   (out/<id>-<lang>.mp4 y out/<id>-<lang>.png)
+Uso: python scripts/upload.py <episode-id> en|es|pt   (out/<id>-<lang>.mp4 y out/<id>-<lang>.png)
 
 Cada canal tiene su refresh token (el canal se elige al autorizar con scripts/autorizar_youtube.py): YT_REFRESH_EN y YT_REFRESH_ES,
 con YT_CLIENT_ID y YT_CLIENT_SECRET del proyecto de Google Cloud del canal de finanzas.
@@ -19,7 +19,8 @@ from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
 
 BASE = Path(__file__).resolve().parent.parent
-CHANNEL = {"en": "Zibu and Friends", "es": "Zibu y sus amigos"}
+YT_LANG = {"pt": "pt-BR"}
+CHANNEL = {"en": "Zibu and Friends", "es": "Zibu y sus amigos", "pt": "Zibu e seus amigos"}
 
 
 def telegram(text: str) -> None:
@@ -38,6 +39,9 @@ def youtube(lang: str):
 
 
 def main(episode: str, lang: str) -> None:
+    if not os.getenv(f"YT_REFRESH_{lang.upper()}"):  # canal aun sin autorizar: el video queda en los artefactos
+        print(f"Sin YT_REFRESH_{lang.upper()}: no se sube a {CHANNEL[lang]} (autoriza con scripts/autorizar_youtube.py {lang})")
+        return
     story = json.loads((BASE / "stories" / f"{episode}.json").read_text(encoding="utf-8"))
     meta = story["youtube"][lang]
     video, thumb = BASE / "out" / f"{episode}-{lang}.mp4", BASE / "out" / f"{episode}-{lang}.png"
@@ -45,7 +49,7 @@ def main(episode: str, lang: str) -> None:
     body = {
         "snippet": {"title": meta["title"][:100], "description": meta["description"][:4900],
                     "tags": meta["tags"][:20], "categoryId": "1",  # Cine y animacion
-                    "defaultLanguage": lang, "defaultAudioLanguage": lang},
+                    "defaultLanguage": YT_LANG.get(lang, lang), "defaultAudioLanguage": YT_LANG.get(lang, lang)},
         # Contenido para ninos: obligatorio por COPPA (sin comentarios ni anuncios personalizados)
         "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": True, "embeddable": True},
     }

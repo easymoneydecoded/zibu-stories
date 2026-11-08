@@ -37,7 +37,7 @@ def main(lang: str) -> None:
         "client_id": cid, "client_secret": csecret,
         "auth_uri": "https://accounts.google.com/o/oauth2/auth", "token_uri": "https://oauth2.googleapis.com/token",
         "redirect_uris": ["http://localhost:8080/"]}}, scopes=SCOPES)
-    canal = "Zibu and Friends" if lang == "en" else "Zibu y sus amigos"
+    canal = {"en": "Zibu and Friends", "es": "Zibu y sus amigos", "pt": "Zibu e seus amigos"}[lang]
     print(f"Se abre el navegador: elige tu cuenta y despues el canal «{canal}».")
     creds = flow.run_local_server(port=8080, access_type="offline", prompt="consent", open_browser=True)
     secret("YT_CLIENT_ID", cid)

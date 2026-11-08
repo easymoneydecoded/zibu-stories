@@ -6,10 +6,11 @@ import { CharState, Timeline } from "./types";
 
 const { fontFamily } = loadFont("normal", { weights: ["800"], subsets: ["latin"] });
 
-export type BrandProps = { lang: "en" | "es" };
+export type BrandProps = { lang: "en" | "es" | "pt" };
 
-const NAME = { en: ["Zibu", "and Friends"], es: ["Zibu", "y sus amigos"] };
-const TAGLINE = { en: "Stories, songs & fun for little ones!", es: "¡Cuentos, canciones y diversión para peques!" };
+const NAME = { en: ["Zibu", "and Friends"], es: ["Zibu", "y sus amigos"], pt: ["Zibu", "e seus amigos"] };
+const TAGLINE = { en: "Stories, songs & fun for little ones!", es: "¡Cuentos, canciones y diversión para peques!",
+  pt: "Histórias, músicas e diversão para os pequenos!" };
 
 const pose = (mood: CharState["mood"], extra: Partial<CharState> = {}): CharState => ({
   talk: false, mood, actionFrame: 0, dancing: false, glow: false, balloons: false, ...extra,
@@ -40,14 +41,14 @@ const Title: React.FC<{ lang: BrandProps["lang"]; size: number }> = ({ lang, siz
   </div>
 );
 
-export type ThumbProps = { lang: "en" | "es"; episode: string; timeline?: Timeline };
+export type ThumbProps = { lang: "en" | "es" | "pt"; episode: string; timeline?: Timeline };
 
 export const calculateThumb: CalculateMetadataFunction<ThumbProps> = async ({ props }) => {
   const res = await fetch(staticFile(`ep/${props.episode}/${props.lang}/timeline.json`));
   return { props: { ...props, timeline: (await res.json()) as Timeline } };
 };
 
-const THUMB_EP001 = { en: ["The Lost", "Little Star!"], es: ["¡La estrellita", "perdida!"] };
+const THUMB_EP001 = { en: ["The Lost", "Little Star!"], es: ["¡La estrellita", "perdida!"], pt: ["A estrelinha", "perdida!"] };
 
 /** Miniatura 1280x720 de un episodio: texto corto y grande, Zibu sorprendido, Lila y el invitado. */
 export const Thumbnail: React.FC<ThumbProps> = ({ lang, timeline: tl }) => {

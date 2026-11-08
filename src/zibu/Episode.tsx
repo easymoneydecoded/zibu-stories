@@ -146,7 +146,7 @@ const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
 
       {scene.type === "title" && <BigText text={tl.title} since={local - 5} color="#ff5d8f" size={120} top={300} />}
       {scene.type === "bye" && (
-        <BigText text={tl.lang === "es" ? "¡Hasta pronto!" : "See you soon!"} since={local - 5} color="#3cc45a" size={150} top={120} />
+        <BigText text={({ es: "¡Hasta pronto!", pt: "Até logo!" } as Record<string, string>)[tl.lang] ?? "See you soon!"} since={local - 5} color="#3cc45a" size={150} top={120} />
       )}
       {shown?.show && <BigText text={shown.show.text} color={shown.show.color} since={f - shown.start} />}
       {propLine && (

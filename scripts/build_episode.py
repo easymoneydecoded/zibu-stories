@@ -1,6 +1,6 @@
 """Prepara un episodio para Remotion: voces (Kokoro), musica, efectos y timeline.
 
-Uso: python scripts/build_episode.py stories/ep001-lost-star.json en|es
+Uso: python scripts/build_episode.py stories/ep001-lost-star.json en|es|pt
 
 Salida en public/ep/<id>/<lang>/: una pista .wav por frase, musica.wav y timeline.json
 (escenas con sus fotogramas de inicio y fin, frases, movimientos, textos y efectos).
@@ -33,6 +33,9 @@ VOICES = {
            "lila": ("af_sky", 1.0, 3), "star": ("af_heart", 1.0, 6)},
     "es": {"narrator": ("ef_dora", 0.92, 0), "zibu": ("ef_dora", 1.0, 5),
            "lila": ("ef_dora", 1.06, 2), "star": ("ef_dora", 1.0, 8)},
+    # portugues de Brasil: Kokoro solo tiene pf_dora, pm_alex y pm_santa
+    "pt": {"narrator": ("pf_dora", 0.92, 0), "zibu": ("pf_dora", 1.0, 5),
+           "lila": ("pf_dora", 1.06, 2), "star": ("pf_dora", 1.0, 8)},
 }
 # Voz del invitado segun su especie: {idioma: (voz, velocidad, semitonos)}
 GUEST_VOICES = {
@@ -46,7 +49,13 @@ GUEST_VOICES = {
     "owl": {"en": ("bm_george", 0.92, 0), "es": ("em_alex", 0.92, -1)},
     "mouse": {"en": ("af_sky", 1.08, 7), "es": ("ef_dora", 1.1, 10)},
 }
-LANG_CODE = {"en": "en-us", "es": "es"}
+GUEST_PT = {"puppy": ("pm_alex", 1.02, 5), "bear": ("pm_santa", 0.95, 1), "frog": ("pm_alex", 1.0, 4),
+            "owl": ("pm_santa", 0.92, 0), "star": ("pf_dora", 1.0, 8), "kitten": ("pf_dora", 1.04, 7),
+            "duckling": ("pf_dora", 1.06, 9), "piglet": ("pf_dora", 1.0, 6), "mouse": ("pf_dora", 1.1, 10)}
+for _esp, _voz in GUEST_PT.items():
+    GUEST_VOICES[_esp]["pt"] = _voz
+LANG_CODE = {"en": "en-us", "es": "es", "pt": "pt-br"}
+LANGS = ("en", "es", "pt")
 MIN_TOTAL = 8 * 60 + 5   # YouTube permite anuncios a mitad del video desde 8 min
 MAX_PAD = 75             # lo que se puede alargar la fiesta final para llegar al minimo
 
@@ -216,7 +225,8 @@ def main(story_path: str, lang: str, motor: str = "kokoro") -> None:
             sc = {k2: v for k2, v in sc.items() if k2 not in ("lines", "props")} | {"type": "sing", "lines": [
                 {"who": "zibu", "mood": "happy", "action": "jump",
                  "en": "Let's sing our friendship song! Sing with us!",
-                 "es": "¡Vamos a cantar nuestra canción de amigos! ¡Canta con nosotros!"}]}
+                 "es": "¡Vamos a cantar nuestra canción de amigos! ¡Canta con nosotros!",
+                 "pt": "Vamos cantar a nossa música da amizade! Cante com a gente!"}]}
         song = sc.get("type") == "song"
         # el gancho y el titulo entran rapido: los primeros segundos deciden si el nino se queda
         t += 2 * BAR if song else (0.3 if si == 0 or sc.get("type") == "title" else SCENE_LEAD)
@@ -242,7 +252,7 @@ def main(story_path: str, lang: str, motor: str = "kokoro") -> None:
             src = f"ep/{story['id']}/{lang}/s{si:02d}_l{li:02d}.wav"
             guardar_wav(BASE / "public" / src, audio)
             moves = ln.get("moves", [])
-            entry = {k2: v for k2, v in ln.items() if k2 not in ("en", "es")}
+            entry = {k2: v for k2, v in ln.items() if k2 not in LANGS}
             entry.update({"text": ln[lang], "src": src, "start": round(t * FPS), "dur": max(1, round(dur * FPS)),
                           "moveDur": round(max(dur, MIN_MOVE) * FPS)})
             if "show" in ln:
