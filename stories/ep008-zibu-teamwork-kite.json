@@ -1,0 +1,1351 @@
+{
+ "slug": "zibu-teamwork-kite",
+ "title": {
+  "en": "Zibu and the Teamwork Kite",
+  "es": "Zibu y la cometa en equipo"
+ },
+ "lesson": {
+  "en": "Working together makes big tasks easy and fun!",
+  "es": "¡Trabajar en equipo hace que las tareas difíciles sean fáciles y divertidas!"
+ },
+ "guest": {
+  "species": "kitten",
+  "name": {
+   "en": "Mitten",
+   "es": "Copito"
+  }
+ },
+ "thumb": {
+  "en": [
+   "FLY THE KITE!",
+   "COUNT 1 TO 5!"
+  ],
+  "es": [
+   "¡A VOLAR!",
+   "¡CUENTA 1 AL 5!"
+  ],
+  "scene": 6
+ },
+ "youtube": {
+  "en": {
+   "title": "Learn Teamwork & Count 1 to 5 with Zibu! 🪁 Kitten's Kite Adventure | Zibu and Friends",
+   "description": "Zibu, Lila, and Mitten the kitten work together to reach a stuck kite! 🪁\nKids will learn the power of teamwork and count numbers 1 to 5 with big bright numbers on screen. 🔢\nJoin our friends as they gather 5 big stones to save the day! 🌸\nA fun educational cartoon for toddlers and preschoolers aged 2 to 6. 💖\n#ZibuAndFriends #LearnCounting #TeamworkForKids #KidsCartoon #PreschoolLearning",
+   "tags": [
+    "zibu and friends",
+    "teamwork for kids",
+    "count 1 to 5",
+    "counting for toddlers",
+    "educational cartoon",
+    "kids video 2 to 6",
+    "kitten cartoon",
+    "learn numbers",
+    "preschool learning",
+    "teamwork lesson",
+    "cartoons for toddlers",
+    "zibu"
+   ]
+  },
+  "es": {
+   "title": "¡Aprende Trabajo en Equipo y a Contar del 1 al 5! 🪁 Zibu y la Cometa | Zibu y sus Amigos",
+   "description": "¡Zibu, Lila y el gatito Copito trabajan juntos para bajar una cometa atrapada! 🪁\nLos niños aprenderán sobre el trabajo en equipo y a contar del 1 al 5 con números en pantalla. 🔢\n¡Acompáñanos a juntar 5 grandes piedras para lograrlo! 🌸\nVideo educativo perfecto para niños de 2 a 6 años. 💖\n#ZibuYSusAmigos #AprenderAContar #TrabajoEnEquipo #DibujosAnimados #EducacionInfantil",
+   "tags": [
+    "zibu y sus amigos",
+    "trabajo en equipo",
+    "contar del 1 al 5",
+    "numeros para ninos",
+    "caricaturas educativas",
+    "videos para ninos",
+    "gatito animado",
+    "aprender numeros",
+    "educacion preescolar",
+    "trabajo en equipo ninos",
+    "caricaturas para bebes",
+    "zibu"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! Mitten's kite is stuck high!",
+     "es": "¡Oh no! ¡La cometa de Copito está atrapada!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us reach it?",
+     "es": "¿Nos ayudas a alcanzarla?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's work together!",
+     "es": "¡Trabajemos juntos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.75,
+     "y": 0.25,
+     "anim": "bounce",
+     "color": "#FF5722"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Teamwork Kite!",
+     "es": "¡Zibu y la cometa en equipo!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "playing-in-garden",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 0,
+     "anim": "float",
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a sunny, windy day in the garden.",
+     "es": "Era un día soleado y ventoso en el jardín."
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Mitten the kitten were flying a pretty kite!",
+     "es": "¡Zibu, Lila y el gatito Copito estaban volando una hermosa cometa!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look at it go! Up, up, up!",
+     "es": "¡Miren cómo vuela! ¡Arriba, arriba, arriba!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "It flies so high! Wheee!",
+     "es": "¡Vuela tan alto! ¡Síii!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! I love the bright colors!",
+     "es": "¡Miau! ¡Me encantan los colores brillantes!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The red and yellow kite danced happily in the air.",
+     "es": "La cometa roja y amarilla bailaba alegremente en el aire."
+    },
+    {
+     "who": "zibu",
+     "en": "Hold the string tight, Mitten!",
+     "es": "¡Sujeta bien la cuerda, Copito!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I have it! Look, Zibu!",
+     "es": "¡La tengo! ¡Mira, Zibu!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "The breeze is blowing so nicely today.",
+     "es": "La brisa está soplando muy lindo hoy.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "They ran together across the soft green grass.",
+     "es": "Corrieron juntos por la hierba verde y suave.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      },
+      {
+       "who": "lila",
+       "to": 0.55
+      },
+      {
+       "who": "guest",
+       "to": 0.8
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Catch me if you can!",
+     "es": "¡Alcáncenme si pueden!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Wait for me!",
+     "es": "¡Miau! ¡Espérenme!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Flying a kite is so much fun!",
+     "es": "¡Volar una cometa es muy divertido!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone was laughing and playing under the blue sky.",
+     "es": "Todos estaban riendo y jugando bajo el cielo azul.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "stuck-on-the-hill",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.6
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.75,
+     "y": 0.25,
+     "at": 4,
+     "anim": "bounce",
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The friends walked up to the top of the green hill.",
+     "es": "Los amigos subieron a la cima de la colina verde."
+    },
+    {
+     "who": "zibu",
+     "en": "Whoosh! The wind is getting stronger here!",
+     "es": "¡Fiuuu! ¡El viento es más fuerte aquí!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly... a big gust of wind blew!",
+     "es": "De repente... ¡sopló una gran ráfaga de viento!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh no! My hands slipped!",
+     "es": "¡Oh no! ¡Se me escapó la cuerda!",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "The kite blew away and got stuck high up in a bush!",
+     "es": "¡La cometa voló y se quedó atrapada en un arbusto alto!"
+    },
+    {
+     "who": "lila",
+     "en": "Oh dear! Look up there!",
+     "es": "¡Oh, vaya! ¡Miren allá arriba!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Meow... my kite is stuck...",
+     "es": "Miau... mi cometa está atrapada...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Mitten looked very sad. The kite was too high to reach.",
+     "es": "Copito se puso muy triste. La cometa estaba demasiado alta."
+    },
+    {
+     "who": "zibu",
+     "en": "Don't cry, Mitten! I can get it!",
+     "es": "¡No llores, Copito! ¡Yo puedo alcanzarla!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Be careful, Zibu! It's very tall.",
+     "es": "¡Ten cuidado, Zibu! Está muy alto.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Can you really reach it?",
+     "es": "¿De verdad puedes alcanzarla?",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Watch me! I am ready!",
+     "es": "¡Miren! ¡Estoy listo!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu ran over to the bush to try and reach the kite.",
+     "es": "Zibu corrió hacia el arbusto para intentar alcanzar la cometa."
+    },
+    {
+     "who": "lila",
+     "en": "Good luck, Zibu!",
+     "es": "¡Buena suerte, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    }
+   ]
+  },
+  {
+   "id": "zibu-tries-alone",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.5,
+     "y": 0.2,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu looked up at the colorful kite high in the bush.",
+     "es": "Zibu miró hacia arriba a la cometa de colores en el arbusto."
+    },
+    {
+     "who": "zibu",
+     "en": "I can reach it! Up... up... up!",
+     "es": "¡Puedo alcanzarla! ¡Arriba... arriba... arriba!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu jumped once! Boing!",
+     "es": "¡Zibu saltó una vez! ¡Boing!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! Almost! One more time!",
+     "es": "¡Oh! ¡Casi! ¡Una vez más!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu jumped twice! But the kite was still too high.",
+     "es": "¡Zibu saltó dos veces! Pero la cometa aún estaba muy alta."
+    },
+    {
+     "who": "zibu",
+     "en": "Ooff! It is very high...",
+     "es": "¡Uff! Está muy alta...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu tried stretching his round arms as far as he could.",
+     "es": "Zibu intentó estirar sus brazos redonditos lo más que pudo."
+    },
+    {
+     "who": "zibu",
+     "en": "Stretch... stretch! Oh, my arms are too short!",
+     "es": "¡Estiro... estiro! ¡Oh, mis brazos son muy cortos!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "He tried one big, giant mega-jump!",
+     "es": "¡Intentó dar un gran, gigante mega salto!"
+    },
+    {
+     "who": "zibu",
+     "en": "Wheee! ...Oh no, still too high!",
+     "es": "¡Wiii! ...¡Oh no, todavía está muy alta!",
+     "mood": "surprised",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu sat down on the grass and thought.",
+     "es": "Zibu se sentó en el pasto y pensó."
+    },
+    {
+     "who": "zibu",
+     "en": "Hmm... trying all by myself is too hard.",
+     "es": "Mmm... intentarlo yo solito es muy difícil.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "I need my friends! Lila! Mitten!",
+     "es": "¡Necesito a mis amigos! ¡Lila! ¡Copito!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu realized that asking for help is smart and fun!",
+     "es": "¡Zibu se dio cuenta de que pedir ayuda es inteligente y divertido!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "counting-the-stones",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Lila and Mitten ran over to help Zibu in the forest.",
+     "es": "Lila y Copito corrieron a ayudar a Zibu en el bosque."
+    },
+    {
+     "who": "lila",
+     "en": "We can work together! Let's build a little stone step!",
+     "es": "¡Podemos trabajar juntos! ¡Hagamos un escalón de piedras!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! That is a great idea!",
+     "es": "¡Miau! ¡Es una gran idea!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! We need smooth stones. Let's count them!",
+     "es": "¡Sí! Necesitamos piedras suaves. ¡Vamos a contarlas!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu found the very first stone.",
+     "es": "Zibu encontró la primerísima piedra."
+    },
+    {
+     "who": "zibu",
+     "en": "Here is stone number one!",
+     "es": "¡Aquí está la piedra número uno!",
+     "mood": "happy",
+     "show": {
+      "en": "1",
+      "es": "1",
+      "color": "#FF5733"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "And here comes stone number two!",
+     "es": "¡Y aquí viene la piedra número dos!",
+     "mood": "happy",
+     "show": {
+      "en": "2",
+      "es": "2",
+      "color": "#33FF57"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Stone number three!",
+     "es": "¡Miau! ¡Piedra número tres!",
+     "mood": "happy",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#3357FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "The little step was growing bigger and bigger!",
+     "es": "¡El pequeño escalón iba creciendo más y más!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look! I found stone number four!",
+     "es": "¡Miren! ¡Encontré la piedra número cuatro!",
+     "mood": "happy",
+     "show": {
+      "en": "4",
+      "es": "4",
+      "color": "#F3FF33"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "And I have stone number five!",
+     "es": "¡Y yo tengo la piedra número cinco!",
+     "mood": "happy",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#FF33F3"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "One... two... three... four... five smooth stones!",
+     "es": "Una... dos... tres... cuatro... ¡cinco piedras suaves!"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Yay! We built it together!",
+     "es": "¡Miau! ¡Sí! ¡Lo construimos juntos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Teamwork is super fun!",
+     "es": "¡El trabajo en equipo es súper divertido!",
+     "mood": "happy",
+     "action": "spin"
+    }
+   ]
+  },
+  {
+   "id": "reaching-together",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.28,
+     "y": 0.3,
+     "at": 0,
+     "until": 8,
+     "color": "#FF5722"
+    },
+    {
+     "what": "kite",
+     "x": 0.25,
+     "y": 0.55,
+     "at": 9,
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Now the stone step was ready to help!",
+     "es": "¡Ahora el escalón de piedras estaba listo para ayudar!"
+    },
+    {
+     "who": "lila",
+     "en": "I will hold the stones safe and steady!",
+     "es": "¡Yo sostendré las piedras firmes y seguras!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Up there, Zibu! On the branch!",
+     "es": "¡Miau! ¡Ahí arriba, Zibu! ¡En la rama!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Mitten pointed the way while Lila held the platform.",
+     "es": "Copito señalaba el camino mientras Lila sostenía la plataforma."
+    },
+    {
+     "who": "zibu",
+     "en": "Up I go! One... two... three!",
+     "es": "¡Allá voy! ¡Uno... dos... tres!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "I'm almost reaching the branch...",
+     "es": "Casi alcanzo la rama...",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "You can do it, Zibu! We are right here!",
+     "es": "¡Tú puedes, Zibu! ¡Estamos justo aquí!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Reach high!",
+     "es": "¡Miau! ¡Alcanza alto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu reached out gently... and untangled the kite!",
+     "es": "Zibu se estiró con cuidado... ¡y desenganchó la cometa!"
+    },
+    {
+     "who": "zibu",
+     "en": "I got it! Look! The kite is free!",
+     "es": "¡La tengo! ¡Miren! ¡La cometa está libre!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! The kite is safe!",
+     "es": "¡Sí! ¡La cometa está a salvo!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Hooray! Teamwork saved the day!",
+     "es": "¡Viva! ¡El trabajo en equipo salvó el día!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "With everyone working together, the hard job was easy!",
+     "es": "¡Con todos trabajando juntos, la tarea difícil fue fácil!",
+     "show": {
+      "en": "Teamwork!",
+      "es": "¡Equipo!",
+      "color": "#4CAF50"
+     }
+    }
+   ]
+  },
+  {
+   "id": "flying-and-sharing",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.35,
+     "y": 0.25,
+     "at": 0,
+     "until": 6,
+     "anim": "float",
+     "color": "#FF5722"
+    },
+    {
+     "what": "cookie",
+     "x": 0.5,
+     "y": 0.55,
+     "at": 7,
+     "color": "#8D6E63"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the garden, the sky turned a warm sunset color.",
+     "es": "De vuelta en el jardín, el cielo se puso de un cálido color de atardecer."
+    },
+    {
+     "who": "zibu",
+     "en": "Look at our kite fly! Woohoo!",
+     "es": "¡Miren cómo vuela nuestra cometa! ¡Woohoo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "It flies so high in the soft breeze!",
+     "es": "¡Vuela muy alto con la brisa suave!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! It dances in the air!",
+     "es": "¡Miau! ¡Baila en el aire!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Together, the three friends held the string and took turns.",
+     "es": "Juntos, los tres amigos sostuvieron el hilo y se turnaron."
+    },
+    {
+     "who": "zibu",
+     "en": "Flying the kite together is much more fun!",
+     "es": "¡Volar la cometa juntos es mucho más divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "My tummy is rumbling a little bit...",
+     "es": "Mi pancita está sonando un poquito...",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila brought out a tasty cookie to share!",
+     "es": "¡Lila sacó una deliciosa galleta para compartir!"
+    },
+    {
+     "who": "lila",
+     "en": "A sweet treat for a great team!",
+     "es": "¡Un bocadillito dulce para un gran equipo!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! A yum-yum cookie! Thank you, Lila!",
+     "es": "¡Miau! ¡Una galleta sabrosa! ¡Gracias, Lila!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "One cookie for three best friends! Yum!",
+     "es": "¡Una galleta para tres mejores amigos! ¡Ñam!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "They shared the cookie happily under the colorful sky.",
+     "es": "Compartieron la galleta muy felices bajo el cielo colorido."
+    },
+    {
+     "who": "lila",
+     "en": "We are the best team ever!",
+     "es": "¡Somos el mejor equipo de todos!",
+     "mood": "happy",
+     "action": "wave"
+    }
+   ]
+  },
+  {
+   "id": "the-teamwork-lesson",
+   "bg": "room",
+   "time": "night",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.15,
+     "y": 0.65,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Night came to the cozy room.",
+     "es": "Llegó la noche a la acogedora habitación."
+    },
+    {
+     "who": "zibu",
+     "en": "What a wonderful day we had today!",
+     "es": "¡Qué día tan maravilloso tuvimos hoy!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "We saved our colorful kite!",
+     "es": "¡Salvamos nuestra cometa de colores!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "At first, Zibu tried to jump all by himself.",
+     "es": "Al principio, Zibu intentó saltar él solo."
+    },
+    {
+     "who": "zibu",
+     "en": "It was too high! I could not reach it alone.",
+     "es": "¡Estaba muy alta! No podía alcanzarla solo.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Then we worked together as a team!",
+     "es": "¡Luego trabajamos juntos en equipo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Five stones, three friends, and one big team!",
+     "es": "¡Cinco piedras, tres amigos y un gran equipo!",
+     "mood": "laugh",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Working together makes big tasks easy and fun!",
+     "es": "¡Trabajar en equipo hace que las tareas difíciles sean fáciles y divertidas!",
+     "show": {
+      "en": "Teamwork!",
+      "es": "¡Trabajo en equipo!",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Everything is better when we help each other!",
+     "es": "¡Sí! ¡Todo es mejor cuando nos ayudamos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I love our team! We can do anything together!",
+     "es": "¡Amo a nuestro equipo! ¡Podemos hacer cualquier cosa juntos!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila were ready for sweet dreams.",
+     "es": "Zibu y Lila estaban listos para tener dulces sueños."
+    },
+    {
+     "who": "zibu",
+     "en": "Goodnight, Lila! Goodnight, everyone!",
+     "es": "¡Buenas noches, Lila! ¡Buenas noches a todos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Goodnight, Zibu! See you tomorrow!",
+     "es": "¡Buenas noches, Zibu! ¡Hasta mañana!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Goodnight, little friends. See you next time!",
+     "es": "¡Buenas noches, amiguitos! ¡Hasta la próxima!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.5,
+     "y": 0.2,
+     "at": 0,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Together, together, we can do it all!",
+     "es": "¡Juntos, juntos, lo podemos lograr!"
+    },
+    {
+     "who": "narrator",
+     "en": "Working as a team, we stand big and tall!",
+     "es": "¡En equipo siempre vamos a triunfar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Reach up so high, give a helping hand!",
+     "es": "¡Dame tu mano, vamos a volar!"
+    },
+    {
+     "who": "narrator",
+     "en": "The best little team in all the land!",
+     "es": "¡Como este equipo no hay otro igual!"
+    },
+    {
+     "who": "zibu",
+     "en": "I tried to jump high, but it was too far!",
+     "es": "¡Salté muy alto, pero no llegué!",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "We brought five stones right to where you are!",
+     "es": "¡Trajimos cinco piedras y te ayudé!",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Together we built a step so strong!",
+     "es": "¡Hicimos un escalón muy genial!"
+    },
+    {
+     "who": "lila",
+     "en": "Now we can play and sing our song!",
+     "es": "¡Y cantar juntos este final!",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Together, together, we can do it all!",
+     "es": "¡Juntos, juntos, lo podemos lograr!"
+    },
+    {
+     "who": "narrator",
+     "en": "Working as a team, we stand big and tall!",
+     "es": "¡En equipo siempre vamos a triunfar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Reach up so high, give a helping hand!",
+     "es": "¡Dame tu mano, vamos a volar!"
+    },
+    {
+     "who": "narrator",
+     "en": "The best little team in all the land!",
+     "es": "¡Como este equipo no hay otro igual!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Together, together, we can do it all!",
+     "es": "¡Juntos, juntos, lo podemos lograr!"
+    },
+    {
+     "who": "narrator",
+     "en": "Working as a team, we stand big and tall!",
+     "es": "¡En equipo siempre vamos a triunfar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Reach up so high, give a helping hand!",
+     "es": "¡Dame tu mano, vamos a volar!"
+    },
+    {
+     "who": "narrator",
+     "en": "The best little team in all the land!",
+     "es": "¡Como este equipo no hay otro igual!"
+    },
+    {
+     "who": "zibu",
+     "en": "I tried to jump high, but it was too far!",
+     "es": "¡Salté muy alto, pero no llegué!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "We brought five stones right to where you are!",
+     "es": "¡Trajimos cinco piedras y te ayudé!"
+    },
+    {
+     "who": "zibu",
+     "en": "Together we built a step so strong!",
+     "es": "¡Hicimos un escalón muy genial!"
+    },
+    {
+     "who": "lila",
+     "en": "Now we can play and sing our song!",
+     "es": "¡Y cantar juntos este final!",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Together, together, we can do it all!",
+     "es": "¡Juntos, juntos, lo podemos lograr!"
+    },
+    {
+     "who": "narrator",
+     "en": "Working as a team, we stand big and tall!",
+     "es": "¡En equipo siempre vamos a triunfar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Reach up so high, give a helping hand!",
+     "es": "¡Dame tu mano, vamos a volar!"
+    },
+    {
+     "who": "narrator",
+     "en": "The best little team in all the land!",
+     "es": "¡Como este equipo no hay otro igual!"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Teamwork is super fun!",
+     "es": "¡Miau! ¡El trabajo en equipo es genial!",
+     "action": "jump",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "kite",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 2,
+     "until": 3
+    },
+    {
+     "what": "stone",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 8,
+     "until": 9
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Te gustó la historia? ¡Recordémosla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "What were Zibu, Lila, and Mitten flying in the sky?",
+     "es": "¿Qué estaban volando Zibu, Lila y Copito en el cielo?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A colorful kite!",
+     "es": "¡Una cometa de colores!",
+     "show": {
+      "en": "Kite",
+      "es": "Cometa"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Where did the kite get stuck?",
+     "es": "¿Dónde se quedó atrapada la cometa?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "High up in a bush!",
+     "es": "¡En lo alto de un arbusto!"
+    },
+    {
+     "who": "narrator",
+     "en": "Could Zibu reach the kite all by himself?",
+     "es": "¿Pudo Zibu alcanzar la cometa él solo?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "No, it was too high!",
+     "es": "¡No, estaba muy alta!"
+    },
+    {
+     "who": "narrator",
+     "en": "How many smooth stones did the friends count to build a step?",
+     "es": "¿Cuántas piedras contaron los amigos para construir el escalón?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Five stones!",
+     "es": "¡Cinco piedras!",
+     "show": {
+      "en": "5",
+      "es": "5"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What sweet treat did Lila share with everyone?",
+     "es": "¿Qué delicia compartió Lila con todos?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A tasty cookie!",
+     "es": "¡Una rica galleta!",
+     "show": {
+      "en": "Cookie",
+      "es": "Galleta"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's do five big jumps together!",
+     "es": "¡Hagamos cinco grandes saltos juntos!",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Count with us! One, two, three!",
+     "es": "¡Cuenten con nosotros! ¡Uno, dos, tres!",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Four... five! Yay!",
+     "es": "¡Cuatro... cinco! ¡Sí!",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Great job, everyone!",
+     "es": "¡Buen trabajo a todos!",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Working together makes big tasks easy and fun!",
+     "es": "¡Trabajar en equipo hace que las tareas difíciles sean fáciles y divertidas!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0
+    }
+   ],
+   "props": [],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Wiggle your ears and jump high!",
+     "es": "¡Muevan las orejas y mezan el cuerpo!",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep008-zibu-teamwork-kite"
+}
