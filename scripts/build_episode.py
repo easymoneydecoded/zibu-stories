@@ -332,7 +332,11 @@ def main(story_path: str, lang: str, motor: str = "kokoro") -> None:
     if "thumb" in story:
         key = story["scenes"][min(max(1, int(story["thumb"].get("scene", 1))), len(story["scenes"]) - 1)]
         timeline["thumb"] = {"text": story["thumb"][lang], "bg": key["bg"], "time": key["time"]}
-        props = [p for p in key.get("props", []) if isinstance(p, dict)] or [p for sc in story["scenes"] for p in sc.get("props", []) if isinstance(p, dict)]
+        # solo objetos que se reconocen en pequeno (una piedra o una luciernaga parecen una mancha)
+        claro = ("balloon", "kite", "ball", "bigstar", "brightstar", "gift", "apple", "flower", "butterfly", "cupcake",
+                 "cookie", "umbrella")
+        props = [p for sc in [key] + story["scenes"] for p in sc.get("props", [])
+                 if isinstance(p, dict) and p.get("what") in claro]
         if props:  # el objeto de la historia, para la miniatura en primer plano
             timeline["thumb"]["prop"] = props[0]
     (out / "timeline.json").write_text(json.dumps(timeline, ensure_ascii=False, indent=1), encoding="utf-8")

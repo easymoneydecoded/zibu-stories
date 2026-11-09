@@ -93,21 +93,24 @@ const Guest: React.FC<{ species: Species; mood: CharState["mood"]; size: number 
 const ThumbB: React.FC<ThumbProps> = ({ lang, timeline: tl }) => {
   const text = tl?.thumb?.text ?? THUMB_EP001[lang];
   const species = (tl?.guest ?? "star") as Species;
-  const t = text[0];
+  // las dos lineas: la primera sola puede quedar a medias ("¡ÁNIMO," sin el nombre)
+  const size = (t: string, max: number) => Math.min(max, Math.floor(1150 / (t.length * 0.6)));
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <AbsoluteFill style={{ scale: "0.6667", transformOrigin: "0 0", width: 1920, height: 1080, filter: "saturate(1.35)" }}>
         <Backdrop bg={tl?.thumb?.bg ?? "hill"} time={tl?.thumb?.time ?? "day"} />
       </AbsoluteFill>
-      <BigProp p={tl?.thumb?.prop} x={930} y={300} scale={2.4} rotate={-8} />
+      <BigProp p={tl?.thumb?.prop} x={930} y={360} scale={2.2} rotate={-8} />
       <div style={{ position: "absolute", left: 830, top: 400 }}>
         <Guest species={species} mood="surprised" size={330} />
       </div>
       <div style={{ position: "absolute", left: -90, top: 150 }}>
         <Zibu s={pose("surprised")} size={640} />
       </div>
-      <BigText t={t} size={Math.min(130, Math.floor(1180 / (t.length * 0.6)))} color="#ffd23f"
-        style={{ left: 40, top: 26, right: 40, textAlign: "right", rotate: "-3deg" }} />
+      {text.map((t, i) => (
+        <BigText key={t} t={t} size={size(t, i ? 100 : 118)} color={i ? "#ffffff" : "#ffd23f"}
+          style={{ left: 40, top: 20 + i * 118, right: 40, textAlign: "right", rotate: "-3deg" }} />
+      ))}
     </AbsoluteFill>
   );
 };
