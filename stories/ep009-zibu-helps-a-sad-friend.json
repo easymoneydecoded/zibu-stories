@@ -1,0 +1,1381 @@
+{
+ "slug": "zibu-helps-a-sad-friend",
+ "title": {
+  "en": "Zibu Helps a Sad Friend",
+  "es": "Zibu ayuda a un amigo triste"
+ },
+ "lesson": {
+  "en": "When a friend is feeling sad, listening and helping them can bring back their smile.",
+  "es": "Cuando un amigo está triste, escucharlo y ayudarlo puede devolverle la sonrisa."
+ },
+ "guest": {
+  "species": "piglet",
+  "name": {
+   "en": "Barnaby",
+   "es": "Pablito"
+  }
+ },
+ "thumb": {
+  "en": [
+   "CHEER UP,",
+   "BARNABY!"
+  ],
+  "es": [
+   "¡ÁNIMO,",
+   "PABLITO!"
+  ],
+  "scene": 7
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Helps a Sad Friend! 🐷 Learn Emotions: Sad, Surprised & Happy | Zibu and Friends",
+   "description": "Oh no! Barnaby the piglet is feeling sad today! 🐷\nZibu and Lila want to cheer up their new friend.\nWatch as they learn about emotions like SAD, SURPRISED, and HAPPY! 🎈\nDiscover how small acts of kindness can bring big smiles.\nPerfect for toddlers and preschoolers aged 2 to 6! 🌟\n#ZibuAndFriends #LearnEmotions #KindnessForKids #PreschoolLearning #CartoonsForKids",
+   "tags": [
+    "zibu and friends",
+    "emotions for kids",
+    "happy sad surprised",
+    "toddler learning",
+    "kindness for kids",
+    "piglet cartoon",
+    "preschool show",
+    "helping friends",
+    "kids animation",
+    "social emotional learning",
+    "cartoons for toddlers"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu ayuda a un amigo triste! 🐷 Emociones: Triste, Sorprendido y Feliz | Zibu y sus amigos",
+   "description": "¡Oh no! ¡El cerdito Pablito está muy triste hoy! 🐷\nZibu y Lila quieren ayudar a su nuevo amigo a sonreír.\n¡Acompaña a Zibu a aprender sobre las emociones: TRISTE, SORPRENDIDO y FELIZ! 🎈\nDescubre cómo la amabilidad y la empatía alegran el día.\n¡Ideal para niños de 2 a 6 años! 🌟\n#ZibuYSusAmigos #EmocionesParaNiños #Amabilidad #CaricaturasInfantiles #EducacionPreescolar",
+   "tags": [
+    "zibu y sus amigos",
+    "emociones para niños",
+    "triste sorprendido feliz",
+    "videos educativos",
+    "amabilidad infantil",
+    "cerdito dibujo animado",
+    "preescolar",
+    "ayudar a los amigos",
+    "dibujos animados",
+    "aprendizaje infantil"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! Barnaby the piglet is crying!",
+     "es": "¡Oh no! ¡El cerdito Pablito está llorando!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "He lost his bright yellow balloon!",
+     "es": "¡Perdió su brillante globo amarillo!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us cheer him up?",
+     "es": "¿Nos ayudan a animarlo?",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.75,
+     "y": 0.6
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Helps a Sad Friend!",
+     "es": "¡Zibu ayuda a un amigo triste!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "sad-piglet-in-garden",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.75,
+     "y": 0.6,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "What a sunny day in the garden! Zibu and Lila were playing together.",
+     "es": "¡Qué día tan soleado en el jardín! Zibu y Lila estaban jugando juntos."
+    },
+    {
+     "who": "zibu",
+     "en": "Tag, you're it, Lila! Hehe!",
+     "es": "¡Te atrapé, Lila! ¡Jeje!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "I'm gonna get you! Wheee!",
+     "es": "¡Te voy a atrapar! ¡Wiii!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "But wait... who was sitting under that big green leaf?",
+     "es": "Pero esperen... ¿quién estaba sentado debajo de esa gran hoja verde?"
+    },
+    {
+     "who": "guest",
+     "en": "Sniff... sniff... Oh dear...",
+     "es": "Snif... snif... Ay...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! Someone is sitting over there.",
+     "es": "¡Mira, Zibu! Alguien está sentado allá.",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.48
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go see! Hello there!",
+     "es": "¡Vamos a ver! ¡Hola!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.58
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "It was Barnaby the little piglet. And he was wiping away tears!",
+     "es": "Era Pablito el cerdito. ¡Y se estaba secando las lágrimas!"
+    },
+    {
+     "who": "guest",
+     "en": "Boo-hoo... sniff... Hello...",
+     "es": "Buaaa... snif... Hola...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! Are you okay, Barnaby?",
+     "es": "¡Oh, no! ¿Estás bien, Pablito?",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "I lost my yellow balloon... my favorite balloon...",
+     "es": "Perdí mi globo amarillo... mi globo favorito...",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh dear! That is so sad!",
+     "es": "¡Ay, no! ¡Eso es muy triste!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby felt very sad because his bright balloon was gone.",
+     "es": "Pablito se sentía muy triste porque su brillante globo se había ido.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "trying-an-apple",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.58
+    },
+    {
+     "who": "lila",
+     "x": 0.48
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.64,
+     "y": 0.7,
+     "at": 2,
+     "until": 9
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu wanted to make his new friend feel happy again.",
+     "es": "Zibu quería hacer feliz a su nuevo amigo otra vez."
+    },
+    {
+     "who": "zibu",
+     "en": "Don't cry, Barnaby! Look what I have for you!",
+     "es": "¡No llores, Pablito! ¡Mira lo que tengo para ti!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu reached into his basket and pulled out a shiny red apple.",
+     "es": "Zibu buscó en su canasta y sacó una brillante manzana roja."
+    },
+    {
+     "who": "zibu",
+     "en": "Here! A delicious red apple! Yummy!",
+     "es": "¡Toma! ¡Una deliciosa manzana roja! ¡Qué rica!",
+     "mood": "happy",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Ooh, apples always make me smile!",
+     "es": "¡Ooh, las manzanas siempre me hacen sonreír!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu...",
+     "es": "Gracias, Zibu...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby took a tiny bite of the apple... but he still looked sad.",
+     "es": "Pablito dio un mordisquito a la manzana... pero seguía viéndose triste."
+    },
+    {
+     "who": "guest",
+     "en": "It is very sweet... but I still miss my yellow balloon...",
+     "es": "Está muy dulce... pero aún extraño mi globo amarillo...",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... the apple didn't cheer him up.",
+     "es": "Oh... la manzana no lo alegró.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "He is still thinking about his lost balloon.",
+     "es": "Todavía está pensando en su globo perdido.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Don't worry, Barnaby. We are right here with you!",
+     "es": "No te preocupes, Pablito. ¡Estamos aquí contigo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Giving an apple was nice, but Barnaby was still feeling down.",
+     "es": "Darle una manzana fue lindo, pero Pablito aún se sentía desanimado.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "trying-a-flower-dance",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.65,
+     "at": 1,
+     "color": "#9b59b6"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Lila had another fun idea to cheer up Barnaby.",
+     "es": "Lila tuvo otra idea divertida para alegrar a Pablito."
+    },
+    {
+     "who": "lila",
+     "en": "Look! A pretty purple flower for you!",
+     "es": "¡Mira! ¡Una linda flor morada para ti!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Oh! Thank you, Lila...",
+     "es": "¡Oh! Gracias, Lila...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "And now... watch my funny flower dance! Tra-la-la!",
+     "es": "Y ahora... ¡mira mi baile divertido de la flor! ¡Tra-la-la!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Haha! Go, Lila! Dance, dance, dance!",
+     "es": "¡Jaja! ¡Vamos, Lila! ¡Baila, baila, baila!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila spun around and did a silly wiggly dance.",
+     "es": "Lila dio vueltas e hizo un baile muy gracioso."
+    },
+    {
+     "who": "guest",
+     "en": "Hee-hee... that is very funny!",
+     "es": "Je, je... ¡eso es muy divertido!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Did you smile, Barnaby?",
+     "es": "¡Sí! ¿Sonreíste, Pablito?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes... but I still miss my yellow balloon.",
+     "es": "Sí... pero aún extraño mi globo amarillo.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... the funny dance made him smile just a little.",
+     "es": "Oh... el baile divertido lo hizo sonreír un poquito.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "He is still sad inside.",
+     "es": "Todavía está triste por dentro.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "We need to find what he lost!",
+     "es": "¡Necesitamos encontrar lo que perdió!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "A flower dance was silly, but Barnaby really wanted his balloon back.",
+     "es": "Un baile con la flor fue gracioso, pero Pablito de verdad quería recuperar su globo.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-emotions-on-screen",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It's okay to feel sad when we lose something special.",
+     "es": "Está bien sentirse triste cuando perdemos algo especial.",
+     "show": {
+      "en": "SAD",
+      "es": "TRISTE",
+      "color": "#3498db"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Sometimes a surprise can make us feel different...",
+     "es": "A veces una sorpresa nos hace sentir diferentes...",
+     "show": {
+      "en": "SURPRISED",
+      "es": "SORPRENDIDO",
+      "color": "#f1c40f"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "...but true happiness comes when friends help each other!",
+     "es": "...¡pero la verdadera felicidad llega cuando los amigos se ayudan!",
+     "show": {
+      "en": "HAPPY",
+      "es": "FELIZ",
+      "color": "#2ecc71"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Look! We learned about our feelings!",
+     "es": "¡Miren! ¡Aprendimos sobre nuestras emociones!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Barnaby felt sad because his balloon flew away.",
+     "es": "Pablito se sintió triste porque su globo se voló.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "It went up... up... towards the big sunny hill!",
+     "es": "¡Se fue arriba... arriba... hacia la gran colina soleada!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Aha! Now I understand!",
+     "es": "¡Ajá! ¡Ahora entiendo!",
+     "mood": "surprised",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "We don't just need silly games...",
+     "es": "No solo necesitamos juegos graciosos...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "...we need to go find your balloon!",
+     "es": "...¡necesitamos ir a buscar tu globo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Let's work together!",
+     "es": "¡Sí! ¡Vamos a trabajar juntos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Really? You will help me search for it?",
+     "es": "¿De verdad? ¿Me ayudarán a buscarlo?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Of course! Friends always help friends!",
+     "es": "¡Por supuesto! ¡Los amigos siempre se ayudan!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Come on, Barnaby! To the hill!",
+     "es": "¡Vamos, Pablito! ¡A la colina!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.1
+      },
+      {
+       "who": "zibu",
+       "to": 0.25
+      },
+      {
+       "who": "guest",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "So Zibu, Lila, and Barnaby set off to find the lost balloon!",
+     "es": "¡Así que Zibu, Lila y Pablito salieron a buscar el globo perdido!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "searching-the-hill",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.15
+    },
+    {
+     "who": "lila",
+     "x": 0.3
+    },
+    {
+     "who": "guest",
+     "x": 0.45
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.85,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Barnaby walked up the sunny hill together.",
+     "es": "Zibu, Lila y Pablito subieron juntos a la soleada colina.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      },
+      {
+       "who": "lila",
+       "to": 0.5
+      },
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look! The hill is so high and pretty!",
+     "es": "¡Miren! ¡La colina es muy alta y bonita!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Keep your eyes open, everyone! Where is the balloon?",
+     "es": "¡Abran bien los ojos, todos! ¿Dónde está el globo?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Sniff... I hope we can find it.",
+     "es": "Snif... Espero que lo encontremos.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Don't give up, Barnaby! We will check everywhere!",
+     "es": "¡No te rindas, Pablito! ¡Buscaremos por todas partes!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Look up in the tall grass... no balloon there!",
+     "es": "Miren arriba en el pasto alto... ¡ahí no está el globo!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Look down near the flowers... no balloon there either.",
+     "es": "Miren abajo cerca de las flores... tampoco está ahí.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "They searched and searched all over the sunny hill.",
+     "es": "Buscaron y buscaron por toda la soleada colina."
+    },
+    {
+     "who": "zibu",
+     "en": "Hey! Look over there! Near the top of the hill!",
+     "es": "¡Oigan! ¡Miren allá! ¡Cerca de la cima de la colina!",
+     "mood": "surprised",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "There is a big grey stone!",
+     "es": "¡Hay una gran piedra gris!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Could my yellow balloon be behind the stone?",
+     "es": "¿Estará mi globo amarillo detrás de la piedra?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Let me go see! Come on, friends!",
+     "es": "¡Voy a ver! ¡Vengan, amigos!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Barnaby hurried over to the big stone!",
+     "es": "¡Zibu, Lila y Pablito corrieron hacia la gran piedra!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "found-the-balloon",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.75
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.85,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "balloon",
+     "x": 0.85,
+     "y": 0.45,
+     "at": 1,
+     "anim": "float",
+     "color": "#FFD700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu slowly peeked behind the big grey stone...",
+     "es": "Zibu se asomó lentamente detrás de la gran piedra gris...",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.8
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! Look! I see something bright yellow!",
+     "es": "¡Guau! ¡Miren! ¡Veo algo amarillo brillante!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Is it the balloon?",
+     "es": "¿Es el globo?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "My yellow balloon!",
+     "es": "¡Mi globo amarillo!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "The yellow balloon was floating right behind the stone!",
+     "es": "¡El globo amarillo estaba flotando justo detrás de la piedra!"
+    },
+    {
+     "who": "zibu",
+     "en": "Here it is, Barnaby! I got it for you!",
+     "es": "¡Aquí está, Pablito! ¡Te lo conseguí!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Oh! You found my balloon!",
+     "es": "¡Oh! ¡Encontraron mi globo!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Hurray! Barnaby's smile is back!",
+     "es": "¡Viva! ¡La sonrisa de Pablito volvió!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! Thank you, Lila! You are the best friends!",
+     "es": "¡Gracias, Zibu! ¡Gracias, Lila! ¡Son los mejores amigos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Seeing you happy makes us happy too!",
+     "es": "¡Verte feliz a ti nos hace felices a nosotros también!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby was so happy, his little tail wiggled with joy!",
+     "es": "¡Pablito estaba tan feliz que su colita se movía de alegría!"
+    },
+    {
+     "who": "lila",
+     "en": "Now let's give each other a big warm hug!",
+     "es": "¡Ahora darnos un gran abrazo calientito!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.6
+      },
+      {
+       "who": "guest",
+       "to": 0.68
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend is sad, helping them brings joy to everyone!",
+     "es": "¡Cuando un amigo está triste, ayudarlo trae alegría a todos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "celebrating-with-cupcakes",
+   "bg": "forest",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.72
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.8,
+     "y": 0.4,
+     "at": 0,
+     "color": "#ffee00"
+    },
+    {
+     "what": "cupcake",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 1,
+     "color": "#ff99bb"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun began to set, painting the forest with warm colors.",
+     "es": "El sol comenzó a ponerse, pintando el bosque con colores cálidos."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! I brought yummy cupcakes for a celebration snack!",
+     "es": "¡Miren! ¡Traje ricas magdalenas para un bocadillo de celebración!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Cupcakes are my favorite!",
+     "es": "¡Sí! ¡Las magdalenas son mis favoritas!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Mmm... thank you so much, Zibu!",
+     "es": "Mmm... ¡muchas gracias, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby smiled brightly, holding tight to his yellow balloon.",
+     "es": "Pablito sonrió alegremente, sosteniendo fuerte su globo amarillo."
+    },
+    {
+     "who": "guest",
+     "en": "I was feeling so sad before... but now I feel so happy!",
+     "es": "Antes me sentía muy triste... ¡pero ahora me siento muy feliz!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "When a friend is sad, listening and helping brings back their smile!",
+     "es": "¡Cuando un amigo está triste, escuchar y ayudar devuelve la sonrisa!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Helping others makes everyone feel happy!",
+     "es": "¡Sí! ¡Ayudar a los demás hace que todos se sientan felices!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "The three friends shared the delicious treat together.",
+     "es": "Los tres amigos compartieron el delicioso bocadillo juntos."
+    },
+    {
+     "who": "guest",
+     "en": "Yum, yum, yum! This is so tasty!",
+     "es": "¡Ñam, ñam, ñam! ¡Esto está tan rico!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "We love helping you, Barnaby!",
+     "es": "¡Nos encanta ayudarte, Pablito!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      },
+      {
+       "who": "lila",
+       "to": 0.5
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "We are always here for you!",
+     "es": "¡Siempre estamos aquí para ti!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, friends! You are the best!",
+     "es": "¡Gracias, amigos! ¡Ustedes son los mejores!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "And so, a wonderful day ended with warm hearts and big smiles.",
+     "es": "Y así, un maravilloso día terminó con corazones cálidos y grandes sonrisas.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "When a friend is feeling sad,",
+     "es": "Si un amigo triste está,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Helping them will make them glad!",
+     "es": "¡La ayuda la sonrisa le dará!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Give a hug and hold their hand,",
+     "es": "Un abrazo y amistad,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Spread big smiles across the land!",
+     "es": "¡Traen pura felicidad!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Barnaby was feeling down,",
+     "es": "Pablito un globo perdió,",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Wearing such a heavy frown!",
+     "es": "Y muy triste se sintió.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "We both helped him find his prize,",
+     "es": "Lo buscamos con amor,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Happy tears were in his eyes!",
+     "es": "¡Y volvió su gran color!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend is feeling sad,",
+     "es": "Si un amigo triste está,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Helping them will make them glad!",
+     "es": "¡La ayuda la sonrisa le dará!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Give a hug and hold their hand,",
+     "es": "Un abrazo y amistad,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Spread big smiles across the land!",
+     "es": "¡Traen pura felicidad!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend is feeling sad,",
+     "es": "Si un amigo triste está,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Helping them will make them glad!",
+     "es": "¡La ayuda la sonrisa le dará!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Give a hug and hold their hand,",
+     "es": "Un abrazo y amistad,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Spread big smiles across the land!",
+     "es": "¡Traen pura felicidad!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Barnaby was feeling down,",
+     "es": "Pablito un globo perdió,",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Wearing such a heavy frown!",
+     "es": "Y muy triste se sintió.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "We both helped him find his prize,",
+     "es": "Lo buscamos con amor,",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Happy tears were in his eyes!",
+     "es": "¡Y volvió su gran color!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend is feeling sad,",
+     "es": "Si un amigo triste está,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Helping them will make them glad!",
+     "es": "¡La ayuda la sonrisa le dará!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Give a hug and hold their hand,",
+     "es": "Un abrazo y amistad,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Spread big smiles across the land!",
+     "es": "¡Traen pura felicidad!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I love my happy yellow balloon! Thank you, friends!",
+     "es": "¡Amo mi globo amarillo! ¡Gracias, amigos!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Te gustó la historia? ¡Recordémosla juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Who was sitting under the big leaf feeling sad?",
+     "es": "¿Quién estaba triste debajo de la gran hoja?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby the little piglet!",
+     "es": "¡Pablito el cerdito!",
+     "mood": "happy",
+     "show": {
+      "en": "Barnaby",
+      "es": "Pablito"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Barnaby lose?",
+     "es": "¿Qué había perdido Pablito?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "His yellow balloon!",
+     "es": "¡Su globo amarillo!",
+     "mood": "happy",
+     "show": {
+      "en": "Yellow Balloon",
+      "es": "Globo Amarillo"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Where did Zibu and Lila find the balloon?",
+     "es": "¿Dónde encontraron Zibu y Lila el globo?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Behind the big stone on the hill!",
+     "es": "¡Detrás de la gran piedra en la colina!",
+     "mood": "happy",
+     "show": {
+      "en": "The Hill",
+      "es": "La Colina"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What tasty snack did Zibu bring to celebrate?",
+     "es": "¿Qué rico bocadillo trajo Zibu para celebrar?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Cupcakes!",
+     "es": "¡Magdalenas!",
+     "mood": "happy",
+     "show": {
+      "en": "Cupcakes",
+      "es": "Magdalenas"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many friends helped Barnaby today?",
+     "es": "¿Cuántos amigos ayudaron a Pablito hoy?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Two friends! Zibu and Lila!",
+     "es": "¡Dos amigos! ¡Zibu y Lila!",
+     "mood": "happy",
+     "show": {
+      "en": "2",
+      "es": "2"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "When you feel happy, let's jump together!",
+     "es": "¡Cuando sientas felicidad, saltemos juntos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Let's jump three times! One... two... three!",
+     "es": "¡Saltemos tres veces! ¡Uno... dos... tres!",
+     "mood": "happy",
+     "action": "bigjump",
+     "show": {
+      "en": "3",
+      "es": "3"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Wheee! That was so much fun!",
+     "es": "¡Wheee! ¡Eso fue muy divertido!",
+     "mood": "laugh",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Big smiles for everyone!",
+     "es": "¡Grandes sonrisas para todos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend is feeling sad, listening and helping them can bring back their smile.",
+     "es": "Cuando un amigo está triste, escucharlo y ayudarlo puede devolverle la sonrisa.",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "laugh",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Wiggle your ears and bounce to the music!",
+     "es": "¡Muevan las orejas y reboten con la música!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep009-zibu-helps-a-sad-friend"
+}
