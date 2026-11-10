@@ -1,0 +1,1440 @@
+{
+ "slug": "zibu-the-brave-puppy",
+ "title": {
+  "en": "Zibu and the Brave Puppy",
+  "es": "Zibu y el perrito valiente"
+ },
+ "lesson": {
+  "en": "Trying new things is easy when you are brave!",
+  "es": "¡Intentar cosas nuevas es fácil si eres valiente!"
+ },
+ "guest": {
+  "species": "puppy",
+  "name": {
+   "en": "Toby",
+   "es": "Tobi"
+  }
+ },
+ "thumb": {
+  "en": [
+   "BE BRAVE!",
+   "NEW FRIENDS!"
+  ],
+  "es": [
+   "¡SÉ VALIENTE!",
+   "¡NUEVOS AMIGOS!"
+  ],
+  "scene": 6
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu & Friends 🐶 Be Brave & Learn Opposites! Up, Down, In, Out for Kids!",
+   "description": "Zibu and Lila meet Toby, a cute puppy who is afraid of trying new things! 🐶\nTogether, they learn to be brave while discovering opposites! 🎈\nWatch the ball go UP and DOWN, and Toby jump IN and OUT!\nFun learning for toddlers and preschoolers aged 2-6! ✨\n\n#ZibuAndFriends #LearnOpposites #BeBrave #ToddlerLearning",
+   "tags": [
+    "Zibu and Friends",
+    "learn opposites",
+    "up and down",
+    "in and out",
+    "be brave",
+    "kids animation",
+    "preschool learning",
+    "puppy story",
+    "cartoon for kids",
+    "toddler videos",
+    "educational cartoon",
+    "opposites for kids"
+   ]
+  },
+  "es": {
+   "title": "Zibu y sus Amigos 🐶 ¡Sé valiente y aprende opuestos! Arriba, Abajo, Adentro, Afuera",
+   "description": "¡Zibu y Lila conocen a Tobi, un perrito juguetón que aprende a ser valiente! 🐶\nJuntos descubren los opuestos de forma muy divertida. 🎈\n¡La pelota sube ARRIBA y ABAJO, y Tobi salta ADENTRO y AFUERA!\nAnimación educativa para niños de 2 a 6 años. ✨\n\n#ZibuYSusAmigos #AprendeOpuestos #SerValiente #VideosParaNiños",
+   "tags": [
+    "Zibu y sus amigos",
+    "aprender opuestos",
+    "arriba y abajo",
+    "adentro y afuera",
+    "ser valiente",
+    "caricaturas infantiles",
+    "videos para niños",
+    "educacion preescolar",
+    "historias de perritos",
+    "caricaturas para niños",
+    "aprender jugando"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! Toby's bright red ball rolled away!",
+     "es": "¡Oh no! ¡La pelota roja de Tobi rodó!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us find it, friend?",
+     "es": "¿Nos ayudas a buscarla, amigo?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go look together!",
+     "es": "¡Vamos a buscar juntos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "color": "#FF4500",
+     "x": 0.68,
+     "y": 0.75
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Brave Puppy!",
+     "es": "¡Zibu y el perrito valiente!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "meeting-toby",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.38
+    },
+    {
+     "who": "guest",
+     "x": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "color": "#FF4500",
+     "x": 0.68,
+     "y": 0.75,
+     "at": 2
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright, sunny day in the garden. Zibu and Lila were playing!",
+     "es": "¡Era un día brillante y soleado en el jardín. Zibu y Lila estaban jugando!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Lila! Someone is coming this way!",
+     "es": "¡Mira, Lila! ¡Viene alguien por allá!",
+     "mood": "surprised",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "A friendly little puppy trotted into the garden with a red ball.",
+     "es": "Un perrito muy amigable llegó trotando al jardín con una pelota roja.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Woof, woof! Hello! I am Toby!",
+     "es": "¡Guau, guau! ¡Hola! ¡Soy Tobi!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Hello Toby! Wow, what a pretty ball!",
+     "es": "¡Hola Tobi! ¡Guau, qué pelota tan bonita!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Do you want to play with us, Toby?",
+     "es": "¿Quieres jugar con nosotros, Tobi?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! But... look at that new path over there.",
+     "es": "¡Sí! Pero... miren ese camino nuevo allá.",
+     "mood": "scared"
+    },
+    {
+     "who": "narrator",
+     "en": "The path led toward a place Toby had never seen before.",
+     "es": "El camino llevaba hacia un lugar que Tobi nunca había visto."
+    },
+    {
+     "who": "guest",
+     "en": "It looks so big... I feel a little nervous.",
+     "es": "Se ve muy grande... me da un poquito de miedo.",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "It's okay, Toby! New places can feel scary at first.",
+     "es": "¡Está bien, Tobi! Los lugares nuevos pueden dar miedo al principio.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "But trying new things is exciting! Let's explore together!",
+     "es": "¡Pero intentar cosas nuevas es emocionante! ¡Vamos a explorar juntos!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "guest",
+     "en": "Together? Really?",
+     "es": "¿Juntos? ¿De verdad?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "And so, Zibu, Lila, and Toby walked toward the new path!",
+     "es": "Y así, ¡Zibu, Lila y Tobi caminaron hacia el nuevo camino!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.4
+      },
+      {
+       "who": "lila",
+       "to": 0.58
+      },
+      {
+       "who": "guest",
+       "to": 0.85
+      }
+     ],
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "up-and-down-hill",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "color": "#FF4500",
+     "x": 0.65,
+     "y": 0.35,
+     "at": 0,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "They reached a big green hill. Boing! The red ball bounced up!",
+     "es": "Llegaron a una gran colina verde. ¡Boing! ¡La pelota roja rebotó hacia arriba!"
+    },
+    {
+     "who": "zibu",
+     "en": "Whoosh! Look at the ball go!",
+     "es": "¡Fiuuu! ¡Mira cómo va la pelota!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Up... up... UP it goes!",
+     "es": "¡Arriba... arriba... ARRIBA va!",
+     "mood": "happy",
+     "show": {
+      "en": "UP",
+      "es": "ARRIBA",
+      "color": "#FF9900"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "And then... bump, bump, bump! The ball rolled down!",
+     "es": "Y luego... ¡pum, pum, pum! ¡La pelota rodó hacia abajo!"
+    },
+    {
+     "who": "zibu",
+     "en": "And down... down... DOWN it comes!",
+     "es": "¡Y abajo... abajo... ABAJO viene!",
+     "mood": "happy",
+     "show": {
+      "en": "DOWN",
+      "es": "ABAJO",
+      "color": "#33CC99"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear! My ball is on top of the hill now!",
+     "es": "¡Ay, no! ¡Mi pelota está arriba en la colina ahora!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby looked up at the high hill. He stopped moving.",
+     "es": "Tobi miró la alta colina. Se quedó quieto."
+    },
+    {
+     "who": "guest",
+     "en": "I have never climbed a hill before... it is so tall!",
+     "es": "Nunca he subido una colina... ¡es tan alta!",
+     "mood": "scared",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "You can do it, Toby! Just take one little step!",
+     "es": "¡Tú puedes, Tobi! ¡Solo da un pasito!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Trying new things is easy when you are brave!",
+     "es": "¡Intentar cosas nuevas es fácil si eres valiente!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "guest",
+     "en": "Brave? Can I really be brave?",
+     "es": "¿Valiente? ¿De verdad puedo ser valiente?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! We are right here cheering for you!",
+     "es": "¡Sí! ¡Estamos aquí apoyándote!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby looked at Zibu and Lila. He felt a little braver already!",
+     "es": "Tobi miró a Zibu y a Lila. ¡Ya se sentía un poco más valiente!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "toby-is-brave",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.8,
+     "y": 0.4,
+     "at": 0,
+     "color": "#FF4444"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Toby took a big, deep breath.",
+     "es": "Tobi respiró muy hondo."
+    },
+    {
+     "who": "guest",
+     "en": "One... two... three... I can do it!",
+     "es": "Uno... dos... tres... ¡yo puedo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Go, Toby, go!",
+     "es": "¡Vamos, Tobi, vamos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby took his very first brave step up the hill.",
+     "es": "Tobi dio su primer paso valiente colina arriba.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Yay! You are doing it!",
+     "es": "¡Bien! ¡Lo estás logrando!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "He ran up and up... right to the top!",
+     "es": "¡Corrió hacia arriba y arriba... hasta la cima!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.8
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Look at me! I am at the top!",
+     "es": "¡Guau! ¡Mírenme! ¡Estoy en la cima!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "Now get the red ball!",
+     "es": "¡Ahora atrapa la pelota roja!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby rolled all the way down happily!",
+     "es": "¡Tobi rodó hacia abajo muy feliz!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.3
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Wheee! This is so fun!",
+     "es": "¡Wheee! ¡Esto es muy divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "You did it, Toby! You were so brave!",
+     "es": "¡Lo hiciste, Tobi! ¡Fuiste muy valiente!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Trying something new wasn't scary at all!",
+     "es": "¡Intentar algo nuevo no fue nada miedoso!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, the ball bounced away... right inside the cozy house!",
+     "es": "De repente, la pelota rebotó lejos... ¡directo a la acogedora casa!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.5
+      },
+      {
+       "who": "lila",
+       "to": 0.7
+      },
+      {
+       "who": "guest",
+       "to": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "into-the-room",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": -0.2
+    },
+    {
+     "who": "lila",
+     "x": -0.2
+    },
+    {
+     "who": "guest",
+     "x": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.7,
+     "y": 0.6,
+     "at": 2
+    },
+    {
+     "what": "ball",
+     "x": 0.7,
+     "y": 0.5,
+     "at": 3,
+     "color": "#FF4444"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Everyone followed the ball into the cozy room.",
+     "es": "Todos siguieron la pelota hasta la acogedora habitación.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.2
+      },
+      {
+       "who": "lila",
+       "to": 0.4
+      },
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Where did the red ball go?",
+     "es": "¿A dónde fue la pelota roja?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Look! There is a big gift box in the room!",
+     "es": "¡Mira! ¡Hay una gran caja de regalo en la habitación!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Boing! Boing! The ball bounced right inside the big gift box!",
+     "es": "¡Boing! ¡Boing! ¡La pelota rebotó directo dentro de la caja!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh... it went inside the box.",
+     "es": "Oh... se fue adentro de la caja.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Do you want to look inside, Toby?",
+     "es": "¿Quieres mirar adentro, Tobi?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Um... I have never climbed into a big box before.",
+     "es": "Mmm... nunca he entrado en una caja grande.",
+     "mood": "scared",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "It's okay to feel unsure when it's something new!",
+     "es": "¡Está bien dudar cuando es algo nuevo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby stopped and looked at the big box.",
+     "es": "Tobi se detuvo y miró la gran caja."
+    },
+    {
+     "who": "zibu",
+     "en": "Remember, Toby! You are brave!",
+     "es": "¡Recuerda, Tobi! ¡Eres valiente!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "I am brave... I can try!",
+     "es": "Soy valiente... ¡puedo intentarlo!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "We are right here cheering for you!",
+     "es": "¡Estamos aquí apoyándote!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby took a peek inside the box... what will happen next?",
+     "es": "Tobi echó un vistazo dentro de la caja... ¿qué pasará a continuación?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-opposites",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.75,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "ball",
+     "x": 0.75,
+     "y": 0.7,
+     "at": 9,
+     "color": "#FF3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Toby looked inside the big box. It was dark, but he was brave!",
+     "es": "Tobi miró dentro de la gran caja. ¡Estaba oscura, pero él era valiente!"
+    },
+    {
+     "who": "zibu",
+     "en": "Be brave, Toby! You can go IN!",
+     "es": "¡Sé valiente, Tobi! ¡Puedes ir ADENTRO!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Jump IN, Toby! We are right here!",
+     "es": "¡Salta ADENTRO, Tobi! ¡Estamos aquí!",
+     "mood": "happy",
+     "show": {
+      "en": "IN",
+      "es": "ADENTRO",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Toby took a brave little leap... right IN!",
+     "es": "Tobi dio un pequeño salto valiente... ¡bien ADENTRO!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75,
+       "toY": 0.8
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Woof! I am IN the box!",
+     "es": "¡Guao! ¡Estoy ADENTRO de la caja!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Toby is IN!",
+     "es": "¡Siii! ¡Tobi está ADENTRO!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Now... can Toby jump OUT with the ball?",
+     "es": "Ahora... ¿podrá Tobi salir AFUERA con la pelota?"
+    },
+    {
+     "who": "lila",
+     "en": "Jump UP and pop OUT, Toby!",
+     "es": "¡Salta ARRIBA y sal AFUERA, Tobi!",
+     "mood": "happy",
+     "show": {
+      "en": "UP",
+      "es": "ARRIBA",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Here I go! One... two... pop!",
+     "es": "¡Aquí voy! Uno... dos... ¡pum!",
+     "mood": "happy",
+     "action": "bigjump",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75,
+       "toY": 0.5
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Toby popped OUT! And look, he has the ball!",
+     "es": "¡Tobi salió AFUERA! Y miren, ¡tiene la pelota!",
+     "show": {
+      "en": "OUT",
+      "es": "AFUERA",
+      "color": "#2196F3"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Hooray! UP and DOWN, IN and OUT!",
+     "es": "¡Viva! ¡ARRIBA y ABAJO, ADENTRO y AFUERA!",
+     "mood": "happy",
+     "action": "spin",
+     "show": {
+      "en": "DOWN",
+      "es": "ABAJO",
+      "color": "#9C27B0"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "You tried something new, Toby!",
+     "es": "¡Intentaste algo nuevo, Tobi!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I did it! Trying new things is fun!",
+     "es": "¡Lo logré! ¡Intentar cosas nuevas es divertido!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby felt so happy and proud of himself!",
+     "es": "¡Tobi se sintió muy feliz y orgulloso de sí mismo!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "playing-in-the-forest",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.35,
+     "at": 3,
+     "anim": "float",
+     "color": "#FFD700"
+    },
+    {
+     "what": "ball",
+     "x": 0.75,
+     "y": 0.75,
+     "at": 0,
+     "color": "#FF3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Next, Zibu, Lila, and Toby walked into the sunny forest!",
+     "es": "¡Después, Zibu, Lila y Tobi fueron al bosque soleado!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look at this new place! It's so pretty!",
+     "es": "¡Miren este lugar nuevo! ¡Es muy bonito!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "I brought a yellow balloon to play!",
+     "es": "¡Traje un globo amarillo para jugar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby looked at the tall trees. It was brand new for him.",
+     "es": "Tobi miró los altos árboles. Era totalmente nuevo para él."
+    },
+    {
+     "who": "guest",
+     "en": "It is new... but I am not scared!",
+     "es": "Es nuevo... ¡pero no tengo miedo!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "That's it, Toby! Let's toss the balloon UP!",
+     "es": "¡Eso es, Tobi! ¡Vamos a lanzar el globo ARRIBA!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu booped the balloon high into the air!",
+     "es": "¡Zibu empujó el globo bien alto en el aire!"
+    },
+    {
+     "who": "lila",
+     "en": "Boop! Catch it, Toby!",
+     "es": "¡Bup! ¡Atrápalo, Tobi!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "I can catch it! Woof woof!",
+     "es": "¡Puedo atraparlo! ¡Guao guao!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby ran under the tall trees happily.",
+     "es": "Tobi corrió feliz bajo los altos árboles.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look at Toby go! He is so brave!",
+     "es": "¡Miren a Tobi! ¡Es muy valiente!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "We are so proud of you, Toby!",
+     "es": "¡Estamos muy orgullosos de ti, Tobi!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I love exploring new places now!",
+     "es": "¡Ahora me encanta explorar lugares nuevos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Exploring new places is so fun when you are brave!",
+     "es": "¡Explorar lugares nuevos es tan divertido cuando eres valiente!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-ending",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.7,
+     "y": 0.8,
+     "at": 0,
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun was setting nicely over the warm garden.",
+     "es": "El sol se estaba poniendo sobre el cálido jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! What a wonderful day of games!",
+     "es": "¡Vaya! ¡Qué día tan maravilloso de juegos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "You were so brave today, Toby!",
+     "es": "¡Fuiste muy valiente hoy, Tobi!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof! At first, I felt a little nervous.",
+     "es": "¡Guau, guau! Al principio, me sentí un poco nervioso.",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "But trying new things is easy when you are brave!",
+     "es": "¡Pero intentar cosas nuevas es fácil si eres valiente!",
+     "mood": "happy",
+     "show": {
+      "en": "BRAVE!",
+      "es": "¡VALIENTE!",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Yes! You jumped in, bounced out, and explored!",
+     "es": "¡Sí! ¡Saltaste adentro, rebotaste afuera y exploraste!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "And exploring is super duper fun!",
+     "es": "¡Y explorar es superdivertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby wagged his happy tail. He felt so proud!",
+     "es": "Tobi movió su colita feliz. ¡Se sentía muy orgulloso!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Will you come back and play with us again?",
+     "es": "¿Volverás a jugar con nosotros otra vez?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Yes, please! I love new adventures!",
+     "es": "¡Guau! ¡Sí, por favor! ¡Me encantan las nuevas aventuras!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Hooray! We love making brave new friends!",
+     "es": "¡Viva! ¡Nos encanta hacer nuevos amigos valientes!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Trying new things is easy and fun when you are brave!",
+     "es": "¡Intentar cosas nuevas es fácil y divertido cuando eres valiente!",
+     "pause": 1.0
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, Toby! Goodbye, friends!",
+     "es": "¡Adiós, Tobi! ¡Adiós, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "See you next time! Bye-bye!",
+     "es": "¡Hasta la próxima! ¡Chao, chao!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof! Bye-bye, everyone!",
+     "es": "¡Guau, guau! ¡Chao a todos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "See you soon for another fun adventure with Zibu and friends!",
+     "es": "¡Nos vemos pronto para otra divertida aventura con Zibu y sus amigos!",
+     "pause": 1.5
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 0,
+     "color": "#ff0000",
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Step up, step down, look all around!",
+     "es": "Paso arriba, paso abajo, ¡mira alrededor!"
+    },
+    {
+     "who": "narrator",
+     "en": "We make a happy, brave little sound!",
+     "es": "¡Con valentía se siente mejor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Jump in, jump out, give a big cheer!",
+     "es": "Salta adentro, salta afuera, ¡qué felicidad!"
+    },
+    {
+     "who": "narrator",
+     "en": "Being brave is fun when friends are near!",
+     "es": "¡Intentar cosas nuevas es genial en verdad!"
+    },
+    {
+     "who": "zibu",
+     "en": "I climb up high to see the view!",
+     "es": "Subo muy alto para mirar,",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "And try something happy and new!",
+     "es": "¡Y algo nuevo voy a intentar!",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "We leap inside and pop right out!",
+     "es": "Salto adentro y salgo después,",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Being brave makes us twist and shout!",
+     "es": "¡Qué divertido es jugar otra vez!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Step up, step down, look all around!",
+     "es": "Paso arriba, paso abajo, ¡mira alrededor!"
+    },
+    {
+     "who": "narrator",
+     "en": "We make a happy, brave little sound!",
+     "es": "¡Con valentía se siente mejor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Jump in, jump out, give a big cheer!",
+     "es": "Salta adentro, salta afuera, ¡qué felicidad!"
+    },
+    {
+     "who": "narrator",
+     "en": "Being brave is fun when friends are near!",
+     "es": "¡Intentar cosas nuevas es genial en verdad!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "laugh",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Step up, step down, look all around!",
+     "es": "Paso arriba, paso abajo, ¡mira alrededor!"
+    },
+    {
+     "who": "narrator",
+     "en": "We make a happy, brave little sound!",
+     "es": "¡Con valentía se siente mejor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Jump in, jump out, give a big cheer!",
+     "es": "Salta adentro, salta afuera, ¡qué felicidad!"
+    },
+    {
+     "who": "narrator",
+     "en": "Being brave is fun when friends are near!",
+     "es": "¡Intentar cosas nuevas es genial en verdad!"
+    },
+    {
+     "who": "zibu",
+     "en": "I climb up high to see the view!",
+     "es": "Subo muy alto para mirar,",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "And try something happy and new!",
+     "es": "¡Y algo nuevo voy a intentar!",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "We leap inside and pop right out!",
+     "es": "Salto adentro y salgo después,",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Being brave makes us twist and shout!",
+     "es": "¡Qué divertido es jugar otra vez!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Step up, step down, look all around!",
+     "es": "Paso arriba, paso abajo, ¡mira alrededor!"
+    },
+    {
+     "who": "narrator",
+     "en": "We make a happy, brave little sound!",
+     "es": "¡Con valentía se siente mejor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Jump in, jump out, give a big cheer!",
+     "es": "Salta adentro, salta afuera, ¡qué felicidad!"
+    },
+    {
+     "who": "narrator",
+     "en": "Being brave is fun when friends are near!",
+     "es": "¡Intentar cosas nuevas es genial en verdad!"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof! Trying new things is fun!",
+     "es": "¡Guau guau! ¡Intentar cosas nuevas es divertido!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who came to play in the garden?",
+     "es": "¿Quién vino a jugar al jardín?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Toby the brave puppy!",
+     "es": "¡Tobi el perrito valiente!",
+     "show": {
+      "en": "Toby",
+      "es": "Tobi"
+     },
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "What color was Toby's ball?",
+     "es": "¿De qué color era la pelota de Tobi?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Red! A bright red ball!",
+     "es": "¡Roja! ¡Una pelota roja brillante!",
+     "show": {
+      "en": "Red",
+      "es": "Roja",
+      "color": "#ff0000"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Where did the red ball bounce first?",
+     "es": "¿A dónde rebotó primero la pelota roja?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Up the big hill!",
+     "es": "¡Arriba de la gran colina!",
+     "show": {
+      "en": "Hill",
+      "es": "Colina"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Toby jump into inside the room?",
+     "es": "¿A dónde saltó Tobi dentro del cuarto?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Inside a big gift box!",
+     "es": "¡Adentro de una caja de regalo!",
+     "show": {
+      "en": "Box",
+      "es": "Caja"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How did Toby feel after trying new things?",
+     "es": "¿Cómo se sintió Tobi después de intentar cosas nuevas?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Happy and so brave!",
+     "es": "¡Feliz y muy valiente!",
+     "show": {
+      "en": "Brave",
+      "es": "Valiente"
+     },
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Now, let's take a brave step together!",
+     "es": "¡Ahora, demos un paso valiente juntos!"
+    },
+    {
+     "who": "zibu",
+     "en": "Stand up tall! Take one big step forward!",
+     "es": "¡Pónganse de pie! ¡Denten un gran paso adelante!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "One... two... three... big jump!",
+     "es": "Uno... dos... tres... ¡gran salto!",
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! You are so brave, too!",
+     "es": "¡Súper! ¡Ustedes también son muy valientes!",
+     "mood": "laugh",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Remember... Trying new things is easy when you are brave!",
+     "es": "Recuerden... ¡Intentar cosas nuevas es fácil si eres valiente!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "pause": 14,
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Woof woof! Keep dancing and jumping!",
+     "es": "¡Guau guau! ¡Sigan bailando y saltando!",
+     "pause": 10,
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Nos vemos la próxima vez, amigos!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "pause": 3,
+     "action": "wave"
+    }
+   ]
+  }
+ ],
+ "id": "ep010-zibu-the-brave-puppy"
+}
