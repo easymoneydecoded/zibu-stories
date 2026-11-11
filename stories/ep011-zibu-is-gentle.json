@@ -1,0 +1,1447 @@
+{
+ "slug": "zibu-is-gentle",
+ "title": {
+  "en": "Zibu and the Gentle Frog",
+  "es": "Zibu y la ranita suave"
+ },
+ "lesson": {
+  "en": "Always be quiet and gentle with little animals.",
+  "es": "Siempre debemos ser suaves y cariñosos con los animales pequeños."
+ },
+ "guest": {
+  "species": "frog",
+  "name": {
+   "en": "Hoppy",
+   "es": "Saltarín"
+  }
+ },
+ "thumb": {
+  "en": [
+   "GENTLE HANDS!",
+   "MEET HOPPY!"
+  ],
+  "es": [
+   "¡MANOS SUAVES!",
+   "¡HOLA SALTARÍN!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Learns to Be Gentle with Animals! 🐸 Animal Sounds for Kids",
+   "description": "Zibu meets Hoppy the frog by the river! 🐸 When Zibu gets too loud, Hoppy hides under a big leaf. 🍃 Lila teaches Zibu how to move softly, use gentle hands, and make fun animal sounds! Join Zibu and Lila in this sweet adventure for toddlers and preschoolers aged 2-6. Learn animal sounds like Ribbit, Meow, and Woof! 🌸✨\n\n#ZibuAndFriends #BeGentle #AnimalSounds #ToddlerLearning",
+   "tags": [
+    "zibu",
+    "zibu and friends",
+    "be gentle with animals",
+    "animal sounds for kids",
+    "frog sound ribbit",
+    "preschool cartoon",
+    "toddler learning video",
+    "gentle hands",
+    "learn animal sounds",
+    "kindness for kids",
+    "educational cartoon"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu aprende a ser suave con los animales! 🐸 Sonidos de animales",
+   "description": "¡Zibu conoce a Saltarín la ranita junto al río! 🐸 Cuando Zibu hace mucho ruido, Saltarín se esconde bajo una hoja grande. 🍃 Lila le enseña a Zibu a moverse despacito, acariciar con suavidad y aprender sonidos de animales. ¡Acompañen a Zibu y Lila en esta dulce aventura para niños de 2 a 6 años! Aprendan sonidos como Croac, Miau y Guau. 🌸✨\n\n#ZibuYSusAmigos #CuidarAnimales #SonidosDeAnimales #DibujosEducativos",
+   "tags": [
+    "zibu",
+    "zibu y sus amigos",
+    "ser suave con animales",
+    "sonidos de animales niños",
+    "aprender sonidos",
+    "caricaturas educativas",
+    "videos para niños",
+    "ranita saltarin",
+    "amabilidad para niños",
+    "preescolar en español"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Look! A tiny green frog is jumping fast!",
+     "es": "¡Miren! ¡Una ranita verde está saltando rápido!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us follow him softly?",
+     "es": "¿Nos ayudan a seguirla con cuidado?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Tiptoe with us now, let's go!",
+     "es": "¡Caminen de puntitas, vamos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.7,
+     "y": 0.75
+    },
+    {
+     "what": "leaf",
+     "x": 0.85,
+     "y": 0.8
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Gentle Frog!",
+     "es": "¡Zibu y la ranita suave!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "river-meeting",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": -0.2
+    },
+    {
+     "who": "lila",
+     "x": -0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.7,
+     "y": 0.75,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright, beautiful day beside the river.",
+     "es": "Era un día brillante y hermoso junto al río.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.2
+      },
+      {
+       "who": "lila",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Lila! The water is sparkling!",
+     "es": "¡Mira, Lila! ¡El agua está brillando!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! It is such a nice day for a walk.",
+     "es": "¡Sí! Es un día hermoso para dar un paseo.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, Zibu spotted someone sitting on a smooth stone.",
+     "es": "De repente, Zibu vio a alguien sentado en una piedra suave."
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Ribbit!",
+     "es": "¡Croac! ¡Croac!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! Look, Lila! A tiny green frog!",
+     "es": "¡Oh! ¡Mira, Lila! ¡Una ranita verde!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Aww, he is sitting so quietly.",
+     "es": "Aww, está sentadito muy tranquilo.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit... ribbit...",
+     "es": "Croac... croac...",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The little frog's name was Hoppy.",
+     "es": "La ranita se llamaba Saltarín."
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, Hoppy! I want to play!",
+     "es": "¡Hola, Saltarín! ¡Quiero jugar!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "Yippee! Playing is my favorite!",
+     "es": "¡Síiii! ¡Jugar es mi favorito!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was so excited that he stomped his feet loudly!",
+     "es": "¡Zibu estaba tan emocionado que pisó muy fuerte!",
+     "show": {
+      "en": "STOMP!",
+      "es": "¡PISA!",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "HOORAY! LET'S PLAY RIGHT NOW!",
+     "es": "¡HIP, HIP, HURRA! ¡VAMOS A JUGAR AHORA!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu, wait... be careful!",
+     "es": "Zibu, espera... ¡ten cuidado!",
+     "mood": "surprised"
+    }
+   ]
+  },
+  {
+   "id": "hoppy-startled",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.7,
+     "y": 0.75,
+     "at": 0,
+     "until": 4
+    },
+    {
+     "what": "leaf",
+     "x": 0.85,
+     "y": 0.8,
+     "at": 4
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Oh dear! Zibu's voice was very, very loud!",
+     "es": "¡Ay, caramba! ¡La voz de Zibu era muy, muy fuerte!"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit?!",
+     "es": "¡¿Croac?!",
+     "mood": "scared",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Startled by the heavy steps, Hoppy leaped into the tall grass!",
+     "es": "¡Asustado por los pasos fuertes, Saltarín saltó al pasto alto!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.85
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit... ribbit!",
+     "es": "¡Croac... croac!",
+     "mood": "scared",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Huh? Where did Hoppy go?",
+     "es": "¿Eh? ¿A dónde fue Saltarín?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Oh, Zibu. Hoppy hopped away to hide under a leaf.",
+     "es": "Oh, Zibu. Saltarín saltó para esconderse bajo una hoja.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Why? Doesn't he like me?",
+     "es": "¿Por qué? ¿Acaso no le caigo bien?",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "He does, Zibu. But loud noises scare little animals.",
+     "es": "Sí le caes bien, Zibu. Pero los ruidos fuertes asustan a los animales pequeños.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila gently explained how small creatures feel.",
+     "es": "Lila le explicó con dulzura cómo se sienten las criaturitas pequeñas."
+    },
+    {
+     "who": "lila",
+     "en": "When we stomp and shout, they think we are big and frightening.",
+     "es": "Cuando pisamos fuerte y gritamos, piensan que somos grandes y asustadizos.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh no... I did not mean to scare Hoppy.",
+     "es": "Oh, no... Yo no quería asustar a Saltarín.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "It's okay! We can learn to be quiet and gentle.",
+     "es": "¡Está bien! Podemos aprender a ser silenciosos y suaves.",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! I want Hoppy to feel happy and safe.",
+     "es": "¡Sí! Quiero que Saltarín se sienta feliz y seguro.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Let's see if Zibu can practice being quiet!",
+     "es": "¡Veamos si Zibu puede practicar ser silencioso!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "garden-tiptoe",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.7,
+     "y": 0.6,
+     "at": 0,
+     "color": "#FF0000"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila went into the garden to practice.",
+     "es": "Zibu y Lila fueron al jardín a practicar."
+    },
+    {
+     "who": "lila",
+     "en": "Remember, Zibu... soft steps!",
+     "es": "¡Recuerda, Zibu... pasos suaves!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Soft steps... tiptoe, tiptoe...",
+     "es": "Pasos suaves... de puntitas, de puntitas...",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu walked very, very slowly past a bright red flower.",
+     "es": "Zibu caminó muy, muy despacito al lado de una flor roja brillante.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Shh... hello, little flower!",
+     "es": "Shh... ¡hola, florcita!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Great job! Now let's try quiet whispering.",
+     "es": "¡Buen trabajo! Ahora intentemos susurrar bajito.",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Whisper, whisper... like a tiny breeze!",
+     "es": "Susurro, susurro... ¡como una brisa suave!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu lowered his voice. He was doing so well!",
+     "es": "Zibu bajó su voz. ¡Lo estaba haciendo muy bien!"
+    },
+    {
+     "who": "zibu",
+     "en": "Am I gentle enough now, Lila?",
+     "es": "¿Ya soy lo suficientemente suave, Lila?",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! You are very quiet now, Zibu.",
+     "es": "¡Sí! Ahora eres muy silencioso, Zibu.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Step by step, Zibu learned how to move softly.",
+     "es": "Paso a paso, Zibu aprendió a moverse con suavidad."
+    },
+    {
+     "who": "zibu",
+     "en": "Tiptoe... tiptoe... shhh!",
+     "es": "De puntitas... de puntitas... ¡shhh!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Let me see if Hoppy is nearby!",
+     "es": "¡Déjame ver si Saltarín está cerca!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was ready to meet his friend gently.",
+     "es": "Zibu estaba listo para encontrarse con su amigo suavemente.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "animal-sounds-moment",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.8,
+     "y": 0.8,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Look! Hoppy peeked out from under a big leaf.",
+     "es": "¡Mira! Saltarín se asomó debajo de una gran hoja."
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit... ribbit?",
+     "es": "¡Croac... croac?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Hello, Hoppy! Let me lead a quiet sound game.",
+     "es": "¡Hola, Saltarín! Voy a guiar un juego de sonidos suaves.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Ooh! A sound game? I want to play!",
+     "es": "¡Oh! ¿Un juego de sonidos? ¡Yo quiero jugar!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "First, a soft little buzz... Bzz!",
+     "es": "Primero, un zumbido suave... ¡Bzz!",
+     "show": {
+      "en": "Bzz!",
+      "es": "¡Bzz!",
+      "color": "#FFFF00"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Bzz... bzz... like a quiet bee!",
+     "es": "Bzz... bzz... ¡como una abeja silenciosa!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Hoppy listened closely. He did not feel scared!",
+     "es": "Saltarín escuchó con atención. ¡Ya no tenía miedo!"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit!",
+     "es": "¡Croac!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "Ribbit!",
+      "es": "¡Croac!",
+      "color": "#00FF00"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Now it's your turn, Zibu! Make a gentle frog sound.",
+     "es": "¡Ahora tu turno, Zibu! Haz un sonido de ranita suave.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Soft croak... ribbit... ribbit...",
+     "es": "Un croac suave... croac... croac...",
+     "mood": "happy",
+     "show": {
+      "en": "Ribbit...",
+      "es": "Croac...",
+      "color": "#00FF00"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit, ribbit!",
+     "es": "¡Croac, croac!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Hoppy smiled! He liked Zibu's gentle voice.",
+     "es": "¡Saltarín sonrió! Le gustó la voz suave de Zibu."
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Hoppy is not hiding anymore!",
+     "es": "¡Súper! ¡Saltarín ya no se está escondiendo!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "You are doing wonderful, Zibu!",
+     "es": "¡Lo estás haciendo de maravilla, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Together, they made the quietest, sweetest sounds in the garden.",
+     "es": "Juntos, hicieron los sonidos más suaves y dulces del jardín.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "gentle-approach",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "lila",
+     "x": 0.15
+    },
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.75,
+     "y": 0.82,
+     "at": 0
+    },
+    {
+     "what": "butterfly",
+     "x": 0.55,
+     "y": 0.35,
+     "at": 2,
+     "until": 7,
+     "anim": "float"
+    },
+    {
+     "what": "leaf",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "In the forest, Hoppy hopped near a smooth stone.",
+     "es": "En el bosque, Saltarín saltó cerca de una piedra suave.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.72
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Hop, hop!",
+     "es": "¡Croac! ¡Salto, salto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "A pretty butterfly fluttered by softly in the breeze.",
+     "es": "Una linda mariposa revoloteaba suavemente con la brisa."
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu... so quiet and calm.",
+     "es": "Mira, Zibu... qué tranquila y suave.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Shh... I can be quiet too!",
+     "es": "Shh... ¡yo también puedo ser suave!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu found a big, green leaf to hold.",
+     "es": "Zibu encontró una hoja grande y verde para sostener."
+    },
+    {
+     "who": "lila",
+     "en": "Walk very softly, Zibu... like a tiny breeze.",
+     "es": "Camina muy despacito, Zibu... como una brisa suave."
+    },
+    {
+     "who": "zibu",
+     "en": "Tip... toe... tip... toe...",
+     "es": "De... puntitas... de... puntitas...",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.45
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu knelt down slowly and held out the leaf.",
+     "es": "Zibu se arrodilló despacio y extendió la hoja."
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit?",
+     "es": "¿Croac?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, Hoppy... look at this nice leaf.",
+     "es": "Hola, Saltarín... mira esta linda hoja.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Stay very still... you're doing great!",
+     "es": "Quédate muy quieto... ¡lo estás haciendo genial!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I will stay completely still!",
+     "es": "¡Me quedaré completamente quieto!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu waited patiently, holding his breath with a gentle smile.",
+     "es": "Zibu esperó con paciencia, guardando silencio con una dulce sonrisa.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-friendship",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "lila",
+     "x": 0.15
+    },
+    {
+     "who": "zibu",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.72
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.55,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "stone",
+     "x": 0.75,
+     "y": 0.82,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Hoppy looked at the leaf, and then at Zibu.",
+     "es": "Saltarín miró la hoja, y luego miró a Zibu."
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit... ribbit!",
+     "es": "¡Croac... croac!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "He knows you are friendly, Zibu!",
+     "es": "¡Él sabe que eres su amigo, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "With a gentle leap, Hoppy hopped onto the leaf!",
+     "es": "¡Con un salto suave, Saltarín subió a la hoja!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "He did it! He hopped onto my leaf!",
+     "es": "¡Lo logró! ¡Saltó a mi hoja!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Hooray! You were so patient!",
+     "es": "¡Hurra! ¡Fuiste muy paciente!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu held out one soft finger very slowly.",
+     "es": "Zibu estiró un dedito muy, muy despacio."
+    },
+    {
+     "who": "zibu",
+     "en": "Can I give you a gentle pet, Hoppy?",
+     "es": "¿Puedo hacerte una caricia suave, Saltarín?"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit!",
+     "es": "¡Croac!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu softly stroked the tiny frog's back.",
+     "es": "Zibu acarició suavemente la espalda de la ranita."
+    },
+    {
+     "who": "zibu",
+     "en": "You are so smooth and sweet, little friend!",
+     "es": "¡Eres tan suave y lindo, amiguito!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "You were so gentle, Zibu. I'm so proud!",
+     "es": "Fuiste muy cuidadoso, Zibu. ¡Estoy muy orgullosa!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Being gentle makes little friends feel safe!",
+     "es": "¡Ser suaves hace que los amiguitos se sientan seguros!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit, ribbit!",
+     "es": "¡Croac, croac!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The two friends shared a quiet, warm moment in the forest.",
+     "es": "Los dos amigos compartieron un momento cálido y dulce en el bosque.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "lesson-learned",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.72
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.78,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "butterfly",
+     "x": 0.6,
+     "y": 0.35,
+     "at": 2,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun began to set, filling the garden with a warm golden glow.",
+     "es": "El sol comenzó a ponerse, llenando el jardín de una luz cálida y dorada."
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit, ribbit!",
+     "es": "¡Croac, croac!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Look at Hoppy! He loves resting right by the flower.",
+     "es": "¡Mira a Saltarín! Le encanta descansar junto a la flor.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "He isn't scared anymore!",
+     "es": "¡Ya no tiene miedo!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.32
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu remembered to walk very, very softly.",
+     "es": "Zibu recordó caminar muy, muy despacito."
+    },
+    {
+     "who": "zibu",
+     "en": "When we speak softly, little friends stay calm.",
+     "es": "Cuando hablamos bajito, los amiguitos se quedan tranquilos.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "And when we use gentle hands, they know we are friends!",
+     "es": "¡Y cuando usamos manos suaves, saben que somos sus amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit, ribbit!",
+     "es": "¡Croac, croac!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Being gentle is the best way to show love.",
+     "es": "Ser suaves es la mejor forma de dar cariño.",
+     "show": {
+      "en": "Be Gentle",
+      "es": "Sé Suave",
+      "color": "#48C9B0"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Quiet voices... soft steps... and big smiles!",
+     "es": "¡Voces suaves... pasos calladitos... y grandes sonrisas!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "You did so well today, Zibu!",
+     "es": "¡Lo hiciste muy bien hoy, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you for playing with us, Hoppy!",
+     "es": "¡Gracias por jugar con nosotros, Saltarín!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Croak!",
+     "es": "¡Croac!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Goodbye, Hoppy! See you soon!",
+     "es": "¡Adiós, Saltarín! ¡Hasta pronto!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, little friend!",
+     "es": "¡Adiós, amiguito!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "What a sweet, gentle day with friends in the garden.",
+     "es": "Qué día tan dulce y tranquilo con amigos en el jardín.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.15,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "butterfly",
+     "x": 0.85,
+     "y": 0.3,
+     "at": 4,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Soft hands, quiet feet,",
+     "es": "Manos suaves, con amor,"
+    },
+    {
+     "who": "narrator",
+     "en": "Gentle sounds so sweet!",
+     "es": "Pies tranquilos sin temor,"
+    },
+    {
+     "who": "narrator",
+     "en": "Tiptoe, tiptoe, soft and slow,",
+     "es": "Pasos lentos de verdad,"
+    },
+    {
+     "who": "narrator",
+     "en": "Watch our little buddy grow!",
+     "es": "Llenos de gran amistad."
+    },
+    {
+     "who": "zibu",
+     "en": "I can whisper like a breeze,",
+     "es": "Yo susurro al caminar,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Moving gently through the trees!",
+     "es": "Para la rana cuidar.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Hoppy hops upon my hand,",
+     "es": "Saltarín se acerca ya,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Sweetest frog in all the land!",
+     "es": "¡Y muy contento cantará!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Soft hands, quiet feet,",
+     "es": "Manos suaves, con amor,"
+    },
+    {
+     "who": "narrator",
+     "en": "Gentle sounds so sweet!",
+     "es": "Pies tranquilos sin temor,"
+    },
+    {
+     "who": "narrator",
+     "en": "Tiptoe, tiptoe, soft and slow,",
+     "es": "Pasos lentos de verdad,"
+    },
+    {
+     "who": "narrator",
+     "en": "Watch our little buddy grow!",
+     "es": "Llenos de gran amistad."
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Soft hands, quiet feet,",
+     "es": "Manos suaves, con amor,"
+    },
+    {
+     "who": "narrator",
+     "en": "Gentle sounds so sweet!",
+     "es": "Pies tranquilos sin temor,"
+    },
+    {
+     "who": "narrator",
+     "en": "Tiptoe, tiptoe, soft and slow,",
+     "es": "Pasos lentos de verdad,"
+    },
+    {
+     "who": "narrator",
+     "en": "Watch our little buddy grow!",
+     "es": "Llenos de gran amistad."
+    },
+    {
+     "who": "zibu",
+     "en": "I can whisper like a breeze,",
+     "es": "Yo susurro al caminar,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Moving gently through the trees!",
+     "es": "Para la rana cuidar.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Hoppy hops upon my hand,",
+     "es": "Saltarín se acerca ya,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Sweetest frog in all the land!",
+     "es": "¡Y muy contento cantará!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Soft hands, quiet feet,",
+     "es": "Manos suaves, con amor,"
+    },
+    {
+     "who": "narrator",
+     "en": "Gentle sounds so sweet!",
+     "es": "Pies tranquilos sin temor,"
+    },
+    {
+     "who": "narrator",
+     "en": "Tiptoe, tiptoe, soft and slow,",
+     "es": "Pasos lentos de verdad,"
+    },
+    {
+     "who": "narrator",
+     "en": "Watch our little buddy grow!",
+     "es": "Llenos de gran amistad."
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit, ribbit! What a sweet song!",
+     "es": "¡Rana, rana! ¡Qué dulce canción!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Recordémosla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who was our little guest today?",
+     "es": "¿Quién fue nuestro pequeño invitado hoy?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Hoppy the little frog!",
+     "es": "¡Saltarín la ranita!",
+     "show": {
+      "en": "Hoppy",
+      "es": "Saltarín",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Why did Hoppy hide at first?",
+     "es": "¿Por qué se escondió Saltarín al principio?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Because Zibu made a loud noise!",
+     "es": "¡Porque Zibu hizo un ruido muy fuerte!",
+     "show": {
+      "en": "Loud noise",
+      "es": "Ruido fuerte",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How did Zibu learn to move gently?",
+     "es": "¿Cómo aprendió Zibu a moverse suavemente?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "By tiptoeing very softly!",
+     "es": "¡Caminando de puntitas muy suave!",
+     "show": {
+      "en": "Tiptoe",
+      "es": "De puntitas",
+      "color": "#2196F3"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Can you tiptoe with us?",
+     "es": "¿Pueden caminar de puntitas con nosotros?",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Let's take three soft steps! One, two, three!",
+     "es": "¡Demos tres pasos suaves! ¡Uno, dos, tres!",
+     "mood": "happy",
+     "show": {
+      "en": "1, 2, 3!",
+      "es": "¡1, 2, 3!",
+      "color": "#FFEB3B"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Tiptoe... tiptoe... shhh!",
+     "es": "De puntitas... de puntitas... ¡shhh!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! You were so gentle!",
+     "es": "¡Súper! ¡Lo hicieron muy suave!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Where did Hoppy hop at the end?",
+     "es": "¿A dónde saltó Saltarín al final?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Right onto Zibu's green leaf!",
+     "es": "¡Directo a la hoja verde de Zibu!",
+     "show": {
+      "en": "Green leaf",
+      "es": "Hoja verde",
+      "color": "#8BC34A"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What is the best way to show love to tiny animals?",
+     "es": "¿Cuál es la mejor forma de dar amor a los animales pequeños?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "By being quiet and gentle!",
+     "es": "¡Siendo silenciosos y muy suaves!",
+     "show": {
+      "en": "Be gentle",
+      "es": "Sé suave",
+      "color": "#E91E63"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Always be quiet and gentle with little animals.",
+     "es": "Siempre debemos ser suaves y cariñosos con los animales pequeños."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Hop softly like a tiny frog! Hop, hop, hop!",
+     "es": "¡Salten suave como una ranita! ¡Hop, hop, hop!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep011-zibu-is-gentle"
+}
