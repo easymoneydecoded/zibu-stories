@@ -1,0 +1,1434 @@
+{
+ "slug": "zibu-asks-for-help",
+ "title": {
+  "en": "Zibu and the Rocket Balloon",
+  "es": "Zibu y el Globo Cohete"
+ },
+ "lesson": {
+  "en": "It is always okay to ask for help when you need it.",
+  "es": "Siempre está bien pedir ayuda cuando la necesitas."
+ },
+ "guest": {
+  "species": "bear",
+  "name": {
+   "en": "Bruno",
+   "es": "Bruno"
+  }
+ },
+ "thumb": {
+  "en": [
+   "ASK FOR HELP!",
+   "5-4-3-2-1 GO!"
+  ],
+  "es": [
+   "¡PIDE AYUDA!",
+   "5-4-3-2-1 ¡YA!"
+  ],
+  "scene": 7
+ },
+ "youtube": {
+  "en": {
+   "title": "Learn to Ask for Help with Zibu! 🎈 Count Down 5 to 1!",
+   "description": "Zibu and Lila help Bruno the Bear launch a giant rocket balloon! 🎈\nBruno tries to carry everything alone, but it is too hard.\nZibu shows that asking for help is super smart and fun! 🤝\nPlus, count down from 5 to 1 like a rocket launch! 🚀\nPerfect for toddlers and preschoolers aged 2 to 6.\n#ZibuAndFriends #AskForHelp #CountingForKids #PreschoolLearning #ToddlerCartoons",
+   "tags": [
+    "zibu and friends",
+    "ask for help",
+    "counting 5 to 1",
+    "rocket countdown",
+    "toddler learning",
+    "preschool cartoons",
+    "bear cartoon",
+    "social emotional learning",
+    "educational videos for toddlers",
+    "zibu balloon"
+   ]
+  },
+  "es": {
+   "title": "¡Aprende a Pedir Ayuda con Zibu! 🎈 Conteo Regresivo del 5 al 1",
+   "description": "¡Zibu y Lila ayudan a Bruno el Oso a lanzar un globo cohete! 🎈\nBruno intenta llevar todo solo, pero es muy difícil.\n¡Zibu nos enseña que pedir ayuda es genial y divertido! 🤝\n¡Además, contamos del 5 al 1 para el despegue del cohete! 🚀\nIdeal para niños y niñas de 2 a 6 años.\n#ZibuYSusAmigos #PedirAyuda #ContarDel5Al1 #EducacionPreescolar #CaricaturasParaNinos",
+   "tags": [
+    "zibu y sus amigos",
+    "pedir ayuda",
+    "contar del 5 al 1",
+    "conteo regresivo",
+    "caricaturas infantiles",
+    "videos educativos",
+    "preescolar",
+    "oso dibujo animado",
+    "aprender jugando"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! Bruno's giant balloon is falling!",
+     "es": "¡Oh no! ¡El gran globo de Bruno cae!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us catch it?",
+     "es": "¡Ayúdanos a atraparlo!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Say help with us! Let's go!",
+     "es": "¡Di ayuda con nosotros! ¡Vamos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.75,
+     "y": 0.35,
+     "anim": "float",
+     "color": "#FF3333"
+    },
+    {
+     "what": "apple",
+     "x": 0.7,
+     "y": 0.8
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Rocket Balloon!",
+     "es": "¡Zibu y el Globo Cohete!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "brunos-big-plan",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.35
+    },
+    {
+     "who": "guest",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.75,
+     "y": 0.3,
+     "at": 2,
+     "until": 12,
+     "color": "#FF4500"
+    },
+    {
+     "what": "apple",
+     "x": 0.72,
+     "y": 0.6,
+     "at": 2,
+     "until": 12
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright and beautiful day in the garden!",
+     "es": "¡Era un día brillante y hermoso en el jardín!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Lila! Here comes our friend Bruno!",
+     "es": "¡Mira, Lila! ¡Ahí viene nuestro amigo Bruno!",
+     "mood": "happy",
+     "action": "jump",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno the bear was carrying colorful balloons and a big basket of apples!",
+     "es": "¡El oso Bruno traía globos de colores y una gran canasta de manzanas!"
+    },
+    {
+     "who": "guest",
+     "en": "Hello, everyone! Look what I have!",
+     "es": "¡Hola a todos! ¡Miren lo que tengo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Wow! So many pretty balloons, Bruno!",
+     "es": "¡Vaya! ¡Cuántos globos bonitos, Bruno!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "And tasty red apples too! Yummy!",
+     "es": "¡Y manzanas rojas y sabrosas también! ¡Qué rico!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I am going to launch a big rocket balloon today!",
+     "es": "¡Hoy voy a lanzar un gran globo cohete!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "A rocket balloon! That sounded so exciting!",
+     "es": "¡Un globo cohete! ¡Eso sonaba muy emocionante!"
+    },
+    {
+     "who": "lila",
+     "en": "Ooh! Can we help you carry your things?",
+     "es": "¡Oh! ¿Podemos ayudarte a llevar tus cosas?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "No, thank you! I am a big, strong bear!",
+     "es": "¡No, gracias! ¡Soy un oso grande y fuerte!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I can do it all by myself!",
+     "es": "¡Puedo hacerlo todo yo solo!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "All by yourself? That's a lot to carry!",
+     "es": "¿Tú solo? ¡Es mucho para llevar!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno smiled proudly and started marching toward the hill.",
+     "es": "Bruno sonrió con orgullo y empezó a marchar hacia la colina.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bruno-stumbles",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.65,
+     "y": 0.3,
+     "at": 0,
+     "until": 13,
+     "color": "#FF4500"
+    },
+    {
+     "what": "apple",
+     "x": 0.62,
+     "y": 0.6,
+     "at": 0,
+     "until": 13
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Bruno took a big step forward... but carrying everything was tricky!",
+     "es": "Bruno dio un gran paso adelante... ¡pero llevar todo era difícil!"
+    },
+    {
+     "who": "guest",
+     "en": "Whoa... woah! Easy does it!",
+     "es": "¡Uy... uy! ¡Con cuidado!",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "The heavy basket wobbled, and the balloons pulled him up!",
+     "es": "¡La pesada canasta tambaleaba y los globos lo jalaban hacia arriba!"
+    },
+    {
+     "who": "lila",
+     "en": "Oh dear! Watch out, Bruno!",
+     "es": "¡Cielos! ¡Cuidado, Bruno!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "I'm okay! Just... a little wobbly!",
+     "es": "¡Estoy bien! Solo... ¡un poco tambaleante!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Bruno, do you need a helping hand?",
+     "es": "Bruno, ¿necesitas que te echemos una mano?",
+     "mood": "happy",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu smiled warmly and reached out to help.",
+     "es": "Zibu sonrió con cariño y se acercó para ayudar."
+    },
+    {
+     "who": "guest",
+     "en": "No, no! Big bears do everything alone!",
+     "es": "¡No, no! ¡Los osos grandes hacen todo solos!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Are you sure? The hill is very steep...",
+     "es": "¿Estás seguro? La colina es muy empinada...",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "I am sure! See? I'm big and strong!",
+     "es": "¡Estoy seguro! ¿Ven? ¡Soy grande y fuerte!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno tried to march faster, but his arms were getting tired.",
+     "es": "Bruno intentó marchar más rápido, pero sus brazos se estaban cansando."
+    },
+    {
+     "who": "zibu",
+     "en": "Asking for help is okay, Bruno!",
+     "es": "¡Pedir ayuda está bien, Bruno!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Nope! I can do it... all... by... myself!",
+     "es": "¡Nop! Puedo hacerlo... todo... yo... solo!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.8
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "And so, Bruno kept wobbling all the way up the hill...",
+     "es": "Y así, Bruno siguió tambaleándose hasta la colina...",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "balloon-flies-away",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.75,
+     "y": 0.35,
+     "at": 5,
+     "anim": "float",
+     "color": "#FF3333"
+    },
+    {
+     "what": "apple",
+     "x": 0.7,
+     "y": 0.8,
+     "at": 8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "At last, Bruno reached the very top of the hill!",
+     "es": "¡Por fin, Bruno llegó a la cima de la colina!"
+    },
+    {
+     "who": "guest",
+     "en": "Whew! I made it... all by myself!",
+     "es": "¡Uf! ¡Lo logré... yo solo!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Wow, Bruno! You climbed so high!",
+     "es": "¡Vaya, Bruno! ¡Subiste muy alto!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "But suddenly... WHOOSH! A big gust of wind blew!",
+     "es": "Pero de repente... ¡FIUUU! ¡Sopló una gran ráfaga de viento!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh no! The wind is so strong!",
+     "es": "¡Oh, no! ¡El viento es muy fuerte!",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Oh dear! The big rocket balloon started slipping away!",
+     "es": "¡Ay, ay, ay! ¡El gran globo cohete empezó a escabullirse!"
+    },
+    {
+     "who": "guest",
+     "en": "Wait, come back, balloon!",
+     "es": "¡Espera, vuelve, globo!",
+     "mood": "scared"
+    },
+    {
+     "who": "zibu",
+     "en": "Look out, Bruno! Your apples are falling!",
+     "es": "¡Cuidado, Bruno! ¡Tus manzanas se caen!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Oops! My apples! My balloons! Oh no!",
+     "es": "¡Uy! ¡Mis manzanas! ¡Mis globos! ¡Oh, no!",
+     "mood": "scared",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Oh dear! He can't hold everything at once!",
+     "es": "¡Ay, no! ¡No puede sostener todo al mismo tiempo!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno tried to hold the apples, the small balloons, and the big rocket balloon!",
+     "es": "¡Bruno intentaba sostener las manzanas, los globos pequeños y el gran globo cohete!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh no, oh no... This is too much!",
+     "es": "¡Oh, no, oh, no... ¡Esto es demasiado!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Bruno, you look overwhelmed!",
+     "es": "¡Bruno, te ves muy abrumado!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Poor Bruno was wobbling and wobbling... he really needed help!",
+     "es": "El pobre Bruno se tambaleaba y tambaleaba... ¡de verdad necesitaba ayuda!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "asking-for-help",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Bruno! It is okay! You don't have to do it all alone!",
+     "es": "¡Bruno! ¡Está bien! ¡No tienes que hacerlo todo solo!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Yes! We are here for you, Bruno!",
+     "es": "¡Sí! ¡Estamos aquí para ti, Bruno!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu walked closer and gave Bruno a warm, friendly smile.",
+     "es": "Zibu se acercó y le dio a Bruno una sonrisa muy cálida y amigable."
+    },
+    {
+     "who": "zibu",
+     "en": "Asking for help is actually super brave and smart!",
+     "es": "¡Pedir ayuda es en realidad súper valiente e inteligente!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Really? Is it okay to ask for help?",
+     "es": "¿De verdad? ¿Está bien pedir ayuda?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Of course! We are your friends, and we love to help!",
+     "es": "¡Claro que sí! ¡Somos tus amigos y nos encanta ayudar!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno looked at Zibu and Lila. He took a deep, deep breath.",
+     "es": "Bruno miró a Zibu y a Lila. Respiró muy, muy profundo."
+    },
+    {
+     "who": "guest",
+     "en": "Okay... I am ready!",
+     "es": "De acuerdo... ¡Estoy listo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno smiled and used his big, brave voice!",
+     "es": "¡Bruno sonrió y usó su gran voz valiente!"
+    },
+    {
+     "who": "guest",
+     "en": "Zibu, Lila... please help me!",
+     "es": "Zibu, Lila... ¡por favor ayúdenme!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Hooray! Of course we will!",
+     "es": "¡Viva! ¡Claro que sí!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Teamwork time!",
+     "es": "¡Súper! ¡Hora de trabajar en equipo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno felt so happy! Asking for help was super easy!",
+     "es": "¡Bruno se sintió muy feliz! ¡Pedir ayuda fue súper fácil!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "working-together",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.22,
+     "y": 0.7,
+     "at": 1
+    },
+    {
+     "what": "balloon",
+     "x": 0.42,
+     "y": 0.6,
+     "at": 3,
+     "color": "#FF5733"
+    },
+    {
+     "what": "balloon",
+     "x": 0.72,
+     "y": 0.4,
+     "at": 5,
+     "color": "#3357FF",
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Everyone got to work right away!",
+     "es": "¡Todos se pusieron a trabajar de inmediato!"
+    },
+    {
+     "who": "zibu",
+     "en": "I'll take the heavy basket of apples!",
+     "es": "¡Yo llevaré la canasta pesada de manzanas!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.25
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! That helps so much!",
+     "es": "¡Gracias, Zibu! ¡Eso ayuda muchísimo!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "And I can hold the smaller balloons!",
+     "es": "¡Y yo puedo sostener los globos más pequeños!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.45
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Yay! Now I can hold the big rocket balloon easily!",
+     "es": "¡Súper! ¡Ahora puedo sostener el gran globo cohete fácilmente!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Together, holding everything was simple and fun!",
+     "es": "¡Juntos, sostener todo fue sencillo y divertido!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look! The giant rocket balloon is ready now!",
+     "es": "¡Miren! ¡El globo cohete gigante ya está listo!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "lila",
+     "en": "Teamwork makes everything so much better!",
+     "es": "¡El trabajo en equipo lo hace todo mucho mejor!",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "You are right! Asking for help was the best idea!",
+     "es": "¡Tienen razón! ¡Pedir ayuda fue la mejor idea!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno smiled a big, happy bear smile.",
+     "es": "Bruno sonrió con una gran sonrisa de oso feliz."
+    },
+    {
+     "who": "guest",
+     "en": "Now... are you ready to launch the balloon?",
+     "es": "Ahora... ¿están listos para lanzar el globo?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Up, up to the high sky!",
+     "es": "¡Sí! ¡Arriba, arriba hasta el alto cielo!",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Let's do it! Wheee!",
+     "es": "¡Hagámoslo! ¡Súper!",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "They got ready to start the giant countdown!",
+     "es": "¡Se prepararon para empezar la gran cuenta regresiva!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "rocket-countdown",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.7,
+     "y": 0.3,
+     "at": 0,
+     "until": 9,
+     "color": "#FF3333"
+    },
+    {
+     "what": "balloon",
+     "x": 0.7,
+     "y": 0.1,
+     "at": 10,
+     "anim": "float",
+     "color": "#FF3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was time for the big rocket balloon launch!",
+     "es": "¡Llegó la hora del gran lanzamiento del globo cohete!"
+    },
+    {
+     "who": "guest",
+     "en": "Are you ready, my friends?",
+     "es": "¿Están listos, mis amigos?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Ready! Let's count together!",
+     "es": "¡Listos! ¡Vamos a contar juntos!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Count with us! Here we go!",
+     "es": "¡Cuenten con nosotros! ¡Aquí vamos!",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Five!",
+     "es": "¡Cinco!",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#FF5733"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Four!",
+     "es": "¡Cuatro!",
+     "show": {
+      "en": "4",
+      "es": "4",
+      "color": "#FFC300"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Three!",
+     "es": "¡Tres!",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#33FF57"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Two!",
+     "es": "¡Dos!",
+     "show": {
+      "en": "2",
+      "es": "2",
+      "color": "#3357FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "One!",
+     "es": "¡Uno!",
+     "show": {
+      "en": "1",
+      "es": "1",
+      "color": "#F333FF"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "BLAST OFF!",
+     "es": "¡DESPEGUE!",
+     "mood": "happy",
+     "action": "bigjump",
+     "show": {
+      "en": "BLAST OFF!",
+      "es": "¡DESPEGUE!",
+      "color": "#FF3333"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Look at it go! So high!",
+     "es": "¡Miren cómo va! ¡Tan alto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Hooray! It flew into the sky!",
+     "es": "¡Viva! ¡Voló hacia el cielo!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "The giant rocket balloon soared up, up, and away!",
+     "es": "¡El globo cohete gigante voló alto, alto y lejos!"
+    },
+    {
+     "who": "zibu",
+     "en": "That was so amazing!",
+     "es": "¡Eso fue tan increíble!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful launch! All thanks to asking for help!",
+     "es": "¡Qué lanzamiento tan maravilloso! ¡Todo gracias a pedir ayuda!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "celebration-and-lesson",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.75,
+     "y": 0.6,
+     "at": 2,
+     "until": 6,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the garden, the sky turned a soft warm color.",
+     "es": "De vuelta en el jardín, el cielo se puso de un lindo color cálido."
+    },
+    {
+     "who": "lila",
+     "en": "Look at the sky! It is so pretty!",
+     "es": "¡Miren el cielo! ¡Es tan bonito!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "And look what I brought for my great friends! Apples!",
+     "es": "¡Y miren lo que traje para mis grandes amigos! ¡Manzanas!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Red juicy apples! Thank you, Bruno!",
+     "es": "¡Súper! ¡Manzanas rojas y jugosas! ¡Gracias, Bruno!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone took a big crunchy bite together.",
+     "es": "Todos dieron un gran mordisco crujiente juntos."
+    },
+    {
+     "who": "lila",
+     "en": "Mmm! So delicious!",
+     "es": "¡Mmm! ¡Qué delicioso!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I am so happy I asked for help today...",
+     "es": "Estoy muy feliz de haber pedido ayuda hoy...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Carrying everything alone was too hard!",
+     "es": "¡Cargar todo solo era muy difícil!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes... I thought I had to do it all by myself.",
+     "es": "Sí... pensaba que tenía que hacerlo todo yo solo.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Doing things together is much more fun!",
+     "es": "¡Hacer las cosas juntos es mucho más divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "It is! Whenever something is hard, it is okay to ask for help!",
+     "es": "¡Sí! Cuando algo sea difícil, ¡está bien pedir ayuda!",
+     "mood": "happy",
+     "show": {
+      "en": "Ask for help!",
+      "es": "¡Pide ayuda!"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Friends love to help each other!",
+     "es": "¡Sí! ¡A los amigos les encanta ayudarse!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful day with Zibu, Lila, and Bruno!",
+     "es": "¡Qué día tan maravilloso con Zibu, Lila y Bruno!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 0,
+     "anim": "float",
+     "color": "#FF4500"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "When something is hard to do,",
+     "es": "Si algo cuesta un poco más,"
+    },
+    {
+     "who": "narrator",
+     "en": "Your friends are here for you!",
+     "es": "¡con tus amigos lo lograrás!"
+    },
+    {
+     "who": "narrator",
+     "en": "Just reach out your hand today,",
+     "es": "Pide ayuda sin dudar,"
+    },
+    {
+     "who": "narrator",
+     "en": "'Please help me!' is okay to say!",
+     "es": "¡y juntos podremos ganar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Big or small, heavy or tight,",
+     "es": "Si pesado está el cargamento,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Working together makes it light!",
+     "es": "¡nos ayudamos en un momento!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "If you try and need a friend,",
+     "es": "Si necesitas una mano,",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Helping hands are here to lend!",
+     "es": "¡aquí me tienes, mi hermano!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "When something is hard to do,",
+     "es": "Si algo cuesta un poco más,"
+    },
+    {
+     "who": "narrator",
+     "en": "Your friends are here for you!",
+     "es": "¡con tus amigos lo lograrás!"
+    },
+    {
+     "who": "narrator",
+     "en": "Just reach out your hand today,",
+     "es": "Pide ayuda sin dudar,"
+    },
+    {
+     "who": "narrator",
+     "en": "'Please help me!' is okay to say!",
+     "es": "¡y juntos podremos ganar!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "When something is hard to do,",
+     "es": "Si algo cuesta un poco más,"
+    },
+    {
+     "who": "narrator",
+     "en": "Your friends are here for you!",
+     "es": "¡con tus amigos lo lograrás!"
+    },
+    {
+     "who": "narrator",
+     "en": "Just reach out your hand today,",
+     "es": "Pide ayuda sin dudar,"
+    },
+    {
+     "who": "narrator",
+     "en": "'Please help me!' is okay to say!",
+     "es": "¡y juntos podremos ganar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Big or small, heavy or tight,",
+     "es": "Si pesado está el cargamento,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Working together makes it light!",
+     "es": "¡nos ayudamos en un momento!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "If you try and need a friend,",
+     "es": "Si necesitas una mano,",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Helping hands are here to lend!",
+     "es": "¡aquí me tienes, mi hermano!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "When something is hard to do,",
+     "es": "Si algo cuesta un poco más,"
+    },
+    {
+     "who": "narrator",
+     "en": "Your friends are here for you!",
+     "es": "¡con tus amigos lo lograrás!"
+    },
+    {
+     "who": "narrator",
+     "en": "Just reach out your hand today,",
+     "es": "Pide ayuda sin dudar,"
+    },
+    {
+     "who": "narrator",
+     "en": "'Please help me!' is okay to say!",
+     "es": "¡y juntos podremos ganar!"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! Asking for help is the best!",
+     "es": "¡Sí! ¡Pedir ayuda es lo mejor!",
+     "mood": "happy",
+     "action": "bigjump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who was carrying too many things all by himself?",
+     "es": "¿Quién intentaba llevar demasiadas cosas él solo?",
+     "pause": 2.5,
+     "show": {
+      "en": "Bruno",
+      "es": "Bruno",
+      "color": "#8B4513"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Bruno the bear!",
+     "es": "¡Bruno el oso!"
+    },
+    {
+     "who": "narrator",
+     "en": "What fell when the strong wind blew?",
+     "es": "¿Qué se cayó cuando sopló el viento fuerte?",
+     "pause": 2.5,
+     "show": {
+      "en": "Apples!",
+      "es": "¡Manzanas!",
+      "color": "#FF0000"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "The red apples and balloons!",
+     "es": "¡Las manzanas rojas y los globos!"
+    },
+    {
+     "who": "narrator",
+     "en": "What brave thing did Bruno do when he was overwhelmed?",
+     "es": "¿Qué cosa tan valiente hizo Bruno cuando se sintió abrumado?",
+     "pause": 2.5,
+     "show": {
+      "en": "Asked for Help",
+      "es": "Pidió Ayuda",
+      "color": "#1E90FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "He asked his friends for help!",
+     "es": "¡Le pidió ayuda a sus amigos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who carried the basket of apples for Bruno?",
+     "es": "¿Quién llevó la canasta de manzanas por Bruno?",
+     "pause": 2.5,
+     "show": {
+      "en": "Zibu",
+      "es": "Zibu",
+      "color": "#00BFFF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu!",
+     "es": "¡Zibu!"
+    },
+    {
+     "who": "narrator",
+     "en": "What launched high into the sky at the end?",
+     "es": "¿Qué se lanzó muy alto en el cielo al final?",
+     "pause": 2.5,
+     "show": {
+      "en": "Rocket Balloon",
+      "es": "Globo Cohete",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "The giant rocket balloon!",
+     "es": "¡El gigante globo cohete!"
+    },
+    {
+     "who": "zibu",
+     "en": "Now let's practice together!",
+     "es": "¡Ahora practiquemos juntos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Raise your hands high up in the air!",
+     "es": "¡Levanten las manos muy alto en el aire!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Say: 'Please help me!'",
+     "es": "Digan: '¡Por favor, ayúdame!'",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Asking for help is so brave!",
+     "es": "¡Sí! ¡Pedir ayuda es muy valiente!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Remember: It is always okay to ask for help when you need it.",
+     "es": "Recuerden: Siempre está bien pedir ayuda cuando la necesitas."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    },
+    {
+     "who": "lila",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.2,
+     "y": 0.4,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF69B4"
+    },
+    {
+     "what": "apple",
+     "x": 0.8,
+     "y": 0.8,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Shake your bear paws and stomp your feet!",
+     "es": "¡Muevan sus patas de oso y pisoteen de alegría!",
+     "mood": "happy",
+     "action": "shake",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep012-zibu-asks-for-help"
+}
