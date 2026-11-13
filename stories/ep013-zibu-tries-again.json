@@ -1,0 +1,1495 @@
+{
+ "slug": "zibu-tries-again",
+ "title": {
+  "en": "Zibu Tries Again",
+  "es": "Zibu lo intenta otra vez"
+ },
+ "lesson": {
+  "en": "Making mistakes is part of learning. Trying again helps us succeed!",
+  "es": "Cometer errores es parte de aprender. ¡Volver a intentarlo nos ayuda a lograrlo!"
+ },
+ "guest": {
+  "species": "mouse",
+  "name": {
+   "en": "Milo",
+   "es": "Milo"
+  }
+ },
+ "thumb": {
+  "en": [
+   "TRY AGAIN!",
+   "LEARN COLORS!"
+  ],
+  "es": [
+   "¡INTÉNTALO!",
+   "¡APRENDE COLORES!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Learn Colors & Try Again with Zibu! 🎈 Red, Blue, Yellow, Green for Kids",
+   "description": "Oh no! Milo the mouse made a mistake with his colorful balloons! 🎈\nZibu and Lila help Milo learn that making mistakes is okay.\nKids learn four bright colors: Red, Blue, Yellow, and Green! ❤️💙💛💚\nTogether, they try again and create something beautiful.\nJoin the fun and sing along with Zibu and friends!\n#ZibuAndFriends #LearnColors #PreschoolLearning #TryAgain #KidsCartoons",
+   "tags": [
+    "zibu and friends",
+    "learn colors",
+    "colors for toddlers",
+    "try again lesson",
+    "educational kids show",
+    "red blue yellow green",
+    "preschool videos",
+    "milo the mouse",
+    "toddler cartoons",
+    "social emotional learning",
+    "cartoons for kids",
+    "zibu"
+   ]
+  },
+  "es": {
+   "title": "¡Aprende colores e inténtalo otra vez con Zibu! 🎈 Rojo, Azul, Amarillo, Verde",
+   "description": "¡Oh no! Milo el ratón cometió un error con sus globos de colores. 🎈\nZibu y Lila ayudan a Milo a comprender que cometer errores está bien.\n¡Los niños aprenden cuatro brillantes colores: Rojo, Azul, Amarillo y Verde! ❤️💙💛💚\nJuntos, lo intentan otra vez y crean algo hermoso.\n¡Únanse a la diversión y canten con Zibu y sus amigos!\n#ZibuYSusAmigos #AprenderColores #EducacionInfantil #IntentarloDeNuevo #CaricaturasParaNinos",
+   "tags": [
+    "zibu y sus amigos",
+    "aprender colores",
+    "colores para niños",
+    "intentarlo de nuevo",
+    "videos educativos",
+    "rojo azul amarillo verde",
+    "caricaturas infantiles",
+    "milo el raton",
+    "videos para preescolar",
+    "emociones para niños",
+    "dibujos animados",
+    "zibu"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! Milo's balloons all fell down!",
+     "es": "¡Oh no! ¡Los globos de Milo cayeron!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us fix them?",
+     "es": "¿Nos ayudan a juntarlos, amigos?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let me see! Let's go!",
+     "es": "¡Vamos a ver! ¡Vamos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.85,
+     "y": 0.75
+    },
+    {
+     "what": "stone",
+     "x": 0.72,
+     "y": 0.82
+    },
+    {
+     "what": "balloon",
+     "x": 0.65,
+     "y": 0.5,
+     "color": "#FF4500"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Tries Again!",
+     "es": "¡Zibu lo intenta otra vez!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "milos-balloon-decor",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": -0.2
+    },
+    {
+     "who": "lila",
+     "x": -0.1
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.85,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "balloon",
+     "x": 0.7,
+     "y": 0.5,
+     "at": 4,
+     "color": "#FF4500"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright, sunny day in the garden.",
+     "es": "Era un día brillante y soleado en el jardín.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.2
+      },
+      {
+       "who": "lila",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Lila! It's our friend Milo!",
+     "es": "¡Mira, Lila! ¡Es nuestro amigo Milo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Hello, Milo! What a big, colorful gift!",
+     "es": "¡Hola, Milo! ¡Qué regalo tan grande y colorido!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Hi friends! Look at my surprise!",
+     "es": "¡Hola, amigos! ¡Miren mi sorpresa!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Milo the mouse was holding lots of lovely balloons.",
+     "es": "Milo el ratón tenía muchos globos bonitos."
+    },
+    {
+     "who": "guest",
+     "en": "I want to decorate this big gift with balloons!",
+     "es": "¡Quiero decorar este gran regalo con globos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Oooh! Balloons! I love balloons!",
+     "es": "¡Ooh! ¡Globos! ¡Me encantan los globos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Balloons make everything look so pretty!",
+     "es": "¡Los globos hacen que todo se vea tan bonito!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! Red, blue, yellow, and green!",
+     "es": "¡Sí! ¡Rojos, azules, amarillos y verdes!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Milo tried to arrange the balloons carefully.",
+     "es": "Milo intentó acomodar los globos con mucho cuidado.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.78
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "I want it to be perfect for our party!",
+     "es": "¡Quiero que quede perfecto para nuestra fiesta!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "You are doing a great job, Milo!",
+     "es": "¡Lo estás haciendo genial, Milo!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Can we help you, Milo?",
+     "es": "¿Te podemos ayudar, Milo?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Watch this! I can hold them all!",
+     "es": "¡Miren esto! ¡Puedo sostenerlos todos!",
+     "mood": "happy",
+     "action": "spin"
+    }
+   ]
+  },
+  {
+   "id": "the-first-mistake",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.35
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.85,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "stone",
+     "x": 0.72,
+     "y": 0.82,
+     "at": 0
+    },
+    {
+     "what": "balloon",
+     "x": 0.65,
+     "y": 0.5,
+     "at": 0,
+     "until": 4,
+     "color": "#FF4500"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Milo walked slowly toward the big gift with his balloons.",
+     "es": "Milo caminaba despacito hacia el gran regalo con sus globos.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Just a few more steps... tra-la-la!",
+     "es": "Solo unos pasos más... ¡tra-la-la!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "But oh no! There was a small stone on the path!",
+     "es": "Pero ¡oh, no! ¡Había una piedrita en el camino!"
+    },
+    {
+     "who": "guest",
+     "en": "Whoa... WHOA!",
+     "es": "¡Uy... UY!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Trip! Milo tumbled and dropped all the balloons!",
+     "es": "¡Tropezón! ¡Milo se cayó y soltó todos los globos!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.73
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oh no... my balloons!",
+     "es": "Oh, no... ¡mis globos!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh dear! Milo, are you okay?",
+     "es": "¡Ay, no! Milo, ¿estás bien?",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.45
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Don't cry, little friend!",
+     "es": "¡No llores, amiguito!",
+     "mood": "sad",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.58
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "I tripped on the stone... I made a big mistake!",
+     "es": "Me tropecé con la piedra... ¡cometí un gran error!",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Now the surprise is ruined...",
+     "es": "Ahora la sorpresa se arruinó...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Milo felt very sad because things didn't go as planned.",
+     "es": "Milo se sintió muy triste porque las cosas no salieron como pensaba."
+    },
+    {
+     "who": "zibu",
+     "en": "It's okay, Milo! Mistakes happen to everyone!",
+     "es": "¡No pasa nada, Milo! ¡A todos nos pasan errores!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! A mistake is just a chance to try again!",
+     "es": "¡Sí! ¡Un error es solo una oportunidad para volver a intentarlo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Really? But... I feel so sad.",
+     "es": "¿De verdad? Pero... me siento muy triste.",
+     "mood": "sad",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "trying-a-second-time",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.1
+    },
+    {
+     "who": "lila",
+     "x": 0.3
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.4,
+     "at": 4,
+     "until": 8,
+     "color": "#FF0000"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila took Milo up the sunny hill to try again.",
+     "es": "Zibu y Lila llevaron a Milo a la colina soleada para volver a intentarlo.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.25
+      },
+      {
+       "who": "lila",
+       "to": 0.45
+      },
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Look, Milo! It's nice and quiet here on the hill.",
+     "es": "¡Mira, Milo! Aquí en la colina está tranquilo y bonito.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Okay... I will try one more time.",
+     "es": "Está bien... lo intentaré una vez más.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "You can do it! Here are the balloons!",
+     "es": "¡Tú puedes! ¡Aquí están los globos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Milo held the balloons very carefully.",
+     "es": "Milo sostuvo los globos con mucho cuidado."
+    },
+    {
+     "who": "guest",
+     "en": "Red goes here... blue goes... wait!",
+     "es": "El rojo va aquí... el azul va... ¡esperen!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Oh no! I mixed up the colors again!",
+     "es": "¡Oh, no! ¡Me equivoqué de colores otra vez!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Don't worry, Milo! That's totally okay!",
+     "es": "¡No te preocupes, Milo! ¡Está muy bien!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Mistakes help us practice and learn!",
+     "es": "¡Los errores nos ayudan a practicar y aprender!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Really? Mistakes help us?",
+     "es": "¿De verdad? ¿Los errores nos ayudan?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Practice makes us better every time!",
+     "es": "¡Sí! ¡La práctica nos hace mejores cada vez!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Let's practice the colors together inside Zibu's room!",
+     "es": "¡Vamos a practicar los colores juntos en el cuarto de Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! I want to practice!",
+     "es": "¡Sí! ¡Quiero practicar!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Off they went to practice inside!",
+     "es": "¡Y se fueron a practicar adentro!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-colors-together",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.8,
+     "y": 0.7,
+     "at": 1
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Inside Zibu's cozy room, everything was bright and friendly.",
+     "es": "En el cómodo cuarto de Zibu, todo era brillante y amigable."
+    },
+    {
+     "who": "zibu",
+     "en": "Welcome, Milo! Let me show you the colors!",
+     "es": "¡Bienvenido, Milo! ¡Déjame mostrarte los colores!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Look! Here is the first balloon!",
+     "es": "¡Mira! ¡Aquí está el primer globo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "A big bright word appeared!",
+     "es": "¡Apareció una gran palabra brillante!",
+     "show": {
+      "en": "RED",
+      "es": "ROJO",
+      "color": "#FF0000"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "RED! Like a sweet red apple!",
+     "es": "¡ROJO! ¡Como una dulce manzana roja!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Now look at this one!",
+     "es": "¡Sí! ¡Ahora mira este!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Another big colorful word shined!",
+     "es": "¡Brilló otra gran palabra de color!",
+     "show": {
+      "en": "BLUE",
+      "es": "AZUL",
+      "color": "#0000FF"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "BLUE! Just like me!",
+     "es": "¡AZUL! ¡Igual que yo!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Blue! I love blue!",
+     "es": "¡Azul! ¡Me encanta el azul!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Then came a bright sunny color!",
+     "es": "¡Luego vino un color brillante como el sol!",
+     "show": {
+      "en": "YELLOW",
+      "es": "AMARILLO",
+      "color": "#FFFF00"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "YELLOW! Like a warm sun!",
+     "es": "¡AMARILLO! ¡Como un sol tibio!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "And one last pretty color!",
+     "es": "¡Y un último color bonito!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The last word appeared on screen!",
+     "es": "¡La última palabra apareció en la pantalla!",
+     "show": {
+      "en": "GREEN",
+      "es": "VERDE",
+      "color": "#00FF00"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "GREEN! Like green leaves!",
+     "es": "¡VERDE! ¡Como hojas verdes!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "Hooray! You know all the colors now, Milo!",
+     "es": "¡Viva! ¡Ya te sabes todos los colores, Milo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Now Milo felt ready to try again in the garden!",
+     "es": "¡Ahora Milo se sentía listo para intentarlo otra vez en el jardín!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "trying-a-third-time",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.8,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "balloon",
+     "x": 0.7,
+     "y": 0.4,
+     "at": 3,
+     "color": "#FF0000"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the garden, Milo was ready to try again.",
+     "es": "De vuelta en el jardín, Milo estaba listo para intentarlo otra vez."
+    },
+    {
+     "who": "zibu",
+     "en": "You can do it, Milo!",
+     "es": "¡Tú puedes hacerlo, Milo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Here comes the RED balloon!",
+     "es": "¡Aquí viene el globo ROJO!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Milo tied the red balloon to the matching red flower!",
+     "es": "¡Milo ató el globo rojo a la flor roja que combinaba!"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Perfect!",
+     "es": "¡Viva! ¡Perfecto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Now... the BLUE balloon goes to the blue flower!",
+     "es": "¡Ahora... el globo AZUL va a la flor azul!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "You are doing it, Milo!",
+     "es": "¡Lo estás logrando, Milo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Next was the bright YELLOW balloon.",
+     "es": "El siguiente fue el brillante globo AMARILLO."
+    },
+    {
+     "who": "guest",
+     "en": "Yellow balloon... right next to the yellow flower!",
+     "es": "¡Globo amarillo... justo al lado de la flor amarilla!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "And what about the GREEN balloon?",
+     "es": "¿Y qué tal el globo VERDE?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Green balloon... on the green flower! Done!",
+     "es": "¡Globo verde... en la flor verde! ¡Listo!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Milo used what he learned... and got every color right!",
+     "es": "Milo usó lo que aprendió... ¡y atinó a todos los colores!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "success-and-lesson",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.8,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "balloon",
+     "x": 0.75,
+     "y": 0.35,
+     "at": 0,
+     "color": "#FF0000"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The big garden gift was fully decorated!",
+     "es": "¡El gran regalo del jardín estaba totalmente decorado!"
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! Look how pretty the balloons look!",
+     "es": "¡Guau! ¡Mira qué bonitos se ven los globos!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Red, blue, yellow, and green! So colorful!",
+     "es": "¡Rojo, azul, amarillo y verde! ¡Tan colorido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "I did it! I tried again and I did it!",
+     "es": "¡Lo hice! ¡Lo intenté otra vez y lo hice!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Milo felt super proud of himself!",
+     "es": "¡Milo se sintió súper orgulloso de sí mismo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Mistakes are okay, Milo. They help us learn!",
+     "es": "Los errores están bien, Milo. ¡Nos ayudan a aprender!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Trying again is how we succeed!",
+     "es": "¡Sí! ¡Volver a intentarlo es como lo logramos!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I'm glad I didn't give up!",
+     "es": "¡Me alegra no haberme rendido!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila walked closer to give Milo a big hug.",
+     "es": "Zibu y Lila se acercaron para darle un gran abrazo a Milo.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.5
+      },
+      {
+       "who": "lila",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Now the big surprise gift is ready!",
+     "es": "¡Ahora el gran regalo de sorpresa está listo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you for helping me, friends!",
+     "es": "¡Gracias por ayudarme, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful lesson for everyone in the garden!",
+     "es": "¡Qué lección tan maravillosa para todos en el jardín!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "celebration-song",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.85,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "cupcake",
+     "x": 0.45,
+     "y": 0.65,
+     "at": 4
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun began to set over the beautiful garden.",
+     "es": "El sol comenzó a ponerse sobre el hermoso jardín."
+    },
+    {
+     "who": "lila",
+     "en": "Look at the colorful balloons around the big gift!",
+     "es": "¡Miren los globos de colores alrededor del gran regalo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Milo, you worked so hard and tried again!",
+     "es": "¡Milo, trabajaste mucho e intentaste otra vez!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "I made mistakes, but I didn't give up!",
+     "es": "¡Cometí errores, pero no me rendí!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila brought out a sweet treat for everyone.",
+     "es": "Lila trajo un dulce premio para todos.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.48
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "A yummy cupcake to celebrate!",
+     "es": "¡Un delicioso pastelito para celebrar!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yum! Thank you so much, friends!",
+     "es": "¡Rico! ¡Muchas gracias, amigos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's sing our trying again song!",
+     "es": "¡Cantemos nuestra canción de volver a intentarlo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "If you make a mistake, don't be sad!",
+     "es": "¡Si cometes un error, no te pongas triste!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Take a deep breath and try once more!",
+     "es": "¡Respira hondo y vuelve a intentarlo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Trying again helps us learn every day!",
+     "es": "¡Volver a intentarlo nos ayuda a aprender todos los días!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone danced together under the warm sunset sky.",
+     "es": "Todos bailaron juntos bajo el cálido cielo del atardecer.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.25
+      },
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Trying again is so much fun! Yay!",
+     "es": "¡Volver a intentarlo es muy divertido! ¡Sí!",
+     "mood": "laugh",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "See you next time, friends! Goodbye!",
+     "es": "¡Nos vemos la próxima vez, amigos! ¡Adiós!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.8,
+     "y": 0.3,
+     "at": 0,
+     "anim": "float",
+     "color": "#FF0000"
+    },
+    {
+     "what": "balloon",
+     "x": 0.85,
+     "y": 0.25,
+     "at": 0,
+     "anim": "float",
+     "color": "#0000FF"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "If you try, try again today,",
+     "es": "Si lo intentas una vez más,"
+    },
+    {
+     "who": "narrator",
+     "en": "You will find a happy way!",
+     "es": "¡Muy feliz tú te sentirás!"
+    },
+    {
+     "who": "narrator",
+     "en": "Don't be sad if things go wrong,",
+     "es": "Si algo sale mal, no hay problema hoy,"
+    },
+    {
+     "who": "narrator",
+     "en": "Sing our happy try-again song!",
+     "es": "¡A cantar muy contento voy!"
+    },
+    {
+     "who": "zibu",
+     "en": "Mistakes can happen, big or small!",
+     "es": "Los errores pueden pasar,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "We pick things up if they fall!",
+     "es": "¡Y todo podemos juntar!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Practice helps us learn and grow!",
+     "es": "¡Practicar nos hace aprender!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Watch us try and see us glow!",
+     "es": "¡Y más fuertes nos hace ser!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "If you try, try again today,",
+     "es": "Si lo intentas una vez más,"
+    },
+    {
+     "who": "narrator",
+     "en": "You will find a happy way!",
+     "es": "¡Muy feliz tú te sentirás!"
+    },
+    {
+     "who": "narrator",
+     "en": "Don't be sad if things go wrong,",
+     "es": "Si algo sale mal, no hay problema hoy,"
+    },
+    {
+     "who": "narrator",
+     "en": "Sing our happy try-again song!",
+     "es": "¡A cantar muy contento voy!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "laugh",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "If you try, try again today,",
+     "es": "Si lo intentas una vez más,"
+    },
+    {
+     "who": "narrator",
+     "en": "You will find a happy way!",
+     "es": "¡Muy feliz tú te sentirás!"
+    },
+    {
+     "who": "narrator",
+     "en": "Don't be sad if things go wrong,",
+     "es": "Si algo sale mal, no hay problema hoy,"
+    },
+    {
+     "who": "narrator",
+     "en": "Sing our happy try-again song!",
+     "es": "¡A cantar muy contento voy!"
+    },
+    {
+     "who": "zibu",
+     "en": "Mistakes can happen, big or small!",
+     "es": "Los errores pueden pasar,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "We pick things up if they fall!",
+     "es": "¡Y todo podemos juntar!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Practice helps us learn and grow!",
+     "es": "¡Practicar nos hace aprender!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Watch us try and see us glow!",
+     "es": "¡Y más fuertes nos hace ser!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "If you try, try again today,",
+     "es": "Si lo intentas una vez más,"
+    },
+    {
+     "who": "narrator",
+     "en": "You will find a happy way!",
+     "es": "¡Muy feliz tú te sentirás!"
+    },
+    {
+     "who": "narrator",
+     "en": "Don't be sad if things go wrong,",
+     "es": "Si algo sale mal, no hay problema hoy,"
+    },
+    {
+     "who": "narrator",
+     "en": "Sing our happy try-again song!",
+     "es": "¡A cantar muy contento voy!"
+    },
+    {
+     "who": "guest",
+     "en": "I tried again and I did it! Yay!",
+     "es": "¡Lo intenté otra vez y lo logré! ¡Sí!",
+     "mood": "happy",
+     "action": "bigjump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 2,
+     "until": 4
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Te gustó la historia? ¡Recordémosla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who was our special friend in the garden today?",
+     "es": "¿Quién fue nuestro amigo especial en el jardín hoy?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Milo the mouse!",
+     "es": "¡Milo el ratón!",
+     "mood": "happy",
+     "show": {
+      "en": "Milo",
+      "es": "Milo",
+      "color": "#0088FF"
+     },
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "What was Milo decorating with colorful balloons?",
+     "es": "¿Qué estaba decorando Milo con globos de colores?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "A big gift!",
+     "es": "¡Un gran regalo!",
+     "mood": "happy",
+     "show": {
+      "en": "Gift",
+      "es": "Regalo",
+      "color": "#FF4499"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What happened when Milo tripped on the small stone?",
+     "es": "¿Qué pasó cuando Milo se tropezó con la pequeña piedra?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "The balloons fell!",
+     "es": "¡Los globos se cayeron!",
+     "mood": "surprised",
+     "show": {
+      "en": "Balloons",
+      "es": "Globos",
+      "color": "#FFBB00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many colors did we practice together?",
+     "es": "¿Cuántos colores practicamos juntos?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Four colors!",
+     "es": "¡Cuatro colores!",
+     "mood": "laugh",
+     "show": {
+      "en": "4",
+      "es": "4",
+      "color": "#33CC33"
+     },
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "What do mistakes help us do?",
+     "es": "¿Qué nos ayudan a hacer los errores?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Learn and try again!",
+     "es": "¡Aprender y volver a intentarlo!",
+     "mood": "happy",
+     "show": {
+      "en": "TRY AGAIN",
+      "es": "INTÉNTALO",
+      "color": "#FF5500"
+     },
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "Now let me see you jump with us!",
+     "es": "¡Ahora quiero verlos saltar con nosotros!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Can you jump three times?",
+     "es": "¿Pueden saltar tres veces?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "One... two... three! Yay!",
+     "es": "¡Uno... dos... tres! ¡Sí!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Trying again is so much fun!",
+     "es": "¡Volver a intentarlo es tan divertido!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Remember: Making mistakes is part of learning. Trying again helps us succeed!",
+     "es": "Recuerda: Cometer errores es parte de aprender. ¡Volver a intentarlo nos ayuda a lograrlo!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.82,
+     "y": 0.3,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF0000"
+    },
+    {
+     "what": "cupcake",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "laugh",
+     "action": "bigjump",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Look at Milo dance with his colorful balloons!",
+     "es": "¡Miren a Milo bailar con sus globos de colores!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep013-zibu-tries-again"
+}

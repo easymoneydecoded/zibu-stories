@@ -86,5 +86,13 @@
   "guest": "bear",
   "lesson": "it's okay to ask for help",
   "learn": "counting from 1 to 5 backwards, like a rocket countdown"
+ },
+ {
+  "id": "ep013-zibu-tries-again",
+  "date": "2026-11-13",
+  "title": "Zibu Tries Again",
+  "guest": "mouse",
+  "lesson": "trying again after a mistake",
+  "learn": "colors: red, blue, yellow, green (show the color words with their color)"
  }
 ]
