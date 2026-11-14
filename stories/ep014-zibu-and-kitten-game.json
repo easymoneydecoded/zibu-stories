@@ -1,0 +1,1446 @@
+{
+ "slug": "zibu-and-kitten-game",
+ "title": {
+  "en": "Zibu and the Kitten Game",
+  "es": "Zibu y el Juego del Gatito"
+ },
+ "lesson": {
+  "en": "Being a good winner and a friendly loser makes games fun for everyone.",
+  "es": "Ser un buen ganador y un buen perdedor hace que jugar sea divertido para todos."
+ },
+ "guest": {
+  "species": "kitten",
+  "name": {
+   "en": "Whiskers",
+   "es": "Bigotes"
+  }
+ },
+ "thumb": {
+  "en": [
+   "FUN BALL GAME!",
+   "WIN AND LOSE!"
+  ],
+  "es": [
+   "¡A JUGAR JUNTOS!",
+   "GANAR Y PERDER"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu and the Kitten Game! 🐱 Learn Good Sportsmanship & Opposites | Zibu and Friends",
+   "description": "Join Zibu, Lila, and Whiskers the Kitten for a fun ball game! 🐱⚽\nWhen playing games, winning and losing can feel big, but being a good friend matters most! ❤️\nWatch Zibu learn how to be a gracious winner and a cheerful player!\nPlus, learn simple opposites like UP and DOWN, IN and OUT! 🎈\nPerfect for toddlers and preschoolers aged 2 to 6.\n#ZibuAndFriends #ToddlerLearning #GoodSportsmanship #OppositesForKids #PreschoolFun",
+   "tags": [
+    "zibu and friends",
+    "good sportsmanship for kids",
+    "learning opposites toddlers",
+    "up and down for kids",
+    "in and out concept",
+    "kitten cartoon",
+    "social emotional learning",
+    "toddler games video",
+    "preschool learning series",
+    "character building kids",
+    "being a good loser",
+    "zibu episode"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu y el Juego del Gatito! 🐱 Aprende a Ganar, Perder y Opuestos | Zibu y sus Amigos",
+   "description": "¡Acompaña a Zibu, Lila y el gatito Bigotes en un divertido juego de pelota! 🐱⚽\nAl jugar, ganar o perder puede dar muchas emociones, ¡pero ser un buen amigo es lo más importante! ❤️\n¡Mira cómo Zibu aprende a ser un buen ganador y a sonreír al perder!\nAdemás, ¡aprende opuestos sencillos como ARRIBA y ABAJO, DENTRO y FUERA! 🎈\nIdeal para niños pequeños de 2 a 6 años.\n#ZibuYSusAmigos #EducacionPreescolar #BuenDeportista #OpuestosParaNinos #CaricaturasParaNinos",
+   "tags": [
+    "zibu y sus amigos",
+    "aprender a ganar y perder",
+    "buen deportista niños",
+    "opuestos para niños",
+    "arriba y abajo",
+    "dentro y fuera",
+    "gatito caricatura",
+    "aprendizaje socioemocional",
+    "videos para preescolares",
+    "valores para niños",
+    "caricatura educacional",
+    "zibu episodio"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Look! Whiskers tossed the red ball high!",
+     "es": "¡Mira! ¡Bigotes atrapó la pelota roja!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us play together, friend?",
+     "es": "¿Nos ayudas a jugar juntos, amigo?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's play and have fun!",
+     "es": "¡Vamos a divertirnos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.75,
+     "color": "#FF69B4"
+    },
+    {
+     "what": "ball",
+     "x": 0.8,
+     "y": 0.75,
+     "color": "#FF3333"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Kitten Game!",
+     "es": "¡Zibu y el Juego del Gatito!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "playtime-in-room",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.75,
+     "y": 0.75,
+     "at": 5,
+     "color": "#FF3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright, happy morning inside the cozy room.",
+     "es": "Era una mañana brillante y feliz dentro de la acogedora habitación."
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Lila! Someone is coming to visit us today!",
+     "es": "¡Mira, Lila! ¡Alguien viene a visitarnos hoy!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Look who is trotting in! It's Whiskers the kitten!",
+     "es": "¡Miren quién viene trotando! ¡Es el gatito Bigotes!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Hello, friends!",
+     "es": "¡Miau! ¡Hola, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Welcome, Whiskers! We are so happy you are here!",
+     "es": "¡Bienvenido, Bigotes! ¡Estamos muy felices de que estés aquí!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Whiskers brought a bright red ball to play with.",
+     "es": "Bigotes trajo una brillante pelota roja para jugar."
+    },
+    {
+     "who": "guest",
+     "en": "Look at my shiny ball! Watch it roll!",
+     "es": "¡Miren mi pelota brillante! ¡Vean cómo rueda!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Whiskers gave the red ball a gentle push across the floor.",
+     "es": "Bigotes empujó suavemente la pelota roja por el piso."
+    },
+    {
+     "who": "zibu",
+     "en": "Giggle! It rolls so fast!",
+     "es": "¡Je, je! ¡Rueda muy rápido!",
+     "mood": "laugh",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Catch it, Zibu! Wheee!",
+     "es": "¡Atrápala, Zibu! ¡Wheee!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Got it! Rolling the ball is so fun!",
+     "es": "¡La tengo! ¡Hacer rodar la pelota es muy divertido!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Let me try pushing it again!",
+     "es": "¡Miau! ¡Déjenme intentarlo otra vez!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Let's take our ball outside to the garden!",
+     "es": "¡Llevemos nuestra pelota afuera al jardín!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! We can play a rolling game together!",
+     "es": "¡Sí! ¡Podemos jugar a un juego de rodar juntos!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "And off they went to play out in the sunny garden!",
+     "es": "¡Y allá se fueron a jugar al soleado jardín!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "first-game-in-garden",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 0,
+     "color": "#FF69B4"
+    },
+    {
+     "what": "ball",
+     "x": 0.8,
+     "y": 0.75,
+     "at": 4,
+     "color": "#FF3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Out in the garden, a pretty pink flower stood right in the middle.",
+     "es": "En el jardín, una linda flor rosa estaba justo en el medio."
+    },
+    {
+     "who": "lila",
+     "en": "Look at the pink flower! Let's play our game here!",
+     "es": "¡Miren la flor rosa! ¡Juguemos nuestro juego aquí!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Ooh! Who can roll the ball closest to the flower?",
+     "es": "¡Oh! ¿Quién puede hacer rodar la pelota más cerca de la flor?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! I want to roll first!",
+     "es": "¡Miau! ¡Yo quiero rodar primero!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Whiskers carefully pushed the bright red ball.",
+     "es": "Bigotes empujó con cuidado la brillante pelota roja."
+    },
+    {
+     "who": "guest",
+     "en": "Roll, roll, roll... stop!",
+     "es": "Rueda, rueda, rueda... ¡alto!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Look! It stopped right next to the flower!",
+     "es": "¡Miren! ¡Se detuvo justo al lado de la flor!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "My turn now! Watch this!",
+     "es": "¡Mi turno ahora! ¡Miren esto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu rolled the ball... but it went a little too far!",
+     "es": "Zibu hizo rodar la pelota... ¡pero se fue un poco lejos!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh no... my ball went past the flower...",
+     "es": "Oh no... mi pelota pasó de largo la flor...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Whiskers won the very first round!",
+     "es": "¡Bigotes ganó la primerísima ronda!"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! I won! I got closest!",
+     "es": "¡Sí! ¡Gané! ¡Fui el más cercano!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "That was a great roll, Whiskers!",
+     "es": "¡Ese fue un gran tiro, Bigotes!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Whiskers cheered, but Zibu began to feel a little sad.",
+     "es": "Bigotes celebró, pero Zibu comenzó a sentirse un poco triste.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "zibu-feels-sad",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.6,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "ball",
+     "x": 0.35,
+     "y": 0.78,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu looked down at his red ball. It was far away.",
+     "es": "Zibu miró su pelota roja. Estaba muy lejos."
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... I lost the round.",
+     "es": "Oh... perdí la ronda.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu crossed his arms and pouted just a little bit.",
+     "es": "Zibu cruzó los brazos e hizo un pequeñito berrinche."
+    },
+    {
+     "who": "lila",
+     "en": "Are you okay, Zibu?",
+     "es": "¿Estás bien, Zibu?",
+     "mood": "sad",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "I wanted to win... winning is fun.",
+     "es": "Yo quería ganar... ganar es divertido.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "But you rolled the ball so nicely!",
+     "es": "¡Pero lanzaste la pelota muy bien!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Good try, Zibu!",
+     "es": "¡Buen intento, Zibu!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Whiskers smiled warmly and gave Zibu a sweet pat.",
+     "es": "Bigotes sonrió con ternura y le dio a Zibu una palmadita."
+    },
+    {
+     "who": "zibu",
+     "en": "Really? Did I do a good try?",
+     "es": "¿De verdad? ¿Hice un buen intento?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Games are about having fun together!",
+     "es": "¡Sí! ¡Los juegos son para divertirse juntos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... having fun together! That is true!",
+     "es": "Oh... ¡divertirse juntos! ¡Eso es verdad!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu smiled. He did not feel sad anymore!",
+     "es": "Zibu sonrió. ¡Ya no se sentía triste!"
+    },
+    {
+     "who": "zibu",
+     "en": "You had a great roll, Whiskers!",
+     "es": "¡Tuviste un tiro genial, Bigotes!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, friend! Let's play another game!",
+     "es": "¡Gracias, amigo! ¡Juguemos otro juego!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "And together, the happy friends ran up to the grassy hill!",
+     "es": "¡Y juntos, los felices amigos corrieron a la colina verde!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-opposites-on-hill",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.25,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "gift",
+     "x": 0.8,
+     "y": 0.72,
+     "at": 6
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Up on the sunny hill, it was time for a new game!",
+     "es": "¡Arriba en la colina soleada, era hora de un nuevo juego!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look! I can push the ball... UP!",
+     "es": "¡Miren! Puedo empujar la pelota... ¡ARRIBA!",
+     "mood": "happy",
+     "show": {
+      "en": "UP",
+      "es": "ARRIBA",
+      "color": "#FF5722"
+     },
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Wheee! The ball goes UP the hill!",
+     "es": "¡Siii! ¡La pelota va ARRIBA por la colina!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Then, the ball rolled all the way back down!",
+     "es": "¡Luego, la pelota rodó todo el camino hacia abajo!"
+    },
+    {
+     "who": "lila",
+     "en": "Now it goes... DOWN!",
+     "es": "¡Ahora va... ABAJO!",
+     "mood": "happy",
+     "show": {
+      "en": "DOWN",
+      "es": "ABAJO",
+      "color": "#2196F3"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "UP and DOWN! So fast!",
+     "es": "¡ARRIBA y ABAJO! ¡Qué rápido!",
+     "mood": "laugh",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila brought out a big toy box.",
+     "es": "Lila sacó una gran caja de juguetes."
+    },
+    {
+     "who": "lila",
+     "en": "Let's put the ball... IN the box!",
+     "es": "¡Pongamos la pelota... ADENTRO de la caja!",
+     "mood": "happy",
+     "show": {
+      "en": "IN",
+      "es": "ADENTRO",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Peek-a-boo! The ball is IN!",
+     "es": "¡Cucú! ¡La pelota está ADENTRO!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Can we take it OUT?",
+     "es": "¿Podemos sacarla AFUERA?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! Now the ball is... OUT!",
+     "es": "¡Sí! Ahora la pelota está... ¡AFUERA!",
+     "mood": "happy",
+     "show": {
+      "en": "OUT",
+      "es": "AFUERA",
+      "color": "#E91E63"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Yay! IN and OUT!",
+     "es": "¡Sí! ¡ADENTRO y AFUERA!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Learning opposites is so fun!",
+     "es": "¡Aprender opuestos es muy divertido!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone giggled and cheered together.",
+     "es": "Todos se rieron y celebraron juntos."
+    },
+    {
+     "who": "guest",
+     "en": "Let's play one more ball game!",
+     "es": "¡Juguemos un juego de pelota más!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "As the sun began to set, they set up for one last round.",
+     "es": "Mientras el sol comenzaba a ponerse, se prepararon para la última ronda.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "second-game-zibu-wins",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "ball",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 2,
+     "color": "#ff0000"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sky turned warm and orange on the hill.",
+     "es": "El cielo se puso cálido y naranja en la colina."
+    },
+    {
+     "who": "lila",
+     "en": "Look at the big stone! That is the target!",
+     "es": "¡Miren la gran piedra! ¡Esa es la meta!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Whiskers rolled the red ball first.",
+     "es": "Bigotes rodó la pelota roja primero."
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Go, ball, go!",
+     "es": "¡Miau! ¡Ve, pelota, ve!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "It rolled close to the stone. Good job!",
+     "es": "Rodó cerca de la piedra. ¡Buen trabajo!"
+    },
+    {
+     "who": "zibu",
+     "en": "My turn now!",
+     "es": "¡Mi turno ahora!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu gently rolled his ball up the hill.",
+     "es": "Zibu rodó su pelota suavemente cuesta arriba.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Roll... roll... roll...",
+     "es": "Rueda... rueda... rueda...",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Wow! Zibu's ball stopped right next to the stone!",
+     "es": "¡Vaya! ¡La pelota de Zibu se detuvo justo al lado de la piedra!"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Zibu won this round!",
+     "es": "¡Bien! ¡Zibu ganó esta ronda!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "I won! I won! Woohoo!",
+     "es": "¡Gané! ¡Gané! ¡Súper!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was so happy, but then he remembered his friend.",
+     "es": "Zibu estaba muy feliz, pero luego recordó a su amigo."
+    },
+    {
+     "who": "zibu",
+     "en": "High-five, Whiskers! That was so much fun!",
+     "es": "¡Dame esos cinco, Bigotes! ¡Fue muy divertido!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "High-five, Zibu! Great roll!",
+     "es": "¡Dame esos cinco, Zibu! ¡Buen tiro!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Playing together is the best!",
+     "es": "¡Jugar juntos es lo mejor!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Being a good winner made everyone smile.",
+     "es": "Ser un buen ganador hizo sonreír a todos.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "snack-and-snuggle",
+   "bg": "room",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "cookie",
+     "x": 0.4,
+     "y": 0.6,
+     "at": 3
+    },
+    {
+     "what": "cupcake",
+     "x": 0.6,
+     "y": 0.6,
+     "at": 6
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Later, everyone went back inside the cozy room.",
+     "es": "Más tarde, todos regresaron a la acogedora habitación."
+    },
+    {
+     "who": "lila",
+     "en": "Whew! Playing games makes me hungry!",
+     "es": "¡Uf! ¡Jugar me da mucha hambre!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Look what I have for snack time!",
+     "es": "¡Miren lo que tengo para la merienda!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu brought out yummy cookies for his friends.",
+     "es": "Zibu trajo galletas deliciosas para sus amigos.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Here is a cookie for you, Whiskers!",
+     "es": "¡Aquí tienes una galleta, Bigotes!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Purr... thank you, Zibu! Yum!",
+     "es": "¡Rrr... gracias, Zibu! ¡Qué rico!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "And a sweet cupcake for Lila!",
+     "es": "¡Y un panqueque dulce para Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you, Zibu! You are so kind!",
+     "es": "¡Gracias, Zibu! ¡Eres muy amable!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "They all sat together, sharing treats and giggling.",
+     "es": "Todos se sentaron juntos, compartiendo bocados y riendo."
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Winning or losing, we are all good friends!",
+     "es": "¡Miau! ¡Ganando o perdiendo, todos somos buenos amigos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Playing together is the real reward!",
+     "es": "¡Sí! ¡Jugar juntos es la verdadera recompensa!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Cheers for friendly games!",
+     "es": "¡Un hurra por los juegos amistosos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! Hooray!",
+     "es": "¡Sí! ¡Viva!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone cheered happily in the warm room.",
+     "es": "Todos celebraron felices en la acogedora habitación.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "goodnight-friends",
+   "bg": "room",
+   "time": "night",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "brightstar",
+     "x": 0.8,
+     "y": 0.2,
+     "at": 0,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Night came to the cozy room. A bright star shone softly.",
+     "es": "Llegó la noche a la acogedora habitación. Una estrella brillante brillaba suavemente."
+    },
+    {
+     "who": "lila",
+     "en": "Look at the bright star outside! It is night time already!",
+     "es": "¡Miren la estrella brillante afuera! ¡Ya es de noche!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yawn... I had so much fun playing today!",
+     "es": "Bostezo... ¡Me divertí mucho jugando hoy!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Me too, Whiskers! Playing games together is awesome!",
+     "es": "¡Yo también, Bigotes! ¡Jugar juntos es genial!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu learned that winning and losing are both okay.",
+     "es": "Zibu aprendió que ganar y perder está bien."
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Being a good friend is what matters most!",
+     "es": "¡Sí! ¡Ser un buen amigo es lo que más importa!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "When we play nicely, everyone wins!",
+     "es": "¡Cuando jugamos con cariño, todos ganamos!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "guest",
+     "en": "Purr... thank you for playing with me!",
+     "es": "Rronrrón... ¡gracias por jugar conmigo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Being a good winner and a friendly loser makes every game fun.",
+     "es": "Ser un buen ganador y un buen perdedor hace que cada juego sea divertido."
+    },
+    {
+     "who": "zibu",
+     "en": "Goodnight, Whiskers! Goodnight, Lila!",
+     "es": "¡Buenas noches, Bigotes! ¡Buenas noches, Lila!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Goodnight, Zibu! Goodnight, little star!",
+     "es": "¡Buenas noches, Zibu! ¡Buenas noches, estrellita!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Goodnight, friends! Meow!",
+     "es": "¡Buenas noches, amigos! ¡Miau!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Goodnight, Zibu. Goodnight, friends. See you next time!",
+     "es": "Buenas noches, Zibu. Buenas noches, amigos. ¡Hasta la próxima!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.5,
+     "y": 0.8,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#ff3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Win or lose, we smile and play!",
+     "es": "¡Ganar o perder, vamos a jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We have fun together every day!",
+     "es": "¡Con nuestros amigos vamos a cantar!"
+    },
+    {
+     "who": "narrator",
+     "en": "If the ball rolls far and we do not win,",
+     "es": "Si rueda la pelota y no gané,"
+    },
+    {
+     "who": "narrator",
+     "en": "We smile real big and try again!",
+     "es": "¡sonrío contento y feliz seré!"
+    },
+    {
+     "who": "zibu",
+     "en": "Whiskers rolled the ball so neat!",
+     "es": "Bigotes la pelota hizo rodar,",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "It stopped right by the flower sweet!",
+     "es": "¡cerca de la flor la vio parar!",
+     "action": "spin",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "We took turns and cheered out loud!",
+     "es": "¡Jugamos juntos con gran amor!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Playing games makes us so proud!",
+     "es": "¡y celebramos con mucho honor!",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Win or lose, we smile and play!",
+     "es": "¡Ganar o perder, vamos a jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We have fun together every day!",
+     "es": "¡Con nuestros amigos vamos a cantar!"
+    },
+    {
+     "who": "narrator",
+     "en": "If the ball rolls far and we do not win,",
+     "es": "Si rueda la pelota y no gané,"
+    },
+    {
+     "who": "narrator",
+     "en": "We smile real big and try again!",
+     "es": "¡sonrío contento y feliz seré!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "action": "bigjump",
+     "mood": "laugh"
+    },
+    {
+     "who": "narrator",
+     "en": "Win or lose, we smile and play!",
+     "es": "¡Ganar o perder, vamos a jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We have fun together every day!",
+     "es": "¡Con nuestros amigos vamos a cantar!"
+    },
+    {
+     "who": "narrator",
+     "en": "If the ball rolls far and we do not win,",
+     "es": "Si rueda la pelota y no gané,"
+    },
+    {
+     "who": "narrator",
+     "en": "We smile real big and try again!",
+     "es": "¡sonrío contento y feliz seré!"
+    },
+    {
+     "who": "zibu",
+     "en": "Whiskers rolled the ball so neat!",
+     "es": "Bigotes la pelota hizo rodar,",
+     "action": "shake",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "It stopped right by the flower sweet!",
+     "es": "¡cerca de la flor la vio parar!",
+     "action": "spin",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "We took turns and cheered out loud!",
+     "es": "¡Jugamos juntos con gran amor!",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Playing games makes us so proud!",
+     "es": "¡y celebramos con mucho honor!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Win or lose, we smile and play!",
+     "es": "¡Ganar o perder, vamos a jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We have fun together every day!",
+     "es": "¡Con nuestros amigos vamos a cantar!"
+    },
+    {
+     "who": "narrator",
+     "en": "If the ball rolls far and we do not win,",
+     "es": "Si rueda la pelota y no gané,"
+    },
+    {
+     "who": "narrator",
+     "en": "We smile real big and try again!",
+     "es": "¡sonrío contento y feliz seré!"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Playing with friends is the best!",
+     "es": "¡Miau! ¡Jugar con amigos es lo mejor!",
+     "action": "bigjump",
+     "mood": "laugh"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who came to visit Zibu and Lila today?",
+     "es": "¿Quién vino a visitar a Zibu y Lila hoy?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Whiskers the kitten!",
+     "es": "¡El gatito Bigotes!",
+     "mood": "happy",
+     "show": {
+      "en": "Whiskers",
+      "es": "Bigotes",
+      "color": "#44aaff"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What toy did Whiskers bring to play?",
+     "es": "¿Qué juguete trajo Bigotes para jugar?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "A bright red ball!",
+     "es": "¡Una pelota roja brillante!",
+     "mood": "happy",
+     "show": {
+      "en": "Red Ball",
+      "es": "Pelota roja",
+      "color": "#ff4444"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Where was the pretty flower in the garden?",
+     "es": "¿Dónde estaba la linda flor en el jardín?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Right in the middle!",
+     "es": "¡Justo en el medio!",
+     "mood": "happy",
+     "show": {
+      "en": "Middle",
+      "es": "Medio",
+      "color": "#ff66cc"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How did Zibu feel when he was a good winner?",
+     "es": "¿Cómo se sintió Zibu al ser un buen ganador?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Happy and ready to share!",
+     "es": "¡Feliz y listo para compartir!",
+     "mood": "happy",
+     "show": {
+      "en": "Happy",
+      "es": "Feliz",
+      "color": "#ffcc00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What yummy treats did Zibu share at snack time?",
+     "es": "¿Qué ricas meriendas compartió Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Cookies and cupcakes!",
+     "es": "¡Galletas y magdalenas!",
+     "mood": "happy",
+     "show": {
+      "en": "Treats",
+      "es": "Meriendas",
+      "color": "#996633"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Now let's celebrate friendly games!",
+     "es": "¡Ahora celebremos los juegos entre amigos!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you give a big high-five?",
+     "es": "¿Pueden dar una gran chocada de manos?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Put your hand up high!",
+     "es": "¡Pongan su mano en alto!",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "One, two, three... High-five!",
+     "es": "¡Uno, dos, tres... ¡Chócala!",
+     "action": "bigjump",
+     "mood": "laugh"
+    },
+    {
+     "who": "narrator",
+     "en": "Being a good winner and a friendly loser makes games fun for everyone.",
+     "es": "Ser un buen ganador y un buen perdedor hace que jugar sea divertido para todos."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "pause": 14,
+     "action": "spin",
+     "mood": "laugh"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Wiggle your tail and bounce!",
+     "es": "¡Miau! ¡Muevan la colita y salten!",
+     "pause": 10,
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "pause": 3,
+     "action": "wave",
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "id": "ep014-zibu-and-kitten-game"
+}
