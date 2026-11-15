@@ -1,0 +1,1373 @@
+{
+ "slug": "zibu-and-the-friendly-duckling",
+ "title": {
+  "en": "Zibu and the Friendly Duckling",
+  "es": "Zibu y el Patito Amigable"
+ },
+ "lesson": {
+  "en": "Being kind to friends who move or sound different makes everyone feel happy.",
+  "es": "Ser amables con amigos que se mueven o suenan diferente nos hace felices a todos."
+ },
+ "guest": {
+  "species": "duckling",
+  "name": {
+   "en": "Puddles",
+   "es": "Pipas"
+  }
+ },
+ "thumb": {
+  "en": [
+   "A NEW FRIEND!",
+   "COUNT TO 5!"
+  ],
+  "es": [
+   "¡NUEVO AMIGO!",
+   "¡CUENTA HASTA 5!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu and the Friendly Duckling 🦆 | Learn to Count 1 to 5!",
+   "description": "Zibu and Lila meet Puddles the duckling in the garden! 🦆\nPuddles waddles and moves differently, but he is a wonderful friend. 🌸\nTogether, they gather colorful flowers and count from 1 to 5! 🔢\nLearn about kindness, acceptance, and basic counting skills. ❤️\nPerfect for toddlers and preschoolers aged 2 to 6!\n\n#ZibuAndFriends #LearnToCount #KindnessForKids #PreschoolLearning #CartoonsForKids",
+   "tags": [
+    "zibu and friends",
+    "duckling cartoon",
+    "learn to count 1 to 5",
+    "counting for toddlers",
+    "kindness for kids",
+    "preschool video",
+    "cartoon for kids",
+    "toddler learning",
+    "educational cartoon",
+    "zibu",
+    "counting numbers",
+    "kids video 2024"
+   ]
+  },
+  "es": {
+   "title": "Zibu y el Patito Amigable 🦆 | ¡Aprende a Contar del 1 al 5!",
+   "description": "¡Zibu y Lila conocen a Pipas el patito en el jardín! 🦆\nPipas camina y se mueve diferente, ¡pero es un gran amigo! 🌸\nJuntos recogen hermosas flores y cuentan del 1 al 5. 🔢\nAprende sobre la amabilidad, aceptar las diferencias y contar. ❤️\n¡Ideal para niños pequeños de 2 a 6 años!\n\n#ZibuYSusAmigos #AprendeAContar #Amabilidad #CaricaturasParaNiños #VideosEducativos",
+   "tags": [
+    "zibu y sus amigos",
+    "caricaturas para niños",
+    "aprende a contar del 1 al 5",
+    "numeros para niños",
+    "valores para niños",
+    "videos educativos",
+    "zibu",
+    "patito dibujo animado",
+    "amabilidad para niños",
+    "preescolar",
+    "cuentos infantiles",
+    "videos para niños"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh look! A duckling is waddling!",
+     "es": "¡Miren! ¡Un patito viene caminando!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us say hello?",
+     "es": "¿Nos ayudan a saludarlo?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's meet our new friend!",
+     "es": "¡Vamos a conocerlo juntos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Friendly Duckling!",
+     "es": "¡Zibu y el Patito Amigable!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "meeting-puddles",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": -0.2
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a beautiful sunny day in the garden. Zibu and Lila were playing.",
+     "es": "Era un hermoso día soleado en el jardín. Zibu y Lila estaban jugando."
+    },
+    {
+     "who": "zibu",
+     "en": "Bounce, bounce, bounce! Playing is so much fun, Lila!",
+     "es": "¡Rebote, rebote, rebote! ¡Jugar es muy divertido, Lila!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Hop, hop, hop! Yes, Zibu! Look how high I can hop!",
+     "es": "¡Salto, salto, salto! ¡Sí, Zibu! ¡Mira qué alto puedo saltar!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, they heard a small, sweet sound coming from the grass.",
+     "es": "De repente, escucharon un sonido pequeño y dulce que venía del pasto."
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Quack! Quack!",
+     "es": "¡Cua! ¡Cua! ¡Cua!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! Who is that?",
+     "es": "¡Oh! ¿Quién es?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Look! It's a tiny duckling!",
+     "es": "¡Mira! ¡Es un patito pequeñito!",
+     "mood": "surprised",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Hello! I am Puddles! Quack!",
+     "es": "¡Hola! ¡Soy Pipas! ¡Cua!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, Puddles! I am Zibu, and this is Lila!",
+     "es": "¡Hola, Pipas! ¡Yo soy Zibu y ella es Lila!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Puddles walked slowly, waddling from side to side.",
+     "es": "Pipas caminaba despacio, bamboleándose de un lado a otro.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "You waddle! That is so interesting!",
+     "es": "¡Te bamboleas! ¡Eso es muy interesante!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! I bounce, Lila hops, and you waddle!",
+     "es": "¡Sí! ¡Yo reboto, Lila salta y tú te bamboleas!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Waddling is how I walk!",
+     "es": "¡Cua! ¡Bambolearme es como me muevo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The three new friends smiled at each other, ready for fun!",
+     "es": "¡Los tres nuevos amigos se sonrieron, listos para divertirse!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "flower-picking-idea",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 3
+    },
+    {
+     "what": "flower",
+     "x": 0.85,
+     "y": 0.7,
+     "at": 1,
+     "color": "#ff69b4"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Puddles walked down to the sparkling river.",
+     "es": "Zibu, Lila y Pipas bajaron al río brillante."
+    },
+    {
+     "who": "guest",
+     "en": "Look at those colorful flowers across the river bank!",
+     "es": "¡Miren esas flores coloridas al otro lado del río!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! I see five beautiful flowers over there!",
+     "es": "¡Vaya! ¡Veo cinco flores hermosas por allá!",
+     "mood": "happy",
+     "show": {
+      "en": "5",
+      "es": "5"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Let's gather them! We just need to hop across the big stone path!",
+     "es": "¡Vamos a juntarlas! ¡Solo tenemos que saltar por el camino de piedras grandes!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila showed Puddles how she hops fast over the stones.",
+     "es": "Lila le mostró a Pipas cómo salta rápido sobre las piedras.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.48
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Like this! Hop, hop, hop! Fast and high!",
+     "es": "¡Así! ¡Salto, salto, salto! ¡Rápido y alto!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "guest",
+     "en": "Oh... hop fast?",
+     "es": "Oh... ¿saltar rápido?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Come on, Puddles! Try to hop like Lila!",
+     "es": "¡Vamos, Pipas! ¡Intenta saltar como Lila!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Puddles took a deep breath and prepared to jump.",
+     "es": "Pipas respiró hondo y se preparó para saltar."
+    },
+    {
+     "who": "guest",
+     "en": "Okay... here I go! Hop!",
+     "es": "Está bien... ¡aquí voy! ¡Salto!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.58
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "But ducklings don't hop fast like bunnies. Puddles waddled softly.",
+     "es": "Pero los patitos no saltan rápido como los conejos. Pipas se bamboleó suavemente."
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Oh dear... I can't hop over the big stone!",
+     "es": "¡Cua! Ay... ¡no puedo saltar sobre la piedra grande!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! Try again, Puddles!",
+     "es": "¡Oh, no! ¡Inténtalo de nuevo, Pipas!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Will Puddles be able to pick the flowers with his friends?",
+     "es": "¿Podrá Pipas recoger las flores con sus amigos?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "trying-to-hop",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.6,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Puddles took a big breath and tried to hop over the stone.",
+     "es": "Pipas tomó aire y trató de saltar sobre la piedra."
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Here I go... hop!",
+     "es": "¡Cua! Aquí voy... ¡salto!",
+     "mood": "happy",
+     "action": "jump",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.68
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "But ducklings don't hop... they waddle!",
+     "es": "Pero los patitos no saltan... ¡ellos caminan tambaleándose!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear... my little feet can't jump high.",
+     "es": "Ay... mis piecitos no pueden saltar alto.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Try again, Puddles! Jump like me!",
+     "es": "¡Inténtalo de nuevo, Pipas! ¡Salta como yo!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "guest",
+     "en": "I try... but I only waddle-waddle!",
+     "es": "¡Lo intento... pero solo me tambaleo!",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Puddles felt sad. He wanted to gather flowers with his friends.",
+     "es": "Pipas se sintió triste. Quería recoger flores con sus amigos."
+    },
+    {
+     "who": "guest",
+     "en": "I am too different from you...",
+     "es": "Soy muy diferente a ustedes...",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Wait! Look at how Puddles moves!",
+     "es": "¡Esperen! ¡Miren cómo se mueve Pipas!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "He waddles! It's sweet, but he can't hop over.",
+     "es": "¡Se tambalea! Es tierno, pero no puede saltar por encima.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "That's okay! We don't all have to hop!",
+     "es": "¡Está bien! ¡No todos tenemos que saltar!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu had a kind idea so they could all play together.",
+     "es": "Zibu tuvo una idea amable para que todos pudieran jugar juntos."
+    }
+   ]
+  },
+  {
+   "id": "counting-flowers-together",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.8,
+     "y": 0.7,
+     "at": 6
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Lila hops, I bounce... and Puddles waddles!",
+     "es": "¡Lila salta, yo reaboto... y Pipas se tambalea!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Oh! Everyone moves in their own special way!",
+     "es": "¡Oh! ¡Cada quien se mueve a su manera especial!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Let's walk around the stone together!",
+     "es": "¡Sí! ¡Vamos a caminar alrededor de la piedra juntos!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.45
+      },
+      {
+       "who": "lila",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila slowed down to match Puddles' waddling steps.",
+     "es": "Zibu y Lila fueron más despacio para ir al paso de Pipas."
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Look! Pretty flowers by the water!",
+     "es": "¡Cua! ¡Miren! ¡Flores lindas junto al agua!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Let's count five colorful flowers together!",
+     "es": "¡Vamos a contar cinco flores de colores juntos!"
+    },
+    {
+     "who": "zibu",
+     "en": "One! Here is one red flower!",
+     "es": "¡Una! ¡Aquí hay una flor roja!",
+     "show": {
+      "en": "1",
+      "es": "1",
+      "color": "#FF4444"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Two! Two yellow flowers!",
+     "es": "¡Dos! ¡Dos flores amarillas!",
+     "show": {
+      "en": "2",
+      "es": "2",
+      "color": "#FFDD44"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Three! Three blue flowers!",
+     "es": "¡Cua! ¡Tres! ¡Tres flores azules!",
+     "mood": "happy",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#4488FF"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Four! Four pink flowers!",
+     "es": "¡Cuatro! ¡Cuatro flores rosadas!",
+     "show": {
+      "en": "4",
+      "es": "4",
+      "color": "#FF88CC"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "And five! Five bright flowers!",
+     "es": "¡Y cinco! ¡Cinco flores brillantes!",
+     "mood": "happy",
+     "action": "bigjump",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#AA44FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "One, two, three, four, five! Five lovely flowers!",
+     "es": "¡Una, dos, tres, cuatro, cinco! ¡Cinco flores hermosas!"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Thank you for walking with me!",
+     "es": "¡Cua! ¡Gracias por caminar conmigo!",
+     "mood": "happy",
+     "action": "wave"
+    }
+   ]
+  },
+  {
+   "id": "carrying-the-leaf",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.45,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "They placed all five flowers carefully inside a big green leaf.",
+     "es": "Pusieron las cinco flores con cuidado dentro de una gran hoja verde."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! A big leaf to carry our flowers!",
+     "es": "¡Miren! ¡Una gran hoja para llevar nuestras flores!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Now we can take them up the hill together!",
+     "es": "¡Ahora podemos llevarlas juntas arriba de la colina!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Waddling together is so fun!",
+     "es": "¡Cua! ¡Caminar juntos como patito es muy divertido!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "They started walking up the hill... very slowly.",
+     "es": "Comenzaron a subir la colina... muy despacito.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      },
+      {
+       "who": "lila",
+       "to": 0.5
+      },
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Step... step... waddle, waddle!",
+     "es": "¡Paso... paso... cuac, cuac!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "We are walking slowly, just like Puddles!",
+     "es": "¡Estamos caminando despacio, como Pipas!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Thank you for waiting for me!",
+     "es": "¡Cua! ¡Gracias por esperarme!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila and Zibu matched Puddles' waddling pace.",
+     "es": "Lila y Zibu caminaron al ritmo de Pipas."
+    },
+    {
+     "who": "lila",
+     "en": "Up, up, up the hill we go!",
+     "es": "¡Arriba, arriba, arriba de la colina vamos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "We are almost at the top!",
+     "es": "¡Ya casi llegamos a la cima!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Together, they made it all the way to the top!",
+     "es": "¡Juntos, llegaron hasta arriba!"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! We did it! Quack, quack!",
+     "es": "¡Siiii! ¡Lo logramos! ¡Cua, cua!",
+     "mood": "happy",
+     "action": "bigjump"
+    }
+   ]
+  },
+  {
+   "id": "sunset-sharing",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.75,
+     "y": 0.65,
+     "at": 4,
+     "color": "#FFCC00"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the garden, the sun began to set.",
+     "es": "De regreso en el jardín, el sol comenzó a ponerse."
+    },
+    {
+     "who": "zibu",
+     "en": "Look at the sky! It is orange and pink!",
+     "es": "¡Miren el cielo! ¡Es de color naranja y rosa!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "The garden looks so beautiful now!",
+     "es": "¡El jardín se ve tan hermoso ahora!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! I have a sweet surprise for my friends!",
+     "es": "¡Cua! ¡Tengo una linda sorpresa para mis amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Puddles picked up a bright flower from the leaf.",
+     "es": "Pipas tomó una flor brillante de la hoja."
+    },
+    {
+     "who": "guest",
+     "en": "Here is a shiny flower for you, Zibu!",
+     "es": "¡Aquí hay una flor brillante para ti, Zibu!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! Thank you so much, Puddles!",
+     "es": "¡Guao! ¡Muchas gracias, Pipas!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Then Puddles picked up another soft flower.",
+     "es": "Luego Pipas tomó otra flor suave."
+    },
+    {
+     "who": "guest",
+     "en": "And this pretty flower is for you, Lila!",
+     "es": "¡Y esta linda flor es para ti, Lila!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Oh, thank you, Puddles! It is lovely!",
+     "es": "¡Oh, gracias, Pipas! ¡Es hermosa!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "They all looked at the garden together.",
+     "es": "Todos contemplaron juntos el jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "Sharing with friends makes everything special!",
+     "es": "¡Compartir con amigos hace que todo sea especial!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! We are so happy you are here!",
+     "es": "¡Sí! ¡Estamos muy felices de que estés aquí!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "id": "the-kindness-lesson",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.35,
+     "y": 0.75,
+     "at": 0,
+     "color": "#ff69b4"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun was setting softly over the warm garden.",
+     "es": "El sol se ponía suavemente sobre el cálido jardín."
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! I love making new friends!",
+     "es": "¡Cua, cua! ¡Me encanta hacer nuevos amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "We love playing with you too, Puddles!",
+     "es": "¡A nosotros también nos encanta jugar contigo, Pipas!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "You move in your very own special way!",
+     "es": "¡Tú te mueves de una manera muy especial!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone is special just the way they are.",
+     "es": "Cada uno es especial tal como es."
+    },
+    {
+     "who": "zibu",
+     "en": "Being kind to everyone makes playing so much fun!",
+     "es": "¡Ser amables con todos hace que jugar sea muy divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Being different brings so much joy!",
+     "es": "¡Sí! ¡Ser diferentes nos trae mucha alegría!",
+     "mood": "laugh"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! You are both so sweet and kind!",
+     "es": "¡Cua! ¡Ustedes dos son muy dulces y amables!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila walked closer to give Puddles a gentle hug.",
+     "es": "Zibu y Lila se acercaron para darle a Pipas un suave abrazo.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.6
+      },
+      {
+       "who": "lila",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "A big warm hug for our new friend!",
+     "es": "¡Un gran abrazo cálido para nuestro nuevo amigo!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "We love you, Puddles!",
+     "es": "¡Te queremos mucho, Pipas!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! Best hug ever!",
+     "es": "¡Cua, cua! ¡El mejor abrazo del mundo!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "And so, a wonderful day of friendship came to a happy end.",
+     "es": "Y así, un día maravilloso de amistad llegó a un feliz final.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.8,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF69B4"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "We all move in our own sweet way,",
+     "es": "Todos nos movemos a nuestra manera,"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing together every day!",
+     "es": "¡Y jugamos juntos sin espera!"
+    },
+    {
+     "who": "narrator",
+     "en": "You can hop, bounce, or waddle too,",
+     "es": "Puedes saltar, rebotar o bambolear,"
+    },
+    {
+     "who": "narrator",
+     "en": "I love playing games with you!",
+     "es": "¡Qué divertido es juntos jugar!"
+    },
+    {
+     "who": "zibu",
+     "en": "I love to bounce up in the sky,",
+     "es": "Me gusta rebotar con emoción,",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "I hop so fast and jump up high!",
+     "es": "¡Yo salto alto y con precisión!",
+     "action": "bigjump",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Puddles waddles near and far,",
+     "es": "Pipas se bambolea al caminar,"
+    },
+    {
+     "who": "lila",
+     "en": "You are wonderful as you are!",
+     "es": "¡Especial eres, te voy a amar!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "We all move in our own sweet way,",
+     "es": "Todos nos movemos a nuestra manera,"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing together every day!",
+     "es": "¡Y jugamos juntos sin espera!"
+    },
+    {
+     "who": "narrator",
+     "en": "You can hop, bounce, or waddle too,",
+     "es": "Puedes saltar, rebotar o bambolear,"
+    },
+    {
+     "who": "narrator",
+     "en": "I love playing games with you!",
+     "es": "¡Qué divertido es juntos jugar!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "action": "wave",
+     "mood": "happy",
+     "pause": 1
+    },
+    {
+     "who": "narrator",
+     "en": "We all move in our own sweet way,",
+     "es": "Todos nos movemos a nuestra manera,"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing together every day!",
+     "es": "¡Y jugamos juntos sin espera!"
+    },
+    {
+     "who": "narrator",
+     "en": "You can hop, bounce, or waddle too,",
+     "es": "Puedes saltar, rebotar o bambolear,"
+    },
+    {
+     "who": "narrator",
+     "en": "I love playing games with you!",
+     "es": "¡Qué divertido es juntos jugar!"
+    },
+    {
+     "who": "zibu",
+     "en": "I love to bounce up in the sky,",
+     "es": "Me gusta rebotar con emoción,",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "I hop so fast and jump up high!",
+     "es": "¡Yo salto alto y con precisión!",
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "Puddles waddles near and far,",
+     "es": "Pipas se bambolea al caminar,"
+    },
+    {
+     "who": "lila",
+     "en": "You are wonderful as you are!",
+     "es": "¡Especial eres, te voy a amar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We all move in our own sweet way,",
+     "es": "Todos nos movemos a nuestra manera,"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing together every day!",
+     "es": "¡Y jugamos juntos sin espera!"
+    },
+    {
+     "who": "narrator",
+     "en": "You can hop, bounce, or waddle too,",
+     "es": "Puedes saltar, rebotar o bambolear,"
+    },
+    {
+     "who": "narrator",
+     "en": "I love playing games with you!",
+     "es": "¡Qué divertido es juntos jugar!"
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! Friends forever!",
+     "es": "¡Cua, cua! ¡Amigos por siempre!",
+     "action": "spin",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "props": [],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Recordémosla juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Who was our new sweet friend today?",
+     "es": "¿Quién fue nuestro nuevo y dulce amigo hoy?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Puddles the friendly duckling!",
+     "es": "¡Pipas, el patito amigable!",
+     "show": {
+      "en": "Puddles",
+      "es": "Pipas",
+      "color": "#FFD700"
+     },
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "How did Puddles walk?",
+     "es": "¿Cómo caminaba Pipas?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "He waddled softly from side to side!",
+     "es": "¡Se bamboleaba suavemente de lado a lado!",
+     "show": {
+      "en": "Waddle",
+      "es": "Bamboleo",
+      "color": "#FF69B4"
+     },
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "How many colorful flowers did they count together?",
+     "es": "¿Cuántas flores de colores contaron juntos?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Five bright flowers!",
+     "es": "¡Cinco flores brillantes!",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#32CD32"
+     },
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Where did they place the flowers to carry them?",
+     "es": "¿Dónde pusieron las flores para llevarlas?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Inside a big green leaf!",
+     "es": "¡Dentro de una gran hoja verde!",
+     "show": {
+      "en": "Big leaf",
+      "es": "Gran hoja",
+      "color": "#228B22"
+     },
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "What sweet present did Puddles give his friends?",
+     "es": "¿Qué dulce regalo les dio Pipas a sus amigos?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "A shiny flower for each of us!",
+     "es": "¡Una flor brillante para cada uno!",
+     "show": {
+      "en": "Flowers",
+      "es": "Flores",
+      "color": "#FF4500"
+     },
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you waddle like a duckling?",
+     "es": "¿Pueden bambolearse como un patito?",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Let's waddle together! Side to side!",
+     "es": "¡Bamboleémonos juntos! ¡De lado a lado!",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Waddle, waddle, waddle! So much fun!",
+     "es": "¡Bamboleo, bamboleo! ¡Qué divertido!",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! You move so well!",
+     "es": "¡Sí! ¡Se mueven súper bien!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Being kind to friends who move or sound different makes everyone feel happy.",
+     "es": "Ser amables con amigos que se mueven o suenan diferente nos hace felices a todos.",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "butterfly",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 0,
+     "anim": "float",
+     "color": "#FFD700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Waddle, hop, and bounce to the beat!",
+     "es": "¡Bamboleense, salten y reboten al ritmo!",
+     "mood": "happy",
+     "action": "bigjump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "action": "wave",
+     "mood": "happy",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep015-zibu-and-the-friendly-duckling"
+}
