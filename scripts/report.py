@@ -57,7 +57,7 @@ def analytics(lang: str) -> dict:
 
 
 out = {}
-for lang in ("es", "en"):
+for lang in ("es", "en", "pt"):
     yt = youtube(lang)
     ch = yt.channels().list(part="snippet,statistics,contentDetails", mine=True).execute()["items"][0]
     uploads = ch["contentDetails"]["relatedPlaylists"]["uploads"]

@@ -23,6 +23,7 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_EN:    ${{ secrets.YT_REFRESH_EN }}
           YT_REFRESH_ES:    ${{ secrets.YT_REFRESH_ES }}
+          YT_REFRESH_PT:    ${{ secrets.YT_REFRESH_PT }}
         run: python scripts/report.py
       - uses: actions/upload-artifact@v4
         with:
