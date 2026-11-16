@@ -1,0 +1,1431 @@
+{
+ "slug": "zibu-takes-care-of-his-ball",
+ "title": {
+  "en": "Zibu Takes Care of His Ball",
+  "es": "Zibu cuida su pelota"
+ },
+ "lesson": {
+  "en": "We must take care of our things so they stay safe and clean.",
+  "es": "Debemos cuidar nuestras cosas para que se mantengan seguras y limpias."
+ },
+ "guest": {
+  "species": "puppy",
+  "name": {
+   "en": "Toby",
+   "es": "Toby"
+  }
+ },
+ "thumb": {
+  "en": [
+   "SAVE THE BALL!",
+   "PUPPY FUN!"
+  ],
+  "es": [
+   "CUIDA TUS COSAS",
+   "¡DIVERSIÓN!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Takes Care of His Ball 🐶 Learn Animal Sounds! | Zibu and Friends",
+   "description": "Zibu receives a bright red ball to play with his friends! 🐶\nToby the puppy joins in and makes cute sounds like WOOF! 🐶\nWhen Zibu leaves his ball behind, it rolls away down the hill.\nJoin Zibu, Lila, and Toby as they learn to take care of their toys!\nKids will learn animal sounds and how to care for their things. ❤️\n#ZibuAndFriends #ToddlerLearning #KidsCartoons #AnimalSounds #LearnToCare",
+   "tags": [
+    "zibu and friends",
+    "toddler cartoons",
+    "learn animal sounds",
+    "taking care of things",
+    "puppy cartoon",
+    "shows for 2 year olds",
+    "shows for 3 year olds",
+    "preschool learning",
+    "educational cartoon",
+    "safe kids show",
+    "zibu puppy",
+    "woof sound"
+   ]
+  },
+  "es": {
+   "title": "Zibu cuida su pelota 🐶 ¡Aprende sonidos de animales! | Zibu y sus amigos",
+   "description": "¡Zibu recibe una linda pelota roja para jugar! 🐶\nToby el perrito llega a jugar y hace divertidos sonidos como ¡GUAU! 🐶\nCuando Zibu olvida su pelota, ¡esta rueda por la colina!\nAcompaña a Zibu, Lila y Toby a aprender a cuidar sus juguetes.\n¡Los niños aprenderán sonidos de animales y a cuidar sus cosas! ❤️\n#ZibuYSusAmigos #CaricaturasParaNiños #SonidosDeAnimales #VideosEducativos #NiñosPequeños",
+   "tags": [
+    "zibu y sus amigos",
+    "caricaturas para niños",
+    "aprender sonidos de animales",
+    "cuidar los juguetes",
+    "perrito animado",
+    "videos para niños de 2 años",
+    "videos para niños de 3 años",
+    "educacion preescolar",
+    "dibujos animados infantiles",
+    "zibu perrito",
+    "guau guau"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! The red ball is rolling away!",
+     "es": "¡Oh no! ¡La pelota roja se rueda!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us find it?",
+     "es": "Amigo, ¿nos ayudas a buscarla?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go look for it together!",
+     "es": "¡Vamos a encontrarla juntos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.3,
+     "y": 0.75,
+     "anim": "bounce"
+    },
+    {
+     "what": "leaf",
+     "x": 0.85,
+     "y": 0.8
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Takes Care of His Ball!",
+     "es": "¡Zibu cuida su pelota!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "a-special-gift",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.38,
+     "y": 0.7,
+     "at": 0,
+     "until": 4,
+     "color": "#ff5555"
+    },
+    {
+     "what": "ball",
+     "x": 0.38,
+     "y": 0.7,
+     "at": 4,
+     "color": "#ff0000"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Inside their bedroom, Zibu and Lila found a big surprise box!",
+     "es": "¡En su habitación, Zibu y Lila encontraron una gran caja de sorpresa!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Lila! A gift box! What could be inside?",
+     "es": "¡Mira, Lila! ¡Una caja de regalo! ¿Qué habrá adentro?",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Open it, Zibu! Open it!",
+     "es": "¡Ábrela, Zibu! ¡Ábrela!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu carefully opened the box...",
+     "es": "Zibu abrió la caja con mucho cuidado...",
+     "pause": 0.5
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! A bright red ball! I love it!",
+     "es": "¡Guau! ¡Una pelota roja brillante! ¡Me encanta!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "It's so shiny and red! What a great toy!",
+     "es": "¡Es tan brillante y roja! ¡Qué gran juguete!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, a sweet little puppy walked into the room.",
+     "es": "De repente, un perrito muy lindo entró en la habitación.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.78
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Oh! Look, Zibu! It's Toby!",
+     "es": "¡Oh! ¡Mira, Zibu! ¡Es Toby!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, Toby! Look at my new red ball!",
+     "es": "¡Hola, Toby! ¡Mira mi nueva pelota roja!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Arf! Arf!",
+     "es": "¡Arf! ¡Arf!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby wagged his tail happily. He liked the ball too!",
+     "es": "Toby movió la cola feliz. ¡A él también le gustó la pelota!"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go outside and play with it!",
+     "es": "¡Vamos afuera a jugar con ella!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! To the garden!",
+     "es": "¡Sí! ¡Al jardín!",
+     "mood": "happy",
+     "action": "spin"
+    }
+   ]
+  },
+  {
+   "id": "learning-puppy-sounds",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.2,
+     "y": 0.75,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#ff0000"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Out in the sunny garden, Zibu, Lila, and Toby played together.",
+     "es": "Afuera en el jardín soleado, Zibu, Lila y Toby jugaban juntos."
+    },
+    {
+     "who": "zibu",
+     "en": "Catch the ball, Lila! Here it goes!",
+     "es": "¡Atrapa la pelota, Lila! ¡Ahí va!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.25
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "I got it! Wheee!",
+     "es": "¡La tengo! ¡Siii!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila gently rolled the red ball across the grass.",
+     "es": "Lila rodó suavemente la pelota roja por el pasto."
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "WOOF!",
+      "es": "¡GUAU!",
+      "color": "#ffaa00"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Ha ha! Listen to Toby! He said WOOF!",
+     "es": "¡Ja, ja! ¡Escuchen a Toby! ¡Dijo GUAU!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Toby loves the red ball!",
+     "es": "¡A Toby le encanta la pelota roja!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yip! Yip!",
+     "es": "¡Yip! ¡Yip!",
+     "mood": "happy",
+     "action": "bigjump",
+     "show": {
+      "en": "YIP!",
+      "es": "¡YIP!",
+      "color": "#ffaa00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Toby made happy puppy sounds as he chased the ball.",
+     "es": "Toby hacía sonidos felices de perrito mientras perseguía la pelota."
+    },
+    {
+     "who": "zibu",
+     "en": "Good boy, Toby! You're a fast puppy!",
+     "es": "¡Buen chico, Toby! ¡Eres un perrito muy rápido!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Rolling the ball back and forth is so fun!",
+     "es": "¡Rodar la pelota de un lado a otro es muy divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! I will take very good care of my ball!",
+     "es": "¡Sí! ¡Voy a cuidar muy bien mi pelota!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone was having a wonderful time playing together.",
+     "es": "Todos la estaban pasando de maravilla jugando juntos.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "distracted-on-the-hill",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.25,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "butterfly",
+     "x": 0.6,
+     "y": 0.3,
+     "at": 5,
+     "until": 10,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Toby walked up the high green hill.",
+     "es": "Zibu, Lila y Toby subieron a la colina verde y alta."
+    },
+    {
+     "who": "zibu",
+     "en": "Up, up, up! What a nice hill!",
+     "es": "¡Arriba, arriba, arriba! ¡Qué bonita colina!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "It is very high, Zibu! Hold onto your ball!",
+     "es": "¡Está muy alta, Zibu! ¡Sujeta tu pelota!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "WOOF!",
+      "es": "¡GUAU!",
+      "color": "#FF9900"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Don't worry, Lila! My ball is safe with me!",
+     "es": "¡No te preocupes, Lila! ¡Mi pelota está segura conmigo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Just then, a beautiful butterfly flew into the air.",
+     "es": "En ese momento, una hermosa mariposa voló por el aire."
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! A pretty butterfly!",
+     "es": "¡Mira, Zibu! ¡Una linda mariposa!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! Look at its shiny wings!",
+     "es": "¡Vaya! ¡Mira sus alas brillantes!",
+     "mood": "surprised",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu set his ball down on the grass to watch it.",
+     "es": "Zibu puso su pelota en el pasto para verla."
+    },
+    {
+     "who": "zibu",
+     "en": "Flutter, flutter! Goodbye, butterfly!",
+     "es": "¡Vuela, vuela! ¡Adiós, mariposa!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Yip! Yip!",
+     "es": "¡Yap! ¡Yap!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu... you are not holding your ball!",
+     "es": "Zibu... ¡no estás sujetando tu pelota!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Oh no! Zibu forgot to hold his toy on the sloping hill!",
+     "es": "¡Oh, no! ¡Zibu olvidó sujetar su juguete en la colina!",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "the-ball-rolls-down",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.3,
+     "y": 0.75,
+     "at": 0,
+     "until": 8,
+     "anim": "bounce"
+    },
+    {
+     "what": "leaf",
+     "x": 0.85,
+     "y": 0.8,
+     "at": 7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "A gentle breeze began to blow across the hill.",
+     "es": "Una brisa suave comenzó a soplar por la colina."
+    },
+    {
+     "who": "lila",
+     "en": "Uh oh! The wind is blowing!",
+     "es": "¡Uy! ¡El viento está soplando!",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "And the red ball started to roll down the slope!",
+     "es": "¡Y la pelota roja comenzó a rodar colina abajo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh no! My ball is rolling away!",
+     "es": "¡Oh, no! ¡Mi pelota se está rodando!",
+     "mood": "scared",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "scared",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Quick! Let's catch it!",
+     "es": "¡Rápido! ¡Vamos a atraparla!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "The ball rolled faster and faster down the grassy hill!",
+     "es": "¡La pelota rodó cada vez más rápido por la colina de pasto!"
+    },
+    {
+     "who": "zibu",
+     "en": "Wait for me! Stop, ball, stop!",
+     "es": "¡Espérame! ¡Detente, pelota, detente!",
+     "mood": "sad",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.15
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Swish! The ball rolled straight into a big pile of leaves!",
+     "es": "¡Zás! ¡La pelota rodó directo a una gran pila de hojas!"
+    },
+    {
+     "who": "lila",
+     "en": "Oh dear! Where did it go?",
+     "es": "¡Ay, no! ¿A dónde se fue?",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Arf... arf?",
+     "es": "¿Guau... guau?",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... I forgot to take care of my ball.",
+     "es": "Oh... olvidé cuidar mi pelota.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu felt sad. He realized he should have held onto his toy.",
+     "es": "Zibu se sintió triste. Se dio cuenta de que debió sujetar su juguete.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "searching-the-leaves",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.45,
+     "y": 0.7,
+     "at": 3
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Toby went down the hill to look for the ball.",
+     "es": "Zibu, Lila y Toby bajaron la colina para buscar la pelota."
+    },
+    {
+     "who": "zibu",
+     "en": "Where is my red ball? I can't see it!",
+     "es": "¿Dónde está mi pelota roja? ¡No la veo!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Don't worry, Zibu! We can search together.",
+     "es": "¡No te preocupes, Zibu! Podemos buscar juntos.",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila picked up a big leaf to move the dry grass.",
+     "es": "Lila tomó una hoja grande para mover la hierba seca."
+    },
+    {
+     "who": "lila",
+     "en": "Look! I can sweep the leaves with this!",
+     "es": "¡Miren! ¡Puedo mover las hojas con esto!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.45
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Let me help too! Move... move... move!",
+     "es": "¡Yo también ayudo! ¡Mover... mover... mover!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "They pushed away the grass, but the red ball was not there.",
+     "es": "Empujaron la hierba, pero la pelota roja no estaba allí."
+    },
+    {
+     "who": "zibu",
+     "en": "Oh no... where could it be?",
+     "es": "Oh, no... ¿dónde podrá estar?",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "guest",
+     "en": "Sniff... sniff... arf?",
+     "es": "Snif... snif... ¿guau?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Toby used his little nose to sniff all around.",
+     "es": "Toby usó su pequeña nariz para olfatear por todos lados."
+    },
+    {
+     "who": "lila",
+     "en": "Look at Toby! He is sniffing the ground!",
+     "es": "¡Miren a Toby! ¡Está olfateando el suelo!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "SNIFF!",
+      "es": "¡HUELE!",
+      "color": "#4caf50"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Toby ran right over to a big pile of leaves!",
+     "es": "¡Toby corrió directo hacia un gran montón de hojas!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ],
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "toby-saves-the-day",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.75,
+     "y": 0.7,
+     "at": 0,
+     "until": 4
+    },
+    {
+     "what": "ball",
+     "x": 0.75,
+     "y": 0.7,
+     "at": 4,
+     "color": "#ff3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Toby pushed a big green leaf with his nose.",
+     "es": "Toby empujó una gran hoja verde con su nariz."
+    },
+    {
+     "who": "guest",
+     "en": "WOOF! WOOF!",
+     "es": "¡GUAU! ¡GUAU!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "WOOF!",
+      "es": "¡GUAU!",
+      "color": "#ff9800"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! Toby found something!",
+     "es": "¡Mira, Zibu! ¡Toby encontró algo!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Is it my ball?",
+     "es": "¿Es mi pelota?",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "There it was! The red ball was hiding under the leaf!",
+     "es": "¡Ahí estaba! ¡La pelota roja estaba escondida bajo la hoja!"
+    },
+    {
+     "who": "zibu",
+     "en": "My ball! Yay! You found it, Toby!",
+     "es": "¡Mi pelota! ¡Sí! ¡La encontraste, Toby!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "guest",
+     "en": "Arf! Arf!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Oh... but look. It has some dirt on it.",
+     "es": "Oh... pero miren. Tiene un poco de tierra.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "The ball was dirty from rolling in the leaves.",
+     "es": "La pelota estaba sucia por rodar en las hojas."
+    },
+    {
+     "who": "zibu",
+     "en": "That's okay! We can clean it!",
+     "es": "¡No pasa nada! ¡Podemos limpiarla!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu gently wiped the dirt off his ball.",
+     "es": "Zibu limpió suavemente la tierra de su pelota."
+    },
+    {
+     "who": "zibu",
+     "en": "Now it's clean and bright again!",
+     "es": "¡Ahora está limpia y brillante otra vez!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Taking care of our toys keeps them clean!",
+     "es": "¡Cuidar nuestros juguetes los mantiene limpios!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu hugged his clean red ball. He was so happy!",
+     "es": "Zibu abrazó su pelota roja limpia. ¡Estaba muy feliz!",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "putting-toys-away",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.55
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.2,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "ball",
+     "x": 0.32,
+     "y": 0.68,
+     "at": 0,
+     "until": 4
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in their cozy room, Zibu brought his clean red ball.",
+     "es": "De regreso en su acogedora habitación, Zibu trajo su pelota roja limpia."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! Here is the box for my ball!",
+     "es": "¡Miren! ¡Aquí está la caja para mi pelota!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "WOOF!",
+      "es": "¡GUAU!"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "That is the perfect place for your ball, Zibu!",
+     "es": "¡Ese es el lugar perfecto para tu pelota, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu gently put the ball inside the safe box.",
+     "es": "Zibu puso suavemente la pelota dentro de la caja segura.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.26
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Now you are safe and clean, ball!",
+     "es": "¡Ahora estás segura y limpia, pelota!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "It won't get lost or dirty in there!",
+     "es": "¡No se perderá ni se ensuciará ahí!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Yip! Yip!",
+     "es": "¡Yap! ¡Yap!",
+     "mood": "happy",
+     "show": {
+      "en": "YIP!",
+      "es": "¡YAP!"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you for helping us today, Toby!",
+     "es": "¡Gracias por ayudarnos hoy, Toby!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Woof!",
+     "es": "¡Guau!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Taking care of our toys is so good!",
+     "es": "¡Cuidar nuestros juguetes es muy bueno!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Now it is ready for next time!",
+     "es": "¡Sí! ¡Ahora está lista para la próxima vez!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Taking care of our things keeps them safe and clean.",
+     "es": "Cuidar nuestras cosas las mantiene seguras y limpias."
+    },
+    {
+     "who": "narrator",
+     "en": "Good job, Zibu! Goodbye, friends!",
+     "es": "¡Buen trabajo, Zibu! ¡Adiós, amigos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF2222"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Take care of your toys every day!",
+     "es": "¡Cuida tus juguetes sin parar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Keep them safe so we can play!",
+     "es": "¡Mantenlos limpios para jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Put them back into their box!",
+     "es": "¡En su cajita ponlos hoy!"
+    },
+    {
+     "who": "narrator",
+     "en": "Clean and safe for everyone!",
+     "es": "¡Qué gran cuidado les doy yo!"
+    },
+    {
+     "who": "zibu",
+     "en": "I keep my red ball safe and bright!",
+     "es": "¡Mi pelota roja voy a cuidar!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "We wipe the dirt and make it right!",
+     "es": "¡Toda la tierra vamos a limpiar!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Put it away when play is done!",
+     "es": "¡Al terminar, a guardar con amor!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Taking care of things is fun!",
+     "es": "¡Cuidar mis cosas es lo mejor!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Take care of your toys every day!",
+     "es": "¡Cuida tus juguetes sin parar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Keep them safe so we can play!",
+     "es": "¡Mantenlos limpios para jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Put them back into their box!",
+     "es": "¡En su cajita ponlos hoy!"
+    },
+    {
+     "who": "narrator",
+     "en": "Clean and safe for everyone!",
+     "es": "¡Qué gran cuidado les doy yo!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Take care of your toys every day!",
+     "es": "¡Cuida tus juguetes sin parar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Keep them safe so we can play!",
+     "es": "¡Mantenlos limpios para jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Put them back into their box!",
+     "es": "¡En su cajita ponlos hoy!"
+    },
+    {
+     "who": "narrator",
+     "en": "Clean and safe for everyone!",
+     "es": "¡Qué gran cuidado les doy yo!"
+    },
+    {
+     "who": "zibu",
+     "en": "I keep my red ball safe and bright!",
+     "es": "¡Mi pelota roja voy a cuidar!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "We wipe the dirt and make it right!",
+     "es": "¡Toda la tierra vamos a limpiar!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Put it away when play is done!",
+     "es": "¡Al terminar, a guardar con amor!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Taking care of things is fun!",
+     "es": "¡Cuidar mis cosas es lo mejor!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Take care of your toys every day!",
+     "es": "¡Cuida tus juguetes sin parar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Keep them safe so we can play!",
+     "es": "¡Mantenlos limpios para jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Put them back into their box!",
+     "es": "¡En su cajita ponlos hoy!"
+    },
+    {
+     "who": "narrator",
+     "en": "Clean and safe for everyone!",
+     "es": "¡Qué gran cuidado les doy yo!"
+    },
+    {
+     "who": "guest",
+     "en": "Woof! Woof! Arf!",
+     "es": "¡Gua! ¡Gua! ¡Arf!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "What gift did Zibu find inside the box?",
+     "es": "¿Qué regalo encontró Zibu dentro de la caja?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A red ball!",
+     "es": "¡Una pelota roja!",
+     "show": {
+      "en": "Red Ball",
+      "es": "Pelota roja",
+      "color": "#FF2222"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Who was Zibu's puppy friend?",
+     "es": "¿Quién era el amigo perrito de Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Toby!",
+     "es": "¡Toby!",
+     "show": {
+      "en": "Toby",
+      "es": "Toby",
+      "color": "#FFA500"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Where did the red ball roll down?",
+     "es": "¿Por dónde rodó la pelota roja?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Down the grassy hill!",
+     "es": "¡Por la colina!",
+     "show": {
+      "en": "Hill",
+      "es": "Colina",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Who found the ball under a leaf?",
+     "es": "¿Quién encontró la pelota debajo de una hoja?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Toby the puppy!",
+     "es": "¡Toby el perrito!",
+     "show": {
+      "en": "Toby",
+      "es": "Toby",
+      "color": "#FFA500"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Where did Zibu put his ball at the end?",
+     "es": "¿Dónde puso Zibu su pelota al final?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "In its safe box!",
+     "es": "¡En su caja segura!",
+     "show": {
+      "en": "Safe Box",
+      "es": "Caja segura",
+      "color": "#8B4513"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let me clean my imaginary ball with you!",
+     "es": "¡Limpio mi pelota imaginaria con ustedes!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Wipe, wipe, wipe! Now it's clean!",
+     "es": "¡Limpia, limpia, limpia! ¡Ya está limpia!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Now let's put it safely in the box!",
+     "es": "¡Ahora a guardarla bien en la caja!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Good job taking care of things!",
+     "es": "¡Súper! ¡Qué bien cuidamos todo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "We must take care of our things so they stay safe and clean.",
+     "es": "Debemos cuidar nuestras cosas para que se mantengan seguras y limpias."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0
+    },
+    {
+     "who": "lila",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Move your paws like puppy Toby!",
+     "es": "¡Muevan las patitas como el perrito Toby!",
+     "mood": "happy",
+     "action": "bigjump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Nos vemos la próxima vez, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep016-zibu-takes-care-of-his-ball"
+}
