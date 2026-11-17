@@ -1,0 +1,1457 @@
+{
+ "slug": "zibu-shares-apples",
+ "title": {
+  "en": "Zibu Shares with Barnaby",
+  "es": "Zibu comparte con Barnaby"
+ },
+ "lesson": {
+  "en": "Sharing with friends makes everyone happy.",
+  "es": "Compartir con los amigos nos hace felices a todos."
+ },
+ "guest": {
+  "species": "piglet",
+  "name": {
+   "en": "Barnaby",
+   "es": "Barnaby"
+  }
+ },
+ "thumb": {
+  "en": [
+   "LET'S SHARE!",
+   "BIG & SMALL"
+  ],
+  "es": [
+   "¡A COMPARTIR!",
+   "GRANDE Y PEQUEÑO"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Shares with Friends! 🍎 Learn Big and Small | Zibu and Friends",
+   "description": "Zibu and Lila meet Barnaby the piglet in the sunny garden! 🐷🍎\nThey find sweet apples to eat, but there are not enough for everyone.\nWatch how Zibu learns that sharing makes playing together so much fun!\nChildren also learn opposite words: BIG and SMALL! ✨\nPerfect learning cartoon for toddlers and preschoolers aged 2 to 6.\n#ZibuAndFriends #SharingIsCaring #ToddlerLearning #BigAndSmall #KidsCartoons",
+   "tags": [
+    "zibu and friends",
+    "toddler cartoon",
+    "sharing for kids",
+    "learn big and small",
+    "preschool learning",
+    "educational video",
+    "piglet cartoon",
+    "opposites for kids",
+    "social emotional learning",
+    "kindness for kids",
+    "cartoons for toddlers",
+    "bedtime story"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu comparte con sus amigos! 🍎 Grande y pequeño | Zibu y sus Amigos",
+   "description": "¡Zibu y Lila conocen a Barnaby el cerdito en el jardín soleado! 🐷🍎\nEncuentran ricas manzanas, pero no alcanzan para todos.\n¡Descubre cómo Zibu aprende que compartir hace los juegos más divertidos!\nLos niños también aprenden los opuestos: ¡GRANDE y PEQUEÑO! ✨\nDibujos animados ideales para niños de 2 a 6 años.\n#ZibuYSusAmigos #AprenderACompartir #DibujosParaNiños #GrandeYPequeño #ValoresParaNiños",
+   "tags": [
+    "zibu y sus amigos",
+    "aprender a compartir",
+    "grande y pequeño",
+    "opuestos para niños",
+    "dibujos para niños",
+    "valores para niños",
+    "educativo preescolar",
+    "caricaturas infantiles",
+    "cerdito animado",
+    "videos para preescolar",
+    "videos educativos",
+    "lecciones para niños"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh look! Barnaby has a huge apple!",
+     "es": "¡Mira! ¡Barnaby tiene una manzana enorme!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us share it?",
+     "es": "¿Nos ayudas a compartirla?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Come join us right now!",
+     "es": "¡Ven a jugar con nosotros!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.72,
+     "y": 0.75
+    },
+    {
+     "what": "cookie",
+     "x": 0.35,
+     "y": 0.65
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu Shares with Barnaby!",
+     "es": "¡Zibu comparte con Barnaby!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "sunny-garden-play",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.35,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright, sunny day in the garden.",
+     "es": "Era un día brillante y soleado en el jardín."
+    },
+    {
+     "who": "lila",
+     "en": "Look at this pretty yellow flower, Zibu!",
+     "es": "¡Mira esta linda flor amarilla, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "It smells so sweet! Sniff... sniff!",
+     "es": "¡Huele tan dulce! ¡Snif... snif!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, little footsteps came running along!",
+     "es": "De repente, ¡se escucharon unos pasitos corriendo!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oink, oink! Hello, friends!",
+     "es": "¡Oink, oink! ¡Hola, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Oh! Look, Zibu! A cute little piglet!",
+     "es": "¡Oh! ¡Mira, Zibu! ¡Un cerdito muy lindo!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello! I am Zibu, and this is Lila!",
+     "es": "¡Hola! ¡Yo soy Zibu, y ella es Lila!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "I am Barnaby! Oink! Look at my tail!",
+     "es": "¡Soy Barnaby! ¡Oink! ¡Miren mi colita!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby wiggled his curly tail happily.",
+     "es": "Barnaby movió su colita enroscada muy feliz."
+    },
+    {
+     "who": "lila",
+     "en": "Tee-hee! Your tail is so curly, Barnaby!",
+     "es": "¡Ji, ji! ¡Tu colita es tan rizada, Barnaby!",
+     "mood": "laugh"
+    },
+    {
+     "who": "zibu",
+     "en": "Do you want to play with our flower?",
+     "es": "¿Quieres jugar con nuestra flor?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes, please! Playing together is so fun!",
+     "es": "¡Sí, por favor! ¡Jugar juntos es muy divertido!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "The three friends laughed and played gently in the garden.",
+     "es": "Los tres amigos rieron y jugaron con cuidado en el jardín.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "hungry-friends",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.85,
+     "y": 0.75,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "After playing, a funny sound was heard. Grumble...",
+     "es": "Después de jugar, se escuchó un ruido chistoso. Gruñ..."
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! My tummy is rumbling!",
+     "es": "¡Oh! ¡Me suena la pancita!",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Mine too! I am very hungry now.",
+     "es": "¡A mí también! Ya tengo mucha hambre.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Oink! My tummy wants a sweet snack too!",
+     "es": "¡Oink! ¡Mi pancita también quiere un bocadillo dulce!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Then, Barnaby looked under a leafy green bush.",
+     "es": "Entonces, Barnaby miró debajo de un arbusto verde."
+    },
+    {
+     "who": "guest",
+     "en": "Look! An apple! A really, really big apple!",
+     "es": "¡Miren! ¡Una manzana! ¡Una manzana muy, muy grande!",
+     "mood": "surprised",
+     "action": "jump",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.82
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby rushed forward and hugged the big apple tightly!",
+     "es": "¡Barnaby corrió hacia adelante y abrazó la gran manzana con fuerza!"
+    },
+    {
+     "who": "guest",
+     "en": "It is mine! All mine! Oink!",
+     "es": "¡Es mía! ¡Toda mía! ¡Oink!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Barnaby... can we share a little bite?",
+     "es": "Barnaby... ¿podemos compartir un mordisquito?",
+     "mood": "sad",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "No, no, no! I want the whole apple!",
+     "es": "¡No, no, no! ¡Quiero toda la manzana!",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Oh... my tummy is still so hungry.",
+     "es": "Oh... mi pancita todavía tiene mucha hambre.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Barnaby, friends are hungry too. Sharing is nice!",
+     "es": "Barnaby, los amigos también tienen hambre. ¡Compartir es lindo!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.38
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "But it is so big! I want it all for me!",
+     "es": "¡Pero es tan grande! ¡La quiero toda para mí!",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Poor Lila felt sad, but Barnaby did not want to share.",
+     "es": "La pobre Lila se sentía triste, pero Barnaby no quería compartir.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "first-attempt-cookie",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.72,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "cookie",
+     "x": 0.35,
+     "y": 0.65,
+     "at": 4
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Up the green hill they walked.",
+     "es": "Subieron por la colina verde."
+    },
+    {
+     "who": "guest",
+     "en": "Oink! My apple is so sweet and heavy!",
+     "es": "¡Oink! ¡Mi manzana es tan dulce y pesada!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "My tummy is still making funny sounds...",
+     "es": "Mi pancita todavía hace ruidos graciosos...",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Wait! Look what I found in my pocket!",
+     "es": "¡Esperen! ¡Miren lo que encontré en mi bolsillo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu had a little cookie to share!",
+     "es": "¡Zibu tenía una galletita para compartir!"
+    },
+    {
+     "who": "zibu",
+     "en": "Barnaby, do you want this yummy cookie?",
+     "es": "Barnaby, ¿quieres esta rica galletita?",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "A cookie? Hmm...",
+     "es": "¿Una galletita? Mmm...",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "We can trade! A bite of cookie, a bite of apple!",
+     "es": "¡Podemos cambiar! ¡Un mordisco de galleta, un mordisco de manzana!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "No, no, no!",
+     "es": "¡No, no, no!",
+     "action": "shake"
+    },
+    {
+     "who": "guest",
+     "en": "I want my whole big apple! Just for me!",
+     "es": "¡Quiero toda mi manzana grande! ¡Solo para mí!"
+    },
+    {
+     "who": "lila",
+     "en": "Oh... it's okay, Barnaby.",
+     "es": "Oh... está bien, Barnaby.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby held his apple very tightly.",
+     "es": "Barnaby abrazaba su manzana con mucha fuerza."
+    },
+    {
+     "who": "zibu",
+     "en": "How can we all eat snack together?",
+     "es": "¿Cómo podremos comer la merienda todos juntos?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu wondered how to make his friends happy.",
+     "es": "Zibu se preguntaba cómo hacer felices a sus amigos.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "learning-big-and-small",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "lila",
+     "x": 0.2
+    },
+    {
+     "who": "zibu",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.75,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "leaf",
+     "x": 0.2,
+     "y": 0.78,
+     "at": 0,
+     "until": 2
+    },
+    {
+     "what": "apple",
+     "x": 0.2,
+     "y": 0.78,
+     "at": 2
+    }
+   ],
+   "lines": [
+    {
+     "who": "lila",
+     "en": "Look over here! Under this green leaf!",
+     "es": "¡Miren aquí! ¡Debajo de esta hoja verde!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila peeked under a soft green leaf.",
+     "es": "Lila se asomó debajo de una suave hoja verde."
+    },
+    {
+     "who": "lila",
+     "en": "An apple! A tiny, red apple!",
+     "es": "¡Una manzana! ¡Una pequeña manzana roja!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay, Lila! You found one too!",
+     "es": "¡Bien, Lila! ¡Tú también encontraste una!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oink! But mine is so much bigger!",
+     "es": "¡Oink! ¡Pero la mía es mucho más grande!",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "That was true! Barnaby had a very big apple.",
+     "es": "¡Eso era verdad! Barnaby tenía una manzana muy grande."
+    },
+    {
+     "who": "zibu",
+     "en": "Barnaby's apple is BIG!",
+     "es": "¡La manzana de Barnaby es GRANDE!",
+     "show": {
+      "en": "BIG",
+      "es": "GRANDE",
+      "color": "#FF5722"
+     },
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "And my little apple is SMALL!",
+     "es": "¡Y mi manzanita es PEQUEÑA!",
+     "show": {
+      "en": "SMALL",
+      "es": "PEQUEÑA",
+      "color": "#4CAF50"
+     },
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Big and small! Two red apples on the hill!",
+     "es": "¡Grande y pequeña! ¡Dos manzanas rojas en la colina!"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you say it with me? Big!",
+     "es": "¿Pueden decirlo conmigo? ¡Grande!",
+     "show": {
+      "en": "BIG",
+      "es": "GRANDE"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "And small!",
+     "es": "¡Y pequeña!",
+     "show": {
+      "en": "SMALL",
+      "es": "PEQUEÑA"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Mine is big... but Lila still looks hungry.",
+     "es": "La mía es grande... pero Lila todavía parece tener hambre.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby looked at his big apple, and then at Lila.",
+     "es": "Barnaby miró su manzana grande, y luego a Lila.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "sharing-together",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.22
+    },
+    {
+     "who": "lila",
+     "x": 0.42
+    },
+    {
+     "who": "guest",
+     "x": 0.78
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.52,
+     "y": 0.75,
+     "at": 6
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "In the cool, green forest, the friends sat down to rest.",
+     "es": "En el bosque fresco y verde, los amigos se sentaron a descansar."
+    },
+    {
+     "who": "lila",
+     "en": "Mmm, my little apple looks yummy... but it is very small.",
+     "es": "Mmm, mi manzanita se ve rica... pero es muy pequeña.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Lila? Are you still hungry?",
+     "es": "¿Lila? ¿Todavía tienes hambre?",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "A little bit... rumble, rumble goes my tummy!",
+     "es": "Un poquito... ¡ruge, ruge mi pancita!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby looked at his big, juicy apple.",
+     "es": "Barnaby miró su manzana grande y jugosa."
+    },
+    {
+     "who": "guest",
+     "en": "Wait! I know what to do!",
+     "es": "¡Esperen! ¡Ya sé qué hacer!",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby rolled his big red apple right into the middle!",
+     "es": "¡Barnaby rodó su gran manzana roja justo al medio!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.68
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Look! We can share it together!",
+     "es": "¡Miren! ¡Podemos compartirla juntos!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! You want to share, Barnaby?",
+     "es": "¡Bieeen! ¿Quieres compartir, Barnaby?",
+     "action": "bigjump",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! Sharing is much more fun!",
+     "es": "¡Sí! ¡Compartir es mucho más divertido!",
+     "mood": "laugh"
+    },
+    {
+     "who": "lila",
+     "en": "Oh, thank you, Barnaby! You are so kind!",
+     "es": "¡Ay, gracias, Barnaby! ¡Eres muy bueno!",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila placed her small apple in the middle too.",
+     "es": "Lila puso su manzana pequeña en el centro también."
+    },
+    {
+     "who": "zibu",
+     "en": "Yum, yum, yum! Sweet, crunchy apples for everyone!",
+     "es": "¡Ñam, ñam, ñam! ¡Manzanas ricas y crujientes para todos!",
+     "action": "spin",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Oink, oink! The best snack ever!",
+     "es": "¡Oink, oink! ¡El mejor refrigerio del mundo!",
+     "action": "jump",
+     "mood": "laugh"
+    },
+    {
+     "who": "narrator",
+     "en": "Sharing made the sweet apples taste even better!",
+     "es": "¡Compartir hizo que las dulces manzanas supieran aún mejor!",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "lesson-of-sharing",
+   "bg": "forest",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.48
+    },
+    {
+     "who": "guest",
+     "x": 0.72
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.5,
+     "y": 0.35,
+     "at": 1,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Golden sunlight filtered softly through the tall trees.",
+     "es": "La luz dorada del sol brillaba suavemente entre los árboles altos."
+    },
+    {
+     "who": "lila",
+     "en": "Look at this big, golden leaf floating down!",
+     "es": "¡Miren esta hoja dorada y grande flotando hacia abajo!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Whoosh! Catch it, Barnaby!",
+     "es": "¡Fiuuu! ¡Atrápala, Barnaby!",
+     "action": "jump",
+     "mood": "laugh"
+    },
+    {
+     "who": "guest",
+     "en": "Wheee! I caught it! Look at it spin!",
+     "es": "¡Yuuupi! ¡La tengo! ¡Miren cómo gira!",
+     "action": "spin",
+     "mood": "laugh"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby did not keep the leaf to himself. He gently tossed it to Lila!",
+     "es": "Barnaby no se quedó con la hoja. ¡Se la lanzó suavemente a Lila!"
+    },
+    {
+     "who": "guest",
+     "en": "Here you go, Lila! Your turn!",
+     "es": "¡Aquí tienes, Lila! ¡Tu turno!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Wheee! Thank you, Barnaby!",
+     "es": "¡Yuuupi! ¡Gracias, Barnaby!",
+     "action": "bigjump",
+     "mood": "laugh"
+    },
+    {
+     "who": "zibu",
+     "en": "Playing together is the best game ever!",
+     "es": "¡Jugar juntos es el mejor juego del mundo!",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "When friends share, everyone has so much fun.",
+     "es": "Cuando los amigos comparten, todos se divierten mucho."
+    },
+    {
+     "who": "guest",
+     "en": "At first, I wanted everything for me... but sharing feels wonderful!",
+     "es": "Al principio quería todo para mí... ¡pero compartir se siente maravilloso!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "It gives your heart a warm, happy hug!",
+     "es": "¡Le da al corazón un abrazo calientito y feliz!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Big group hug!",
+     "es": "¡Gran abrazo grupal!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.4
+      },
+      {
+       "who": "guest",
+       "to": 0.58
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oink! Hugs for my wonderful friends!",
+     "es": "¡Oink! ¡Abrazos para mis maravillosos amigos!",
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The forest was full of love, laughter, and warm smiles.",
+     "es": "El bosque se llenó de amor, risas y cálidas sonrisas.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "peaceful-goodbye",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.72
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.75,
+     "y": 0.65,
+     "at": 3,
+     "anim": "bounce",
+     "color": "#ff69b4"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the quiet garden, the sunset glowed warm and bright.",
+     "es": "De vuelta en el tranquilo jardín, el atardecer brillaba cálido y hermoso."
+    },
+    {
+     "who": "guest",
+     "en": "Oink! My tummy is so full and happy!",
+     "es": "¡Oink! ¡Mi pancita está tan llena y contenta!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Mine too! Sharing made our snack so delicious.",
+     "es": "¡La mía también! Compartir hizo nuestra merienda deliciosa.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Barnaby picked up a lovely flower from the soft grass.",
+     "es": "Barnaby tomó una linda flor de la suave hierba."
+    },
+    {
+     "who": "guest",
+     "en": "Look! A pretty flower for my new best friends!",
+     "es": "¡Miren! ¡Una flor bonita para mis nuevos mejores amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you, Barnaby! It's so bright and pretty!",
+     "es": "¡Gracias, Barnaby! ¡Es tan brillante y bonita!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "It is time for me to trot home now. Oink!",
+     "es": "Ya es hora de ir trotando a casa. ¡Oink!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.8
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Will you come back to play tomorrow, Barnaby?",
+     "es": "¿Volverás a jugar mañana, Barnaby?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes, yes! We can play and share again!",
+     "es": "¡Sí, sí! ¡Podemos jugar y compartir otra vez!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, Barnaby! See you tomorrow!",
+     "es": "¡Adiós, Barnaby! ¡Hasta mañana!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Goodbye, sweet friend!",
+     "es": "¡Adiós, dulce amigo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Goodbye, Zibu! Goodbye, Lila! Oink oink!",
+     "es": "¡Adiós, Zibu! ¡Adiós, Lila! ¡Oink oink!",
+     "mood": "happy",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.25
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Sharing really does make everyone happy.",
+     "es": "Compartir de verdad nos hace felices a todos.",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.38
+      },
+      {
+       "who": "lila",
+       "to": 0.52
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Yes... the happiest friends in the whole world!",
+     "es": "Sí... ¡los amigos más felices de todo el mundo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "And so, with warm smiles and happy hearts, a wonderful day came to an end.",
+     "es": "Y así, con cálidas sonrisas y corazones felices, un día maravilloso llegó a su fin.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    },
+    {
+     "who": "lila",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.5,
+     "y": 0.65,
+     "at": 0,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Big or small, we share it all!",
+     "es": "¡Grande o pequeño, hay que compartir!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Hear the happy laughter call!",
+     "es": "¡Con risas lindas para sonreír!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Give a bite and share a smile,",
+     "es": "Un bocado das con mucho amor,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "We'll be happy all the while!",
+     "es": "¡Y todo tiene un gran sabor!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "An apple big, an apple sweet,",
+     "es": "Una manzana dulce y genial,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Sharing is a tasty treat!",
+     "es": "¡Compartir es algo especial!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "When we give, our hearts feel light,",
+     "es": "Si compartimos de corazón,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Everything is warm and bright!",
+     "es": "¡Todo se llena de emoción!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Big or small, we share it all!",
+     "es": "¡Grande o pequeño, hay que compartir!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Hear the happy laughter call!",
+     "es": "¡Con risas lindas para sonreír!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Give a bite and share a smile,",
+     "es": "Un bocado das con mucho amor,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "We'll be happy all the while!",
+     "es": "¡Y todo tiene un gran sabor!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Big or small, we share it all!",
+     "es": "¡Grande o pequeño, hay que compartir!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Hear the happy laughter call!",
+     "es": "¡Con risas lindas para sonreír!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Give a bite and share a smile,",
+     "es": "Un bocado das con mucho amor,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "We'll be happy all the while!",
+     "es": "¡Y todo tiene un gran sabor!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "An apple big, an apple sweet,",
+     "es": "Una manzana dulce y genial,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Sharing is a tasty treat!",
+     "es": "¡Compartir es algo especial!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "When we give, our hearts feel light,",
+     "es": "Si compartimos de corazón,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Everything is warm and bright!",
+     "es": "¡Todo se llena de emoción!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Big or small, we share it all!",
+     "es": "¡Grande o pequeño, hay que compartir!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Hear the happy laughter call!",
+     "es": "¡Con risas lindas para sonreír!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Give a bite and share a smile,",
+     "es": "Un bocado das con mucho amor,",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "We'll be happy all the while!",
+     "es": "¡Y todo tiene un gran sabor!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Oink! Sharing makes me so happy!",
+     "es": "¡Oink! ¡Compartir me hace muy feliz!",
+     "mood": "laugh",
+     "action": "bigjump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.65
+    }
+   ],
+   "props": [],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who came to visit Zibu and Lila in the garden?",
+     "es": "¿Quién vino a visitar a Zibu y Lila al jardín?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Barnaby the little piglet! Oink oink!",
+     "es": "¡Barnaby el cerdito! ¡Oink oink!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "Barnaby",
+      "es": "Barnaby",
+      "color": "#FF8DA1"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Barnaby find under the leafy bush?",
+     "es": "¿Qué encontró Barnaby debajo del arbusto verde?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "A big, big apple!",
+     "es": "¡Una manzana muy grande!",
+     "mood": "happy",
+     "show": {
+      "en": "Big Apple",
+      "es": "Manzana grande",
+      "color": "#E63946"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Did Barnaby want to share the apple at first?",
+     "es": "¿Quería Barnaby compartir la manzana al principio?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "No, he wanted it all for himself!",
+     "es": "¡No, la quería todita para él!",
+     "mood": "surprised",
+     "show": {
+      "en": "No!",
+      "es": "¡No!",
+      "color": "#FFA500"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What kind of apple did Lila find on the hill?",
+     "es": "¿Qué clase de manzana encontró Lila en la colina?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "A tiny, small red apple!",
+     "es": "¡Una manzana roja y pequeña!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "Small",
+      "es": "Pequeña",
+      "color": "#48CAE4"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What made everyone happy in the forest?",
+     "es": "¿Qué hizo felices a todos en el bosque?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Sharing the apples together!",
+     "es": "¡Compartir las manzanas juntos!",
+     "mood": "happy",
+     "action": "bigjump",
+     "show": {
+      "en": "Sharing!",
+      "es": "¡Compartir!",
+      "color": "#52B788"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Now let's wiggle like Barnaby's curly tail!",
+     "es": "¡Ahora movamos la colita enroscada como Barnaby!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Wiggle, wiggle to the left!",
+     "es": "¡Muevan, muevan a la izquierda!",
+     "mood": "laugh",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Wiggle, wiggle to the right!",
+     "es": "¡Muevan, muevan a la derecha!",
+     "mood": "laugh",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Give a big oink-oink jump!",
+     "es": "¡Den un gran salto diciendo oink-oink!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! You are wonderful wigglers!",
+     "es": "¡Sí! ¡Qué bien se mueven todos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Sharing with friends makes everyone happy.",
+     "es": "Compartir con los amigos nos hace felices a todos.",
+     "show": {
+      "en": "Share!",
+      "es": "¡Comparte!",
+      "color": "#FFB703"
+     }
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    },
+    {
+     "who": "lila",
+     "x": 0.75
+    }
+   ],
+   "props": [],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "bigjump",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Oink, oink! Shake your curly tail to the beat!",
+     "es": "¡Oink, oink! ¡Muevan la colita al ritmo de la música!",
+     "mood": "laugh",
+     "action": "shake",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep017-zibu-shares-apples"
+}
