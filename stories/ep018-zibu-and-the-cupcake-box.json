@@ -1,0 +1,1468 @@
+{
+ "slug": "zibu-and-the-cupcake-box",
+ "title": {
+  "en": "Zibu and the Cupcake Box",
+  "es": "Zibu y la Caja de Pastelitos"
+ },
+ "lesson": {
+  "en": "Waiting your turn makes sharing fun and fair!",
+  "es": "¡Esperar tu turno hace que compartir sea justo y divertido!"
+ },
+ "guest": {
+  "species": "bear",
+  "name": {
+   "en": "Boris the Bear",
+   "es": "Boris el Oso"
+  }
+ },
+ "thumb": {
+  "en": [
+   "WAIT YOUR TURN!",
+   "CUPCAKE FUN!"
+  ],
+  "es": [
+   "¡ESPERA TU TURNO!",
+   "¡PASTELITOS!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Learns to Wait His Turn! 🧁 Opposites Up & Down for Kids | Zibu and Friends",
+   "description": "Join Zibu, Lila, and Boris the Bear in a sweet new adventure! 🧁 Zibu is so excited for cupcakes that he forgets to wait his turn. Together, they play a game of opposites with UP, DOWN, IN, and OUT to practice patience! Perfect for toddlers aged 2 to 6.\n#ZibuAndFriends #LearnOpposites #PatienceForKids #TakingTurns #PreschoolLearning",
+   "tags": [
+    "zibu and friends",
+    "learn opposites",
+    "up and down for kids",
+    "in and out",
+    "patience for toddlers",
+    "waiting your turn",
+    "taking turns",
+    "cartoon for kids",
+    "educational videos for toddlers",
+    "preschool learning",
+    "boris the bear",
+    "cupcake story"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu aprende a esperar su turno! 🧁 Opuestos Arriba y Abajo | Zibu y sus amigos",
+   "description": "¡Acompaña a Zibu, Lila y Boris el Oso en una dulce aventura! 🧁 Zibu está tan emocionado por los pastelitos que olvida esperar su turno. Juntos jugarán con los opuestos ARRIBA, ABAJO, ADENTRO y AFUERA para aprender paciencia. 🎈 Ideal para niños de 2 a 6 años.\n#ZibuYSusAmigos #AprendeOpuestos #PacienciaParaNinos #EsperarTurno #CaricaturasInfantiles",
+   "tags": [
+    "zibu y sus amigos",
+    "aprender opuestos",
+    "arriba y abajo",
+    "adentro y afuera",
+    "paciencia para ninos",
+    "esperar el turno",
+    "videos educativos",
+    "caricaturas para ninos",
+    "boris el oso",
+    "educacion preescolar",
+    "historias infantiles",
+    "pastelitos"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Look! Boris has a giant gift box!",
+     "es": "¡Mira! ¡Boris tiene una gran caja!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Zibu wants to grab it right now!",
+     "es": "¡Zibu quiere tomarla ya mismo!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help Zibu wait?",
+     "es": "Amigo, ¿ayudas a Zibu a esperar?",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.7,
+     "y": 0.6,
+     "color": "#FF5722"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Cupcake Box!",
+     "es": "¡Zibu y la Caja de Pastelitos!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "boris-arrives-with-gift",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.7,
+     "y": 0.6,
+     "at": 3,
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a beautiful, sunny day in the garden.",
+     "es": "Era un día hermoso y soleado en el jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "I love playing outside, Lila!",
+     "es": "¡Me encanta jugar afuera, Lila!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Me too, Zibu! Look, someone is coming!",
+     "es": "¡A mí también, Zibu! ¡Mira, alguien viene!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "It was Boris the Bear, carrying a colorful surprise box!",
+     "es": "¡Era Boris el Oso, trayendo una caja de sorpresas colorida!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Hello, friends! I brought delicious cupcakes!",
+     "es": "¡Hola, amigos! ¡Traje deliciosos pastelitos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Ooh! Cupcakes! Yum, yum, yum!",
+     "es": "¡Ooh! ¡Pastelitos! ¡Qué rico, qué rico!",
+     "mood": "surprised",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Hello, Boris! Thank you for visiting us!",
+     "es": "¡Hola, Boris! ¡Gracias por visitarnos!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Look inside! Red ones, blue ones, and pink ones!",
+     "es": "¡Miren adentro! ¡Rojos, azules y rosados!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu's eyes went wide. The cupcakes looked so yummy!",
+     "es": "A Zibu se le abrieron los ojos. ¡Los pastelitos se veían tan ricos!"
+    },
+    {
+     "who": "zibu",
+     "en": "I want one right now! Can I have one?",
+     "es": "¡Quiero uno ahora mismo! ¿Puedo tener uno?",
+     "mood": "happy",
+     "action": "jump",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Wow, Zibu! You are super excited!",
+     "es": "¡Vaya, Zibu! ¡Estás súper emocionado!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "They are for all of us to share!",
+     "es": "¡Son para que los compartamos entre todos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yippee! Cupcake time!",
+     "es": "¡Siiii! ¡Hora del pastelito!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was so eager, he wanted to grab one right away!",
+     "es": "¡Zibu tenía tantas ganas que quería tomar uno de inmediato!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "zibu-tries-to-rush",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.55
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.75,
+     "y": 0.6,
+     "at": 0,
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu reached out his hands toward the box.",
+     "es": "Zibu estiró las manos hacia la caja.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.63
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "I get the first one! Mine, mine, mine!",
+     "es": "¡Yo tomo el primero! ¡Mío, mío, mío!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Wait a little moment, Zibu!",
+     "es": "¡Espera un momentito, Zibu!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Boris gently moved the box back just a little bit.",
+     "es": "Boris movió la caja hacia atrás un poquitito.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Remember, friends... everyone needs to take turns!",
+     "es": "Recuerden, amigos... ¡todos deben tomar su turno!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Take turns? But I'm hungry now!",
+     "es": "¿Tomar turno? ¡Pero tengo hambre ahora!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Waiting is okay, Zibu. Look, I'm waiting quietly!",
+     "es": "Esperar está bien, Zibu. ¡Mira, yo estoy esperando tranquilita!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila stood nicely with a sweet, calm smile.",
+     "es": "Lila se quedó de pie con una sonrisa dulce y tranquila."
+    },
+    {
+     "who": "guest",
+     "en": "Yes! Taking turns makes sharing fair and fun!",
+     "es": "¡Sí! ¡Tomar turnos hace que compartir sea justo y divertido!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... fair and fun?",
+     "es": "Oh... ¿justo y divertido?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu stopped and thought about what Boris said.",
+     "es": "Zibu se detuvo y pensó en lo que dijo Boris."
+    },
+    {
+     "who": "zibu",
+     "en": "So... we don't all rush at the same time?",
+     "es": "Entonces... ¿no corremos todos al mismo tiempo?",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "No, silly! First one friend, then another!",
+     "es": "¡No, loquito! ¡Primero un amigo, después otro!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Exactly, Lila!",
+     "es": "¡Exactamente, Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu took a tiny step back and smiled.",
+     "es": "Zibu dio un pequeñito paso atrás y sonrió.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.5
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Okay! I can learn to wait my turn!",
+     "es": "¡De acuerdo! ¡Puedo aprender a esperar mi turno!",
+     "mood": "happy",
+     "action": "bigjump"
+    }
+   ]
+  },
+  {
+   "id": "learning-opposites-up-down",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.7,
+     "y": 0.4,
+     "at": 1,
+     "anim": "float",
+     "color": "#FF3D00"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Everyone walked up to the sunny hill together.",
+     "es": "Todos caminaron juntos hasta la colina soleada."
+    },
+    {
+     "who": "guest",
+     "en": "Look what I brought to help us wait! A bright red balloon!",
+     "es": "¡Miren lo que traje para ayudarnos a esperar! ¡Un globo rojo brillante!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Ooh! A balloon!",
+     "es": "¡Oh! ¡Un globo!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Let's play a waiting game! Up... and down!",
+     "es": "¡Juguemos a esperar! ¡Arriba... y abajo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Boris lifted the balloon UP high into the blue sky!",
+     "es": "¡Boris levantó el globo muy ALTO en el cielo azul!"
+    },
+    {
+     "who": "guest",
+     "en": "Look! The balloon goes UP!",
+     "es": "¡Miren! ¡El globo va ARRIBA!",
+     "mood": "happy",
+     "show": {
+      "en": "UP",
+      "es": "ARRIBA",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Up, up, up! It's so high!",
+     "es": "¡Arriba, arriba, arriba! ¡Está muy alto!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "And now... it goes DOWN low!",
+     "es": "Y ahora... ¡va ABAJO!",
+     "mood": "happy",
+     "show": {
+      "en": "DOWN",
+      "es": "ABAJO",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Down to the soft green grass!",
+     "es": "¡Abajo, hasta la hierba verde y suave!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Can you wait nicely while the balloon goes UP again?",
+     "es": "¿Pueden esperar tranquilitos mientras el globo va ARRIBA otra vez?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! I am waiting quietly!",
+     "es": "¡Sí! ¡Estoy esperando en silencio!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "You are doing wonderful, Zibu!",
+     "es": "¡Lo estás haciendo de maravilla, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu watched the balloon patiently. Waiting was getting easier!",
+     "es": "Zibu miró el globo con paciencia. ¡Esperar se estaba volviendo más fácil!"
+    }
+   ]
+  },
+  {
+   "id": "learning-opposites-in-out",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.75,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "flower",
+     "x": 0.75,
+     "y": 0.55,
+     "at": 1,
+     "color": "#FFD700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Next, Boris showed them another fun opposite pair.",
+     "es": "Luego, Boris les mostró otro divertido par de opuestos."
+    },
+    {
+     "who": "guest",
+     "en": "Look at this pretty yellow flower!",
+     "es": "¡Miren esta bonita flor amarilla!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "It smells so nice!",
+     "es": "¡Huele tan rico!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Now... I put the flower IN the gift box!",
+     "es": "Ahora... ¡pongo la flor ADENTRO de la caja de regalo!",
+     "mood": "happy",
+     "show": {
+      "en": "IN",
+      "es": "ADENTRO",
+      "color": "#9C27B0"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "The flower is hidden IN the box!",
+     "es": "¡La flor está escondida ADENTRO de la caja!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Count with me... One, two, three... and OUT it comes!",
+     "es": "Cuenten conmigo... Uno, dos, tres... ¡y sale AFUERA!",
+     "mood": "happy",
+     "show": {
+      "en": "OUT",
+      "es": "AFUERA",
+      "color": "#FF9800"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Yay! It came OUT of the box!",
+     "es": "¡Sí! ¡Salió AFUERA de la caja!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Let's try again! The flower goes IN...",
+     "es": "¡Intentemos de nuevo! La flor va ADENTRO...",
+     "mood": "happy",
+     "show": {
+      "en": "IN",
+      "es": "ADENTRO",
+      "color": "#9C27B0"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "I am standing still... waiting nicely...",
+     "es": "Me quedo quieto... esperando muy bien...",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "And now it pops OUT!",
+     "es": "Y ahora... ¡sale AFUERA!",
+     "mood": "happy",
+     "show": {
+      "en": "OUT",
+      "es": "AFUERA",
+      "color": "#FF9800"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "I waited my turn without rushing!",
+     "es": "¡Esperé mi turno sin apurarme!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "You did it, Zibu! Great job!",
+     "es": "¡Lo lograste, Zibu! ¡Buen trabajo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu felt proud. Learning to wait was turning into a joyful game!",
+     "es": "Zibu se sintió orgulloso. ¡Aprender a esperar se estaba volviendo un juego feliz!"
+    }
+   ]
+  },
+  {
+   "id": "lilas-turn",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.75,
+     "y": 0.65,
+     "at": 2,
+     "color": "#ff4081"
+    },
+    {
+     "what": "cupcake",
+     "x": 0.5,
+     "y": 0.55,
+     "at": 12,
+     "color": "#ffb6c1"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "They walked into the cool shade of the forest.",
+     "es": "Caminaron hacia la fresca sombra del bosque.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.2
+      },
+      {
+       "who": "lila",
+       "to": 0.45
+      },
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Here we are! It is nice and cool under the trees.",
+     "es": "¡Aquí estamos! Qué fresco se siente bajo los árboles.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Boris placed the colorful gift box on the soft grass.",
+     "es": "Boris puso la colorida caja de regalo en el pasto suave."
+    },
+    {
+     "who": "lila",
+     "en": "Ooh! Look at all the yummy cupcakes inside!",
+     "es": "¡Oh! ¡Miren todos los pastelitos ricos que hay adentro!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "I want one right now!",
+     "es": "¡Quiero uno ahora mismo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu started to reach out... but then he stopped.",
+     "es": "Zibu iba a estirar la mano... pero luego se detuvo."
+    },
+    {
+     "who": "zibu",
+     "en": "Wait! I need to take a deep breath first...",
+     "es": "¡Espera! Primero tengo que respirar profundo...",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "Breathe in... and breathe out! Ahhh!",
+     "es": "¡Inhalar... y exhalar! ¡Ahhh!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Lila, you can choose first! It's your turn!",
+     "es": "¡Lila, tú puedes elegir primero! ¡Es tu turno!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you, Zibu! That is so kind of you!",
+     "es": "¡Gracias, Zibu! ¡Qué amable eres!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila smiled gently and looked into the box.",
+     "es": "Lila sonrió dulcemente y miró dentro de la caja.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Take your time, Lila!",
+     "es": "¡Tómate tu tiempo, Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "I will choose the pink cupcake! Yum!",
+     "es": "¡Elegiré el pastelito rosado! ¡Qué rico!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila took her treat happily. Zibu felt very good for waiting.",
+     "es": "Lila tomó su pastelito muy feliz. Zibu se sintió muy bien por haber esperado.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "zibus-turn-to-choose",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.75,
+     "y": 0.65,
+     "at": 0
+    },
+    {
+     "what": "cupcake",
+     "x": 0.35,
+     "y": 0.55,
+     "at": 7,
+     "color": "#2196f3"
+    }
+   ],
+   "lines": [
+    {
+     "who": "guest",
+     "en": "Now... whose turn is it next?",
+     "es": "Y ahora... ¿de quién es el turno?",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu wiggled his antenna with excitement!",
+     "es": "¡Zibu movió su antena con mucha emoción!",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "Is it... my turn now, Boris?",
+     "es": "¿Es... mi turno ahora, Boris?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Yes, Zibu! It is your turn to pick!",
+     "es": "¡Sí, Zibu! ¡Es tu turno de elegir!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu did a happy little jump!",
+     "es": "¡Zibu dio un saltito de alegría!"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! My turn! My turn!",
+     "es": "¡Siii! ¡Mi turno! ¡Mi turno!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "He walked up to the gift box slowly and carefully.",
+     "es": "Se acercó a la caja de regalo despacio y con cuidado.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look! A blue cupcake! It looks just like me!",
+     "es": "¡Miren! ¡Un pastelito azul! ¡Se parece a mí!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "It's perfect for you, Zibu!",
+     "es": "¡Es perfecto para ti, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "I waited my turn... and now I get my favorite treat!",
+     "es": "¡Esperé mi turno... y ahora tengo mi pastelito favorito!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "guest",
+     "en": "You did a wonderful job waiting, Zibu!",
+     "es": "¡Hiciste un trabajo maravilloso esperando, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu held his bright blue cupcake proudly.",
+     "es": "Zibu sostuvo su pastelito azul brillante con mucho orgullo."
+    },
+    {
+     "who": "zibu",
+     "en": "Waiting was easy and fun!",
+     "es": "¡Esperar fue muy fácil y divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu smiled big. Taking turns made everyone happy!",
+     "es": "Zibu sonrió mucho. ¡Turnarse hizo felices a todos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "enjoying-together",
+   "bg": "forest",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "cupcake",
+     "x": 0.25,
+     "y": 0.6,
+     "at": 0,
+     "until": 4,
+     "color": "#4287f5"
+    },
+    {
+     "what": "cupcake",
+     "x": 0.5,
+     "y": 0.6,
+     "at": 0,
+     "until": 4,
+     "color": "#ff69b4"
+    },
+    {
+     "what": "cupcake",
+     "x": 0.75,
+     "y": 0.6,
+     "at": 0,
+     "until": 4,
+     "color": "#8b4513"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The warm sun began to set over the quiet forest.",
+     "es": "El cálido sol comenzó a ponerse sobre el tranquilo bosque."
+    },
+    {
+     "who": "guest",
+     "en": "Mmm... these cupcakes look so delicious!",
+     "es": "Mmm... ¡estos pastelitos se ven tan deliciosos!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you for sharing with us, Boris!",
+     "es": "¡Gracias por compartir con nosotros, Boris!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Yummy, yummy cupcakes!",
+     "es": "¡Sí! ¡Ricos, ricos pastelitos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone took a big, sweet bite together.",
+     "es": "Todos dieron un gran y dulce bocado juntos."
+    },
+    {
+     "who": "zibu",
+     "en": "Mmm! Mine is super tasty!",
+     "es": "¡Mmm! ¡El mío está súper sabroso!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Mine is delicious too! Yum!",
+     "es": "¡El mío también está delicioso! ¡Qué rico!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "You waited so nicely, Zibu. I am proud of you!",
+     "es": "Esperaste muy bien, Zibu. ¡Estoy orgulloso de ti!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Waiting was worth it! Sharing is the best!",
+     "es": "¡Valió la pena esperar! ¡Compartir es lo mejor!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "When we take turns, everybody wins!",
+     "es": "¡Cuando nos turnamos, todos ganamos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Yay for taking turns!",
+     "es": "¡Que vivan los turnos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Waiting your turn makes every surprise even happier!",
+     "es": "¡Esperar tu turno hace que cada sorpresa sea aún más feliz!"
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, friends! See you next time!",
+     "es": "¡Adiós, amigos! ¡Nos vemos la próxima vez!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye! We love taking turns with you!",
+     "es": "¡Adiós! ¡Nos encanta turnarnos con ustedes!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "See you soon for another fun adventure with Zibu and Friends!",
+     "es": "¡Nos vemos pronto para otra divertida aventura con Zibu y sus amigos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 0,
+     "anim": "float",
+     "color": "#FF4500"
+    },
+    {
+     "what": "flower",
+     "x": 0.8,
+     "y": 0.6,
+     "at": 4,
+     "color": "#FFD700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "UP and DOWN, IN and OUT!",
+     "es": "¡ARRIBA y ABAJO, DENTRO y FUERA!"
+    },
+    {
+     "who": "narrator",
+     "en": "Taking turns is what it's all about!",
+     "es": "¡Turnos tomar es de lo que se trata!"
+    },
+    {
+     "who": "narrator",
+     "en": "Wait your turn and wait real still,",
+     "es": "Espera tu turno con tranquilidad,"
+    },
+    {
+     "who": "narrator",
+     "en": "Sharing treats upon the hill!",
+     "es": "¡Y compartamos con amabilidad!"
+    },
+    {
+     "who": "zibu",
+     "en": "The balloon goes UP into the sky!",
+     "es": "¡El globo sube muy ARRIBA hoy!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "And DOWN it comes as time goes by!",
+     "es": "¡Y luego ABAJO esperando voy!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "The flower goes IN the box so neat,",
+     "es": "¡La flor está DENTRO de la caja ya!"
+    },
+    {
+     "who": "lila",
+     "en": "And comes OUT for a yummy treat!",
+     "es": "¡Y FUERA sale para compartir acá!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "UP and DOWN, IN and OUT!",
+     "es": "¡ARRIBA y ABAJO, DENTRO y FUERA!"
+    },
+    {
+     "who": "narrator",
+     "en": "Taking turns is what it's all about!",
+     "es": "¡Turnos tomar es de lo que se trata!"
+    },
+    {
+     "who": "narrator",
+     "en": "Wait your turn and wait real still,",
+     "es": "Espera tu turno con tranquilidad,"
+    },
+    {
+     "who": "narrator",
+     "en": "Sharing treats upon the hill!",
+     "es": "¡Y compartamos con amabilidad!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "UP and DOWN, IN and OUT!",
+     "es": "¡ARRIBA y ABAJO, DENTRO y FUERA!"
+    },
+    {
+     "who": "narrator",
+     "en": "Taking turns is what it's all about!",
+     "es": "¡Turnos tomar es de lo que se trata!"
+    },
+    {
+     "who": "narrator",
+     "en": "Wait your turn and wait real still,",
+     "es": "Espera tu turno con tranquilidad,"
+    },
+    {
+     "who": "narrator",
+     "en": "Sharing treats upon the hill!",
+     "es": "¡Y compartamos con amabilidad!"
+    },
+    {
+     "who": "zibu",
+     "en": "The balloon goes UP into the sky!",
+     "es": "¡El globo sube muy ARRIBA hoy!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "And DOWN it comes as time goes by!",
+     "es": "¡Y luego ABAJO esperando voy!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "The flower goes IN the box so neat,",
+     "es": "¡La flor está DENTRO de la caja ya!"
+    },
+    {
+     "who": "lila",
+     "en": "And comes OUT for a yummy treat!",
+     "es": "¡Y FUERA sale para compartir acá!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "UP and DOWN, IN and OUT!",
+     "es": "¡ARRIBA y ABAJO, DENTRO y FUERA!"
+    },
+    {
+     "who": "narrator",
+     "en": "Taking turns is what it's all about!",
+     "es": "¡Turnos tomar es de lo que se trata!"
+    },
+    {
+     "who": "narrator",
+     "en": "Wait your turn and wait real still,",
+     "es": "Espera tu turno con tranquilidad,"
+    },
+    {
+     "who": "narrator",
+     "en": "Sharing treats upon the hill!",
+     "es": "¡Y compartamos con amabilidad!"
+    },
+    {
+     "who": "guest",
+     "en": "Waiting together makes every treat sweeter!",
+     "es": "¡Esperar juntos hace todo más dulce!",
+     "mood": "happy",
+     "action": "wave"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who came to visit Zibu and Lila?",
+     "es": "¿Quién vino a visitar a Zibu y Lila?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Boris the Bear!",
+     "es": "¡Boris el Oso!",
+     "mood": "happy",
+     "show": {
+      "en": "Boris",
+      "es": "Boris",
+      "color": "#4A90E2"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What surprise did Boris bring in the box?",
+     "es": "¿Qué sorpresa trajo Boris en la caja?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Delicious cupcakes!",
+     "es": "¡Deliciosos pastelitos!",
+     "mood": "happy",
+     "show": {
+      "en": "Cupcakes",
+      "es": "Pastelitos",
+      "color": "#FF69B4"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Zibu learn to do?",
+     "es": "¿Qué aprendió a hacer Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Wait my turn!",
+     "es": "¡Esperar mi turno!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "Wait",
+      "es": "Esperar",
+      "color": "#32CD32"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Which cupcake did Lila choose first?",
+     "es": "¿Qué pastelito eligió Lila primero?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "The pink one!",
+     "es": "¡El rosado!",
+     "mood": "happy",
+     "show": {
+      "en": "Pink",
+      "es": "Rosado",
+      "color": "#FFB6C1"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "And which cupcake was Zibu's favorite?",
+     "es": "¿Y qué pastelito fue el favorito de Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "The blue one!",
+     "es": "¡El azul!",
+     "mood": "happy",
+     "show": {
+      "en": "Blue",
+      "es": "Azul",
+      "color": "#1E90FF"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's practice waiting together!",
+     "es": "¡Vamos a practicar esperar juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Take a deep breath in... and out!",
+     "es": "¡Respiren profundo... y suelten!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Now jump up high when it's your turn!",
+     "es": "¡Ahora salten alto cuando sea su turno!",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Great job waiting!",
+     "es": "¡Súper! ¡Gran trabajo esperando!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Waiting your turn makes sharing fun and fair!",
+     "es": "¡Esperar tu turno hace que compartir sea justo y divertido!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "cupcake",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF69B4"
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Move up and down to the happy turn-taking beat!",
+     "es": "¡Muévanse arriba y abajo al ritmo de los turnos!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye! We love taking turns with you!",
+     "es": "¡Adiós! ¡Nos encanta tomar turnos con ustedes!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep018-zibu-and-the-cupcake-box"
+}
