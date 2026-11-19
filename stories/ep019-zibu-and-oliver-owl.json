@@ -1,0 +1,1420 @@
+{
+ "slug": "zibu-and-oliver-owl",
+ "title": {
+  "en": "Zibu and Oliver Owl",
+  "es": "Zibu y el Búho Oliver"
+ },
+ "lesson": {
+  "en": "Helping at home is fun when we work together!",
+  "es": "¡Ayudar en casa es divertido cuando trabajamos juntos!"
+ },
+ "guest": {
+  "species": "owl",
+  "name": {
+   "en": "Oliver",
+   "es": "Oliver"
+  }
+ },
+ "thumb": {
+  "en": [
+   "Zibu & Oliver",
+   "Help at Home!"
+  ],
+  "es": [
+   "¡Zibu y Búho",
+   "Ayudan en Casa!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu and Oliver Owl 🦉 Helping at Home for Kids!",
+   "description": "Zibu, Lila, and Oliver Owl have a big mess of apples and leaves in the room! 🍎🍃 Let's learn how helping at home is fun, and practice counting backwards from 5 to 1 like a rocket!\n\nGreat for toddlers and preschoolers aged 2 to 6.\nWatch how friends work together to tidy up.\n\n#ZibuAndFriends #KidsAnimation #HelpingAtHome #ToddlerLearning #CountingBackwards",
+   "tags": [
+    "zibu and friends",
+    "helping at home",
+    "kids animation",
+    "toddler learning",
+    "counting backwards",
+    "owl cartoon",
+    "preschool learning",
+    "nursery rhymes",
+    "kids videos",
+    "learning numbers",
+    "zibu",
+    "lila",
+    "oliver owl"
+   ]
+  },
+  "es": {
+   "title": "Zibu y el Búho Oliver 🦉 ¡Aprende a Ayudar en Casa!",
+   "description": "¡Zibu, Lila y el búho Oliver tienen muchas manzanas y hojas en la habitación! 🍎🍃 Aprendamos a ayudar en casa y contemos hacia atrás del 5 al 1 como un cohete.\n\nIdeal para niños de 2 a 6 años.\nDescubre cómo los amigos trabajan en equipo.\n\n#ZibuAndFriends #EspañolParaNiños #AyudarEnCasa #AprendeJugando #Contar",
+   "tags": [
+    "zibu y amigos",
+    "ayudar en casa",
+    "animacion infantil",
+    "aprender jugando",
+    "contar hacia atras",
+    "dibujos animados",
+    "preescolar",
+    "videos para ninos",
+    "zibu",
+    "lila",
+    "buho oliver"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! The red apple rolled away!",
+     "es": "¡Ay! ¡La manzana roja se fue rodando!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us catch it?",
+     "es": "Amigo, ¿nos ayudas a alcanzarla?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go!",
+     "es": "¡Vamos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.3,
+     "y": 0.7
+    },
+    {
+     "what": "leaf",
+     "x": 0.4,
+     "y": 0.75
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Oliver Owl!",
+     "es": "¡Zibu y el Búho Oliver!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "zibu-room-mess",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": -0.2
+    },
+    {
+     "who": "lila",
+     "x": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.3,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "apple",
+     "x": 0.7,
+     "y": 0.8,
+     "at": 0
+    },
+    {
+     "what": "leaf",
+     "x": 0.4,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "leaf",
+     "x": 0.6,
+     "y": 0.72,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila were playing in the cozy room today.",
+     "es": "Zibu y Lila estaban jugando en la acogedora habitación hoy."
+    },
+    {
+     "who": "narrator",
+     "en": "Oh, look at the floor! Red apples and green leaves were everywhere!",
+     "es": "¡Ay, miren el piso! ¡Había manzanas rojas y hojas verdes por todas partes!"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, friends! Welcome to our room!",
+     "es": "¡Hola, amigos! ¡Bienvenidos a nuestra habitación!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Oh my... look at all these apples and leaves on the floor!",
+     "es": "Ay, madre mía... ¡miren todas estas manzanas y hojas en el piso!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "We made such a big mess! Hehe...",
+     "es": "¡Hicimos un desorden muy grande! Je, je...",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yes, it is very messy. Can we clean it up?",
+     "es": "Sí, está muy desordenado. ¿Podemos limpiarlo?",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Don't worry, Lila! We can do it together!",
+     "es": "¡No te preocupes, Lila! ¡Podemos hacerlo juntos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, a friendly flutter came from the open window.",
+     "es": "De repente, un aleteo amistoso vino desde la ventana abierta."
+    },
+    {
+     "who": "lila",
+     "en": "Hooray! Someone is coming to visit us!",
+     "es": "¡Hura! ¡Alguien viene a visitarnos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Who could it be? Let's look!",
+     "es": "¿Quién será? ¡Vamos a ver!",
+     "mood": "surprised"
+    }
+   ]
+  },
+  {
+   "id": "oliver-arrives",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.65
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.3,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "leaf",
+     "x": 0.4,
+     "y": 0.75,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Oliver the wise owl flew gracefully into the room.",
+     "es": "Oliver, el búho sabio, voló con elegancia hacia la habitación.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.5,
+       "toY": 0.3
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! Hello, Zibu! Hello, Lila!",
+     "es": "¡Ju-ju! ¡Hola, Zibu! ¡Hola, Lila!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Hi, Oliver! Welcome to our room!",
+     "es": "¡Hola, Oliver! ¡Bienvenido a nuestra habitación!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "It is so nice to see you today!",
+     "es": "¡Qué bueno verte hoy!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! I came to play with my good friends.",
+     "es": "¡Ju-ju! Vine a jugar con mis buenos amigos.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Oliver looked down at all the apples and leaves on the floor.",
+     "es": "Oliver miró hacia abajo a todas las manzanas y hojas en el piso."
+    },
+    {
+     "who": "guest",
+     "en": "My goodness! You have a very busy room here!",
+     "es": "¡Madre mía! ¡Tienen una habitación muy ocupada aquí!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes, Oliver! We played a lot, but now it is messy.",
+     "es": "¡Sí, Oliver! Jugamos mucho, pero ahora está desordenado.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "The room needs to be clean and tidy again.",
+     "es": "La habitación necesita estar limpia y ordenada otra vez."
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! Helping at home is fun when we work together!",
+     "es": "¡Ju-ju! ¡Ayudar en casa es divertido cuando trabajamos juntos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "That is a great idea, Oliver! Let's clean up!",
+     "es": "¡Esa es una gran idea, Oliver! ¡Vamos a limpiar!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Oliver was ready to help his friends tidy up the room.",
+     "es": "Oliver estaba listo para ayudar a sus amigos a ordenar la habitación.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "first-try-apples",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.7,
+     "y": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.45,
+     "y": 0.7,
+     "at": 0,
+     "color": "#ff3333"
+    },
+    {
+     "what": "apple",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 0,
+     "color": "#ff3333"
+    },
+    {
+     "what": "apple",
+     "x": 0.55,
+     "y": 0.7,
+     "at": 0,
+     "color": "#ff3333"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Oliver started with the big red apples.",
+     "es": "Zibu y Oliver comenzaron con las manzanas redondas y rojas."
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Oliver! Let's make a big pile of apples!",
+     "es": "¡Mira, Oliver! ¡Hagamos una gran montaña de manzanas!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! Yes! One on top of another!",
+     "es": "¡Ju-ju! ¡Sí! ¡Una encima de otra!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu put one apple... then another... and another!",
+     "es": "Zibu puso una manzana... luego otra... ¡y otra!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look! A super tall apple tower!",
+     "es": "¡Mira! ¡Una torre de manzanas superalta!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Careful, Zibu... it looks a bit wobbly!",
+     "es": "¡Cuidado, Zibu... se ve un poco inestable!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Uh-oh! The apples began to shake!",
+     "es": "¡Oh-oh! ¡Las manzanas empezaron a temblar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh no! Stay still, little apples!",
+     "es": "¡Oh, no! ¡Quédense quietas, manzanitas!",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Roll, roll, roll! All the apples rolled across the room!",
+     "es": "¡Rueda, rueda, rueda! ¡Todas las manzanas rodaron por la habitación!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oops! They rolled away again!",
+     "es": "¡Uy! ¡Se cayeron y rodaron de nuevo!",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! Stacking them high didn't work.",
+     "es": "¡Ju-ju! Juntarlas así de alto no funcionó.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Silly apples! Let's try something else later!",
+     "es": "¡Manzanas traviesas! ¡Intentaremos otra cosa después!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Stacking apples was tricky, but Zibu and Oliver did not give up!",
+     "es": "¡Hacer torres de manzanas era difícil, pero Zibu y Oliver no se rindieron!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "second-try-leaves",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "lila",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.7,
+     "y": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.45,
+     "y": 0.75,
+     "at": 0,
+     "color": "#4caf50"
+    },
+    {
+     "what": "leaf",
+     "x": 0.52,
+     "y": 0.75,
+     "at": 0,
+     "color": "#4caf50"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Now it was Lila's turn to help Oliver gather the green leaves.",
+     "es": "Ahora era el turno de Lila de ayudar a Oliver a juntar las hojas verdes."
+    },
+    {
+     "who": "lila",
+     "en": "I love green leaves! Let's put them all together!",
+     "es": "¡Me encantan las hojas verdes! ¡Vamos a juntarlas todas!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! I can use my wings to sweep them!",
+     "es": "¡Ju-ju! ¡Puedo usar mis alas para barrerlas!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila and Oliver gathered the leaves in a nice pile.",
+     "es": "Lila y Oliver juntaron las hojas en un lindo montón.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.45
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Look, Oliver! We did it!",
+     "es": "¡Mira, Oliver! ¡Lo logramos!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Great job, Lila!",
+     "es": "¡Buen trabajo, Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "But suddenly... a gentle breeze blew through the open window!",
+     "es": "Pero de repente... ¡una brisa suave entró por la ventana abierta!"
+    },
+    {
+     "who": "lila",
+     "en": "Oh! Whoosh! What is happening?",
+     "es": "¡Oh! ¡Fiuuu! ¿Qué está pasando?",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Swish, swish! The green leaves flew all over the room!",
+     "es": "¡Swoosh, swoosh! ¡Las hojas verdes volaron por toda la habitación!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear! Flying leaves!",
+     "es": "¡Caramba! ¡Hojas voladoras!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Haha! They look like little green butterflies!",
+     "es": "¡Jaja! ¡Parecen maripositas verdes!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! Gathering them alone was tricky too!",
+     "es": "¡Ju-ju! ¡Juntarlas solos también fue difícil!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "They needed a better plan... a plan where everyone works together!",
+     "es": "Necesitaban un plan mejor... ¡un plan donde todos trabajen juntos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "rocket-countdown",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.3,
+     "y": 0.85,
+     "at": 0,
+     "until": 12,
+     "color": "#FF0000"
+    },
+    {
+     "what": "leaf",
+     "x": 0.6,
+     "y": 0.85,
+     "at": 0,
+     "until": 12,
+     "color": "#4CAF50"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu had a super fun idea!",
+     "es": "¡Zibu tuvo una idea súper divertida!"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's play super rocket cleanup!",
+     "es": "¡Juguemos al súper cohete de limpieza!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Ooh! How do we play?",
+     "es": "¡Ooh! ¿Cómo se juega?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "We count down from 5 to 1 and clean together!",
+     "es": "¡Contamos de 5 a 1 y limpiamos juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! Count me in! Teamwork power!",
+     "es": "¡Ju-ju! ¡Cuenten conmigo! ¡Poder del trabajo en equipo!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Ready? Five!",
+     "es": "¿Listos? ¡Cinco!",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#FF5722"
+     },
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Four!",
+     "es": "¡Cuatro!",
+     "show": {
+      "en": "4",
+      "es": "4",
+      "color": "#FFC107"
+     },
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Three!",
+     "es": "¡Tres!",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Two!",
+     "es": "¡Dos!",
+     "show": {
+      "en": "2",
+      "es": "2",
+      "color": "#2196F3"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "One!",
+     "es": "¡Uno!",
+     "show": {
+      "en": "1",
+      "es": "1",
+      "color": "#9C27B0"
+     },
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Blast off! Clean up time!",
+     "es": "¡Despegue! ¡Hora de limpiar!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone zoomed around, picking up apples and leaves together!",
+     "es": "¡Todos corrieron juntando manzanas y hojas juntos!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      },
+      {
+       "who": "lila",
+       "to": 0.55
+      },
+      {
+       "who": "guest",
+       "to": 0.7,
+       "toY": 0.5
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "I got the red apples!",
+     "es": "¡Yo tengo las manzanas rojas!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "And we got the green leaves!",
+     "es": "¡Y nosotros las hojas verdes!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Whoosh! Look at us go!",
+     "es": "¡Fiuuu! ¡Miren cómo vamos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Working together made the mess disappear like magic!",
+     "es": "¡Trabajar juntos hizo que el desorden desapareciera como magia!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-tidy-room",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7,
+     "y": 0.35
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.15,
+     "y": 0.6,
+     "at": 0,
+     "color": "#FF0000"
+    },
+    {
+     "what": "leaf",
+     "x": 0.85,
+     "y": 0.6,
+     "at": 0,
+     "color": "#4CAF50"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Ta-da! The cozy room was clean and bright again.",
+     "es": "¡Ta-da! La cómoda habitación estaba limpia y brillante otra vez."
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! Look at our room now!",
+     "es": "¡Vaya! ¡Miren nuestra habitación ahora!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "All the red apples are in the basket!",
+     "es": "¡Todas las manzanas rojas están en la canasta!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "And all the green leaves are swept up!",
+     "es": "¡Y todas las hojas verdes están recogidas!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Everything was in its place, neat and tidy.",
+     "es": "Todo estaba en su lugar, ordenado y limpio."
+    },
+    {
+     "who": "zibu",
+     "en": "That was so fast!",
+     "es": "¡Eso fue tan rápido!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "And it was so much fun!",
+     "es": "¡Y fue muy divertido!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! Helping each other makes hard jobs easy!",
+     "es": "¡Ju-ju! ¡Ayudarse el uno al otro hace los trabajos difíciles fáciles!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "High five, everyone!",
+     "es": "¡Choquen esos cinco, todos!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay for teamwork!",
+     "es": "¡Que viva el trabajo en equipo!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot-hoot! We are a great team!",
+     "es": "¡Ju-ju! ¡Somos un gran equipo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Cleaning up together made everyone feel super proud and happy.",
+     "es": "Limpiar juntos hizo que todos se sintieran súper orgullosos y felices.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "lesson-goodbye",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.15,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The cozy room was so clean and neat!",
+     "es": "¡La linda habitación estaba súper limpia y ordenada!"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot-hoot! It is time for me to fly home!",
+     "es": "¡Ju-ju! ¡Es hora de volar a mi casa!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you for helping us, Oliver!",
+     "es": "¡Gracias por ayudarnos, Oliver!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "You are a wonderful helper!",
+     "es": "¡Eres un ayudante maravilloso!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Helping at home is fun when we work together!",
+     "es": "¡Ayudar en casa es divertido cuando trabajamos juntos!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Cleaning up together is so easy!",
+     "es": "¡Sí! ¡Limpiar juntos es muy fácil!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "And super fun too!",
+     "es": "¡Y súper divertido también!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot-hoot! Goodbye, my dear friends!",
+     "es": "¡Ju-ju! ¡Adiós, mis queridos amigos!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.3,
+       "toY": -0.2
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, Oliver!",
+     "es": "¡Adiós, Oliver!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "See you soon!",
+     "es": "¡Hasta pronto!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Oliver flew away into the bright sky.",
+     "es": "Oliver voló hacia el cielo brillante."
+    },
+    {
+     "who": "narrator",
+     "en": "Helping at home is always better together!",
+     "es": "¡Ayudar en casa siempre es mejor juntos!",
+     "show": {
+      "en": "Together!",
+      "es": "¡Juntos!"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Yay for helping!",
+     "es": "¡Que viva ayudar!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "We love working together!",
+     "es": "¡Nos encanta trabajar juntos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Goodbye, friends! See you next time!",
+     "es": "¡Adiós, amigos! ¡Nos vemos la próxima vez!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.2,
+     "y": 0.7,
+     "at": 0,
+     "until": 25,
+     "anim": "bounce"
+    },
+    {
+     "what": "leaf",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 0,
+     "until": 25,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Pick up apples, gather leaves today!",
+     "es": "¡Manzanas y hojas vamos a juntar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Clean up all together as we play!",
+     "es": "¡Todos en equipo vamos a ordenar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Five, four, three, two, one, and launch away!",
+     "es": "¡Cinco, cuatro, tres, dos, uno a despegar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Working as a team is the happy way!",
+     "es": "¡Ayudar en casa nos hace cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Red apples in a stack, count them up!",
+     "es": "¡Manzanas rojas listas para guardar!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Green leaves in a pile, clean them up!",
+     "es": "¡Las hojas verdes vamos a acumular!",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Zooming like a rocket through the room!",
+     "es": "¡Volando como cohetes por el lugar!",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Cleaning up together with a broom!",
+     "es": "¡Qué fácil es todo al colaborar!",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Pick up apples, gather leaves today!",
+     "es": "¡Manzanas y hojas vamos a juntar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Clean up all together as we play!",
+     "es": "¡Todos en equipo vamos a ordenar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Five, four, three, two, one, and launch away!",
+     "es": "¡Cinco, cuatro, tres, dos, uno a despegar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Working as a team is the happy way!",
+     "es": "¡Ayudar en casa nos hace cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Pick up apples, gather leaves today!",
+     "es": "¡Manzanas y hojas vamos a juntar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Clean up all together as we play!",
+     "es": "¡Todos en equipo vamos a ordenar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Five, four, three, two, one, and launch away!",
+     "es": "¡Cinco, cuatro, tres, dos, uno a despegar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Working as a team is the happy way!",
+     "es": "¡Ayudar en casa nos hace cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Red apples in a stack, count them up!",
+     "es": "¡Manzanas rojas listas para guardar!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Green leaves in a pile, clean them up!",
+     "es": "¡Las hojas verdes vamos a acumular!",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Zooming like a rocket through the room!",
+     "es": "¡Volando como cohetes por el lugar!",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Cleaning up together with a broom!",
+     "es": "¡Qué fácil es todo al colaborar!",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Pick up apples, gather leaves today!",
+     "es": "¡Manzanas y hojas vamos a juntar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Clean up all together as we play!",
+     "es": "¡Todos en equipo vamos a ordenar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Five, four, three, two, one, and launch away!",
+     "es": "¡Cinco, cuatro, tres, dos, uno a despegar!"
+    },
+    {
+     "who": "narrator",
+     "en": "Working as a team is the happy way!",
+     "es": "¡Ayudar en casa nos hace cantar!"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! We are the best cleanup team!",
+     "es": "¡Uu-uu! ¡Somos el mejor equipo de limpieza!",
+     "mood": "happy",
+     "action": "shake"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "brightstar",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 11,
+     "until": 15,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who came to visit Zibu and Lila today?",
+     "es": "¿Quién vino a visitar a Zibu y Lila hoy?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Oliver the wise owl!",
+     "es": "¡Oliver el búho sabio!",
+     "show": {
+      "en": "Oliver Owl",
+      "es": "Búho Oliver",
+      "color": "#FFC107"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What was scattered all over the cozy room?",
+     "es": "¿Qué estaba desordenado por toda la habitación?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Apples and leaves!",
+     "es": "¡Manzanas y hojas!",
+     "show": {
+      "en": "Apples and leaves",
+      "es": "Manzanas y hojas",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What made the green leaves fly everywhere?",
+     "es": "¿Qué hizo volar las hojas verdes por todas partes?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A gentle breeze!",
+     "es": "¡Una brisa suave!",
+     "show": {
+      "en": "Gentle breeze",
+      "es": "Brisa suave",
+      "color": "#03A9F4"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What game did they play to clean up fast?",
+     "es": "¿A qué juego jugaron para ordenar rápido?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Super rocket cleanup!",
+     "es": "¡El cohete ordenado!",
+     "show": {
+      "en": "Rocket cleanup",
+      "es": "Cohete ordenado",
+      "color": "#E91E63"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many seconds did they count down?",
+     "es": "¿Cuántos segundos contaron hacia atrás?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Five seconds!",
+     "es": "¡Cinco segundos!",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's count down together like rockets!",
+     "es": "¡Contemos juntos como cohetes!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Five... four... three... two... one!",
+     "es": "¡Cinco... cuatro... tres... dos... uno!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Blast off! Great job!",
+     "es": "¡Despegue! ¡Buen trabajo!",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Cleaning up is fun!",
+     "es": "¡Sí! ¡Ordenar es divertido!",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Helping at home is fun when we work together!",
+     "es": "¡Ayudar en casa es divertido cuando trabajamos juntos!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "room",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.4
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "pause": 14,
+     "action": "spin",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! Flap your wings and dance!",
+     "es": "¡Uu-uu! ¡Aleteen y bailen!",
+     "pause": 10,
+     "action": "jump",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "pause": 3,
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "id": "ep019-zibu-and-oliver-owl"
+}
