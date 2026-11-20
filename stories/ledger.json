@@ -142,5 +142,13 @@
   "guest": "owl",
   "lesson": "helping at home",
   "learn": "counting from 1 to 5 backwards, like a rocket countdown"
+ },
+ {
+  "id": "ep020-zibu-tells-the-truth",
+  "date": "2026-11-20",
+  "title": "Zibu and the Honest Kitten",
+  "guest": "kitten",
+  "lesson": "telling the truth",
+  "learn": "shapes: circle, square, triangle (show the words)"
  }
 ]

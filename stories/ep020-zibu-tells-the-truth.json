@@ -1,0 +1,1433 @@
+{
+ "slug": "zibu-tells-the-truth",
+ "title": {
+  "en": "Zibu and the Honest Kitten",
+  "es": "Zibu y el gatito sincero"
+ },
+ "lesson": {
+  "en": "Always tell the truth when something happens.",
+  "es": "Siempre di la verdad cuando algo pase."
+ },
+ "guest": {
+  "species": "kitten",
+  "name": {
+   "en": "Mimi",
+   "es": "Mimi"
+  }
+ },
+ "thumb": {
+  "en": [
+   "THE LOST COOKIE!",
+   "TELL THE TRUTH"
+  ],
+  "es": [
+   "¡LA GALLETA!",
+   "DI LA VERDAD"
+  ],
+  "scene": 4
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu & Friends: Telling the Truth & Shapes! 🔺🔵 | Kids Cartoon",
+   "description": "Oh no! A snack disappears and Mimi the kitten learns a big lesson! 🍪\nJoin Zibu and Lila as they explore shapes like CIRCLE, SQUARE, and TRIANGLE in the garden! 🌸\nMimi learns that telling the truth makes everyone feel happy and safe! ❤️\nPerfect educational cartoon for toddlers and preschoolers aged 2 to 6. 🎨\n\n#ZibuAndFriends #TellingTheTruth #LearnShapes #KidsCartoon #PreschoolLearning",
+   "tags": [
+    "zibu and friends",
+    "telling the truth",
+    "learn shapes",
+    "circle square triangle",
+    "toddler cartoon",
+    "preschool videos",
+    "honesty for kids",
+    "educational cartoon",
+    "kids show",
+    "zibu",
+    "lila bunny",
+    "kitten cartoon"
+   ]
+  },
+  "es": {
+   "title": "Zibu y sus Amigos: Decir la Verdad y las Formas 🔺🔵 | Dibujos Animados",
+   "description": "¡Oh no! ¡Una galleta desaparece y la gatita Mimi aprende una gran lección! 🍪\n¡Acompaña a Zibu y Lila a aprender formas como CÍRCULO, CUADRADO y TRIÁNGULO en el jardín! 🌸\n¡Mimi aprende que decir la verdad nos hace sentir felices a todos! ❤️\nCaricatura educativa perfecta para niños de 2 a 6 años. 🎨\n\n#ZibuYSusAmigos #DecirLaVerdad #AprenderFormas #DibujosAnimados #EducacionInfantil",
+   "tags": [
+    "zibu y sus amigos",
+    "decir la verdad",
+    "aprender formas",
+    "circulo cuadrado triangulo",
+    "caricaturas para niños",
+    "videos infantiles",
+    "honestidad niños",
+    "dibujos animados",
+    "zibu",
+    "lila coneja",
+    "gatito dibujos"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! The special cookie vanished!",
+     "es": "¡Oh no! ¡La galleta especial desapareció!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us find it?",
+     "es": "Amigo, ¿nos ayudas a encontrarla?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's investigate together!",
+     "es": "¡Vamos a investigar juntos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.25,
+     "y": 0.6
+    },
+    {
+     "what": "cookie",
+     "x": 0.25,
+     "y": 0.45
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Honest Kitten!",
+     "es": "¡Zibu y el gatito sincero!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "the-missing-cookie",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.25,
+     "y": 0.6,
+     "at": 0
+    },
+    {
+     "what": "cookie",
+     "x": 0.25,
+     "y": 0.45,
+     "at": 0,
+     "until": 8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright, happy day in the cozy room.",
+     "es": "Era un día brillante y feliz en la acogedora habitación."
+    },
+    {
+     "who": "zibu",
+     "en": "Look, everyone! I have a yummy round cookie!",
+     "es": "¡Miren todos! ¡Tengo una deliciosa galleta redonda!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Ooh, it looks so tasty, Zibu!",
+     "es": "¡Ooh, se ve muy sabrosa, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! A round cookie on top of a square gift box!",
+     "es": "¡Miau! ¡Una galleta redonda sobre una caja de regalo cuadrada!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I put it right here on top of the gift box!",
+     "es": "¡La puse aquí mismo, sobre la caja de regalo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu placed the sweet cookie carefully.",
+     "es": "Zibu colocó la dulce galleta con cuidado."
+    },
+    {
+     "who": "zibu",
+     "en": "Wait here! I will get some glasses of milk.",
+     "es": "¡Esperen aquí! Iré por unos vasos de leche.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.1
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu turned around to get the milk.",
+     "es": "Zibu se dio la vuelta para buscar la leche."
+    },
+    {
+     "who": "guest",
+     "en": "Mmm... it smells so good... crunch, crunch!",
+     "es": "Mmm... huele tan bien... ¡ñam, ñam!",
+     "mood": "surprised",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Oh! Mimi ate the cookie in one big bite!",
+     "es": "¡Oh! ¡Mimi se comió la galleta de un gran bocado!"
+    },
+    {
+     "who": "lila",
+     "en": "Mimi? Did you hear a crunch sound?",
+     "es": "¿Mimi? ¿Escuchaste un ruido de bocado?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear... gulp... meow!",
+     "es": "¡Ay, Dios... trago... miau!",
+     "mood": "scared",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Mimi got very nervous. What would Zibu say?",
+     "es": "Mimi se puso muy nerviosa. ¿Qué diría Zibu?"
+    }
+   ]
+  },
+  {
+   "id": "a-small-mystery",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.1
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.25,
+     "y": 0.6,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu came back with a big smile.",
+     "es": "Zibu regresó con una gran sonrisa.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "I'm back! Let me get the... wait!",
+     "es": "¡Ya volví! Déjenme tomar la... ¡esperen!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu looked at the square gift box. The cookie was gone!",
+     "es": "Zibu miró la caja de regalo cuadrada. ¡La galleta no estaba!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh no! Where is my round cookie?",
+     "es": "¡Oh, no! ¿Dónde está mi galleta redonda?",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Huh? It was right on top of the gift box!",
+     "es": "¿Eh? ¡Estaba justo sobre la caja de regalo!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu turned to Mimi.",
+     "es": "Zibu se giró hacia Mimi."
+    },
+    {
+     "who": "zibu",
+     "en": "Mimi, do you know what happened to the cookie?",
+     "es": "Mimi, ¿sabes qué le pasó a la galleta?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Mimi was scared of getting in trouble.",
+     "es": "Mimi tenía miedo de meterse en problemas."
+    },
+    {
+     "who": "guest",
+     "en": "Umm... an outdoor green leaf flew inside through the window!",
+     "es": "Este... ¡una hoja verde voló desde afuera por la ventana!",
+     "mood": "scared",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "A leaf? Inside the room?",
+     "es": "¿Una hoja? ¿Dentro de la habitación?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! A windy leaf took the cookie and blew away!",
+     "es": "¡Sí! ¡Una hoja con viento se llevó la galleta y voló!",
+     "mood": "scared"
+    },
+    {
+     "who": "zibu",
+     "en": "A leaf took the round cookie? Wow!",
+     "es": "¿Una hoja se llevó la galleta redonda? ¡Vaya!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Let's go outside and check the garden!",
+     "es": "¡Vamos afuera a revisar el jardín!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "So they decided to search for the missing cookie.",
+     "es": "Así que decidieron buscar la galleta perdida."
+    }
+   ]
+  },
+  {
+   "id": "learning-shapes",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "apple",
+     "x": 0.25,
+     "y": 0.65,
+     "at": 2
+    },
+    {
+     "what": "gift",
+     "x": 0.5,
+     "y": 0.65,
+     "at": 5
+    },
+    {
+     "what": "leaf",
+     "x": 0.75,
+     "y": 0.65,
+     "at": 9
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and his friends looked for shape clues in the garden.",
+     "es": "Zibu y sus amigos buscaron pistas de formas en el jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "The cookie was round, just like a circle!",
+     "es": "¡La galleta era redonda, como un círculo!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "CIRCLE",
+      "es": "CÍRCULO",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Look! A shiny red apple is a circle too!",
+     "es": "¡Miren! ¡Una manzana roja y brillante también es un círculo!"
+    },
+    {
+     "who": "lila",
+     "en": "Is that our missing cookie? No, it's an apple!",
+     "es": "¿Es nuestra galleta perdida? ¡No, es una manzana!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "What about a square? The gift box was square!",
+     "es": "¿Y un cuadrado? ¡La caja de regalo era cuadrada!",
+     "mood": "happy",
+     "show": {
+      "en": "SQUARE",
+      "es": "CUADRADO",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "There was a square gift box resting on the grass.",
+     "es": "Había una caja de regalo cuadrada sobre la hierba."
+    },
+    {
+     "who": "guest",
+     "en": "Meow... that is not the cookie...",
+     "es": "Miau... esa tampoco es la galleta...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "What shape was the leaf you saw, Mimi?",
+     "es": "¿Qué forma tenía la hoja que viste, Mimi?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Leaves can be shaped like a triangle!",
+     "es": "¡Las hojas pueden tener forma de triángulo!",
+     "mood": "happy",
+     "show": {
+      "en": "TRIANGLE",
+      "es": "TRIÁNGULO",
+      "color": "#2196F3"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "A green triangle leaf lay near the flowers.",
+     "es": "Una hoja verde en forma de triángulo estaba cerca de las flores."
+    },
+    {
+     "who": "lila",
+     "en": "Look, a leaf! But... there is no cookie under it.",
+     "es": "¡Miren, una hoja! Pero... no hay ninguna galleta debajo.",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Oh... maybe the wind blew it far away?",
+     "es": "Oh... ¿tal vez el viento se la llevó lejos?",
+     "mood": "scared",
+     "action": "shake"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's check over there!",
+     "es": "¡Vamos a revisar por allá!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "So they kept searching for the mysterious leaf.",
+     "es": "Así que siguieron buscando la misteriosa hoja."
+    }
+   ]
+  },
+  {
+   "id": "searching-the-garden",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.6
+    }
+   ],
+   "props": [
+    {
+     "what": "butterfly",
+     "x": 0.5,
+     "y": 0.35,
+     "at": 2,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Mimi walked deeper into the garden.",
+     "es": "Zibu, Lila y Mimi caminaron más adentro del jardín.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      },
+      {
+       "who": "lila",
+       "to": 0.5
+      },
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Look! A pretty butterfly is floating by!",
+     "es": "¡Miren! ¡Una linda mariposa está flotando por aquí!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "A bright butterfly landed near the blooming flowers.",
+     "es": "Una brillante mariposa se posó cerca de las flores."
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, Butterfly! Did you see a flying leaf?",
+     "es": "¡Hola, mariposa! ¿Viste una hoja voladora?",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "A leaf carrying a big round cookie?",
+     "es": "¿Una hoja que llevaba una gran galleta redonda?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Meow... did you see it...?",
+     "es": "Miau... ¿la viste...?",
+     "mood": "scared"
+    },
+    {
+     "who": "narrator",
+     "en": "The butterfly fluttered gently around Zibu's antenna.",
+     "es": "La mariposa revoloteó suavemente alrededor de la antena de Zibu."
+    },
+    {
+     "who": "narrator",
+     "en": "Then, it slowly shook its head... no!",
+     "es": "Luego, ¡sacudió lentamente la cabeza diciendo que no!"
+    },
+    {
+     "who": "zibu",
+     "en": "Huh? No leaf flew by?",
+     "es": "¿Eh? ¿No voló ninguna hoja?",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Oh dear! If the butterfly didn't see it... where is it?",
+     "es": "¡Cielos! Si la mariposa no la vio... ¿dónde está?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "This is a big mystery...",
+     "es": "Esto es un gran misterio...",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Oh... poor Zibu is looking so hard...",
+     "es": "Oh... el pobre Zibu está buscando tanto...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Maybe the wind took the leaf high up the hill?",
+     "es": "¿Tal vez el viento llevó la hoja hasta la colina?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Let's check up on the hill!",
+     "es": "¡Sí! ¡Iremos a revisar allá arriba en la colina!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "looking-on-the-hill",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.8,
+     "y": 0.35,
+     "color": "#FF3333",
+     "at": 0,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Mimi walked up the bright green hill.",
+     "es": "Zibu, Lila y Mimi subieron a la colina verde brillante."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! Is the cookie up here on the hill?",
+     "es": "¡Miren! ¿Está la galleta aquí arriba en la colina?",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "I see a big red balloon! But no cookie...",
+     "es": "¡Veo un globo rojo grande! Pero ninguna galleta...",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Maybe the leaf carried it way up high!",
+     "es": "¡Tal vez la hoja se la llevó muy arriba!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu looked under the grass. Lila looked behind the red balloon.",
+     "es": "Zibu buscó debajo del pasto. Lila buscó detrás del globo rojo.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      },
+      {
+       "who": "lila",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Cookie! Where are you hiding?",
+     "es": "¡Galleta! ¿Dónde estás escondida?",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "We are searching everywhere!",
+     "es": "¡Estamos buscando por todas partes!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Oh... my tummy feels funny...",
+     "es": "Oh... mi pancita se siente rara...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Mimi felt sad inside. Her friends were looking so hard.",
+     "es": "Mimi se sintió triste por dentro. Sus amigos buscaban con mucho esfuerzo."
+    },
+    {
+     "who": "guest",
+     "en": "Zibu... Lila... please stop looking...",
+     "es": "Zibu... Lila... por favor ya no busquen...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Huh? What is wrong, little Mimi?",
+     "es": "¿Ah? ¿Qué pasa, pequeña Mimi?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go back to the cozy room and rest.",
+     "es": "Vamos a regresar al cuarto acogedor a descansar.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Okay... I need to tell you something.",
+     "es": "Está bien... necesito decirles algo.",
+     "mood": "sad",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "So they all walked back inside together.",
+     "es": "Así que todos caminaron de regreso adentro juntos.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": -0.2
+      },
+      {
+       "who": "lila",
+       "to": -0.2
+      },
+      {
+       "who": "guest",
+       "to": -0.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mimi-tells-the-truth",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the cozy room, everyone sat down together.",
+     "es": "De vuelta en el cuarto acogedor, todos se sentaron juntos."
+    },
+    {
+     "who": "zibu",
+     "en": "Don't be sad, Mimi! We can search again soon!",
+     "es": "¡No estés triste, Mimi! ¡Podemos buscar otra vez pronto!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "No... there was no leaf...",
+     "es": "No... no había ninguna hoja...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "No leaf? What do you mean, Mimi?",
+     "es": "¿Ninguna hoja? ¿Qué quieres decir, Mimi?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "I... I ate the round cookie!",
+     "es": "¡Yo... yo me comí la galleta redonda!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Mimi took a big, deep breath.",
+     "es": "Mimi respiró hondo, muy hondo."
+    },
+    {
+     "who": "guest",
+     "en": "It looked yummy... and I ate it. I am sorry I lied!",
+     "es": "¡Se veía rica... y me la comí! ¡Perdón por mentir!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! So a leaf did not fly in?",
+     "es": "¡Oh! ¿Entonces una hoja no entró volando?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you for telling us the truth, Mimi!",
+     "es": "¡Gracias por decirnos la verdad, Mimi!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Telling the truth is always the best thing to do!",
+     "es": "¡Sí! ¡Decir la verdad siempre es lo mejor!",
+     "mood": "happy",
+     "action": "bigjump",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.45
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Really? You are not mad at me?",
+     "es": "¿De verdad? ¿No están enojados conmigo?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila gave sweet Mimi a big, gentle hug.",
+     "es": "Zibu y Lila le dieron a la dulce Mimi un abrazo grande y suave."
+    },
+    {
+     "who": "lila",
+     "en": "We love honesty! We are so happy you told us!",
+     "es": "¡Nos gusta la sinceridad! ¡Estamos muy felices de que nos dijiste!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I feel so much better now!",
+     "es": "¡Me siento mucho mejor ahora!",
+     "mood": "happy",
+     "action": "spin"
+    }
+   ]
+  },
+  {
+   "id": "sharing-a-cupcake",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.55
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "cupcake",
+     "x": 0.25,
+     "y": 0.65,
+     "at": 1,
+     "until": 13,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu brought out a special treat for everyone to share.",
+     "es": "Zibu trajo una sorpresa especial para compartir con todos."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! I have a yummy cupcake for us!",
+     "es": "¡Miren! ¡Tengo un panquecito rico para nosotros!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Mmm, it looks delicious!",
+     "es": "¡Mmm, se ve delicioso!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Since Mimi was honest, we can all celebrate together!",
+     "es": "¡Como Mimi fue sincera, podemos celebrar juntos!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! You are so kind!",
+     "es": "¡Gracias, Zibu! ¡Eres muy bueno!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Telling the truth made everyone feel happy inside.",
+     "es": "Decir la verdad hizo que todos se sintieran felices por dentro."
+    },
+    {
+     "who": "zibu",
+     "en": "Telling the truth is always wonderful!",
+     "es": "¡Decir la verdad siempre es maravilloso!",
+     "mood": "happy",
+     "show": {
+      "en": "TRUTH",
+      "es": "VERDAD",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Honesty makes our hearts glad!",
+     "es": "¡Sí! ¡La sinceridad alegra el corazón!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "I feel so happy that I told the truth!",
+     "es": "¡Me siento muy feliz de haber dicho la verdad!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Let me share a piece with you, Mimi!",
+     "es": "¡Te voy a dar un pedacito, Mimi!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.45
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "And a piece for everyone!",
+     "es": "¡Y un pedacito para todos!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "guest",
+     "en": "Yum, yum, yum! Thank you, friends!",
+     "es": "¡Ñam, ñam, ñam! ¡Gracias, amigos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "They all enjoyed the sweet cupcake together.",
+     "es": "Todos disfrutaron juntos del dulce panquecito."
+    },
+    {
+     "who": "narrator",
+     "en": "Always remember, telling the truth makes everything better. Bye-bye, friends!",
+     "es": "Recuerden siempre, decir la verdad hace todo mejor. ¡Adiós, amigos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "brightstar",
+     "x": 0.5,
+     "y": 0.2,
+     "at": 0,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Telling the truth makes hearts bright!",
+     "es": "¡Decir la verdad te hace feliz!"
+    },
+    {
+     "who": "narrator",
+     "en": "Everything feels so clear and light!",
+     "es": "¡Todo se siente brillante aquí!"
+    },
+    {
+     "who": "narrator",
+     "en": "Always be honest, day and night!",
+     "es": "¡Sé siempre sincero y di la verdad!"
+    },
+    {
+     "who": "narrator",
+     "en": "Honesty brings us joy and light!",
+     "es": "¡La honestidad nos da felicidad!"
+    },
+    {
+     "who": "zibu",
+     "en": "When something happens, do not hide!",
+     "es": "Si algo te pasa, no te ocultes hoy,",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Just share the truth with joy inside!",
+     "es": "¡di la verdad y feliz yo estoy!",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Hug all your friends and feel so good!",
+     "es": "¡Abraza a tus amigos con amor!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Doing what is right, just like we should!",
+     "es": "¡Hacer lo correcto es mucho mejor!",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Telling the truth makes hearts bright!",
+     "es": "¡Decir la verdad te hace feliz!"
+    },
+    {
+     "who": "narrator",
+     "en": "Everything feels so clear and light!",
+     "es": "¡Todo se siente brillante aquí!"
+    },
+    {
+     "who": "narrator",
+     "en": "Always be honest, day and night!",
+     "es": "¡Sé siempre sincero y di la verdad!"
+    },
+    {
+     "who": "narrator",
+     "en": "Honesty brings us joy and light!",
+     "es": "¡La honestidad nos da felicidad!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "action": "bigjump",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Telling the truth makes hearts bright!",
+     "es": "¡Decir la verdad te hace feliz!"
+    },
+    {
+     "who": "narrator",
+     "en": "Everything feels so clear and light!",
+     "es": "¡Todo se siente brillante aquí!"
+    },
+    {
+     "who": "narrator",
+     "en": "Always be honest, day and night!",
+     "es": "¡Sé siempre sincero y di la verdad!"
+    },
+    {
+     "who": "narrator",
+     "en": "Honesty brings us joy and light!",
+     "es": "¡La honestidad nos da felicidad!"
+    },
+    {
+     "who": "zibu",
+     "en": "When something happens, do not hide!",
+     "es": "Si algo te pasa, no te ocultes hoy,",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Just share the truth with joy inside!",
+     "es": "¡di la verdad y feliz yo estoy!",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Hug all your friends and feel so good!",
+     "es": "¡Abraza a tus amigos con amor!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Doing what is right, just like we should!",
+     "es": "¡Hacer lo correcto es mucho mejor!",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Telling the truth makes hearts bright!",
+     "es": "¡Decir la verdad te hace feliz!"
+    },
+    {
+     "who": "narrator",
+     "en": "Everything feels so clear and light!",
+     "es": "¡Todo se siente brillante aquí!"
+    },
+    {
+     "who": "narrator",
+     "en": "Always be honest, day and night!",
+     "es": "¡Sé siempre sincero y di la verdad!"
+    },
+    {
+     "who": "narrator",
+     "en": "Honesty brings us joy and light!",
+     "es": "¡La honestidad nos da felicidad!"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! I love telling the truth!",
+     "es": "¡Miau! ¡Me encanta decir la verdad!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "cookie",
+     "x": 0.5,
+     "y": 0.5,
+     "at": 2,
+     "until": 3
+    },
+    {
+     "what": "gift",
+     "x": 0.5,
+     "y": 0.5,
+     "at": 4,
+     "until": 5
+    },
+    {
+     "what": "cupcake",
+     "x": 0.5,
+     "y": 0.5,
+     "at": 10,
+     "until": 11
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "What shape was Zibu's cookie?",
+     "es": "¿Qué forma tenía la galleta de Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "It was a circle!",
+     "es": "¡Era un círculo!",
+     "show": {
+      "en": "Circle",
+      "es": "Círculo",
+      "color": "#FFCC00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What shape was the gift box?",
+     "es": "¿Qué forma tenía la caja de regalo?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "It was a square!",
+     "es": "¡Era un cuadrado!",
+     "show": {
+      "en": "Square",
+      "es": "Cuadrado",
+      "color": "#3399FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Who ate the round cookie?",
+     "es": "¿Quién se comió la galleta redonda?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Mimi the kitten!",
+     "es": "¡Mimi la gatita!",
+     "show": {
+      "en": "Mimi",
+      "es": "Mimi",
+      "color": "#FF99CC"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What story did Mimi make up at first?",
+     "es": "¿Qué historia inventó Mimi al principio?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "She said a flying leaf took it!",
+     "es": "¡Dijo que una hoja voladora se la llevó!",
+     "show": {
+      "en": "Leaf",
+      "es": "Hoja",
+      "color": "#33CC33"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What treat did Zibu share when Mimi told the truth?",
+     "es": "¿Qué dulce compartió Zibu cuando Mimi dijo la verdad?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A yummy cupcake!",
+     "es": "¡Un delicioso cupcake!",
+     "show": {
+      "en": "Cupcake",
+      "es": "Cupcake",
+      "color": "#FF6699"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's give a big, happy hug together!",
+     "es": "¡Démonos un abrazo muy grande y feliz!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Hug yourself tight... like this!",
+     "es": "¡Abrácense fuerte... así!",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "One... two... three! Hug!",
+     "es": "¡Uno... dos... tres! ¡Abrazo!",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Being honest feels so good!",
+     "es": "¡Súper! ¡Ser sinceros se siente muy bien!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Always tell the truth when something happens.",
+     "es": "Siempre di la verdad cuando algo pase."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.1,
+     "y": 0.8,
+     "at": 0
+    },
+    {
+     "what": "butterfly",
+     "x": 0.9,
+     "y": 0.3,
+     "at": 0,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "action": "spin",
+     "mood": "happy",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Dancing after telling the truth is so much fun!",
+     "es": "¡Miau! ¡Bailar después de decir la verdad es muy divertido!",
+     "action": "jump",
+     "mood": "happy",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Nos vemos la próxima vez, amigos!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Chao, chao!",
+     "action": "wave",
+     "mood": "happy",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep020-zibu-tells-the-truth"
+}
