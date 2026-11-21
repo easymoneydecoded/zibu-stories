@@ -1,0 +1,1356 @@
+{
+ "slug": "zibu-and-the-duckling-flower",
+ "title": {
+  "en": "Zibu and the Duckling's Flower",
+  "es": "Zibu y la Flor del Patito"
+ },
+ "lesson": {
+  "en": "Saying sorry from the heart helps make friends happy again.",
+  "es": "Pedir perdón de corazón ayuda a hacer felices a los amigos otra vez."
+ },
+ "guest": {
+  "species": "duckling",
+  "name": {
+   "en": "Pip",
+   "es": "Pipi"
+  }
+ },
+ "thumb": {
+  "en": [
+   "SAYING SORRY",
+   "WITH ZIBU"
+  ],
+  "es": [
+   "PEDIR PERDÓN",
+   "CON ZIBU"
+  ],
+  "scene": 6
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu and the Duckling's Flower 🌼 Learn Animal Sounds & Saying Sorry! | Zibu and Friends",
+   "description": "Zibu accidentally knocks over Pip the duckling's flower with a ball! 🌼\nWatch how Zibu learns how to say sorry and make his friend happy again.\nChildren learn fun animal sounds on screen like Quack and Ribbit! 🦆\nA warm episode about empathy, kindness, and apologizing for kids aged 2 to 6.\n\n#ZibuAndFriends #KidsLearning #SayingSorry #AnimalSounds #Preschool",
+   "tags": [
+    "zibu and friends",
+    "saying sorry for kids",
+    "animal sounds for toddlers",
+    "duckling cartoon",
+    "social emotional learning",
+    "toddler videos",
+    "preschool learning",
+    "kindness for kids",
+    "cartoon for 2 year olds",
+    "making up with friends"
+   ]
+  },
+  "es": {
+   "title": "Zibu y la Flor del Patito 🌼 ¡Aprende Sonidos de Animales y Pedir Perdón! | Zibu",
+   "description": "¡Zibu tumba la flor del patito Pipi con una pelota por accidente! 🌼\nMira cómo Zibu aprende a pedir perdón y a hacer feliz a su amigo otra vez.\n¡Los niños aprenden divertidos sonidos de animales en pantalla como Cua y Croac! 🦆\nUn lindo episodio sobre la empatía y la amabilidad para niños de 2 a 6 años.\n\n#ZibuYSusAmigos #VideosParaNiños #PedirPerdon #SonidosDeAnimales #Preescolar",
+   "tags": [
+    "zibu y sus amigos",
+    "pedir perdon para niños",
+    "sonidos de animales",
+    "patito caricatura",
+    "aprendizaje preescolar",
+    "videos para niños",
+    "valores para niños",
+    "empatia para niños",
+    "caricaturas infantiles",
+    "niños 2 a 6 años"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! The flower fell!",
+     "es": "¡Oh no! ¡La flor cayó!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us?",
+     "es": "Amigo, ¿nos puedes ayudar?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's fix it together!",
+     "es": "¡Arreglemos esto juntos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.25,
+     "y": 0.65,
+     "color": "#ff4d4d"
+    },
+    {
+     "what": "flower",
+     "x": 0.85,
+     "y": 0.65,
+     "color": "#ffd700"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Duckling's Flower!",
+     "es": "¡Zibu y la Flor del Patito!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "playing-ball",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.3,
+     "y": 0.65,
+     "at": 0,
+     "color": "#ff4d4d",
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It is a sunny day in the green garden!",
+     "es": "¡Es un día soleado en el jardín verde!"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila are playing happily together.",
+     "es": "Zibu y Lila están jugando felizmente juntos."
+    },
+    {
+     "who": "zibu",
+     "en": "Catch the ball, Lila! Catch it!",
+     "es": "¡Atrapa la pelota, Lila! ¡Atrápala!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Wheee! I got it, Zibu!",
+     "es": "¡Fiuuu! ¡La tengo, Zibu!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Boing, boing, boing! The red ball bounces so high!",
+     "es": "¡Boing, boing, boing! ¡La pelota roja rebota muy alto!"
+    },
+    {
+     "who": "zibu",
+     "en": "Here it comes! Ready... set... toss!",
+     "es": "¡Ahí va! ¿Listos... listos... ya!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Look how high it goes! One... two... bounce!",
+     "es": "¡Mira qué alto va! Una... dos... ¡rebota!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "They take turns tossing the ball back and forth.",
+     "es": "Toman turnos para lanzarse la pelota de un lado a otro."
+    },
+    {
+     "who": "zibu",
+     "en": "Your turn now, Lila!",
+     "es": "¡Tu turno ahora, Lila!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Catch it back, Zibu!",
+     "es": "¡Sí! ¡Atrápala de nuevo, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Got it! Playing ball is so much fun!",
+     "es": "¡La tengo! ¡Jugar a la pelota es muy divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "We are a great team, Zibu!",
+     "es": "¡Somos un gran equipo, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's bounce it super high!",
+     "es": "¡Vamos a hacerla rebotar súper alto!",
+     "mood": "happy",
+     "action": "bigjump"
+    }
+   ]
+  },
+  {
+   "id": "the-accidental-bump",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 1.3
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.25,
+     "y": 0.65,
+     "at": 0,
+     "color": "#ff4d4d"
+    },
+    {
+     "what": "flower",
+     "x": 0.85,
+     "y": 0.65,
+     "at": 2,
+     "until": 9,
+     "color": "#ffd700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Look! Someone new is coming to the garden.",
+     "es": "¡Miren! Alguien nuevo viene al jardín.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.85
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! Hello, friends!",
+     "es": "¡Cua, cua! ¡Hola, amigos!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Oh! Hello, Pip! What a pretty yellow flower!",
+     "es": "¡Oh! ¡Hola, Pipi! ¡Qué bonita flor amarilla!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you! I found it near the green grass.",
+     "es": "¡Gracias! La encontré cerca del pasto verde.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was so excited playing ball, he didn't see Pip!",
+     "es": "¡Zibu estaba tan emocionado jugando que no vio a Pipi!"
+    },
+    {
+     "who": "zibu",
+     "en": "Watch this big kick! Super bounce!",
+     "es": "¡Mira esta gran patada! ¡Súper rebote!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Oh no! Zibu kicked the ball too hard!",
+     "es": "¡Oh, no! ¡Zibu pateó la pelota demasiado fuerte!"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu, look out!",
+     "es": "¡Zibu, cuidado!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Whoosh! The ball bumped right into Pip's flower!",
+     "es": "¡Fiuuu! ¡La pelota chocó con la flor de Pipi!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh... my flower!",
+     "es": "Oh... ¡mi flor!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "The yellow flower fell out of Pip's hand and onto the ground.",
+     "es": "La flor amarilla se cayó de la mano de Pipi al suelo."
+    },
+    {
+     "who": "lila",
+     "en": "Oh dear! The pretty flower is on the grass!",
+     "es": "¡Ay, no! ¡La linda flor está en el pasto!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Oopsie... I... I didn't mean to do that.",
+     "es": "Uy... yo... no fue mi intención hacer eso.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Sniff... my poor flower...",
+     "es": "Snif... mi pobre flor...",
+     "mood": "sad"
+    }
+   ]
+  },
+  {
+   "id": "duckling-is-sad",
+   "bg": "river",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.1
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.45,
+     "y": 0.6,
+     "at": 4,
+     "until": 9,
+     "color": "#4CAF50"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Pip waddled over to the calm river, feeling very sad about the flower.",
+     "es": "Pipi caminó hasta el río tranquilo, sintiéndose muy triste por la flor."
+    },
+    {
+     "who": "guest",
+     "en": "Sniff... my poor yellow flower is gone...",
+     "es": "Snif... mi pobre flor amarilla ya no está...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu ran over to the river to find little Pip.",
+     "es": "Zibu corrió al río para buscar al pequeño Pipi.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Pip! Don't be sad!",
+     "es": "¡Mira, Pipi! ¡No estés triste!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "I found this nice green leaf for you!",
+     "es": "¡Encontré esta linda hoja verde para ti!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu held out the big green leaf to Pip.",
+     "es": "Zibu le mostró la gran hoja verde a Pipi."
+    },
+    {
+     "who": "guest",
+     "en": "A leaf? But... it is not my flower...",
+     "es": "¿Una hoja? Pero... no es mi flor...",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Is it not okay? Look, it is big and shiny!",
+     "es": "¿No te gusta? ¡Mira, es grande y brillante!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Quack... it is nice, but I am still sad...",
+     "es": "Cuac... es linda, pero sigo triste...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip looked down at the water. Offering a leaf didn't help.",
+     "es": "Pipi miró hacia el agua. Ofrecerle una hoja no ayudó."
+    },
+    {
+     "who": "zibu",
+     "en": "Oh dear... why is Pip still sad?",
+     "es": "Ay, no... ¿por qué Pipi sigue triste?",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu didn't understand yet. Pip didn't want a leaf... Pip wanted an apology.",
+     "es": "Zibu aún no entendía. Pipi no quería una hoja... Pipi quería una disculpa."
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go find Lila! Maybe Lila knows what to do!",
+     "es": "¡Vamos a buscar a Lila! ¡Tal vez Lila sabe qué hacer!",
+     "mood": "happy",
+     "action": "jump",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 1.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "learning-animal-sounds",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Up on the sunny hill, the friends heard friendly animal sounds!",
+     "es": "¡Arriba en la colina soleada, los amigos escucharon sonidos de animales!"
+    },
+    {
+     "who": "lila",
+     "en": "Listen! The hill is full of happy sounds today!",
+     "es": "¡Escuchen! ¡La colina está llena de sonidos felices hoy!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Quack!",
+     "es": "¡Cuac! ¡Cuac!",
+     "mood": "happy",
+     "show": {
+      "en": "QUACK!",
+      "es": "¡CUAC!",
+      "color": "#FFCC00"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Pip says QUACK! That is a cute duckling sound!",
+     "es": "¡Pipi dice CUAC! ¡Ese es un sonido de patito muy lindo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly, a friendly little frog croaked nearby!",
+     "es": "¡De repente, una ranita simpática croó cerca de ellos!"
+    },
+    {
+     "who": "lila",
+     "en": "Ribbit! Ribbit!",
+     "es": "¡Croac! ¡Croac!",
+     "mood": "happy",
+     "show": {
+      "en": "RIBBIT!",
+      "es": "¡CROAC!",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "A frog! Frogs say RIBBIT!",
+     "es": "¡Una rana! ¡Las ranas dicen CROAC!",
+     "mood": "surprised",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Quack!",
+     "es": "¡Croac! ¡Cuac!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Then, a happy dog barked down the hill!",
+     "es": "¡Luego, un perro feliz ladró colina abajo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Woof! Woof!",
+     "es": "¡Guau! ¡Guau!",
+     "mood": "happy",
+     "show": {
+      "en": "WOOF!",
+      "es": "¡GUAU!",
+      "color": "#FF9800"
+     },
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Dogs say WOOF! Animal sounds are so much fun!",
+     "es": "¡Los perros dicen GUAU! ¡Los sonidos de animales son divertidos!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Quack... woof... ribbit!",
+     "es": "¡Cuac... guau... croac!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Making animal sounds was fun, but Pip was still missing the flower.",
+     "es": "Hacer sonidos de animales fue divertido, pero Pipi aún extrañaba la flor."
+    },
+    {
+     "who": "zibu",
+     "en": "Animal sounds are great! But... Pip is still sad about the flower.",
+     "es": "¡Los sonidos son geniales! Pero... Pipi sigue triste por la flor.",
+     "mood": "sad"
+    }
+   ]
+  },
+  {
+   "id": "learning-to-say-sorry",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Lila gently walked closer to Zibu.",
+     "es": "Lila se acercó despacito a Zibu.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Zibu... offering a leaf was nice, but Pip is still sad.",
+     "es": "Zibu... ofrecer una hoja fue lindo, pero Pipi sigue triste.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Why? I wanted to make Pip happy!",
+     "es": "¿Por qué? ¡Yo quería hacer feliz a Pipi!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "When we make a mistake, we need special words.",
+     "es": "Cuando cometemos un error, necesitamos palabras especiales."
+    },
+    {
+     "who": "zibu",
+     "en": "Special words? Which ones?",
+     "es": "¿Palabras especiales? ¿Cuáles?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "We say... I am sorry!",
+     "es": "Decimos... ¡Lo siento!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Big bright words appeared in the air!",
+     "es": "¡Grandes palabras brillantes aparecieron en el aire!",
+     "show": {
+      "en": "I AM SORRY",
+      "es": "LO SIENTO",
+      "color": "#FF69B4"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "I am sorry...",
+     "es": "Lo siento...",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! From your heart!",
+     "es": "¡Sí! ¡De corazón!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu walked over to Pip very gently.",
+     "es": "Zibu caminó hacia Pipi muy suavemente.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Pip... I am so sorry I dropped your flower.",
+     "es": "Pipi... lo siento mucho por tirar tu flor.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu gave Pip a warm, soft hug.",
+     "es": "Zibu le dio a Pipi un abrazo muy calientito."
+    },
+    {
+     "who": "guest",
+     "en": "Quack! Thank you, Zibu!",
+     "es": "¡Cuac! ¡Gracias, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip felt much better hearing those kind words!",
+     "es": "¡Pipi se sintió mucho mejor al escuchar esas palabras tan lindas!"
+    }
+   ]
+  },
+  {
+   "id": "making-up",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.35,
+     "y": 0.7,
+     "at": 3,
+     "until": 12,
+     "color": "#FFD700"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Together, they all went back to the sunny garden.",
+     "es": "Juntos, todos regresaron al jardín soleado."
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! I am happy now!",
+     "es": "¡Cuac, cuac! ¡Ahora estoy feliz!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "I'm glad, Pip!",
+     "es": "¡Me alegra, Pipi!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! Over by the grass!",
+     "es": "¡Mira, Zibu! ¡Allá junto al pasto!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "A beautiful new yellow flower was blooming!",
+     "es": "¡Una hermosa flor amarilla nueva estaba creciendo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! A bright yellow flower!",
+     "es": "¡Oh! ¡Una flor amarilla brillante!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu carefully picked the flower for Pip.",
+     "es": "Zibu tomó la flor con mucho cuidado para Pipi.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "This new flower is for you, Pip!",
+     "es": "¡Esta flor nueva es para ti, Pipi!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Quack! I love it! Thank you!",
+     "es": "¡Cuac! ¡Me encanta! ¡Gracias!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Pip is smiling again!",
+     "es": "¡Sí! ¡Pipi está sonriendo otra vez!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Saying sorry made everything better!",
+     "es": "¡Pedir perdón hizo que todo mejorara!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Best friends forever! Quack!",
+     "es": "¡Mejores amigos para siempre! ¡Cuac!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying sorry from the heart brings back the biggest smiles.",
+     "es": "Pedir perdón de corazón nos devuelve las sonrisas más grandes.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-ending",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "cookie",
+     "x": 0.5,
+     "y": 0.6,
+     "at": 7,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The garden is full of happy smiles again!",
+     "es": "¡El jardín está lleno de sonrisas felices otra vez!"
+    },
+    {
+     "who": "zibu",
+     "en": "I love making new friends!",
+     "es": "¡Me encanta hacer nuevos amigos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "And saying sorry from the heart is so important!",
+     "es": "¡Y pedir perdón de corazón es muy importante!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! Thank you, Zibu!",
+     "es": "¡Cuac, cuac! ¡Gracias, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Look! Lila brought something special to celebrate!",
+     "es": "¡Miren! ¡Lila trajo algo especial para celebrar!",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.48
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "I have a delicious snack for everyone!",
+     "es": "¡Tengo un bocado delicioso para todos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yum! Is it a yummy cookie?",
+     "es": "¡Ñam! ¿Es una galleta rica?",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! A big cookie to share!",
+     "es": "¡Sí! ¡Una galleta grande para compartir!",
+     "mood": "laugh",
+     "show": {
+      "en": "COOKIE",
+      "es": "GALLETA",
+      "color": "#FF9900"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Quack! I love cookies!",
+     "es": "¡Cuac! ¡Me encantan las galletas!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "Here, Pip! The first piece is for you!",
+     "es": "¡Toma, Pipi! ¡El primer pedazo es para ti!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! You are a great friend!",
+     "es": "¡Gracias, Zibu! ¡Eres un gran amigo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying sorry and sharing make every day wonderful.",
+     "es": "Pedir perdón y compartir hacen que cada día sea maravilloso."
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, friends! See you next time!",
+     "es": "¡Adiós, amigos! ¡Nos vemos la próxima vez!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye, everyone!",
+     "es": "¡Chao, chao a todos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! Bye-bye!",
+     "es": "¡Cuac, cuac! ¡Chao, chao!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "See you next time on Zibu and Friends!",
+     "es": "¡Nos vemos la próxima vez en Zibu y sus amigos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Saying sorry from the heart,",
+     "es": "Pedir perdón de corazón,"
+    },
+    {
+     "who": "narrator",
+     "en": "Helps a happy friendship start!",
+     "es": "¡Llena el alma de canción!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a silly mistake is made,",
+     "es": "Si algo sale mal al jugar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Friendly smiles will never fade!",
+     "es": "¡Un perdón todo va a arreglar!"
+    },
+    {
+     "who": "zibu",
+     "en": "I dropped the flower on the ground!",
+     "es": "¡Tiré la flor sin querer!",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "A gentle sorry can be found!",
+     "es": "¡Pedir perdón hace bien!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "I gave a hug and said it clear!",
+     "es": "¡Di un abrazo de verdad!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Now happy smiles are living here!",
+     "es": "¡Volvió la gran amistad!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying sorry from the heart,",
+     "es": "Pedir perdón de corazón,"
+    },
+    {
+     "who": "narrator",
+     "en": "Helps a happy friendship start!",
+     "es": "¡Llena el alma de canción!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a silly mistake is made,",
+     "es": "Si algo sale mal al jugar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Friendly smiles will never fade!",
+     "es": "¡Un perdón todo va a arreglar!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying sorry from the heart,",
+     "es": "Pedir perdón de corazón,"
+    },
+    {
+     "who": "narrator",
+     "en": "Helps a happy friendship start!",
+     "es": "¡Llena el alma de canción!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a silly mistake is made,",
+     "es": "Si algo sale mal al jugar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Friendly smiles will never fade!",
+     "es": "¡Un perdón todo va a arreglar!"
+    },
+    {
+     "who": "zibu",
+     "en": "I dropped the flower on the ground!",
+     "es": "¡Tiré la flor sin querer!",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "A gentle sorry can be found!",
+     "es": "¡Pedir perdón hace bien!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "I gave a hug and said it clear!",
+     "es": "¡Di un abrazo de verdad!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Now happy smiles are living here!",
+     "es": "¡Volvió la gran amistad!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying sorry from the heart,",
+     "es": "Pedir perdón de corazón,"
+    },
+    {
+     "who": "narrator",
+     "en": "Helps a happy friendship start!",
+     "es": "¡Llena el alma de canción!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a silly mistake is made,",
+     "es": "Si algo sale mal al jugar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Friendly smiles will never fade!",
+     "es": "¡Un perdón todo va a arreglar!"
+    },
+    {
+     "who": "guest",
+     "en": "Quack, quack! I love my friends!",
+     "es": "¡Cua, cua! ¡Amo a mis amigos!",
+     "mood": "happy",
+     "action": "bigjump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¡¿Les gustó la historia?! ¡Recordémosla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "What was Pip holding at the start?",
+     "es": "¿Qué tenía Pipi al principio?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "A yellow flower!",
+     "es": "¡Una flor amarilla!",
+     "mood": "happy",
+     "show": {
+      "en": "Yellow Flower",
+      "es": "Flor Amarilla"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What toy did Zibu kick too hard?",
+     "es": "¿Qué juguete pateó Zibu muy fuerte?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "The red ball!",
+     "es": "¡La pelota roja!",
+     "mood": "surprised",
+     "show": {
+      "en": "Red Ball",
+      "es": "Pelota Roja"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What animal sound did the friendly duckling make?",
+     "es": "¿Qué sonido animal hizo el lindo patito?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Quack, quack!",
+     "es": "¡Cua, cua!",
+     "mood": "happy",
+     "show": {
+      "en": "Quack",
+      "es": "Cua"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What magic words did Zibu say to Pip?",
+     "es": "¿Qué palabras mágicas le dijo Zibu a Pipi?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "I am sorry!",
+     "es": "¡Lo siento!",
+     "mood": "happy",
+     "show": {
+      "en": "I am sorry",
+      "es": "Lo siento"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What tasty treat did Lila bring to share?",
+     "es": "¿Qué regalo rico trajo Lila para compartir?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "A big cookie!",
+     "es": "¡Una galleta grande!",
+     "mood": "happy",
+     "show": {
+      "en": "Cookie",
+      "es": "Galleta"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Let's give a warm hug like Zibu did!",
+     "es": "¡Demos un abrazo calentito como Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Open your arms wide... one, two, three!",
+     "es": "¡Abran bien los brazos... uno, dos, tres!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Big hug for a friend!",
+     "es": "¡Un gran abrazo para un amigo!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Hugs make everyone smile!",
+     "es": "¡Sí! ¡Los abrazos nos hacen sonreír!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying sorry from the heart helps make friends happy again.",
+     "es": "Pedir perdón de corazón ayuda a hacer felices a los amigos otra vez."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Wiggle your ears and bounce to the beat!",
+     "es": "¡Muevan las orejas y mezan el cuerpo!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep021-zibu-and-the-duckling-flower"
+}
