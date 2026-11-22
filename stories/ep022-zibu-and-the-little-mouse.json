@@ -1,0 +1,1428 @@
+{
+ "slug": "zibu-and-the-little-mouse",
+ "title": {
+  "en": "Zibu and the Little Mouse",
+  "es": "Zibu y el ratoncito"
+ },
+ "lesson": {
+  "en": "We must take care of nature, both big and small things.",
+  "es": "Debemos cuidar la naturaleza, tanto lo grande como lo pequeño."
+ },
+ "guest": {
+  "species": "mouse",
+  "name": {
+   "en": "Pip",
+   "es": "Pip"
+  }
+ },
+ "thumb": {
+  "en": [
+   "Save the Flower!",
+   "Big & Small Fun"
+  ],
+  "es": [
+   "¡Cuidemos la flor!",
+   "Grande y pequeño"
+  ],
+  "scene": 6
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Learns to Care for Nature! 🌿 Big & Small Opposites for Toddlers | Zibu and Friends",
+   "description": "Oh no! Pip the mouse needs help protecting a little flower in the garden! 🌸 Zibu and Lila learn how to care for nature while exploring BIG and SMALL opposites. Can they keep the tiny flower safe? Watch to find out! Ideal for toddlers and preschoolers aged 2-6.\n#ZibuAndFriends #LearnOpposites #TakeCareOfNature #KidsCartoons",
+   "tags": [
+    "zibu and friends",
+    "toddler learning",
+    "care for nature",
+    "big and small",
+    "opposites for kids",
+    "preschool show",
+    "educational cartoon",
+    "kindness to nature",
+    "zibu",
+    "children animation"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu aprende a cuidar la naturaleza! 🌿 Grande y Pequeño para Niños | Zibu y sus Amigos",
+   "description": "¡Oh no! ¡El ratoncito Pip necesita ayuda para proteger una linda flor en el jardín! 🌸 Zibu y Lila aprenden a cuidar la naturaleza mientras descubren los opuestos GRANDE y PEQUEÑO. ¿Podrán mantener a salvo la flor? ¡Acompáñalos! Ideal para niños de 2 a 6 años.\n#ZibuYSusAmigos #Opuestos #CuidarLaNaturaleza #DibujosAnimados",
+   "tags": [
+    "zibu y sus amigos",
+    "aprender jugando",
+    "cuidar la naturaleza",
+    "grande y pequeño",
+    "opuestos para niños",
+    "preescolar",
+    "dibujos animados",
+    "videos educativos",
+    "zibu",
+    "caritativo"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! A big leaf blew away!",
+     "es": "¡Oh no! ¡Una hoja grande se voló!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Pip the mouse needs our help!",
+     "es": "¡El ratón Pip necesita ayuda!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us save the flower?",
+     "es": "¿Nos ayudas a cuidar la flor?",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.8,
+     "y": 0.75
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Little Mouse!",
+     "es": "¡Zibu y el ratoncito!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "garden-discovery",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.8,
+     "y": 0.75,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a bright, sunny day in the garden.",
+     "es": "Era un día brillante y soleado en el jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "Wheee! Look at me, Lila! I'm running so fast!",
+     "es": "¡Yuuupi! ¡Mírame, Lila! ¡Estoy corriendo muy rápido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Hehe! Be careful, Zibu! The grass is so soft!",
+     "es": "¡Jaja! ¡Ten cuidado, Zibu! ¡El pasto está muy suave!",
+     "mood": "laugh"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly... a soft wind began to blow. Whoosh!",
+     "es": "De repente... un viento suave comenzó a soplar. ¡Fiiuuu!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! Wait... what is that tiny sound?",
+     "es": "¡Oh! Espera... ¿qué es ese sonido tan pequeño?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila looked down... and saw a little mouse!",
+     "es": "¡Zibu y Lila miraron hacia abajo... y vieron a un ratoncito!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear! Please don't blow away, little flower!",
+     "es": "¡Ay, no! ¡Por favor no te mezas tan fuerte, florcita!",
+     "mood": "scared"
+    },
+    {
+     "who": "lila",
+     "en": "Hello there! I am Lila, and this is Zibu!",
+     "es": "¡Hola! ¡Yo soy Lila y él es Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Hello! I am Pip! I am trying to shield this tiny flower from the wind.",
+     "es": "¡Hola! ¡Soy Pip! Estoy tratando de proteger esta pequeña flor del viento.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Aww! You are so tiny, Pip! And the flower is tiny too!",
+     "es": "¡Awww! ¡Eres tan pequeñito, Pip! ¡Y la flor también es pequeña!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Can we help you cover the flower, Pip?",
+     "es": "¿Podemos ayudarte a cubrir la flor, Pip?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes, please! The wind is very big for such a small flower!",
+     "es": "¡Sí, por favor! ¡El viento es muy grande para una flor tan pequeña!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "What a sweet little mouse! Zibu and Lila were ready to help.",
+     "es": "¡Qué ratoncito tan dulce! Zibu y Lila estaban listos para ayudar.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "big-and-small-learning",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.45,
+     "y": 0.65,
+     "at": 2,
+     "until": 6,
+     "color": "#2ECC71"
+    },
+    {
+     "what": "leaf",
+     "x": 0.75,
+     "y": 0.7,
+     "at": 4,
+     "until": 6
+    },
+    {
+     "what": "stone",
+     "x": 0.45,
+     "y": 0.7,
+     "at": 7,
+     "until": 11
+    },
+    {
+     "what": "stone",
+     "x": 0.75,
+     "y": 0.75,
+     "at": 9,
+     "until": 11
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Pip wanted to teach Zibu and Lila about sizes in nature.",
+     "es": "Pip quería enseñarle a Zibu y a Lila sobre los tamaños en la naturaleza."
+    },
+    {
+     "who": "guest",
+     "en": "Look around! Nature has big things and small things!",
+     "es": "¡Miren a su alrededor! ¡La naturaleza tiene cosas grandes y cosas pequeñas!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Look at this leaf over here! It's very big!",
+     "es": "¡Miren esta hoja por aquí! ¡Es muy grande!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "A BIG leaf!",
+     "es": "¡Una hoja GRANDE!",
+     "show": {
+      "en": "BIG",
+      "es": "GRANDE",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "And look! I found a tiny leaf right here!",
+     "es": "¡Y miren! ¡Encontré una hoja pequeñita justo aquí!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "A SMALL leaf!",
+     "es": "¡Una hoja PEQUEÑA!",
+     "show": {
+      "en": "SMALL",
+      "es": "PEQUEÑA",
+      "color": "#8BC34A"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Ooh! Big and small! That's so cool!",
+     "es": "¡Ooh! ¡Grande y pequeña! ¡Eso es fantástico!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "What about over there? Look at that stone!",
+     "es": "¿Y por allá? ¡Miren esa piedra!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "A BIG stone!",
+     "es": "¡Una piedra GRANDE!",
+     "show": {
+      "en": "BIG",
+      "es": "GRANDE",
+      "color": "#FF9800"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "And right next to it... a little stone!",
+     "es": "Y justo al lado... ¡una piedra pequeña!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "A SMALL stone!",
+     "es": "¡Una piedra PEQUEÑA!",
+     "show": {
+      "en": "SMALL",
+      "es": "PEQUEÑA",
+      "color": "#FFC107"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Big stone! Small stone! Big leaf! Small leaf!",
+     "es": "¡Piedra grande! ¡Piedra pequeña! ¡Hoja grande! ¡Hoja pequeña!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Everything in nature is so special, no matter the size!",
+     "es": "¡Todo en la naturaleza es muy especial, sin importar el tamaño!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! Big or small, we must take care of everything!",
+     "es": "¡Sí! ¡Sea grande o pequeño, debemos cuidarlo todo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Now... how can our friends help the delicate little flower?",
+     "es": "Ahora... ¿cómo podrán nuestros amigos ayudar a la delicada florcita?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "first-try-leaf",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.45,
+     "y": 0.7,
+     "at": 0,
+     "until": 12
+    },
+    {
+     "what": "leaf",
+     "x": 0.68,
+     "y": 0.72,
+     "at": 1,
+     "until": 12
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Our friends walked into the forest to help the little flower.",
+     "es": "Nuestros amigos fueron al bosque para ayudar a la florcita."
+    },
+    {
+     "who": "guest",
+     "en": "Look! Here is a little leaf!",
+     "es": "¡Miren! ¡Aquí hay una hojita!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Oh, it's so tiny and cute!",
+     "es": "¡Oh, es muy pequeñita y linda!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's try to block the wind with it!",
+     "es": "¡Vamos a intentar tapar el viento con ella!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu gently put the small leaf next to the delicate flower.",
+     "es": "Zibu puso con cuidado la hoja pequeña junto a la flor delicada.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Swoosh! A little breeze came!",
+     "es": "¡Fiuuu! ¡Vino una brisa!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! The wind is still blowing the flower!",
+     "es": "¡Oh, no! ¡El viento todavía sopla la flor!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "The leaf is too small... look!",
+     "es": "La hoja es muy pequeña... ¡miren!",
+     "mood": "surprised",
+     "show": {
+      "en": "SMALL",
+      "es": "PEQUEÑA"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "It doesn't cover the flower at all!",
+     "es": "¡No tapa la flor para nada!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "We need a BIG leaf to keep it safe!",
+     "es": "¡Necesitamos una hoja GRANDE para protegerla!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "A big, big leaf! Let's search!",
+     "es": "¡Una hoja muy, muy grande! ¡A buscar!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! Let's find a big one!",
+     "es": "¡Sí! ¡Encontremos una grande!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Will they find something big enough to protect the little flower?",
+     "es": "¿Encontrarán algo lo suficientemente grande para proteger a la florcita?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "second-try-stone",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.55
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "stone",
+     "x": 0.2,
+     "y": 0.75,
+     "at": 0,
+     "until": 11
+    },
+    {
+     "what": "apple",
+     "x": 0.42,
+     "y": 0.78,
+     "at": 4,
+     "until": 11
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "While looking for a leaf, Zibu spotted a big stone.",
+     "es": "Mientras buscaban una hoja, Zibu vio una piedra grande."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! This big stone can block the breeze!",
+     "es": "¡Miren! ¡Esta piedra grande puede tapar la brisa!",
+     "mood": "happy",
+     "show": {
+      "en": "BIG",
+      "es": "GRANDE"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Ooh! That stone is very big!",
+     "es": "¡Ooh! ¡Esa piedra es muy grande!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu pushed the big stone... but whoops! It started to roll!",
+     "es": "Zibu empujó la piedra grande... ¡pero uy! ¡Empezó a rodar!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.38
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! Stop! There is a small apple on the grass!",
+     "es": "¡Oh, no! ¡Alto! ¡Hay una manzana pequeña en el pasto!",
+     "mood": "scared"
+    },
+    {
+     "who": "guest",
+     "en": "Be careful with the little apple!",
+     "es": "¡Cuidado con la manzana pequeña!",
+     "mood": "scared",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu stopped the stone just in time! Whew!",
+     "es": "¡Zibu detuvo la piedra justo a tiempo! ¡Uf!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oops! I am sorry... that was close!",
+     "es": "¡Uy! Lo siento... ¡estuvo cerca!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Remember, Zibu... we must be very gentle with nature.",
+     "es": "Recuerda, Zibu... debemos ser muy suaves con la naturaleza.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! Small apples and flowers need soft care.",
+     "es": "¡Sí! Las manzanas y flores pequeñas necesitan cuidado suave.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "You're right! Big things must be careful with small things!",
+     "es": "¡Tienen razón! ¡Lo grande debe cuidar a lo pequeño!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu learned to be gentle. But now... where can they find that big leaf?",
+     "es": "Zibu aprendió a ser cuidadoso. Pero ahora... ¿dónde encontrarán esa hoja grande?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "gentle-solution",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "leaf",
+     "x": 0.5,
+     "y": 0.55,
+     "at": 1
+    },
+    {
+     "what": "stone",
+     "x": 0.45,
+     "y": 0.78,
+     "at": 8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Look! Up on the hill, Zibu found a big green leaf!",
+     "es": "¡Miren! ¡Arriba en la colina, Zibu encontró una gran hoja verde!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Pip! Look, Lila! A big leaf!",
+     "es": "¡Mira, Pip! ¡Mira, Lila! ¡Una hoja grande!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "It's perfect! It can shield our tiny flower!",
+     "es": "¡Es perfecta! ¡Puede proteger a nuestra flor pequeña!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Squeak! Let's hold it together very gently.",
+     "es": "¡Squeak! Vamos a sostenerla juntos muy suavemente.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Pip held the big leaf over the flower.",
+     "es": "Zibu, Lila y Pip sostuvieron la gran hoja sobre la flor.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      },
+      {
+       "who": "lila",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Soft and careful... just like this!",
+     "es": "Suave y con cuidado... ¡así!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Now we need small stones to keep it steady!",
+     "es": "¡Ahora necesitamos piedras pequeñas para sujetarla!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I can bring small stones! One... two... three!",
+     "es": "¡Yo puedo traer piedras pequeñas! Una... dos... tres...",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Pip placed tiny stones softly around the leaf.",
+     "es": "Pip colocó piedras pequeñitas con suavidad alrededor de la hoja."
+    },
+    {
+     "who": "zibu",
+     "en": "Good job, Pip! Small stones for a small flower!",
+     "es": "¡Buen trabajo, Pip! ¡Piedras pequeñas para una flor pequeña!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Look! The big leaf is steady now!",
+     "es": "¡Miren! ¡La hoja grande ahora está firme!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! Our little flower is safe from the wind!",
+     "es": "¡Sí! ¡Nuestra florcita está a salvo del viento!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Working together gently made a big difference!",
+     "es": "¡Trabajar juntos con cuidado marcó una gran diferencia!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "nature-blooms",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 0
+    },
+    {
+     "what": "butterfly",
+     "x": 0.5,
+     "y": 0.5,
+     "at": 7,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun began to set, painting the sky with warm colors.",
+     "es": "El sol comenzó a ponerse, pintando el cielo de colores cálidos."
+    },
+    {
+     "who": "zibu",
+     "en": "Look at the sun! It's so warm and pretty!",
+     "es": "¡Miren el sol! ¡Es tan cálido y bonito!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "And look at the little flower... it's opening up!",
+     "es": "Y miren la florcita... ¡se está abriendo!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Squeak! The flower is blooming!",
+     "es": "¡Squeak! ¡La flor está floreciendo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Safe from the wind, the little flower opened happily.",
+     "es": "A salvo del viento, la florcita se abrió muy feliz."
+    },
+    {
+     "who": "zibu",
+     "en": "It's so beautiful! We protected it!",
+     "es": "¡Es tan hermosa! ¡La protegimos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Shh... look! Someone is coming to visit!",
+     "es": "Shh... ¡miren! ¡Alguien viene de visita!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "A colorful butterfly landed gently on the flower.",
+     "es": "Una mariposa colorida se posó suavemente en la flor."
+    },
+    {
+     "who": "guest",
+     "en": "Hello, butterfly! Welcome to our warm hill!",
+     "es": "¡Hola, mariposa! ¡Bienvenida a nuestra colina cálida!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! The tiny flower made a tiny friend!",
+     "es": "¡Sí! ¡La flor pequeña hizo una amiga pequeña!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "We took care of nature, big and small!",
+     "es": "¡Cuidamos la naturaleza, grande y pequeña!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! Thank you, Lila!",
+     "es": "¡Gracias, Zibu! ¡Gracias, Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Hurray for nature!",
+     "es": "¡Viva la naturaleza!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Pip cheered as the gentle breeze blew softly.",
+     "es": "Zibu, Lila y Pip celebraron mientras la suave brisa soplaba.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-lesson",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.48
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.82,
+     "y": 0.75,
+     "at": 0,
+     "until": 13
+    },
+    {
+     "what": "butterfly",
+     "x": 0.85,
+     "y": 0.5,
+     "at": 1,
+     "until": 13,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sun was setting, painting the sky with warm, happy colors.",
+     "es": "El sol se estaba poniendo, pintando el cielo con colores cálidos y felices."
+    },
+    {
+     "who": "zibu",
+     "en": "Look at the garden! Everything looks so cozy now!",
+     "es": "¡Miren el jardín! ¡Ahora todo se ve muy acogedor!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "The tiny flower is safe and sheltered.",
+     "es": "La florecita está segura y protegida.",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "And I made wonderful new friends!",
+     "es": "¡Y hice nuevos amigos maravillosos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Today, Zibu, Lila, and Pip learned something very special.",
+     "es": "Hoy, Zibu, Lila y Pip aprendieron algo muy especial."
+    },
+    {
+     "who": "narrator",
+     "en": "We must take care of nature, both big and small things!",
+     "es": "¡Debemos cuidar la naturaleza, tanto lo grande como lo pequeño!",
+     "show": {
+      "en": "CARE FOR NATURE",
+      "es": "CUIDAR LA NATURALEZA",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Big trees, small flowers, big stones, and tiny leaves!",
+     "es": "¡Árboles grandes, flores pequeñas, piedras grandes y hojitas pequeñas!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Everything in nature matters!",
+     "es": "¡Todo en la naturaleza importa!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Even a tiny mouse like me!",
+     "es": "¡Hasta un ratoncito pequeño como yo!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's sing our happy nature song!",
+     "es": "¡Vamos a cantar nuestra canción feliz de la naturaleza!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "La la la! We love nature every day!",
+     "es": "¡La la la! ¡Amamos la naturaleza todos los días!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "La la la! Big and small, we care for all!",
+     "es": "¡La la la! ¡Grandes y pequeños, cuidamos a todos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, Pip! Goodbye, friends!",
+     "es": "¡Adiós, Pip! ¡Adiós, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "See you next time for more fun with Zibu and Friends!",
+     "es": "¡Nos vemos la próxima vez para más diversión con Zibu y sus amigos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.8,
+     "at": 0
+    },
+    {
+     "what": "leaf",
+     "x": 0.2,
+     "y": 0.7,
+     "at": 4
+    },
+    {
+     "what": "butterfly",
+     "x": 0.8,
+     "y": 0.4,
+     "at": 17,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Nature is big, nature is small,",
+     "es": "La naturaleza es grande y genial,"
+    },
+    {
+     "who": "narrator",
+     "en": "We give our love to one and all!",
+     "es": "¡Cuidar lo pequeño es algo especial!"
+    },
+    {
+     "who": "narrator",
+     "en": "A tiny flower, a giant tree,",
+     "es": "Una gran piedra o una linda flor,"
+    },
+    {
+     "who": "narrator",
+     "en": "As happy and safe as they can be!",
+     "es": "¡Cuidemos a todos con mucho amor!"
+    },
+    {
+     "who": "zibu",
+     "en": "I found a leaf so big and green!",
+     "es": "¡Una hojita grande encontré!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "The smallest flower ever seen!",
+     "es": "¡Y una flor pequeña protegeré!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "We shield them both from wind and rain!",
+     "es": "El viento suave no las soplará,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "And bring them happy smiles again!",
+     "es": "¡Y feliz el jardín siempre estará!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Nature is big, nature is small,",
+     "es": "La naturaleza es grande y genial,"
+    },
+    {
+     "who": "narrator",
+     "en": "We give our love to one and all!",
+     "es": "¡Cuidar lo pequeño es algo especial!"
+    },
+    {
+     "who": "narrator",
+     "en": "A tiny flower, a giant tree,",
+     "es": "Una gran piedra o una linda flor,"
+    },
+    {
+     "who": "narrator",
+     "en": "As happy and safe as they can be!",
+     "es": "¡Cuidemos a todos con mucho amor!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Nature is big, nature is small,",
+     "es": "La naturaleza es grande y genial,"
+    },
+    {
+     "who": "narrator",
+     "en": "We give our love to one and all!",
+     "es": "¡Cuidar lo pequeño es algo especial!"
+    },
+    {
+     "who": "narrator",
+     "en": "A tiny flower, a giant tree,",
+     "es": "Una gran piedra o una linda flor,"
+    },
+    {
+     "who": "narrator",
+     "en": "As happy and safe as they can be!",
+     "es": "¡Cuidemos a todos con mucho amor!"
+    },
+    {
+     "who": "zibu",
+     "en": "I found a leaf so big and green!",
+     "es": "¡Una hojita grande encontré!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "The smallest flower ever seen!",
+     "es": "¡Y una flor pequeña protegeré!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "We shield them both from wind and rain!",
+     "es": "El viento suave no las soplará,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "And bring them happy smiles again!",
+     "es": "¡Y feliz el jardín siempre estará!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Nature is big, nature is small,",
+     "es": "La naturaleza es grande y genial,"
+    },
+    {
+     "who": "narrator",
+     "en": "We give our love to one and all!",
+     "es": "¡Cuidar lo pequeño es algo especial!"
+    },
+    {
+     "who": "narrator",
+     "en": "A tiny flower, a giant tree,",
+     "es": "Una gran piedra o una linda flor,"
+    },
+    {
+     "who": "narrator",
+     "en": "As happy and safe as they can be!",
+     "es": "¡Cuidemos a todos con mucho amor!"
+    },
+    {
+     "who": "guest",
+     "en": "Squeak! Big or small, I love nature!",
+     "es": "¡Chic! ¡Grande o pequeño, amo la naturaleza!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who was our tiny new friend?",
+     "es": "¿Quién era nuestro pequeño nuevo amigo?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Pip the little mouse!",
+     "es": "¡Pip el ratoncito!",
+     "mood": "happy",
+     "show": {
+      "en": "Pip",
+      "es": "Pip"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What was blowing in the garden?",
+     "es": "¿Qué estaba soplando en el jardín?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "A strong wind!",
+     "es": "¡Un viento fuerte!",
+     "mood": "surprised",
+     "show": {
+      "en": "Wind",
+      "es": "Viento"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Pip want to protect?",
+     "es": "¿Qué quería proteger Pip?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "A delicate little flower!",
+     "es": "¡Una pequeña flor delicada!",
+     "mood": "happy",
+     "show": {
+      "en": "Flower",
+      "es": "Flor"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Zibu and Lila use to shield the flower?",
+     "es": "¿Qué usaron Zibu y Lila para proteger la flor?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "A big green leaf!",
+     "es": "¡Una gran hoja verde!",
+     "mood": "happy",
+     "show": {
+      "en": "Big Leaf",
+      "es": "Hoja grande"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What landed on the happy flower at the end?",
+     "es": "¿Qué se posó sobre la feliz flor al final?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "A colorful butterfly!",
+     "es": "¡Una colorida mariposa!",
+     "mood": "happy",
+     "show": {
+      "en": "Butterfly",
+      "es": "Mariposa"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Can you stretch up big like a big leaf?",
+     "es": "¿Pueden estirarse grande como una hoja grande?",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Reach high! Stretch, stretch, stretch!",
+     "es": "¡Alcancen alto! ¡Estírense, estírense!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Now make yourself small like a tiny mouse!",
+     "es": "¡Ahora háganse pequeños como un ratoncito!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Curled up small! Good job!",
+     "es": "¡Pequeñitos y acurrucados! ¡Buen trabajo!",
+     "mood": "happy",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "We must take care of nature, both big and small things.",
+     "es": "Debemos cuidar la naturaleza, tanto lo grande como lo pequeño."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "butterfly",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 0,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Move big and small, dance all around!",
+     "es": "¡Muévanse grande y pequeño, bailen sin parar!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep022-zibu-and-the-little-mouse"
+}
