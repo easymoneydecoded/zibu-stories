@@ -55,7 +55,8 @@ def prompt(story: dict) -> str:
         f"Story objects to feature, big and clear: {', '.join(props[:3]) or 'none'}.\n"
         f"Setting: {BG.get(sc.get('bg'), 'a sunny garden')}, {TIME.get(sc.get('time'), 'bright daylight')}.\n"
         "Composition: close-up, the characters LARGE and filling the right two thirds, very expressive faces "
-        "(surprised or laughing) looking at the viewer, clear action, one main object big in the middle. Bright, "
+        "(surprised or laughing) looking at the viewer, clear action, one main object big in the center or right (never in "
+        "the upper-left corner). Bright, "
         "saturated, cheerful colors, soft glow and depth, high contrast so it reads at a small size. Keep the upper-left "
         "area (about 45% wide, 35% tall) simple and uncluttered (sky) because a title is added there later.\n"
         "ABSOLUTELY NO text, letters, numbers, logos or watermarks anywhere in the image.")
