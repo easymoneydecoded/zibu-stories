@@ -1,0 +1,1518 @@
+{
+ "slug": "zibu-piglet-colorful-balloons",
+ "title": {
+  "en": "Zibu and the Colorful Balloons",
+  "es": "Zibu y los Globos de Colores"
+ },
+ "lesson": {
+  "en": "Saying thank you when a friend gives you a gift makes everyone happy.",
+  "es": "Decir gracias cuando un amigo te da un regalo hace felices a todos."
+ },
+ "guest": {
+  "species": "piglet",
+  "name": {
+   "en": "Percy",
+   "es": "Percy"
+  }
+ },
+ "thumb": {
+  "en": [
+   "COLORFUL",
+   "BALLOONS!"
+  ],
+  "es": [
+   "¡GLOBOS DE",
+   "COLORES!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Learn Colors & Say Thank You with Zibu and Percy the Piglet! 🎈",
+   "description": "Join Zibu, Lila, and Percy the piglet in a fun adventure! 🎈\nPercy brings four bright balloons to the garden. 🌺\nTogether they learn the colors RED, BLUE, YELLOW, and GREEN! 🎨\nChildren learn the polite magic word: Thank You! 💖\nPerfect educational video for toddlers and preschoolers aged 2-6. 🌟\n#ZibuAndFriends #LearnColors #SayThankYou #ToddlerLearning #KidsCartoon",
+   "tags": [
+    "zibu and friends",
+    "learn colors for kids",
+    "say thank you",
+    "toddler cartoon",
+    "colors song",
+    "red blue yellow green",
+    "piglet for kids",
+    "preschool learning",
+    "educational cartoons",
+    "kindness for kids",
+    "balloon video",
+    "spanish english kids"
+   ]
+  },
+  "es": {
+   "title": "¡Aprende Colores y a Decir Gracias con Zibu y Percy el Cerdito! 🎈",
+   "description": "¡Únanse a Zibu, Lila y Percy el cerdito en una gran aventura! 🎈\nPercy trae cuatro globos de colores al jardín. 🌺\n¡Juntos aprenden los colores ROJO, AZUL, AMARILLO y VERDE! 🎨\nLos niños aprenden la palabra mágica: ¡Gracias! 💖\nUn video educativo perfecto para niños de 2 a 6 años. 🌟\n#ZibuYSusAmigos #AprendeLosColores #DecirGracias #CaricaturasEducativas #ParaNiños",
+   "tags": [
+    "zibu y sus amigos",
+    "aprende los colores",
+    "decir gracias",
+    "caricaturas para niños",
+    "cerdito percy",
+    "rojo azul amarillo verde",
+    "videos educativos",
+    "para preescolar",
+    "valores para niños",
+    "globos de colores",
+    "videos para niños 2 a 6 años",
+    "canciones infantiles"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Look! The red balloon is floating away!",
+     "es": "¡Mira! ¡El globo rojo se vuela!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us catch it?",
+     "es": "Amigo, ¿nos ayudas a atraparlo?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's catch the balloons together!",
+     "es": "¡Vamos a atrapar los globos juntos!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.78,
+     "y": 0.3,
+     "anim": "float",
+     "color": "#FF0000"
+    },
+    {
+     "what": "balloon",
+     "x": 0.82,
+     "y": 0.25,
+     "anim": "float",
+     "color": "#0000FF"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Colorful Balloons!",
+     "es": "¡Zibu y los Globos de Colores!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "percy-arrives-with-balloons",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.78,
+     "y": 0.3,
+     "at": 7,
+     "anim": "float",
+     "color": "#FF0000"
+    },
+    {
+     "what": "balloon",
+     "x": 0.82,
+     "y": 0.25,
+     "at": 7,
+     "anim": "float",
+     "color": "#0000FF"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a beautiful, sunny day in the garden.",
+     "es": "Llegó un día hermoso y soleado al jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "I love sunny days!",
+     "es": "¡Me encantan los días soleados!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Me too, Zibu! Look... someone is coming!",
+     "es": "¡A mí también, Zibu! Mira... ¡alguien viene!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Look! It's Percy the little piglet!",
+     "es": "¡Miren! ¡Es el cerdito Percy!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oink, oink! Hello, friends!",
+     "es": "¡Oink, oink! ¡Hola, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, Percy!",
+     "es": "¡Hola, Percy!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Hi, Percy! Wow... look at your balloons!",
+     "es": "¡Hola, Percy! Vaya... ¡mira tus globos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Percy was holding four big, shiny balloons!",
+     "es": "¡Percy llevaba cuatro globos grandes y brillantes!"
+    },
+    {
+     "who": "guest",
+     "en": "Yes! I have red, blue, yellow, and green!",
+     "es": "¡Sí! ¡Tengo rojo, azul, amarillo y verde!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "They are so bright and pretty!",
+     "es": "¡Son muy brillantes y bonitos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "They bounce in the wind! Wheee!",
+     "es": "¡Rebotan en el viento! ¡Wiii!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I brought them to show you!",
+     "es": "¡Los traje para mostrárselos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful surprise for Zibu and Lila!",
+     "es": "¡Qué sorpresa tan maravillosa para Zibu y Lila!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "balloons-fly-away",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.78,
+     "y": 0.3,
+     "at": 0,
+     "until": 6,
+     "anim": "float",
+     "color": "#FF0000"
+    },
+    {
+     "what": "balloon",
+     "x": 0.82,
+     "y": 0.25,
+     "at": 0,
+     "until": 6,
+     "anim": "float",
+     "color": "#0000FF"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Percy were admiring the colorful balloons.",
+     "es": "Zibu, Lila y Percy admiraban los hermosos globos."
+    },
+    {
+     "who": "zibu",
+     "en": "Look how high they float!",
+     "es": "¡Mira qué alto flotan!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "They look like big colorful bubbles!",
+     "es": "¡Parecen grandes burbujas de colores!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "But suddenly... whoosh! A soft gust of wind blew!",
+     "es": "Pero de repente... ¡fiuuu! ¡Sopló una suave ráfaga de viento!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh! Oink! My balloons!",
+     "es": "¡Uy! ¡Oink! ¡Mis globos!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Oh no! The wind took the balloons right out of Percy's hand!",
+     "es": "¡Oh no! ¡El viento se llevó los globos de la mano de Percy!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look! They are flying away!",
+     "es": "¡Miren! ¡Se están volando!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "They are floating toward the big hill!",
+     "es": "¡Van flotando hacia la gran colina!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear! We have to catch them!",
+     "es": "¡Oh vaya! ¡Tenemos que atraparlos!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Don't worry, Percy! We can chase them!",
+     "es": "¡No te preocupes, Percy! ¡Podemos perseguirlos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Let's run fast! Come on!",
+     "es": "¡Sí! ¡Vamos a correr rápido! ¡Vamos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The three little friends ran as fast as they could!",
+     "es": "¡Los tres amiguitos corrieron lo más rápido posible!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.8
+      },
+      {
+       "who": "lila",
+       "to": 0.95
+      },
+      {
+       "who": "guest",
+       "to": 1.1
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Wait for me! Here we go!",
+     "es": "¡Espérenme! ¡Allá vamos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "And off they went, chasing the floating balloons all the way to the hill!",
+     "es": "¡Y allá fueron, persiguiendo los globos flotantes hasta la colina!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "catching-the-balloons",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.25,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "balloon",
+     "x": 0.25,
+     "y": 0.4,
+     "at": 0,
+     "color": "#FF0000",
+     "anim": "float"
+    },
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 0,
+     "color": "#0000FF",
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Look! The balloons floated all the way to the top of the hill!",
+     "es": "¡Miren! ¡Los globos flotaron hasta la cima de la colina!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look at the red balloon! It's right by that big flower!",
+     "es": "¡Miren el globo rojo! ¡Está al lado de esa gran flor!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu jumped up high... reach, reach, reach!",
+     "es": "Zibu saltó bien alto... ¡estira, estira, estira!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.25
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Got it! I caught the red balloon!",
+     "es": "¡Lo tengo! ¡Atrapé el globo rojo!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! Good job, Zibu!",
+     "es": "¡Sí! ¡Buen trabajo, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Look! The blue, yellow, and green balloons are up high!",
+     "es": "¡Miren! ¡Los globos azul, amarillo y verde están arriba!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila reached up with her soft bunny ears...",
+     "es": "Lila se estiró con sus suaves orejitas de conejo..."
+    },
+    {
+     "who": "lila",
+     "en": "Up... up... got them all!",
+     "es": "Arriba... arriba... ¡los atrapé todos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Oink oink! You saved all my colorful balloons!",
+     "es": "¡Oink oink! ¡Salvaron todos mis globos de colores!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Hooray! None of them flew away!",
+     "es": "¡Viva! ¡Ninguno se voló!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone smiled. The balloons were safe and sound!",
+     "es": "Todos sonrieron. ¡Los globos estaban sanos y salvos!"
+    },
+    {
+     "who": "lila",
+     "en": "Let's look at all the bright colors together!",
+     "es": "¡Vamos a mirar todos los colores brillantes juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "What wonderful colors did Percy bring? Let's see!",
+     "es": "¿Qué colores tan maravillosos trajo Percy? ¡Vamos a ver!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-the-colors",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.65,
+     "y": 0.5,
+     "at": 0,
+     "color": "#FF0000"
+    },
+    {
+     "what": "balloon",
+     "x": 0.7,
+     "y": 0.5,
+     "at": 0,
+     "color": "#0000FF"
+    },
+    {
+     "what": "balloon",
+     "x": 0.75,
+     "y": 0.5,
+     "at": 0,
+     "color": "#FFFF00"
+    },
+    {
+     "what": "balloon",
+     "x": 0.8,
+     "y": 0.5,
+     "at": 0,
+     "color": "#00FF00"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Percy lined up all four shiny balloons in a row.",
+     "es": "Percy acomodó los cuatro globos brillantes en fila."
+    },
+    {
+     "who": "guest",
+     "en": "Look at the first balloon! What color is this one?",
+     "es": "¡Miren el primer globo! ¿De qué color es este?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "That one is RED! Like a sweet strawberry!",
+     "es": "¡Ese es ROJO! ¡Como una dulce fresa!",
+     "mood": "happy",
+     "action": "glow",
+     "show": {
+      "en": "RED",
+      "es": "ROJO",
+      "color": "#FF0000"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Yes! Red! A bright, shiny red balloon.",
+     "es": "¡Sí! ¡Rojo! Un globo rojo, brillante y bonito."
+    },
+    {
+     "who": "guest",
+     "en": "And what about this second balloon?",
+     "es": "¿Y qué hay de este segundo globo?",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "That one is BLUE! Like the sunny sky!",
+     "es": "¡Ese es AZUL! ¡Como el cielo soleado!",
+     "mood": "happy",
+     "show": {
+      "en": "BLUE",
+      "es": "AZUL",
+      "color": "#0000FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Very good! Beautiful blue!",
+     "es": "¡Muy bien! ¡Azul hermoso!"
+    },
+    {
+     "who": "guest",
+     "en": "Here comes the third balloon!",
+     "es": "¡Aquí viene el tercer globo!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "YELLOW! Bright yellow like the sun!",
+     "es": "¡AMARILLO! ¡Amarillo brillante como el sol!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "YELLOW",
+      "es": "AMARILLO",
+      "color": "#FFFF00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Wonderful! Warm, happy yellow!",
+     "es": "¡Maravilloso! ¡Amarillo cálido y feliz!"
+    },
+    {
+     "who": "guest",
+     "en": "And the last balloon is...",
+     "es": "Y el último globo es...",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "GREEN! Like the soft grass!",
+     "es": "¡VERDE! ¡Como el pasto suave!",
+     "mood": "happy",
+     "show": {
+      "en": "GREEN",
+      "es": "VERDE",
+      "color": "#00FF00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Red, Blue, Yellow, and Green!",
+     "es": "¡Rojo, Azul, Amarillo y Verde!"
+    },
+    {
+     "who": "zibu",
+     "en": "So many lovely colorful balloons!",
+     "es": "¡Tantos globos bonitos de colores!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Now Percy had a special surprise for his friends...",
+     "es": "Ahora Percy tenía una sorpresa especial para sus amigos...",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "percy-shares-gifts",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.45,
+     "y": 0.45,
+     "at": 4,
+     "color": "#ff4444"
+    },
+    {
+     "what": "balloon",
+     "x": 0.55,
+     "y": 0.45,
+     "at": 7,
+     "color": "#4444ff"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The friends walked into the cozy forest together.",
+     "es": "Los amigos caminaron juntos hacia el acogedor bosque."
+    },
+    {
+     "who": "guest",
+     "en": "Oink oink! I have a special surprise for both of you!",
+     "es": "¡Oink oink! ¡Tengo una sorpresa especial para ustedes!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "A surprise? What is it, Percy?",
+     "es": "¿Una sorpresa? ¿Qué es, Percy?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Percy stepped closer to Zibu with the bright red balloon.",
+     "es": "Percy se acercó a Zibu con el brillante globo rojo.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Here you go, Zibu! A red balloon present for you!",
+     "es": "¡Aquí tienes, Zibu! ¡Un regalo de globo rojo para ti!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh wow! A red balloon gift! For me?",
+     "es": "¡Oh, guau! ¡Un regalo de globo rojo! ¿Para mí?",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Then Percy gently turned toward Lila with the blue balloon.",
+     "es": "Luego Percy se giró suavemente hacia Lila con el globo azul.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "And this shiny blue balloon is for you, Lila!",
+     "es": "¡Y este brillante globo azul es para ti, Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "For me? A beautiful blue balloon present!",
+     "es": "¿Para mí? ¡Un hermoso regalo de globo azul!",
+     "mood": "surprised",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Percy was sharing his wonderful balloons with his best friends.",
+     "es": "Percy estaba compartiendo sus maravillosos globos con sus mejores amigos."
+    },
+    {
+     "who": "guest",
+     "en": "Giggle! You are my very special friends!",
+     "es": "¡Jajaja! ¡Ustedes son mis amigos muy especiales!",
+     "mood": "laugh"
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Lila! We have our very own balloons now!",
+     "es": "¡Mira, Lila! ¡Ahora tenemos nuestros propios globos!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Percy is so sweet to give us such nice gifts!",
+     "es": "¡Percy es tan dulce al darnos regalos tan bonitos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Giving presents brought big smiles to everyone in the forest.",
+     "es": "Dar regalos les sacó una gran sonrisa a todos en el bosque.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "saying-thank-you",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.6
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "When a friend gives you a gift... what is the magic word to say?",
+     "es": "Cuando un amigo te da un regalo... ¿cuál es la palabra mágica que hay que decir?"
+    },
+    {
+     "who": "lila",
+     "en": "Oh! I know, I know!",
+     "es": "¡Oh! ¡Yo sé, yo sé!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "We say... THANK YOU!",
+     "es": "¡Decimos... ¡GRACIAS!",
+     "mood": "happy",
+     "show": {
+      "en": "THANK YOU!",
+      "es": "¡GRACIAS!",
+      "color": "#ffcc00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "That's right! Zibu and Lila remembered to be kind and polite.",
+     "es": "¡Así es! Zibu y Lila recordaron ser amables y educados."
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you, Percy! I love my red balloon!",
+     "es": "¡Gracias, Percy! ¡Me encanta mi globo rojo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you so much, Percy! You are so kind!",
+     "es": "¡Muchas gracias, Percy! ¡Eres muy amable!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila stepped close and gave Percy a warm hug!",
+     "es": "¡Zibu y Lila se acercaron y le dieron a Percy un cálido abrazo!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.45
+      },
+      {
+       "who": "lila",
+       "to": 0.52
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Giggle, giggle! You are very welcome!",
+     "es": "¡Jajaja! ¡De nada, amigos!",
+     "mood": "laugh",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Percy felt super happy inside because saying thank you is so sweet.",
+     "es": "Percy se sintió muy feliz por dentro porque decir gracias es muy dulce."
+    },
+    {
+     "who": "zibu",
+     "en": "Saying thank you makes everyone feel happy!",
+     "es": "¡Decir gracias hace que todos se sientan felices!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "It brings a big smile to your heart!",
+     "es": "¡Le trae una gran sonrisa a tu corazón!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Oink oink! Kindness is the best gift of all!",
+     "es": "¡Oink oink! ¡La amabilidad es el mejor regalo de todos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "And so, the three friends cheered together in the sunny forest!",
+     "es": "¡Y así, los tres amigos celebraron juntos en el soleado bosque!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-balloon-celebration",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.25,
+     "y": 0.35,
+     "at": 1,
+     "anim": "float",
+     "color": "#E53935"
+    },
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.35,
+     "at": 1,
+     "anim": "float",
+     "color": "#1E88E5"
+    },
+    {
+     "what": "balloon",
+     "x": 0.75,
+     "y": 0.35,
+     "at": 1,
+     "anim": "float",
+     "color": "#4CAF50"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the garden, the golden sunset lit up the sky.",
+     "es": "De vuelta en el jardín, el atardecer dorado iluminó el cielo.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.25
+      },
+      {
+       "who": "lila",
+       "to": 0.5
+      },
+      {
+       "who": "guest",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look at the sky! It is orange and pink... so beautiful!",
+     "es": "¡Miren el cielo! Es de color naranja y rosa... ¡qué hermoso!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "And our balloons look so shiny in the sunset!",
+     "es": "¡Y nuestros globos se ven tan brillantes en el atardecer!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Oink oink! Let's dance with our balloons!",
+     "es": "¡Oink oink! ¡Vamos a bailar con nuestros globos!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "The three friends danced together in a joyful circle.",
+     "es": "Los tres amigos bailaron juntos en un círculo alegre.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.3
+      },
+      {
+       "who": "lila",
+       "to": 0.55
+      },
+      {
+       "who": "guest",
+       "to": 0.8
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Wheee! Up and down we go!",
+     "es": "¡Fiuuu! ¡Arriba y abajo vamos!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you for the gift, Percy!",
+     "es": "¡Gracias por el regalo, Percy!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Oink oink! Hearing 'thank you' makes me want to wiggle!",
+     "es": "¡Oink oink! Escuchar 'gracias' ¡me hace querer moverme!",
+     "mood": "laugh",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying thank you makes everyone feel warm and happy inside.",
+     "es": "Decir gracias hace que todos se sientan felices por dentro.",
+     "show": {
+      "en": "THANK YOU",
+      "es": "GRACIAS",
+      "color": "#FF9800"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you, Percy!",
+     "es": "¡Gracias, Percy!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Thank you, Percy!",
+     "es": "¡Gracias, Percy!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "You are very welcome, my good friends!",
+     "es": "¡De nada, mis buenos amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay for balloons, gifts, and friendship!",
+     "es": "¡Que vivan los globos, los regalos y la amistad!",
+     "mood": "laugh",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "And so, Zibu, Lila, and Percy shared a perfect, happy day.",
+     "es": "Y así, Zibu, Lila y Percy compartieron un día perfecto y feliz.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.2,
+     "y": 0.4,
+     "at": 0,
+     "color": "#FF0000",
+     "anim": "bounce"
+    },
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.4,
+     "at": 0,
+     "color": "#0000FF",
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Balloons of red, blue, yellow, green,",
+     "es": "Globos de rojo, azul y verde,"
+    },
+    {
+     "who": "narrator",
+     "en": "The prettiest balloons we've ever seen!",
+     "es": "¡Una sonrisa nunca se pierde!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend gives a gift to you,",
+     "es": "Si un gran regalo te van a dar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying thank you makes hearts happy too!",
+     "es": "¡Decir gracias te hace cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Percy brought balloons today,",
+     "es": "Percy nos dio globos de color,",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "We chased them down and saved the day!",
+     "es": "¡Los atrapamos con mucho amor!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "A red balloon he gave to me,",
+     "es": "Un globo rojo me dio a mí,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "A blue balloon for all to see!",
+     "es": "¡Y uno azul para ser feliz!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Balloons of red, blue, yellow, green,",
+     "es": "Globos de rojo, azul y verde,"
+    },
+    {
+     "who": "narrator",
+     "en": "The prettiest balloons we've ever seen!",
+     "es": "¡Una sonrisa nunca se pierde!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend gives a gift to you,",
+     "es": "Si un gran regalo te van a dar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying thank you makes hearts happy too!",
+     "es": "¡Decir gracias te hace cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Balloons of red, blue, yellow, green,",
+     "es": "Globos de rojo, azul y verde,"
+    },
+    {
+     "who": "narrator",
+     "en": "The prettiest balloons we've ever seen!",
+     "es": "¡Una sonrisa nunca se pierde!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend gives a gift to you,",
+     "es": "Si un gran regalo te van a dar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying thank you makes hearts happy too!",
+     "es": "¡Decir gracias te hace cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Saying thank you feels so bright,",
+     "es": "Decir gracias se siente bien,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "It makes our smiles shine so light!",
+     "es": "¡Hace felices a todos también!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Giving gifts and sharing love,",
+     "es": "Dar regalos es muy gentil,",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Like flying balloons up above!",
+     "es": "¡Como volar en este jardín!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Balloons of red, blue, yellow, green,",
+     "es": "Globos de rojo, azul y verde,"
+    },
+    {
+     "who": "narrator",
+     "en": "The prettiest balloons we've ever seen!",
+     "es": "¡Una sonrisa nunca se pierde!"
+    },
+    {
+     "who": "narrator",
+     "en": "When a friend gives a gift to you,",
+     "es": "Si un gran regalo te van a dar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Saying thank you makes hearts happy too!",
+     "es": "¡Decir gracias te hace cantar!"
+    },
+    {
+     "who": "guest",
+     "en": "Oink oink! Thank you for singing with me!",
+     "es": "¡Oink oink! ¡Gracias por cantar conmigo!",
+     "mood": "happy",
+     "action": "spin"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who came to visit Zibu and Lila today?",
+     "es": "¿Quién vino a visitar a Zibu y Lila hoy?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Percy the piglet!",
+     "es": "¡Percy el cerdito!",
+     "mood": "happy",
+     "show": {
+      "en": "Percy",
+      "es": "Percy"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many colorful balloons did Percy bring?",
+     "es": "¿Cuántos globos de colores trajo Percy?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Four balloons!",
+     "es": "¡Cuatro globos!",
+     "mood": "happy",
+     "show": {
+      "en": "4",
+      "es": "4"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What blew the balloons away?",
+     "es": "¿Qué se llevó los globos?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "The wind!",
+     "es": "¡El viento!",
+     "mood": "surprised",
+     "show": {
+      "en": "Wind",
+      "es": "Viento"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What color balloon did Percy give to Zibu?",
+     "es": "¿De qué color era el globo que Percy le dio a Zibu?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Red!",
+     "es": "¡Rojo!",
+     "mood": "happy",
+     "show": {
+      "en": "Red",
+      "es": "Rojo",
+      "color": "#FF0000"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What magic word do we say when someone gives us a gift?",
+     "es": "¿Qué palabra mágica decimos cuando alguien nos da un regalo?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Thank you!",
+     "es": "¡Gracias!",
+     "mood": "happy",
+     "show": {
+      "en": "Thank you!",
+      "es": "¡Gracias!"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's count to four like the balloons!",
+     "es": "¡Vamos a contar hasta cuatro como los globos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Count with us! One, two, three, four!",
+     "es": "¡Canten con nosotros! ¡Uno, dos, tres, cuatro!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "1, 2, 3, 4",
+      "es": "1, 2, 3, 4"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Big jumps for happy friends!",
+     "es": "¡Sí! ¡Grandes saltos para los amigos felices!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "That was so much fun!",
+     "es": "¡Eso fue muy divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Remember: Saying thank you when a friend gives you a gift makes everyone happy.",
+     "es": "Recuerden: Decir gracias cuando un amigo te da un regalo hace felices a todos."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.2,
+     "y": 0.4,
+     "at": 0,
+     "color": "#FF0000",
+     "anim": "bounce"
+    },
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.4,
+     "at": 0,
+     "color": "#0000FF",
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Oink oink! Wiggle your tail and bounce your balloon!",
+     "es": "¡Oink oink! ¡Muevan la colita y reboten el globo!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep023-zibu-piglet-colorful-balloons"
+}
