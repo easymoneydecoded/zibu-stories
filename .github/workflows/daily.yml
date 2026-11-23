@@ -72,6 +72,7 @@ jobs:
         env:
           GEMINI_IMAGE_KEY: ${{ secrets.GEMINI_IMAGE_KEY }}
           OPENAI_IMAGE_KEY: ${{ secrets.OPENAI_IMAGE_KEY }}
+          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}     # gratis: comprueba que el titulo dibujado este bien escrito
           EP: ${{ steps.pick.outputs.episode }}
         run: |
           git pull -q || true
@@ -81,7 +82,9 @@ jobs:
         if: steps.pick.outputs.episode != ''
         with:
           name: thumb-ai
-          path: public/ep/${{ steps.pick.outputs.episode }}/thumb-ai.png
+          path: |
+            public/ep/${{ steps.pick.outputs.episode }}/thumb-ai.png
+            public/ep/${{ steps.pick.outputs.episode }}/thumb-ai-*.png
           retention-days: 3
           if-no-files-found: ignore
 
@@ -119,26 +122,40 @@ jobs:
           for f in kokoro-v1.0.onnx voices-v1.0.bin; do
             [ -f "models/$f" ] || curl -sSL -o "models/$f" "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"
           done
+      - name: Imagen de IA de la miniatura (si se hizo)
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: thumb-ai
+          path: public/ep/${{ env.EP }}
       - name: Traducir al portugues de Brasil
         if: matrix.lang == 'pt'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/translate_pt.py "stories/$EP.json"
+      - name: Titulo de la miniatura en portugues (la imagen base ya esta hecha)
+        if: matrix.lang == 'pt'
+        env:
+          OPENAI_IMAGE_KEY: ${{ secrets.OPENAI_IMAGE_KEY }}
+          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          pip install pillow
+          python scripts/ai_thumb.py "stories/$EP.json" --text pt || true
       - name: Voces, musica y timeline
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}   # espanol con ElevenLabs mientras queden creditos
         run: python scripts/build_episode.py "stories/$EP.json" ${{ matrix.lang }}
-      - uses: actions/download-artifact@v4
-        continue-on-error: true
-        with:
-          name: thumb-ai
-          path: public/ep/${{ env.EP }}
       - name: Video y miniatura
         run: |
           npx remotion render Episode "out/$EP-${{ matrix.lang }}.mp4" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
-          # Miniatura con la imagen de IA si se genero; si no, la de siempre
-          THUMB=Thumbnail; [ -f "public/ep/$EP/thumb-ai.png" ] && THUMB=AIThumb
-          npx remotion still $THUMB "out/$EP-${{ matrix.lang }}.png" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
+          # Miniatura: la de IA con el titulo dibujado (comprobado); si no, la de IA con el texto puesto por codigo;
+          # si no, la de siempre
+          if [ -f "public/ep/$EP/thumb-ai-${{ matrix.lang }}.png" ]; then
+            cp "public/ep/$EP/thumb-ai-${{ matrix.lang }}.png" "out/$EP-${{ matrix.lang }}.png"
+          else
+            THUMB=Thumbnail; [ -f "public/ep/$EP/thumb-ai.png" ] && THUMB=AIThumb
+            npx remotion still $THUMB "out/$EP-${{ matrix.lang }}.png" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
+          fi
       - name: Subir a YouTube
         if: github.event_name == 'schedule' || inputs.upload  # en el cron de GitHub los inputs son nulos (y nulo == false)
         env:
