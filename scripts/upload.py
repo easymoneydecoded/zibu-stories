@@ -23,6 +23,19 @@ YT_LANG = {"pt": "pt-BR"}
 CHANNEL = {"en": "Zibu and Friends", "es": "Zibu y sus amigos", "pt": "Zibu e seus amigos"}
 
 
+def limpiar_tags(tags: list[str], limite: int = 450) -> list[str]:
+    """YouTube rechaza la subida entera si las etiquetas pasan de 500 caracteres en total (contando comas y las
+    comillas de las que tienen espacios) o llevan < >: se quitan esos signos y se suman hasta ~450."""
+    out, total = [], 0
+    for tg in dict.fromkeys(tags):
+        tg = str(tg).replace("<", "").replace(">", "").strip()
+        coste = len(tg) + 1 + (2 if " " in tg else 0)
+        if tg and len(tg) <= 30 and total + coste <= limite:
+            out.append(tg)
+            total += coste
+    return out
+
+
 def telegram(text: str) -> None:
     token, chat = os.getenv("TELEGRAM_BOT_TOKEN"), os.getenv("TELEGRAM_CHAT_ID")
     if token and chat:
@@ -48,7 +61,7 @@ def main(episode: str, lang: str) -> None:
     yt = youtube(lang)
     body = {
         "snippet": {"title": meta["title"][:100], "description": meta["description"][:4900],
-                    "tags": meta["tags"][:20], "categoryId": "1",  # Cine y animacion
+                    "tags": limpiar_tags(meta.get("tags", [])), "categoryId": "1",  # Cine y animacion
                     "defaultLanguage": YT_LANG.get(lang, lang), "defaultAudioLanguage": YT_LANG.get(lang, lang)},
         # Contenido para ninos: obligatorio por COPPA (sin comentarios ni anuncios personalizados)
         "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": True, "embeddable": True},

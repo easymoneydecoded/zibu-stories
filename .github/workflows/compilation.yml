@@ -82,7 +82,10 @@ jobs:
         if: matrix.lang == 'pt'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/translate_pt.py "stories/$EP.json"
+        run: |
+          # Gemini a veces devuelve la traduccion a medias: hasta 3 intentos antes de dar el episodio por perdido
+          for i in 1 2 3; do python scripts/translate_pt.py "stories/$EP.json" && exit 0; echo "intento $i fallido"; sleep 45; done
+          exit 1
       - name: Voces, musica y timeline con Kokoro (sin gastar creditos de ElevenLabs)
         run: python scripts/build_episode.py "stories/$EP.json" "$LG"
       - name: Video, miniatura y datos
