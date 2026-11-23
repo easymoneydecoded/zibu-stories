@@ -101,6 +101,9 @@ def thumbnail(lang: str, pngs: list[Path], minutes: int, dest: Path) -> None:
     d.ellipse((cx - r, cy - r, cx + r, cy + r), fill="#ff5d8f", outline="white", width=14)
     for text, size, dy in ((badge, 112, -48), (t["line"], 46, 62)):
         f = font(size)
+        while d.textlength(text, font=f) > 1.62 * r and size > 20:   # que no se salga del circulo
+            size -= 4
+            f = font(size)
         w = d.textlength(text, font=f)
         d.text((cx - w / 2, cy + dy - size / 2), text, font=f, fill="white", stroke_width=5, stroke_fill="#7a1f3d")
     img.save(dest)
