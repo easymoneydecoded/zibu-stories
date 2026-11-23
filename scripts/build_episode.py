@@ -56,6 +56,11 @@ for _esp, _voz in GUEST_PT.items():
     GUEST_VOICES[_esp]["pt"] = _voz
 LANG_CODE = {"en": "en-us", "es": "es", "pt": "pt-br"}
 LANGS = ("en", "es", "pt")
+# Arranque (2026-11-23): en YouTube Analytics la mitad de los ninos se iba entre los segundos 6 y 24, justo mientras
+# sonaba la sintonia de 15 s tras el gancho. Ahora el titulo dura TITLE_SECS con un destello y la historia empieza ya.
+# ZIBU_INTRO=full vuelve a la sintonia completa.
+FULL_INTRO = os.getenv("ZIBU_INTRO", "").lower() == "full"
+TITLE_SECS = 3.2
 MIN_TOTAL = 8 * 60 + 5   # YouTube permite anuncios a mitad del video desde 8 min
 MAX_PAD = 75             # lo que se puede alargar la fiesta final para llegar al minimo
 
@@ -233,6 +238,14 @@ def main(story_path: str, lang: str, motor: str = "kokoro") -> None:
         lines = []
         tema = None  # cancion fija que suena en esta escena
         intro, baile = cancion("intro", lang), cancion("dance", lang)
+        if sc.get("type") == "title" and not FULL_INTRO:
+            # Titulo corto: se ve el nombre del episodio con un destello y musica alegre, sin la sintonia larga
+            sfx.append({"name": "brillo", "at": round(t * FPS)})
+            t += TITLE_SECS
+            scenes.append({k2: v for k2, v in sc.items() if k2 != "lines"} |
+                          {"start": round(start * FPS), "end": round(t * FPS), "lines": []})
+            musica_tramos.append((start, t, True))
+            continue
         if sc.get("type") == "title" and intro:
             # La sintonia canta "Hello, it's Zibu time": el titulo solo se ve, no lo lee la narradora
             tema = {"src": intro["src"], "start": round(t * FPS), "dur": round(intro["dur"] * FPS)}

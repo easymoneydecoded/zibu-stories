@@ -220,7 +220,9 @@ def prompt_esquema(species: str, lesson: str, learn: str, anteriores: list[str])
 Plan a NEW episode. The guest is a {species}. Lesson: {lesson}. Learning moment: {learn}.
 It must be different from these previous episodes: {"; ".join(anteriores) or "none yet"}.
 The story: a beginning, a small problem, two or three tries to solve it, a happy solution and the lesson said
-clearly near the end. Include the learning moment in one scene (big words/numbers on screen).
+clearly near the end. The FIRST story scene must get going fast: the guest appears or something happens within
+its first 2-3 lines (no slow openings like "It was a beautiful sunny day in the garden").
+Include the learning moment in one scene (big words/numbers on screen).
 IMPORTANT: only these objects can be drawn on screen: {", ".join(PROPS)}. Build the story around them (and around
 the places: {", ".join(BGS)}). Do NOT make the story depend on other objects (no slides, swings, cars, toys,
 books, food other than cookie/cupcake/apple...), because the children would not see them.
