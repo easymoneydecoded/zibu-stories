@@ -83,7 +83,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/translate_pt.py "stories/$EP.json"
-      - name: Voces, musica y timeline (Kokoro: los creditos de ElevenLabs no se gastan aqui)
+      - name: Voces, musica y timeline con Kokoro (sin gastar creditos de ElevenLabs)
         run: python scripts/build_episode.py "stories/$EP.json" "$LG"
       - name: Video, miniatura y datos
         run: |
