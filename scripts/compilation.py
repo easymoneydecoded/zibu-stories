@@ -137,7 +137,14 @@ def join(lang: str) -> None:
     if len(title) > 100:
         title = title[:99].rsplit(" ", 1)[0] + "…"
     desc = "\n".join([tx["intro"].format(n=n), *caps, "", tx["end"]])
-    tags = list(dict.fromkeys(tx["tags"] + [tg for m in items for tg in m["tags"]]))[:30]
+    # YouTube admite como mucho 500 caracteres de etiquetas en total (contando comas y comillas): se suman hasta ~450
+    tags, total = [], 0
+    for tg in dict.fromkeys(tx["tags"] + [tg for m in items for tg in m["tags"]]):
+        tg = tg.replace("<", "").replace(">", "").strip()
+        coste = len(tg) + 1 + (2 if " " in tg else 0)
+        if tg and len(tg) <= 30 and total + coste <= 450:
+            tags.append(tg)
+            total += coste
     print(f"{lang}: {n} episodios, {stamp(t)} -> {video.name}\n{title}\n{desc}")
 
     import os
