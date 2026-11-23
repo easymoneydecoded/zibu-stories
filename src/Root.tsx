@@ -1,5 +1,5 @@
 import { Composition, Still } from "remotion";
-import { Avatar, Banner, BrandProps, calculateThumb, Thumbnail, ThumbProps } from "./zibu/Branding";
+import { AIThumb, Avatar, Banner, BrandProps, calculateThumb, CastProps, CastSheet, Thumbnail, ThumbProps } from "./zibu/Branding";
 import { calculateEpisode, Episode, EpisodeProps } from "./zibu/Episode";
 
 // Un episodio se elige con --props='{"episode":"ep001-lost-star","lang":"es"}'
@@ -21,6 +21,10 @@ export const RemotionRoot: React.FC = () => {
       <Still id="Banner" component={Banner} width={2560} height={1440} defaultProps={{ lang: "en" } satisfies BrandProps} />
       <Still id="Thumbnail" component={Thumbnail} width={1280} height={720}
         defaultProps={{ lang: "en", episode: "ep001-lost-star" } satisfies ThumbProps} calculateMetadata={calculateThumb} />
+      <Still id="AIThumb" component={AIThumb} width={1280} height={720}
+        defaultProps={{ lang: "en", episode: "ep001-lost-star" } satisfies ThumbProps} calculateMetadata={calculateThumb} />
+      {/* Referencia para la IA: npx remotion still CastSheet public/ref/cast-piglet.png --props='{"species":"piglet"}' */}
+      <Still id="CastSheet" component={CastSheet} width={1280} height={720} defaultProps={{ species: "piglet" } satisfies CastProps} />
     </>
   );
 };

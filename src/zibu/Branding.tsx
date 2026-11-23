@@ -1,5 +1,5 @@
 import { loadFont } from "@remotion/google-fonts/Baloo2";
-import { AbsoluteFill, CalculateMetadataFunction, staticFile } from "remotion";
+import { AbsoluteFill, CalculateMetadataFunction, Img, staticFile } from "remotion";
 import { Backdrop } from "./Backgrounds";
 import { Critter, Lila, Species, StarKid, Zibu } from "./Characters";
 import { Prop } from "./Props";
@@ -219,3 +219,31 @@ export const Banner: React.FC<BrandProps> = ({ lang }) => (
     </div>
   </AbsoluteFill>
 );
+
+/** Hoja de personajes sobre fondo blanco: referencia para la IA de miniaturas (scripts/ai_thumb.py). */
+export type CastProps = { species: Species };
+export const CastSheet: React.FC<CastProps> = ({ species }) => (
+  <AbsoluteFill style={{ background: "#ffffff" }}>
+    <div style={{ position: "absolute", left: 40, top: 150 }}><Zibu s={pose("happy")} size={460} /></div>
+    <div style={{ position: "absolute", left: 560, top: 170 }}><Lila s={pose("happy")} size={400} /></div>
+    <div style={{ position: "absolute", left: 990, top: 330 }}><Guest species={species} mood="happy" size={300} /></div>
+  </AbsoluteFill>
+);
+
+/**
+ * Miniatura con imagen de IA (public/ep/<id>/thumb-ai.png, scripts/ai_thumb.py) y el texto del episodio encima,
+ * con la misma letra que las demas. Si no hay imagen, el episodio usa la miniatura Thumbnail de siempre.
+ */
+export const AIThumb: React.FC<ThumbProps> = ({ lang, episode, timeline: tl }) => {
+  const text = tl?.thumb?.text ?? THUMB_EP001[lang];
+  const size = (t: string, max: number) => Math.min(max, Math.floor(1150 / (t.length * 0.6)));
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#8fd3ff" }}>
+      <Img src={staticFile(`ep/${episode}/thumb-ai.png`)} style={{ width: 1280, height: 720, objectFit: "cover" }} />
+      {text.map((t, i) => (
+        <BigText key={t} t={t} size={size(t, i ? 92 : 108)} color={i ? "#ffffff" : "#ffd23f"}
+          style={{ left: 36, top: 18 + i * 108, right: 36, textAlign: "left", rotate: "-3deg" }} />
+      ))}
+    </AbsoluteFill>
+  );
+};
