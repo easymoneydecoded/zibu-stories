@@ -10,6 +10,7 @@ siguiente ejecucion sigue por donde iba. Al final avisa por Telegram.
 import json
 import re
 import sys
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -134,13 +135,26 @@ def main(langs: list[str]) -> None:
             if not f.exists():
                 fallos.append(f"{e['id']} {l} (titulo)")
                 continue
-            try:
-                yts[l].thumbnails().set(videoId=mapa[l][e["id"]], media_body=MediaFileUpload(str(f), mimetype="image/png")).execute()
-            except HttpError as err:
-                if "quota" in str(err).lower():
-                    cuota = True
+            ok = False
+            for intento in range(3):   # a veces la conexion con YouTube se corta (BrokenPipe): se reintenta
+                try:
+                    yts[l].thumbnails().set(videoId=mapa[l][e["id"]],
+                                            media_body=MediaFileUpload(str(f), mimetype="image/png")).execute()
+                    ok = True
                     break
-                fallos.append(f"{e['id']} {l} ({str(err)[:80]})")
+                except HttpError as err:
+                    if "quota" in str(err).lower():
+                        cuota = True
+                        break
+                    error = str(err)[:80]
+                except Exception as err:  # noqa: BLE001
+                    error = f"{type(err).__name__}"
+                    yts[l] = youtube(l)    # conexion nueva
+                    time.sleep(5 * (intento + 1))
+            if cuota:
+                break
+            if not ok:
+                fallos.append(f"{e['id']} {l} ({error})")
                 continue
             state.setdefault(e["id"], {})[l] = mapa[l][e["id"]]
             hechas += 1
