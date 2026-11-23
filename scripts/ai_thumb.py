@@ -206,6 +206,37 @@ def verify(img: bytes, lines: list[str]) -> bool:
     return False
 
 
+def colocar(img, pega):
+    """Busca donde pegar el titulo (arriba, mitad izquierda) tapando lo minimo: solo cielo y nubes, no el sol, ni
+    antenas, ni personajes, ni el objeto. Prueba varias posiciones y tamanos y se queda con el mas grande que tape
+    poco; si nada queda limpio, el que menos tape."""
+    from PIL import Image
+    peq = img.convert("RGB").resize((320, 180))
+    px = peq.load()
+    libre = [[(b > 200 and g > 160) or (r > 215 and g > 215 and b > 215) for x in range(320)
+              for r, g, b in [px[x, y]]] for y in range(180)]
+    mejor = None
+    for maxw in (600, 540, 480, 420):
+        esc = min(maxw / pega.width, 270 / pega.height)
+        w, h = round(pega.width * esc), round(pega.height * esc)
+        alfa = pega.getchannel("A").resize((max(1, w // 4), max(1, h // 4)))
+        a = alfa.load()
+        opacos = [(i, j) for j in range(alfa.height) for i in range(alfa.width) if a[i, j] > 60]
+        for y in range(12, 200, 12):
+            for x in range(20, 700 - w if 700 - w > 20 else 21, 16):
+                tapa = sum(not libre[min(179, y // 4 + j)][min(319, x // 4 + i)] for i, j in opacos) / max(1, len(opacos))
+                nota = tapa + y / 4000          # a igualdad, mas arriba
+                if mejor is None or nota < mejor[0]:
+                    mejor = (nota, maxw, x, y)
+            if mejor and mejor[0] < 0.03:
+                break
+        if mejor and mejor[0] < 0.03:
+            break
+    _, maxw, x, y = mejor
+    esc = min(maxw / pega.width, 270 / pega.height)
+    return pega.resize((round(pega.width * esc), round(pega.height * esc))), (x, y)
+
+
 def texted(story: dict, base: Path, langs=("es", "pt", "en"), tries: int = 2) -> None:
     """Version con el titulo dibujado por la IA (pegatina transparente sobre la imagen base, que no se toca), una por
     idioma, solo si Gemini confirma que el texto esta bien escrito."""
@@ -223,10 +254,9 @@ def texted(story: dict, base: Path, langs=("es", "pt", "en"), tries: int = 2) ->
             if not caja:
                 continue
             pega = pega.crop(caja)
-            esc = min(600 / pega.width, 270 / pega.height)     # arriba a la izquierda, sin tapar el centro
-            pega = pega.resize((round(pega.width * esc), round(pega.height * esc)))
             img = Image.open(base).convert("RGBA").resize((1280, 720))
-            img.alpha_composite(pega, (32, 26))
+            pega, pos = colocar(img, pega)
+            img.alpha_composite(pega, pos)
             buf = io.BytesIO()
             img.convert("RGB").save(buf, "PNG")
             if verify(buf.getvalue(), lines):
