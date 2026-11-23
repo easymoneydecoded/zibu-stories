@@ -1,4 +1,4 @@
-"""Imagen de IA para la miniatura de un episodio (Gemini, modelo de imagen de pago: ~0,04 $ por imagen).
+"""Imagen de IA para la miniatura de un episodio: OpenAI (OPENAI_IMAGE_KEY, gpt-image) o Gemini (GEMINI_IMAGE_KEY).
 
   python scripts/ai_thumb.py stories/<id>.json      -> public/ep/<id>/thumb-ai.png (1280x720, sin texto)
 
@@ -61,14 +61,65 @@ def prompt(story: dict) -> str:
         "ABSOLUTELY NO text, letters, numbers, logos or watermarks anywhere in the image.")
 
 
+def save(story: dict, raw: bytes, who: str) -> Path:
+    from PIL import Image
+    img = Image.open(io.BytesIO(raw)).convert("RGB")
+    w, h = img.size   # recorte central a 16:9 y 1280x720
+    tw, th = (w, round(w * 9 / 16)) if w * 9 / 16 <= h else (round(h * 16 / 9), h)
+    img = img.crop(((w - tw) // 2, (h - th) // 2, (w + tw) // 2, (h + th) // 2)).resize((1280, 720))
+    out = BASE / "public" / "ep" / story["id"] / "thumb-ai.png"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out)
+    print(f"   . miniatura IA ({who}): {out.relative_to(BASE)}")
+    return out
+
+
+def env_key(name: str) -> str | None:
+    k = os.getenv(name)
+    env = BASE / ".env"
+    if not k and env.exists():
+        for line in env.read_text(encoding="utf-8").splitlines():
+            if line.startswith(f"{name}="):
+                k = line.split("=", 1)[1].strip().strip('"')
+    return k or None
+
+
+def openai(story: dict, ref: Path) -> Path | None:
+    """OpenAI (gpt-image): edicion con la hoja de personajes como referencia. ~0,01-0,04 $ por imagen."""
+    k = env_key("OPENAI_IMAGE_KEY")
+    if not k:
+        return None
+    for model in [m for m in (os.getenv("OPENAI_IMAGE_MODEL"), "gpt-image-1-mini", "gpt-image-1") if m]:
+        try:
+            with open(ref, "rb") as fh:
+                r = requests.post("https://api.openai.com/v1/images/edits", timeout=300,
+                                  headers={"Authorization": f"Bearer {k}"},
+                                  files={"image[]": (ref.name, fh, "image/png")},
+                                  data={"model": model, "prompt": prompt(story), "size": "1536x1024",
+                                        "quality": os.getenv("OPENAI_IMAGE_QUALITY", "medium"), "n": "1"})
+        except requests.RequestException as e:
+            print(f"   ! {model}: {e}")
+            continue
+        if r.status_code != 200:
+            print(f"   ! {model}: HTTP {r.status_code} {r.text[:250]}")
+            continue
+        data = (r.json().get("data") or [{}])[0].get("b64_json")
+        if data:
+            return save(story, base64.b64decode(data), model)
+        print(f"   ! {model}: la respuesta no trae imagen")
+    return None
+
+
 def generate(story_path: str) -> Path | None:
     story = json.loads(Path(story_path).read_text(encoding="utf-8"))
-    k = key()
-    if not k:
-        print("   . sin GEMINI_IMAGE_KEY: miniatura de siempre")
-        return None
     guest = story["guest"].get("species") or story["guest"]["id"]
     ref = BASE / "public" / "ref" / f"cast-{guest}.png"
+    if ref.exists() and (hecho := openai(story, ref)):
+        return hecho
+    k = key()
+    if not k:
+        print("   . sin clave de imagen que funcione: miniatura de siempre")
+        return None
     parts = [{"text": prompt(story)}]
     if ref.exists():
         parts.append({"inline_data": {"mime_type": "image/png", "data": base64.b64encode(ref.read_bytes()).decode()}})
@@ -87,16 +138,7 @@ def generate(story_path: str) -> Path | None:
         for p in r.json().get("candidates", [{}])[0].get("content", {}).get("parts", []):
             data = (p.get("inlineData") or p.get("inline_data") or {}).get("data")
             if data:
-                from PIL import Image
-                img = Image.open(io.BytesIO(base64.b64decode(data))).convert("RGB")
-                w, h = img.size   # recorte central a 16:9 y 1280x720
-                tw, th = (w, round(w * 9 / 16)) if w * 9 / 16 <= h else (round(h * 16 / 9), h)
-                img = img.crop(((w - tw) // 2, (h - th) // 2, (w + tw) // 2, (h + th) // 2)).resize((1280, 720))
-                out = BASE / "public" / "ep" / story["id"] / "thumb-ai.png"
-                out.parent.mkdir(parents=True, exist_ok=True)
-                img.save(out)
-                print(f"   . miniatura IA ({model}): {out.relative_to(BASE)}")
-                return out
+                return save(story, base64.b64decode(data), model)
         print(f"   ! {model}: la respuesta no trae imagen")
     return None
 

@@ -71,6 +71,7 @@ jobs:
         if: steps.pick.outputs.episode != ''
         env:
           GEMINI_IMAGE_KEY: ${{ secrets.GEMINI_IMAGE_KEY }}
+          OPENAI_IMAGE_KEY: ${{ secrets.OPENAI_IMAGE_KEY }}
           EP: ${{ steps.pick.outputs.episode }}
         run: |
           git pull -q || true
