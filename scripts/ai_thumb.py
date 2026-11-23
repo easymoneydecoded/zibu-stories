@@ -53,7 +53,12 @@ def prompt(story: dict) -> str:
         f"style with soft shading): Zibu (round blue monster with big eyes and a yellow ball antenna), Lila (pink bunny "
         f"with a purple bow) and {name} the {guest}. Do not redesign them and do not add new characters.\n"
         f"Story objects to feature, big and clear: {', '.join(props[:3]) or 'none'}.\n"
-        f"Setting: {BG.get(sc.get('bg'), 'a sunny garden')}, {TIME.get(sc.get('time'), 'bright daylight')}.\n"
+        f"Setting: {BG.get(sc.get('bg'), 'a sunny garden')}, {TIME.get(sc.get('time'), 'bright daylight')}. "
+        "Show a full, rich and cheerful landscape behind the characters, never a plain background: rolling green "
+        "hills, colorful flowers and little bushes in the foreground, a few fluffy clouds and a smiling sun or soft "
+        "light in the sky (in the upper-left only soft sky and light clouds).\n"
+        "The main object keeps its normal, round, natural proportions (never stretched or squashed) and is shown "
+        "COMPLETE, with a safety margin of at least 15% from every edge of the image.\n"
         "Composition: the upper-left area (about 45% wide, 40% tall) is ONLY plain sky: a title is added there "
         "later, so nothing important goes there (no object, no face, no balloon). The characters are LARGE, close-up, "
         "in the lower part and the right side, with very expressive faces (surprised or laughing). They INTERACT with "
@@ -119,21 +124,56 @@ def openai_edit(image: Path, text: str) -> tuple[bytes, str] | None:
 
 
 def openai(story: dict, ref: Path) -> Path | None:
-    hecho = openai_edit(ref, prompt(story))
+    # OpenAI genera en 3:2 y la miniatura es 16:9: se le manda la referencia en 3:2 con franjas grises arriba y abajo
+    # (las que se recortan) para que coloque todo en la banda central y no corte ni deforme el objeto
+    from PIL import Image, ImageDraw
+    guia = Image.new("RGB", (1536, 1024), "#ffffff")
+    guia.paste(Image.open(ref).convert("RGB").resize((1536, 864)), (0, 80))
+    d = ImageDraw.Draw(guia)
+    d.rectangle((0, 0, 1536, 79), fill="#d9d9d9")
+    d.rectangle((0, 944, 1536, 1024), fill="#d9d9d9")
+    marco = ref.parent.parent / "ep" / story["id"] / "ref-32.png"
+    marco.parent.mkdir(parents=True, exist_ok=True)
+    guia.save(marco)
+    texto = prompt(story) + ("\nThe gray bands at the top and bottom of the reference image mark the part that will "
+                             "be cut off: put ALL characters and objects inside the central area between them and "
+                             "use the bands only for more sky (top) and grass or flowers (bottom).")
+    hecho = openai_edit(marco, texto)
+    marco.unlink(missing_ok=True)
     return save(story, *hecho) if hecho else None
 
 
 def text_prompt(lines: list[str]) -> str:
     quoted = " / ".join(f'"{t}"' for t in lines)
-    return ("Add a big, fun title to this YouTube thumbnail WITHOUT changing anything else in the image (same "
-            "characters, poses, colors and background). Title, exactly these words with exactly this spelling, "
-            f"accents and punctuation, on {len(lines)} lines: {quoted}. Style: chunky rounded bubbly cartoon letters, "
-            "medium-large (the title takes at most 60% of the image width), first line bright yellow, second line white, both with a thick dark purple outline and a soft drop shadow, "
-            "slightly tilted, like a top preschool YouTube channel. Place it LEFT-ALIGNED in the upper-left area over the "
-            "sky, never overlapping the main story object or any face, inside "
-            "the image with a comfortable margin: the whole title must stay between 16% and 50% of the image height and "
-            "at least 6% from the left edge. Never cover the characters' faces. Keep the exact framing of the input. "
-            "No other text anywhere.")
+    return ("A title logo for a preschool YouTube cartoon thumbnail, on a fully TRANSPARENT background (nothing else: "
+            "no characters, no scenery, no frame, no box). Exactly these words with exactly this spelling, accents and "
+            f"punctuation, on {len(lines)} lines: {quoted}. Chunky rounded bubbly 3D cartoon letters, first line bright "
+            "yellow, second line white, both with a thick dark purple outline and a soft drop shadow, slightly tilted, "
+            "big and centered, filling most of the image, like the title of a top preschool channel.")
+
+
+def openai_title(lines: list[str]) -> bytes | None:
+    """El titulo solo, como pegatina PNG con fondo transparente (se pega luego sobre la imagen base)."""
+    k = env_key("OPENAI_IMAGE_KEY")
+    if not k:
+        return None
+    for model in [m for m in (os.getenv("OPENAI_IMAGE_MODEL"), "gpt-image-1-mini", "gpt-image-1-mini") if m]:
+        try:
+            r = requests.post("https://api.openai.com/v1/images/generations", timeout=300,
+                              headers={"Authorization": f"Bearer {k}"},
+                              json={"model": model, "prompt": text_prompt(lines), "size": "1536x1024",
+                                    "background": "transparent", "output_format": "png",
+                                    "quality": os.getenv("OPENAI_IMAGE_QUALITY", "medium"), "n": 1})
+        except requests.RequestException as e:
+            print(f"   ! titulo {model}: {e}")
+            continue
+        if r.status_code != 200:
+            print(f"   ! titulo {model}: HTTP {r.status_code} {r.text[:250]}")
+            continue
+        data = (r.json().get("data") or [{}])[0].get("b64_json")
+        if data:
+            return base64.b64decode(data)
+    return None
 
 
 def norm(t: str) -> str:
@@ -167,29 +207,32 @@ def verify(img: bytes, lines: list[str]) -> bool:
 
 
 def texted(story: dict, base: Path, langs=("es", "pt", "en"), tries: int = 2) -> None:
-    """Version con el titulo dibujado por la IA, una por idioma, solo si el texto sale bien escrito."""
+    """Version con el titulo dibujado por la IA (pegatina transparente sobre la imagen base, que no se toca), una por
+    idioma, solo si Gemini confirma que el texto esta bien escrito."""
     from PIL import Image
     for lang in langs:
         lines = (story.get("thumb") or {}).get(lang)
         if not lines:
             continue
-        # OpenAI devuelve 3:2 y la miniatura es 16:9: se le manda ya en 3:2 (la imagen en la banda central y arriba y
-        # abajo la prolongacion de sus bordes) para que respete el encuadre y al recortar no se corte el titulo
-        src = Image.open(base).convert("RGB").resize((1536, 864))
-        lienzo = Image.new("RGB", (1536, 1024))
-        lienzo.paste(src.crop((0, 0, 1536, 1)).resize((1536, 80)), (0, 0))
-        lienzo.paste(src, (0, 80))
-        lienzo.paste(src.crop((0, 863, 1536, 864)).resize((1536, 80)), (0, 944))
-        marco = base.with_name("thumb-ai-32.png")
-        lienzo.save(marco)
         for _ in range(tries):
-            hecho = openai_edit(marco, text_prompt(lines))
-            if not hecho:
+            raw = openai_title(lines)
+            if not raw:
                 break
+            pega = Image.open(io.BytesIO(raw)).convert("RGBA")
+            caja = pega.getchannel("A").point(lambda a: 255 if a > 24 else 0).getbbox()
+            if not caja:
+                continue
+            pega = pega.crop(caja)
+            esc = min(600 / pega.width, 270 / pega.height)     # arriba a la izquierda, sin tapar el centro
+            pega = pega.resize((round(pega.width * esc), round(pega.height * esc)))
+            img = Image.open(base).convert("RGBA").resize((1280, 720))
+            img.alpha_composite(pega, (32, 26))
             buf = io.BytesIO()
-            Image.open(io.BytesIO(hecho[0])).convert("RGB").save(buf, "PNG")
+            img.convert("RGB").save(buf, "PNG")
             if verify(buf.getvalue(), lines):
-                save(story, hecho[0], hecho[1], f"thumb-ai-{lang}.png", top=0.25)   # el titulo va arriba
+                out = BASE / "public" / "ep" / story["id"] / f"thumb-ai-{lang}.png"
+                out.write_bytes(buf.getvalue())
+                print(f"   . miniatura IA con titulo ({lang}): {out.relative_to(BASE)}")
                 break
 
 
