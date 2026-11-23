@@ -1,0 +1,28 @@
+name: Zibu - banner de los canales
+
+# Sube public/branding/banner-<lang>.jpg a cada canal (scripts/upload_branding.py). Solo a mano.
+on:
+  workflow_dispatch:
+    inputs:
+      langs:
+        description: 'Idiomas separados por comas'
+        default: 'es,pt,en'
+
+jobs:
+  banner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install google-api-python-client google-auth requests
+      - env:
+          YT_CLIENT_ID:       ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET:   ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_EN:      ${{ secrets.YT_REFRESH_EN }}
+          YT_REFRESH_ES:      ${{ secrets.YT_REFRESH_ES }}
+          YT_REFRESH_PT:      ${{ secrets.YT_REFRESH_PT }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/upload_branding.py "${{ inputs.langs }}"
