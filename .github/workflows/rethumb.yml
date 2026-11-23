@@ -1,0 +1,60 @@
+name: Zibu - miniaturas antiguas con IA
+
+# Rehace con IA las miniaturas de los episodios publicados antes del 23-nov y las sube a los 3 canales
+# (scripts/rethumb.py). Si la cuota diaria de YouTube se acaba, la ejecucion de cada tarde sigue donde iba;
+# cuando ya no queda nada, no hace nada.
+on:
+  schedule:
+    - cron: '40 20 * * *'
+  workflow_dispatch:
+    inputs:
+      langs:
+        description: 'Idiomas separados por comas'
+        default: 'es,pt,en'
+
+concurrency:
+  group: zibu-rethumb
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  rethumb:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow google-api-python-client google-auth
+      - name: Miniaturas
+        env:
+          OPENAI_IMAGE_KEY:   ${{ secrets.OPENAI_IMAGE_KEY }}
+          GEMINI_API_KEY:     ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID:       ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET:   ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_EN:      ${{ secrets.YT_REFRESH_EN }}
+          YT_REFRESH_ES:      ${{ secrets.YT_REFRESH_ES }}
+          YT_REFRESH_PT:      ${{ secrets.YT_REFRESH_PT }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/rethumb.py "${{ inputs.langs || 'es,pt,en' }}"
+      - name: Guardar lo hecho
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add stories/rethumb.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "Miniaturas antiguas con IA"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+      - name: Aviso de fallo
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d chat_id="$TELEGRAM_CHAT_ID" \
+            --data-urlencode text="⚠️ Zibu: las miniaturas antiguas han fallado. ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
