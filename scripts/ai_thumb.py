@@ -54,11 +54,15 @@ def prompt(story: dict) -> str:
         f"with a purple bow) and {name} the {guest}. Do not redesign them and do not add new characters.\n"
         f"Story objects to feature, big and clear: {', '.join(props[:3]) or 'none'}.\n"
         f"Setting: {BG.get(sc.get('bg'), 'a sunny garden')}, {TIME.get(sc.get('time'), 'bright daylight')}.\n"
-        "Composition: close-up, the characters LARGE and filling the right two thirds, very expressive faces "
-        "(surprised or laughing) looking at the viewer, clear action, one main object big in the center or right (never in "
-        "the upper-left corner). Bright, "
-        "saturated, cheerful colors, soft glow and depth, high contrast so it reads at a small size. Keep the upper-left "
-        "area (about 45% wide, 35% tall) simple and uncluttered (sky) because a title is added there later.\n"
+        "Composition: the upper-left area (about 45% wide, 40% tall) is ONLY plain sky: a title is added there "
+        "later, so nothing important goes there (no object, no face, no balloon). The characters are LARGE, close-up, "
+        "in the lower part and the right side, with very expressive faces (surprised or laughing). They INTERACT with "
+        "the main story object, which is big and clearly visible on the RIGHT half of the image: someone holds it, "
+        "reaches for it or points at it, so the action of the story is clear at a glance (for example a balloon "
+        "escaping upwards on the right while Zibu stretches to catch it and the guest holds the string). Bright, "
+        "saturated, cheerful colors, soft glow and depth, high contrast so it reads at a small size. The image will "
+        "be cropped to 16:9: keep every important element (the object, faces, ears, antenna) away from the top and "
+        "bottom 10% of the image.\n"
         "ABSOLUTELY NO text, letters, numbers, logos or watermarks anywhere in the image.")
 
 
@@ -92,7 +96,8 @@ def openai_edit(image: Path, text: str) -> tuple[bytes, str] | None:
     k = env_key("OPENAI_IMAGE_KEY")
     if not k:
         return None
-    for model in [m for m in (os.getenv("OPENAI_IMAGE_MODEL"), "gpt-image-1-mini", "gpt-image-1") if m]:
+    # el mismo modelo dos veces: a veces OpenAI devuelve un 500 pasajero
+    for model in [m for m in (os.getenv("OPENAI_IMAGE_MODEL"), "gpt-image-1-mini", "gpt-image-1-mini") if m]:
         try:
             with open(image, "rb") as fh:
                 r = requests.post("https://api.openai.com/v1/images/edits", timeout=300,
@@ -124,7 +129,8 @@ def text_prompt(lines: list[str]) -> str:
             "characters, poses, colors and background). Title, exactly these words with exactly this spelling, "
             f"accents and punctuation, on {len(lines)} lines: {quoted}. Style: chunky rounded bubbly cartoon letters, "
             "medium-large (the title takes at most 60% of the image width), first line bright yellow, second line white, both with a thick dark purple outline and a soft drop shadow, "
-            "slightly tilted, like a top preschool YouTube channel. Place it in the upper-left area over the sky, inside "
+            "slightly tilted, like a top preschool YouTube channel. Place it LEFT-ALIGNED in the upper-left area over the "
+            "sky, never overlapping the main story object or any face, inside "
             "the image with a comfortable margin: the whole title must stay between 16% and 50% of the image height and "
             "at least 6% from the left edge. Never cover the characters' faces. Keep the exact framing of the input. "
             "No other text anywhere.")
