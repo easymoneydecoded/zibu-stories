@@ -1,0 +1,1355 @@
+{
+ "slug": "zibu-and-the-heavy-leaf",
+ "title": {
+  "en": "Zibu and the Heavy Leaf",
+  "es": "Zibu y la Hoja Pesada"
+ },
+ "lesson": {
+  "en": "When we work together as a team, hard things become easy!",
+  "es": "¡Cuando trabajamos juntos en equipo, lo difícil se hace fácil!"
+ },
+ "guest": {
+  "species": "frog",
+  "name": {
+   "en": "Croaky",
+   "es": "Croqui"
+  }
+ },
+ "thumb": {
+  "en": [
+   "Teamwork",
+   "Power!"
+  ],
+  "es": [
+   "¡Trabajo en",
+   "Equipo!"
+  ],
+  "scene": 6
+ },
+ "youtube": {
+  "en": {
+   "title": "Learn Teamwork & Emotions with Zibu & Croaky! 🐸 | Zibu and Friends",
+   "description": "Croaky the frog needs help moving a heavy leaf to shelter a delicate flower! 🌸\nZibu and Lila try to lift it alone, but it is way too heavy!\nWhen everyone works together as a team, they save the day!\nKids will learn all about feelings like HAPPY, SAD, and SURPRISED!\nPerfect educational video for toddlers and preschoolers aged 2 to 6.\n#ZibuAndFriends #TeamworkForKids #LearnEmotions #PreschoolLearning #EducationalCartoons",
+   "tags": [
+    "zibu and friends",
+    "teamwork for kids",
+    "learn emotions toddlers",
+    "frog cartoon kids",
+    "preschool learning videos",
+    "cartoons for 2 year olds",
+    "happy sad surprised",
+    "educational kids show",
+    "zibu frog",
+    "social emotional learning",
+    "toddler cartoons"
+   ]
+  },
+  "es": {
+   "title": "¡Aprende Trabajo en Equipo y Emociones con Zibu! 🐸 | Zibu y sus Amigos",
+   "description": "¡Croqui la rana necesita mover una hoja muy grande para proteger una bonita flor! 🌸\nZibu y Lila intentan cargarla solos, ¡pero pesa demasiado!\n¡Cuando todos trabajan en equipo, logran ayudar a la flor!\nLos niños aprenderán sobre las emociones: FELIZ, TRISTE y SORPRENDIDO.\nVideo educativo ideal para niños de 2 a 6 años.\n#ZibuYSusAmigos #TrabajoEnEquipo #AprenderEmociones #VideosEducativos #CaricaturasParaNiños",
+   "tags": [
+    "zibu y sus amigos",
+    "trabajo en equipo niños",
+    "aprender emociones",
+    "rana caricatura",
+    "videos educativos preescolar",
+    "caricaturas para niños 2 a 6 años",
+    "emociones feliz triste",
+    "zibu en español",
+    "canciones infantiles",
+    "desarrollo infantil",
+    "videos para niños pequeños"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! The big leaf is too heavy!",
+     "es": "¡Oh no! ¡La gran hoja pesa mucho!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us push together?",
+     "es": "Amigo, ¿nos ayudas a empujar juntos?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Say with us: push, push, push!",
+     "es": "¡Digan con nosotros: empujen, empujen, empujen!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.5,
+     "y": 0.6
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Heavy Leaf!",
+     "es": "¡Zibu y la Hoja Pesada!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "croaky-needs-help",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.38
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.7,
+     "y": 0.65,
+     "at": 0
+    },
+    {
+     "what": "flower",
+     "x": 0.85,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a sunny day in the garden. Zibu and Lila were playing!",
+     "es": "¡Era un día soleado en el jardín. Zibu y Lila estaban jugando!"
+    },
+    {
+     "who": "zibu",
+     "en": "La la la! What a wonderful day, Lila!",
+     "es": "¡La la la! ¡Qué día tan maravilloso, Lila!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yes, Zibu! Look at all the pretty flowers!",
+     "es": "¡Sí, Zibu! ¡Mira todas las flores tan bonitas!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "But someone in the garden needed help... It was Croaky the frog!",
+     "es": "Pero alguien en el jardín necesitaba ayuda... ¡Era Croqui el sapito!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      },
+      {
+       "who": "lila",
+       "to": 0.5
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Ugh... push... push...",
+     "es": "Uff... empujo... empujo...",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Croaky was trying to move a giant leaf all by himself!",
+     "es": "¡Croqui intentaba mover una hoja gigante él solo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! Look over there! Hello, Croaky!",
+     "es": "¡Oh! ¡Mira allá! ¡Hola, Croqui!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Hello, friends! Oof...",
+     "es": "¡Rabit! ¡Hola, amigos! Uff...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Croaky, what are you doing with that big leaf?",
+     "es": "Croqui, ¿qué haces con esa hoja tan grande?",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "A tiny flower needs shade from the hot sun... but this leaf is so heavy!",
+     "es": "Una florecita necesita sombra del sol caliente... ¡pero esta hoja es muy pesada!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Croaky pushed with all his strength...",
+     "es": "Croqui empujó con todas sus fuerzas..."
+    },
+    {
+     "who": "guest",
+     "en": "Push... push... Oh, it won't move!",
+     "es": "Empujo... empujo... ¡Oh, no se mueve!",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Oh dear... he is so tired!",
+     "es": "¡Ay, no!... ¡está muy cansado!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Don't worry, Croaky! I can help you!",
+     "es": "¡No te preocupes, Croqui! ¡Yo te puedo ayudar!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "zibu-tries-alone",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.7,
+     "y": 0.65,
+     "at": 0
+    },
+    {
+     "what": "flower",
+     "x": 0.85,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu ran over to the giant leaf, feeling very strong!",
+     "es": "¡Zibu corrió hacia la hoja gigante, sintiéndose muy fuerte!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Watch this! I can lift it all by myself!",
+     "es": "¡Miren esto! ¡Puedo levantarla yo solo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Be careful, Zibu! It's very, very heavy!",
+     "es": "¡Ten cuidado, Zibu! ¡Es muy, muy pesada!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "One... two... heave!",
+     "es": "Uno... dos... ¡arriba!",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu grabbed the heavy leaf and pushed with all his might!",
+     "es": "¡Zibu agarró la hoja pesada y empujó con todas sus fuerzas!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oof... push... push...",
+     "es": "Uff... empujo... empujo...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "The giant leaf lifted up just a little bit...",
+     "es": "La hoja gigante se levantó solo un poquito..."
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! It's moving... wait... oh no!",
+     "es": "¡Sí! Se está moviendo... espera... ¡oh, no!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Boing! The leaf bounced right back down!",
+     "es": "¡Boing! ¡La hoja rebotó hacia abajo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Whoa! Woah! Whoops!",
+     "es": "¡Uy! ¡Uy! ¡Upa!",
+     "mood": "surprised",
+     "action": "spin",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.4
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu tumbled back gently and landed soft on the green grass.",
+     "es": "Zibu se cayó suavecito y se sentó en el pasto verde."
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear! Are you okay, Zibu?",
+     "es": "¡Ay, no! ¿Estás bien, Zibu?",
+     "mood": "sad",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Hehe... yes! But... whew, that leaf is super heavy!",
+     "es": "Jeje... ¡sí! Pero... uf, ¡esa hoja es súper pesada!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Trying all by yourself can be very hard!",
+     "es": "¡Intentarlo uno solo puede ser muy difícil!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "emotions-learning-moment",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    },
+    {
+     "who": "lila",
+     "x": 1.2
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.38,
+     "y": 0.65,
+     "at": 0
+    },
+    {
+     "what": "flower",
+     "x": 0.15,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Lila came hopping over to check on her sweet friends.",
+     "es": "Lila vino saltando a ver a sus queridos amigos.",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.75
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Hello! Are you okay, friends?",
+     "es": "¡Hola! ¿Están bien, amigos?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit... I felt sad when I couldn't move the heavy leaf.",
+     "es": "Croac... me sentí triste cuando no pude mover la hoja pesada.",
+     "mood": "sad",
+     "show": {
+      "en": "SAD",
+      "es": "TRISTE",
+      "color": "#4A90E2"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "It is okay to feel sad when things are hard.",
+     "es": "Está bien sentirse triste cuando las cosas son difíciles."
+    },
+    {
+     "who": "zibu",
+     "en": "And I was so surprised when the leaf bounced back!",
+     "es": "¡Y yo me quedé tan sorprendido cuando la hoja rebotó!",
+     "mood": "surprised",
+     "action": "jump",
+     "show": {
+      "en": "SURPRISED",
+      "es": "SORPRENDIDO",
+      "color": "#F5A623"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Whoa! That was a big bounce!",
+     "es": "¡Uy! ¡Ese fue un gran rebote!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "But now... seeing both of you makes me smile!",
+     "es": "Pero ahora... ¡verlos a los dos me hace sonreír!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Now we all feel happy!",
+     "es": "¡Bien! ¡Ahora todos nos sentimos felices!",
+     "mood": "happy",
+     "action": "spin",
+     "show": {
+      "en": "HAPPY",
+      "es": "FELIZ",
+      "color": "#7ED321"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Look! We are all smiling together!",
+     "es": "¡Miren! ¡Estamos todos sonriendo juntos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Smiling feels so warm and nice!",
+     "es": "¡Croac! ¡Sonreír se siente tan lindo y calientito!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Feelings come and go... like gentle little clouds!",
+     "es": "Las emociones van y vienen... ¡como las nubes suaves!"
+    },
+    {
+     "who": "zibu",
+     "en": "But... the leaf is still too heavy for one monster!",
+     "es": "Pero... ¡la hoja sigue siendo muy pesada para un solo monstruo!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Don't worry, Zibu! I have a wonderful idea!",
+     "es": "¡No te preocupes, Zibu! ¡Tengo una idea maravillosa!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila knew just how to make hard things easy!",
+     "es": "¡Lila sabía exactamente cómo hacer fácil lo difícil!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "planning-teamwork",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.5,
+     "y": 0.6,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "They walked to the forest path where the giant leaf was resting.",
+     "es": "Caminaron hacia el camino del bosque donde estaba la hoja gigante."
+    },
+    {
+     "who": "lila",
+     "en": "When a task is too big for one... we use teamwork!",
+     "es": "Cuando algo es muy difícil para uno... ¡usamos el trabajo en equipo!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Teamwork? What is teamwork?",
+     "es": "¿Trabajo en equipo? ¿Qué es el trabajo en equipo?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Teamwork means we all help each other together!",
+     "es": "¡Trabajo en equipo significa que todos nos ayudamos juntos!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Together we are super strong!",
+     "es": "¡Croac! ¡Juntos somos súper fuertes!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "That's right! Working together makes everything easier!",
+     "es": "¡Así es! ¡Trabajar juntos hace que todo sea más fácil!"
+    },
+    {
+     "who": "lila",
+     "en": "Let's line up side-by-side behind the heavy leaf!",
+     "es": "¡Vamos a ponernos uno al lado del otro detrás de la hoja pesada!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      },
+      {
+       "who": "lila",
+       "to": 0.5
+      },
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "I stand right here next to Lila!",
+     "es": "¡Yo me pongo aquí mismo al lado de Lila!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "And I stand next to Zibu! Ribbit!",
+     "es": "¡Y yo me pongo al lado de Zibu! ¡Croac!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Look at that! One... two... three friends in a row!",
+     "es": "¡Miren eso! ¡Uno... dos... tres amigos en fila!"
+    },
+    {
+     "who": "lila",
+     "en": "Are you ready, team?",
+     "es": "¿Están listos, equipo?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Ready, ready!",
+     "es": "¡Listo, listo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Ready! Ribbit!",
+     "es": "¡Listo! ¡Croac!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "It was time to push the heavy leaf together!",
+     "es": "¡Era hora de empujar la hoja pesada todos juntos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "pushing-together",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.35
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.5,
+     "y": 0.5,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Croaky lined up behind the giant heavy leaf.",
+     "es": "Zibu, Lila y Croqui se pusieron en fila detrás de la gran hoja pesada."
+    },
+    {
+     "who": "lila",
+     "en": "Let's count together! One!",
+     "es": "¡Vamos a contar juntos! ¡Uno!",
+     "mood": "happy",
+     "show": {
+      "en": "1",
+      "es": "1",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Two!",
+     "es": "¡Dos!",
+     "mood": "happy",
+     "show": {
+      "en": "2",
+      "es": "2",
+      "color": "#FFC107"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Three! Ribbit!",
+     "es": "¡Tres! ¡Croac!",
+     "mood": "happy",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "All three friends pushed together with all their strength!",
+     "es": "¡Los tres amigos empujaron juntos con todas sus fuerzas!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.4
+      },
+      {
+       "who": "lila",
+       "to": 0.55
+      },
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Look, look! It's moving!",
+     "es": "¡Miren, miren! ¡Se está moviendo!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Push, push, push!",
+     "es": "¡Empujen, empujen, empujen!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! It feels so light now!",
+     "es": "¡Croac! ¡Ahora se siente muy ligera!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Up, up, up the sunny hill went the giant leaf!",
+     "es": "¡Arriba, arriba, subió la hoja gigante por la colina soleada!"
+    },
+    {
+     "who": "zibu",
+     "en": "We are doing it together! Yay!",
+     "es": "¡Lo estamos logrando juntos! ¡Sí!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Teamwork is wonderful!",
+     "es": "¡El trabajo en equipo es maravilloso!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Hop, hop! Almost at the top!",
+     "es": "¡Salto, salto! ¡Ya casi llegamos arriba!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "When everyone helps, heavy things move so smoothly!",
+     "es": "¡Cuando todos ayudan, las cosas pesadas se mueven muy fácilmente!"
+    }
+   ]
+  },
+  {
+   "id": "flower-is-safe",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.6,
+     "y": 0.7,
+     "at": 0
+    },
+    {
+     "what": "leaf",
+     "x": 0.6,
+     "y": 0.4,
+     "at": 4,
+     "anim": "float"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "At the top of the hill, the sweet little flower was waiting.",
+     "es": "En la cima de la colina, la linda florecita estaba esperando."
+    },
+    {
+     "who": "guest",
+     "en": "There is the tiny flower! Ribbit!",
+     "es": "¡Ahí está la pequeña flor! ¡Croac!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's place the leaf right over it!",
+     "es": "¡Pongamos la hoja justo arriba de ella!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Gently... down it goes!",
+     "es": "Despacito... ¡hacia abajo va!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "They carefully set the leaf over the flower like a green umbrella.",
+     "es": "Con cuidado, pusieron la hoja sobre la flor como un paraguas verde."
+    },
+    {
+     "who": "guest",
+     "en": "Yay! Now the sweet flower is safe!",
+     "es": "¡Sí! ¡Ahora la linda flor está a salvo!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "zibu",
+     "en": "At first, the leaf was too heavy alone...",
+     "es": "Al principio, la hoja era muy pesada solo...",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "But together as a team, it was so easy!",
+     "es": "¡Pero juntos en equipo, fue muy fácil!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Thank you for helping me, friends!",
+     "es": "¡Gracias por ayudarme, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "When we work as a team, hard things become simple and fun!",
+     "es": "¡Cuando trabajamos en equipo, lo difícil se hace simple y divertido!",
+     "show": {
+      "en": "TEAMWORK!",
+      "es": "¡EQUIPO!",
+      "color": "#E91E63"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Teamwork makes us so happy!",
+     "es": "¡El trabajo en equipo nos hace muy felices!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "We are a great team!",
+     "es": "¡Somos un gran equipo!",
+     "mood": "happy",
+     "action": "wave"
+    }
+   ]
+  },
+  {
+   "id": "teamwork-song",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "flower",
+     "x": 0.5,
+     "y": 0.85,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The friends are so happy! Let's dance together!",
+     "es": "¡Los amigos están muy felices! ¡Vamos a bailar juntos!"
+    },
+    {
+     "who": "zibu",
+     "en": "Dance with us! One, two, three!",
+     "es": "¡Bailen con nosotros! ¡Una, dos, tres!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "We love to work as a team!",
+     "es": "¡Nos encanta trabajar en equipo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Teamwork is the best!",
+     "es": "¡Croac! ¡El trabajo en equipo es lo mejor!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "They sing a happy song about helping each other.",
+     "es": "Cantan una canción alegre sobre ayudarse unos a otros."
+    },
+    {
+     "who": "zibu",
+     "en": "When we share the load...",
+     "es": "Cuando compartimos la carga...",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Everything is light!",
+     "es": "¡Todo es ligero!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Every day is bright!",
+     "es": "¡Cada día es brillante!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "And the little flower is safe under its big green leaf.",
+     "es": "Y la florecita está segura bajo su gran hoja verde."
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, friends!",
+     "es": "¡Adiós, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "See you soon!",
+     "es": "¡Hasta pronto!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Bye-bye! Ribbit!",
+     "es": "¡Chau, chau! ¡Croac!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Goodbye! Until our next adventure!",
+     "es": "¡Adiós! ¡Hasta nuestra próxima aventura!",
+     "show": {
+      "en": "BYE!",
+      "es": "¡CHAU!",
+      "color": "#4CAF50"
+     }
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "When we work as a team, things are never hard!",
+     "es": "¡Cuando trabajamos juntos, nada es difícil!"
+    },
+    {
+     "who": "narrator",
+     "en": "Lifting heavy things is easy, happy and not far!",
+     "es": "¡Levantar cosas pesadas es fácil y feliz!"
+    },
+    {
+     "who": "narrator",
+     "en": "Side by side we push along, smiling all the day!",
+     "es": "¡Codo a codo empujamos, sonriendo todo el día!"
+    },
+    {
+     "who": "narrator",
+     "en": "Help a friend and sing a happy teamwork song today!",
+     "es": "¡Ayuda a un amigo y canta la canción hoy!"
+    },
+    {
+     "who": "zibu",
+     "en": "I push here!",
+     "es": "¡Yo empujo aquí!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "I push there!",
+     "es": "¡Yo empujo allá!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit, ribbit, everywhere!",
+     "es": "¡Croac, croac, por aquí!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Teamwork makes us strong and bright!",
+     "es": "¡El trabajo en equipo nos da luz y fuerza!"
+    },
+    {
+     "who": "narrator",
+     "en": "When we work as a team, things are never hard!",
+     "es": "¡Cuando trabajamos juntos, nada es difícil!"
+    },
+    {
+     "who": "narrator",
+     "en": "Lifting heavy things is easy, happy and not far!",
+     "es": "¡Levantar cosas pesadas es fácil y feliz!"
+    },
+    {
+     "who": "narrator",
+     "en": "Side by side we push along, smiling all the day!",
+     "es": "¡Codo a codo empujamos, sonriendo todo el día!"
+    },
+    {
+     "who": "narrator",
+     "en": "Help a friend and sing a happy teamwork song today!",
+     "es": "¡Ayuda a un amigo y canta la canción hoy!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Otra vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "When we work as a team, things are never hard!",
+     "es": "¡Cuando trabajamos juntos, nada es difícil!"
+    },
+    {
+     "who": "narrator",
+     "en": "Lifting heavy things is easy, happy and not far!",
+     "es": "¡Levantar cosas pesadas es fácil y feliz!"
+    },
+    {
+     "who": "narrator",
+     "en": "Side by side we push along, smiling all the day!",
+     "es": "¡Codo a codo empujamos, sonriendo todo el día!"
+    },
+    {
+     "who": "narrator",
+     "en": "Help a friend and sing a happy teamwork song today!",
+     "es": "¡Ayuda a un amigo y canta la canción hoy!"
+    },
+    {
+     "who": "zibu",
+     "en": "I push here!",
+     "es": "¡Yo empujo aquí!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "I push there!",
+     "es": "¡Yo empujo allá!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit, ribbit, everywhere!",
+     "es": "¡Croac, croac, por aquí!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Teamwork makes us strong and bright!",
+     "es": "¡El trabajo en equipo nos da luz y fuerza!"
+    },
+    {
+     "who": "guest",
+     "en": "Ribbit! Teamwork is so much fun!",
+     "es": "¡Croac! ¡El trabajo en equipo es muy divertido!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó el cuento? ¡Recordemos juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who needed help moving the giant leaf?",
+     "es": "¿Quién necesitaba ayuda para mover la hoja gigante?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Croaky the frog!",
+     "es": "¡Croqui la rana!",
+     "show": {
+      "en": "Frog",
+      "es": "Rana",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Was the leaf heavy for just one monster?",
+     "es": "¿La hoja era pesada para un solo monstruo?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Yes! Very heavy!",
+     "es": "¡Sí! ¡Muy pesada!",
+     "show": {
+      "en": "Heavy",
+      "es": "Pesada",
+      "color": "#FF9800"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Who came to help Zibu and Croaky?",
+     "es": "¿Quién vino a ayudar a Zibu y a Croqui?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Lila the bunny!",
+     "es": "¡Lila la conejita!",
+     "show": {
+      "en": "Lila",
+      "es": "Lila",
+      "color": "#E91E63"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many friends pushed the leaf together?",
+     "es": "¿Cuántos amigos empujaron la hoja juntos?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Three friends!",
+     "es": "¡Tres amigos!",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#2196F3"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Who was waiting under the shade?",
+     "es": "¿Quién esperaba bajo la sombra?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "The tiny flower!",
+     "es": "¡La pequeña flor!",
+     "show": {
+      "en": "Flower",
+      "es": "Flor",
+      "color": "#FFEB3B"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Can you jump like a happy frog with us?",
+     "es": "¿Pueden saltar como una rana feliz con nosotros?",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "One, two, three, jump!",
+     "es": "¡Uno, dos, tres, a saltar!",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "When we work together as a team, hard things become easy!",
+     "es": "¡Cuando trabajamos juntos en equipo, lo difícil se hace fácil!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Spin around and hop, hop, hop!",
+     "es": "¡Giren y brinquen, brinquen, brinquen!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós-adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep024-zibu-and-the-heavy-leaf"
+}
