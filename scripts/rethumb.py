@@ -77,7 +77,8 @@ def lineas_pt(story: dict) -> list[str] | None:
         return None
     body = {"contents": [{"parts": [{"text":
         "Translate these 2 short lines of a kids' cartoon thumbnail from Spanish to Brazilian Portuguese. Same style "
-        "(uppercase if uppercase, keep ! marks), max 16 characters per line. Answer ONLY a JSON array of 2 strings.\n"
+        "(uppercase if uppercase, keep the closing ! marks but NEVER use ¡ or ¿, they do not exist in Portuguese), "
+        "max 16 characters per line. Answer ONLY a JSON array of 2 strings.\n"
         + json.dumps(es, ensure_ascii=False)}]}]}
     for model in ("gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash"):
         try:

@@ -245,6 +245,8 @@ def texted(story: dict, base: Path, langs=("es", "pt", "en"), tries: int = 2) ->
         lines = (story.get("thumb") or {}).get(lang)
         if not lines:
             continue
+        if lang != "es":   # los signos de apertura solo existen en espanol ("¡MÃOS MACIAS!" en portugues esta mal)
+            lines = [l.replace("¡", "").replace("¿", "").strip() for l in lines]
         for _ in range(tries):
             raw = openai_title(lines)
             if not raw:
