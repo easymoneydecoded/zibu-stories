@@ -10,7 +10,7 @@ on:
     inputs:
       langs:
         description: 'Idiomas separados por comas'
-        default: 'es,pt'
+        default: 'es,pt,en'
       n:
         description: 'Episodios por recopilatorio'
         default: '6'
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/checkout@v4
       - id: p
         run: |
-          items=$(python scripts/compilation.py plan "${{ inputs.langs || 'es,pt' }}" "${{ inputs.n || '6' }}")
+          items=$(python scripts/compilation.py plan "${{ inputs.langs || 'es,pt,en' }}" "${{ inputs.n || '6' }}")
           echo "items=$items" >> "$GITHUB_OUTPUT"
           echo "langs=$(echo "$items" | python -c 'import json,sys; print(json.dumps(sorted({x["lang"] for x in json.load(sys.stdin)})))')" >> "$GITHUB_OUTPUT"
           echo "$items"
