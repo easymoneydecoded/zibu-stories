@@ -10,5 +10,6 @@
   "ep007-zibu-learns-to-listen",
   "ep008-zibu-teamwork-kite"
  ],
- "minutes": 60
+ "minutes": 60,
+ "ai": true
 }
