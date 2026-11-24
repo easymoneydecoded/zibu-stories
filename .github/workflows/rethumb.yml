@@ -40,13 +40,15 @@ jobs:
           YT_REFRESH_PT:      ${{ secrets.YT_REFRESH_PT }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python scripts/rethumb.py "${{ inputs.langs || 'es,pt,en' }}"
+        run: |
+          python scripts/rethumb.py "${{ inputs.langs || 'es,pt,en' }}"
+          python scripts/compilation.py rethumb      # recopilatorios que aun tengan la miniatura antigua
       - name: Guardar lo hecho
         if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add stories/rethumb.json 2>/dev/null || exit 0
+          git add stories/rethumb.json stories/compilations 2>/dev/null || exit 0
           git diff --cached --quiet && exit 0
           git commit -m "Miniaturas antiguas con IA"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

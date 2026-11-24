@@ -17,7 +17,8 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE / "scripts"))
-LEDGER = BASE / "stories" / "compilations.json"
+LEDGER = BASE / "stories" / "compilations.json"        # antiguo (un solo archivo)
+LEDGER_DIR = BASE / "stories" / "compilations"         # uno por recopilatorio: es y pt se apuntan sin pisarse
 EXCLUDE = {"ep002-waiting-our-turn-bear"}   # no se llego a publicar (su historia necesitaba un tobogan que no se dibuja)
 OUT = BASE / "out"
 TXT = {
@@ -37,7 +38,94 @@ TXT = {
 
 
 def ledger() -> list[dict]:
-    return json.loads(LEDGER.read_text(encoding="utf-8")) if LEDGER.exists() else []
+    viejo = json.loads(LEDGER.read_text(encoding="utf-8")) if LEDGER.exists() else []
+    return viejo + [json.loads(f.read_text(encoding="utf-8")) | {"_file": str(f)}
+                    for f in sorted(LEDGER_DIR.glob("*.json"))]
+
+
+def apuntar(entry: dict) -> None:
+    LEDGER_DIR.mkdir(parents=True, exist_ok=True)
+    f = Path(entry.pop("_file", "")) if entry.get("_file") else LEDGER_DIR / f"{entry['lang']}-{entry['date']}-{entry['video']}.json"
+    f.write_text(json.dumps(entry, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+TITULO_IA = {"es": ["¡1 HORA", "DE CUENTOS!"], "pt": ["1 HORA DE", "HISTÓRIAS!"], "en": ["1 HOUR OF", "STORIES!"]}
+
+
+def ai_thumbnail(lang: str, eps: list[str], minutes: int, dest: Path) -> bool:
+    """Miniatura con IA: Zibu, Lila y los invitados de los cuentos juntos de fiesta + '1 HORA DE CUENTOS' dibujado por
+    la IA y comprobado por Gemini (como las miniaturas de los episodios). False si no se pudo."""
+    import io
+    import ai_thumb as A
+    from branding_ai import edit_multi
+    from PIL import Image
+    especies, objetos = [], []
+    for ep in eps:
+        f = BASE / "stories" / f"{ep}.json"
+        if not f.exists():
+            continue
+        st = json.loads(f.read_text(encoding="utf-8"))
+        sp = st["guest"].get("species") or st["guest"]["id"]
+        if sp not in especies:
+            especies.append(sp)
+        objetos += [(p.get("what") if isinstance(p, dict) else p) for sc in st["scenes"] for p in sc.get("props", [])]
+    refs = [BASE / "public" / "ref" / f"cast-{sp}.png" for sp in especies[:4]]
+    refs = [r for r in refs if r.exists()] or [BASE / "public" / "ref" / "cast-puppy.png"]
+    cosas = ", ".join(list(dict.fromkeys(o for o in objetos if o))[:4]) or "balloons and a kite"
+    prompt = ("A YouTube thumbnail, 16:9, for a 1-hour compilation of preschool cartoon stories. Zibu (round blue monster "
+              "with big eyes and a yellow ball antenna) and Lila (pink bunny with a purple bow) together with ALL their "
+              f"friends from the reference images ({', '.join(especies[:4])}), celebrating together in a sunny meadow "
+              f"under a rainbow, with some of the story objects ({cosas}), confetti and sparkles. Everyone happy, "
+              "laughing and waving at the viewer, characters large and filling the lower two thirds and the right side. "
+              "Full cheerful landscape (hills, flowers, clouds). The upper-left area is only soft sky (a title goes "
+              "there). Keep everything important away from the top and bottom 10% (the image is cropped to 16:9). "
+              "Polished 2D cartoon style exactly like the references, same character designs. NO text or letters.")
+    raw = edit_multi(refs, prompt, quality="medium")
+    if not raw:
+        return False
+    img = Image.open(io.BytesIO(raw)).convert("RGB")
+    w, h = img.size
+    th = round(w * 9 / 16)
+    base = img.crop((0, (h - th) // 2, w, (h - th) // 2 + th)).resize((1280, 720), Image.LANCZOS)
+    lines = TITULO_IA[lang] if minutes >= 55 else [f"{minutes} MIN", TITULO_IA[lang][1]]
+    for _ in range(3):
+        t = A.openai_title(lines)
+        if not t:
+            break
+        pega = Image.open(io.BytesIO(t)).convert("RGBA")
+        caja = pega.getchannel("A").point(lambda a: 255 if a > 24 else 0).getbbox()
+        if not caja:
+            continue
+        lienzo = base.convert("RGBA")
+        pega, pos = A.colocar(lienzo, pega.crop(caja))
+        lienzo.alpha_composite(pega, pos)
+        buf = io.BytesIO()
+        lienzo.convert("RGB").save(buf, "PNG")
+        if A.verify(buf.getvalue(), lines):
+            dest.write_bytes(buf.getvalue())
+            return True
+    return False
+
+
+def rethumb() -> None:
+    """Pone la miniatura con IA a los recopilatorios ya publicados que aun tienen la antigua."""
+    from googleapiclient.http import MediaFileUpload
+    from upload import CHANNEL, telegram, youtube
+    for c in ledger():
+        if c.get("ai") or not c.get("video"):
+            continue
+        dest = OUT / f"compilation-{c['lang']}-{c['video']}.png"
+        OUT.mkdir(exist_ok=True)
+        if not ai_thumbnail(c["lang"], c["episodes"], c.get("minutes", 60), dest):
+            print(f"   ! no salio la miniatura de {c['video']}")
+            continue
+        youtube(c["lang"]).thumbnails().set(videoId=c["video"],
+                                             media_body=MediaFileUpload(str(dest), mimetype="image/png")).execute()
+        c["ai"] = True
+        apuntar(c)
+        print(f"   ✓ recopilatorio {c['lang']} {c['video']}")
+        telegram(f"🎨 Miniatura nueva con IA en el recopilatorio de {CHANNEL[c['lang']]}: "
+                 f"https://www.youtube.com/watch?v={c['video']}")
 
 
 def plan(langs: list[str], n: int) -> list[dict]:
@@ -129,7 +217,9 @@ def join(lang: str) -> None:
         t += duration(m["mp4"])
     minutes = round(t / 60)
     thumb = OUT / f"compilation-{lang}.png"
-    thumbnail(lang, [m["png"] for m in items if m["png"].exists()], minutes, thumb)
+    ai = ai_thumbnail(lang, [m["ep"] for m in items], minutes, thumb)
+    if not ai:   # sin IA: el mosaico de siempre
+        thumbnail(lang, [m["png"] for m in items if m["png"].exists()], minutes, thumb)
 
     tx = TXT[lang]
     title = tx["title"].format(n=n)
@@ -164,9 +254,8 @@ def join(lang: str) -> None:
     except Exception as e:
         print(f"   ! miniatura no subida: {e}")
     url = f"https://www.youtube.com/watch?v={vid}"
-    data = ledger() + [{"lang": lang, "date": date.today().isoformat(), "video": vid,
-                        "episodes": [m["ep"] for m in items], "minutes": minutes}]
-    LEDGER.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    apuntar({"lang": lang, "date": date.today().isoformat(), "video": vid, "episodes": [m["ep"] for m in items],
+             "minutes": minutes, "ai": ai})
     print(f"Publicado en {CHANNEL[lang]}: {url}")
     telegram(f"📺 Recopilatorio de {minutes} min en {CHANNEL[lang]}:\n{title}\n{url}")
 
@@ -179,3 +268,5 @@ if __name__ == "__main__":
         meta(sys.argv[2], sys.argv[3])
     elif cmd == "join":
         join(sys.argv[2])
+    elif cmd == "rethumb":
+        rethumb()
