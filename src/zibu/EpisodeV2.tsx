@@ -17,13 +17,15 @@ export { calculateEpisode };
 // Estilo nuevo (prueba 2026-11-25): piezas dibujadas con IA (public/v2, scripts/v2_assets.py) animadas por codigo.
 // ---------------------------------------------------------------------------------------------------------------
 const ALTO: Record<string, number> = { zibu: 520, lila: 660, guest: 470 };  // alto en pantalla (px)
-type Cara = "idle" | "talk" | "blink" | "surprised" | "sad";
+// Caras por parejas (public/v2/chars3, scripts/v2_assets.py pairs): cada expresion con boca cerrada y abierta
+type Expr = "happy" | "neutral" | "surprised" | "sad" | "laugh";
+const EXPR: Record<Mood, Expr> = { happy: "happy", laugh: "laugh", surprised: "surprised", scared: "surprised", sad: "sad" };
 
-const cara = (s: CharState, f: number, seed: number): Cara => {
-  const base: Cara = s.mood === "surprised" || s.mood === "scared" ? "surprised" : s.mood === "sad" ? "sad" : "idle";
-  if (s.talk) return (Math.floor(f / 4) + seed) % 2 === 0 ? "talk" : base;   // boca abierta y cerrada al hablar
-  if (base === "idle" && (f + seed * 37) % 110 < 4) return "blink";           // parpadeo cada ~3,5 s
-  return base;
+const cara = (s: CharState, f: number, seed: number): string => {
+  const e = EXPR[s.mood] ?? "happy";
+  if (s.talk) return `${e}_${(Math.floor(f / 4) + seed) % 2 === 0 ? "open" : "closed"}`;  // al hablar: abre y cierra
+  if (e === "happy" && (f + seed * 37) % 110 < 4) return "happy_blink";                      // parpadeo cada ~3,5 s
+  return `${e}_closed`;
 };
 
 const Sprite: React.FC<{ who: string; folder: string; s: CharState; f: number; seed: number }> = ({ who, folder, s, f, seed }) => {
@@ -45,7 +47,7 @@ const Sprite: React.FC<{ who: string; folder: string; s: CharState; f: number; s
   if (s.action === "shake" && t < 30) dx = Math.sin(t * 2.2) * 10;
   if (s.action === "spin" && t < 30) sx *= Math.cos((t / 30) * Math.PI * 2);
   if (s.dancing) { dy -= Math.abs(Math.sin(f / 8)) * 30; rot = Math.sin(f / 8) * 8; }
-  const src = staticFile(`v2/chars/${folder}/${cara(s, f, seed)}.png`);
+  const src = staticFile(`v2/chars3/${folder}/${cara(s, f, seed)}.png`);
   return (
     <div style={{ position: "relative", width: h * 0.8, height: h }}>
       <div style={{ position: "absolute", left: "10%", right: "10%", bottom: -14, height: 28, borderRadius: "50%",
@@ -144,7 +146,7 @@ const camera = (scene: Scene, f: number): { z: number; ox: number; w: number } =
     const l = scene.lines[i];
     if (!l || !scene.cast.some((c) => c.who === l.who)) return { z: 1.06, ox: 0.5 };  // narradora: plano general
     const x = Math.min(0.78, Math.max(0.22, position(scene, l.who, l.start).x));
-    return { z: i % 2 === 0 ? 1.28 : 1.14, ox: x };
+    return { z: i % 2 === 0 ? 1.12 : 1.06, ox: x };
   };
   const a = shot(idx - 1), b = shot(idx);
   const t = spring({ frame: f - scene.lines[idx].start, fps: 30, config: { damping: 20, stiffness: 200 } });

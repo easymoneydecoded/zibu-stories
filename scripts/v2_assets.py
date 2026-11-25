@@ -162,7 +162,7 @@ def prop(que: str) -> None:
     print("  objeto", que)
 
 
-if __name__ == "__main__" and sys.argv[1] != "faces":
+if __name__ == "__main__" and sys.argv[1] not in ("faces", "pairs"):
     cmd = sys.argv[1]
     {"char": lambda: char(sys.argv[2]), "sheet": lambda: sheet(sys.argv[2]), "bg": lambda: bg(sys.argv[2], sys.argv[3]),
      "prop": lambda: prop(sys.argv[2])}[cmd]()
@@ -268,3 +268,100 @@ def faces(quien: str) -> None:
 
 if __name__ == "__main__" and sys.argv[1] == "faces":
     faces(sys.argv[2])
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Parejas de caras (2026-11-25, v3): cada expresion con boca CERRADA y ABIERTA en la misma imagen, para que al hablar
+# solo cambie la boca. Una imagen por expresion; si una figura toca el borde de la imagen se repite (nada de espejos).
+# ---------------------------------------------------------------------------------------------------------------
+EXPR = {
+    "happy": "happy, gentle smile",
+    "neutral": "calm and neutral, relaxed face",
+    "surprised": "surprised, eyes wide open, eyebrows raised",
+    "sad": "sad, worried eyebrows",
+    "laugh": "laughing with joy, happy squinting eyes",
+}
+
+
+def toca_borde(im: Image.Image, cajas: list[tuple[int, int]]) -> bool:
+    """Una figura con pixeles opacos en el borde de la imagen esta cortada."""
+    a = im.getchannel("A").point(lambda v: 255 if v > 128 else 0)
+    w, h = a.size
+    px = a.load()
+    borde = sum(1 for y in range(h) for x in (0, 1, w - 2, w - 1) if px[x, y]) + \
+        sum(1 for x in range(w) for y in (0, 1, h - 2, h - 1) if px[x, y])
+    return borde > 15
+
+
+def pareja(quien: str, expr: str, refs: list[Path], intentos: int = 4) -> list[Image.Image]:
+    desc = DESC.get(quien, f"the {quien} from the reference image (only the {quien}; it has no bow or accessories)")
+    extra = expr == "happy"
+    n = 3 if extra else 2
+    caras = ("1) mouth CLOSED; 2) mouth OPEN as if talking (the only difference is the mouth)" +
+             ("; 3) eyes closed in a happy blink, mouth closed" if extra else ""))
+    prompt = (f"{n} drawings of {desc}, side by side in one row, IDENTICAL in everything (same size, same full-body "
+              f"standing pose facing the viewer, same position, same expression: {EXPR[expr]}) except the mouth: "
+              f"{caras}. Big empty margin around every figure: NOTHING may touch or cross the edges of the image "
+              "(ears, antenna and feet fully inside, at least 60 pixels from every edge). "
+              "Fully TRANSPARENT background, no scenery, no text, no shadows. " + STYLE)
+    for _ in range(intentos):
+        raw = edit_multi(refs, prompt, size="1536x1024", quality="high", transparent=True)
+        im = Image.open(io.BytesIO(raw)).convert("RGBA")
+        n_raw = len(list((BASE / "out").glob(f"v3-raw-{quien}-*.png")))
+        im.save(BASE / "out" / f"v3-raw-{quien}-{n_raw}.png")
+        if toca_borde(im, []):
+            print(f"   ! {quien} {expr}: figura cortada por el borde, repito")
+            continue
+        try:
+            a = im.getchannel("A").point(lambda v: 255 if v > 24 else 0)
+            px = a.load()
+            w, h = a.size
+            llenas = [any(px[x, y] for y in range(0, h, 2)) for x in range(w)]
+            trozos, ini = [], None
+            for x, v in enumerate(llenas + [False]):
+                if v and ini is None:
+                    ini = x
+                elif not v and ini is not None:
+                    if x - ini > 40:
+                        trozos.append((ini, x))
+                    ini = None
+            if len(trozos) != n:
+                raise ValueError(f"salen {len(trozos)} figuras")
+            figs = []
+            for x0, x1 in trozos:
+                t = im.crop((x0, 0, x1, h))
+                figs.append(t.crop(t.getchannel("A").point(lambda v: 255 if v > 24 else 0).getbbox()))
+            return figs
+        except ValueError as e:
+            print(f"   ! {quien} {expr}: {e}, repito")
+    raise SystemExit(f"no salio {quien} {expr}")
+
+
+def pairs(quien: str) -> None:
+    """public/v2/chars3/<quien>/<expr>_closed.png, <expr>_open.png y happy_blink.png, todas en el mismo lienzo."""
+    out = V2 / "chars3" / quien
+    out.mkdir(parents=True, exist_ok=True)
+    especie = "puppy" if quien in DESC else quien
+    refs = [BASE / "public" / "ref" / f"cast-{especie}.png"]
+    figs_all = {}
+    for expr in EXPR:
+        if (out / f"{expr}_closed.png").exists():
+            continue
+        # despues de la primera, la referencia es SOLO su propia cara contenta (la hoja de referencia trae a Zibu y Lila
+        # y la IA mezclaba rasgos: orejas de conejo en el cerdito)
+        figs = pareja(quien, expr, [out / "happy_closed.png"] if (out / "happy_closed.png").exists() else refs)
+        alto = max(f.height for f in figs)   # la pareja a la misma altura: al hablar el personaje no encoge
+        figs = [f.resize((round(f.width * alto / f.height), alto), Image.LANCZOS) for f in figs]
+        nombres = [f"{expr}_closed", f"{expr}_open"] + (["happy_blink"] if expr == "happy" else [])
+        # cada pareja en un lienzo comun (mismo ancho y alto, apoyada abajo y centrada): al hablar no se mueve nada
+        W, H = max(f.width for f in figs), max(f.height for f in figs)
+        for nombre, f in zip(nombres, figs):
+            lienzo = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+            lienzo.alpha_composite(f, ((W - f.width) // 2, H - f.height))
+            lienzo.save(out / f"{nombre}.png")
+            figs_all[nombre] = lienzo
+        print(f"  {quien} {expr}")
+
+
+if __name__ == "__main__" and sys.argv[1] == "pairs":
+    pairs(sys.argv[2])
