@@ -150,7 +150,9 @@ jobs:
         run: python scripts/build_episode.py "stories/$EP.json" ${{ matrix.lang }}
       - name: Video y miniatura
         run: |
-          npx remotion render Episode "out/$EP-${{ matrix.lang }}.mp4" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
+          # estilo nuevo (dibujos con IA, public/v2) si el guion lo pide; los episodios viejos siguen como estaban
+          COMP=$(python -c "import json,sys; print('EpisodeV2' if json.load(open(sys.argv[1],encoding='utf-8')).get('style')=='v2' else 'Episode')" "stories/$EP.json")
+          npx remotion render $COMP "out/$EP-${{ matrix.lang }}.mp4" --props="{\"episode\":\"$EP\",\"lang\":\"${{ matrix.lang }}\"}" --log=error
           # Miniatura: la de IA con el titulo dibujado (comprobado); si no, la de IA con el texto puesto por codigo;
           # si no, la de siempre
           if [ -f "public/ep/$EP/thumb-ai-${{ matrix.lang }}.png" ]; then

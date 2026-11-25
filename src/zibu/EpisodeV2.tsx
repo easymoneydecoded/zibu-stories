@@ -4,7 +4,6 @@ import {
   AbsoluteFill, Easing, interpolate, Sequence, spring, staticFile, useCurrentFrame,
 } from "remotion";
 import { Img } from "remotion";
-import { Backdrop } from "./Backgrounds";
 import { BalloonShape, IconStar, Prop } from "./Props";
 import { CharState, Line, Mood, PropItem, Scene, Timeline } from "./types";
 
@@ -59,7 +58,14 @@ const Sprite: React.FC<{ who: string; folder: string; s: CharState; f: number; s
   );
 };
 
-const PROP_V2 = ["balloon"];
+// Objetos dibujados con IA (public/v2/props): alto en pantalla y como se mueven
+const PROP_V2: Record<string, { size: number; anim?: "float" | "bounce" | "flutter" }> = {
+  balloon: { size: 260, anim: "float" }, kite: { size: 240, anim: "float" }, butterfly: { size: 120, anim: "flutter" },
+  star: { size: 150, anim: "float" }, ball: { size: 130, anim: "bounce" }, gift: { size: 150 }, apple: { size: 95 },
+  cookie: { size: 90 }, cupcake: { size: 110 }, flower: { size: 150 }, umbrella: { size: 230 }, shell: { size: 90 },
+  teddy: { size: 150 }, drum: { size: 130 }, toycar: { size: 110 }, bucket: { size: 130 }, crayons: { size: 110 },
+  banana: { size: 100 }, wateringcan: { size: 130 }, basket: { size: 150 },
+};
 const hue = (hex?: string) => {
   if (!hex) return 0;
   const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
@@ -69,16 +75,28 @@ const hue = (hex?: string) => {
   return h * 60;
 };
 const PropV2: React.FC<{ p: PropItem; appear: number; f: number }> = ({ p, appear, f }) => {
-  if (!PROP_V2.includes(p.what)) return <Prop p={p} appear={appear} />;
-  const size = p.what === "balloon" ? 230 : 170;
-  const flota = Math.sin((f + p.x * 100) / 20) * 12;
+  const cfg = PROP_V2[p.what];
+  if (!cfg) return <Prop p={p} appear={appear} />;   // episodios viejos: objeto dibujado por codigo
+  const anim = p.anim ?? cfg.anim;
+  const fase = p.x * 100;
+  let dy = 0, dx = 0, rot = 0;
+  if (anim === "float") { dy = Math.sin((f + fase) / 20) * 12; rot = Math.sin(f / 25) * 4; }
+  if (anim === "bounce") { dy = -Math.abs(Math.sin((f + fase) / 10)) * 70; rot = f * 3; }
+  if (anim === "flutter") { dy = Math.sin((f + fase) / 9) * 18; dx = Math.sin((f + fase) / 23) * 30; }
+  // solo el globo cambia de color (el dibujo es rojo: se gira el tono hasta el color pedido)
+  const tinte = p.what === "balloon" && p.color ? `hue-rotate(${hue(p.color)}deg) ` : "";
   return (
-    <Img src={staticFile(`v2/props/${p.what}.png`)} style={{ position: "absolute", left: p.x * 1920 - size * 0.32,
-      top: p.y * 1080 - size / 2 + flota, height: size, scale: `${appear}`, rotate: `${Math.sin(f / 25) * 4}deg`,
-      filter: `hue-rotate(${hue(p.color)}deg) drop-shadow(0 8px 6px rgba(0,0,0,0.15))` }} />
+    <Img src={staticFile(`v2/props/${p.what}.png`)} style={{ position: "absolute", left: p.x * 1920 + dx,
+      top: p.y * 1080 + dy, height: cfg.size, translate: "-50% -50%", scale: `${appear}`, rotate: `${rot}deg`,
+      filter: `${tinte}drop-shadow(0 8px 6px rgba(0,0,0,0.15))` }} />
   );
 };
-const FONDOS_V2 = ["garden-day"];
+// Fondos dibujados con IA (public/v2/bg); si un guion pide uno que no existe se usa el mas parecido
+const FONDOS_V2 = ["garden-day", "garden-sunset", "garden-night", "forest-day", "river-day", "beach-day", "hill-day",
+  "room-day"];
+const fondo = (bg: string, time: string) =>
+  [`${bg}-${time}`, `${bg}-day`, `garden-${time}`].find((x) => FONDOS_V2.includes(x)) ?? "garden-day";
+const INVITADOS_V2 = ["puppy", "kitten", "bear", "duckling", "frog", "piglet", "owl", "mouse", "elephant", "giraffe"];
 
 const GROUND = 1010; // linea del suelo (px) donde apoyan los pies
 const ease = Easing.inOut(Easing.cubic);
@@ -172,9 +190,7 @@ const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
   return (
     <AbsoluteFill style={{ opacity: fade }}>
       <AbsoluteFill style={{ scale: `${zoom}`, transformOrigin: `${originX}% 75%` }}>
-        {FONDOS_V2.includes(`${scene.bg}-${scene.time}`)
-          ? <Img src={staticFile(`v2/bg/${scene.bg}-${scene.time}.png`)} style={{ width: 1920, height: 1080 }} />
-          : <Backdrop bg={scene.bg} time={scene.time} />}
+        <Img src={staticFile(`v2/bg/${fondo(scene.bg, scene.time)}.png`)} style={{ width: 1920, height: 1080 }} />
         {(scene.props ?? []).map((p, i) => {
           const at = p.at ? scene.lines[p.at].start : scene.start;
           const until = p.until !== undefined ? scene.lines[p.until].start : Infinity;
@@ -186,7 +202,7 @@ const SceneView: React.FC<{ scene: Scene; tl: Timeline }> = ({ scene, tl }) => {
           const { x, y } = position(scene, c.who, f);
           const s = charState(scene, c.who, f);
           const isGuest = c.who === "guest" || c.who === "star";
-          const folder = isGuest ? (tl.guest ?? "piglet") : c.who;
+          const folder = isGuest ? (INVITADOS_V2.includes(tl.guest) ? tl.guest : "piglet") : c.who;
           const h = ALTO[isGuest ? "guest" : c.who] ?? 400;
           const top = isGuest && c.y ? y * 1080 - h / 2 : GROUND - h;
           return (

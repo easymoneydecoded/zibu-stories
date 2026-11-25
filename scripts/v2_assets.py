@@ -66,6 +66,20 @@ def char(quien: str) -> None:
         print(" ", cara, quien)
 
 
+
+# Invitados (2026-11-25): descripcion exacta para que la IA no mezcle rasgos entre caras. Ojos SIEMPRE blancos.
+GUESTS = {
+    "puppy": "a cute brown puppy (clearly a DOG, not a bear): round light-brown head with two LONG droopy darker brown ears that hang down beside the cheeks like a beagle (no round ears on top of the head), a white patch around one eye, big round eyes with white eyeballs and dark pupils, a cream muzzle with a small black nose, rosy cheeks, small round brown body with a cream belly, short arms and legs, NO tail visible",
+    "kitten": "a cute orange kitten: round orange head with two POINTY ears, big round eyes with white eyeballs and dark pupils, a tiny pink nose with whiskers, rosy cheeks, small round orange body with a cream belly, short arms and legs, NO tail visible",
+    "bear": "a cute brown bear cub: round brown head with two small ROUND ears, big round eyes with white eyeballs and dark pupils, a light tan muzzle with a dark nose, rosy cheeks, small round brown body with a tan belly, short arms and legs",
+    "duckling": "a cute yellow duckling: round yellow head with a small orange feather tuft on top, big round eyes with white eyeballs and dark pupils, a small orange beak, rosy cheeks, small round yellow body, little wings and orange feet",
+    "frog": "a cute green frog: round green head with two big round eyes on top (white eyeballs and dark pupils), a wide smile, two clear PINK BLUSH circles on the cheeks (always present), small round green body with a light green belly, short arms and dark green feet",
+    "owl": "a cute brown owl chick: round brown head with two small pointed ear tufts, big round eyes with white eyeballs and dark pupils, a small orange beak, rosy cheeks, small round brown body with a cream belly, little wings and feet",
+    "mouse": "a cute grey mouse: round grey head with two BIG round pink-lined ears, big round eyes with white eyeballs and dark pupils, a tiny pink nose with whiskers, rosy cheeks, small round grey body with a light belly, short arms and legs, a thin pink tail exactly as in the reference",
+    "elephant": "a cute baby elephant: round light blue-grey head with two big round floppy ears and a short curled trunk, big round eyes with white eyeballs and dark pupils, rosy cheeks, small round blue-grey body, short thick legs",
+    "giraffe": "a cute baby giraffe: yellow with orange-brown spots, a round head on a short neck, two small horns with round tips and two little ears, big round eyes with white eyeballs and dark pupils, rosy cheeks, small round body, short legs",
+}
+
 ORDEN = ["idle", "talk", "blink", "surprised", "sad"]
 
 
@@ -134,18 +148,20 @@ def sheet(quien: str, intentos: int = 3) -> None:
 
 BGS = {"garden": "a sunny flower garden with soft rolling green hills, colorful flowers and little bushes",
        "forest": "a friendly bright forest clearing with round trees and mushrooms",
-       "river": "a sparkling blue river with stepping stones and grassy banks",
+       "river": ("a sparkling blue river that crosses the MIDDLE distance from left to right, with a wide flat "
+                 "grassy bank in the whole foreground (the water never reaches the bottom of the image)"),
        "hill": "a big grassy hill top under a wide sky", "beach": "a sunny beach with sand, sea and a palm tree",
-       "sky": "a dreamy sky above the clouds", "room": "a cozy colorful kids' bedroom with a bed, rug and window"}
+       "sky": "a dreamy sky above the clouds", "room": ("INDOORS: a cozy colorful kids' bedroom with a bed, a rug on the floor and a window; the walls are plain "
+                 "(no sun, moon, clouds or stars painted inside the room, the sky is only visible through the window)")}
 TIMES = {"day": "bright daylight with a smiling sun and fluffy clouds", "sunset": "warm golden sunset light",
          "night": "a magical night with a smiling moon and twinkling stars"}
 
 
 def bg(lugar: str, momento: str) -> None:
     (V2 / "bg").mkdir(parents=True, exist_ok=True)
-    raw = edit_multi([BASE / "public" / "ref" / "cast-puppy.png"],
-                     f"A wide background illustration for a preschool cartoon, WITHOUT any characters or animals: "
-                     f"{BGS[lugar]}, {TIMES[momento]}. The bottom 25% is open flat ground where characters will stand "
+    raw = edit_multi([V2 / "bg" / "garden-day.png"],   # mismo estilo que el jardin ya aprobado
+                     f"Same art style as the reference image. A wide background illustration for a preschool cartoon, WITHOUT any characters or animals: "
+                     f"{BGS[lugar]}, {'daytime, soft sunlight coming in through the window' if lugar == 'room' else TIMES[momento]}. The bottom 25% is open flat ground where characters will stand "
                      "(no big objects there). Polished 2D cartoon style with soft shading, bright saturated colors, depth. "
                      "ABSOLUTELY NO text.", quality="high")
     im = Image.open(io.BytesIO(raw)).convert("RGB")
@@ -156,20 +172,38 @@ def bg(lugar: str, momento: str) -> None:
     print("  fondo", lugar, momento)
 
 
+OBJETOS = {
+    "ball": "a red and white beach ball", "balloon": "a shiny red balloon with a curly string", "kite": "a colorful diamond kite with a tail of bows",
+    "gift": "a blue gift box with a yellow ribbon and bow", "apple": "a shiny red apple with a green leaf", "cookie": "a round chocolate chip cookie",
+    "cupcake": "a cupcake with pink frosting and a cherry on top", "flower": "a pink flower with a yellow center and a green stem with leaves",
+    "butterfly": "a purple and pink butterfly with open wings", "umbrella": "an open pink umbrella with a curved handle",
+    "shell": "a pink scallop seashell", "star": "a big shiny yellow star with a happy face", "teddy": "a small brown teddy bear toy sitting",
+    "drum": "a red toy drum with two drumsticks", "toycar": "a small red toy car", "bucket": "a blue beach bucket with a yellow spade",
+    "crayons": "a bundle of five colorful crayons", "banana": "a yellow banana", "wateringcan": "a green watering can",
+    "basket": "a wicker picnic basket with a red and white checked cloth",
+}
+
+
 def prop(que: str) -> None:
     (V2 / "props").mkdir(parents=True, exist_ok=True)
-    raw = edit_multi([BASE / "public" / "ref" / "cast-puppy.png"],
-                     f"A single {que} object sticker for a preschool cartoon (a red one if it can have colors), centered, "
-                     "on a fully TRANSPARENT background, no characters. Polished 2D cartoon style with soft shading. NO text.",
-                     size="1024x1024", quality="medium", transparent=True)
+    for _ in range(4):
+        raw = prop_raw(que)
+        if raw and not toca_borde(Image.open(io.BytesIO(raw)).convert("RGBA"), []):
+            break
+        print(f"   ! {que}: cortado por el borde, repito")
     recorte(raw).save(V2 / "props" / f"{que}.png")
     print("  objeto", que)
 
 
-if __name__ == "__main__" and sys.argv[1] not in ("faces", "pairs"):
-    cmd = sys.argv[1]
-    {"char": lambda: char(sys.argv[2]), "sheet": lambda: sheet(sys.argv[2]), "bg": lambda: bg(sys.argv[2], sys.argv[3]),
-     "prop": lambda: prop(sys.argv[2])}[cmd]()
+def prop_raw(que: str) -> bytes | None:
+    return edit_multi([V2 / "chars3" / "piglet" / "happy_closed.png"],
+                     f"IMPORTANT: the reference image only shows the ART STYLE; do not draw that character. Draw ONE object "
+                     f"sticker for a preschool cartoon: {OBJETOS.get(que, que)}. Centered, complete, with empty margin all "
+                     "around (nothing touches the edges: a margin of at least 80 pixels on every side; for a balloon include the whole balloon and its string), solid and opaque (only the background is transparent), on a fully "
+                     "TRANSPARENT background, no characters, no shadow. Polished 2D cartoon style with soft shading, bright "
+                     "colors. NO text.", size="1024x1024", quality="medium", transparent=True)
+
+
 
 
 # ---------------------------------------------------------------------------------------------------------------
@@ -284,7 +318,8 @@ EXPR = {
     "surprised": "surprised, eyes wide open, eyebrows raised",
     "sad": ("sad: worried eyebrows and a small frown, but the eyes drawn EXACTLY like the reference (white eyeballs "
             "with the same pupils, same colors)"),
-    "laugh": "laughing with joy, happy squinting eyes, arms DOWN and relaxed exactly like the reference",
+    "laugh": ("laughing with joy: very big happy smile, eyes OPEN and sparkling (same eyes as the reference, not "
+              "closed), arms DOWN and relaxed exactly like the reference"),
 }
 
 
@@ -298,22 +333,91 @@ def toca_borde(im: Image.Image, cajas: list[tuple[int, int]]) -> bool:
     return borde > 15
 
 
-def pareja(quien: str, expr: str, refs: list[Path], intentos: int = 4) -> list[Image.Image]:
-    desc = DESC.get(quien, f"the {quien} from the reference image (only the {quien}; it has no bow or accessories)")
+def color_medio(im: Image.Image) -> tuple[float, float, float]:
+    px = [p for p in im.convert("RGBA").resize((96, 96)).getdata() if p[3] > 200]
+    return tuple(sum(p[i] for p in px) / max(1, len(px)) for i in range(3))
+
+
+def sobre_blanco(im: Image.Image) -> bytes:
+    fondo = Image.new("RGBA", im.size, "white")
+    fondo.alpha_composite(im)
+    buf = io.BytesIO()
+    fondo.convert("RGB").save(buf, "PNG")
+    return buf.getvalue()
+
+
+def mismo_diseno(ref: Image.Image, cand: Image.Image, solo_boca: bool = False) -> tuple[bool, str]:
+    """Misma ficha de personaje (orejas, color, contorno, cola...) salvo la cara. Primero el color medio (rapido) y
+    luego Gemini mira las dos imagenes."""
+    a, b = color_medio(ref), color_medio(cand)
+    dist = sum((x - y) ** 2 for x, y in zip(a, b)) ** 0.5
+    if dist > 18:   # los aprobados (Zibu, Lila, Percy) no pasan de 16
+        return False, f"color distinto ({dist:.0f})"
+    import base64
+    import json
+    import re
+    import requests
+    import ai_thumb as A
+    k = A.env_key("GEMINI_API_KEY")
+    body = {"contents": [{"parts": [
+        {"text": ("Image 1 and image 2 are two frames of a talking animation: they must be IDENTICAL except the "
+                  "MOUTH (closed in one, open in the other). The eyes, eyebrows, cheeks and everything else must be "
+                  "the same. " if solo_boca else
+                  "Image 1 is the reference cartoon character. Image 2 should be EXACTLY the same character design "
+                  "with only a different facial expression. Ignore the eyes, eyebrows (eyebrows appearing or "
+                  "disappearing is part of the expression) and mouth. ") + "Compare everything else "
+                 "strictly: head shape, ear shape and size, colors and shade, outline thickness, spots or markings, "
+                 "body shape, arm pose, tail (present in one but not the other counts as different), accessories. "
+                 'Answer only JSON: {"same": true or false, "diff": "short reason"}'},
+        {"inline_data": {"mime_type": "image/png", "data": base64.b64encode(sobre_blanco(ref)).decode()}},
+        {"inline_data": {"mime_type": "image/png", "data": base64.b64encode(sobre_blanco(cand)).decode()}}]}]}
+    import time
+    for model in ("gemini-3.5-flash", "gemini-2.5-flash", "gemini-3.5-flash-lite") * 3:
+        try:
+            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                              params={"key": k}, json=body, timeout=90)
+        except requests.RequestException:
+            continue
+        if r.status_code == 200:
+            txt = "".join(p.get("text", "") for p in r.json()["candidates"][0]["content"]["parts"])
+            m = re.search(r"\{.*\}", txt, re.S)
+            if m:
+                try:
+                    j = json.loads(m.group(0))
+                    return bool(j.get("same")), str(j.get("diff", ""))
+                except ValueError:
+                    pass
+        time.sleep(8)   # Gemini gratis: si va saturado se espera; nunca se da por bueno sin mirarlo
+    return False, "Gemini no contesto"
+
+
+def pareja(quien: str, expr: str, refs: list[Path], intentos: int = 4,
+           base: Image.Image | None = None) -> list[Image.Image]:
+    desc = DESC.get(quien) or (f"{GUESTS[quien]}. No bow, no accessories" if quien in GUESTS
+                               else f"the {quien} from the reference image (only the {quien}; it has no bow or accessories)")
     extra = expr == "happy"
     n = 3 if extra else 2
     caras = ("1) mouth CLOSED; 2) mouth OPEN as if talking (the only difference is the mouth)" +
              ("; 3) eyes closed in a happy blink, mouth closed (everything else identical, including any bow or "
               "accessory)" if extra else ""))
-    prompt = (f"{n} drawings of {desc}, side by side in one row, IDENTICAL in everything (same size, same full-body "
+    nuevo = quien in GUESTS and not (BASE / "public" / "ref" / f"guest-{quien}.png").exists() and expr == "happy"
+    nota = ("IMPORTANT: the reference image only shows the ART STYLE (another character); draw the animal described "
+            "here, not the one in the reference. ") if nuevo else ""
+    if base is not None:
+        nota += ("The reference image IS this character: copy its design EXACTLY (same head and ear shape, same "
+                 "colors and shade, same outline, same markings, tail only if the reference shows one); only the "
+                 "facial expression changes. ")
+    prompt = (f"{nota}{n} drawings of {desc}, side by side in one row, IDENTICAL in everything (same size, same full-body "
               f"standing pose facing the viewer with the arms down and relaxed exactly like the reference image, same "
               f"position, same expression: {EXPR[expr]}) except the mouth: "
               f"{caras}. Big empty margin around every figure: NOTHING may touch or cross the edges of the image "
               "(ears, antenna and feet fully inside, at least 60 pixels from every edge). "
               "Only the BACKGROUND is transparent: the eyes keep solid opaque WHITE eyeballs. "
               "Fully TRANSPARENT background, no scenery, no text, no shadows. " + STYLE)
-    for _ in range(intentos):
+    for _ in range(intentos + 2):
         raw = edit_multi(refs, prompt, size="1536x1024", quality="high", transparent=True)
+        if not raw:
+            continue
         im = Image.open(io.BytesIO(raw)).convert("RGBA")
         n_raw = len(list((BASE / "out").glob(f"v3-raw-{quien}-*.png")))
         im.save(BASE / "out" / f"v3-raw-{quien}-{n_raw}.png")
@@ -339,6 +443,17 @@ def pareja(quien: str, expr: str, refs: list[Path], intentos: int = 4) -> list[I
             for x0, x1 in trozos:
                 t = im.crop((x0, 0, x1, h))
                 figs.append(t.crop(t.getchannel("A").point(lambda v: 255 if v > 24 else 0).getbbox()))
+            if base is not None:
+                ok, motivo = mismo_diseno(base, figs[0])
+                if not ok:
+                    raise ValueError(f"no es el mismo diseno: {motivo}")
+            ok, motivo = mismo_diseno(figs[0], figs[1], solo_boca=True)
+            if not ok:
+                raise ValueError(f"la boca abierta cambia algo mas: {motivo}")
+            if len(figs) > 2:
+                ok, motivo = mismo_diseno(figs[0], figs[2])
+                if not ok:
+                    raise ValueError(f"el parpadeo cambia el diseno: {motivo}")
             return figs
         except ValueError as e:
             print(f"   ! {quien} {expr}: {e}, repito")
@@ -349,15 +464,21 @@ def pairs(quien: str) -> None:
     """public/v2/chars3/<quien>/<expr>_closed.png, <expr>_open.png y happy_blink.png, todas en el mismo lienzo."""
     out = V2 / "chars3" / quien
     out.mkdir(parents=True, exist_ok=True)
-    especie = "puppy" if quien in ("zibu", "lila") else quien
-    refs = [BASE / "public" / "ref" / f"cast-{especie}.png"]
+    if quien in ("zibu", "lila"):
+        refs = [BASE / "public" / "ref" / "cast-puppy.png"]
+    elif (BASE / "public" / "ref" / f"guest-{quien}.png").exists():
+        refs = [BASE / "public" / "ref" / f"guest-{quien}.png"]       # solo el invitado, sin Zibu ni Lila
+    else:   # animal nuevo sin dibujo previo: el estilo lo marca Percy (ya aprobado)
+        refs = [V2 / "chars3" / "piglet" / "happy_closed.png"]
     figs_all = {}
     for expr in EXPR:
         if (out / f"{expr}_closed.png").exists():
             continue
         # despues de la primera, la referencia es SOLO su propia cara contenta (la hoja de referencia trae a Zibu y Lila
         # y la IA mezclaba rasgos: orejas de conejo en el cerdito)
-        figs = pareja(quien, expr, [out / "happy_closed.png"] if (out / "happy_closed.png").exists() else refs)
+        hc = out / "happy_closed.png"
+        figs = pareja(quien, expr, [hc] if hc.exists() else refs,
+                      base=Image.open(hc).convert("RGBA") if hc.exists() else None)
         alto = max(f.height for f in figs)   # la pareja a la misma altura: al hablar el personaje no encoge
         figs = [f.resize((round(f.width * alto / f.height), alto), Image.LANCZOS) for f in figs]
         nombres = [f"{expr}_closed", f"{expr}_open"] + (["happy_blink"] if expr == "happy" else [])
@@ -430,3 +551,33 @@ def tapar_huecos(im: Image.Image, relleno: tuple[int, int, int] | None = None) -
 
 if __name__ == "__main__" and sys.argv[1] == "pairs":   # al final: usa funciones definidas mas arriba
     pairs(sys.argv[2])
+
+
+def auditar(quien: str) -> list[str]:
+    """Repasa las 11 caras: cada expresion contra la cara contenta, y la boca abierta / parpadeo contra su pareja.
+    Devuelve las expresiones que fallan (para apartarlas y volver a generarlas)."""
+    d = V2 / "chars3" / quien
+    cargar = lambda n: Image.open(d / f"{n}.png").convert("RGBA")   # noqa: E731
+    base = cargar("happy_closed")
+    malas = []
+    for expr in EXPR:
+        pares = [("happy_closed", f"{expr}_closed")] if expr != "happy" else []
+        pares += [(f"{expr}_closed", f"{expr}_open")] + ([("happy_closed", "happy_blink")] if expr == "happy" else [])
+        for a, b in pares:
+            ok, motivo = mismo_diseno(base if a == "happy_closed" else cargar(a), cargar(b),
+                                      solo_boca=b.endswith("_open"))
+            print(f"  {quien} {b}: {'ok' if ok else 'MAL - ' + motivo}", flush=True)
+            if not ok and expr not in malas:
+                malas.append(expr)
+    return malas
+
+
+if __name__ == "__main__" and sys.argv[1] == "audit":
+    for q in sys.argv[2:]:
+        print(q, "->", auditar(q) or "todo bien", flush=True)
+
+
+if __name__ == "__main__" and sys.argv[1] in ("char", "sheet", "bg", "prop"):   # al final: todo ya definido
+    cmd = sys.argv[1]
+    {"char": lambda: char(sys.argv[2]), "sheet": lambda: sheet(sys.argv[2]), "bg": lambda: bg(sys.argv[2], sys.argv[3]),
+     "prop": lambda: prop(sys.argv[2])}[cmd]()

@@ -31,7 +31,9 @@ def edit_multi(refs: list[Path], prompt: str, size: str = "1536x1024", quality: 
     import requests
     k = A.env_key("OPENAI_IMAGE_KEY")
     files = [("image[]", (p.name, open(p, "rb"), "image/png")) for p in refs]
-    for _ in range(2):
+    import time
+    for intento in range(5):
+        files = [("image[]", (p.name, open(p, "rb"), "image/png")) for p in refs]
         r = requests.post("https://api.openai.com/v1/images/edits", timeout=400, headers={"Authorization": f"Bearer {k}"},
                           files=files, data={"model": os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-1-mini"),
                                              "prompt": prompt, "size": size, "quality": quality, "n": "1",
@@ -41,6 +43,8 @@ def edit_multi(refs: list[Path], prompt: str, size: str = "1536x1024", quality: 
             import base64
             return base64.b64decode(r.json()["data"][0]["b64_json"])
         print(f"   ! HTTP {r.status_code} {r.text[:200]}")
+        if r.status_code == 429 and "rate" in r.text.lower():   # demasiado rapido: esperar y repetir
+            time.sleep(25 * (intento + 1))
     return None
 
 

@@ -46,6 +46,9 @@ def prompt(story: dict) -> str:
     idx = int(story.get("thumb", {}).get("scene", 2))
     sc = story["scenes"][min(max(idx, 0), len(story["scenes"]) - 1)]
     props = sorted({(p.get("what") if isinstance(p, dict) else p) for s in story["scenes"] for p in s.get("props", [])} - {None})
+    if story.get("object"):   # estilo nuevo: un solo objeto por episodio (nombre en ingles)
+        from generate_story import OBJETOS
+        props = [OBJETOS.get(story["object"], story["object"])]
     return (
         "Create a YouTube thumbnail image, 16:9 landscape, for a preschool cartoon (children aged 2-5).\n"
         f"Episode: \"{story['title']['en']}\". Exciting moment: {hook}\n"
@@ -268,10 +271,38 @@ def texted(story: dict, base: Path, langs=("es", "pt", "en"), tries: int = 2) ->
                 break
 
 
+def ref_v2(story: dict) -> Path:
+    """Estilo nuevo: la referencia son los dibujos aprobados (public/v2) sobre el fondo de la escena de la miniatura,
+    para que la IA pinte a los personajes y el objeto tal cual salen en el video."""
+    from PIL import Image
+    v2 = BASE / "public" / "v2"
+    idx = int(story.get("thumb", {}).get("scene", 2))
+    sc = story["scenes"][min(max(idx, 0), len(story["scenes"]) - 1)]
+    fondo = next((v2 / "bg" / f"{n}.png" for n in (f"{sc.get('bg')}-{sc.get('time')}", f"{sc.get('bg')}-day")
+                  if (v2 / "bg" / f"{n}.png").exists()), v2 / "bg" / "garden-day.png")
+    img = Image.open(fondo).convert("RGBA").resize((1920, 1080))
+
+    def poner(png: Path, alto: int, cx: int, pie: int) -> None:
+        im = Image.open(png).convert("RGBA")
+        im = im.resize((round(im.width * alto / im.height), alto), Image.LANCZOS)
+        img.alpha_composite(im, (cx - im.width // 2, pie - alto))
+
+    guest = story["guest"].get("species") or "piglet"
+    poner(v2 / "chars3" / "zibu" / "happy_closed.png", 520, 560, 1040)
+    poner(v2 / "chars3" / "lila" / "happy_closed.png", 640, 1000, 1040)
+    poner(v2 / "chars3" / guest / "happy_closed.png", 470, 1420, 1040)
+    obj = v2 / "props" / f"{story.get('object')}.png"
+    if obj.exists():
+        poner(obj, 260, 1700, 560)
+    out = BASE / "public" / "ref" / "_v2-cast.png"
+    img.convert("RGB").save(out)
+    return out
+
+
 def generate(story_path: str) -> Path | None:
     story = json.loads(Path(story_path).read_text(encoding="utf-8"))
     guest = story["guest"].get("species") or story["guest"]["id"]
-    ref = BASE / "public" / "ref" / f"cast-{guest}.png"
+    ref = ref_v2(story) if story.get("style") == "v2" else BASE / "public" / "ref" / f"cast-{guest}.png"
     if ref.exists() and (hecho := openai(story, ref)):
         if os.getenv("AI_THUMB_TEXT", "1") == "1":
             texted(story, hecho)

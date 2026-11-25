@@ -27,11 +27,23 @@ MODELS = [os.getenv("GEMINI_MODEL")] if os.getenv("GEMINI_MODEL") else [
     # 3.5 primero: en las pruebas fue el mas fiable (15-50 s); 3.8 a veces tarda mas de 5 min
     "gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash-lite"]
 
-SPECIES = ["puppy", "kitten", "bear", "duckling", "frog", "piglet", "owl", "mouse", "star"]
-BGS = ["garden", "forest", "river", "hill", "sky", "beach", "room"]
+# Estilo nuevo (2026-11-25): solo lo que tiene dibujo hecho con IA en public/v2 (aprobado). Cada episodio lleva un
+# invitado y un objeto que no han salido desde que empezo el estilo nuevo; cuando se gastan todos, al azar.
+SPECIES = ["puppy", "kitten", "bear", "duckling", "frog", "piglet", "owl", "mouse", "elephant", "giraffe"]
+OBJETOS = {   # nombre en ingles para Gemini
+    "ball": "beach ball", "balloon": "balloon", "kite": "kite", "gift": "gift box", "apple": "apple",
+    "cookie": "cookie", "cupcake": "cupcake", "flower": "flower", "butterfly": "butterfly", "umbrella": "umbrella",
+    "shell": "seashell", "star": "shiny star", "teddy": "teddy bear", "drum": "toy drum", "toycar": "toy car",
+    "bucket": "bucket and spade", "crayons": "crayons", "banana": "banana", "wateringcan": "watering can",
+    "basket": "picnic basket",
+}
+# fondos dibujados: lugar -> momentos del dia que existen
+FONDOS = {"garden": ["day", "sunset", "night"], "forest": ["day"], "river": ["day"], "beach": ["day"],
+          "hill": ["day"], "room": ["day"]}
+BGS = list(FONDOS)
 TIMES = ["day", "sunset", "night"]
-PROPS = ["ball", "firefly", "stone", "balloon", "bigstar", "brightstar", "apple", "flower", "butterfly", "gift",
-         "cookie", "kite", "umbrella", "shell", "leaf", "cupcake"]
+PROPS = list(OBJETOS)
+COMBOS = ", ".join(f"{b}+{t}" for b, ts in FONDOS.items() for t in ts)
 MOODS = ["happy", "laugh", "sad", "surprised", "scared"]
 ACTIONS = ["jump", "bigjump", "wave", "shake", "spin", "glow"]
 WHO = ["narrator", "zibu", "lila", "guest"]
@@ -129,7 +141,7 @@ def validar(s: dict) -> list[str]:
             e.append(f"falta '{k}'")
     if e:
         return e
-    if s["guest"].get("species") not in SPECIES:
+    if s["guest"].get("species") not in SPECIES or s.get("object") not in OBJETOS:
         e.append("guest.species no valido")
     for lang in ("en", "es"):
         if not s["guest"].get("name", {}).get(lang):
@@ -151,16 +163,16 @@ def validar(s: dict) -> list[str]:
     total = 0
     for i, x in enumerate(sc):
         where = f"escena {i} ({x.get('id')})"
-        if x.get("bg") not in BGS or x.get("time") not in TIMES:
-            e.append(f"{where}: bg/time no validos")
+        if x.get("bg") not in FONDOS or x.get("time") not in FONDOS[x["bg"]]:
+            e.append(f"{where}: bg/time no validos (solo {COMBOS})")
         cast = {c.get("who") for c in x.get("cast", [])}
         if not cast <= {"zibu", "lila", "guest"} or not cast:
             e.append(f"{where}: cast solo puede tener zibu, lila y guest")
         lines = x.get("lines", [])
         total += len(lines)
         for p in x.get("props", []):
-            if p.get("what") not in PROPS:
-                e.append(f"{where}: prop '{p.get('what')}' no existe")
+            if p.get("what") != s.get("object"):
+                e.append(f"{where}: prop '{p.get('what')}' no vale: el unico objeto de este episodio es '{s.get('object')}'")
             if not isinstance(p.get("at", 0), int) or not 0 <= p.get("at", 0) < len(lines):
                 e.append(f"{where}: prop.at fuera de rango")
             if "until" in p and not (isinstance(p["until"], int) and p.get("at", 0) < p["until"] < len(lines)):
@@ -199,33 +211,35 @@ SAFETY: nothing scary, violent, sad for long, or dangerous to imitate (no fire, 
 strangers, no climbing dangerous places). No brands, no real people, no other cartoon characters."""
 
 
-def formato() -> str:
+def formato(objeto: str = "") -> str:
+    props = f'"{objeto}" (the ONLY object of this episode; several of them are fine)' if objeto else "|".join(PROPS)
     return f"""SCENE FORMAT (JSON). Allowed values:
-- "bg": {", ".join(BGS)} (room = a cozy bedroom). "time": {", ".join(TIMES)}.
+- "bg" + "time": ONLY these combinations: {COMBOS} (room = a cozy bedroom, only by day).
 - "cast": [{{"who": "zibu"|"lila"|"guest", "x": 0..1 (horizontal position; -0.2 or 1.3 = off screen),
   "y": 0..1 only for a guest that floats or flies}}]
 - "lines": [{{"who": "narrator"|someone in the cast, "en", "es", optional "mood": {"|".join(MOODS)},
   optional "action": {"|".join(ACTIONS)}, optional "moves": [{{"who", "to": x, optional "toY": y}}] to walk, enter or
   leave, optional "show": {{"en", "es", optional "color": "#hex"}} to show a big word or number, optional "pause": seconds}}]
-- "props": [{{"what": {"|".join(PROPS)}, "x", "y" (0..1, center of the object), "at": index of the line where it
+- "props": [{{"what": {props}, "x", "y" (0..1, center of the object), "at": index of the line where it
   appears, optional "until": index of the line where it disappears, optional "anim": "bounce"|"float", optional "color"}}]
 Lines are SHORT (most under 12 words), simple, warm, with exclamations and "..." pauses so the voices sound
 expressive. The narrator describes what happens; the characters talk a lot. Characters move: use "moves" to make
 them enter, walk and leave, "action" to jump, wave or spin, and "mood" so their faces show emotions."""
 
 
-def prompt_esquema(species: str, lesson: str, learn: str, anteriores: list[str]) -> str:
+def prompt_esquema(species: str, objeto: str, lesson: str, learn: str, anteriores: list[str]) -> str:
     return f"""{SERIE}
 
-Plan a NEW episode. The guest is a {species}. Lesson: {lesson}. Learning moment: {learn}.
+Plan a NEW episode. The guest is a {species}. The story is built around ONE object: a {OBJETOS[objeto]}
+("{objeto}"). Lesson: {lesson}. Learning moment: {learn}.
 It must be different from these previous episodes: {"; ".join(anteriores) or "none yet"}.
 The story: a beginning, a small problem, two or three tries to solve it, a happy solution and the lesson said
 clearly near the end. The FIRST story scene must get going fast: the guest appears or something happens within
 its first 2-3 lines (no slow openings like "It was a beautiful sunny day in the garden").
 Include the learning moment in one scene (big words/numbers on screen).
-IMPORTANT: only these objects can be drawn on screen: {", ".join(PROPS)}. Build the story around them (and around
-the places: {", ".join(BGS)}). Do NOT make the story depend on other objects (no slides, swings, cars, toys,
-books, food other than cookie/cupcake/apple...), because the children would not see them.
+IMPORTANT: the ONLY object that can be drawn on screen is the {OBJETOS[objeto]} (one or several of them). Build
+the story around it and around these places: {COMBOS}. Do NOT make the story depend on any other object (no
+slides, swings, other toys, books, other food...), because the children would not see them.
 
 Return ONLY JSON:
 {{"slug": "kebab-case, 2-4 words", "title": {{"en", "es"}}, "lesson": {{"en", "es"}},
@@ -238,7 +252,7 @@ Return ONLY JSON:
    (e.g. "Oh no! The red balloon is flying away!", "Whoa! Barnaby's ball rolled into the river!"), never a
    greeting first. Then Zibu talks DIRECTLY to the child watching and asks for help (e.g. "Friend, can you
    help us catch it? Let's go!"). Max 8 words per line.
- "story": [7 story scenes: {{"id": "kebab-case", "bg": one of {", ".join(BGS)}, "time": one of {", ".join(TIMES)}, "cast": ["zibu", "lila", "guest" as needed], "summary": "2-3 sentences of what happens"}}],
+ "story": [7 story scenes: {{"id": "kebab-case", "bg" + "time": one of these combinations: {COMBOS}, "cast": ["zibu", "lila", "guest" as needed], "summary": "2-3 sentences of what happens"}}],
  "song": {{"en": "song title", "es": "song title"}}}}
 Use at least 3 different bg values."""
 
@@ -253,7 +267,7 @@ STORY SCENES: {json.dumps(resumen, ensure_ascii=False)}
 The previous scene ended with: {json.dumps(final, ensure_ascii=False)}
 
 Write story scenes number {", ".join(str(i + 1) for i in idx)} in full, 12 to 16 lines each.
-{formato()}
+{formato(plan["object"])}
 
 EXAMPLE scene from a previous episode: {ejemplo}
 
@@ -267,8 +281,8 @@ def prompt_final(plan: dict, historia: list[dict]) -> str:
 EPISODE: {json.dumps({k: plan[k] for k in ("title", "lesson", "guest", "song")}, ensure_ascii=False)}
 THE STORY (English lines): {json.dumps(texto, ensure_ascii=False)}
 
-Write the last three scenes. {formato()}
-1. "song" scene ({{"id": "song", "type": "song", "bg": "sky" or the most colorful bg, "time", "cast" with zibu, lila,
+Write the last three scenes. {formato(plan["object"])}
+1. "song" scene ({{"id": "song", "type": "song", "bg": "garden", "time": "day", "cast" with zibu, lila,
    guest}}): an ORIGINAL simple song about this story. 4-line chorus + 4-line verse (sung by zibu and lila in turns) +
    chorus, then zibu says "One more time! Sing with us!", then the whole song again, then one happy line by the
    guest. Lines rhyme in each language. Chorus lines are sung by the narrator. About 26 lines.
@@ -276,7 +290,7 @@ Write the last three scenes. {formato()}
    says "Did you like the story? Let's remember it together!", then asks 5 questions about the story, each one with
    "pause": 2.5 followed by the answer (use "show" for numbers or words). Also one moment where zibu or lila invites
    the kids to do something with them (jump, clap, count) in 4-5 short lines. Last: the lesson.
-3. "dance" scene ({{"id": "dance", "type": "dance", "bg", "time": "sunset", "cast" with zibu, lila, guest}}):
+3. "dance" scene ({{"id": "dance", "type": "dance", "bg": "garden", "time": "sunset", "cast" with zibu, lila, guest}}):
    zibu "Dance party! Dance with us, friends!" with "pause": 14; lila or the guest one fun line with "pause": 10;
    zibu says goodbye ("See you next time, friends!") with "action": "wave"; lila "Bye-bye!" with "pause": 3.
 
@@ -318,9 +332,10 @@ def gancho(plan: dict, historia: list[dict]) -> dict:
             "lines": lineas} | ({"props": props[:3]} if props else {})
 
 
-def escribir(species: str, lesson: str, learn: str, anteriores: list[str]) -> dict:
+def escribir(species: str, objeto: str, lesson: str, learn: str, anteriores: list[str]) -> dict:
     """Esquema -> escenas de la historia de dos en dos -> cancion, repaso y baile."""
-    plan = gemini(prompt_esquema(species, lesson, learn, anteriores), max_tokens=8000)
+    plan = gemini(prompt_esquema(species, objeto, lesson, learn, anteriores), max_tokens=8000)
+    plan["object"] = objeto
     ejemplo = ejemplo_corto()
     historia: list[dict] = []
     n = len(plan["story"])
@@ -331,7 +346,7 @@ def escribir(species: str, lesson: str, learn: str, anteriores: list[str]) -> di
     titulo = {"id": "title", "type": "title", "bg": historia[0]["bg"], "time": historia[0]["time"],
               "cast": [{"who": "zibu", "x": 0.5}],
               "lines": [{"who": "narrator", "en": plan["title"]["en"] + "!", "es": "¡" + plan["title"]["es"].strip("¡!") + "!", "pause": 0.3}]}
-    story = {k: plan[k] for k in ("slug", "title", "lesson", "guest", "thumb", "youtube")}
+    story = {k: plan[k] for k in ("slug", "title", "lesson", "guest", "thumb", "youtube")} | {"object": objeto, "style": "v2"}
     story["scenes"] = [gancho(plan, historia), titulo] + historia + final
     story["thumb"]["scene"] = int(story["thumb"].get("scene", 1)) + 1  # el gancho va antes del titulo
     for sc in story["scenes"]:  # el cast puede venir como lista de nombres
@@ -345,17 +360,25 @@ def elegir(opciones: list[str], usados: list[str], ventana: int) -> str:
     return random.choice(libres)
 
 
+def ronda(opciones: list[str], usados: list[str]) -> str:
+    """Sin repetir hasta haber usado todas; despues al azar (sin repetir las 3 ultimas)."""
+    pendientes = [o for o in opciones if o not in usados]
+    return random.choice(pendientes) if pendientes else elegir(opciones, usados, 3)
+
+
 def main() -> None:
     ledger = json.loads(LEDGER.read_text(encoding="utf-8")) if LEDGER.exists() else []
-    species = elegir(SPECIES, [x["guest"] for x in ledger], 5)
+    nuevos = [x for x in ledger if x.get("style") == "v2"]   # desde que empezo el estilo nuevo
+    species = ronda(SPECIES, [x["guest"] for x in nuevos])
+    objeto = ronda(PROPS, [x["object"] for x in nuevos])
     lesson = elegir(LESSONS, [x["lesson"] for x in ledger], 14)
     learn = elegir(LEARN, [x["learn"] for x in ledger], 3)
     anteriores = [x["title"] for x in ledger[-40:]]
-    print(f"Episodio nuevo: invitado {species} · leccion '{lesson}' · aprende '{learn}'")
+    print(f"Episodio nuevo: invitado {species} · objeto {objeto} · leccion '{lesson}' · aprende '{learn}'")
 
     for intento in range(1, 4):
         try:
-            story = escribir(species, lesson, learn, anteriores)
+            story = escribir(species, objeto, lesson, learn, anteriores)
         except (KeyError, TypeError, ValueError, IndexError, RuntimeError) as ex:
             print(f"   ! no se pudo escribir ({type(ex).__name__}: {ex}), se repite")
             continue
@@ -369,7 +392,7 @@ def main() -> None:
                     por_escena.setdefault(int(m.group(1)), []).append(err)
             for i, errs in por_escena.items():
                 try:
-                    story["scenes"][i] = gemini(f"{formato()}\n\nFix these problems in this scene and return ONLY the "
+                    story["scenes"][i] = gemini(f"{formato(objeto)}\n\nFix these problems in this scene and return ONLY the "
                                                 "corrected scene JSON:\n- " + "\n- ".join(errs) + "\n\nSCENE:\n"
                                                 + json.dumps(story["scenes"][i], ensure_ascii=False))
                 except (RuntimeError, ValueError) as ex:
@@ -393,7 +416,7 @@ def main() -> None:
         path = STORIES / f"{story['id']}.json"
         path.write_text(json.dumps(story, ensure_ascii=False, indent=1), encoding="utf-8")
         ledger.append({"id": story["id"], "date": date.today().isoformat(), "title": story["title"]["en"],
-                       "guest": species, "lesson": lesson, "learn": learn})
+                       "guest": species, "object": objeto, "style": "v2", "lesson": lesson, "learn": learn})
         LEDGER.write_text(json.dumps(ledger, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"Guion listo: {path.name} · {story['title']['en']} / {story['title']['es']}")
         if os.getenv("GITHUB_OUTPUT"):

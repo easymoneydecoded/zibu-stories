@@ -24,7 +24,9 @@ export type CastMember = { who: string; x: number; y?: number };
 
 export type PropItem = {
   what: "ball" | "firefly" | "stone" | "balloon" | "bigstar" | "brightstar" | "apple" | "flower" | "butterfly" | "gift"
-    | "cookie" | "kite" | "umbrella" | "shell" | "leaf" | "cupcake";
+    | "cookie" | "kite" | "umbrella" | "shell" | "leaf" | "cupcake"
+    // estilo nuevo (dibujos con IA en public/v2/props)
+    | "star" | "teddy" | "drum" | "toycar" | "bucket" | "crayons" | "banana" | "wateringcan" | "basket";
   x: number;
   y: number;
   at?: number; // indice de la frase en la que aparece

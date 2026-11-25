@@ -48,10 +48,13 @@ GUEST_VOICES = {
     "piglet": {"en": ("af_kore", 1.0, 4), "es": ("ef_dora", 1.0, 6)},
     "owl": {"en": ("bm_george", 0.92, 0), "es": ("em_alex", 0.92, -1)},
     "mouse": {"en": ("af_sky", 1.08, 7), "es": ("ef_dora", 1.1, 10)},
+    "elephant": {"en": ("am_michael", 0.97, 2), "es": ("em_alex", 0.97, 2)},
+    "giraffe": {"en": ("af_nicole", 1.02, 5), "es": ("ef_dora", 1.02, 6)},
 }
 GUEST_PT = {"puppy": ("pm_alex", 1.02, 5), "bear": ("pm_santa", 0.95, 1), "frog": ("pm_alex", 1.0, 4),
             "owl": ("pm_santa", 0.92, 0), "star": ("pf_dora", 1.0, 8), "kitten": ("pf_dora", 1.04, 7),
-            "duckling": ("pf_dora", 1.06, 9), "piglet": ("pf_dora", 1.0, 6), "mouse": ("pf_dora", 1.1, 10)}
+            "duckling": ("pf_dora", 1.06, 9), "piglet": ("pf_dora", 1.0, 6), "mouse": ("pf_dora", 1.1, 10),
+            "elephant": ("pm_santa", 0.97, 2), "giraffe": ("pf_dora", 1.02, 6)}
 for _esp, _voz in GUEST_PT.items():
     GUEST_VOICES[_esp]["pt"] = _voz
 LANG_CODE = {"en": "en-us", "es": "es", "pt": "pt-br"}
@@ -162,7 +165,8 @@ ELEVEN_VOICES = {
     "zibu": ("TX3LPaxmHKxFdv7VOQHJ", 3),       # Liam, mas agudo: monstruito alegre
     "lila": ("cgSgspJ2msm6clMCkdW9", 2),       # Jessica: conejita dulce
 }
-ELEVEN_GUEST = {"owl": ("JBFqnCBsd6RMkjVDRZzb", 0), "bear": ("JBFqnCBsd6RMkjVDRZzb", 2)}  # George: voz mayor
+ELEVEN_GUEST = {"owl": ("JBFqnCBsd6RMkjVDRZzb", 0), "bear": ("JBFqnCBsd6RMkjVDRZzb", 2),
+                "elephant": ("JBFqnCBsd6RMkjVDRZzb", 3)}  # George: voz mayor
 ELEVEN_GUEST_DEFAULT = ("FGY2WhTYpPnrIDTdsKH5", 4)                                      # Laura, aguda
 
 

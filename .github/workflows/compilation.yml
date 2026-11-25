@@ -90,7 +90,9 @@ jobs:
         run: python scripts/build_episode.py "stories/$EP.json" "$LG"
       - name: Video, miniatura y datos
         run: |
-          npx remotion render Episode "out/$EP-$LG.mp4" --props="{\"episode\":\"$EP\",\"lang\":\"$LG\"}" --log=error
+          # estilo nuevo (dibujos con IA, public/v2) si el guion lo pide; los episodios viejos siguen como estaban
+          COMP=$(python -c "import json,sys; print('EpisodeV2' if json.load(open(sys.argv[1],encoding='utf-8')).get('style')=='v2' else 'Episode')" "stories/$EP.json")
+          npx remotion render $COMP "out/$EP-$LG.mp4" --props="{\"episode\":\"$EP\",\"lang\":\"$LG\"}" --log=error
           npx remotion still Thumbnail "out/$EP-$LG.png" --props="{\"episode\":\"$EP\",\"lang\":\"$LG\"}" --log=error
           python scripts/compilation.py meta "$EP" "$LG"
       - uses: actions/upload-artifact@v4
