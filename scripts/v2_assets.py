@@ -23,7 +23,11 @@ STYLE = ("Polished 2D cartoon style for a preschool show, soft shading and gentl
          "NO text.")
 DESC = {"zibu": ("Zibu, the round blue monster: his head and body are ONE single round ball (no neck, no torso), "
                  "with big eyes, a yellow ball antenna on top, two small arms and two small feet"),
-        "lila": "Lila, the pink bunny with long ears and a purple bow on one ear (the bow is always there)"}
+        "lila": "Lila, the pink bunny with long ears and a purple bow on one ear (the bow is always there)",
+        "piglet": ("Percy, a cute pink piglet: a round pink head with TWO pointy pink ears (one on each side, both always "
+                   "visible), big round eyes with WHITE eyeballs and dark brown pupils, a round pink snout with two "
+                   "nostrils, rosy cheeks, a small round pink body with a lighter belly, short arms and short legs. "
+                   "No bow, no accessories")}
 CARAS = {
     "talk": "mouth wide open as if talking happily (the rest of the face the same)",
     "blink": "both eyes closed in a happy relaxed way, mouth closed smile",
@@ -278,8 +282,9 @@ EXPR = {
     "happy": "happy, gentle smile",
     "neutral": "calm and neutral, relaxed face",
     "surprised": "surprised, eyes wide open, eyebrows raised",
-    "sad": "sad, worried eyebrows",
-    "laugh": "laughing with joy, happy squinting eyes",
+    "sad": ("sad: worried eyebrows and a small frown, but the eyes drawn EXACTLY like the reference (white eyeballs "
+            "with the same pupils, same colors)"),
+    "laugh": "laughing with joy, happy squinting eyes, arms DOWN and relaxed exactly like the reference",
 }
 
 
@@ -298,11 +303,14 @@ def pareja(quien: str, expr: str, refs: list[Path], intentos: int = 4) -> list[I
     extra = expr == "happy"
     n = 3 if extra else 2
     caras = ("1) mouth CLOSED; 2) mouth OPEN as if talking (the only difference is the mouth)" +
-             ("; 3) eyes closed in a happy blink, mouth closed" if extra else ""))
+             ("; 3) eyes closed in a happy blink, mouth closed (everything else identical, including any bow or "
+              "accessory)" if extra else ""))
     prompt = (f"{n} drawings of {desc}, side by side in one row, IDENTICAL in everything (same size, same full-body "
-              f"standing pose facing the viewer, same position, same expression: {EXPR[expr]}) except the mouth: "
+              f"standing pose facing the viewer with the arms down and relaxed exactly like the reference image, same "
+              f"position, same expression: {EXPR[expr]}) except the mouth: "
               f"{caras}. Big empty margin around every figure: NOTHING may touch or cross the edges of the image "
               "(ears, antenna and feet fully inside, at least 60 pixels from every edge). "
+              "Only the BACKGROUND is transparent: the eyes keep solid opaque WHITE eyeballs. "
               "Fully TRANSPARENT background, no scenery, no text, no shadows. " + STYLE)
     for _ in range(intentos):
         raw = edit_multi(refs, prompt, size="1536x1024", quality="high", transparent=True)
@@ -341,7 +349,7 @@ def pairs(quien: str) -> None:
     """public/v2/chars3/<quien>/<expr>_closed.png, <expr>_open.png y happy_blink.png, todas en el mismo lienzo."""
     out = V2 / "chars3" / quien
     out.mkdir(parents=True, exist_ok=True)
-    especie = "puppy" if quien in DESC else quien
+    especie = "puppy" if quien in ("zibu", "lila") else quien
     refs = [BASE / "public" / "ref" / f"cast-{especie}.png"]
     figs_all = {}
     for expr in EXPR:
@@ -358,10 +366,67 @@ def pairs(quien: str) -> None:
         for nombre, f in zip(nombres, figs):
             lienzo = Image.new("RGBA", (W, H), (0, 0, 0, 0))
             lienzo.alpha_composite(f, ((W - f.width) // 2, H - f.height))
+            # el blanco de los ojos nunca transparente; en el parpadeo el ojo cerrado es piel (parpado), no blanco
+            lienzo = tapar_huecos(lienzo, color_piel(lienzo) if nombre.endswith("blink") else None)
             lienzo.save(out / f"{nombre}.png")
             figs_all[nombre] = lienzo
         print(f"  {quien} {expr}")
 
 
-if __name__ == "__main__" and sys.argv[1] == "pairs":
+
+
+def color_piel(im: Image.Image) -> tuple[int, int, int]:
+    """Color mas comun de la cara (zona central de arriba), sin contar blancos, negros ni transparentes."""
+    from collections import Counter
+    im = im.convert("RGBA")
+    b = im.getchannel("A").point(lambda v: 255 if v > 24 else 0).getbbox()
+    h = b[3] - b[1]
+    zona = im.crop((b[0] + (b[2] - b[0]) // 4, b[1] + h // 6, b[2] - (b[2] - b[0]) // 4, b[1] + h // 2))
+    cuenta = Counter((r // 8 * 8, g // 8 * 8, bl // 8 * 8) for r, g, bl, a in zona.getdata()
+                     if a > 200 and not (r > 225 and g > 225 and bl > 225) and r + g + bl > 120)
+    return cuenta.most_common(1)[0][0]
+
+
+def tapar_huecos(im: Image.Image, relleno: tuple[int, int, int] | None = None) -> Image.Image:
+    """Al pedir fondo transparente la IA tambien deja transparente el blanco de los ojos (se ve el paisaje a traves).
+    Todo hueco transparente ENCERRADO dentro de la figura (no conectado con el exterior) en la mitad de arriba
+    (la cara) y pequeno se rellena de blanco."""
+    from PIL import ImageDraw
+    im = im.convert("RGBA")
+    w, h = im.size
+    m = Image.new("L", (w + 2, h + 2), 0)
+    m.paste(im.getchannel("A").point(lambda v: 255 if v > 24 else 0), (1, 1))
+    ImageDraw.floodfill(m, (0, 0), 128)           # el exterior conectado con el borde
+    m = m.crop((1, 1, w + 1, h + 1))
+    px, mp = im.load(), m.load()
+    visto = set()
+    caja = im.getchannel("A").point(lambda v: 255 if v > 24 else 0).getbbox()
+    alto_fig = caja[3] - caja[1]
+    for y in range(h):
+        for x in range(w):
+            if mp[x, y] != 0 or (x, y) in visto:
+                continue
+            # region del hueco (pila)
+            pila, region = [(x, y)], []
+            visto.add((x, y))
+            while pila:
+                cx, cy = pila.pop()
+                region.append((cx, cy))
+                for nx, ny in ((cx + 1, cy), (cx - 1, cy), (cx, cy + 1), (cx, cy - 1)):
+                    if 0 <= nx < w and 0 <= ny < h and mp[nx, ny] == 0 and (nx, ny) not in visto:
+                        visto.add((nx, ny))
+                        pila.append((nx, ny))
+            ys = [p[1] for p in region]
+            en_cara = (sum(ys) / len(ys) - caja[1]) < 0.62 * alto_fig
+            if en_cara and len(region) < 0.08 * w * h:
+                for rx, ry in region:
+                    r, g, b, a = px[rx, ry]
+                    # mezcla con lo que hubiera (bordes suaves) hacia blanco opaco
+                    k = a / 255
+                    fr, fg, fb = relleno or (255, 255, 255)
+                    px[rx, ry] = (int(r * k + fr * (1 - k)), int(g * k + fg * (1 - k)), int(b * k + fb * (1 - k)), 255)
+    return im
+
+
+if __name__ == "__main__" and sys.argv[1] == "pairs":   # al final: usa funciones definidas mas arriba
     pairs(sys.argv[2])
