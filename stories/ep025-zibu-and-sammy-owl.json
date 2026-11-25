@@ -1,0 +1,1348 @@
+{
+ "slug": "zibu-and-sammy-owl",
+ "title": {
+  "en": "Zibu and the Owl Game",
+  "es": "Zibu y el juego del búho"
+ },
+ "lesson": {
+  "en": "Games are most fun when everyone is included!",
+  "es": "¡Los juegos son más divertidos cuando todos están incluidos!"
+ },
+ "guest": {
+  "species": "owl",
+  "name": {
+   "en": "Sammy",
+   "es": "Sammy"
+  }
+ },
+ "thumb": {
+  "en": [
+   "Play Together!",
+   "Learn Sounds!"
+  ],
+  "es": [
+   "¡Juguemos juntos!",
+   "¡Todos cuentan!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Includes Sammy Owl! 🦉 Learn Animal Sounds & Inclusion | Zibu and Friends",
+   "description": "🦉 Sammy the owl wants to play balloon games with Zibu and Lila!\n🎈 But flying friends play a little differently.\n⭐ Zibu and Lila find a clever way to include everyone in the game!\n🗣️ Kids learn animal sounds like HOOT and WOOF along the way!\n❤️ Playing together is always more fun when no one is left out.\n#ZibuAndFriends #LearnAnimalSounds #InclusionForKids #PreschoolCartoons",
+   "tags": [
+    "zibu and friends",
+    "inclusion for kids",
+    "animal sounds",
+    "owl cartoon",
+    "toddler learning",
+    "preschool videos",
+    "play together",
+    "kindness for kids",
+    "educational cartoon",
+    "learn sounds"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu incluye al búho Sammy! 🦉 Aprende sonidos de animales | Zibu y sus amigos",
+   "description": "🦉 ¡El búho Sammy quiere jugar al globo con Zibu y Lila!\n🎈 Pero los amigos que vuelan juegan de forma diferente.\n⭐ ¡Zibu y Lila encuentran una forma divertida de incluir a todos!\n🗣️ ¡Los niños aprenden sonidos de animales como HOOT y GUAU!\n❤️ Jugar juntos es más divertido cuando nadie se queda afuera.\n#ZibuYSusAmigos #SonidosDeAnimales #InclusionParaNinos #CaricaturasInfantiles",
+   "tags": [
+    "zibu y sus amigos",
+    "inclusion para niños",
+    "sonidos de animales",
+    "dibujos animados buho",
+    "videos educacionales",
+    "preescolar",
+    "jugar juntos",
+    "valores para niños",
+    "caricaturas infantiles",
+    "aprender jugando"
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! The red balloon is flying away!",
+     "es": "¡Oh no! ¡El globo rojo se vuela!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us catch it?",
+     "es": "Amigo, ¿nos ayudas a atraparlo?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's play together right now!",
+     "es": "¡Juguemos todos juntos ahora!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.3,
+     "y": 0.5,
+     "anim": "bounce",
+     "color": "#FF5722"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Owl Game!",
+     "es": "¡Zibu y el juego del búho!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "sammy-arrives",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 1.2,
+     "y": 0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.3,
+     "y": 0.5,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a beautiful sunny day in the garden. Zibu and Lila were playing!",
+     "es": "¡Era un hermoso día soleado en el jardín. Zibu y Lila estaban jugando!"
+    },
+    {
+     "who": "zibu",
+     "en": "Boing! Boing! Catch the balloon, Lila!",
+     "es": "¡Boing! ¡Boing! ¡Atrapa el globo, Lila!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "I got it, Zibu! Wheee!",
+     "es": "¡Lo tengo, Zibu! ¡Wheee!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "High up in the tree, someone was watching.",
+     "es": "Arriba en el árbol, alguien estaba mirando.",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.85,
+       "toY": 0.25
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Hoot... hoot! Hello down there!",
+     "es": "¡Huu... huu! ¡Hola allá abajo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! Look! It's Sammy the owl!",
+     "es": "¡Oh! ¡Miren! ¡Es Sammy el búho!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Hi, Sammy! Good morning!",
+     "es": "¡Hola, Sammy! ¡Buenos días!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Hello, friends! That balloon looks like so much fun!",
+     "es": "¡Hola, amigos! ¡Ese globo se ve muy divertido!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Sammy sat quietly on his branch, watching the red balloon.",
+     "es": "Sammy se sentó tranquilamente en su rama, mirando el globo rojo."
+    },
+    {
+     "who": "guest",
+     "en": "Hoot... I wish I could play bouncing games too.",
+     "es": "Huu... Desearía poder jugar a rebotar también.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Do you want to play with us, Sammy?",
+     "es": "¿Quieres jugar con nosotros, Sammy?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Oh yes, please! But I am way up here!",
+     "es": "¡Oh, sí, por favor! ¡Pero estoy muy arriba!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Don't worry! We can play together!",
+     "es": "¡No te preocupes! ¡Podemos jugar juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "How will Zibu and Lila play with a friend high in the trees?",
+     "es": "¿Cómo jugarán Zibu y Lila con un amigo tan arriba en los árboles?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "first-attempt",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.85,
+     "y": 0.25
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.35,
+     "y": 0.5,
+     "at": 0,
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu had a big idea to help Sammy join the game!",
+     "es": "¡Zibu tuvo una gran idea para ayudar a Sammy a unirse al juego!"
+    },
+    {
+     "who": "zibu",
+     "en": "I know! I will throw the balloon super high!",
+     "es": "¡Ya sé! ¡Lanzaré el globo súper alto!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Ready, Sammy? Get ready to tap it!",
+     "es": "¿Listo, Sammy? ¡Prepárate para tocarlo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Ready! Hoot hoot!",
+     "es": "¡Listo! ¡Huu huu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu pushed the balloon high up into the air!",
+     "es": "¡Zibu empujó el globo bien alto hacia el aire!"
+    },
+    {
+     "who": "zibu",
+     "en": "Up, up, up it goes!",
+     "es": "¡Arriba, arriba, arriba va!",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "But suddenly... a gentle breeze started to blow! Whoosh!",
+     "es": "Pero de repente... ¡empezó a soplar una brisa suave! ¡Fiuuu!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh! The balloon is drifting away!",
+     "es": "¡Oh! ¡El globo se está alejando!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "The wind pushed the balloon right into a bush!",
+     "es": "¡El viento empujó el globo directo a un arbusto!"
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! The balloon is stuck!",
+     "es": "¡Oh, no! ¡El globo está atrapado!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.6
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Be careful, Lila!",
+     "es": "¡Ten cuidado, Lila!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Got it! Softly... and slowly... saved!",
+     "es": "¡Lo tengo! Suavemente... y despacito... ¡salvado!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Whew! That was close! Hoot...",
+     "es": "¡Uf! ¡Eso estuvo cerca! Huu...",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Throwing the balloon that high didn't work. But they won't give up!",
+     "es": "Lanzar el globo tan alto no funcionó. ¡Pero no se rendirán!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "second-attempt",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "ball",
+     "x": 0.45,
+     "y": 0.75,
+     "at": 2,
+     "color": "#FF5722"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and Lila tried a new game on the grassy hill.",
+     "es": "Zibu y Lila probaron un nuevo juego en la colina."
+    },
+    {
+     "who": "lila",
+     "en": "Let's roll a ball on the grass!",
+     "es": "¡Vamos a rodar una pelota en la hierba!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Wheee! Look, Sammy! Catch the ball!",
+     "es": "¡Wiii! ¡Mira, Sammy! ¡Atrapa la pelota!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Lila rolled the bright ball across the green grass.",
+     "es": "Lila rodó la pelota brillante por la hierba verde."
+    },
+    {
+     "who": "guest",
+     "en": "Hoot... but I am sitting way up here in the tree!",
+     "es": "Huu... ¡pero yo estoy sentado muy arriba en el árbol!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Oh! Sammy can't reach the ground from up high.",
+     "es": "¡Oh! Sammy no puede alcanzar el suelo desde allá arriba.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Come down, Sammy! Play on the grass with us!",
+     "es": "¡Baja, Sammy! ¡Juega en la hierba con nosotros!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "I like staying high up in the leaves... Hoot.",
+     "es": "Me gusta estar arriba entre las hojas... Huu.",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Sammy felt left out because he couldn't reach the ball.",
+     "es": "Sammy se sintió excluido porque no podía alcanzar la pelota."
+    },
+    {
+     "who": "lila",
+     "en": "Rolling the ball down here doesn't work either...",
+     "es": "Rodar la pelota aquí abajo tampoco funciona...",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Bzzzt! Antenna tickle! I need a new big idea!",
+     "es": "¡Bzzzt! ¡Cosquillas en la antena! ¡Necesito una gran idea nueva!",
+     "mood": "surprised",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "Can Zibu find a game that everyone can play together?",
+     "es": "¿Podrá Zibu encontrar un juego donde todos jueguen juntos?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-animal-sounds",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.78,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.25,
+     "y": 0.65,
+     "at": 1,
+     "color": "#4CAF50"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu brought his friends to the forest and found a giant leaf!",
+     "es": "¡Zibu llevó a sus amigos al bosque y encontró una hoja gigante!"
+    },
+    {
+     "who": "zibu",
+     "en": "Look! A big leaf paddle! I made a funny game!",
+     "es": "¡Miren! ¡Una gran pala de hoja! ¡Hice un juego divertido!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Ooh! What kind of game, Zibu?",
+     "es": "¡Oh! ¿Qué tipo de juego, Zibu?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "The Animal Sound Game! Shout out an animal sound!",
+     "es": "¡El juego de sonidos de animales! ¡Griten un sonido de animal!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu waved the big leaf and made the first sound!",
+     "es": "¡Zibu movió la gran hoja e hizo el primer sonido!"
+    },
+    {
+     "who": "zibu",
+     "en": "HOOT! HOOT! Like an owl!",
+     "es": "¡HUU! ¡HUU! ¡Como un búho!",
+     "mood": "happy",
+     "show": {
+      "en": "HOOT!",
+      "es": "¡HUU!",
+      "color": "#4A90E2"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Hoot! Hey, that is my sound!",
+     "es": "¡Huu! ¡Oye, ese es mi sonido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "WOOF! WOOF! Like a happy puppy!",
+     "es": "¡GUAU! ¡GUAU! ¡Como un perrito alegre!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "WOOF!",
+      "es": "¡GUAU!",
+      "color": "#F5A623"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "QUACK! QUACK! Like a silly duck!",
+     "es": "¡CUAC! ¡CUAC! ¡Como un patito gracioso!",
+     "mood": "happy",
+     "show": {
+      "en": "QUACK!",
+      "es": "¡CUAC!",
+      "color": "#7ED321"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "RIBBIT! RIBBIT! Like a little frog!",
+     "es": "¡CROAC! ¡CROAC! ¡Como una ranita!",
+     "mood": "happy",
+     "show": {
+      "en": "RIBBIT!",
+      "es": "¡CROAC!",
+      "color": "#BD10E0"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Making animal sounds is so much fun!",
+     "es": "¡Sí! ¡Hacer sonidos de animales es muy divertido!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Now let's use the big leaf paddle to pass the balloon!",
+     "es": "¡Ahora usemos la gran hoja para pasar el globo!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful idea, Zibu!",
+     "es": "¡Qué idea tan maravillosa, Zibu!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "new-game-rules",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.78,
+     "y": 0.35
+    }
+   ],
+   "props": [
+    {
+     "what": "leaf",
+     "x": 0.25,
+     "y": 0.55,
+     "at": 0,
+     "color": "#4CAF50"
+    },
+    {
+     "what": "balloon",
+     "x": 0.25,
+     "y": 0.45,
+     "at": 2,
+     "until": 9,
+     "anim": "float",
+     "color": "#FF4081"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu picked up the big green leaf paddle.",
+     "es": "Zibu tomó la paleta de hoja verde grande."
+    },
+    {
+     "who": "zibu",
+     "en": "Look up, Sammy! Here comes the balloon!",
+     "es": "¡Mira arriba, Sammy! ¡Ahí va el globo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu pushed the balloon high up towards the branch.",
+     "es": "Zibu empujó el globo bien alto hacia la rama."
+    },
+    {
+     "who": "guest",
+     "en": "Hoot, hoot! I see it!",
+     "es": "¡Uu, uu! ¡Lo veo!",
+     "mood": "surprised",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Sammy gently tapped the balloon with his wing!",
+     "es": "¡Sammy le dio un toquecito suave al globo con su ala!"
+    },
+    {
+     "who": "guest",
+     "en": "HOOT!",
+     "es": "¡UUU!",
+     "mood": "happy",
+     "action": "glow",
+     "show": {
+      "en": "HOOT!",
+      "es": "¡UUU!",
+      "color": "#FFCC00"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Wow! Look at it float down!",
+     "es": "¡Guau! ¡Mira cómo flota hacia abajo!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "The balloon floated softly down right to Lila.",
+     "es": "El globo flotó suavemente hacia abajo, directo a Lila."
+    },
+    {
+     "who": "lila",
+     "en": "I caught it! Soft tap!",
+     "es": "¡Lo atrapé! ¡Un toquecito!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Hooray! It worked!",
+     "es": "¡Viva! ¡Funcionó!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "I am playing too! Hoot!",
+     "es": "¡Yo también estoy jugando! ¡Uu!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "What a clever new rule for the game!",
+     "es": "¡Qué regla nueva tan inteligente para el juego!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "playing-together",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.4,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF4081"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "High on the sunny hill, the fun game continued!",
+     "es": "¡En lo alto de la colina soleada, el juego divertido continuó!"
+    },
+    {
+     "who": "lila",
+     "en": "Up to Zibu! One... two... pass!",
+     "es": "¡Arriba para Zibu! Uno... dos... ¡pase!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Here it goes! High up to Sammy!",
+     "es": "¡Ahí va! ¡Bien alto para Sammy!",
+     "mood": "happy",
+     "action": "spin",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.25
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu bounced the balloon up to the treetop.",
+     "es": "Zibu hizo rebotar el globo hacia la copa del árbol."
+    },
+    {
+     "who": "guest",
+     "en": "Soft wing tap... Hoot!",
+     "es": "Toquecito de ala... ¡Uu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Sammy tapped it from high above down to Lila!",
+     "es": "¡Sammy le dio un toque desde lo alto hacia Lila!"
+    },
+    {
+     "who": "lila",
+     "en": "Wheee! Down to the green grass!",
+     "es": "¡Siii! ¡Abajo al pasto verde!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Round and round goes our balloon!",
+     "es": "¡Da vueltas y vueltas nuestro globo!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot, hoot! This is the best game ever!",
+     "es": "¡Uu, uu! ¡Este es el mejor juego del mundo!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "lila",
+     "en": "We are all playing together now!",
+     "es": "¡Ahora todos estamos jugando juntos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Including everyone is so much fun!",
+     "es": "¡Incluir a todos es superdivertido!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone was laughing, bouncing, and having a wonderful time.",
+     "es": "Todos se reían, rebotaban y se divertían de lo lindo.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-ending",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.35,
+     "y": 0.6,
+     "at": 0,
+     "until": 8,
+     "anim": "bounce",
+     "color": "#FF5733"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Sunset came to the garden. It was time to rest.",
+     "es": "Llegó el atardecer al jardín. Era hora de descansar."
+    },
+    {
+     "who": "zibu",
+     "en": "That was the best game ever!",
+     "es": "¡Ese fue el mejor juego de todos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! Everyone got to play together!",
+     "es": "¡Sí! ¡Todos pudimos jugar juntos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot, hoot! Thank you for including me, friends!",
+     "es": "¡Uu, uu! ¡Gracias por incluirme, amigos!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "Games are most fun when everyone is included!",
+     "es": "¡Los juegos son más divertidos cuando todos están incluidos!",
+     "mood": "happy",
+     "action": "bigjump",
+     "show": {
+      "en": "INCLUDED!",
+      "es": "¡INCLUIDOS!",
+      "color": "#FFC0CB"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "By changing the rules a little, everyone had fun.",
+     "es": "Al cambiar un poquito las reglas, todos se divirtieron."
+    },
+    {
+     "who": "lila",
+     "en": "Playing together is so wonderful!",
+     "es": "¡Jugar juntos es tan maravilloso!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "I love playing with you, Zibu and Lila!",
+     "es": "¡Me encanta jugar con ustedes, Zibu y Lila!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.6,
+       "toY": 0.6
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Group hug time!",
+     "es": "¡Hora del abrazo grupal!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.45
+      },
+      {
+       "who": "lila",
+       "to": 0.52
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "The three friends gave each other a big, warm hug.",
+     "es": "Los tres amigos se dieron un fuerte y cálido abrazo."
+    },
+    {
+     "who": "guest",
+     "en": "Hoot, hoot! Goodbye, friends!",
+     "es": "¡Uu, uu! ¡Adiós, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Goodbye, Sammy!",
+     "es": "¡Adiós, Sammy!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Bye-bye! See you next time!",
+     "es": "¡Adiós! ¡Hasta la próxima!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "When everyone plays together, every day is full of happy smiles.",
+     "es": "Cuando todos juegan juntos, cada día está lleno de sonrisas felices.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "sky",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "balloon",
+     "x": 0.5,
+     "y": 0.5,
+     "at": 0,
+     "anim": "bounce",
+     "color": "#FF4444"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Come on friends, let's play today!",
+     "es": "¡Vamos todos a jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We include you all the way!",
+     "es": "¡Nadie se va a quedar!"
+    },
+    {
+     "who": "narrator",
+     "en": "High and low, near and far,",
+     "es": "Alto y bajo, sin parar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing together is who we are!",
+     "es": "¡Juntos siempre hay que cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Pass the balloon up to the sky!",
+     "es": "¡Pasa el globo al cielo azul!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Tap it soft as it floats by!",
+     "es": "¡Tócalo suave como tú!",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Up to Sammy high above!",
+     "es": "¡Hasta Sammy que voló!"
+    },
+    {
+     "who": "lila",
+     "en": "Playing together full of love!",
+     "es": "¡Y el gran juego comenzó!"
+    },
+    {
+     "who": "narrator",
+     "en": "Come on friends, let's play today!",
+     "es": "¡Vamos todos a jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We include you all the way!",
+     "es": "¡Nadie se va a quedar!"
+    },
+    {
+     "who": "narrator",
+     "en": "High and low, near and far,",
+     "es": "Alto y bajo, sin parar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing together is who we are!",
+     "es": "¡Juntos siempre hay que cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Come on friends, let's play today!",
+     "es": "¡Vamos todos a jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We include you all the way!",
+     "es": "¡Nadie se va a quedar!"
+    },
+    {
+     "who": "narrator",
+     "en": "High and low, near and far,",
+     "es": "Alto y bajo, sin parar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing together is who we are!",
+     "es": "¡Juntos siempre hay que cantar!"
+    },
+    {
+     "who": "zibu",
+     "en": "Pass the balloon up to the sky!",
+     "es": "¡Pasa el globo al cielo azul!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Tap it soft as it floats by!",
+     "es": "¡Tócalo suave como tú!",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Up to Sammy high above!",
+     "es": "¡Hasta Sammy que voló!"
+    },
+    {
+     "who": "lila",
+     "en": "Playing together full of love!",
+     "es": "¡Y el gran juego comenzó!"
+    },
+    {
+     "who": "narrator",
+     "en": "Come on friends, let's play today!",
+     "es": "¡Vamos todos a jugar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We include you all the way!",
+     "es": "¡Nadie se va a quedar!"
+    },
+    {
+     "who": "narrator",
+     "en": "High and low, near and far,",
+     "es": "Alto y bajo, sin parar,"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing together is who we are!",
+     "es": "¡Juntos siempre hay que cantar!"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! Playing with friends is the best!",
+     "es": "¡Hoot hoot! ¡Jugar con amigos es lo mejor!",
+     "mood": "happy",
+     "action": "spin"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who was watching from high up in the tree?",
+     "es": "¿Quién estaba mirando desde lo alto del árbol?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Sammy the owl!",
+     "es": "¡Sammy el búho!",
+     "show": {
+      "en": "Sammy",
+      "es": "Sammy",
+      "color": "#336699"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What color was the fun balloon?",
+     "es": "¿De qué color era el globo divertido?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Red!",
+     "es": "¡Rojo!",
+     "show": {
+      "en": "Red",
+      "es": "Rojo",
+      "color": "#FF0000"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Could Sammy play the ball game on the grass?",
+     "es": "¿Podía Sammy jugar a la pelota en el pasto?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "No!",
+     "es": "¡No!",
+     "show": {
+      "en": "No",
+      "es": "No",
+      "color": "#FF9900"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Zibu use to pass the balloon high?",
+     "es": "¿Qué usó Zibu para pasar el globo alto?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "A giant leaf!",
+     "es": "¡Una hoja gigante!",
+     "show": {
+      "en": "Leaf",
+      "es": "Hoja",
+      "color": "#44AA44"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many friends played together in the end?",
+     "es": "¿Cuántos amigos jugaron juntos al final?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Three!",
+     "es": "¡Tres!",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#FFCC00"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's flap our wings together!",
+     "es": "¡Aleteemos juntos!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Flap up high, flap down low!",
+     "es": "¡Aleteen alto, aleteen bajo!",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Hoot hoot! Like Sammy!",
+     "es": "¡Hoot hoot! ¡Como Sammy!",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Great flying, friends!",
+     "es": "¡Súper! ¡Qué bien vuelan, amigos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Games are most fun when everyone is included!",
+     "es": "¡Los juegos son más divertidos cuando todos están incluidos!"
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "hill",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "guest",
+     "x": 0.5,
+     "y": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.75
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Flap your wings and bounce up high!",
+     "es": "¡Aleteen y brinquen alto!",
+     "action": "bigjump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós!",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep025-zibu-and-sammy-owl"
+}
