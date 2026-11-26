@@ -1,0 +1,1332 @@
+{
+ "slug": "zibu-and-the-gentle-giraffe",
+ "title": {
+  "en": "Zibu and the Gentle Giraffe",
+  "es": "Zibu y la Jirafa Delicada"
+ },
+ "lesson": {
+  "en": "Be gentle and soft with animals so they feel safe and loved.",
+  "es": "Trata a los animales con suavidad para que se sientan seguros y amados."
+ },
+ "guest": {
+  "species": "giraffe",
+  "name": {
+   "en": "Gigi the Giraffe",
+   "es": "Gigi la Jirafa"
+  }
+ },
+ "thumb": {
+  "en": [
+   "Gigi & Teddy!",
+   "Be Gentle!"
+  ],
+  "es": [
+   "¡Gigi y Teddy!",
+   "¡Sé Delicado!"
+  ],
+  "scene": 5
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu and the Gentle Giraffe 🦒 Learn Opposites & Gentle Touch! | Zibu and Friends",
+   "description": "🦒 Gigi the Giraffe comes to play, but her soft teddy bear is stuck up high!\n🧸 Zibu learns how to move softly and treat animals with gentle care.\n✨ Kids learn about opposites: UP and DOWN, IN and OUT!\n💛 Practice gentle touches and quiet voices for happy animal friends.\n🎯 Perfect for toddlers aged 2-6 to learn empathy and gentle play.\n\n#ZibuAndFriends #ToddlerLearning #GentleWithAnimals #OppositesForKids #CartoonsForKids",
+   "tags": [
+    "zibu and friends",
+    "gentle with animals",
+    "toddler learning",
+    "opposites for kids",
+    "giraffe for kids",
+    "up and down",
+    "in and out",
+    "cartoons for toddlers",
+    "preschool learning",
+    "educational videos for kids",
+    "kindness for kids",
+    "teddy bear story"
+   ]
+  },
+  "es": {
+   "title": "Zibu y la Jirafa Delicada 🦒 ¡Aprende Opuestos y Trato Suave! | Zibu y sus Amigos",
+   "description": "🦒 ¡Gigi la Jirafa viene a jugar, pero su oso de peluche está atrapado arriba!\n🧸 Zibu aprende a moverse despacio y a tratar a los animales con suavidad.\n✨ ¡Los niños aprenden los opuestos: ARRIBA y ABAJO, ADENTRO y AFUERA!\n💛 Practiquen toques suaves y voces tranquilas para cuidar a los animales.\n🎯 Ideal para niños de 2 a 6 años para aprender empatía y juego delicado.\n\n#ZibuYSusAmigos #CaricaturasEducativas #TratoSuave #OpuestosParaNiños #VideosParaNiños",
+   "tags": [
+    "zibu y sus amigos",
+    "cuidado de animales",
+    "opuestos para niños",
+    "arriba y abajo",
+    "adentro y afuera",
+    "jirafa para niños",
+    "caricaturas para preescolar",
+    "videos educativos infantiles",
+    "oso de peluche",
+    "enseñar empatia",
+    "videos para niños",
+    "aprender jugando"
+   ]
+  }
+ },
+ "object": "teddy",
+ "style": "v2",
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh look! Gigi's teddy bear is stuck!",
+     "es": "¡Mira! ¡El oso de Gigi quedó atrapado!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you help us be gentle?",
+     "es": "¿Nos ayudan a ser delicados?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's go help Gigi!",
+     "es": "¡Vamos a ayudar a Gigi!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "teddy",
+     "x": 0.85,
+     "y": 0.35
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Gentle Giraffe!",
+     "es": "¡Zibu y la Jirafa Delicada!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "gigi-arrives-with-teddy",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "teddy",
+     "x": 0.85,
+     "y": 0.35,
+     "at": 11
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a beautiful sunny day in the garden.",
+     "es": "Era un hermoso día soleado en el jardín."
+    },
+    {
+     "who": "lila",
+     "en": "What a lovely day to play!",
+     "es": "¡Qué lindo día para jugar!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! I love sunny days!",
+     "es": "¡Sí! ¡Me encantan los días soleados!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Suddenly... someone came running into the garden!",
+     "es": "De repente... ¡alguien vino corriendo al jardín!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear! Oh dear! Where is it?",
+     "es": "¡Ay, no! ¡Ay, no! ¿Dónde está?",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Look! It's Gigi the giraffe!",
+     "es": "¡Miren! ¡Es Gigi la jirafa!",
+     "mood": "surprised",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello Gigi! What are you looking for?",
+     "es": "¡Hola, Gigi! ¿Qué estás buscando?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "My soft teddy bear! I lost my favorite teddy!",
+     "es": "¡Mi osito de peluche! ¡Perdí mi osito favorito!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Gigi looked very sad. She missed her cuddly friend.",
+     "es": "Gigi se veía muy triste. Extrañaba a su suave amiguito."
+    },
+    {
+     "who": "zibu",
+     "en": "Don't worry, Gigi! We will help you find it!",
+     "es": "¡No te preocupes, Gigi! ¡Te ayudaremos a encontrarlo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Look up there... on that tall leaf!",
+     "es": "¡Mira allá arriba... en esa hoja tan alta!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "High up on a green leaf... was Gigi's soft teddy bear!",
+     "es": "¡Allá arriba, en una hoja verde... estaba el suave osito de Gigi!"
+    },
+    {
+     "who": "guest",
+     "en": "My teddy! There it is!",
+     "es": "¡Mi osito! ¡Ahí está!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I see it! It's way up high!",
+     "es": "¡Ya lo veo! ¡Está muy, muy alto!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "How will we reach it?",
+     "es": "¿Cómo vamos a alcanzarlo?",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu looked at the tall leaf... and had a big idea!",
+     "es": "Zibu miró la hoja alta... ¡y tuvo una gran idea!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "zibu-tries-too-fast",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.35
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "teddy",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Everyone walked over to the grassy hill.",
+     "es": "Todos fueron a la colina de hierba."
+    },
+    {
+     "who": "zibu",
+     "en": "I can get it! I am super fast!",
+     "es": "¡Yo puedo alcanzarlo! ¡Soy superrápido!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Wait, Zibu! Be careful...",
+     "es": "¡Espera, Zibu! Ten cuidado...",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "But Zibu was so excited, he didn't hear Lila.",
+     "es": "Pero Zibu estaba tan emocionado que no escuchó a Lila."
+    },
+    {
+     "who": "zibu",
+     "en": "STOMP! STOMP! STOMP! Here I go!",
+     "es": "¡PISOTÓN! ¡PISOTÓN! ¡Aquí voy!",
+     "mood": "happy",
+     "action": "bigjump",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.5
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu stomped loudly and jumped up high!",
+     "es": "¡Zibu pisoteó muy fuerte y saltó muy alto!"
+    },
+    {
+     "who": "guest",
+     "en": "Oh! Eek! That was so loud!",
+     "es": "¡Uy! ¡Qué susto! ¡Eso fue muy ruidoso!",
+     "mood": "scared",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.85
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "The loud stomping startled Gigi! She stepped back nervously.",
+     "es": "¡El ruido fuerte asustó a Gigi! Se hizo hacia atrás con nervios."
+    },
+    {
+     "who": "lila",
+     "en": "Oh no... Gigi looks scared.",
+     "es": "Oh, no... Gigi parece asustada.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "Huh? Where did Gigi go?",
+     "es": "¡Ah! ¿A dónde fue Gigi?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu missed the teddy bear and landed back on the ground.",
+     "es": "Zibu no pudo atrapar el osito y cayó de vuelta al suelo."
+    },
+    {
+     "who": "zibu",
+     "en": "Gigi? Are you okay?",
+     "es": "Gigi, ¿estás bien?",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "I... I don't like big, loud noises...",
+     "es": "Yo... no me gustan los ruidos grandes y fuertes...",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Gentle animals like soft moves and quiet voices, Zibu.",
+     "es": "A los animales delicados les gustan los movimientos suaves y la voz bajita, Zibu."
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! I'm sorry, Gigi... I was too fast.",
+     "es": "¡Oh! Lo siento, Gigi... ¡fui demasiado rápido!",
+     "mood": "sad",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-to-be-gentle",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "teddy",
+     "x": 0.6,
+     "y": 0.35,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Gigi walked into the quiet forest.",
+     "es": "Zibu, Lila y Gigi caminaron hacia el bosque tranquilo."
+    },
+    {
+     "who": "lila",
+     "en": "Remember, Zibu... soft moves and quiet voices.",
+     "es": "Recuerda, Zibu... movimientos suaves y voces bajitas."
+    },
+    {
+     "who": "zibu",
+     "en": "Quiet voices... okay! Like a tiny whisper...",
+     "es": "Voces bajitas... ¡está bien! Como un susurrito...",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu stopped and took a deep, gentle breath.",
+     "es": "Zibu se detuvo y respiró profundo y suave."
+    },
+    {
+     "who": "zibu",
+     "en": "In... and out... Now I am super calm!",
+     "es": "Adentro... y afuera... ¡Ahora estoy súper tranquilo!",
+     "action": "glow"
+    },
+    {
+     "who": "guest",
+     "en": "That feels so nice... thank you, Zibu.",
+     "es": "Eso se siente muy bien... gracias, Zibu.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu walked softly toward the teddy bear.",
+     "es": "Zibu caminó suavemente hacia el osito de peluche.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Tip-tap... tip-tap... soft little steps...",
+     "es": "Tip-tap... tip-tap... pasitos muy suaves..."
+    },
+    {
+     "who": "lila",
+     "en": "Look! There is the teddy bear on the big leaf!",
+     "es": "¡Mira! ¡Ahí está el osito de peluche en la hoja grande!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu reached up gently and took the teddy.",
+     "es": "Zibu se estiró con delicadeza y tomó al osito."
+    },
+    {
+     "who": "zibu",
+     "en": "Got it! Very, very carefully...",
+     "es": "¡Lo tengo! Muy, muy con cuidado...",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Yay! My soft teddy bear!",
+     "es": "¡Bien! ¡Mi osito suave!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "See? I can be very gentle!",
+     "es": "¡¿Ves?! ¡Puedo ser muy delicado!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Gigi smiled. She felt safe with Zibu.",
+     "es": "Gigi sonrió. ¡Se sentía segura con Zibu!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-opposites-with-teddy",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "teddy",
+     "x": 0.3,
+     "y": 0.6,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Inside the cozy room, Zibu wanted to practice being gentle.",
+     "es": "En la acogedora habitación, Zibu quería practicar ser delicado."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! I have the soft teddy bear!",
+     "es": "¡Miren! ¡Tengo el osito suave!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Let's play a gentle opposite game!",
+     "es": "¡Juguemos un juego suave de opuestos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu gently lifted the teddy bear up.",
+     "es": "Zibu levantó suavemente al osito de peluche."
+    },
+    {
+     "who": "zibu",
+     "en": "UP! High up in the air!",
+     "es": "¡ARRIBA! ¡Muy arriba en el aire!",
+     "mood": "happy",
+     "show": {
+      "en": "UP",
+      "es": "ARRIBA"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "So soft and high!",
+     "es": "¡Tan suave y alto!"
+    },
+    {
+     "who": "narrator",
+     "en": "Then, Zibu brought the teddy bear down.",
+     "es": "Luego, Zibu bajó al osito de peluche."
+    },
+    {
+     "who": "zibu",
+     "en": "DOWN! Low down to the floor!",
+     "es": "¡ABAJO! ¡Abajo hasta el suelo!",
+     "mood": "happy",
+     "show": {
+      "en": "DOWN",
+      "es": "ABAJO"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Up... and down... So gentle!",
+     "es": "Arriba... y abajo... ¡Qué delicado!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Next, Zibu pulled the teddy bear in close.",
+     "es": "Luego, Zibu acercó al osito de peluche."
+    },
+    {
+     "who": "zibu",
+     "en": "IN! A sweet hug in!",
+     "es": "¡DENTRO! ¡Un dulce abrazo dentro!",
+     "mood": "happy",
+     "show": {
+      "en": "IN",
+      "es": "DENTRO"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "A lovely, soft hug!",
+     "es": "¡Un abrazo bonito y suave!"
+    },
+    {
+     "who": "narrator",
+     "en": "Then he opened his arms out softly.",
+     "es": "Luego abrió sus brazos hacia afuera suavemente."
+    },
+    {
+     "who": "zibu",
+     "en": "OUT! Stretch out your arms!",
+     "es": "¡FUERA! ¡Estira los brazos hacia afuera!",
+     "mood": "happy",
+     "show": {
+      "en": "OUT",
+      "es": "FUERA"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "I love playing gently with you!",
+     "es": "¡Me encanta jugar delicadamente con ustedes!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Playing gently makes everyone feel happy and safe.",
+     "es": "Jugar con delicadeza hace que todos se sientan felices y seguros.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "caring-touch-practice",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    },
+    {
+     "who": "guest",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "teddy",
+     "x": 0.25,
+     "y": 0.5,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The sunset was warm and soft over the cozy garden.",
+     "es": "El atardecer era cálido y suave sobre el hermoso jardín."
+    },
+    {
+     "who": "zibu",
+     "en": "Look, Gigi! Soft... soft... like a gentle pat.",
+     "es": "¡Mira, Gigi! Suave... suave... como una caricia.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu stroked the teddy bear very carefully.",
+     "es": "Zibu acarició al osito de peluche con mucho cuidado."
+    },
+    {
+     "who": "lila",
+     "en": "That is so sweet, Zibu!",
+     "es": "¡Eso es muy dulce, Zibu!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Mmm... that looks so nice and calm!",
+     "es": "Mmm... ¡eso se ve tan bonito y tranquilo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Gigi felt warm and safe inside.",
+     "es": "Gigi se sintió feliz y segura por dentro."
+    },
+    {
+     "who": "guest",
+     "en": "Can I come closer, Zibu?",
+     "es": "¿Puedo acercarme, Zibu?",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.45
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Yes, Gigi! Soft steps... step, step.",
+     "es": "¡Sí, Gigi! Pasitos suaves... paso, paso.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Gigi walked slowly with quiet, soft feet.",
+     "es": "Gigi caminó despacio con pies muy silenciosos y suaves."
+    },
+    {
+     "who": "guest",
+     "en": "Snuggle time! A big giraffe hug for you!",
+     "es": "¡Hora de acurrucarse! ¡Un abrazo grande de jirafa para ti!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Giggle! A soft giraffe hug feels wonderful!",
+     "es": "¡Jajaja! ¡Un suave abrazo de jirafa se siente de maravilla!",
+     "mood": "laugh",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Hooray for gentle friends!",
+     "es": "¡Viva los amigos delicados!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone smiled as the golden sun began to set.",
+     "es": "Todos sonrieron mientras el sol dorado comenzaba a ocultarse.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "gentle-lesson-shared",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "guest",
+     "x": 0.6
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "teddy",
+     "x": 0.45,
+     "y": 0.5,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu held out his hands very carefully.",
+     "es": "Zibu extendió sus manos con mucho cuidado."
+    },
+    {
+     "who": "zibu",
+     "en": "Here is your teddy bear, Gigi.",
+     "es": "Aquí está tu osito de peluche, Gigi.",
+     "mood": "happy",
+     "show": {
+      "en": "GENTLE",
+      "es": "SUAVE",
+      "color": "#FFCC00"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu handed the soft teddy back to Gigi.",
+     "es": "Zibu le entregó el suave osito de vuelta a Gigi."
+    },
+    {
+     "who": "guest",
+     "en": "Thank you, Zibu! You were so gentle!",
+     "es": "¡Gracias, Zibu! ¡Fuiste tan delicado!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "My teddy is safe and happy now.",
+     "es": "Mi osito está seguro y feliz ahora.",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Animals love gentle hands and soft voices!",
+     "es": "¡A los animales les encantan las manos suaves y las voces dulces!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I love being gentle with my friends!",
+     "es": "¡Me encanta ser suave con mis amigos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Always remember to treat animals with love and care.",
+     "es": "Recuerden siempre tratar a los animales con amor y cuidado."
+    },
+    {
+     "who": "narrator",
+     "en": "Quiet steps, warm hugs, and gentle touches make them feel safe.",
+     "es": "Pasos silenciosos, abrazos cálidos y toques suaves los hacen sentir seguros."
+    },
+    {
+     "who": "guest",
+     "en": "You are the best friends ever!",
+     "es": "¡Ustedes son los mejores amigos del mundo!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "We love you, Gigi!",
+     "es": "¡Te queremos, Gigi!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Gentle hands for everyone!",
+     "es": "¡Manos suaves para todos!",
+     "mood": "happy",
+     "show": {
+      "en": "LOVE",
+      "es": "AMOR",
+      "color": "#FF6699"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What a lovely, peaceful evening in the garden.",
+     "es": "Qué noche tan hermosa y tranquila en el jardín.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "sweet-lullaby-goodnight",
+   "bg": "garden",
+   "time": "night",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.46
+    },
+    {
+     "who": "guest",
+     "x": 0.72
+    }
+   ],
+   "props": [
+    {
+     "what": "teddy",
+     "x": 0.68,
+     "y": 0.62,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Night arrived, and twinkling stars lit up the quiet garden.",
+     "es": "Llegó la noche y las estrellas iluminaron el jardín tranquilo."
+    },
+    {
+     "who": "zibu",
+     "en": "Look at the stars... Shh, so quiet...",
+     "es": "Miren las estrellas... Shh, qué silencio...",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Time to rest gently, with soft voices...",
+     "es": "Es hora de descansar, con voces suaves...",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Yawn... I love cuddling my soft teddy bear.",
+     "es": "Bostezo... Me encanta abrazar a mi osito suave.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I will walk softly so you can sleep, Gigi.",
+     "es": "Caminaré despacito para que duermas, Gigi.",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.38
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu sat right beside Gigi, moving like a gentle breeze.",
+     "es": "Zibu se sentó junto a Gigi, moviéndose como una brisa suave."
+    },
+    {
+     "who": "lila",
+     "en": "Let's sing a sleepy lullaby together.",
+     "es": "Cantemos una canción de cuna juntos.",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.52
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Twinkle, twinkle... gentle and slow...",
+     "es": "Estrellita... suave y despacito...",
+     "mood": "happy",
+     "action": "glow",
+     "show": {
+      "en": "GENTLE",
+      "es": "SUAVE",
+      "color": "#99CCFF"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Mmm... that feels so warm and peaceful.",
+     "es": "Mmm... eso se siente tan tibio y tranquilo.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Animals love it when we are gentle and kind.",
+     "es": "A los animales les encanta cuando somos suaves y amables.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Goodnight, sweet Gigi. Goodnight, little teddy!",
+     "es": "¡Buenas noches, Gigi! ¡Buenas noches, osito!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Goodnight, dear friends... Thank you for caring.",
+     "es": "Buenas noches, amigos... Gracias por cuidarme.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Sweet dreams, everyone...",
+     "es": "Dulces sueños a todos...",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Being gentle makes everyone feel safe and loved. Goodnight, garden!",
+     "es": "Ser suave hace que todos se sientan seguros y amados. ¡Buenas noches, jardín!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Gentle hands and quiet feet...",
+     "es": "Manos suaves y pies quietos..."
+    },
+    {
+     "who": "narrator",
+     "en": "Make our friends feel safe and sweet!",
+     "es": "¡Hacen que nuestros amigos se sientan seguros y dulces!"
+    },
+    {
+     "who": "narrator",
+     "en": "With a soft touch and a tender care...",
+     "es": "Con un toque suave y tierno cuidado..."
+    },
+    {
+     "who": "narrator",
+     "en": "Love is growing everywhere!",
+     "es": "¡El amor crece por todas partes!"
+    },
+    {
+     "who": "zibu",
+     "en": "Tip-tap toes upon the ground...",
+     "es": "Pies de puntillas sobre el suelo..."
+    },
+    {
+     "who": "lila",
+     "en": "Walking softly, not a sound!",
+     "es": "¡Caminando suavemente, sin hacer ruido!"
+    },
+    {
+     "who": "zibu",
+     "en": "Gigi smiles and feels so bright...",
+     "es": "¡Gigi sonríe y se siente muy bien..."
+    },
+    {
+     "who": "lila",
+     "en": "Holding teddy nice and tight!",
+     "es": "¡Abrazando al osito con mucho amor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Gentle hands and quiet feet...",
+     "es": "Manos suaves y pies quietos..."
+    },
+    {
+     "who": "narrator",
+     "en": "Make our friends feel safe and sweet!",
+     "es": "¡Hacen que nuestros amigos se sientan seguros y dulces!"
+    },
+    {
+     "who": "narrator",
+     "en": "With a soft touch and a tender care...",
+     "es": "Con un toque suave y tierno cuidado..."
+    },
+    {
+     "who": "narrator",
+     "en": "Love is growing everywhere!",
+     "es": "¡El amor crece por todas partes!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!"
+    },
+    {
+     "who": "narrator",
+     "en": "Gentle hands and quiet feet...",
+     "es": "Manos suaves y pies quietos..."
+    },
+    {
+     "who": "narrator",
+     "en": "Make our friends feel safe and sweet!",
+     "es": "¡Hacen que nuestros amigos se sientan seguros y dulces!"
+    },
+    {
+     "who": "narrator",
+     "en": "With a soft touch and a tender care...",
+     "es": "Con un toque suave y tierno cuidado..."
+    },
+    {
+     "who": "narrator",
+     "en": "Love is growing everywhere!",
+     "es": "¡El amor crece por todas partes!"
+    },
+    {
+     "who": "zibu",
+     "en": "Tip-tap toes upon the ground...",
+     "es": "Pies de puntillas sobre el suelo..."
+    },
+    {
+     "who": "lila",
+     "en": "Walking softly, not a sound!",
+     "es": "¡Caminando suavemente, sin hacer ruido!"
+    },
+    {
+     "who": "zibu",
+     "en": "Gigi smiles and feels so bright...",
+     "es": "¡Gigi sonríe y se siente muy bien..."
+    },
+    {
+     "who": "lila",
+     "en": "Holding teddy nice and tight!",
+     "es": "¡Abrazando al osito con mucho amor!"
+    },
+    {
+     "who": "narrator",
+     "en": "Gentle hands and quiet feet...",
+     "es": "Manos suaves y pies quietos..."
+    },
+    {
+     "who": "narrator",
+     "en": "Make our friends feel safe and sweet!",
+     "es": "¡Hacen que nuestros amigos se sientan seguros y dulces!"
+    },
+    {
+     "who": "narrator",
+     "en": "With a soft touch and a tender care...",
+     "es": "Con un toque suave y tierno cuidado..."
+    },
+    {
+     "who": "narrator",
+     "en": "Love is growing everywhere!",
+     "es": "¡El amor crece por todas partes!"
+    },
+    {
+     "who": "guest",
+     "en": "I love gentle friends so much!",
+     "es": "¡Me encantan los amigos tan suaves!"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.35
+    },
+    {
+     "who": "lila",
+     "x": 0.65
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Question one: Who lost her favorite teddy bear?",
+     "es": "Pregunta uno: ¿Quién perdió su osito favorito?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Gigi the giraffe!",
+     "es": "¡Gigi la jirafa!",
+     "show": {
+      "en": "Gigi",
+      "es": "Gigi"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Question two: Where was the teddy bear hiding?",
+     "es": "Pregunta dos: ¿Dónde estaba escondido el osito?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "On a tall green leaf!",
+     "es": "¡En una hoja verde y alta!",
+     "show": {
+      "en": "Leaf",
+      "es": "Hoja"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Question three: Why did Gigi step back nervously?",
+     "es": "Pregunta tres: ¿Por qué retrocedió Gigi nerviosa?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Because Zibu stomped too loudly!",
+     "es": "¡Porque Zibu pisó muy fuerte!",
+     "show": {
+      "en": "Stomp",
+      "es": "Paso"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Question four: What kind of steps did Zibu use next?",
+     "es": "Pregunta cuatro: ¿Qué clase de pasos usó Zibu después?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Soft, tip-tap steps!",
+     "es": "¡Pasos suaves de puntillas!",
+     "show": {
+      "en": "Soft",
+      "es": "Suave"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Question five: How do gentle animals feel?",
+     "es": "Pregunta cinco: ¿Cómo se sienten los animales gentiles?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Safe and happy!",
+     "es": "¡Seguros y felices!",
+     "show": {
+      "en": "Safe",
+      "es": "Seguros"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's walk on our tiptoes with us!",
+     "es": "¡Caminemos de puntillas con nosotros!"
+    },
+    {
+     "who": "lila",
+     "en": "Tip-tap, tip-tap, just like this!",
+     "es": "¡De puntillas, así de suave!"
+    },
+    {
+     "who": "zibu",
+     "en": "Can you walk softly too?",
+     "es": "¿Pueden caminar suavemente también?"
+    },
+    {
+     "who": "narrator",
+     "en": "Lesson: Be gentle and soft with animals so they feel safe and loved.",
+     "es": "Lección: Trata a los animales con suavidad para que se sientan seguros y amados."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "We love dancing gently together!",
+     "es": "¡Nos encanta bailar suavemente juntos!",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep026-zibu-and-the-gentle-giraffe"
+}
