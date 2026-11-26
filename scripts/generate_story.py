@@ -44,6 +44,22 @@ BGS = list(FONDOS)
 TIMES = ["day", "sunset", "night"]
 PROPS = list(OBJETOS)
 COMBOS = ", ".join(f"{b}+{t}" for b, ts in FONDOS.items() for t in ts)
+PARES = "; ".join(f"bg {b} with time {' or '.join(ts)}" for b, ts in FONDOS.items())
+
+
+def arreglar_fondo(sc: dict) -> dict:
+    """Gemini a veces junta lugar y momento ("garden+day", o una clave "bg+time"): se separan y, si la pareja no
+    existe, se usa la mas parecida que si tiene dibujo."""
+    junto = next((v for k, v in sc.items() if "+" in k and isinstance(v, str)), None) or sc.get("bg", "")
+    if isinstance(junto, str) and "+" in junto:
+        sc["bg"], sc["time"] = (x.strip() for x in junto.split("+", 1))
+    for k in [k for k in sc if "+" in k]:
+        del sc[k]
+    if sc.get("bg") not in FONDOS:
+        sc["bg"] = "garden"
+    if sc.get("time") not in FONDOS[sc["bg"]]:
+        sc["time"] = "day" if "day" in FONDOS[sc["bg"]] else FONDOS[sc["bg"]][0]
+    return sc
 MOODS = ["happy", "laugh", "sad", "surprised", "scared"]
 ACTIONS = ["jump", "bigjump", "wave", "shake", "spin", "glow"]
 WHO = ["narrator", "zibu", "lila", "guest"]
@@ -214,7 +230,7 @@ strangers, no climbing dangerous places). No brands, no real people, no other ca
 def formato(objeto: str = "") -> str:
     props = f'"{objeto}" (the ONLY object of this episode; several of them are fine)' if objeto else "|".join(PROPS)
     return f"""SCENE FORMAT (JSON). Allowed values:
-- "bg" + "time": ONLY these combinations: {COMBOS} (room = a cozy bedroom, only by day).
+- "bg" (place) and "time" (moment), two separate fields, ONLY these pairs: {PARES} (room = a cozy bedroom).
 - "cast": [{{"who": "zibu"|"lila"|"guest", "x": 0..1 (horizontal position; -0.2 or 1.3 = off screen),
   "y": 0..1 only for a guest that floats or flies}}]
 - "lines": [{{"who": "narrator"|someone in the cast, "en", "es", optional "mood": {"|".join(MOODS)},
@@ -252,7 +268,7 @@ Return ONLY JSON:
    (e.g. "Oh no! The red balloon is flying away!", "Whoa! Barnaby's ball rolled into the river!"), never a
    greeting first. Then Zibu talks DIRECTLY to the child watching and asks for help (e.g. "Friend, can you
    help us catch it? Let's go!"). Max 8 words per line.
- "story": [7 story scenes: {{"id": "kebab-case", "bg" + "time": one of these combinations: {COMBOS}, "cast": ["zibu", "lila", "guest" as needed], "summary": "2-3 sentences of what happens"}}],
+ "story": [7 story scenes: {{"id": "kebab-case", "bg": place, "time": moment (two separate fields, only these pairs: {PARES}), "cast": ["zibu", "lila", "guest" as needed], "summary": "2-3 sentences of what happens"}}],
  "song": {{"en": "song title", "es": "song title"}}}}
 Use at least 3 different bg values."""
 
@@ -336,13 +352,14 @@ def escribir(species: str, objeto: str, lesson: str, learn: str, anteriores: lis
     """Esquema -> escenas de la historia de dos en dos -> cancion, repaso y baile."""
     plan = gemini(prompt_esquema(species, objeto, lesson, learn, anteriores), max_tokens=8000)
     plan["object"] = objeto
+    plan["story"] = [arreglar_fondo(sc) for sc in plan["story"]]
     ejemplo = ejemplo_corto()
     historia: list[dict] = []
     n = len(plan["story"])
     for a in range(0, n, 2):
         idx = list(range(a, min(a + 2, n)))
-        historia += gemini(prompt_escenas(plan, idx, historia, ejemplo))["scenes"][:len(idx)]
-    final = gemini(prompt_final(plan, historia))["scenes"]
+        historia += [arreglar_fondo(sc) for sc in gemini(prompt_escenas(plan, idx, historia, ejemplo))["scenes"][:len(idx)]]
+    final = [arreglar_fondo(sc) for sc in gemini(prompt_final(plan, historia))["scenes"]]
     titulo = {"id": "title", "type": "title", "bg": historia[0]["bg"], "time": historia[0]["time"],
               "cast": [{"who": "zibu", "x": 0.5}],
               "lines": [{"who": "narrator", "en": plan["title"]["en"] + "!", "es": "¡" + plan["title"]["es"].strip("¡!") + "!", "pause": 0.3}]}
