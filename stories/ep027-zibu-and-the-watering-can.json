@@ -1,0 +1,1420 @@
+{
+ "slug": "zibu-and-the-watering-can",
+ "title": {
+  "en": "Zibu and the Magic Watering Can",
+  "es": "Zibu y la regadera mágica"
+ },
+ "lesson": {
+  "en": "Listening to our friends helps us solve problems and play happily together.",
+  "es": "Escuchar a nuestros amigos nos ayuda a resolver problemas y jugar felices juntos."
+ },
+ "guest": {
+  "species": "kitten",
+  "name": {
+   "en": "Mimi",
+   "es": "Mimi"
+  }
+ },
+ "thumb": {
+  "en": [
+   "WATERING CAN!",
+   "COUNTDOWN 5 TO 1"
+  ],
+  "es": [
+   "¡LA REGADERA!",
+   "¡CUENTA 5 A 1!"
+  ],
+  "scene": 6
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu & the Watering Can 🐱 Learn to Listen & Count 5 to 1 Backwards!",
+   "description": "Zibu finds a fun watering can with Mimi the Kitten! 🐱\nZibu is super excited, but he needs to stop and listen to Mimi to make it splash!\nTogether, they count backwards from 5 to 1 like a rocket launch! 🚀\nKids learn the importance of listening to friends and counting down.\nPerfect educational fun for toddlers and children aged 2 to 6! 🌟\n#ZibuAndFriends #LearnToListen #CountingForKids #KidsCartoons",
+   "tags": [
+    "zibu",
+    "zibu and friends",
+    "learn to listen",
+    "counting backwards",
+    "toddler cartoon",
+    "preschool learning",
+    "kitten video",
+    "social skills for kids",
+    "listening skills",
+    "kids videos",
+    "educational cartoons",
+    "numbers for toddlers"
+   ]
+  },
+  "es": {
+   "title": "Zibu y la regadera 🐱 ¡Aprende a escuchar y a contar del 5 al 1!",
+   "description": "¡Zibu encuentra una regadera divertida con Mimi la gatita! 🐱\nZibu está entusiasmado, pero debe detenerse a escuchar a Mimi.\n¡Juntos cuentan hacia atrás del 5 al 1 para lanzar el agua! 🚀\nLos niños aprenden la importancia de escuchar y a contar al revés.\n¡Entretenimiento educativo ideal para niños de 2 a 6 años! 🌟\n#ZibuYSusAmigos #AprenderAEscuchar #ContarParaNinos #CaricaturasInfantiles",
+   "tags": [
+    "zibu",
+    "zibu y sus amigos",
+    "aprender a escuchar",
+    "conteo regresivo",
+    "caricaturas para niños",
+    "videos infantiles",
+    "gatito",
+    "habilidades sociales",
+    "educacion infantil",
+    "preescolar",
+    "historias para niños",
+    "dibujos animados"
+   ]
+  }
+ },
+ "object": "wateringcan",
+ "style": "v2",
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Look! Mimi found a shiny watering can!",
+     "es": "¡Miren! ¡Mimi encontró una regadera brillante!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Wait, Mimi is trying to tell us something!",
+     "es": "¡Un momento, Mimi quiere decirnos algo!",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us listen closely?",
+     "es": "Amigo, ¿nos ayudas a escuchar con atención?",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.32,
+     "y": 0.65
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Magic Watering Can!",
+     "es": "¡Zibu y la regadera mágica!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "the-shiny-watering-can",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.32,
+     "y": 0.65,
+     "at": 1
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "What a bright and happy day! Zibu and Lila were playing in the room.",
+     "es": "¡Qué día tan brillante y feliz! Zibu y Lila estaban jugando en el cuarto."
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! What is that shiny thing over there?",
+     "es": "¡Mira, Zibu! ¿Qué es esa cosa brillante allá?",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Ooh! It's bright blue! It's a watering can!",
+     "es": "¡Oh! ¡Es azul brillante! ¡Es una regadera!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "It was a tiny, magical watering can!",
+     "es": "¡Era una pequeña regadera mágica!"
+    },
+    {
+     "who": "lila",
+     "en": "A watering can! It looks so special!",
+     "es": "¡Una regadera! ¡Se ve tan especial!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow, meow! Hello, friends!",
+     "es": "¡Miau, miau! ¡Hola, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Hi Mimi! Look what we found!",
+     "es": "¡Hola, Mimi! ¡Mira lo que encontramos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! I know that watering can! It has a secret trick!",
+     "es": "¡Miau! ¡Yo conozco esa regadera! ¡Tiene un truco secreto!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "A secret trick? Tell us, Mimi!",
+     "es": "¿Un truco secreto? ¡Cuéntanos, Mimi!",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! First, we must take it out to the garden...",
+     "es": "¡Miau! Primero, debemos llevarla al jardín...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "To the garden? Yay! Let's go!",
+     "es": "¡Al jardín! ¡Sí! ¡Vamos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu grabbed the watering can and ran outside fast!",
+     "es": "¡Zibu tomó la regadera y corrió afuera muy rápido!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Wait, Zibu! Listen to Mimi first!",
+     "es": "¡Espera, Zibu! ¡Escucha a Mimi primero!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Wait for us!",
+     "es": "¡Miau! ¡Espérennos!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zibu-gets-too-excited",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.55
+    },
+    {
+     "who": "guest",
+     "x": 0.8
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.28,
+     "y": 0.6,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Out in the sunny garden, the grass was green and soft.",
+     "es": "Afuera en el jardín soleado, el pasto estaba verde y suave."
+    },
+    {
+     "who": "zibu",
+     "en": "Look at all the flowers! I want to water them right now!",
+     "es": "¡Miren todas las flores! ¡Quiero regarlas ahora mismo!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu, wait! Mimi wants to show us the trick!",
+     "es": "¡Zibu, espera! ¡Mimi quiere enseñarnos el truco!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Listen carefully, Zibu. To make the magic water come out...",
+     "es": "¡Miau! Escucha con atención, Zibu. Para que salga el agua mágica...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Magic water? Woohoo! Splash, splash!",
+     "es": "¿Agua mágica? ¡Siiii! ¡Chof, chof!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was so excited, he was not listening at all!",
+     "es": "¡Zibu estaba tan emocionado que no estaba escuchando para nada!"
+    },
+    {
+     "who": "guest",
+     "en": "Meow... Zibu, stop and listen please!",
+     "es": "Miau... Zibu, ¡detente y escucha por favor!",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "I know how to do it! Watch me!",
+     "es": "¡Yo sé cómo hacerlo! ¡Mírenme!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu, stop! Listening to our friends is important!",
+     "es": "¡Zibu, detente! ¡Escuchar a nuestros amigos es importante!",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "I'm running up to the hill! Follow me!",
+     "es": "¡Voy a correr a la colina! ¡Síganme!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Oh no, he ran away again!",
+     "es": "¡Miau! ¡Oh no, se fue corriendo de nuevo!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Come on, Mimi! Let's follow Zibu!",
+     "es": "¡Vamos, Mimi! ¡Sigamos a Zibu!",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 1.2
+      },
+      {
+       "who": "guest",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Oh dear! Zibu ran off without listening to Mimi's tip.",
+     "es": "¡Vaya! Zibu se fue corriendo sin escuchar el consejo de Mimi.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "first-try-fails",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.6
+    },
+    {
+     "who": "lila",
+     "x": -0.2
+    },
+    {
+     "who": "guest",
+     "x": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.65,
+     "y": 0.6,
+     "at": 0,
+     "color": "#1E90FF"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu stood in the garden with the bright blue watering can.",
+     "es": "Zibu se paró en el jardín con la brillante regadera azul."
+    },
+    {
+     "who": "zibu",
+     "en": "Look! I am going to make water splash everywhere!",
+     "es": "¡Miren! ¡Voy a hacer que el agua salpique por todos lados!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu, wait! Don't run!",
+     "es": "¡Zibu, espera! ¡No corras!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.3
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Listen to me first!",
+     "es": "¡Miau! ¡Escúchame primero!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.15
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Shake, shake, shake! Splash water, splash!",
+     "es": "¡Agita, agita, agita! ¡Salpica agua, salpica!",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu shook the watering can very fast!",
+     "es": "¡Zibu agitó la regadera muy rápido!"
+    },
+    {
+     "who": "zibu",
+     "en": "Huh? Where is the water?",
+     "es": "¿Eh? ¿Dónde está el agua?",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "But not a single drop of water came out.",
+     "es": "Pero ni una sola gota de agua salió."
+    },
+    {
+     "who": "lila",
+     "en": "Zibu... you didn't listen to Mimi's tip.",
+     "es": "Zibu... no escuchaste el consejo de Mimi.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! There is a special trick!",
+     "es": "¡Miau! ¡Hay un truco especial!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "No time! Maybe it works up on the hill!",
+     "es": "¡No hay tiempo! ¡Tal vez funcione arriba en la colina!",
+     "mood": "happy",
+     "action": "spin",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 1.2
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Oh no! Zibu is running away again!",
+     "es": "¡Oh no! ¡Zibu se va corriendo otra vez!",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Meow... let me tell you!",
+     "es": "¡Miau... déjame decirte!",
+     "mood": "sad"
+    },
+    {
+     "who": "narrator",
+     "en": "Oh dear! Zibu still hasn't stopped to listen.",
+     "es": "¡Vaya! Zibu todavía no se ha detenido a escuchar.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "second-try-fails",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.7
+    },
+    {
+     "who": "lila",
+     "x": -0.2
+    },
+    {
+     "who": "guest",
+     "x": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.75,
+     "y": 0.55,
+     "at": 0,
+     "color": "#1E90FF"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Up on the sunny hill, Zibu tried again.",
+     "es": "Arriba en la colina soleada, Zibu lo intentó otra vez."
+    },
+    {
+     "who": "zibu",
+     "en": "Up here, the water will fall for sure!",
+     "es": "¡Aquí arriba, el agua va a caer seguro!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Zibu, please wait for us!",
+     "es": "¡Zibu, por favor espéranos!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "lila",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Stop running!",
+     "es": "¡Miau! ¡Deja de correr!",
+     "mood": "surprised",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.2
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Upside down! One... two... three... splash!",
+     "es": "¡Boca abajo! Uno... dos... tres... ¡salpica!",
+     "action": "shake"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu turned the watering can completely upside down!",
+     "es": "¡Zibu puso la regadera totalmente boca abajo!"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... still no water? Why?",
+     "es": "Oh... ¿todavía no hay agua? ¿Por qué?",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Because you need to listen to your friends!",
+     "es": "¡Miau! ¡Porque necesitas escuchar a tus amigos!",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Mimi knows how to make the magic water come out.",
+     "es": "Mimi sabe cómo hacer salir el agua mágica.",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Listening to our friends helps us solve problems!",
+     "es": "¡Escuchar a nuestros amigos nos ayuda a resolver problemas!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh... I was running too fast without listening.",
+     "es": "Oh... estaba corriendo muy rápido sin escuchar.",
+     "mood": "sad"
+    },
+    {
+     "who": "zibu",
+     "en": "I am sorry, Mimi. I am ready to listen now!",
+     "es": "Lo siento, Mimi. ¡Ahora estoy listo para escuchar!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Yay! Thank you, Zibu!",
+     "es": "¡Miau! ¡Sí! ¡Gracias, Zibu!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu finally stopped to listen carefully. What is Mimi's secret trick?",
+     "es": "Zibu finalmente se detuvo a escuchar con atención. ¿Cuál es el truco secreto de Mimi?",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-to-listen",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.72,
+     "y": 0.65,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Mimi tapped the shiny blue watering can with her soft paw.",
+     "es": "Mimi tocó la regadera azul brillante con su suave patita."
+    },
+    {
+     "who": "guest",
+     "en": "Meow! First, we hold it very gently.",
+     "es": "¡Miau! Primero, la tomamos con mucho cuidado.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Oh! Softly, like a little pillow?",
+     "es": "¡Oh! ¿Despacito, como una almohadita?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Yes! And then what, Mimi?",
+     "es": "¡Sí! ¿Y luego qué, Mimi?",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Then... we do a rocket countdown!",
+     "es": "¡Miau! Después... ¡hacemos un conteo regresivo de cohete!",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "A rocket countdown? Wow!",
+     "es": "¡¿Un conteo de cohete?! ¡Guau!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "From five all the way to one?",
+     "es": "¡¿Desde el cinco hasta el uno?!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Yes! Five, four, three, two, one!",
+     "es": "¡Miau! ¡Sí! ¡Cinco, cuatro, tres, dos, uno!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu listened carefully to every single word.",
+     "es": "Zibu escuchó con mucha atención cada palabra."
+    },
+    {
+     "who": "zibu",
+     "en": "I am so glad I listened to you, Mimi!",
+     "es": "¡Estoy tan feliz de haberte escuchado, Mimi!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Thank you, Zibu!",
+     "es": "¡Miau! ¡Gracias, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Let's bring the watering can back to the garden!",
+     "es": "¡Llevemos la regadera de vuelta al jardín!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Let me carry it softly!",
+     "es": "¡Sí! ¡Déjenme llevarla con cuidado!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Together, the three friends ran happily back to the garden.",
+     "es": "Juntos, los tres amigos corrieron felices de vuelta al jardín.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 1.2
+      },
+      {
+       "who": "lila",
+       "to": 1.2
+      },
+      {
+       "who": "guest",
+       "to": 1.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "the-rocket-countdown",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.35,
+     "y": 0.65,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Back in the garden, Zibu, Lila, and Mimi gathered around the watering can.",
+     "es": "De vuelta en el jardín, Zibu, Lila y Mimi se reunieron alrededor de la regadera."
+    },
+    {
+     "who": "zibu",
+     "en": "Okay, Mimi! We are ready to try your trick!",
+     "es": "¡Listo, Mimi! ¡Estamos listos para probar tu truco!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Hold it softly... and count together!",
+     "es": "¡Miau! ¡Sosténganla con cuidado... y cuenten juntos!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Everyone got ready to count down backwards!",
+     "es": "¡Todos se prepararon para contar hacia atrás!"
+    },
+    {
+     "who": "zibu",
+     "en": "Five!",
+     "es": "¡Cinco!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#FF5722"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Four!",
+     "es": "¡Cuatro!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "4",
+      "es": "4",
+      "color": "#FF9800"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "Three!",
+     "es": "¡Tres!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "3",
+      "es": "3",
+      "color": "#FFEB3B"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Two!",
+     "es": "¡Dos!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "2",
+      "es": "2",
+      "color": "#4CAF50"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "One!",
+     "es": "¡Uno!",
+     "mood": "happy",
+     "action": "jump",
+     "show": {
+      "en": "1",
+      "es": "1",
+      "color": "#2196F3"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Blast off!",
+     "es": "¡Despegue!"
+    },
+    {
+     "who": "zibu",
+     "en": "Whoosh! Look at that!",
+     "es": "¡Fiuuu! ¡Miren eso!",
+     "mood": "surprised",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "A big, magical spray of cool water splashed up into the sky!",
+     "es": "¡Un gran chorro mágico de agua fresca saltó hacia el cielo!"
+    },
+    {
+     "who": "lila",
+     "en": "It worked! The rocket splash worked!",
+     "es": "¡Funcionó! ¡El chorro de cohete funcionó!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Yay! Water rocket!",
+     "es": "¡Miau! ¡Sí! ¡Cohete de agua!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Listening to our friends makes games super fun!",
+     "es": "¡Escuchar a nuestros amigos hace que los juegos sean súper divertidos!",
+     "mood": "happy",
+     "action": "spin"
+    }
+   ]
+  },
+  {
+   "id": "sunset-splash-party",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.5,
+     "y": 0.7,
+     "at": 0,
+     "until": 13,
+     "anim": "bounce",
+     "color": "#4A90E2"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "The warm sun began to set over the magical garden.",
+     "es": "El cálido sol comenzó a ponerse sobre el jardín mágico."
+    },
+    {
+     "who": "lila",
+     "en": "Look at the beautiful sky! It's orange and pink!",
+     "es": "¡Miren el cielo hermoso! ¡Es naranja y rosa!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Time for a sunset splash dance!",
+     "es": "¡Miau! ¡Hora de un baile de agua al atardecer!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! Splish, splash! Let's dance together!",
+     "es": "¡Sí! ¡Chof, chof! ¡Vamos a bailar juntos!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Cool water drops sparkled like little rainbows in the air.",
+     "es": "Gotas de agua fresca brillaban como pequeños arcoíris en el aire."
+    },
+    {
+     "who": "lila",
+     "en": "Wheee! The water spray feels so refreshing!",
+     "es": "¡Guao! ¡El agua fresca se siente tan bien!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Meow, meow! Splash! Splash!",
+     "es": "¡Miau, miau! ¡Chof! ¡Chof!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "I am so glad I stopped to listen to your trick, Mimi!",
+     "es": "¡Estoy tan feliz de haber escuchado tu truco, Mimi!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! You are a great listener, Zibu!",
+     "es": "¡Miau! ¡Escuchas muy bien, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Listening to our friends helps us solve problems and play happily!",
+     "es": "¡Escuchar a nuestros amigos nos ayuda a resolver problemas y jugar felices!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! Listening makes every game super fun!",
+     "es": "¡Sí! ¡Escuchar hace que todos los juegos sean súper divertidos!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Mimi danced happily as the sky turned soft and cozy.",
+     "es": "Zibu, Lila y Mimi bailaron felices mientras el cielo se ponía suave y acogedor.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      },
+      {
+       "who": "guest",
+       "to": 0.65
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Goodbye, friends! See you next time!",
+     "es": "¡Adiós, amigos! ¡Nos vemos la próxima vez!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "What a wonderful, playful day. Goodbye, everyone!",
+     "es": "Qué día tan maravilloso y divertido. ¡Adiós a todos!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.75
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    }
+   ],
+   "props": [
+    {
+     "what": "wateringcan",
+     "x": 0.5,
+     "y": 0.65,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Stop and listen, count to one!",
+     "es": "¡Escucha atento y cuenta ya!"
+    },
+    {
+     "who": "narrator",
+     "en": "Splashing water is so fun!",
+     "es": "¡El agua mágica saldrá!"
+    },
+    {
+     "who": "narrator",
+     "en": "Five, four, three, two, blast away!",
+     "es": "¡Cinco, cuatro, tres, dos, uno, despegar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We can listen every day!",
+     "es": "¡Juntos vamos a escuchar!"
+    },
+    {
+     "who": "zibu",
+     "en": "When I stop and listen clear,",
+     "es": "Si escuchamos con atención,",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Happy tricks will soon appear!",
+     "es": "Todo se llena de emoción.",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Hold it soft and count down slow,",
+     "es": "Cuenta suave sin parar,",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "Watch the magic water glow!",
+     "es": "¡Y el agua mágica va a brotar!",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Stop and listen, count to one!",
+     "es": "¡Escucha atento y cuenta ya!"
+    },
+    {
+     "who": "narrator",
+     "en": "Splashing water is so fun!",
+     "es": "¡El agua mágica saldrá!"
+    },
+    {
+     "who": "narrator",
+     "en": "Five, four, three, two, blast away!",
+     "es": "¡Cinco, cuatro, tres, dos, uno, despegar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We can listen every day!",
+     "es": "¡Juntos vamos a escuchar!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Stop and listen, count to one!",
+     "es": "¡Escucha atento y cuenta ya!"
+    },
+    {
+     "who": "narrator",
+     "en": "Splashing water is so fun!",
+     "es": "¡El agua mágica saldrá!"
+    },
+    {
+     "who": "narrator",
+     "en": "Five, four, three, two, blast away!",
+     "es": "¡Cinco, cuatro, tres, dos, uno, despegar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We can listen every day!",
+     "es": "¡Juntos vamos a escuchar!"
+    },
+    {
+     "who": "zibu",
+     "en": "When I stop and listen clear,",
+     "es": "Si escuchamos con atención,",
+     "action": "spin"
+    },
+    {
+     "who": "lila",
+     "en": "Happy tricks will soon appear!",
+     "es": "Todo se llena de emoción.",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Hold it soft and count down slow,",
+     "es": "Cuenta suave sin parar,",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Watch the magic water glow!",
+     "es": "¡Y el agua mágica va a brotar!",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Stop and listen, count to one!",
+     "es": "¡Escucha atento y cuenta ya!"
+    },
+    {
+     "who": "narrator",
+     "en": "Splashing water is so fun!",
+     "es": "¡El agua mágica saldrá!"
+    },
+    {
+     "who": "narrator",
+     "en": "Five, four, three, two, blast away!",
+     "es": "¡Cinco, cuatro, tres, dos, uno, despegar!"
+    },
+    {
+     "who": "narrator",
+     "en": "We can listen every day!",
+     "es": "¡Juntos vamos a escuchar!"
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Listening makes the magic work!",
+     "es": "¡Miau! ¡Escuchar hace que la magia funcione!",
+     "mood": "happy",
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Recordémosla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "What shiny blue object did Zibu and Lila find?",
+     "es": "¿Qué objeto azul y brillante encontraron Zibu y Lila?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "A watering can!",
+     "es": "¡Una regadera!",
+     "mood": "happy",
+     "show": {
+      "en": "Watering Can",
+      "es": "Regadera",
+      "color": "#1E90FF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Who was our kitten friend in the garden?",
+     "es": "¿Quién era nuestra amiga gatita en el jardín?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Mimi!",
+     "es": "¡Mimi!",
+     "mood": "happy",
+     "show": {
+      "en": "Mimi",
+      "es": "Mimi",
+      "color": "#FF69B4"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What did Mimi ask Zibu to do before watering?",
+     "es": "¿Qué le pidió Mimi a Zibu antes de regar?",
+     "pause": 2.5
+    },
+    {
+     "who": "zibu",
+     "en": "Stop and listen!",
+     "es": "¡Parar y escuchar!",
+     "mood": "surprised",
+     "show": {
+      "en": "Listen",
+      "es": "Escuchar",
+      "color": "#32CD32"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many numbers did we count down from?",
+     "es": "¿Desde qué número contamos al revés?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Five!",
+     "es": "¡Cinco!",
+     "mood": "happy",
+     "show": {
+      "en": "5",
+      "es": "5",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's count down from five together!",
+     "es": "¡Contemos al revés desde el cinco juntos!",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Five... four...",
+     "es": "Cinco... cuatro..."
+    },
+    {
+     "who": "zibu",
+     "en": "Three... two... one...",
+     "es": "Tres... dos... uno..."
+    },
+    {
+     "who": "lila",
+     "en": "Blast off! Splish splash!",
+     "es": "¡Despegar! ¡Chapoteo!",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "What happened when we counted down?",
+     "es": "¿Qué pasó cuando contamos al revés?",
+     "pause": 2.5
+    },
+    {
+     "who": "lila",
+     "en": "Magic water splashed high!",
+     "es": "¡El agua mágica saltó muy alto!",
+     "mood": "happy",
+     "show": {
+      "en": "Magic Water",
+      "es": "Agua mágica",
+      "color": "#00FFFF"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Listening to our friends helps us solve problems and play happily together.",
+     "es": "Escuchar a nuestros amigos nos ayuda a resolver problemas y jugar felices juntos."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.8
+    },
+    {
+     "who": "guest",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 14
+    },
+    {
+     "who": "guest",
+     "en": "Meow! Splash and dance to the rhythm!",
+     "es": "¡Miau! ¡Chapotea y baila al ritmo!",
+     "mood": "happy",
+     "action": "jump",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós, adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep027-zibu-and-the-watering-can"
+}
