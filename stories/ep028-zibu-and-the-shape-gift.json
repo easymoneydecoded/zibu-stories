@@ -1,0 +1,1425 @@
+{
+ "slug": "zibu-and-the-shape-gift",
+ "title": {
+  "en": "Zibu and the Shape Gift Box",
+  "es": "Zibu y el regalo de formas"
+ },
+ "lesson": {
+  "en": "It is okay to make mistakes if you keep trying.",
+  "es": "Está bien equivocarse si sigues intentándolo."
+ },
+ "guest": {
+  "species": "owl",
+  "name": {
+   "en": "Sammy",
+   "es": "Sammy"
+  }
+ },
+ "thumb": {
+  "en": [
+   "TRY AGAIN!",
+   "SHAPE GIFT BOX"
+  ],
+  "es": [
+   "¡INTÉNTALO!",
+   "REGALO DE FORMAS"
+  ],
+  "scene": 4
+ },
+ "youtube": {
+  "en": {
+   "title": "Zibu Tries Again with the Gift! 🎁 Learn Shapes: Circle, Square, Triangle",
+   "description": "Oh no! Zibu made a mistake with the gift box lock! 🎁\nSammy the Owl teaches Zibu to try again!\nTogether, Zibu and Lila learn shapes: Circle, Square, and Triangle! ⭕⏹️🔺\nWatch how practice helps us solve problems!\nPerfect for toddlers aged 2-6.\n\n#ZibuAndFriends #LearnShapes #TryAgain #EducationalCartoons #ToddlerLearning",
+   "tags": [
+    "zibu and friends",
+    "learn shapes",
+    "try again lesson",
+    "circle square triangle",
+    "owl episode",
+    "toddler learning",
+    "preschool video",
+    "cartoon for kids",
+    "zibu",
+    "gift box story"
+   ]
+  },
+  "es": {
+   "title": "¡Zibu lo intenta de nuevo! 🎁 Aprende formas: Círculo, Cuadrado, Triángulo",
+   "description": "¡Oh no! ¡Zibu se equivocó al abrir el regalo! 🎁\n¡Sammy el Búho le enseña a Zibu a intentarlo otra vez!\nJuntos, Zibu y Lila aprenden las formas: Círculo, Cuadrado y Triángulo. ⭕⏹️🔺\n¡Mira cómo seguir intentándolo da resultado!\nIdeal para niños de 2 a 6 años.\n\n#ZibuYSusAmigos #AprendeFormas #InténtaloDeNuevo #CaricaturasEducativas #EducacionPreescolar",
+   "tags": [
+    "zibu y sus amigos",
+    "aprende formas",
+    "intentarlo de nuevo",
+    "circulo cuadrado triangulo",
+    "episodio del buho",
+    "aprendizaje infantil",
+    "videos para niños",
+    "caricaturas preescolares",
+    "zibu",
+    "regalo de formas"
+   ]
+  }
+ },
+ "object": "gift",
+ "style": "v2",
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.42
+    },
+    {
+     "who": "lila",
+     "x": 0.66
+    },
+    {
+     "who": "guest",
+     "x": 0.85
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Oh no! The gift locked shut!",
+     "es": "¡Oh no! ¡El regalo se cerró!",
+     "action": "bigjump",
+     "mood": "surprised"
+    },
+    {
+     "who": "zibu",
+     "en": "Friend, can you help us?",
+     "es": "Amigo, ¿nos ayudas?",
+     "action": "wave",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Let's try again!",
+     "es": "¡Vamos a intentarlo!",
+     "action": "jump",
+     "mood": "laugh"
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.7,
+     "y": 0.65
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu and the Shape Gift Box!",
+     "es": "¡Zibu y el regalo de formas!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "sammy-arrives",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.4
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": -0.2
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.7,
+     "y": 0.65,
+     "at": 6
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "It was a beautiful sunny day in the garden.",
+     "es": "Era un hermoso día soleado en el jardín."
+    },
+    {
+     "who": "lila",
+     "en": "Look, Zibu! Someone is coming!",
+     "es": "¡Mira, Zibu! ¡Alguien viene!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Flap, flap, flap! Sammy the Owl flew down from the sky.",
+     "es": "¡Aleteo, aleteo! ¡Sammy el Búho bajó volando del cielo!",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.7,
+       "toY": 0.35
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! Hello, Zibu! Hello, Lila!",
+     "es": "¡Jú-jú! ¡Hola, Zibu! ¡Hola, Lila!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Hello, Sammy! Wow... what a big box!",
+     "es": "¡Hola, Sammy! Vaya... ¡qué caja tan grande!",
+     "mood": "surprised",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! It is a special shape gift box!",
+     "es": "¡Jú-jú! ¡Es una caja de regalo con formas especiales!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Sammy placed the colorful gift box on the grass.",
+     "es": "Sammy puso la colorida caja de regalo en la hierba."
+    },
+    {
+     "who": "lila",
+     "en": "Ooh! It has ribbons and colorful buttons!",
+     "es": "¡Oh! ¡Tiene cintas y botones de colores!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Can I open it? I want to see what is inside!",
+     "es": "¡¿Puedo abrirla?! ¡Quiero ver qué hay adentro!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.55
+      }
+     ]
+    },
+    {
+     "who": "guest",
+     "en": "Be careful, Zibu! You need to press the right shape.",
+     "es": "¡Ten cuidado, Zibu! Tienes que presionar la forma correcta.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I know! I'll press this button right here!",
+     "es": "¡Ya sé! ¡Presionaré este botón de aquí!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu pressed a big button. But... CLICK!",
+     "es": "Zibu presionó un botón grande. Pero... ¡CLIC!"
+    },
+    {
+     "who": "zibu",
+     "en": "Uh-oh... it made a funny click noise.",
+     "es": "Uy... hizo un ruidito de clic raro.",
+     "mood": "surprised"
+    },
+    {
+     "who": "guest",
+     "en": "Oh dear! That was the wrong button, Zibu.",
+     "es": "¡Ay, caramba! Ese era el botón equivocado, Zibu.",
+     "mood": "sad"
+    },
+    {
+     "who": "lila",
+     "en": "Look! The gift box locked shut!",
+     "es": "¡Mira! ¡La caja de regalo se cerró con llave!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "Oh no! The box was completely locked now!",
+     "es": "¡Oh, no! ¡La caja ahora estaba completamente cerrada!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "first-mistake",
+   "bg": "forest",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.85,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.38,
+     "y": 0.65,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Sammy walked into the forest.",
+     "es": "Zibu, Lila y Sammy caminaron hacia el bosque."
+    },
+    {
+     "who": "lila",
+     "en": "Don't worry, Zibu! We can figure out how to open it.",
+     "es": "¡No te preocupes, Zibu! Podemos averiguar cómo abrirla.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I really want to fix my mistake...",
+     "es": "De verdad quiero corregir mi error...",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Look closely at the buttons, Zibu. Hoo-hoo!",
+     "es": "Mira los botones de cerca, Zibu. ¡Jú-jú!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "The box had buttons shaped like circles, squares, and triangles.",
+     "es": "La caja tenía botones con forma de círculos, cuadrados y triángulos."
+    },
+    {
+     "who": "zibu",
+     "en": "Maybe the square button will unlock it!",
+     "es": "¡Tal vez el botón cuadrado la abra!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.32
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Try it, Zibu! You can do it!",
+     "es": "¡Inténtalo, Zibu! ¡Tú puedes!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Here goes... square button!",
+     "es": "¡Aquí voy... botón cuadrado!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu pressed the square button. Shake, shake!",
+     "es": "Zibu presionó el botón cuadrado. ¡Sacudida, sacudida!"
+    },
+    {
+     "who": "guest",
+     "en": "Hoo... the box is shaking!",
+     "es": "¡Jú... la caja se está sacudiendo!",
+     "mood": "surprised"
+    },
+    {
+     "who": "narrator",
+     "en": "But the box stayed locked shut.",
+     "es": "Pero la caja siguió cerrada con llave."
+    },
+    {
+     "who": "zibu",
+     "en": "Oh no! It didn't open!",
+     "es": "¡Oh, no! ¡No se abrió!",
+     "mood": "sad",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "It's okay, Zibu. It was just a try.",
+     "es": "Está bien, Zibu. Solo fue un intento.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I made another mistake... I'm not good at this.",
+     "es": "Cometí otro error... No soy bueno en esto.",
+     "mood": "sad"
+    },
+    {
+     "who": "guest",
+     "en": "Making mistakes is okay, Zibu! We just need to learn.",
+     "es": "¡Está bien equivocarse, Zibu! Solo necesitamos aprender.",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu felt sad, but his friends were right beside him.",
+     "es": "Zibu se sintió triste, pero sus amigos estaban a su lado.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "learning-shapes",
+   "bg": "room",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Inside the cozy room, Sammy had a great idea to help Zibu.",
+     "es": "Dentro del cómodo cuarto, Sammy tuvo una gran idea para ayudar a Zibu."
+    },
+    {
+     "who": "guest",
+     "en": "Look! Shapes are everywhere! Let's learn them together!",
+     "es": "¡Miren! ¡Hay formas por todos lados! ¡Vamos a aprenderlas juntas!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "narrator",
+     "en": "First, Sammy showed a glowing round circle.",
+     "es": "Primero, Sammy mostró un círculo brillante y redondo.",
+     "show": {
+      "en": "CIRCLE",
+      "es": "CÍRCULO",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! A circle! It's round like a ball!",
+     "es": "¡Vaya! ¡Un círculo! ¡Es redondo como una pelota!",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Let's trace it in the air! Round and round!",
+     "es": "¡Vamos a dibujarlo en el aire! ¡Da la vuelta y vuelta!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Next, a bright square appeared!",
+     "es": "Luego, ¡apareció un brillante cuadrado!",
+     "show": {
+      "en": "SQUARE",
+      "es": "CUADRADO",
+      "color": "#4682B4"
+     }
+    },
+    {
+     "who": "guest",
+     "en": "A square has four straight sides! One, two, three, four!",
+     "es": "¡Un cuadrado tiene cuatro lados iguales! ¡Uno, dos, tres, cuatro!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "One... two... three... four! I see it!",
+     "es": "¡Uno... dos... tres... cuatro! ¡Ya lo veo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "And finally, a pointy triangle popped up!",
+     "es": "Y finalmente, ¡apareció un triángulo con puntas!",
+     "show": {
+      "en": "TRIANGLE",
+      "es": "TRIÁNGULO",
+      "color": "#FF69B4"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Three sides! Like a party hat!",
+     "es": "¡Tres lados! ¡Como un sombrero de fiesta!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "Circle, square, and triangle... I get it now!",
+     "es": "Círculo, cuadrado y triángulo... ¡Ya entiendo!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "You are doing great, Zibu! Making mistakes helps us learn!",
+     "es": "¡Lo estás haciendo muy bien, Zibu! ¡Equivocarse nos ayuda a aprender!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Ready to try again, Zibu?",
+     "es": "¿Listo para intentarlo de nuevo, Zibu?",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Yes! I won't give up!",
+     "es": "¡Sí! ¡No me voy a rendir!",
+     "mood": "happy",
+     "action": "bigjump"
+    }
+   ]
+  },
+  {
+   "id": "trying-again-circle",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.65
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.45,
+     "y": 0.72,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Up on the sunny hill, Zibu brought the colorful gift box.",
+     "es": "Arriba en la colina soleada, Zibu trajo la colorida caja de regalo."
+    },
+    {
+     "who": "lila",
+     "en": "Take a deep breath, Zibu. In... and out.",
+     "es": "Toma aire profundo, Zibu. Inhala... y exhala.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Phew... In... and out. Okay, I am ready!",
+     "es": "Uff... Inhalo... y exhalo. ¡Bien, estoy listo!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu stepped closer and looked carefully at the box.",
+     "es": "Zibu se acercó y miró la caja con mucho cuidado.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      }
+     ]
+    },
+    {
+     "who": "zibu",
+     "en": "Hmm... which button is the round circle?",
+     "es": "Mmm... ¿cuál botón es el círculo redondo?",
+     "mood": "surprised"
+    },
+    {
+     "who": "lila",
+     "en": "Look closely! It has no pointy corners!",
+     "es": "¡Mira bien! ¡No tiene esquinas con punta!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Aha! This one is round like a ball! It's a circle!",
+     "es": "¡Ajá! ¡Este es redondo como una pelota! ¡Es un círculo!",
+     "mood": "happy",
+     "show": {
+      "en": "CIRCLE",
+      "es": "CÍRCULO",
+      "color": "#FFD700"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu carefully pressed the circle button with his finger.",
+     "es": "Zibu presionó con cuidado el botón del círculo con su dedito."
+    },
+    {
+     "who": "zibu",
+     "en": "Here goes...",
+     "es": "Aquí voy...",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Click! The first ribbon unlatched!",
+     "es": "¡Clic! ¡La primera cinta se soltó!",
+     "pause": 0.5
+    },
+    {
+     "who": "zibu",
+     "en": "Yay! It worked! The ribbon opened!",
+     "es": "¡Siii! ¡Funcionó! ¡La cinta se abrió!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Hooray, Zibu! You did it!",
+     "es": "¡Viva, Zibu! ¡Lo lograste!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "I tried again and it worked!",
+     "es": "¡Lo intenté de nuevo y funcionó!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu felt so proud. Trying again was working!",
+     "es": "Zibu se sintió muy orgulloso. ¡Intentarlo de nuevo estaba funcionando!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "completing-pattern",
+   "bg": "hill",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.35
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.4,
+     "y": 0.7,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Zibu looked at the gift box again. There were two shapes left!",
+     "es": "Zibu miró la caja de regalo de nuevo. ¡Quedaban dos formas!"
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! You can do it, Zibu! Look closely.",
+     "es": "¡Juu-juu! ¡Tú puedes, Zibu! Mira bien.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Okay! Next is the square! Four straight sides!",
+     "es": "¡Está bien! ¡El siguiente es el cuadrado! ¡Cuatro lados rectos!",
+     "mood": "happy",
+     "show": {
+      "en": "SQUARE",
+      "es": "CUADRADO",
+      "color": "#FF5500"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "You know this shape, Zibu! Press it gently.",
+     "es": "¡Tú conoces esta forma, Zibu! Oprímela suavemente.",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Click! Yay! The square worked!",
+     "es": "¡Clic! ¡Sí! ¡El cuadrado funcionó!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "The second ribbon on the gift box unlatched!",
+     "es": "¡La segunda cinta de la caja de regalo se desenganchó!"
+    },
+    {
+     "who": "guest",
+     "en": "Wonderful! Now... what is the last shape?",
+     "es": "¡Maravilloso! Ahora... ¿cuál es la última forma?",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Hmm... it has three corners... A triangle!",
+     "es": "Mmm... tiene tres esquinas... ¡Un triángulo!",
+     "mood": "surprised",
+     "show": {
+      "en": "TRIANGLE",
+      "es": "TRIÁNGULO",
+      "color": "#00CC66"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Try again, Zibu! You are doing so great!",
+     "es": "¡Inténtalo otra vez, Zibu! ¡Lo estás haciendo genial!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "zibu",
+     "en": "Here I go! Pressing the triangle!",
+     "es": "¡Allá voy! ¡Presionando el triángulo!",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.38
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Click-clack! The last button pushed down smoothly.",
+     "es": "¡Clic-clac! El último botón se presionó suavemente."
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! You fixed your mistake by trying again!",
+     "es": "¡Juu-juu! ¡Arreglaste tu error intentándolo de nuevo!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "I didn't give up! Look!",
+     "es": "¡No me rendí! ¡Miren!",
+     "mood": "laugh",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "All the ribbons are open now!",
+     "es": "¡Todas las cintas están abiertas ahora!",
+     "mood": "happy",
+     "action": "bigjump"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu was so happy. Patience and trying made all the difference!",
+     "es": "Zibu estaba muy feliz. ¡La paciencia y volver a intentarlo hicieron la diferencia!",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "gift-opens",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.45
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.6,
+     "y": 0.65,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Everyone carried the special gift back to the garden at sunset.",
+     "es": "Todos llevaron el regalo especial de vuelta al jardín al atardecer.",
+     "moves": [
+      {
+       "who": "zibu",
+       "to": 0.35
+      },
+      {
+       "who": "lila",
+       "to": 0.5
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Look at the sky! The colors are so beautiful!",
+     "es": "¡Mira el cielo! ¡Los colores son hermosos!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "And now... the gift box is ready to open!",
+     "es": "Y ahora... ¡la caja de regalo está lista para abrirse!",
+     "mood": "happy"
+    },
+    {
+     "who": "guest",
+     "en": "Are you ready, friends? One... two... three!",
+     "es": "¿Están listos, amigos? ¡Uno... dos... tres!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "POP! The gift box burst open!",
+     "es": "¡POP! ¡La caja de regalo se abrió de golpe!"
+    },
+    {
+     "who": "zibu",
+     "en": "Wow! Look at all the star confetti!",
+     "es": "¡Vaya! ¡Miren todo el confeti de estrellas!",
+     "mood": "surprised",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Ooh! It's shining everywhere! So pretty!",
+     "es": "¡Oh! ¡Está brillando por todas partes! ¡Qué bonito!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! A magical party inside the box!",
+     "es": "¡Juu-juu! ¡Una fiesta mágica dentro de la caja!",
+     "mood": "laugh",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "I'm so glad I tried again after making a mistake!",
+     "es": "¡Estoy tan feliz de haberlo intentado otra vez después de equivocarme!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "You did it, Zibu! You were super brave!",
+     "es": "¡Lo lograste, Zibu! ¡Fuiste muy valiente!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "guest",
+     "en": "Making mistakes helps us learn and grow!",
+     "es": "¡Equivocarse nos ayuda a aprender y crecer!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Yay for trying again! Yay for confetti!",
+     "es": "¡Viva volver a intentarlo! ¡Viva el confeti!",
+     "mood": "laugh",
+     "action": "bigjump"
+    },
+    {
+     "who": "lila",
+     "en": "Let's dance under the falling stars!",
+     "es": "¡Vamos a bailar bajo las estrellas que caen!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "Zibu, Lila, and Sammy jumped for joy in the warm sunset light.",
+     "es": "Zibu, Lila y Sammy saltaron de alegría bajo la cálida luz del atardecer.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "happy-ending",
+   "bg": "garden",
+   "time": "night",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.4
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.2,
+     "y": 0.75,
+     "at": 0
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Under the peaceful starry night sky, the garden was quiet and sweet.",
+     "es": "Bajo el tranquilo cielo estrellado, el jardín estaba dulce y en calma."
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! You did it, Zibu!",
+     "es": "¡Búho búho! ¡Lo lograste, Zibu!",
+     "mood": "happy",
+     "action": "wave",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 0.4,
+       "toY": 0.45
+      }
+     ]
+    },
+    {
+     "who": "narrator",
+     "en": "Sammy flew down gently and gave Zibu a big, warm hug.",
+     "es": "Sammy bajó despacito y le dio a Zibu un abrazo grande y cálido."
+    },
+    {
+     "who": "zibu",
+     "en": "Thank you, Sammy! I made mistakes at first...",
+     "es": "¡Gracias, Sammy! Al principio cometí errores...",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "But you didn't give up!",
+     "es": "¡Pero no te rendiste!",
+     "mood": "happy",
+     "action": "jump"
+    },
+    {
+     "who": "zibu",
+     "en": "That's right! It is okay to make mistakes...",
+     "es": "¡Es verdad! Está bien equivocarse...",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "...as long as you keep trying again!",
+     "es": "...¡siempre que sigas intentándolo!",
+     "mood": "happy",
+     "action": "bigjump",
+     "show": {
+      "en": "TRY AGAIN!",
+      "es": "¡SIGUE INTENTÁNDOLO!",
+      "color": "#4A90E2"
+     }
+    },
+    {
+     "who": "lila",
+     "en": "Yay! Trying again is super fun!",
+     "es": "¡Sí! ¡Volver a intentarlo es súper divertido!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "guest",
+     "en": "Mistakes help us learn everyday!",
+     "es": "¡Los errores nos ayudan a aprender cada día!",
+     "mood": "happy",
+     "action": "glow"
+    },
+    {
+     "who": "zibu",
+     "en": "Bye-bye, gift box! Bye-bye, Sammy!",
+     "es": "¡Adiós, caja de regalo! ¡Adiós, Sammy!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "guest",
+     "en": "Hoot hoot! Goodnight, my dear friends!",
+     "es": "¡Búho búho! ¡Buenas noches, mis queridos amigos!",
+     "mood": "happy",
+     "moves": [
+      {
+       "who": "guest",
+       "to": 1.3,
+       "toY": -0.2
+      }
+     ]
+    },
+    {
+     "who": "lila",
+     "en": "Goodnight, Zibu!",
+     "es": "¡Buenas noches, Zibu!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "Goodnight, Lila! Goodnight, stars!",
+     "es": "¡Buenas noches, Lila! ¡Buenas noches, estrellas!",
+     "mood": "happy"
+    },
+    {
+     "who": "narrator",
+     "en": "And so, Zibu learned that trying again is the best magic of all.",
+     "es": "Y así, Zibu aprendió que volver a intentarlo es la mejor magia de todas.",
+     "pause": 1.0
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "type": "song",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.2
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.8,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.5,
+     "y": 0.75,
+     "at": 0,
+     "color": "#FF5588"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "If you make a mistake, don't be sad!",
+     "es": "Si te equivocas, ¡no pasa nada!"
+    },
+    {
+     "who": "narrator",
+     "en": "Try again and again, it's not bad!",
+     "es": "¡Inténtalo otra vez con la mirada!"
+    },
+    {
+     "who": "narrator",
+     "en": "Circle, square, or triangle today!",
+     "es": "Círculo, cuadrado o triángulo hoy,"
+    },
+    {
+     "who": "narrator",
+     "en": "Keep on trying as we play!",
+     "es": "¡Sigue intentando, qué feliz estoy!"
+    },
+    {
+     "who": "zibu",
+     "en": "I pressed the wrong button right here!",
+     "es": "¡Presioné el botón sin dudar!",
+     "mood": "surprised",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "We can try again, my dear!",
+     "es": "¡Pronto lo volveremos a intentar!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I looked real close and found the key!",
+     "es": "¡Las tres formas voy a buscar!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Now we are happy as can be!",
+     "es": "¡Y la caja se va a destrabar!",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "If you make a mistake, don't be sad!",
+     "es": "Si te equivocas, ¡no pasa nada!"
+    },
+    {
+     "who": "narrator",
+     "en": "Try again and again, it's not bad!",
+     "es": "¡Inténtalo otra vez con la mirada!"
+    },
+    {
+     "who": "narrator",
+     "en": "Circle, square, or triangle today!",
+     "es": "Círculo, cuadrado o triángulo hoy,"
+    },
+    {
+     "who": "narrator",
+     "en": "Keep on trying as we play!",
+     "es": "¡Sigue intentando, qué feliz estoy!"
+    },
+    {
+     "who": "zibu",
+     "en": "One more time! Sing with us!",
+     "es": "¡Una vez más! ¡Canten con nosotros!",
+     "mood": "happy",
+     "action": "spin"
+    },
+    {
+     "who": "narrator",
+     "en": "If you make a mistake, don't be sad!",
+     "es": "Si te equivocas, ¡no pasa nada!"
+    },
+    {
+     "who": "narrator",
+     "en": "Try again and again, it's not bad!",
+     "es": "¡Inténtalo otra vez con la mirada!"
+    },
+    {
+     "who": "narrator",
+     "en": "Circle, square, or triangle today!",
+     "es": "Círculo, cuadrado o triángulo hoy,"
+    },
+    {
+     "who": "narrator",
+     "en": "Keep on trying as we play!",
+     "es": "¡Sigue intentando, qué feliz estoy!"
+    },
+    {
+     "who": "zibu",
+     "en": "I pressed the wrong button right here!",
+     "es": "¡Presioné el botón sin dudar!",
+     "action": "shake"
+    },
+    {
+     "who": "lila",
+     "en": "We can try again, my dear!",
+     "es": "¡Pronto lo volveremos a intentar!",
+     "mood": "happy"
+    },
+    {
+     "who": "zibu",
+     "en": "I looked real close and found the key!",
+     "es": "¡Las tres formas voy a buscar!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Now we are happy as can be!",
+     "es": "¡Y la caja se va a destrabar!",
+     "action": "jump"
+    },
+    {
+     "who": "narrator",
+     "en": "If you make a mistake, don't be sad!",
+     "es": "Si te equivocas, ¡no pasa nada!"
+    },
+    {
+     "who": "narrator",
+     "en": "Try again and again, it's not bad!",
+     "es": "¡Inténtalo otra vez con la mirada!"
+    },
+    {
+     "who": "narrator",
+     "en": "Circle, square, or triangle today!",
+     "es": "Círculo, cuadrado o triángulo hoy,"
+    },
+    {
+     "who": "narrator",
+     "en": "Keep on trying as we play!",
+     "es": "¡Sigue intentando, qué feliz estoy!"
+    },
+    {
+     "who": "guest",
+     "en": "Hoo-hoo! Trying again is pure magic!",
+     "es": "¡Hoo-hoo! ¡Intentarlo de nuevo es pura magia!",
+     "mood": "happy",
+     "action": "glow"
+    }
+   ]
+  },
+  {
+   "id": "recap",
+   "type": "recap",
+   "bg": "garden",
+   "time": "day",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.3
+    },
+    {
+     "who": "lila",
+     "x": 0.7
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "en": "Did you like the story? Let's remember it together!",
+     "es": "¿Les gustó la historia? ¡Vamos a recordarla juntos!"
+    },
+    {
+     "who": "narrator",
+     "en": "Who brought the special shape gift box to the garden?",
+     "es": "¿Quién trajo la caja de regalo de formas al jardín?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Sammy the Owl!",
+     "es": "¡Sammy el búho!",
+     "show": {
+      "en": "Sammy",
+      "es": "Sammy"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What happened when Zibu pressed the wrong button?",
+     "es": "¿Qué pasó cuando Zibu presionó el botón equivocado?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "The gift box locked shut!",
+     "es": "¡La caja se cerró!",
+     "show": {
+      "en": "Locked!",
+      "es": "¡Cerrada!"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "How many sides does a triangle have?",
+     "es": "¿Cuántos lados tiene un triángulo?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Three sides!",
+     "es": "¡Tres lados!",
+     "show": {
+      "en": "3",
+      "es": "3"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "Which shape button unlatched the first ribbon?",
+     "es": "¿Qué botón de forma abrió la primera cinta?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "The round circle!",
+     "es": "¡El círculo redondo!",
+     "show": {
+      "en": "Circle",
+      "es": "Círculo"
+     }
+    },
+    {
+     "who": "narrator",
+     "en": "What popped out of the gift box at the end?",
+     "es": "¿Qué salió de la caja de regalo al final?",
+     "pause": 2.5
+    },
+    {
+     "who": "narrator",
+     "en": "Star confetti!",
+     "es": "¡Confeti de estrellas!",
+     "show": {
+      "en": "Confetti!",
+      "es": "¡Confeti!"
+     }
+    },
+    {
+     "who": "zibu",
+     "en": "Let's trace shapes together, friends!",
+     "es": "¡Tracemos formas juntos, amigos!",
+     "mood": "happy"
+    },
+    {
+     "who": "lila",
+     "en": "Draw a big round circle in the air!",
+     "es": "¡Dibujen un círculo redondo en el aire!",
+     "action": "spin"
+    },
+    {
+     "who": "zibu",
+     "en": "Now let's jump three times for the triangle! One... two... three!",
+     "es": "¡Ahora saltemos tres veces por el triángulo! ¡Uno... dos... tres!",
+     "action": "jump"
+    },
+    {
+     "who": "lila",
+     "en": "Yay! You did it!",
+     "es": "¡Sí! ¡Lo lograron!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "narrator",
+     "en": "Remember: It is okay to make mistakes if you keep trying.",
+     "es": "Recuerden: Está bien equivocarse si sigues intentándolo."
+    }
+   ]
+  },
+  {
+   "id": "dance",
+   "type": "dance",
+   "bg": "garden",
+   "time": "sunset",
+   "cast": [
+    {
+     "who": "zibu",
+     "x": 0.25
+    },
+    {
+     "who": "lila",
+     "x": 0.5
+    },
+    {
+     "who": "guest",
+     "x": 0.75,
+     "y": 0.3
+    }
+   ],
+   "props": [
+    {
+     "what": "gift",
+     "x": 0.5,
+     "y": 0.8,
+     "at": 0,
+     "anim": "bounce"
+    }
+   ],
+   "lines": [
+    {
+     "who": "zibu",
+     "en": "Dance party! Dance with us, friends!",
+     "es": "¡Fiesta de baile! ¡Bailen con nosotros, amigos!",
+     "mood": "happy",
+     "action": "bigjump",
+     "pause": 14
+    },
+    {
+     "who": "lila",
+     "en": "Spin around and hop like a bunny!",
+     "es": "¡Giren en círculos y salten como un conejito!",
+     "mood": "happy",
+     "action": "spin",
+     "pause": 10
+    },
+    {
+     "who": "zibu",
+     "en": "See you next time, friends!",
+     "es": "¡Hasta la próxima, amigos!",
+     "mood": "happy",
+     "action": "wave"
+    },
+    {
+     "who": "lila",
+     "en": "Bye-bye!",
+     "es": "¡Adiós!",
+     "mood": "happy",
+     "action": "wave",
+     "pause": 3
+    }
+   ]
+  }
+ ],
+ "id": "ep028-zibu-and-the-shape-gift"
+}
